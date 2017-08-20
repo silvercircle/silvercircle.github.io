@@ -1,4 +1,8 @@
 ---
+layout: post
+title: A test page
+comments: true
+author: alex
 ---
 
 This is a test page.
