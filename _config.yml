@@ -10,4 +10,4 @@ plugins:
  - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate
-  
+ - jekyll-textile-convert 

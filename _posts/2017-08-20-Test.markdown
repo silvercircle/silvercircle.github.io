@@ -15,4 +15,5 @@ date: 2017-08-20 00:00:00
 {% include gfx/subfolder_include.html %}This is a paragraph
 
 ### and another one
-{% include test_fragment.html color="blue" %}With even more text. 
+{% include test_fragment.html color="blue" %}With even more text.
+ 
