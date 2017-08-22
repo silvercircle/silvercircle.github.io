@@ -1,0 +1,6 @@
+ {% for post in site.posts limit:5 %}
+   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+   <p class="author">
+     <span class="date">{{ post.date }}</span>
+   </p>
+ {% endfor %}
