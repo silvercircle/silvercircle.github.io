@@ -15,6 +15,22 @@
   src: local("Monda Regular"), local("Monda-Regular"), url("https://fonts.gstatic.com/s/monda/v4/sk05J8GA1NvUxDnk43EgAQ.woff") format("woff");
 }
 
+body {
+	font-family: Monda;
+}
+
+header {
+	font-family: Monda, Helvetica, Arial, serif;
+}
+
+header h1 {
+	font-size: 20pt;
+}
+
+header h2 {
+	font-size: 16pt;
+}
+
 div.floatimage {
     background-color: #e5e5e5;
     padding: 5px;
@@ -57,7 +73,6 @@ div.floatimage_title {
 #main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5 {
 	font-family: "Monda";
 	font-weight: bold;
-	
 }
 
 #main-content h1::before, #main-content h2::before, #main-content h3::before, #main-content h4::before {
@@ -66,4 +81,68 @@ div.floatimage_title {
 
 div.clear {
 	clear: both;
+}
+
+div.site_footer_wrapper {
+	background-color: #222;
+	color: white;
+	min-height:50px;
+    display: table;
+    width:100%;
+}
+
+div.site_footer {
+	width: 940px;
+	margin:auto;
+	font-size: smaller;
+	display: table;
+}
+
+div.site_footer a, div.site_footer a:visited, div.menu a, div.menu a:visited {
+	color: orange;
+}
+
+div.menu a:hover {
+	color:white;
+}
+
+div.site_footer div.column {
+	width: 33%;
+	padding:4px 10px;
+	box-sizing: border-box;
+    display: table-cell;
+    height:50px;
+    vertical-align: bottom;
+}
+
+div.site_footer div.column.left {
+    text-align: left;
+}
+
+div.site_footer div.column.center {
+    text-align: center;
+}
+
+div.site_footer div.column.right {
+    text-align: right;
+}
+
+div.menubar_wrapper {
+	background-color: black;
+}
+
+div.menubar {
+    width: 940px;
+    margin:auto;
+    font-size: larger;
+    display: table;
+    color:white;
+}
+
+div.menu {
+	float: left;
+	display: table-cell;
+	box-sizing: border-box;
+	width:100px;
+    padding:4px 5px;
 }

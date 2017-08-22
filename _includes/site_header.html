@@ -4,7 +4,6 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=12' | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css?v=12' | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
@@ -17,19 +16,30 @@
 
 {% seo %}
   </head>
-
   <body>
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1>{{ site.title }}</h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
+        <h2>{{ site.description }}</h2>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
+     <div class="menubar_wrapper">
+	     <div class="menubar">
+	       <div class="menu">
+	           <a href="{{site.baseurl}}/">Home</a>
+	       </div>
+           <div class="menu">
+               <a href="{{site.baseurl}}/help/about.html">About</a>
+           </div>
+           <div class="menu">
+               <a href="{{site.baseurl}}/blog.html">Blog</a>
+           </div>
+           <div class="menu">
+               <a href="{{site.baseurl}}/help/contact.html">Contact</a>
+           </div>
+	     </div>
+     </div>
+    
