@@ -79,6 +79,22 @@ div.floatimage_title {
 	content: none;
 }
 
+#main-content h1 {
+	font-size: 20pt;
+}
+
+#main-content h2 {
+    font-size: 18pt;
+}
+
+#main-content h3 {
+    font-size: 16pt;
+}
+
+#main-content h4 {
+    font-size: 14pt;
+}
+
 div.clear {
 	clear: both;
 }
