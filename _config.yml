@@ -1,5 +1,6 @@
 theme: jekyll-theme-architect
 paginate: 10
+baseurl: /example
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
@@ -10,4 +11,3 @@ plugins:
  - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate
- - jekyll-textile-convert 
