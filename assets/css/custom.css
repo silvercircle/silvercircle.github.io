@@ -162,3 +162,8 @@ div.menu {
 	width:100px;
     padding:4px 5px;
 }
+
+div.two_cols {
+	column-count: 2;
+	column-gap: 30px;
+}

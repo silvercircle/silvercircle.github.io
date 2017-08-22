@@ -1,6 +1,15 @@
- {% for post in site.posts limit:5 %}
+<h2>Recent</h2>
+ {% assign counter = 1 %}
+ {% for post in site.posts %}
+   {% if post.isfollowup and post.isfollowup == 1 %}
+   {% continue %}
+   {% endif %}
    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
    <p class="author">
      <span class="date">{{ post.date }}</span>
    </p>
+   {% assign counter = counter | plus: 1 %}
+   {% if counter > 5 %}
+   {% break %}
+   {% endif %}   
  {% endfor %}
