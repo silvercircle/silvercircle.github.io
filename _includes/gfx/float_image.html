@@ -1,0 +1,10 @@
+{% assign this_width = include.width | plus: 16 %}
+<div class="floatimage {{include.align}}" style="width:{{this_width}}px; max-width:{{this_width}}px;">
+<a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" rel="prettyPhoto[gallery]" title="{{include.title}}">
+	    <img src="{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+</a>
+<div class="floatimage_title">
+    {{ include.title }}
+    {{ this_width }}
+</div>
+</div>

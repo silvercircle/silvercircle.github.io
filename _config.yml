@@ -11,3 +11,6 @@ plugins:
  - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate
+bcolor: "#ddd"
+excerpt_separator: <!--more-->
+

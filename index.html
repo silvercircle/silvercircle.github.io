@@ -4,13 +4,17 @@ layout: default
 
 <div class="blog-index">
 	{% for post in paginator.posts %}
-	  <h1><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h1>
+	  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	  <p class="author">
 	    <span class="date">{{ post.date }}</span>
 	  </p>
 	  <div class="content">
-	    {{ post.content }}
+	    {{ post.excerpt }}
 	  </div>
+	  <div style="float:right;">
+	   <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
+	  </div>
+	  <div class="clear"></div>
 	{% endfor %}
 	<div class="pagination">
 	  <a href="/blog/archives">Blog Archives</a>
