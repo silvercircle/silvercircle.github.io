@@ -42,10 +42,19 @@ site administrator who can provide the macros to easily embed images and other
 rich media content OR some HTML and CSS knowledge. Either way, it's a bit more 
 complex than taking an image and dragging it into your post, but it is 
 possible and as you can see here on this site, the results don't look 
-different from pages that were created with a full grown CMS..
+different from pages that were created with a full grown CMS.
+
+Authoring static sites doesn't mean you have to forget **all** the cool things 
+like pretty picture galleries. These things are usually implemented on the 
+client's side via JavaScript and all you have to do as a site author is to 
+include some scripts and CSS in your pages and format your content in a way 
+that allows the scripts to find and transform it.
 
 In some way, it is also more flexible. Most CMS only allow subsets of HTML 
-and/or CSS while Jekyll allows basically everything (except scripts).
+and/or CSS while Jekyll allows basically everything (except scripts), but that 
+flexibility comes with a price, as most things do. As an author, you have to 
+adopt your workflow and leave the comfortable WYSIWY(P)G (the 'P' stands for 
+probably) world you may be used to.
 
 ## There are cons, there must be, right?
 
@@ -71,4 +80,10 @@ and it's even possible to add comments from Facebook to a static page.
 
 With a database, things like full text search, categorizing and tagging are 
 easy to implement standard features nowadays. Every blog or CMS software has 
-such features and they are generally well accepted by users 
+such features and they are generally well accepted by users.
+
+**Without** a database, however, even simple things like a full text search 
+becomes difficult, but again, like in the above example with a comment system, 
+3rd party providers may come to rescue. It's simple to add a customized google 
+search box to your site, giving you all of Google's knowledge on searching web 
+pages for free (well, there be ~~dragons~~ ads).
