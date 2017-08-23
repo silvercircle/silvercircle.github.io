@@ -47,13 +47,15 @@ This won't work, because filters are not allowed in the for loop.
 The fix is first assign the filtered collection to a new variable and then iterate over it.
 
 ## Parse markdown in HTML content
-
+<div class="two_cols" markdown="1">
 Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary 
 text within a single post or article. By default, markdown will not parse 
-inside HTML tags, which is usually what you want, but sometimes you would want 
-the exact opposite of the default behavior and parse inside HTML tags. 
-Consider, you want to use a `<div>` section for highlighting a paragraph with 
-a custom CSS class or similar purpose.
+inside HTML tags, which is usually the desired behavior, but sometimes you may 
+want the exact opposite and parse inside HTML tags. Consider, you want to use 
+a `<div>` section for highlighting a paragraph with a custom CSS class or 
+similar purpose like I did in this paragraph for which I assigned a 2-column 
+CSS layout by simply wrapping it in `<div>` tags.
+</div>
 
 {% highlight html linenos %}
 <div class="myclass">
@@ -86,4 +88,12 @@ of Jekyll but is now included in Jekyll 3.
 All variables defined in the FrontMatter are available as members of the 
 *page* object. If FrontMatter defines the title then you can access it via {% 
 raw %} **{{ page.title }}** {% endraw %} in the post. In a similar way you can 
-access these variables when iterating over post collections in a loop. 
+access these variables when iterating over post collections in a loop.
+
+## When exactly is a FrontMatter block necessary?
+
+Basically, for all pages that become content pages. It doesn't matter whether 
+the page is a markdown document or plain HTML - if it's going to become its 
+own page, it needs a FrontMatter block. Layouts do not need any and neither do 
+fragments that are included, because technically, they become a part of the 
+page that includes them..
