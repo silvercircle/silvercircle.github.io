@@ -17,7 +17,7 @@ questions tagged with
 Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given 
 when still available. As almost always with such matter, stackoverflow is the 
 #1 resource for such questions.
-
+<!--more -->
 ## How to filter posts in a loop
 
 Suppose you want to iterate over the collection of posts in the paginator and 

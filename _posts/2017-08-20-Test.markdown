@@ -8,23 +8,66 @@ date: 2017-08-20 00:00:00
 blog: true
 ---
 
-# This is supposed to be the excerpt:
-Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum. 
+# This is supposed to be the excerpt
+<br>
+Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
+semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a 
+pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 
+Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
+bibendum. 
 
-In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
+In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. 
+Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien 
+ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
 <!--more-->
 ## Here is another header
 {% include gfx/subfolder_include.html %}This is a paragraph
 
 ### and another one
-{% include gfx/float_image.html image="gadse.jpg" align="right" width="300" title="A image with a fairly long title that needs to wrap around" %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien.
+{% include gfx/float_image.html image="gadse.jpg" align="right" width="300" 
+title="A image with a fairly long title that needs to wrap around" %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel 
+faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis 
+venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit 
+viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec 
+interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, 
+pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet 
+volutpat sapien.
 
-Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum. In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
+Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
+semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a 
+pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 
+Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
+bibendum. In consectetur erat eget urna convallis, sit amet feugiat felis 
+venenatis. Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque 
+sapien ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
 
 ## Part number two
-Aenean in ex consectetur, vehicula nisi vitae, blandit orci. Fusce sollicitudin sem non elit vulputate fermentum. Proin ultrices placerat magna ut mollis. Etiam non lectus finibus, eleifend magna a, fermentum nisi. Praesent condimentum, dui ut suscipit dapibus, tellus sem venenatis magna, vel pretium turpis turpis non massa. Nunc porttitor tortor nisl, ac vestibulum tellus maximus eu. Praesent non urna maximus, lacinia ex eget, ullamcorper est. Ut ex magna, aliquet quis eros sed, imperdiet porta arcu. Nam facilisis viverra quam, sit amet efficitur ligula sagittis at. Donec sit amet nunc ex. Maecenas eleifend eget mauris quis molestie. Integer porta, purus nec euismod laoreet, dolor justo interdum erat, vitae porttitor est justo quis odio. Donec pharetra fermentum semper. Maecenas porttitor nisl tortor.
-{% include gfx/block_image.html image="gadse.jpg" align="right" width="300" title="A image with a fairly long title that needs to wrap around" %}
-Aliquam pulvinar massa lacus, a varius magna hendrerit a. Nulla facilisi. In gravida, ligula nec suscipit ornare, odio nibh aliquet nulla, suscipit dictum turpis erat et enim. Aliquam ultrices nulla rutrum ultricies porttitor. Vestibulum feugiat finibus turpis quis viverra. Pellentesque id diam nisi. Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.
+Aenean in ex consectetur, vehicula nisi vitae, blandit orci. Fusce 
+sollicitudin sem non elit vulputate fermentum. Proin ultrices placerat magna 
+ut mollis. Etiam non lectus finibus, eleifend magna a, fermentum nisi. 
+Praesent condimentum, dui ut suscipit dapibus, tellus sem venenatis magna, vel 
+pretium turpis turpis non massa. Nunc porttitor tortor nisl, ac vestibulum 
+tellus maximus eu. Praesent non urna maximus, lacinia ex eget, ullamcorper 
+est. Ut ex magna, aliquet quis eros sed, imperdiet porta arcu. Nam facilisis 
+viverra quam, sit amet efficitur ligula sagittis at. Donec sit amet nunc ex. 
+Maecenas eleifend eget mauris quis molestie. Integer porta, purus nec euismod 
+laoreet, dolor justo interdum erat, vitae porttitor est justo quis odio. Donec 
+pharetra fermentum semper. Maecenas porttitor nisl tortor.
+{% include gfx/block_image.html image="gadse.jpg" align="right" width="300" 
+title="A image with a fairly long title that needs to wrap around" %}<br>
+Aliquam pulvinar massa lacus, a varius magna hendrerit a. Nulla facilisi. In 
+gravida, ligula nec suscipit ornare, odio nibh aliquet nulla, suscipit dictum 
+turpis erat et enim. Aliquam ultrices nulla rutrum ultricies porttitor. 
+Vestibulum feugiat finibus turpis quis viverra. Pellentesque id diam nisi. 
+Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.
 
-Nam est est, congue ut massa sed, imperdiet rhoncus odio. Nulla fermentum velit nibh. Phasellus scelerisque non sem eu ornare. Morbi ac dictum lacus, eget luctus lorem. Fusce non odio laoreet, tincidunt lacus in, lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam fringilla laoreet ligula tempor hendrerit. Nam suscipit ornare gravida. Nullam in turpis tempus, ultricies leo in, convallis velit. Fusce quis libero eget odio varius blandit. Proin ac est vulputate, dictum sem ac, aliquam ipsum. Quisque quis sapien eu felis venenatis laoreet ac a mi. Praesent facilisis fermentum felis nec vulputate. 
+Nam est est, congue ut massa sed, imperdiet rhoncus odio. Nulla fermentum 
+velit nibh. Phasellus scelerisque non sem eu ornare. Morbi ac dictum lacus, 
+eget luctus lorem. Fusce non odio laoreet, tincidunt lacus in, lobortis 
+ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nam fringilla laoreet ligula tempor hendrerit. Nam 
+suscipit ornare gravida. Nullam in turpis tempus, ultricies leo in, convallis 
+velit. Fusce quis libero eget odio varius blandit. Proin ac est vulputate, 
+dictum sem ac, aliquam ipsum. Quisque quis sapien eu felis venenatis laoreet 
+ac a mi. Praesent facilisis fermentum felis nec vulputate. 
