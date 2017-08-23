@@ -3,7 +3,7 @@ author: alex
 title: Multipage
 prevpage: /multipage/Test-1
 layout: default
-permalink: /multipage/Test-2
+permalink: /multipage/Test-2.html
 isfollowup: 1
 ---
 # This is page 2

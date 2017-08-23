@@ -4,10 +4,20 @@
    {% if post.isfollowup and post.isfollowup == 1 %}
    {% continue %}
    {% endif %}
-   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-   <p class="author">
-     <span class="date">{{ post.date }}</span>
-   </p>
+   <h3 style="margin-bottom:2px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        {% if post.modified %}       
+        <time class="timeago" datetime="{{ post.modified | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.modified }}</time>
+        {% else %}
+        <time class="timeago" datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date }}</time>
+        {% endif %}
+     </span>
+   </div>
+   <span class="author">
+   {{post.author}}
+   </span>
+   <br>
    {% assign counter = counter | plus: 1 %}
    {% if counter > 5 %}
    {% break %}

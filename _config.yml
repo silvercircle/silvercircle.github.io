@@ -15,3 +15,7 @@ bcolor: "#ddd"
 excerpt_separator: <!--more-->
 title: Silvercircle's Jekyll playground
 description: A Jekyll test site with no particular purpose.
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

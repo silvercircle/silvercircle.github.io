@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="blog-index">
-    {% for post in paginator.posts %}
+    {% assign posts = paginator.posts | where:"blog",true %}
+    {% for post in posts %}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <p class="author">
         <span class="date">{{ post.date }}</span>

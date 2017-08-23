@@ -1,6 +1,7 @@
 ---
 layout: default
 author: alex
+blog: true
 ---
 
 # Aren't static websites anti-social? 
