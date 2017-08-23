@@ -1,10 +1,10 @@
 ---
 author: AlexVie
-title: Jekyll peronal FAQ
+title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00
 modified: 2017-08-23 00:45:00
-layout: no_sidebar
+layout: default
 ---
 
 # Jekyll personal FAQ
@@ -48,12 +48,12 @@ The fix is first assign the filtered collection to a new variable and then itera
 
 ## Parse markdown in HTML content
 
-Markdown allows you to use HTML tags and therefore mix HTML and ordinary text 
-within a single post or article. By default, markdown will not parse inside 
-HTML tags, which is usually what you want, but sometimes you would want the 
-exact opposite of the default behavior and parse inside HTML tags. Consider, 
-you want to use a DIV section for highlighting a paragraph with a custom CSS 
-class or similar purpose.
+Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary 
+text within a single post or article. By default, markdown will not parse 
+inside HTML tags, which is usually what you want, but sometimes you would want 
+the exact opposite of the default behavior and parse inside HTML tags. 
+Consider, you want to use a `<div>` section for highlighting a paragraph with 
+a custom CSS class or similar purpose.
 
 {% highlight html linenos %}
 <div class="myclass">
@@ -78,4 +78,12 @@ If you need to highlight a code block containing liquid tags, you have to
 includes a block defined for syntax highlighting. You have to enclose the 
 liquid code in [% raw %] ... [% endraw %] tags (note, I have to use square 
 brackets here, otherwise the tags wouldn't show up) to prevent it from being 
-parsed instead of just highlighted.
+parsed instead of just highlighted. The raw tag was a plugin in older versions 
+of Jekyll but is now included in Jekyll 3.
+
+## Accessing front matter variables in the post
+
+All variables defined in the FrontMatter are available as members of the 
+*page* object. If FrontMatter defines the title then you can access it via {% 
+raw %} **{{ page.title }}** {% endraw %} in the post. In a similar way you can 
+access these variables when iterating over post collections in a loop. 

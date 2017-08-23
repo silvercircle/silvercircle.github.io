@@ -10,7 +10,20 @@
         </section>
 
         <aside id="sidebar">
+          <h2>Search site</h2>
+          <div id="search">
+              <form role="search" method="get" action="{{ site.baseurl }}/search/">
+                  <input id="searchString" name="searchString" type="text">
+                  <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+              </form>
+          </div>
+          <br>
+          <br>        
           {% include sidebar/sidebar_recent_posts.html %}
+          <br>
+          <h2>Quick links</h2>
+          <h3><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
@@ -39,6 +52,6 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    {% include colorbox.html %}
+    {% include footer_scripts.html %}
   </body>
 </html>
