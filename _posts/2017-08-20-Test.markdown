@@ -21,7 +21,7 @@ Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien
 ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
 <!--more-->
 ## Here is another header
-{% include gfx/subfolder_include.html %}This is a paragraph
+This is a paragraph
 
 ### and another one
 {% include gfx/float_image.html image="gadse.jpg" align="right" width="300" 
