@@ -3,14 +3,56 @@ layout: default
 author: alex
 blog: true
 date: 2017-08-22 16:30:00
-modified: 2017-08-23 22:16:00
+modified: 2017-08-23 23:30:00
 ---
 
 # Blogging with a static site generator
 <br>
+The big question is: **WHY?** Why should someone give up all the innovations 
+of the last 20 years or so that made the Web a dynamic, lively and social 
+place and go back to publishing static HTML pages - something we did 25 years 
+ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
+
+## Some history lesson
+
 Back, in the 90's, when the web was still young, it was a very static place. 
-Most pages were simple HTML documents with 
-## Aren't static websites anti-social?
+Most pages were simple HTML documents with the rare image added every now and 
+then. CSS didn't exist, markup was added in form of attributes to HTML tags, 
+scripts were a rare thing, even in the late 90's, because JavaScript was, in 
+its early years, a troubled technology suffering from many problems. The big 
+thing, that entered the game in the second half of the 90's to make the web 
+more dynamic was actually Java, not JavaScript. Applets were the big deal back 
+then.
+
+Today, we know, it was a flawed technology that failed. Replaced - for some 
+time - by other flawed technologies, namely Flash and later Silverlight. The 
+latter never gained greater acceptance, while the former got its years of 
+glory and must be given credit for some progress that wouldn't have been 
+possible without Flash. For many years, Flash was the only way to play videos 
+embedded in a browser, but that's only one thing.
+
+Looking back into the evolution of the dynamic web, it's quite interesting to 
+see how that evolution iterated over a couple of steps with the big goal 
+always being the same: *more dynamic, less static content*. The final 
+iteration (or at least, the most recent step we currently know) manifested 
+itself in two things:
+
+* The evolution of JavaScript from a slow, interpreted, troubled and insecure 
+  programming language into a powerful first class language that is nowadays 
+  one of the most popular languages globally, offers great performance and has 
+  left behind most of its inherent troubles that plagued it in its early days.
+
+* The evolution of HTML from a very limited markup language that was 
+  cumbersome to use, because of its lack of style
+
+These two steps made all other innovations like Flash, Silverlight and Java 
+basically obsolete. With HTML and JavaScript, it is now possible to build a 
+dynamic experience that does not rely on any third party software. High 
+quality implementations of these two technologies are part of all modern 
+browsers, available on a wide range of different devices. Be it PC, tablet, 
+smartphone or even a gaming console - the
+
+## But... aren't static websites anti-social?
 
 Well, in some ways they were considered anti-social before the Web 2.0 
 revolution with social media and dynamic sites took off many years ago. The 
@@ -48,19 +90,26 @@ Authoring static sites doesn't mean you have to forget **all** the cool things
 like pretty picture galleries. These things are usually implemented on the 
 client's side via JavaScript and all you have to do as a site author is to 
 include some scripts and CSS in your pages and format your content in a way 
-that allows the scripts to find and transform it.
+that allows the scripts to find and transform it. Since Jekyll is fully 
+template driven, it gives you all the necessary freedom to include almost any 
+JavaScript feature you want.
 
 In some way, it is also more flexible. Most CMS only allow subsets of HTML 
-and/or CSS while Jekyll allows basically everything (except scripts), but that 
-flexibility comes with a price, as most things do. As an author, you have to 
-adopt your workflow and leave the comfortable WYSIWY(P)G (the 'P' stands for 
-probably) world you may be used to.
+and/or CSS in content, while Jekyll allows basically everything (except 
+scripts), but that flexibility comes with a price, as most things do. As an 
+author, you have to adopt your workflow and leave the comfortable WYSIWY(P)G 
+(the 'P' stands for probably) world you may be used to. It's not that 
+difficult though and if you have any experience with Wiki authoring, then 
+markdown won't pose a big challenge as it's remarkably similar.
 
 ## There are cons, there must be, right?
 
 Well, of course, there are. The total absence of dynamic site building 
 abilities (with the exception of some client-sided Ajax/JavaScript tricks) 
-implies a lot of downsides.
+implies a lot of downsides. Whether or not they are significant enough to work 
+as a valid argument against using a static site generator is up to the site 
+owner. The decision might not be an easy one, because the cons are 
+counter weighted by quite some pros. 
 
 ### Lack of interaction
 
@@ -86,4 +135,5 @@ such features and they are generally well accepted by users.
 becomes difficult, but again, like in the above example with a comment system, 
 3rd party providers may come to rescue. It's simple to add a customized google 
 search box to your site, giving you all of Google's knowledge on searching web 
-pages for free (well, there be ~~dragons~~ ads).
+pages for free (well, there be ~~dragons~~ ads, of course).
+
