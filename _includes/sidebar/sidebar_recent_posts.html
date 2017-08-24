@@ -23,3 +23,9 @@
    {% break %}
    {% endif %}   
  {% endfor %}
+<hr class="blueline">
+<h2>Categories</h2>
+{% for category in site.categories %}
+   <h3><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/index.html">{{ category | first | strip_html | tolower}}</a></h3>
+{% endfor %}
+<hr class="blueline">

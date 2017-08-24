@@ -3,16 +3,18 @@ layout: default
 author: alex
 blog: true
 date: 2017-08-22 16:30:00+0200
-modified: 2017-08-24 01:10:00+0200
+modified: 2017-08-24 16:41:24+0200
+categories: [Jekyll]
 ---
 
 # Blogging with a static site generator
-<br>
+{% include post_header.html %}
+
 The big question is: **WHY?** Why should someone give up all the innovations 
 of the last 20 years or so that made the Web a dynamic, lively and social 
 place and go back to publishing static HTML pages - something we did 25 years 
 ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
-
+<!--more-->
 ## Some history lesson
 
 Back, in the 90's, when the web was still young, it was a very static place. 
@@ -24,12 +26,12 @@ thing, that entered the game in the second half of the 90's to make the web
 more dynamic was actually Java, not JavaScript. Applets were the big deal back 
 then.
 
-Today we know, it was a flawed technology that failed. Replaced - for some 
+Today, we know it was a flawed technology that failed. Replaced - for some 
 time - by other flawed technologies, namely Flash and later Silverlight. The 
 latter never gained greater acceptance, while the former got its years of 
 glory and must be given credit for some progress that wouldn't have been 
 possible without Flash. For many years, Flash was the only way to play videos 
-embedded in a browser, but that's only one thing.
+embedded in a browser and the technology that made sites like YouTube possible in the first place.
 
 Looking back into the evolution of the dynamic web, it's quite interesting to 
 see how that evolution iterated over a couple of steps with the big goal 
@@ -110,7 +112,7 @@ markdown won't pose a big challenge as it's remarkably similar.
 
 ## Performance and security
 
-Here we have the two most important advantages of using static pages for 
+Here we have the two most important advantages of using static pages 
 publishing. First, delivering static HTML pages and their linked resources is 
 the bread and butter for any web server software. On modern hardware, a HTTP 
 server like nginx can satisfy ten-thousands of static page requests every 

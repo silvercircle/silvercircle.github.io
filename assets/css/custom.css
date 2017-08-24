@@ -262,6 +262,7 @@ body {
 
 header {
 	font-family: Monda, Helvetica, Arial, serif;
+	padding-top:20px;
 }
 
 header h1 {
@@ -272,6 +273,10 @@ header h2 {
 	font-size: 16pt;
 }
 
+h2.header {
+	color: white;
+	font-size:18pt;
+}
 div#content-wrapper {
     background-color: #f0f0f0;
     padding:0;
@@ -480,4 +485,11 @@ div#search form {
 	margin-left: 0;
 	color: white;
 	border-radius: 0;
+}
+
+hr.blueline {
+	color: orangered;
+	height: 1px;
+	border: none;
+	background-color: orangered;
 }

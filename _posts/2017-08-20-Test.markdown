@@ -3,13 +3,13 @@ layout: no_sidebar
 title: A test page
 comments: true
 author: alex
-category: default
 date: 2017-08-20 00:00:00
 blog: true
 ---
 
 # This is supposed to be the excerpt
-<br>
+{% include post_header.html %}
+
 Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
 semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a 
 pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 

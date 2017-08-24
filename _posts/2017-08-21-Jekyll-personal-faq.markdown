@@ -3,13 +3,14 @@ author: AlexVie
 title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00
-modified: 2017-08-23 00:45:00
+modified: 2017-08-24 22:27:26+0200
 layout: default
+categories: [Jekyll,site]
 ---
 
 # Jekyll personal FAQ
+{% include post_header.html %}
 
-<br>
 This is a list of questions (and answers) I stumbled over while designing this 
 site. It is by no means a complete list and will most likely cover topics that 
 are already documented elsewhere. I found many answers on [stackoverflow 
