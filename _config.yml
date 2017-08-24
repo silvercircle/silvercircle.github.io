@@ -20,3 +20,5 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 site-verification: Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y
+timezone: Europe/Berlin
+
