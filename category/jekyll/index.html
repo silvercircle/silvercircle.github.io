@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="blog-index">
+    <h1>All posts in category Jekyll:</h1>   
+    {% assign posts = site.posts | where_exp:"item","item.categories contains 'Jekyll'" %}
+    {% for post in posts %}
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="author">
+        Written by {{post.author}}, <time class="timeago" datetime="{{post.date}}">{{ post.date }}</time>
+      </div>
+      <div class="clear"></div>
+    {% else %}
+      <h3>This category is empty</h3>
+    {% endfor %}
+    <br>
+</div>
