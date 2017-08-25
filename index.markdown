@@ -5,7 +5,7 @@ layout: default
 ---
 # Welcome
 
-#### So, what's this all about?
+## So, what's this all about?
 
 Well, right now it's not much. It's some sort of playground to test 
 [Jekyll](https://jekyllrb.com), a static page generator that has enough 
@@ -18,7 +18,7 @@ configuration. The only thing needed is a working ruby and Jekyll installation
 on either your local development machine or the server machine itself and a 
 web server that can serve static files (basically, the role model of all web 
 servers).
-#### How it works?
+## How it works?
 Fairly simple. You write content in markdown format, a plain text format that 
 has become popular among developers and blog authors over the years. MD is 
 simple, yet powerful enough to create well formatted postings and has features 
@@ -56,7 +56,4 @@ you.
 If you cannot build on the server, then you need to install Jekyll on your own 
 machine and build your site locally, then synchronized the built site.
  
-### Level 3 header
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien.
-#### Level 4 header
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien.
+{% include disqus_fragment.html %}

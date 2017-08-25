@@ -181,3 +181,4 @@ becomes difficult, but again, like in the above example with a comment system,
 search box to your site, giving you all of Google's knowledge on searching web 
 pages for free (well, there be ~~dragons~~ ads, of course).
 
+{% include disqus_fragment.html %}

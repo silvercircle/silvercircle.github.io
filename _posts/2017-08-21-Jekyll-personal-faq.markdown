@@ -98,3 +98,23 @@ the page is a markdown document or plain HTML - if it's going to become its
 own page, it needs a FrontMatter block. Layouts do not need any and neither do 
 fragments that are included, because technically, they become a part of the 
 page that includes them..
+
+## Check whether the current item is the last in an iteration
+
+{% highlight liquid linenos %}
+{% raw %}
+{% unless forloop.last %},&nbsp;{% endunless %}
+{% endraw %}
+{% endhighlight %}
+
+The *unless* statement outputs everything between it and the next *endunless* as long as the condition does **not** evaluate to true.
+
+## Iterate over categories and capture the name
+
+{% highlight liquid linenos %}
+{% raw %}
+{% for category in site.categories %}
+   <h3><a href="[....]{{ category | first | strip_html | downcase}}/index.html">{{ category | first | strip_html | tolower}}</a></h3>
+{% endfor %}
+{% endraw %}
+{% endhighlight %}

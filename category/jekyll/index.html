@@ -4,6 +4,7 @@ layout: default
 
 <div class="blog-index">
     <h1>All posts in category Jekyll:</h1>   
+    <div class="two_cols">
     {% assign posts = site.posts | where_exp:"item","item.categories contains 'Jekyll'" %}
     {% for post in posts %}
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -14,5 +15,6 @@ layout: default
     {% else %}
       <h3>This category is empty</h3>
     {% endfor %}
+    </div>
     <br>
 </div>

@@ -20,5 +20,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-site-verification: not-verified-yet
+site-verification: PLmE9YXaD6lmJOTH9qkv5IOOLivAP0xS8SfwYhK1Blo
 timezone: Europe/Berlin
+have_disqus: true
+disqus_registered_baseurl: https://miranda.or.at/blog
