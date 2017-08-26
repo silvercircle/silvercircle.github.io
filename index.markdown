@@ -1,12 +1,12 @@
 ---
-author: alex
+author: Alex
 title: Home
 layout: default
+date: 2017-08-25 06:35:00+0200
+modified: 2017-08-25 06:35:07+0200
 ---
-# Welcome
-
-## So, what's this all about?
-
+# So, what's this all about?
+<br>
 Well, right now it's not much. It's some sort of playground to test 
 [Jekyll](https://jekyllrb.com), a static page generator that has enough 
 flexibility to build a blog or documentation site with it, but leaves out all 
@@ -18,16 +18,17 @@ configuration. The only thing needed is a working ruby and Jekyll installation
 on either your local development machine or the server machine itself and a 
 web server that can serve static files (basically, the role model of all web 
 servers).
+
 ## How it works?
 Fairly simple. You write content in markdown format, a plain text format that 
 has become popular among developers and blog authors over the years. MD is 
 simple, yet powerful enough to create well formatted postings and has features 
 to embed images and other rich media content. It also can output well 
 formatted and syntax colored code in many programming languages which is a 
-favorite feature for many programmers.
+favorite feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any possible way.
 
 Once you are done with writing, you tell Jekyll to *build* the site. During 
-this process, Jekyll takes your content and translates it from markdown into 
+this process, Jekyll takes your content and translates it from Markdown into 
 HTML. The HTML is then fed into templates which are processed by the template 
 compiler. It spits out ready-to-serve static HTML pages. Jekyll comes with its 
 own simple web server which you can use locally on your development machine to 
@@ -36,10 +37,9 @@ web server software. Be it Apache, nginx, IIS or something completely
 different - it will work, because serving static pages is the bread and butter 
 of all web servers. 
 
-So, in order to deploy, you upload the generated site folder. This is not a 
-problem as long as the site is small, but for big sites with hundreds, 
-possibly thousands of pages, it's not an option to upload the entire site 
-after each change. An alternative workflow is necessary.
+To deploy, you upload the generated site to your host into the document root folder. There is no need to install, set up a database, configure folder permissions or do any other fancy things. You deploy like we deployed our first web pages more than 20 years ago, except that we weren't using **S**FTP, but you seriously should.
+
+Of course, web sites grow, and with an increasing number of pages, articles and content, the process of uploading will take longer and longer and at some point, a more efficient solution will be desireable.
 
 The easiest method is to upload only the source files (your content written in 
 markdown and custom templates, style sheets, scripts and resources) and then 

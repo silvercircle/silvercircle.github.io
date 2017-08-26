@@ -360,7 +360,7 @@ div.site_footer_wrapper {
 	color: white;
 	min-height:50px;
     display: table;
-    width:100%;
+	width:100%;	
 }
 
 div.site_footer {

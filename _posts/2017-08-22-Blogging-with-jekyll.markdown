@@ -31,7 +31,13 @@ time - by other flawed technologies, namely Flash and later Silverlight. The
 latter never gained greater acceptance, while the former got its years of 
 glory and must be given credit for some progress that wouldn't have been 
 possible without Flash. For many years, Flash was the only way to play videos 
-embedded in a browser and the technology that made sites like YouTube possible in the first place.
+embedded in a browser and the technology that made sites like YouTube possible in the first places.
+
+While Java, Flash and Silverlight were client sided things, at about the same time server sided scripting started to take off while Java applets tried to conquer the web and ultimately failed. CGI scripts, the very basic form of server sided dynamic content creation, had existed for a while, but their usefulness was limited and even back then, they were a security and performance nightmare for every webmaster. PERL was the language of choice for early CGI devlopment in the 90's, but Perl never was a very approachable language - a powerful one in the right hands for sure, but also a messy one. Other options to write CGI scripts were C and obviously the omnipresent shell script dialect of choice.
+
+Everything changed in 1995 though, when a Canadian programmer released a software to simplify form driven web applications and called it Personal Home Page tools - PHP was born. Initially, it was not planned to become a completely new and independent programming language, but that is exactly what happened and the rest is history. Despite its flaws and ugliness (a result of a merely chaotic and organic development process without a clear design), PHP took the Web by surprise and quickly became the most important tool for creating dynamic web content.
+
+That fact that MySQL - a free and open source RDBMS appeared at about the same time did help a lot, of course. 
 
 Looking back into the evolution of the dynamic web, it's quite interesting to 
 see how that evolution iterated over a couple of steps with the big goal 
@@ -50,7 +56,7 @@ itself in two things:
   all without any third party plugins. HTML5 can do simple animations, vector 
   graphics, can embed images and videos, and can, together with JavaScript, 
   build attractive and easy-to-use user interfaces. Sites like Google Docs 
-  showcase what modern web technologies can really do.
+  and desktop applications built with the very same web technologies like [Visual Studio Code](https://code.visualstudio.com/) showcase what these technologies can really do.
 
 These two steps made all other innovations like Flash, Silverlight and Java 
 basically obsolete. With HTML5 and JavaScript, it is now possible to build a 
@@ -122,7 +128,7 @@ ease. CPU and memory load are irrelevant when serving static pages, because
 you'll hit the network and/or storage transfer limit way faster than you can 
 fully load even a single core of a modern CPU.
 
-So, the first advantage is that you save hosting fees, simply, because a low 
+So, the first advantage is that youu save hosting fees, simply, because a low 
 spec server hardware will certainly do it, as long as you have enough network 
 capacity. Publishing with Wordpress, Drupal, Joomla or similar piece of 
 software, much more powerful thus more expensive hardware will be needed for 
@@ -144,12 +150,20 @@ One of the biggest threats are security holes in web applications. While the
 situation has improved a bit over the last couple of years, mainly because 
 more and more developers understand how basic attack vectors like XSS and SQL 
 injections work and how to fend off attacks against them, there are still 
-countless vulnerable web applications in the wild.
+countless vulnerable web applications in the wild. With static pages, however, the risk is almost completely eliminated, because the majority of attack vectors vanish with the absence of code execution and database interaction. 
+
+## Revision control
+
+Wiki authors probably know the deal. Every article is managed by some kind of revision control system. This has a number of advantages:
+
+* **Transparent changes**. The revision history can be used to see all changes made to the article.
+
+* **Easy way to revert**. Any change to an article, template, CSS or any other file can be undone with ease. Just revert to an earlier version.
+
 
 ## There are cons, there must be, right?
 
-Well, of course, there are. The total absence of dynamic site building 
-abilities (with the exception of some client-sided Ajax/JavaScript tricks) 
+Well, of course, there are. The total absence of dynamic site building abilities (with the exception of some client-sided Ajax/JavaScript tricks) 
 implies a lot of downsides. Whether or not they are significant enough to work 
 as a valid argument against using a static site generator is up to the site 
 owner. The decision might not be an easy one, because the cons are 
@@ -161,7 +175,7 @@ Without dynamic content, even simple features like a flat comment system is
 difficult to implement. Not impossible, but still difficult and no matter how 
 well you do it, it will never be as feature-rich and powerful as a database 
 driven forum or comment system. Third party solutions like 
-[Disqus](https://www.discuss.com) can fill the gap and can be added to static 
+[Disqus](https://www.disqus.com) can fill the gap and can be added to static 
 sites, but it basically means you're giving it out of your hands, which might 
 not be what you want.
 

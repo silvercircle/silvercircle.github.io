@@ -1,7 +1,6 @@
 theme: jekyll-theme-architect
 paginate: 10
 paginate_path: "/blog/page:num/"
-baseurl: /blog
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
@@ -23,4 +22,4 @@ kramdown:
 site-verification: PLmE9YXaD6lmJOTH9qkv5IOOLivAP0xS8SfwYhK1Blo
 timezone: Europe/Berlin
 have_disqus: true
-disqus_registered_baseurl: https://miranda.or.at/blog
+disqus_registered_baseurl: https://miranda.or.at

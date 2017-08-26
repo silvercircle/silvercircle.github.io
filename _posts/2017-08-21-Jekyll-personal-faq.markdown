@@ -91,6 +91,8 @@ All variables defined in the FrontMatter are available as members of the
 raw %} **{{ page.title }}** {% endraw %} in the post. In a similar way you can 
 access these variables when iterating over post collections in a loop.
 
+All configuration variables defined in the site configuration (*_config.yaml*) are available in the `site` namespace.
+
 ## When exactly is a FrontMatter block necessary?
 
 Basically, for all pages that become content pages. It doesn't matter whether 
@@ -118,3 +120,5 @@ The *unless* statement outputs everything between it and the next *endunless* as
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
+
+{% include disqus_fragment.html %}
