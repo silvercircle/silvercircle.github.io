@@ -3,7 +3,7 @@ layout: default
 author: alex
 blog: true
 date: 2017-08-22 16:30:00+0200
-modified: 2017-08-24 16:41:24+0200
+modified: 2017-08-27 03:28:06+0200
 categories: [Jekyll]
 ---
 
@@ -33,11 +33,11 @@ glory and must be given credit for some progress that wouldn't have been
 possible without Flash. For many years, Flash was the only way to play videos 
 embedded in a browser and the technology that made sites like YouTube possible in the first places.
 
-While Java, Flash and Silverlight were client sided things, at about the same time server sided scripting started to take off while Java applets tried to conquer the web and ultimately failed. CGI scripts, the very basic form of server sided dynamic content creation, had existed for a while, but their usefulness was limited and even back then, they were a security and performance nightmare for every webmaster. PERL was the language of choice for early CGI devlopment in the 90's, but Perl never was a very approachable language - a powerful one in the right hands for sure, but also a messy one. Other options to write CGI scripts were C and obviously the omnipresent shell script dialect of choice.
+While Java, Flash and Silverlight were client sided things, at about the same time server sided scripting started to take off while Java applets tried to conquer the web and ultimately failed. CGI scripts, the very basic form of server sided dynamic content creation, had existed for a while, but their usefulness was limited and even back then, they were a security and performance nightmare for every webmaster. PERL was the language of choice for early CGI development in the 90's, but Perl never was a very approachable language - a powerful one in the right hands for sure, but also a messy one. Other options to write CGI scripts were C and obviously the omnipresent shell script dialect of choice.
 
-Everything changed in 1995 though, when a Canadian programmer released a software to simplify form driven web applications and called it Personal Home Page tools - PHP was born. Initially, it was not planned to become a completely new and independent programming language, but that is exactly what happened and the rest is history. Despite its flaws and ugliness (a result of a merely chaotic and organic development process without a clear design), PHP took the Web by surprise and quickly became the most important tool for creating dynamic web content.
+Everything changed in 1995 though, when a Canadian programmer released a software to simplify form driven web applications and called it Personal Home Page tools - PHP was born. Initially, it was not planned to create a completely new and independent programming language, but that is exactly what happened and the rest is history. Despite its flaws and ugliness (a result of a merely chaotic and organic development process without a clear design until about PHP version 4 many years later), PHP took the Web by surprise and quickly became the most important tool for creating dynamic web content.
 
-That fact that MySQL - a free and open source RDBMS appeared at about the same time did help a lot, of course. 
+The fact that MySQL - a free and open source RDBMS - appeared at about the same time did help a lot of course, because a database is almost mandatory for web applications that build content dynamically.
 
 Looking back into the evolution of the dynamic web, it's quite interesting to 
 see how that evolution iterated over a couple of steps with the big goal 
@@ -128,7 +128,7 @@ ease. CPU and memory load are irrelevant when serving static pages, because
 you'll hit the network and/or storage transfer limit way faster than you can 
 fully load even a single core of a modern CPU.
 
-So, the first advantage is that youu save hosting fees, simply, because a low 
+So, the first advantage is that you save hosting fees, simply, because a low 
 spec server hardware will certainly do it, as long as you have enough network 
 capacity. Publishing with Wordpress, Drupal, Joomla or similar piece of 
 software, much more powerful thus more expensive hardware will be needed for 
