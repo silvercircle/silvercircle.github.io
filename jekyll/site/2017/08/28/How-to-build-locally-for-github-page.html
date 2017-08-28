@@ -77,9 +77,10 @@
 <ul>
   <li>create the project.</li>
   <li><code class="highlighter-rouge">git init</code></li>
+  <li>Add your remote origin, set configuration options. Like always for a new repository.</li>
   <li>create a <code class="highlighter-rouge">.nojekyll</code> file in the root directory.</li>
   <li>create a <code class="highlighter-rouge">_site</code> folder and add it to <code class="highlighter-rouge">.gitignore</code> (in the root)</li>
-  <li>in the root folder of your project, create a new branch. I called mine <code class="highlighter-rouge">source</code> but it’s really up to you. The important thing is that <code class="highlighter-rouge">_site</code> should be part of your source branch and must be on master, otherwise github won’t serve the page.</li>
+  <li>in the root folder of your project, create a new branch. I called mine <code class="highlighter-rouge">source</code> but it’s really up to you. The important thing is that <code class="highlighter-rouge">_site</code> must <strong>not</strong> be part of your source branch and must be on master, otherwise github won’t serve the page.</li>
   <li><code class="highlighter-rouge">cd _site</code></li>
   <li><code class="highlighter-rouge">git init</code></li>
   <li><code class="highlighter-rouge">git remote add origin git@github.com:username/username.github.io.git</code></li>
