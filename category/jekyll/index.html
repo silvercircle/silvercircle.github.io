@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -247,3 +248,18 @@
 
   </body>
 </html>
+=======
+---
+layout: default
+pagination:
+  enabled: true
+  category: Jekyll
+  permalink: '/category/jekyll/page:num/'
+---
+<div class="blog-index">
+    {% for post in paginator.posts %}
+    {% include paginator_body.html %}
+    {% endfor %}
+    {% include paginator_pagination.html %}  
+</div>
+>>>>>>> 7fd36208ede1c4ac3d40c3bfb8910b9720e401d7

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -15,16 +14,19 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   <!-- Begin Jekyll SEO tag v2.2.3 -->
-<title>Silvercircle’s Jekyll playground | A Jekyll test site with no particular purpose.</title>
-<meta property="og:title" content="Silvercircle’s Jekyll playground">
+<title>Home | Silvercircle’s Jekyll playground</title>
+<meta property="og:title" content="Home">
+<meta name="author" content="Alex">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Jekyll test site with no particular purpose.">
 <meta property="og:description" content="A Jekyll test site with no particular purpose.">
-<link rel="canonical" href="http://localhost:4000/blog/">
-<meta property="og:url" content="http://localhost:4000/blog/">
+<link rel="canonical" href="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/">
 <meta property="og:site_name" content="Silvercircle’s Jekyll playground">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-08-25T06:35:00+02:00">
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Silvercircle’s Jekyll playground","description":"A Jekyll test site with no particular purpose.","url":"http://localhost:4000/blog/"}</script>
+{"@context":"http://schema.org","@type":"WebSite","name":"Silvercircle’s Jekyll playground","headline":"Home","author":{"@type":"Person","name":"Alex"},"datePublished":"2017-08-25T06:35:00+02:00","dateModified":"2017-08-25T06:35:00+02:00","description":"A Jekyll test site with no particular purpose.","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -61,69 +63,80 @@
         
         <section id="main-content">
         
-          <div class="blog-index">
-    
-    
-    <h1><a href="/2017/08/20/Test.html">A test page</a></h1>
-<div class="author" style="font-size:smaller; float:right;">
-    Written by alex | <time class="timeago" datetime="2017-08-20 00:00:00 +0000">2017-08-20 00:00:00 +0000</time>
-</div>
-<div class="clearfix"></div>
-<hr class="separator">
-<div class="content">
-  Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum. 
+          <h1 id="so-whats-this-all-about">So, what’s this all about?</h1>
+<p><br>
+Well, right now it’s not much. It’s some sort of playground to test 
+<a href="https://jekyllrb.com">Jekyll</a>, a static page generator that has enough 
+flexibility to build a blog or documentation site with it, but leaves out all 
+the bloat that makes modern content management systems slow and prone to 
+security problems.</p>
 
-</div>
-<div style="float:right;">
-  <a href="/2017/08/20/Test.html">Read more...</a>
-</div>
-<div class="clear"></div>
-<br>
-<br>
-    
-    <h1><a href="/jekyll/2017/08/22/Blogging-with-jekyll.html">Blogging With Jekyll</a></h1>
-<div class="author" style="font-size:smaller; float:right;">
-    Written by alex in <a href="/category/jekyll/index.html">Jekyll</a> | <time class="timeago" datetime="2017-08-22 16:30:00 +0200">2017-08-22 16:30:00 +0200</time>
-</div>
-<div class="clearfix"></div>
-<hr class="separator">
-<div class="content">
-  The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
+<p>With Jekyll, there is no need for a database or complex web server 
+configuration. The only thing needed is a working ruby and Jekyll installation 
+on either your local development machine or the server machine itself and a 
+web server that can serve static files (basically, the role model of all web 
+servers).</p>
 
-</div>
-<div style="float:right;">
-  <a href="/jekyll/2017/08/22/Blogging-with-jekyll.html">Read more...</a>
-</div>
-<div class="clear"></div>
-<br>
-<br>
-    
-    <h1><a href="/got/season7-recap.html">GoT Season 7 recap</a></h1>
-<div class="author" style="font-size:smaller; float:right;">
-    Written by alex in <a href="/category/got/index.html">GoT</a> | <time class="timeago" datetime="2017-08-28 01:31:31 +0200">2017-08-28 01:31:31 +0200</time>
-</div>
-<div class="clearfix"></div>
-<hr class="separator">
-<div class="content">
-  Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.
-</div>
-<div style="float:right;">
-  <a href="/got/season7-recap.html">Read more...</a>
-</div>
-<div class="clear"></div>
-<br>
-<br>
-    
-    <div class="pagination">
-        <br>
-        
-        <span class="page_number ">Page: 1 of 1</span>
-      
-        
-</div>
-<br>
-    
-</div>
+<h2 id="how-it-works">How it works?</h2>
+<p>Fairly simple. You write content in markdown format, a plain text format that 
+has become popular among developers and blog authors over the years. MD is 
+simple, yet powerful enough to create well formatted postings and has features 
+to embed images and other rich media content. It also can output well 
+formatted and syntax colored code in many programming languages which is a 
+favorite feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any possible way.</p>
+
+<p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During 
+this process, Jekyll takes your content and translates it from Markdown into 
+HTML. The HTML is then fed into templates which are processed by the template 
+compiler. It spits out ready-to-serve static HTML pages. Jekyll comes with its 
+own simple web server which you can use locally on your development machine to 
+test your site, but on your host, you’ll most likely use the already installed 
+web server software. Be it Apache, nginx, IIS or something completely 
+different - it will work, because serving static pages is the bread and butter 
+of all web servers.</p>
+
+<p>To deploy, you upload the generated site to your host into the document root folder. There is no need to install, set up a database, configure folder permissions or do any other fancy things. You deploy like we deployed our first web pages more than 20 years ago, except that we weren’t using <strong>S</strong>FTP, but you seriously should.</p>
+
+<p>Of course, web sites grow, and with an increasing number of pages, articles and content, the process of uploading will take longer and longer and at some point, a more efficient solution will be desireable.</p>
+
+<p>The easiest method is to upload only the source files (your content written in 
+markdown and custom templates, style sheets, scripts and resources) and then 
+build on the server itself. By default, Jekyll builds into a predefined 
+directory called <em>_site</em>, but it can be told to build anywhere in the file 
+system, including a sub directory of your webserver’s document root, which is 
+exactly what we want. In order for this to work, you need a host that allows 
+you to install Jekyll and its required infrastructure, namely Ruby. Chances 
+are, Ruby is already installed, because it’s a popular choice for web 
+applications via Rails, but if it’s not then you will either have to install 
+it yourself (if you have the rights on your host) or ask support to do it for 
+you.</p>
+
+<p>If you cannot build on the server, then you need to install Jekyll on your own 
+machine and build your site locally, then synchronized the built site.</p>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://miranda.or.at/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEX#@#2017-08-25 06:35:00 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
 
         </section>
 
@@ -265,17 +278,3 @@
 
   </body>
 </html>
-=======
----
-layout: default
-pagination:
-  enabled: true  
----
-<div class="blog-index">
-    {% assign posts = paginator.posts | where:"blog",true %}
-    {% for post in posts %}
-    {% include paginator_body.html %}
-    {% endfor %}
-    {% include paginator_pagination.html %}  
-</div>
->>>>>>> 7fd36208ede1c4ac3d40c3bfb8910b9720e401d7

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-28T08:37:42+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">GoT Season 7 recap</title><link href="http://localhost:4000/got/season7-recap.html" rel="alternate" type="text/html" title="GoT Season 7 recap" /><published>2017-08-28T01:31:31+02:00</published><updated>2017-08-28T01:31:31+02:00</updated><id>http://localhost:4000/got/Season7-recap</id><content type="html" xml:base="http://localhost:4000/got/season7-recap.html">&lt;h1 id=&quot;season-7-was-awesome-but&quot;&gt;Season 7 was awesome, but…&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
+    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28 01:31:31 +0200&quot;&gt;2017-08-28 01:31:31 +0200&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Good things do not last long enough&lt;/strong&gt;. Our perception makes us believe that good and enjoyable times zoom by way faster than their not so enjoyable counterparts.&lt;/p&gt;
+
+&lt;p&gt;Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.&lt;/p&gt;
+
+&lt;p&gt;Still, we have seen lots of awesome things and the plot has been brought to its first climax, the war for the Iron Throne between the challenger from across the narrow sea, our well-known Targaryan princess and the wannabe Queen Cersei who still sits on the Iron Throne. Additionally, the ground work for the final conflict between the human race and the White Walker has been laid.&lt;/p&gt;
+
+&lt;p&gt;We have seen Dragons, fire, epic battles, and it would not be GoT if we had not seen a few characters, even some central and important ones, pass away.&lt;/p&gt;
+
+&lt;p&gt;Cersei has indeed suffered a lot over the last 6 episodes. Effectively, she lost everything: Her father, her sons, her daughter, even her unborn child and it appears, she now lost her beloved brother as well. On top of that, we still remember what happened to her during season five at the hands of the High Sparrow: She was humiliated like no other Queen before, but no other than Cersei would have taken it without losing a single nuance of her dignity and we know, what kind of vengeance she had in store for those who treated her badly. She is our beloved antagonist, &lt;strong&gt;because&lt;/strong&gt; she is evil and corrupted, but she is also believable. Everything she does makes sense and she acts like a corrupt regent would do in the real world in order to protect and preserve her position of power.&lt;/p&gt;
+
+&lt;p&gt;The fact that she paid a huge price works well to make her even more believable. If she would still enjoy everything she had at the beginning of the show, that character would certainly be less authentic and probably also less realistic: You can’t be an asshole of such dimensions without ever having to pay a price.&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.</summary></entry><entry><title type="html">Jekyll personal FAQ</title><link href="http://localhost:4000/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>http://localhost:4000/help/Jekyll-personal-faq</id><content type="html" xml:base="http://localhost:4000/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-22 22:45:00 +0200&quot;&gt;2017-08-22 22:45:00 +0200&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;This is a list of questions (and answers) I stumbled over while designing this 
+site. It is by no means a complete list and will most likely cover topics that 
+are already documented elsewhere. I found many answers on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/jekyll&quot;&gt;stackoverflow 
+questions tagged with 
+Jekyll&lt;/a&gt; and links are given 
+when still available. As almost always with such matter, stackoverflow is the 
+#1 resource for such questions.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-filter-posts-in-a-loop&quot;&gt;How to filter posts in a loop&lt;/h2&gt;
+
+&lt;p&gt;Suppose you want to iterate over the collection of posts in the paginator and 
+filter by a some criteria defined by the page’s FrontMatter. Here we are 
+looking for posts which have a variable &lt;em&gt;myvariable&lt;/em&gt; defined and set to true 
+in their FrontMatter block.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;post&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;paginator.posts&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;|&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;myvariable&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+    [...]
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This won’t work, because filters are not allowed in the for loop.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;paginator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blog&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;post&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;posts&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+    [...]
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The fix is first assign the filtered collection to a new variable and then iterate over it.&lt;/p&gt;
+
+&lt;h2 id=&quot;parse-markdown-in-html-content&quot;&gt;Parse markdown in HTML content&lt;/h2&gt;
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p&gt;Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary 
+text within a single post or article. By default, markdown will not parse 
+inside HTML tags, which is usually the desired behavior, but sometimes you may 
+want the exact opposite and parse inside HTML tags. Consider, you want to use 
+a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; section for highlighting a paragraph with a custom CSS class or 
+similar purpose like I did in this paragraph for which I assigned a 2-column 
+CSS layout by simply wrapping it in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myclass&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    the paragraph's content (written in markdown)
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- content above will be taken as raw HTML, no markdown processing will happen. --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myclass&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    the paragraph's content
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- here, markdown will parse it.--&amp;gt;&lt;/span&gt;  &lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note that the above only works with the kramdown markdown converter, not with 
+alternatives like redcarpet. Kramdown is the default in Jekyll 3, so you 
+shouldn’t need to worry&lt;/p&gt;
+
+&lt;h2 id=&quot;escape-liquid-tags-when-highlighting-code&quot;&gt;Escape liquid tags when highlighting code&lt;/h2&gt;
+
+&lt;p&gt;If you need to highlight a code block containing liquid tags, you have to 
+“escape” it. By default, liquid tags are parsed in markdown content and this 
+includes a block defined for syntax highlighting. You have to enclose the 
+liquid code in [% raw %] … [% endraw %] tags (note, I have to use square 
+brackets here, otherwise the tags wouldn’t show up) to prevent it from being 
+parsed instead of just highlighted. The raw tag was a plugin in older versions 
+of Jekyll but is now included in Jekyll 3.&lt;/p&gt;
+
+&lt;h2 id=&quot;accessing-front-matter-variables-in-the-post&quot;&gt;Accessing front matter variables in the post&lt;/h2&gt;
+
+&lt;p&gt;All variables defined in the FrontMatter are available as members of the 
+&lt;em&gt;page&lt;/em&gt; object. If FrontMatter defines the title then you can access it via  &lt;strong&gt;{{ page.title }}&lt;/strong&gt;  in the post. In a similar way you can 
+access these variables when iterating over post collections in a loop.&lt;/p&gt;
+
+&lt;p&gt;All configuration variables defined in the site configuration (&lt;em&gt;_config.yaml&lt;/em&gt;) are available in the &lt;code class=&quot;highlighter-rouge&quot;&gt;site&lt;/code&gt; namespace.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-exactly-is-a-frontmatter-block-necessary&quot;&gt;When exactly is a FrontMatter block necessary?&lt;/h2&gt;
+
+&lt;p&gt;Basically, for all pages that become content pages. It doesn’t matter whether 
+the page is a markdown document or plain HTML - if it’s going to become its 
+own page, it needs a FrontMatter block. Layouts do not need any and neither do 
+fragments that are included, because technically, they become a part of the 
+page that includes them..&lt;/p&gt;
+
+&lt;h2 id=&quot;check-whether-the-current-item-is-the-last-in-an-iteration&quot;&gt;Check whether the current item is the last in an iteration&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;unless&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;forloop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;,&amp;amp;nbsp;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endunless&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;em&gt;unless&lt;/em&gt; statement outputs everything between it and the next &lt;em&gt;endunless&lt;/em&gt; as long as the condition does &lt;strong&gt;not&lt;/strong&gt; evaluate to true.&lt;/p&gt;
+
+&lt;h2 id=&quot;iterate-over-categories-and-capture-the-name&quot;&gt;Iterate over categories and capture the name&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;category&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.categories&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+   &amp;lt;h3&amp;gt;&amp;lt;a href=&quot;[....]&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;downcase}}/index.html&quot;&amp;gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;category&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tolower}}&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;{%&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;endfor&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = &quot;https://miranda.or.at/help/jekyll-personal-faq.html&quot;;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = &quot;ALEXVIE#@#2017-08-22 22:45:00 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary></entry><entry><title type="html">Blogging With Jekyll</title><link href="http://localhost:4000/jekyll/2017/08/22/Blogging-with-jekyll.html" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>http://localhost:4000/jekyll/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/2017/08/22/Blogging-with-jekyll.html">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
+    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-22 16:30:00 +0200&quot;&gt;2017-08-22 16:30:00 +0200&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The big question is: &lt;strong&gt;WHY?&lt;/strong&gt; Why should someone give up all the innovations 
+of the last 20 years or so that made the Web a dynamic, lively and social 
+place and go back to publishing static HTML pages - something we did 25 years 
+ago? Doesn’t sound very logical, nor does it seem to make any sense, does it?&lt;/p&gt;
+
+&lt;h2 id=&quot;some-history-lesson&quot;&gt;Some history lesson&lt;/h2&gt;
+
+&lt;p&gt;Back, in the 90’s, when the web was still young, it was a very static place. 
+Most pages were simple HTML documents with the rare image added every now and 
+then. CSS didn’t exist, markup was added in form of attributes to HTML tags, 
+scripts were a rare thing, even in the late 90’s, because JavaScript was, in 
+its early years, a troubled technology suffering from many problems. The big 
+thing, that entered the game in the second half of the 90’s to make the web 
+more dynamic was actually Java, not JavaScript. Applets were the big deal back 
+then.&lt;/p&gt;
+
+&lt;p&gt;Today, we know it was a flawed technology that failed. Replaced - for some 
+time - by other flawed technologies, namely Flash and later Silverlight. The 
+latter never gained greater acceptance, while the former got its years of 
+glory and must be given credit for some progress that wouldn’t have been 
+possible without Flash. For many years, Flash was the only way to play videos 
+embedded in a browser and the technology that made sites like YouTube possible in the first places.&lt;/p&gt;
+
+&lt;p&gt;While Java, Flash and Silverlight were client sided things, at about the same time server sided scripting started to take off while Java applets tried to conquer the web and ultimately failed. CGI scripts, the very basic form of server sided dynamic content creation, had existed for a while, but their usefulness was limited and even back then, they were a security and performance nightmare for every webmaster. PERL was the language of choice for early CGI development in the 90’s, but Perl never was a very approachable language - a powerful one in the right hands for sure, but also a messy one. Other options to write CGI scripts were C and obviously the omnipresent shell script dialect of choice.&lt;/p&gt;
+
+&lt;p&gt;Everything changed in 1995 though, when a Canadian programmer released a software to simplify form driven web applications and called it Personal Home Page tools - PHP was born. Initially, it was not planned to create a completely new and independent programming language, but that is exactly what happened and the rest is history. Despite its flaws and ugliness (a result of a merely chaotic and organic development process without a clear design until about PHP version 4 many years later), PHP took the Web by surprise and quickly became the most important tool for creating dynamic web content.&lt;/p&gt;
+
+&lt;p&gt;The fact that MySQL - a free and open source RDBMS - appeared at about the same time did help a lot of course, because a database is almost mandatory for web applications that build content dynamically.&lt;/p&gt;
+
+&lt;p&gt;Looking back into the evolution of the dynamic web, it’s quite interesting to 
+see how that evolution iterated over a couple of steps with the big goal 
+always being the same: &lt;em&gt;more dynamic, less static content&lt;/em&gt;. The final 
+iteration (or at least, the most recent step we currently know) manifested 
+itself in two things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The evolution of JavaScript from a slow, interpreted, troubled and insecure 
+programming language into a powerful first class language that is nowadays 
+one of the most popular languages globally, offers great performance and has 
+left behind most of its inherent troubles that plagued it in its early days.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The evolution of HTML from a very limited markup language that was 
+cumbersome to use into a collection of related tools that allow to build 
+complex documents with advanced layouts and embedded multimedia content - 
+all without any third party plugins. HTML5 can do simple animations, vector 
+graphics, can embed images and videos, and can, together with JavaScript, 
+build attractive and easy-to-use user interfaces. Sites like Google Docs 
+and desktop applications built with the very same web technologies like &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; showcase what these technologies can really do.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These two steps made all other innovations like Flash, Silverlight and Java 
+basically obsolete. With HTML5 and JavaScript, it is now possible to build a 
+dynamic experience that does not rely on any third party software. High 
+quality implementations of these technologies are part of all modern browsers, 
+available on a wide range of different devices. Be it desktop computer, 
+portable notebook, tablet, smartphone or even a gaming console - these 
+standardized web technologies work everywhere and the only thing you need is a 
+modern browser, because it includes all that’s really needed.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-arent-static-websites-anti-social&quot;&gt;But… aren’t static websites anti-social?&lt;/h2&gt;
+
+&lt;p&gt;Well, in some ways they were considered anti-social before the Web 2.0 
+revolution with social media and dynamic sites took off many years ago. The 
+main argument was that static web sites do not allow readers to interact with 
+authors, but this was only half the truth. In fact, many authors and site 
+publishers offered plenty of interaction but the methods were different in the 
+pre-social networking era. E-mail was obviously the most popular method, but 
+other ways did exist. &lt;a href=&quot;https://en.wikipedia.org/wiki/Instant_messaging&quot;&gt;Instant 
+messaging&lt;/a&gt;  was gaining 
+popularity in the late 90’s and many publishers added their ICQ or MSN 
+profiles to their sites. Others allowed users to interact in chat rooms or on 
+IRC&lt;/p&gt;
+
+&lt;h2 id=&quot;it-is-more-difficult-to-maintain-a-static-site&quot;&gt;It is more difficult to maintain a static site&lt;/h2&gt;
+
+&lt;p&gt;Arguably, that is indeed true. Most modern CMS do not require authors to 
+understand more than just basics about the technologies that drive them. There 
+is little need to understand HTML or CSS, let alone more complex things like 
+JavaScript or a template language. As an author, you write content the way you 
+do it in a word processor. In fact, many CMS allow authors to write content in 
+Microsoft Word and can accept the Word document format.&lt;/p&gt;
+
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
+&lt;a href=&quot;/assets/gfx/vim.png&quot; rel=&quot;prettyPhoto[gallery]&quot; title=&quot;This is how a post can be written in Jekyll - with a simple text 
+editor&quot;&gt;
+	    &lt;img src=&quot;/assets/gfx/thumb_vim.png&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
+&lt;/a&gt;
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    This is how a post can be written in Jekyll - with a simple text 
+editor
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In Jekyll, you write posts using the markdown language. While the 
+basics of it are easy to learn, creating more advanced posts require either a 
+site administrator who can help or more learning. Either way, it’s a bit more 
+complex than taking an image and dragging it into your post, but it is 
+possible and as you can see here on this site, the results don’t look 
+different from pages that were created with a full grown CMS.&lt;/p&gt;
+
+&lt;p&gt;Authoring static sites doesn’t mean you have to forget &lt;strong&gt;all&lt;/strong&gt; the cool things 
+like pretty picture galleries or fancy “relative” and dynamic time stamps. 
+These things are usually implemented on the client’s side via JavaScript and 
+all you have to do as a site author is to include the scripts and CSS in your 
+pages and format your content in a way that allows the scripts to find and 
+transform it. Since Jekyll is fully template driven, it gives you all the 
+necessary freedom to include almost any JavaScript feature you want.&lt;/p&gt;
+
+&lt;p&gt;In some way, it is also more flexible. Most CMS only allow subsets of HTML 
+and/or CSS in content, while Jekyll allows basically everything (except 
+scripts), but that flexibility comes with a price, as most things do. As an 
+author, you have to adopt your workflow and leave the comfortable WYSIWY(P)G 
+(the ‘P’ stands for probably) environment you may be used to. It’s not that 
+difficult though and if you have any experience with Wiki authoring, then 
+markdown won’t pose a big challenge as it’s remarkably similar.&lt;/p&gt;
+
+&lt;h2 id=&quot;performance-and-security&quot;&gt;Performance and security&lt;/h2&gt;
+
+&lt;p&gt;Here we have the two most important advantages of using static pages 
+publishing. First, delivering static HTML pages and their linked resources is 
+the bread and butter for any web server software. On modern hardware, a HTTP 
+server like nginx can satisfy ten-thousands of static page requests every 
+second and the limiting factor will almost always be the available network 
+bandwidth. With static pages, even a low end server can saturate 100MBit with 
+ease. CPU and memory load are irrelevant when serving static pages, because 
+you’ll hit the network and/or storage transfer limit way faster than you can 
+fully load even a single core of a modern CPU.&lt;/p&gt;
+
+&lt;p&gt;So, the first advantage is that you save hosting fees, simply, because a low 
+spec server hardware will certainly do it, as long as you have enough network 
+capacity. Publishing with Wordpress, Drupal, Joomla or similar piece of 
+software, much more powerful thus more expensive hardware will be needed for 
+satisfying &lt;strong&gt;performance and stability requirements&lt;/strong&gt;. Also, you need PHP and 
+a database on the server - by today, both have become de-facto standard, but 
+hardware that is powerful enough has not yet, particularly not in the low cost 
+hosting business where hardware is often overloaded.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt; is the second big argument and might be even more important. 
+While a miserably performing Wordpress site can be annoying, it won’t directly 
+do any harm other than maybe pissing off some of your potential customers. A 
+site that crashed under high load is a different thing though and may have 
+potential to really hurt your business. But then, if your financial income 
+depends on the availability of your website(s), you should look for decent 
+hosting anyway. Even static pages won’t be reachable when the server is 
+hopelessly overloaded or crashed.&lt;/p&gt;
+
+&lt;p&gt;One of the biggest threats are security holes in web applications. While the 
+situation has improved a bit over the last couple of years, mainly because 
+more and more developers understand how basic attack vectors like XSS and SQL 
+injections work and how to fend off attacks against them, there are still 
+countless vulnerable web applications in the wild. With static pages, however, the risk is almost completely eliminated, because the majority of attack vectors vanish with the absence of code execution and database interaction.&lt;/p&gt;
+
+&lt;h2 id=&quot;revision-control&quot;&gt;Revision control&lt;/h2&gt;
+
+&lt;p&gt;Wiki authors probably know the deal. Every article is managed by some kind of revision control system. This has a number of advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Transparent changes&lt;/strong&gt;. The revision history can be used to see all changes made to the article.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Easy way to revert&lt;/strong&gt;. Any change to an article, template, CSS or any other file can be undone with ease. Just revert to an earlier version.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;there-are-cons-there-must-be-right&quot;&gt;There are cons, there must be, right?&lt;/h2&gt;
+
+&lt;p&gt;Well, of course, there are. The total absence of dynamic site building abilities (with the exception of some client-sided Ajax/JavaScript tricks) 
+implies a lot of downsides. Whether or not they are significant enough to work 
+as a valid argument against using a static site generator is up to the site 
+owner. The decision might not be an easy one, because the cons are 
+counter weighted by quite some pros.&lt;/p&gt;
+
+&lt;h3 id=&quot;lack-of-interaction&quot;&gt;Lack of interaction&lt;/h3&gt;
+
+&lt;p&gt;Without dynamic content, even simple features like a flat comment system is 
+difficult to implement. Not impossible, but still difficult and no matter how 
+well you do it, it will never be as feature-rich and powerful as a database 
+driven forum or comment system. Third party solutions like 
+&lt;a href=&quot;https://www.disqus.com&quot;&gt;Disqus&lt;/a&gt; can fill the gap and can be added to static 
+sites, but it basically means you’re giving it out of your hands, which might 
+not be what you want.&lt;/p&gt;
+
+&lt;p&gt;For sharing and social media interaction, such features can be embedded in 
+static sites without problems. Facebook like buttons are everywhere on the net 
+and it’s even possible to add comments from Facebook to a static page.&lt;/p&gt;
+
+&lt;h3 id=&quot;organizing-content&quot;&gt;Organizing content&lt;/h3&gt;
+
+&lt;p&gt;With a database, things like full text search, categorizing and tagging are 
+easy to implement standard features nowadays. Every blog or CMS software has 
+such features and they are generally well accepted by users.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Without&lt;/strong&gt; a database, however, even simple things like a full text search 
+becomes difficult, but again, like in the above example with a comment system, 
+3rd party providers may come to rescue. It’s simple to add a customized google 
+search box to your site, giving you all of Google’s knowledge on searching web 
+pages for free (well, there be &lt;del&gt;dragons&lt;/del&gt; ads, of course).&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = &quot;https://miranda.or.at/jekyll/2017/08/22/Blogging-with-jekyll.html&quot;;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = &quot;ALEX#@#2017-08-22 16:30:00 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>alex</name></author><summary type="html">The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?</summary></entry><entry><title type="html">Multipage</title><link href="http://localhost:4000/multipage/Test-2.html" rel="alternate" type="text/html" title="Multipage" /><published>2017-08-21T00:00:00+02:00</published><updated>2017-08-21T00:00:00+02:00</updated><id>http://localhost:4000/multipage/Multipage-2</id><content type="html" xml:base="http://localhost:4000/multipage/Test-2.html">&lt;h1 id=&quot;this-is-page-2&quot;&gt;This is page 2&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien.&lt;/p&gt;
+&lt;div style=&quot;display:table; width:100%&quot;&gt;
+    
+    &lt;div style=&quot;font-size:smaller;box-sizing: border-box; width:50%; float:left; display: table-cell; height: 50px&quot;&gt;
+    &lt;a href=&quot;/multipage/Test-1.html&quot;&gt;Previous page&lt;/a&gt;
+    
+    &lt;/div&gt;
+    
+    
+&lt;/div&gt;</content><author><name>alex</name></author><summary type="html">This is page 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien. Previous page</summary></entry><entry><title type="html">Multipage</title><link href="http://localhost:4000/multipage/Test-1.html" rel="alternate" type="text/html" title="Multipage" /><published>2017-08-21T00:00:00+02:00</published><updated>2017-08-21T00:00:00+02:00</updated><id>http://localhost:4000/multipage/Multipage-1</id><content type="html" xml:base="http://localhost:4000/multipage/Test-1.html">&lt;h1 id=&quot;this-is-page-1&quot;&gt;This is page 1&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien.&lt;/p&gt;
+&lt;div style=&quot;display:table; width:100%&quot;&gt;
+    
+    
+    &lt;div style=&quot;font-size:smaller;box-sizing: border-box; width:50%; float:right; display: table-cell; height: 50px; text-align:right;&quot;&gt;
+    &lt;a href=&quot;/multipage/Test-2.html&quot;&gt;Next page&lt;/a&gt;
+    
+    &lt;br /&gt;(Multipage example, Page 2)
+    
+    &lt;/div&gt;
+    
+&lt;/div&gt;</content><author><name>alex</name></author><summary type="html">This is page 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien. Next page (Multipage example, Page 2)</summary></entry><entry><title type="html">A test page</title><link href="http://localhost:4000/2017/08/20/Test.html" rel="alternate" type="text/html" title="A test page" /><published>2017-08-20T02:00:00+02:00</published><updated>2017-08-20T02:00:00+02:00</updated><id>http://localhost:4000/2017/08/20/Test</id><content type="html" xml:base="http://localhost:4000/2017/08/20/Test.html">&lt;h1 id=&quot;this-is-supposed-to-be-the-excerpt&quot;&gt;This is supposed to be the excerpt&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
+    Written by alex | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-20 00:00:00 +0000&quot;&gt;2017-08-20 00:00:00 +0000&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
+semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a 
+pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 
+Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
+bibendum.&lt;/p&gt;
+
+&lt;p&gt;In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. 
+Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien 
+ipsum, molestie sit amet ultrices non, sagittis sit amet eros.&lt;/p&gt;
+
+&lt;h2 id=&quot;here-is-another-header&quot;&gt;Here is another header&lt;/h2&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+&lt;h3 id=&quot;and-another-one&quot;&gt;and another one&lt;/h3&gt;
+
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
+&lt;a href=&quot;/assets/gfx/gadse.jpg&quot; rel=&quot;prettyPhoto[gallery]&quot; title=&quot;A image with a fairly long title that needs to wrap around&quot;&gt;
+	    &lt;img src=&quot;/assets/gfx/thumb_gadse.jpg&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
+&lt;/a&gt;
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    A image with a fairly long title that needs to wrap around
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel 
+faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis 
+venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit 
+viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec 
+interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, 
+pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet 
+volutpat sapien.&lt;/p&gt;
+
+&lt;p&gt;Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
+semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a 
+pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 
+Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
+bibendum. In consectetur erat eget urna convallis, sit amet feugiat felis 
+venenatis. Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque 
+sapien ipsum, molestie sit amet ultrices non, sagittis sit amet eros.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-number-two&quot;&gt;Part number two&lt;/h2&gt;
+&lt;p&gt;Aenean in ex consectetur, vehicula nisi vitae, blandit orci. Fusce 
+sollicitudin sem non elit vulputate fermentum. Proin ultrices placerat magna 
+ut mollis. Etiam non lectus finibus, eleifend magna a, fermentum nisi. 
+Praesent condimentum, dui ut suscipit dapibus, tellus sem venenatis magna, vel 
+pretium turpis turpis non massa. Nunc porttitor tortor nisl, ac vestibulum 
+tellus maximus eu. Praesent non urna maximus, lacinia ex eget, ullamcorper 
+est. Ut ex magna, aliquet quis eros sed, imperdiet porta arcu. Nam facilisis 
+viverra quam, sit amet efficitur ligula sagittis at. Donec sit amet nunc ex. 
+Maecenas eleifend eget mauris quis molestie. Integer porta, purus nec euismod 
+laoreet, dolor justo interdum erat, vitae porttitor est justo quis odio. Donec 
+pharetra fermentum semper. Maecenas porttitor nisl tortor.&lt;/p&gt;
+&lt;div class=&quot;floatimage&quot;&gt;
+&lt;a href=&quot;/assets/gfx/gadse.jpg&quot; rel=&quot;prettyPhoto[gallery]&quot; title=&quot;A image with a fairly long title that needs to wrap around&quot;&gt;
+        &lt;img src=&quot;/assets/gfx/gadse.jpg&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;&quot; /&gt;
+&lt;/a&gt;
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    A image with a fairly long title that needs to wrap around
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+Aliquam pulvinar massa lacus, a varius magna hendrerit a. Nulla facilisi. In 
+gravida, ligula nec suscipit ornare, odio nibh aliquet nulla, suscipit dictum 
+turpis erat et enim. Aliquam ultrices nulla rutrum ultricies porttitor. 
+Vestibulum feugiat finibus turpis quis viverra. Pellentesque id diam nisi. 
+Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.&lt;/p&gt;
+
+&lt;p&gt;Nam est est, congue ut massa sed, imperdiet rhoncus odio. Nulla fermentum 
+velit nibh. Phasellus scelerisque non sem eu ornare. Morbi ac dictum lacus, 
+eget luctus lorem. Fusce non odio laoreet, tincidunt lacus in, lobortis 
+ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nam fringilla laoreet ligula tempor hendrerit. Nam 
+suscipit ornare gravida. Nullam in turpis tempus, ultricies leo in, convallis 
+velit. Fusce quis libero eget odio varius blandit. Proin ac est vulputate, 
+dictum sem ac, aliquam ipsum. Quisque quis sapien eu felis venenatis laoreet 
+ac a mi. Praesent facilisis fermentum felis nec vulputate.&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum.</summary></entry></feed>
