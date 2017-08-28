@@ -2,6 +2,8 @@
 layout: default
 pagination:
   enabled: true  
+  sort_field: date
+  sort_reverse: true
 ---
 <div class="blog-index">
     {% assign posts = paginator.posts | where:"blog",true %}

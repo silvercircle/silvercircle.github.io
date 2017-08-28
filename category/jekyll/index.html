@@ -4,6 +4,8 @@ pagination:
   enabled: true
   category: Jekyll
   permalink: '/category/jekyll/page:num/'
+  sort_field: date
+  sort_reverse: true
 ---
 <div class="blog-index">
     {% for post in paginator.posts %}
