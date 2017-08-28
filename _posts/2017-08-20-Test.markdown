@@ -6,6 +6,9 @@ author: alex
 date: 2017-08-20 00:00:00
 modified: 2017-08-25 05:17:06+0200
 blog: true
+excerpt: >
+  Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum. 
+
 ---
 
 # This is supposed to be the excerpt
@@ -20,7 +23,7 @@ bibendum.
 In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. 
 Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien 
 ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
-<!--more-->
+
 ## Here is another header
 This is a paragraph
 

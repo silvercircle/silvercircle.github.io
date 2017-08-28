@@ -1,20 +1,14 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  category: Jekyll
+  permalink: '/category/jekyll/page:num/'
 ---
 
 <div class="blog-index">
-    <h1>All posts in category Jekyll:</h1>   
-    <div class="two_cols">
-    {% assign posts = site.posts | where_exp:"item","item.categories contains 'Jekyll'" %}
-    {% for post in posts %}
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="author">
-        Written by {{post.author}}, <time class="timeago" datetime="{{post.date}}">{{ post.date }}</time>
-      </div>
-      <div class="clear"></div>
-    {% else %}
-      <h3>This category is empty</h3>
+    {% for post in paginator.posts %}
+    {% include paginator_body.html %}
     {% endfor %}
-    </div>
-    <br>
+    {% include paginator_pagination.html %}  
 </div>

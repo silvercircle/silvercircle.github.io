@@ -3,8 +3,10 @@ layout: default
 author: alex
 blog: true
 date: 2017-08-22 16:30:00+0200
-modified: 2017-08-27 03:28:06+0200
+modified: 2017-08-28 05:12:58+0200
 categories: [Jekyll]
+excerpt: >
+  The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
 ---
 
 # Blogging with a static site generator
@@ -14,7 +16,7 @@ The big question is: **WHY?** Why should someone give up all the innovations
 of the last 20 years or so that made the Web a dynamic, lively and social 
 place and go back to publishing static HTML pages - something we did 25 years 
 ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
-<!--more-->
+
 ## Some history lesson
 
 Back, in the 90's, when the web was still young, it was a very static place. 
@@ -80,7 +82,6 @@ messaging](https://en.wikipedia.org/wiki/Instant_messaging)  was gaining
 popularity in the late 90's and many publishers added their ICQ or MSN 
 profiles to their sites. Others allowed users to interact in chat rooms or on 
 IRC
-<!--more-->
 
 ## It is more difficult to maintain a static site
 

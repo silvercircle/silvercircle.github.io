@@ -493,3 +493,7 @@ hr.blueline {
 	border: none;
 	background-color: orangered;
 }
+
+hr.separator {
+	margin-top: 1px;
+}

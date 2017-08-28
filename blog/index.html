@@ -1,32 +1,12 @@
 ---
 layout: default
+pagination:
+  enabled: true  
 ---
-
 <div class="blog-index">
     {% assign posts = paginator.posts | where:"blog",true %}
     {% for post in posts %}
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="author">
-        <span class="date">{{ post.date }}</span>
-      </p>
-      <div class="content">
-        {{ post.excerpt }}
-      </div>
-      <div style="float:right;">
-       <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
-      </div>
-      <div class="clear"></div>
+    {% include paginator_body.html %}
     {% endfor %}
-    <div class="pagination">
-      <br>
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-      {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Older</a>
-      {% endif %}
-    </div>
-    <br>
+    {% include paginator_pagination.html %}  
 </div>
