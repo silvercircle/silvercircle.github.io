@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -21,20 +20,18 @@
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Jekyll test site with no particular purpose.">
 <meta property="og:description" content="A Jekyll test site with no particular purpose.">
-<link rel="canonical" href="http://localhost:4000/">
-<meta property="og:url" content="http://localhost:4000/">
 <meta property="og:site_name" content="Silvercircle’s Jekyll playground">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-08-25T06:35:00+02:00">
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebSite","name":"Silvercircle’s Jekyll playground","headline":"Home","author":{"@type":"Person","name":"Alex"},"datePublished":"2017-08-25T06:35:00+02:00","dateModified":"2017-08-25T06:35:00+02:00","description":"A Jekyll test site with no particular purpose.","url":"http://localhost:4000/"}</script>
+{"@context":"http://schema.org","@type":"WebSite","name":"Silvercircle’s Jekyll playground","headline":"Home","author":{"@type":"Person","name":"Alex"},"datePublished":"2017-08-25T06:35:00+02:00","dateModified":"2017-08-25T06:35:00+02:00","description":"A Jekyll test site with no particular purpose.","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <header>
       <div class="inner">
-        <a href="http://localhost:4000/">
+        <a href="/">
           <h2 class="header">Silvercircle's Jekyll playground</h2>
         </a>
         <h2>A Jekyll test site with no particular purpose.</h2>
@@ -279,36 +276,3 @@ s.setAttribute('data-timestamp', +new Date());
 
   </body>
 </html>
-=======
----
-layout: default
----
-
-<div class="blog-index">
-	{% for post in paginator.posts %}
-	  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-	  <p class="author">
-	    <span class="date">{{ post.date }}</span>
-	  </p>
-	  <div class="content">
-	    {{ post.excerpt }}
-	  </div>
-	  <div style="float:right;">
-	   <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
-	  </div>
-	  <div class="clear"></div>
-	{% endfor %}
-	<div class="pagination">
-	  <br>
-	  {% if paginator.previous_page %}
-	    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-	  {% endif %}
-	  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	
-	  {% if paginator.next_page %}
-	    <a href="{{ paginator.next_page_path }}" class="next">Older</a>
-	  {% endif %}
-	</div>
-	<br>
-</div>
->>>>>>> 7fd36208ede1c4ac3d40c3bfb8910b9720e401d7

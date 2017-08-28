@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -965,10 +964,3 @@ footer a:hover {
     content: none; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-=======
----
----
-
-@import "{{ site.theme }}";
-
->>>>>>> 7fd36208ede1c4ac3d40c3bfb8910b9720e401d7
