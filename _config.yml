@@ -1,6 +1,10 @@
 theme: jekyll-theme-architect
-paginate: 10
-paginate_path: "/blog/page:num/"
+pagination:
+  enabled: true
+  debug: false
+  per_page: 10
+  permalink: '/blog/page:num/'
+  collection: 'posts' 
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
@@ -10,7 +14,7 @@ plugins:
  - jemoji
  - jekyll-mentions
  - jekyll-include-cache
- - jekyll-paginate
+ - jekyll-paginate-v2
 bcolor: "#ddd"
 excerpt_separator: <!--more-->
 title: Silvercircle's Jekyll playground
@@ -21,4 +25,5 @@ kramdown:
   syntax_highlighter: rouge
 site-verification: Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y
 timezone: Europe/Berlin
-
+have_disqus: true
+disqus_registered_baseurl: https://silvercircle.github.io
