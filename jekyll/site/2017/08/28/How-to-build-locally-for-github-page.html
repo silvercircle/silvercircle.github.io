@@ -20,18 +20,20 @@
 <meta property="og:locale" content="en_US">
 <meta name="description" content="How to build your site locally with your own Jekyll installation and deploy it on github using different branches.">
 <meta property="og:description" content="How to build your site locally with your own Jekyll installation and deploy it on github using different branches.">
+<link rel="canonical" href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">
+<meta property="og:url" content="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">
 <meta property="og:site_name" content="Silvercircle’s Jekyll playground">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-08-28T10:02:37+02:00">
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Build a GitHub page locally with Jekyll","author":{"@type":"Person","name":"AlexVie"},"datePublished":"2017-08-28T10:02:37+02:00","dateModified":"2017-08-28T10:02:37+02:00","description":"How to build your site locally with your own Jekyll installation and deploy it on github using different branches.","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html"},"url":"/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html"}</script>
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"Build a GitHub page locally with Jekyll","author":{"@type":"Person","name":"AlexVie"},"datePublished":"2017-08-28T10:02:37+02:00","dateModified":"2017-08-28T10:02:37+02:00","description":"How to build your site locally with your own Jekyll installation and deploy it on github using different branches.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html"},"url":"http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <header>
       <div class="inner">
-        <a href="/">
+        <a href="http://localhost:4000/">
           <h2 class="header">Silvercircle's Jekyll playground</h2>
         </a>
         <h2>A Jekyll test site with no particular purpose.</h2>
@@ -71,6 +73,8 @@
 <p>Github supports Jekyll as site generator and in most cases, this is good enough. Some more advanced pages may require additional Jekyll plugins that are not available on Github. In that case, the site must be built with a local Jekyll installation and pushed to the GitHub repository.</p>
 
 <p>A personal homepage can only be served from content in the master branch, therefore the master branch must contain the output of Jekyll’s built command which normally goes to <code class="highlighter-rouge">_site</code>. Everything else is considered source code and has no business in the master branch. The separation into branches is necessary, because some files will exist twice but with different contents. The <code class="highlighter-rouge">index.html</code> in the source root is very likely different from the <code class="highlighter-rouge">index.html</code> in the compiled site.</p>
+
+<p>The following applies to personal and organization home pages hosted on <em>github.io</em>. Project pages are a bit different and actually easier to setup, because the content for a project page can be served from a configurable branch.</p>
 
 <p>We can leave intact the default directory structure with <code class="highlighter-rouge">_site</code> as our build target and do the following:</p>
 
@@ -126,11 +130,21 @@ s.setAttribute('data-timestamp', +new Date());
 
         <aside id="sidebar">
           <h2>Search site</h2>
-          <div id="search">
-              <form role="search" method="get" action="/search/">
-                  <input id="searchString" name="searchString" type="text">
-                  <input id="searchButton" name="googleSearchName" type="submit" value="Search">
-              </form>
+          <div id="google-custom-search">          
+          <script>
+            (function() {
+              var cx = '007859790308151113940:p-knqr4rpv0';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+          </script>
           </div>
           <br>
           <br>        

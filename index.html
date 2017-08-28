@@ -20,18 +20,20 @@
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Jekyll test site with no particular purpose.">
 <meta property="og:description" content="A Jekyll test site with no particular purpose.">
+<link rel="canonical" href="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/">
 <meta property="og:site_name" content="Silvercircle’s Jekyll playground">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-08-25T06:35:00+02:00">
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebSite","name":"Silvercircle’s Jekyll playground","headline":"Home","author":{"@type":"Person","name":"Alex"},"datePublished":"2017-08-25T06:35:00+02:00","dateModified":"2017-08-25T06:35:00+02:00","description":"A Jekyll test site with no particular purpose.","url":"/"}</script>
+{"@context":"http://schema.org","@type":"WebSite","name":"Silvercircle’s Jekyll playground","headline":"Home","author":{"@type":"Person","name":"Alex"},"datePublished":"2017-08-25T06:35:00+02:00","dateModified":"2017-08-25T06:35:00+02:00","description":"A Jekyll test site with no particular purpose.","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <header>
       <div class="inner">
-        <a href="/">
+        <a href="http://localhost:4000/">
           <h2 class="header">Silvercircle's Jekyll playground</h2>
         </a>
         <h2>A Jekyll test site with no particular purpose.</h2>
@@ -140,11 +142,21 @@ s.setAttribute('data-timestamp', +new Date());
 
         <aside id="sidebar">
           <h2>Search site</h2>
-          <div id="search">
-              <form role="search" method="get" action="/search/">
-                  <input id="searchString" name="searchString" type="text">
-                  <input id="searchButton" name="googleSearchName" type="submit" value="Search">
-              </form>
+          <div id="google-custom-search">          
+          <script>
+            (function() {
+              var cx = '007859790308151113940:p-knqr4rpv0';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <script type="text/javascript">
+            document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+          </script>
           </div>
           <br>
           <br>        
