@@ -16,13 +16,16 @@ Github supports Jekyll as site generator and in most cases, this is good enough.
 
 A personal homepage can only be served from content in the master branch, therefore the master branch must contain the output of Jekyll's built command which normally goes to `_site`. Everything else is considered source code and has no business in the master branch. The separation into branches is necessary, because some files will exist twice but with different contents. The `index.html` in the source root is very likely different from the `index.html` in the compiled site.
 
+The following applies to personal and organization home pages hosted on *github.io*. Project pages are a bit different and actually easier to setup, because the content for a project page can be served from a configurable branch.
+
 We can leave intact the default directory structure with `_site` as our build target and do the following:
 
 * create the project.
 * `git init`
+* Add your remote origin, set configuration options. Like always for a new repository.
 * create a `.nojekyll` file in the root directory.
 * create a `_site` folder and add it to `.gitignore` (in the root)
-* in the root folder of your project, create a new branch. I called mine `source` but it's really up to you. The important thing is that `_site` should be part of your source branch and must be on master, otherwise github won't serve the page.
+* in the root folder of your project, create a new branch. I called mine `source` but it's really up to you. The important thing is that `_site` must **not** be part of your source branch and must be on master, otherwise github won't serve the page.
 * `cd _site`
 * `git init`
 * `git remote add origin git@github.com:username/username.github.io.git`

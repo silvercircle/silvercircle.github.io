@@ -487,6 +487,44 @@ div#search form {
 	border-radius: 0;
 }
 
+/* google custom search box */
+
+div.gsc-control-searchbox-only {
+	background: transparent;
+}
+
+form.gsc-search-box {
+	margin: 0;
+	background: transparent;
+	padding: 0;
+}
+
+input.gsc-input {
+	font-size: 12px !important;
+}
+
+div.gsc-input-box {
+	padding: 3px 2px 2px 2px;
+}
+
+td.gsib_a, td.gsc-input {
+	padding: 0;
+	border: none;
+}
+
+form.gsc-search-box td, form.gsc-search-box table {
+	border: none !important;
+}
+
+.gsc-wrapper {
+	font-family: Monda, Helvetica, Arial, serif !important;
+}
+
+.gs-title {
+	line-height: 1.5em;
+	height:auto !important;
+	text-decoration: none !important;
+}
 hr.blueline {
 	color: orangered;
 	height: 1px;
