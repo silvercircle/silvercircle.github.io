@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-08-28T23:03:32+02:00</updated><id>/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-08-29T08:25:01+02:00</updated><id>/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28 10:02:37 +0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -91,17 +91,66 @@ s.setAttribute('data-timestamp', +new Date());
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Good things do not last long enough&lt;/strong&gt;. Our perception makes us believe that good and enjoyable times zoom by way faster than their not so enjoyable counterparts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Good things do not last long enough&lt;/strong&gt;. Our perception makes us believe that 
+good and enjoyable times zoom by way faster than their not so enjoyable 
+counterparts.&lt;/p&gt;
 
-&lt;p&gt;Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.&lt;/p&gt;
+&lt;p&gt;Game of Thrones Season 7 is already over and to me it seems it just started 
+last week, but in reality, it started 6 weeks ago. Granted, compared to the 
+years before, it was a short season with just 7 instead of the 10 episodes 
+that were the norm from season one to six.&lt;/p&gt;
 
-&lt;p&gt;Still, we have seen lots of awesome things and the plot has been brought to its first climax, the war for the Iron Throne between the challenger from across the narrow sea, our well-known Targaryan princess and the wannabe Queen Cersei who still sits on the Iron Throne. Additionally, the ground work for the final conflict between the human race and the White Walker has been laid.&lt;/p&gt;
+&lt;p&gt;Still, we have seen lots of awesome things and the plot has been brought to 
+its first climax, the war for the Iron Throne between the challenger from 
+across the narrow sea, our well-known Targaryen princess and the wannabe Queen 
+Cersei who still sits on the Iron Throne. Additionally, the ground work for 
+the final conflict between the human race and the White Walkers with their 
+army of the dead has been laid.&lt;/p&gt;
 
-&lt;p&gt;We have seen Dragons, fire, epic battles, and it would not be GoT if we had not seen a few characters, even some central and important ones, pass away.&lt;/p&gt;
+&lt;p&gt;The cliffhanger in the final episode of season 7 happened as expected and thus 
+shared a common problem that became more and more apparent during the seventh 
+season: The show has become predictable, significantly more than ever before. 
+For the most part, this is understandable though, because the plot has already 
+entered its &lt;em&gt;grande finale&lt;/em&gt; stage and the number of pro- and antagonists is 
+considerably lower than it was in the first seasons. With the departure of 
+Littlefinger one more interesting character is now gone for good. Not that he 
+didn’t deserve it, but I’ve seen him always as a worthy addition to the series 
+with a lot of potential for surprising plot developments.&lt;/p&gt;
 
-&lt;p&gt;Cersei has indeed suffered a lot over the last 6 episodes. Effectively, she lost everything: Her father, her sons, her daughter, even her unborn child and it appears, she now lost her beloved brother as well. On top of that, we still remember what happened to her during season five at the hands of the High Sparrow: She was humiliated like no other Queen before, but no other than Cersei would have taken it without losing a single nuance of her dignity and we know, what kind of vengeance she had in store for those who treated her badly. She is our beloved antagonist, &lt;strong&gt;because&lt;/strong&gt; she is evil and corrupted, but she is also believable. Everything she does makes sense and she acts like a corrupt regent would do in the real world in order to protect and preserve her position of power.&lt;/p&gt;
+&lt;p&gt;But not all hope is lost. The final episode of season 7 also opened room for 
+new theories, speculations and possible plot twists in the eight and final 
+season to come. How did Tyrion convince his sister to return to the green 
+table and does he know about her sinister plans? What about Jon, who, by the 
+way, still knows nothing and Dany, who has now officially lost one of her many 
+titles: She is no longer &lt;em&gt;first of his name&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;The fact that she paid a huge price works well to make her even more believable. If she would still enjoy everything she had at the beginning of the show, that character would certainly be less authentic and probably also less realistic: You can’t be an asshole of such dimensions without ever having to pay a price.&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.</summary></entry><entry><title type="html">Jekyll personal FAQ</title><link href="/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>/help/Jekyll-personal-faq</id><content type="html" xml:base="/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
+&lt;p&gt;What about Cersei? Will she succeed? Unlikely, but what is going to happen to 
+her, now that she lost the last member of her family who was still on her 
+side?&lt;/p&gt;
+
+&lt;p&gt;Cersei has indeed suffered a lot over the last 6 episodes. Effectively, she 
+lost everything: Her father, her sons, her daughter, even her unborn child and 
+it appears, she now lost her beloved brother as well. On top of that, we still 
+remember what happened to her during season five at the hands of the High 
+Sparrow: She was humiliated like no other Queen before, but no other than 
+Cersei would have taken it without losing a single nuance of her dignity and 
+we know, what kind of vengeance she had in store for those who treated her 
+badly. She is our beloved antagonist, &lt;strong&gt;because&lt;/strong&gt; she is evil and corrupted, 
+but she is also believable. Everything she does makes sense and she acts like 
+a corrupt regent would do in the real world in order to protect and preserve 
+her position of power.&lt;/p&gt;
+
+&lt;p&gt;The fact that she paid a huge price works well to make her even more 
+believable. If she would still enjoy everything she had at the beginning of 
+the show, that character would certainly be less authentic and probably also 
+less realistic: You can’t be an asshole of such dimensions without ever having 
+to pay a price.&lt;/p&gt;
+
+&lt;p&gt;So, season 7 is over. Lots of things happened, we saw Dragons, fire, ice, 
+quite a lot of blood, many deaths and agony and some love - the usual 
+ingredients that have always worked so well for Game Of Thrones. We also saw 
+the plot moving at a quite unusual speed. Gone are the days where everything 
+was developed slowly and carefully, where things built up step by step&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.</summary></entry><entry><title type="html">Jekyll personal FAQ</title><link href="/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>/help/Jekyll-personal-faq</id><content type="html" xml:base="/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-22 22:45:00 +0200&quot;&gt;2017-08-22 22:45:00 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -251,7 +300,7 @@ of the last 20 years or so that made the Web a dynamic, lively and social
 place and go back to publishing static HTML pages - something we did 25 years 
 ago? Doesn’t sound very logical, nor does it seem to make any sense, does it?&lt;/p&gt;
 
-&lt;h2 id=&quot;some-history-lesson&quot;&gt;Some history lesson&lt;/h2&gt;
+&lt;h2 id=&quot;a-not-so-short-history-lesson&quot;&gt;A not so short history lesson&lt;/h2&gt;
 
 &lt;p&gt;Back, in the 90’s, when the web was still young, it was a very static place. 
 Most pages were simple HTML documents with the rare image added every now and 
