@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-29T09:21:33+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-29T10:47:18+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:37+0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -95,50 +95,88 @@ s.setAttribute('data-timestamp', +new Date());
 good and enjoyable times zoom by way faster than their not so enjoyable 
 counterparts.&lt;/p&gt;
 
-&lt;p&gt;Game of Thrones Season 7 is already over and to me it seems it just started 
-last week, but in reality, it started 6 weeks ago. Granted, compared to the 
-years before, it was a short season with just 7 instead of the 10 episodes 
-that were the norm from season one to six.&lt;/p&gt;
+&lt;p&gt;You know what? The headline contains the word &lt;em&gt;but&lt;/em&gt;, and at the beginning of 
+the season, we learned through Jon Snow what Ned Stark thought about said 
+word:&lt;/p&gt;
 
-&lt;p&gt;Still, we have seen lots of awesome things and the plot has been brought to 
-its first climax, the war for the Iron Throne between the challenger from 
-across the narrow sea, our well-known Targaryen princess and the wannabe Queen 
-Cersei who still sits on the Iron Throne. Additionally, the ground work for 
-the final conflict between the human race and the White Walkers with their 
-army of the dead has been laid.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Everything before the word but is horseshit.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;The cliffhanger in the final episode of season 7 happened as expected and thus 
-shared a common problem that became more and more apparent during the seventh 
-season: The show has become predictable, significantly more than ever before. 
-For the most part, this is understandable though, because the plot has already 
-entered its &lt;em&gt;grande finale&lt;/em&gt; stage and the number of pro- and antagonists is 
-considerably lower than it was in the first seasons. With the departure of 
-Littlefinger one more interesting character is now gone for good. Not that he 
-didn’t deserve it, but I’ve seen him always as a worthy addition to the series 
-with a lot of potential for surprising plot developments.&lt;/p&gt;
+&lt;p&gt;Still, I have to use a but here. Sorry, but Ned Stark was not always right, 
+because if he was, he wouldn’t have lost his head.&lt;/p&gt;
+
+&lt;p&gt;Game of Thrones Season 7 is over and to me it seems it just started last week, 
+but in reality, it’s been 6 weeks ago. Despite all the problems that 
+manifested themselves in this most recent season, caused by a way too fast 
+moving and &lt;em&gt;compressed&lt;/em&gt; plot, GoT is still a very enjoyable show. The acting 
+is excellent in most cases, the costumes, set decorations and visuals are 
+almost Hollywood A-movie level, the dialogues are fine, but the screenplay for 
+season 7 was a bit disappointing. In my opinion, there was only one truly 
+excellent episode and I’m talking about the fourth one. The third brought us a 
+couple of excellent dialogues and high quality acting, mainly from Cersei, 
+Jaime, Ellaria Sand and The Queen Of Thorns, the sixth and seventh were 
+decent, but no real match for the last two episodes we’ve seen in season six.&lt;/p&gt;
+
+&lt;p&gt;In season seven, the plot has been brought to its first climax, the war for 
+the Iron Throne between the challenger from across the narrow sea, our 
+well-known Targaryen princess and self-proclaimed Queen Cersei who still sits 
+on the Iron Throne. Additionally, the ground work for the final conflict 
+between the human race and the White Walkers with their army of the dead, now 
+strengthened by some undead giants and now even an undead dragon has been 
+laid.&lt;/p&gt;
+
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:416px; max-width:416px;&quot;&gt;
+
+&lt;a href=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; rel=&quot;prettyPhoto[gallery]&quot;&gt;
+
+	    &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. 
+The principle of the Sith works in Westeros equally well and Sansa's outfit is 
+probably a coincidence :)&quot; style=&quot;width:400px; max-width:400px; height:auto; margin:0; display:inline;&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    Learn from your masters, once you know enough, kill them. 
+The principle of the Sith works in Westeros equally well and Sansa's outfit is 
+probably a coincidence :)
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The cliffhanger in the final episode of season 7 
+happened as expected and thus shared a common problem that became more and 
+more apparent during the seventh season: The show has become predictable, 
+significantly more than ever before. For the most part, this is understandable 
+though, because the plot has already entered its &lt;em&gt;grande finale&lt;/em&gt; stage and the 
+number of pro- and antagonists is considerably lower than it was in the first 
+seasons. With the departure of Littlefinger one more interesting character is 
+now gone for good. Not that he didn’t deserve it, but I’ve seen him always as 
+a worthy addition to the series with a lot of potential for surprising plot 
+developments.&lt;/p&gt;
 
 &lt;p&gt;But not all hope is lost. The final episode of season 7 also opened room for 
 new theories, speculations and possible plot twists in the eight and final 
 season to come. How did Tyrion convince his sister to return to the green 
 table and does he know about her sinister plans? What about Jon, who, by the 
-way, still knows nothing and Dany, who has now officially lost one of her many 
-titles: She is no longer &lt;em&gt;first of his name&lt;/em&gt;.&lt;/p&gt;
+way, still knows &lt;em&gt;nothing&lt;/em&gt;, and Dany, who has now officially lost one of her 
+many titles: She is no longer &lt;em&gt;first of his name&lt;/em&gt; even though she has not yet 
+learned of the new situation.&lt;/p&gt;
 
 &lt;p&gt;What about Cersei? Will she succeed? Unlikely, but what is going to happen to 
 her, now that she lost the last member of her family who was still on her 
-side?&lt;/p&gt;
+side? Will Tyrion betray the Dragon Queen and side with his estranged sister 
+or will he make her suffer even more?&lt;/p&gt;
 
 &lt;p&gt;Cersei has indeed suffered a lot over the last 6 episodes. Effectively, she 
-lost everything: Her father, her sons, her daughter, even her unborn child and 
-it appears, she now lost her beloved brother as well. On top of that, we still 
-remember what happened to her during season five at the hands of the High 
-Sparrow: She was humiliated like no other Queen before, but no other than 
-Cersei would have taken it without losing a single nuance of her dignity and 
-we know, what kind of vengeance she had in store for those who treated her 
-badly. She is our beloved antagonist, &lt;strong&gt;because&lt;/strong&gt; she is evil and corrupted, 
-but she is also believable. Everything she does makes sense and she acts like 
-a corrupt regent would do in the real world in order to protect and preserve 
-her position of power.&lt;/p&gt;
+lost everything: Father, sons, her daughter, she will likely lose her unborn 
+child and it now appears, she has also lost her beloved brother. On top of 
+that, we still remember what happened to her during season five at the hands 
+of the High Sparrow: She was humiliated like no other Queen before, but no 
+other than Cersei would have taken it without losing a single nuance of her 
+dignity, coming back stronger than ever, and we know, what kind of vengeance 
+she had in store for those who treated her badly. She is our beloved 
+antagonist, &lt;strong&gt;because&lt;/strong&gt; she is evil and corrupted, but she is also believable. 
+Everything she does makes sense and she acts like a corrupt regent would do in 
+the real world in order to protect and preserve her position of power.&lt;/p&gt;
 
 &lt;p&gt;The fact that she paid a huge price works well to make her even more 
 believable. If she would still enjoy everything she had at the beginning of 
@@ -146,11 +184,58 @@ the show, that character would certainly be less authentic and probably also
 less realistic: You can’t be an asshole of such dimensions without ever having 
 to pay a price.&lt;/p&gt;
 
+&lt;h2 id=&quot;and-season-8&quot;&gt;And season 8?&lt;/h2&gt;
+
 &lt;p&gt;So, season 7 is over. Lots of things happened, we saw Dragons, fire, ice, 
-quite a lot of blood, many deaths and agony and some love - the usual 
-ingredients that have always worked so well for Game Of Thrones. We also saw 
-the plot moving at a quite unusual speed. Gone are the days where everything 
-was developed slowly and carefully, where things built up step by step&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it started 6 weeks ago. Granted, compared to the years before, it was a short season with just 7 instead of the 10 episodes that were the norm from season one to six.</summary></entry><entry><title type="html">Jekyll personal FAQ</title><link href="http://localhost:4000/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>http://localhost:4000/help/Jekyll-personal-faq</id><content type="html" xml:base="http://localhost:4000/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
+quite a lot of blood, many dead and undead people and even an undead dragon, 
+we saw lots of agony and some love - the usual ingredients that have always 
+worked so well for Game Of Thrones. We also saw the plot moving at a quite 
+unusual speed. Gone are the days where everything was developed slowly, where 
+things built up step by step and moves were carefully designed. Undoubtedly, 
+some of the deceased main characters are missing and the holes they left were 
+never filled. I’m talking about Tywin Lannister, Olenna Tyrell or Ramsay 
+Bolton - truly remarkable personalities in all their evil- and corruptness. 
+Personalities who fueled the show and who were the masterminds behind the 
+awesomeness of a red or purple wedding that made the show such a remarkable 
+experience.&lt;/p&gt;
+
+&lt;p&gt;Season 8 will only consist of six episodes. So far, it’s not clear whether 
+some of them will come at an overlength, yet I’m afraid, six episodes will 
+require a fast moving plot, pretty much at the same speed as we saw it in 
+season 7. Not really what I like, but so be it. There are still so many loose 
+ends to collect, not only Cersei vs Dany, and everyone vs the Night King and 
+his army. There are many smaller things that matter, what about Gendry, will 
+he meet Arya again? Will the Hound finally get his revenge for the atrocities 
+committed by his brother when they still were children? What about Tormund and 
+Brienne, will they finally get the chance to make &lt;em&gt;monster babies&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h4 id=&quot;and-most-importantly&quot;&gt;And, most importantly:&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Who the hell will still be among the living at the end of the final episode?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = &quot;https://silvercircle.github.io/got/season7-recap.html&quot;;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = &quot;ALEX#@#2017-08-28 01:31:31 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>alex</name></author><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming rate and some of these events were unfortunately too predictable. This might, however, just be a side effect of the main plot approaching the final conclusion.</summary></entry><entry><title type="html">Jekyll personal FAQ</title><link href="http://localhost:4000/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>http://localhost:4000/help/Jekyll-personal-faq</id><content type="html" xml:base="http://localhost:4000/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-22T22:45:00+0200&quot;&gt;2017-08-22 22:45:00 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -384,7 +469,7 @@ Microsoft Word and can accept the Word document format.&lt;/p&gt;
 
 &lt;a href=&quot;/assets/gfx/vim.png&quot; rel=&quot;prettyPhoto[gallery]&quot;&gt;
 
-	    &lt;img src=&quot;/assets/gfx/thumb_vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
+	    &lt;img src=&quot;/assets/gfx/vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
 editor&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
 
 &lt;/a&gt;
