@@ -17,7 +17,7 @@ of the last 20 years or so that made the Web a dynamic, lively and social
 place and go back to publishing static HTML pages - something we did 25 years 
 ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
 
-## Some history lesson
+## A not so short history lesson
 
 Back, in the 90's, when the web was still young, it was a very static place. 
 Most pages were simple HTML documents with the rare image added every now and 

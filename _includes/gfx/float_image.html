@@ -1,8 +1,12 @@
 {% assign this_width = include.width | plus: 16 %}
 <div class="floatimage {{include.align}}" style="width:{{this_width}}px; max-width:{{this_width}}px;">
-<a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" rel="prettyPhoto[gallery]" title="{{include.title}}">
-	    <img src="{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+{% unless include.nolink == 1 %}
+<a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" rel="prettyPhoto[gallery]">
+{% endunless %}
+	    <img src="{% if include.thumb == 1 %}{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}{% else %}{{ site.baseurl }}/assets/gfx/{{ include.image }}{% endif %}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+{% unless include.nolink == 1 %}
 </a>
+{% endunless %}
 <div class="floatimage_title">
     {{ include.title }}
 </div>
