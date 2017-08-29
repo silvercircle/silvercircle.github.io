@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-29T10:47:18+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-29T13:43:33+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:37+0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -118,7 +118,12 @@ couple of excellent dialogues and high quality acting, mainly from Cersei,
 Jaime, Ellaria Sand and The Queen Of Thorns, the sixth and seventh were 
 decent, but no real match for the last two episodes we’ve seen in season six.&lt;/p&gt;
 
-&lt;p&gt;In season seven, the plot has been brought to its first climax, the war for 
+&lt;div class=&quot;ytcontainer&quot;&gt;
+&lt;iframe class=&quot;yt&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/Fc4jGZcO7M0&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In season seven, the plot has been brought to its first climax, the war for 
 the Iron Throne between the challenger from across the narrow sea, our 
 well-known Targaryen princess and self-proclaimed Queen Cersei who still sits 
 on the Iron Throne. Additionally, the ground work for the final conflict 
@@ -149,9 +154,9 @@ significantly more than ever before. For the most part, this is understandable
 though, because the plot has already entered its &lt;em&gt;grande finale&lt;/em&gt; stage and the 
 number of pro- and antagonists is considerably lower than it was in the first 
 seasons. With the departure of Littlefinger one more interesting character is 
-now gone for good. Not that he didn’t deserve it, but I’ve seen him always as 
-a worthy addition to the series with a lot of potential for surprising plot 
-developments.&lt;/p&gt;
+now gone for good. Not that he didn’t deserve what he got, but I’ve seen him 
+always as a worthy addition to the series with a lot of potential for 
+surprising plot developments.&lt;/p&gt;
 
 &lt;p&gt;But not all hope is lost. The final episode of season 7 also opened room for 
 new theories, speculations and possible plot twists in the eight and final 
