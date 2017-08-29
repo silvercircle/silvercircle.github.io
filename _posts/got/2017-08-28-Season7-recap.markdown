@@ -62,7 +62,8 @@ more apparent during the seventh season: The show has become predictable,
 significantly more than ever before. For the most part, this is understandable 
 though, because the plot has already entered its *grande finale* stage and the 
 number of pro- and antagonists is considerably lower than it was in the first 
-seasons. With the departure of Littlefinger one more interesting character is 
+seasons which limits the options for unforeseeable but still believable plot 
+twists. With the departure of Littlefinger one more interesting character is 
 now gone for good. Not that he didn't deserve what he got, but I've seen him 
 always as a worthy addition to the series with a lot of potential for 
 surprising plot developments.
@@ -70,10 +71,14 @@ surprising plot developments.
 But not all hope is lost. The final episode of season 7 also opened room for 
 new theories, speculations and possible plot twists in the eight and final 
 season to come. How did Tyrion convince his sister to return to the green 
-table and does he know about her sinister plans? What about Jon, who, by the 
-way, still knows *nothing*, and Dany, who has now officially lost one of her 
-many titles: She is no longer *first of his name* even though she has not yet 
-learned of the new situation.
+table and does he know about her sinister plans of betraying the entire 
+population of Westeros? When Jaime learned about those plans, he left her in 
+disgust, risking a gruesome death at the hands of the omnipresent Mountain 
+that (no longer) rides.
+
+What about Jon, who, by the way, still knows *nothing*, and Dany, who has now 
+officially lost one of her many titles: She is no longer *first of his name* 
+even though she has not yet learned of the new situation.
 
 What about Cersei? Will she succeed? Unlikely, but what is going to happen to 
 her, now that she lost the last member of her family who was still on her 
