@@ -5,6 +5,9 @@ pagination:
   per_page: 10
   permalink: '/blog/page:num/'
   collection: 'posts' 
+  trail: 
+    before: 3
+    after: 3
 plugins:
  - jekyll-feed
  - jekyll-redirect-from

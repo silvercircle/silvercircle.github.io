@@ -43,6 +43,8 @@ couple of excellent dialogues and high quality acting, mainly from Cersei,
 Jaime, Ellaria Sand and The Queen Of Thorns, the sixth and seventh were 
 decent, but no real match for the last two episodes we've seen in season six.
 
+{% include youtube.html id="Fc4jGZcO7M0" %}
+<br>
 In season seven, the plot has been brought to its first climax, the war for 
 the Iron Throne between the challenger from across the narrow sea, our 
 well-known Targaryen princess and self-proclaimed Queen Cersei who still sits 
@@ -61,9 +63,9 @@ significantly more than ever before. For the most part, this is understandable
 though, because the plot has already entered its *grande finale* stage and the 
 number of pro- and antagonists is considerably lower than it was in the first 
 seasons. With the departure of Littlefinger one more interesting character is 
-now gone for good. Not that he didn't deserve it, but I've seen him always as 
-a worthy addition to the series with a lot of potential for surprising plot 
-developments.
+now gone for good. Not that he didn't deserve what he got, but I've seen him 
+always as a worthy addition to the series with a lot of potential for 
+surprising plot developments.
 
 But not all hope is lost. The final episode of season 7 also opened room for 
 new theories, speculations and possible plot twists in the eight and final 
