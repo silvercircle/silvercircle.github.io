@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://silvercircle.github.io/sitemap.xml
