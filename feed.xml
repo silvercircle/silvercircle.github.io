@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-08-30T10:52:45+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-08-30T11:43:56+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:37+0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -147,7 +147,8 @@ by some undead giants and an undead dragon has been laid.&lt;/p&gt;
 
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:416px; max-width:416px;&quot;&gt;
 
-&lt;a href=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; data-gallery=&quot;prettyPhoto[gallery]&quot;&gt;
+&lt;a href=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
+Westeros equally well and Sansa's outfit is probably a coincidence :)&quot;&gt;
 
 	    &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;width:400px; max-width:400px; height:auto; margin:0; display:inline;&quot; /&gt;
@@ -477,7 +478,8 @@ Microsoft Word and can accept the Word document format.&lt;/p&gt;
 
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
 
-&lt;a href=&quot;/assets/gfx/vim.png&quot; data-gallery=&quot;prettyPhoto[gallery]&quot;&gt;
+&lt;a href=&quot;/assets/gfx/vim.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;This is how a post can be written in Jekyll - with a simple text 
+editor&quot;&gt;
 
 	    &lt;img src=&quot;/assets/gfx/vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
 editor&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
@@ -637,7 +639,9 @@ s.setAttribute('data-timestamp', +new Date());
     
     &lt;/div&gt;
     
-&lt;/div&gt;</content><author><name>alex</name></author><summary type="html">This is page 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien. Next page (Multipage example, Page 2)</summary></entry><entry><title type="html">A test page</title><link href="https://silvercircle.github.io/2017/08/20/Test.html" rel="alternate" type="text/html" title="A test page" /><published>2017-08-20T00:00:00+02:00</published><updated>2017-08-20T00:00:00+02:00</updated><id>https://silvercircle.github.io/2017/08/20/Test</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/20/Test.html">&lt;h1 id=&quot;this-is-supposed-to-be-the-excerpt&quot;&gt;This is supposed to be the excerpt&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>alex</name></author><summary type="html">This is page 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis venenatis eget, scelerisque quis lorem. In bibendum eros laoreet blandit viverra. Donec venenatis id est eu ornare. Etiam dictum egestas lectus nec interdum. Nullam efficitur ipsum eget vehicula aliquet. Fusce nunc massa, pretium vel laoreet quis, efficitur at libero. Donec in semper velit, sit amet volutpat sapien. Next page (Multipage example, Page 2)</summary></entry><entry><title type="html">A test page</title><link href="https://silvercircle.github.io/2017/08/20/Test.html" rel="alternate" type="text/html" title="A test page" /><published>2017-08-20T00:00:00+02:00</published><updated>2017-08-20T00:00:00+02:00</updated><id>https://silvercircle.github.io/2017/08/20/Test</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/20/Test.html">&lt;h2 id=&quot;this-is-supposed-to-be-a-test--playground-page&quot;&gt;This is supposed to be a test / playground page.&lt;/h2&gt;
+
+&lt;h2 id=&quot;nothing-to-see-here&quot;&gt;Nothing to see here&lt;/h2&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by alex | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-20T00:00:00+0200&quot;&gt;2017-08-20 00:00:00 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -650,6 +654,10 @@ pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor.
 Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
 bibendum.&lt;/p&gt;
 
+&lt;p&gt;&lt;a data-fancybox=&quot;&quot; href=&quot;https://www.youtube.com/watch?v=_sI_Ps7JSEk&quot;&gt;
+  YouTube video
+&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. 
 Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien 
 ipsum, molestie sit amet ultrices non, sagittis sit amet eros.&lt;/p&gt;
@@ -661,7 +669,7 @@ ipsum, molestie sit amet ultrices non, sagittis sit amet eros.&lt;/p&gt;
 
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
 
-&lt;a href=&quot;/assets/gfx/gadse.jpg&quot; data-gallery=&quot;prettyPhoto[gallery]&quot;&gt;
+&lt;a href=&quot;/assets/gfx/gadse.jpg&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;A image with a fairly long title that needs to wrap around&quot;&gt;
 
 	    &lt;img src=&quot;/assets/gfx/thumb_gadse.jpg&quot; alt=&quot;A image with a fairly long title that needs to wrap around&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
 
@@ -713,14 +721,4 @@ Aliquam pulvinar massa lacus, a varius magna hendrerit a. Nulla facilisi. In
 gravida, ligula nec suscipit ornare, odio nibh aliquet nulla, suscipit dictum 
 turpis erat et enim. Aliquam ultrices nulla rutrum ultricies porttitor. 
 Vestibulum feugiat finibus turpis quis viverra. Pellentesque id diam nisi. 
-Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.&lt;/p&gt;
-
-&lt;p&gt;Nam est est, congue ut massa sed, imperdiet rhoncus odio. Nulla fermentum 
-velit nibh. Phasellus scelerisque non sem eu ornare. Morbi ac dictum lacus, 
-eget luctus lorem. Fusce non odio laoreet, tincidunt lacus in, lobortis 
-ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-per inceptos himenaeos. Nam fringilla laoreet ligula tempor hendrerit. Nam 
-suscipit ornare gravida. Nullam in turpis tempus, ultricies leo in, convallis 
-velit. Fusce quis libero eget odio varius blandit. Proin ac est vulputate, 
-dictum sem ac, aliquam ipsum. Quisque quis sapien eu felis venenatis laoreet 
-ac a mi. Praesent facilisis fermentum felis nec vulputate.&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum.</summary></entry></feed>
+Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.&lt;/p&gt;</content><author><name>alex</name></author><summary type="html">Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum.</summary></entry></feed>
