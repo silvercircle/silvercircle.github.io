@@ -232,7 +232,7 @@
 }));
 
 $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto({
+    $("a[data-gallery^='prettyPhoto']").prettyPhoto({
         animation_speed: 'fast', /* fast/slow/normal */
         slideshow: false, /* false OR interval time in ms */
         autoplay_slideshow: false, /* true/false */
