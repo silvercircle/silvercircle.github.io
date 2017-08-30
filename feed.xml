@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-29T13:43:33+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-30T01:53:08+02:00</updated><id>http://localhost:4000/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="http://localhost:4000/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:37+0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -97,14 +97,37 @@ counterparts.&lt;/p&gt;
 
 &lt;p&gt;You know what? The headline contains the word &lt;em&gt;but&lt;/em&gt;, and at the beginning of 
 the season, we learned through Jon Snow what Ned Stark thought about said 
-word:&lt;/p&gt;
+word, or, more precisely, sentences using it:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Everything before the word but is horseshit.&lt;/p&gt;
+  &lt;p&gt;Everything before the word &lt;strong&gt;but&lt;/strong&gt; is horseshit.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Still, I have to use a but here. Sorry, but Ned Stark was not always right, 
-because if he was, he wouldn’t have lost his head.&lt;/p&gt;
+&lt;p&gt;Sorry Ned, I have to use the word here. Also sorry for not thinking that you 
+were always right, because if you were, you wouldn’t have lost your &lt;del&gt;mind&lt;/del&gt; 
+head.&lt;/p&gt;
+
+&lt;p&gt;And it seems, even his daughters do not always fully stick to Ned’s beliefs 
+and principles, because while watching one of the key scenes in episode 7, 
+another Ned-ism from the very first moments of the show came to mind:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The man who passes the sentence should swing the sword&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+
+&lt;div class=&quot;ytcontainer&quot;&gt;
+&lt;iframe class=&quot;yt&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/Fc4jGZcO7M0&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+Clearly, Sansa and Arya did it not the &lt;em&gt;Ned Stark way&lt;/em&gt; by sealing 
+Littlefinger’s fate with a perfect example of team work, violating one of 
+their father’s core principles. But who cares, the scene was still good and 
+both Arya and Sansa are not &lt;em&gt;man&lt;/em&gt; anyway.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-yeah-its-over---for-now&quot;&gt;So, yeah, it’s over - for now&lt;/h2&gt;
 
 &lt;p&gt;Game of Thrones Season 7 is over and to me it seems it just started last week, 
 but in reality, it’s been 6 weeks ago. Despite all the problems that 
@@ -118,18 +141,12 @@ couple of excellent dialogues and high quality acting, mainly from Cersei,
 Jaime, Ellaria Sand and The Queen Of Thorns, the sixth and seventh were 
 decent, but no real match for the last two episodes we’ve seen in season six.&lt;/p&gt;
 
-&lt;div class=&quot;ytcontainer&quot;&gt;
-&lt;iframe class=&quot;yt&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/Fc4jGZcO7M0&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-In season seven, the plot has been brought to its first climax, the war for 
+&lt;p&gt;In season seven, the plot has been brought to its first climax, the war for 
 the Iron Throne between the challenger from across the narrow sea, our 
 well-known Targaryen princess and self-proclaimed Queen Cersei who still sits 
 on the Iron Throne. Additionally, the ground work for the final conflict 
 between the human race and the White Walkers with their army of the dead, now 
-strengthened by some undead giants and now even an undead dragon has been 
-laid.&lt;/p&gt;
+strengthened by some undead giants and an undead dragon has been laid.&lt;/p&gt;
 
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:416px; max-width:416px;&quot;&gt;
 
@@ -153,7 +170,8 @@ more apparent during the seventh season: The show has become predictable,
 significantly more than ever before. For the most part, this is understandable 
 though, because the plot has already entered its &lt;em&gt;grande finale&lt;/em&gt; stage and the 
 number of pro- and antagonists is considerably lower than it was in the first 
-seasons. With the departure of Littlefinger one more interesting character is 
+seasons which limits the options for unforeseeable but still believable plot 
+twists. With the departure of Littlefinger one more interesting character is 
 now gone for good. Not that he didn’t deserve what he got, but I’ve seen him 
 always as a worthy addition to the series with a lot of potential for 
 surprising plot developments.&lt;/p&gt;
@@ -161,10 +179,14 @@ surprising plot developments.&lt;/p&gt;
 &lt;p&gt;But not all hope is lost. The final episode of season 7 also opened room for 
 new theories, speculations and possible plot twists in the eight and final 
 season to come. How did Tyrion convince his sister to return to the green 
-table and does he know about her sinister plans? What about Jon, who, by the 
-way, still knows &lt;em&gt;nothing&lt;/em&gt;, and Dany, who has now officially lost one of her 
-many titles: She is no longer &lt;em&gt;first of his name&lt;/em&gt; even though she has not yet 
-learned of the new situation.&lt;/p&gt;
+table and does he know about her sinister plans of betraying the entire 
+population of Westeros? When Jaime learned about those plans, he left her in 
+disgust, risking a gruesome death at the hands of the omnipresent Mountain 
+that (no longer) rides.&lt;/p&gt;
+
+&lt;p&gt;What about Jon, who, by the way, still knows &lt;em&gt;nothing&lt;/em&gt;, and Dany, who has now 
+officially lost one of her many titles: She is no longer &lt;em&gt;first of his name&lt;/em&gt; 
+even though she has not yet learned of the new situation.&lt;/p&gt;
 
 &lt;p&gt;What about Cersei? Will she succeed? Unlikely, but what is going to happen to 
 her, now that she lost the last member of her family who was still on her 
@@ -195,12 +217,12 @@ to pay a price.&lt;/p&gt;
 quite a lot of blood, many dead and undead people and even an undead dragon, 
 we saw lots of agony and some love - the usual ingredients that have always 
 worked so well for Game Of Thrones. We also saw the plot moving at a quite 
-unusual speed. Gone are the days where everything was developed slowly, where 
-things built up step by step and moves were carefully designed. Undoubtedly, 
-some of the deceased main characters are missing and the holes they left were 
-never filled. I’m talking about Tywin Lannister, Olenna Tyrell or Ramsay 
-Bolton - truly remarkable personalities in all their evil- and corruptness. 
-Personalities who fueled the show and who were the masterminds behind the 
+unusual speed. Gone are the days when everything developed slowly, when things 
+built up step by step and moves were carefully designed. Undoubtedly, some of 
+the deceased main characters are missing and the holes they left were never 
+filled. I’m talking about Tywin Lannister, Olenna Tyrell or Ramsay Bolton - 
+truly remarkable personalities in all their evil- and corruptness. 
+Personalities who fueled the show and were the masterminds behind the 
 awesomeness of a red or purple wedding that made the show such a remarkable 
 experience.&lt;/p&gt;
 

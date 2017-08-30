@@ -242,7 +242,7 @@ $(document).ready(function(){
         default_width: 500,
         default_height: 344,
         counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
-        theme: 'dark_square', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+        theme: 'facebook', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
         horizontal_padding: 20, /* The padding on each side of the picture */
         hideflash: false, /* Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto */
         wmode: 'opaque', /* Set the flash wmode attribute */
