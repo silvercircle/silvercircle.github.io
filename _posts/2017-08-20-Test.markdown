@@ -10,7 +10,9 @@ excerpt: >
   Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus bibendum. 
 ---
 
-# This is supposed to be the excerpt
+## This is supposed to be a test / playground page.
+
+## Nothing to see here
 {% include post_header.html %}
 
 Ut maximus viverra tortor, non semper est tempor eu. Cras tempus dui neque, id 
@@ -18,6 +20,10 @@ semper ex aliquam a. Nullam et iaculis lectus. Nulla maximus tellus ligula, a
 pulvinar diam suscipit a. Aliquam hendrerit vulputate ante sit amet porttitor. 
 Sed vitae tempus justo, nec luctus erat. Aenean at justo vel neque tempus 
 bibendum. 
+
+<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+  YouTube video
+</a>
 
 In consectetur erat eget urna convallis, sit amet feugiat felis venenatis. 
 Mauris hendrerit eros erat, in congue metus mollis ac. Pellentesque sapien 
@@ -65,12 +71,3 @@ turpis erat et enim. Aliquam ultrices nulla rutrum ultricies porttitor.
 Vestibulum feugiat finibus turpis quis viverra. Pellentesque id diam nisi. 
 Vestibulum ligula libero, mollis ac eros ac, mattis pretium nibh.
 
-Nam est est, congue ut massa sed, imperdiet rhoncus odio. Nulla fermentum 
-velit nibh. Phasellus scelerisque non sem eu ornare. Morbi ac dictum lacus, 
-eget luctus lorem. Fusce non odio laoreet, tincidunt lacus in, lobortis 
-ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-per inceptos himenaeos. Nam fringilla laoreet ligula tempor hendrerit. Nam 
-suscipit ornare gravida. Nullam in turpis tempus, ultricies leo in, convallis 
-velit. Fusce quis libero eget odio varius blandit. Proin ac est vulputate, 
-dictum sem ac, aliquam ipsum. Quisque quis sapien eu felis venenatis laoreet 
-ac a mi. Praesent facilisis fermentum felis nec vulputate. 

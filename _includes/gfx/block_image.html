@@ -1,6 +1,6 @@
 <div class="blockimage">
 {% unless include.nolink == 1 %}
-<a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" rel="prettyPhoto[gallery]">
+<a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox="gallery" data-caption="{{include.title}}">
 {% endunless %}
         <img src="{{ site.baseurl }}/assets/gfx/{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
 {% unless include.nolink == 1 %}    

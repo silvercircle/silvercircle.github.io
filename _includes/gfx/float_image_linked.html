@@ -1,7 +1,7 @@
 {% assign this_width = include.width | plus: 16 %}
 <div class="floatimage {{include.align}}" style="width:{{this_width}}px; max-width:{{this_width}}px;">
 {% unless include.nolink == 1 %}
-<a href="{{ include.image }}" rel="prettyPhoto[gallery]">
+<a href="{{ include.image }}" data-fancybox="gallery">
 {% endunless %}
 	    <img src="{{ include.image }}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
 {% unless include.nolink == 1 %}

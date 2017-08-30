@@ -1,6 +1,6 @@
 <div class="floatimage">
     {% unless include.nolink == 1 %}
-    <a href="{{ include.image }}" rel="prettyPhoto[gallery]">
+    <a href="{{ include.image }}" data-fancybox="gallery">
     {% endunless %}
             <img src="{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
     {% unless include.nolink == 1 %}    
