@@ -1,5 +1,10 @@
 theme: jekyll-theme-architect
 url: https://silvercircle.github.io
+exclude:
+ - README.md
+ - .gitignore
+ - "*.sublime-project"
+ - "*.sublime-workspace"
 pagination:
   enabled: true
   debug: false
