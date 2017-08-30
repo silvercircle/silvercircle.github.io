@@ -1,0 +1,11 @@
+{% if paginator.page_trail %}
+<div style="margin: 0 auto; padding:0;text-align:center;">
+<ul class="paginator_trail_wrapper">
+{% for trail in paginator.page_trail %}
+<li class="paginator_trail {% if page.url == trail.path or (forloop.first and page.url contains 'index.html') %}selected{% endif %}">
+      <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+  </li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}    

@@ -18,18 +18,34 @@ excerpt: >
 # Season 7 was awesome, but...
 {% include post_header.html %}
 
-**Good things do not last long enough**. Our perception makes us believe that 
-good and enjoyable times zoom by way faster than their not so enjoyable 
-counterparts.
+**Good things do not last long enough**. Our perception makes us believe that
+good and enjoyable times zoom by way faster than their not so enjoyable
+counterparts. 
 
 You know what? The headline contains the word *but*, and at the beginning of 
 the season, we learned through Jon Snow what Ned Stark thought about said 
-word:
+word, or, more precisely, sentences using it:
 
-> Everything before the word but is horseshit.
+> Everything before the word **but** is horseshit.
 
-Still, I have to use a but here. Sorry, but Ned Stark was not always right, 
-because if he was, he wouldn't have lost his head. 
+Sorry Ned, I have to use the word here. Also sorry for not thinking that you 
+were always right, because if you were, you wouldn't have lost your ~~mind~~ 
+head. 
+
+And it seems, even his daughters do not always fully stick to Ned's beliefs 
+and principles, because while watching one of the key scenes in episode 7, 
+another Ned-ism from the very first moments of the show came to mind:
+
+> The man who passes the sentence should swing the sword
+
+{% include youtube.html id="Fc4jGZcO7M0" %}
+<br>
+Clearly, Sansa and Arya did it not the *Ned Stark way* by sealing 
+Littlefinger's fate with a perfect example of team work, violating one of 
+their father's core principles. But who cares, the scene was still good and 
+both Arya and Sansa are not *man* anyway.
+
+## So, yeah, it's over - for now
 
 Game of Thrones Season 7 is over and to me it seems it just started last week, 
 but in reality, it's been 6 weeks ago. Despite all the problems that 
@@ -43,15 +59,12 @@ couple of excellent dialogues and high quality acting, mainly from Cersei,
 Jaime, Ellaria Sand and The Queen Of Thorns, the sixth and seventh were 
 decent, but no real match for the last two episodes we've seen in season six.
 
-{% include youtube.html id="Fc4jGZcO7M0" %}
-<br>
 In season seven, the plot has been brought to its first climax, the war for 
 the Iron Throne between the challenger from across the narrow sea, our 
 well-known Targaryen princess and self-proclaimed Queen Cersei who still sits 
 on the Iron Throne. Additionally, the ground work for the final conflict 
 between the human race and the White Walkers with their army of the dead, now 
-strengthened by some undead giants and now even an undead dragon has been 
-laid.
+strengthened by some undead giants and an undead dragon has been laid.
 
 {% include gfx/float_image.html image="got/sansa_the_sith.jpg" align="right" 
 width="400" title="Learn from your masters, once you know enough, kill them. 
@@ -109,12 +122,12 @@ So, season 7 is over. Lots of things happened, we saw Dragons, fire, ice,
 quite a lot of blood, many dead and undead people and even an undead dragon, 
 we saw lots of agony and some love - the usual ingredients that have always 
 worked so well for Game Of Thrones. We also saw the plot moving at a quite 
-unusual speed. Gone are the days where everything was developed slowly, where 
-things built up step by step and moves were carefully designed. Undoubtedly, 
-some of the deceased main characters are missing and the holes they left were 
-never filled. I'm talking about Tywin Lannister, Olenna Tyrell or Ramsay 
-Bolton - truly remarkable personalities in all their evil- and corruptness. 
-Personalities who fueled the show and who were the masterminds behind the 
+unusual speed. Gone are the days when everything developed slowly, when things 
+built up step by step and moves were carefully designed. Undoubtedly, some of 
+the deceased main characters are missing and the holes they left were never 
+filled. I'm talking about Tywin Lannister, Olenna Tyrell or Ramsay Bolton - 
+truly remarkable personalities in all their evil- and corruptness. 
+Personalities who fueled the show and were the masterminds behind the 
 awesomeness of a red or purple wedding that made the show such a remarkable 
 experience.
 
