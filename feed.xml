@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-08-30T13:09:16+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-08-30T13:33:22+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">Silvercircle’s Jekyll playground</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/jekyll/site/2017/08/28/How-to-build-locally-for-github-page.html">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;site&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:37+0200&quot;&gt;2017-08-28 10:02:37 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -145,13 +145,13 @@ Queen Cersei who still sits on the Iron Throne. Additionally, the ground work fo
 conflict between the human race and the White Walkers with their army of the dead, now strengthened
 by some undead giants and an undead dragon has been laid.&lt;/p&gt;
 
-&lt;div class=&quot;floatimage right&quot; style=&quot;width:416px; max-width:416px;&quot;&gt;
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:50%; max-width:50%;&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)&quot;&gt;
 
 	    &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
-Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;width:400px; max-width:400px; height:auto; margin:0; display:inline;&quot; /&gt;
+Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;width:50%px; max-width:50%px; height:auto; margin:0; display:inline;&quot; /&gt;
 
 &lt;/a&gt;
 
@@ -476,7 +476,7 @@ JavaScript or a template language. As an author, you write content the way you
 do it in a word processor. In fact, many CMS allow authors to write content in 
 Microsoft Word and can accept the Word document format.&lt;/p&gt;
 
-&lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:300; max-width:300;&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/vim.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;This is how a post can be written in Jekyll - with a simple text 
 editor&quot;&gt;
@@ -666,12 +666,11 @@ ipsum, molestie sit amet ultrices non, sagittis sit amet eros.&lt;/p&gt;
 &lt;p&gt;This is a paragraph&lt;/p&gt;
 
 &lt;h3 id=&quot;and-another-one&quot;&gt;and another one&lt;/h3&gt;
-
-&lt;div class=&quot;floatimage right&quot; style=&quot;width:316px; max-width:316px;&quot;&gt;
+&lt;div class=&quot;floatimage right&quot; style=&quot;width:50%; max-width:50%;&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/gadse.jpg&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;A image with a fairly long title that needs to wrap around&quot;&gt;
 
-	    &lt;img src=&quot;/assets/gfx/thumb_gadse.jpg&quot; alt=&quot;A image with a fairly long title that needs to wrap around&quot; style=&quot;width:300px; max-width:300px; height:auto; margin:0; display:inline;&quot; /&gt;
+	    &lt;img src=&quot;/assets/gfx/thumb_gadse.jpg&quot; alt=&quot;A image with a fairly long title that needs to wrap around&quot; style=&quot;width:50%px; max-width:50%px; height:auto; margin:0; display:inline;&quot; /&gt;
 
 &lt;/a&gt;
 

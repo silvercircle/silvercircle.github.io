@@ -14,12 +14,12 @@
 }
 
 #main-content {
-  width: 650px;
+  width: 660px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #main-content {
-    width: 450px; 
+    width: 460px; 
   }
 }
 
@@ -867,7 +867,7 @@ div.floatimage {
     background-color: #efefef;
     padding: 5px;
     word-wrap: break-word;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: 1px solid #ddd;
 }
 
@@ -899,10 +899,10 @@ div.floatimage_title {
 	font-size: smaller;
 }
 
-#main-content p {
+#main-content p, #main-content li {
     text-align: justify;
     text-justify: inter-word;
-    font-family: Georgia, Contantia, Serif;
+    font-family: Georgia, Constantia, Serif;
     font-size:12pt;	
 }
 
