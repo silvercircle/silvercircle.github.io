@@ -2,6 +2,7 @@
 author: AlexVie
 title: Home
 layout: default
+menucontext: home
 date: 2017-08-25 06:35:00+0200
 modified: 2017-08-25 06:35:07+0200
 ---

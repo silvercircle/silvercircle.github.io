@@ -2,6 +2,7 @@
 layout: default
 author: alex
 title: Contact
+menucontext: contact
 ---
 # How to contact
 
