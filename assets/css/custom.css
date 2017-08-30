@@ -15,6 +15,16 @@
   src: local("Monda Regular"), local("Monda-Regular"), url("https://fonts.gstatic.com/s/monda/v4/sk05J8GA1NvUxDnk43EgAQ.woff") format("woff");
 }
 
+#main-content {
+  width: 660px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #main-content {
+    width: 460px; 
+  }
+}
+
 /* jquery fancybox stylesheet */
 
 .fancybox-enabled {
@@ -850,15 +860,16 @@ div#content-wrapper {
 }
 
 #content-wrapper div.inner {
-    padding: 30px 30px 0 30px;
+    padding: 30px 0 0 0;
     background-color: white;
+    box-sizing: border-box;
 }
 
 div.floatimage {
     background-color: #efefef;
     padding: 5px;
     word-wrap: break-word;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: 1px solid {{site.bcolor}};
 }
 
@@ -890,10 +901,10 @@ div.floatimage_title {
 	font-size: smaller;
 }
 
-#main-content p {
+#main-content p, #main-content li {
     text-align: justify;
     text-justify: inter-word;
-    font-family: Georgia, Contantia, Serif;
+    font-family: Georgia, Constantia, Serif;
     font-size:12pt;	
 }
 
@@ -934,12 +945,12 @@ div.site_footer_wrapper {
 	background-color: #222;
 	color: white;
 	min-height:50px;
-    display: table;
+  display: table;
 	width:100%;	
 }
 
 div.site_footer {
-	width: 940px;
+	width: 100%;
 	margin:auto;
 	font-size: smaller;
 	display: table;
@@ -976,10 +987,11 @@ div.site_footer div.column.right {
 
 div.menubar_wrapper {
 	background-color: black;
+  text-align: left;
 }
 
 div.menubar {
-    width: 940px;
+    width: 100%;
     margin:auto;
     font-size: larger;
     display: table;

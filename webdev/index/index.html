@@ -1,0 +1,18 @@
+---
+layout: default
+pagination:
+  enabled: true  
+  sort_field: date
+  sort_reverse: true
+  per_page: 3
+  collection: webdev
+  permalink: '/page:num.html'  
+---
+<div class="blog-index">
+    {% for post in paginator.posts %}
+    {% include paginator_body.html %}
+    {% endfor %}
+    {% include paginator_trail.html %}
+</div>
+<br>
+

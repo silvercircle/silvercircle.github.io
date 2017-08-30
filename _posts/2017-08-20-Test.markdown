@@ -33,7 +33,7 @@ ipsum, molestie sit amet ultrices non, sagittis sit amet eros.
 This is a paragraph
 
 ### and another one
-{% include gfx/float_image.html image="gadse.jpg" align="right" width="300" 
+{% include gfx/float_image.html image="gadse.jpg" align="right" width="50%" 
 title="A image with a fairly long title that needs to wrap around" thumb=1 %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel 
 faucibus magna, in maximus lorem. Nullam nunc tellus, ullamcorper quis 

@@ -62,7 +62,7 @@ Queen Cersei who still sits on the Iron Throne. Additionally, the ground work fo
 conflict between the human race and the White Walkers with their army of the dead, now strengthened
 by some undead giants and an undead dragon has been laid.
 
-{% include gfx/float_image.html image="got/sansa_the_sith.jpg" align="right" width="400"
+{% include gfx/float_image.html image="got/sansa_the_sith.jpg" align="right" width="50%"
 title="Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)" %} 
 The cliffhanger in the final episode of season 7 happened as expected and thus shared a common

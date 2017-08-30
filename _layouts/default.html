@@ -1,6 +1,7 @@
 {% include site_header.html %}
     <div id="content-wrapper">
       <div class="inner clearfix">
+        <div style="margin:0 20px;">
         {% if page.columns and page.columns > 1 %}
         <section id="main-content" style="column-count:{{page.columns}}; column-gap:20px;">
         {% else %}
@@ -48,6 +49,7 @@
           {% endif %}
         </aside>
       </div>
+     </div>
     </div>
     {% include site_footer.html %}
     {% if site.google_analytics %}

@@ -1,5 +1,4 @@
-{% assign this_width = include.width | plus: 16 %}
-<div class="floatimage {{include.align}}" style="width:{{this_width}}px; max-width:{{this_width}}px;">
+<div class="floatimage {{include.align}}" style="width:{{include.width}}; max-width:{{include.width}};">
 {% unless include.nolink == 1 %}
 <a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox="gallery" data-caption="{{include.title}}">
 {% endunless %}

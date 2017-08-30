@@ -13,6 +13,10 @@ pagination:
   trail: 
     before: 3
     after: 3
+collections:
+  webdev:
+    output: true
+    permalink: /:collection/:path    
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
