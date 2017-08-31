@@ -29,6 +29,7 @@
   /**
    * Remove default margin.
    */
+
   body {
     font-family: Monda, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0; }
@@ -639,6 +640,7 @@
   #content-wrapper {
     background-color: #f0f0f0;
     padding: 0;  
+    overflow: hidden;
     border-top: solid 1px #fff; }
   
   #content-wrapper div.inner {
@@ -1841,7 +1843,8 @@ div.site_footer_wrapper {
 	color: white;
 	min-height:50px;
   display: table;
-	width:100%;	
+  width:100%;
+  overflow: hidden;
 }
 
 div.site_footer {

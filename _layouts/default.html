@@ -26,17 +26,13 @@
               .tar.gz file
             </a>
           {% endif %}
-
-          {% if site.github.is_project_page %}
-            <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
-          {% endif %}
         </aside>
       </div>
      </div>
     </div>
     {% include site_footer.html %}
     {% if site.google_analytics %}
-      {% include google_analytics.html %}
+    {% include google_analytics.html %}
     {% endif %}
     {% include footer_scripts.html %}
   </body>

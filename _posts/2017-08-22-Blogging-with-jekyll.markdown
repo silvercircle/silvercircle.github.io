@@ -5,6 +5,7 @@ blog: true
 date: 2017-08-22 16:30:00+0200
 modified: 2017-08-28 05:12:58+0200
 categories: [Jekyll]
+menucontext: blog
 excerpt: >
   The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
 ---
@@ -92,7 +93,7 @@ JavaScript or a template language. As an author, you write content the way you
 do it in a word processor. In fact, many CMS allow authors to write content in 
 Microsoft Word and can accept the Word document format.
 
-{% include gfx/float_image.html image="vim.png" align="right" width="300" 
+{% include gfx/float_image.html image="vim.png" align="right" width="300px" 
 title="This is how a post can be written in Jekyll - with a simple text 
 editor" %}In Jekyll, you write posts using the markdown language. While the 
 basics of it are easy to learn, creating more advanced posts require either a 

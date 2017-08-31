@@ -5,6 +5,7 @@ exclude:
  - .gitignore
  - "*.sublime-project"
  - "*.sublime-workspace"
+permalink: /:year/:month/:day/:title/
 pagination:
   enabled: true
   debug: false
@@ -16,7 +17,7 @@ pagination:
 collections:
   webdev:
     output: true
-    permalink: /:collection/:path    
+    permalink: /:collection/:path/
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
