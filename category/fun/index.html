@@ -1,0 +1,17 @@
+---
+layout: default
+menucontext: blog
+pagination:
+  enabled: true
+  category: Fun
+  permalink: '/category/fun/page:num/'
+  sort_field: date
+  sort_reverse: true
+  per_page: 10
+---
+<div class="blog-index">
+    {% for post in paginator.posts %}
+    {% include paginator_body.html %}
+    {% endfor %}
+    {% include paginator_trail.html %}  
+</div>

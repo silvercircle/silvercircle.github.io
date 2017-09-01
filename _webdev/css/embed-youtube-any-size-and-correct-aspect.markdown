@@ -6,7 +6,7 @@ date: 2017-08-31T23:56:26+02:00
 modified: 2017-08-31T23:56:30+02:00
 menucontext: topics
 excerpt: >
-  This is a HowTo and deals with the problem of embedding YouTube videos at any desired size. The size of the video should be determined by the surrounding container. No fixed width and height values 
+  This is a HowTo and deals with the problem of embedding YouTube videos at any desired size. The size of the video should be determined by the surrounding container. No fixed width and height values are needed.
 ---
 
 # Embed YouTube videos - the flexible way
@@ -32,25 +32,25 @@ The [ID] is a placeholder for the video ID on YouTube, which is the part that no
 ##### The CSS
 ```css
 div.ytcontainer {
-    position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    position: relative;
 }
 
 iframe.ytframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 ```
 ##### What does it mean?
 
-The magic is in ```ytcontainer```, particularly in the zero height and the somewhat magic bottom padding value of 56.25 percent, which is **exactly the aspect ratio of a 16:9 rectangle**. The rectangle will have content height of zero, but the padding will set its overall height to 56% of its width.
+The magic is in ```ytcontainer```, particularly in the zero height and the somewhat magic bottom padding value of 56.25 percent, which is **exactly the aspect ratio of a 16:9 rectangle**. The rectangle will have a content height of zero, but the padding will set its overall height to 56% of its width.
 
-The iframe itself will then fill the available space and take an exact 16:9 format.
+The other important thing to note is the ```position: absolute``` given to the iframe. This allows the iframe to fill the padding space in the enclosing div element and inherit the 16:9 ascpect ratio of the box.
 
 #### Case 2, we want a custom width:
 
@@ -63,3 +63,5 @@ This isn't much more difficult. The only thing you need to do is to wrap the abo
 </div>
 ```
 This will do it. You get a centered (because of the ```margin: auto;```) box at 50% of the available width with a properly sized video element.
+
+{% include disqus_fragment.html %}

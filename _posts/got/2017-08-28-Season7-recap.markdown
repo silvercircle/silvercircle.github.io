@@ -52,9 +52,7 @@ my opinion, there was only one truly excellent episode and I'm talking about the
 third one brought us a couple of excellent dialogues and high quality acting, mainly from Cersei
 Jaime, Ellaria Sand and The Queen Of Thorns. Unfortunately, it also brought to us the end of one of 
 the deepest and most interesting characters in the show, but otherwise, it wouldn't be Game Of 
-Thrones. The first, sixth and seventh were decent, but no real match for the last two episodes we've 
-seen in season six and the remaining two were typical buildup episodes with no big events happening, 
-but many 
+Thrones. The first, sixth and seventh were decent, but no real match for the last two episodes we've seen in season six and the remaining two were typical buildup episodes with no big events happening.
 
 In season seven, the plot has been brought to its first climax, the war for the Iron Throne between
 the challenger from across the narrow sea, our well-known Targaryen princess and self-proclaimed

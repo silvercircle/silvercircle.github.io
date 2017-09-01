@@ -6,7 +6,9 @@
 {% unless include.nolink == 1 %}    
 </a>
 {% endunless %}
+{% if include.title and include.title != '' %}
 <div class="floatimage_title" style="padding-bottom: 8px;">
     {{ include.title }}
 </div>
+{% endif %}
 </div>
