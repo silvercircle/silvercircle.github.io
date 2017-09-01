@@ -1,10 +1,23 @@
 theme: jekyll-theme-architect
+url: https://miranda.or.at
+exclude:
+ - README.md
+ - .gitignore
+ - "*.sublime-project"
+ - "*.sublime-workspace"
+permalink: /:year/:month/:day/:title/
 pagination:
   enabled: true
   debug: false
   per_page: 10
-  permalink: '/blog/page:num/'
   collection: 'posts' 
+  trail: 
+    before: 3
+    after: 3
+collections:
+  webdev:
+    output: true
+    permalink: /:collection/:path/
 plugins:
  - jekyll-feed
  - jekyll-redirect-from

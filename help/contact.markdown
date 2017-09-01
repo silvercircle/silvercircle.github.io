@@ -3,6 +3,7 @@ layout: default
 author: alex
 title: Contact
 menucontext: contact
+permalink: /help/contact.html
 ---
 # How to contact
 

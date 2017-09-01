@@ -18,6 +18,9 @@ collections:
   webdev:
     output: true
     permalink: /:collection/:path/
+  vim:
+    output: true
+    permalink: /:collection/:path/
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
@@ -40,3 +43,4 @@ site-verification: Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y
 timezone: Europe/Berlin
 have_disqus: true
 disqus_registered_baseurl: https://silvercircle.github.io
+google_analytics: UA-15512457-3

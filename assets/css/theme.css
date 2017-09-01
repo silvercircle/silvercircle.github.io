@@ -701,7 +701,7 @@
     background: transparent url(../images/download-button.png) 0 0 no-repeat; }
   
   code, pre {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 13px;
     color: #222; }
@@ -712,7 +712,7 @@
     border: solid 1px #dbe7f3; }
   
   pre {
-    padding: 20px;
+    padding: 10px 20px;
     overflow: auto;
     text-shadow: none;
     background: #fff;
@@ -789,6 +789,7 @@
   
   #main-content h5 {
     margin-bottom: 8px;
+    margin-top: 8px;
     font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: 14px;
     color: #474747;
@@ -2025,6 +2026,9 @@ form.gsc-search-box td, form.gsc-search-box table {
 	font-family: Monda, Helvetica, Arial, serif !important;
 }
 
+.gsc-table-result, .gsc-table-result td {
+  border: none;
+}
 .gs-title {
 	line-height: 1.5em;
 	height:auto !important;
@@ -2069,13 +2073,13 @@ li.paginator_trail {
 	border: 1px solid #ccc;
 	background-color: #eee;
 	list-style-type: none;
-	padding: 2px 3px;
+	padding: 1px 2px;
 	margin-right: 1px;
 }
 
 li.paginator_trail a {
 	text-decoration: none;
-	padding: 0 5px;
+	padding: 0 4px;
 	margin: 0;
 }
 

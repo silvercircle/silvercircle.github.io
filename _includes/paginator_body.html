@@ -1,15 +1,14 @@
-<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<h2 style="margin: 5px 0;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 <div class="author" style="font-size:smaller; float:right;">
     Written by {{post.author}}{% if post.categories %}{% for cat in post.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | <time class="timeago" datetime="{{post.date | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{post.date}}</time>
 </div>
 <div class="clearfix"></div>
 <hr class="separator">
 <div class="content">
-  <p>{{ post.excerpt }}</p>
+  <p style="margin: 0 0 10px 0;">{{ post.excerpt }}</p>
 </div>
 <div style="float:right;">
   <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
 </div>
 <div class="clear"></div>
-<br>
 <br>
