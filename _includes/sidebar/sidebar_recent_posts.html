@@ -1,10 +1,9 @@
-<h2>Recent</h2>
  {% assign counter = 1 %}
  {% for post in site.posts %}
    {% if post.isfollowup and post.isfollowup == 1 %}
    {% continue %}
    {% endif %}
-   <h3 style="margin-bottom:2px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
    <div class="author" style="float:right;">
      <span class="date">
         {% if post.modified %}       
@@ -19,13 +18,15 @@
    </span>
    <br>
    {% assign counter = counter | plus: 1 %}
-   {% if counter > 20 %}
+   {% if counter > include.count %}
    {% break %}
    {% endif %}   
  {% endfor %}
+{% if include.list_cats %} 
 <hr class="blueline">
 <h2>Categories</h2>
 {% for category in site.categories %}
-   <h3><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/index.html">{{ category | first | strip_html | tolower}}</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/index.html">{{ category | first | strip_html | tolower}}</a></h3>
 {% endfor %}
 <hr class="blueline">
+{% endif %}
