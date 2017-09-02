@@ -18,7 +18,7 @@ collections:
   webdev:
     output: true
     permalink: /:collection/:path/
-  vim:
+  software:
     output: true
     permalink: /:collection/:path/
 plugins:

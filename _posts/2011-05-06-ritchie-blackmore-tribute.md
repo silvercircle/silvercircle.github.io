@@ -18,6 +18,6 @@ I remember reading somewhere that this song was also the B side of a limited edi
 
 Also, there is, to my knowledge, no live footage of this song as it was never played live and was probably only played once in the band's entire history. The video just mixes some some parts of the 1986/87 perfect strangers tour with snippets of Rainbow gigs publicly available on YouTube.
 
-The origins of the song are unknown but it is said that it's the result of a Jam session they did while they were bored in the studio, so this isn't a song that was written, just improvised. These guys were true musicians and artists and the music speaks for itself
+The origins of the song are unknown but it is said that it's the result of a Jam session they did while they were bored in the studio, so this isn't a song that was written, just improvised. These guys were true musicians and artists and the music speaks for itself.
 
 {% include disqus_fragment.html %}
