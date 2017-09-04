@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Rendering to a device context with AGG (AntiGrain) | silvercircle/github/io</title>
+<meta property="og:title" content="Rendering to a device context with AGG (AntiGrain)">
+<meta name="author" content="AlexVie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.">
+<meta property="og:description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.">
+<link rel="canonical" href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<meta property="og:url" content="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-09-25T00:36:38+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/","publisher":null,"image":null,"headline":"Rendering to a device context with AGG (AntiGrain)","dateModified":"2010-09-25T00:36:38+02:00","datePublished":"2010-09-25T00:36:38+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+        <h1 id="rendering-with-agg-under-windows">Rendering with AGG under Windows</h1>
+<div class="author" style="float:right;font-size:smaller;">
+Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09-24 22:36:38 +0000</time>
+</div>
+<div class="author" style="font-size:smaller;">
+    Written by AlexVie in <a href="/category/c++/index.html">C++</a>, <a href="/category/development/index.html">Development</a> | Fri, 24. September 2010, 22:36
+</div>
+<div class="clearfix"></div>
+<hr>
+
+<div class="floatimage right borderless" style="width:71px; max-width:71px;">
+
+<figure>
+        <img src="/assets/gfx/archive/2010/09/agg_logo.jpg" alt="AGG Logo" style="width:71pxpx; max-width:71pxpx; height:auto; margin:0; display:block;">
+        
+        <figcaption style="display:none;">
+                AGG Logo
+        </figcaption>
+        
+</figure>
+
+
+<div class="floatimage_title">
+    AGG Logo
+</div>
+
+</div>
+
+<p>Quite a few years ago, I discovered <a href="http://www.antigrain.com">AntiGrain Geometry</a>, a high-performance, high-quality, platform-independent generic library for rendering 2d vector graphics.</p>
+
+<p>AGG is fast, lightweight, implemented as a set of C++ classes, makes heavy use of templates and is fairly easy to integrate into a project. There is no need to build and link against libraries as you just add the files to your project and make sure you include the necessary headers. Clean and simple.</p>
+
+<p>It can serve as a replacement for GDI+ and usually produces better results at higher speeds. It is also somewhat similar to cairo graphics, but has less features. It is perfect when you need to draw filled or outlined shapes, deal with all kinds of gradients or draw antialiased lines.</p>
+
+<p>However, AGG also has a fairly steep learning curve as it follows a completely different approach. It’s all about creating and managing rendering pipelines and, at first, this can be a bit overwhelming when you are used to the simple approach of GDI+ that does everything with a Graphics object. I still think that learning to use AGG can be rewarding in the end.</p>
+
+<p>The following paragraphs will try to explain how to actually produce visible output, using AGG on Windows. While AGG is fairly mature and complete, its documentation is lacking and the best way to learn is to read the source code of the countless examples that are included when you download it. So the very first question I had after learning how to set up a rendering pipeline was:</p>
+
+<blockquote>
+  <p>How the hell can I render the output to a typical Windows device context?</p>
+</blockquote>
+
+<h3 id="so-how-do-i-render-to-a-dc">So how do I render to a DC?</h3>
+
+<p>Well, you don’t :) A device context is not a real render target, it is just a data structure <em>holding information about a render target</em>. When you use a GDI function to render to a DC, the function will only use the DC to obtain information how and where it has to set its pixels. The actual render target is a in-memory bitmap which is <em>selected</em> into the device context. In GDI terminology, objects like brushes, pens and bitmaps are selected into a device context and any selected object becomes active, so when you select a memory bitmap into a device context, it becomes the active render target and any GDI function that draws to that DC will actually manipulate the bitmap that is selected into this DC.</p>
+
+<p>That said, it should already be clear how to use AGG for rendering to a DC - you don’t render to the DC but to the bitmap that is selected into the DC.</p>
+
+<h3 id="but-how">But how?</h3>
+
+<p>Basically, you create a <code class="highlighter-rouge">agg::rendering_buffer</code> object and attach it to the memory buffer that represents the bitmap’s pixels. The <em>agg::rendering_buffer</em> is a simple abstract class that can be attached to any memory buffer and serves as the lowest level base object of an AGG rendering pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering buffer and do the actual drawing.</p>
+
+<h3 id="the-bloody-details">The bloody details</h3>
+
+<p>For the following examples, we assume that all rendering must be done in 32bit color depth with a valid alpha channel (thus, 4 bytes per pixel). It is important to agree on the actual pixel format, because if your AGG pipeline uses a pixel format that doesn’t match the bitmap’s format, the results will look very broken. Windows bitmaps can use a variety of formats, but for the examples we will use a 32bit BGRa format. Windows reverts the color order from aRGB to BGRa for performance and other reasons, but since you do not have to manipulate pixels directly, you don’t have to care - just make sure to use the same pixel format when setting up your AGG rendering pipeline.</p>
+
+<p>First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of the bitmap - usually the dimensions of your rendering area - for example, the client area of a window. Both are passed to this function as <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="p">{</span>
+  <span class="n">BITMAPINFO</span> <span class="n">dib</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">BITMAPINFOHEADER</span><span class="p">);</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biWidth</span> <span class="o">=</span> <span class="n">cx</span><span class="p">;</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biHeight</span> <span class="o">=</span> <span class="o">-</span><span class="n">cy</span><span class="p">;</span>			<span class="c1">// use a "topdown" bitmap (0,0 = left, top corner)
+</span>  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biPlanes</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biBitCount</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biCompression</span> <span class="o">=</span> <span class="n">BI_RGB</span><span class="p">;</span>
+
+  <span class="k">return</span><span class="p">(</span><span class="n">CreateDIBSection</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">dib</span><span class="p">,</span> <span class="n">DIB_RGB_COLORS</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span> <span class="p">));</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>If all goes well, the function will return a valid handle for your new bitmap. You can now use this handle to select the bitmap into your DC and I won’t get into detail about this, because it should be well-known.</p>
+
+<p>Next, you need to attach a <code class="highlighter-rouge">agg::rendering_buffer</code> to your new bitmap. The prototype for the <code class="highlighter-rouge">agg::rendering_buffer::attach()</code> method looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="kt">void</span> <span class="n">attach</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">stride</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">buf</code> is the memory buffer that holds the pixel data. Should be clear and I will explain shortly how to obtain it from your bitmap.</li>
+  <li>
+<code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> are the same <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code> - the dimensions of the bitmap and your corresponding drawing area.</li>
+  <li>
+<code class="highlighter-rouge">stride</code> is important. Basically, it is the length of a single pixel scan line of your bitmap in <strong>BYTES</strong>. One would assume that for a 32bit BGRa bitmap, <em>stride</em> would be <code class="highlighter-rouge">(4 * width)</code>, but that is not always true. Because of performance reasons, Windows may round up the width of a bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than the drawing area, and this is why stride is so important. It tells the rendering buffer, how many bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) up or down.</li>
+</ul>
+
+<p>The following code will attach a rendering buffer object to a memory bitmap. <code class="highlighter-rouge">m_rbuf</code> is our <code class="highlighter-rouge">agg::rendering_buffer</code> object and <strong>hbm</strong> is the bitmap handle.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="o">::</span><span class="n">GetObject</span><span class="p">(</span><span class="n">hbm</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bm</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">bm</span><span class="p">);</span>
+  <span class="n">m_rbuf</span><span class="p">.</span><span class="n">attach</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">bm</span><span class="p">.</span><span class="n">bmBits</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmWidth</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmHeight</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmWidthBytes</span><span class="p">);</span></code></pre></figure>
+
+<p>We use <code class="highlighter-rouge">GetObject()</code> Win32 API to obtain information about our bitmap. It fills a structure from which we can use the <code class="highlighter-rouge">bmBits</code>, <code class="highlighter-rouge">bmWith</code>, <code class="highlighter-rouge">bmHeight</code> and <code class="highlighter-rouge">bmWidthBytes</code> members for using it in <code class="highlighter-rouge">agg::rendering_buffer::attach()</code>. The <em>bmWidthBytes</em> member is our <em>stride</em> (see above) - it indicates the internal width of the bitmap in bytes, so it is important to use this instead of calculating your own stride value from the width.</p>
+
+<p>Note that this code is just an <strong>incomplete example</strong> only showing the basic principle. It lacks safety checks which you should add when using it. At least, check the return value from <code class="highlighter-rouge">GetObject()</code> and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.</p>
+
+<p>Basically, that’s it. You now have a rendering buffer that uses a memory bitmap and to which you can attach your rendering pipeline. Make sure, your pipeline uses <code class="highlighter-rouge">agg::pixfmt_bgra32</code> to be compatible with the pixel format of your bitmap. When using colors, use <code class="highlighter-rouge">agg::rgba8</code> and make sure to set the alpha value(s), otherwise you’ll most likely render fully transparent pixels, because the default alpha value is always 0 when you initialize a <code class="highlighter-rouge">agg::rgba8</code> olor object.</p>
+
+<p>Next time, I’ll show how to do it when using Windows Vista or later buffered paint API which allows you to paint flickerfree without creating your own memory bitmaps and device contexts.</p>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEXVIE#@#2010-09-24 22:36:38 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+        </article>
+
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
+  (function() {
+    var cx = '007859790308151113940:p-knqr4rpv0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script type="text/javascript">
+  document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+</script>
+</div>
+<br>        
+
+          <h2>Recent</h2>
+           
+ 
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-04T04:57:40+0200">2017-09-04 04:57:40 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">Site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+</div>
+<hr class="blueline">
+
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/fancybox.min.css" media="screen" type="text/css">
+
+  </body>
+</html>
