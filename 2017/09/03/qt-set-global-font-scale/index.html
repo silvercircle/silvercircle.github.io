@@ -12,27 +12,27 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>How to set global font scale for Qt applications | Silvercircle’s Jekyll playground</title>
+<title>How to set global font scale for Qt applications | silvercircle/github/io</title>
 <meta property="og:title" content="How to set global font scale for Qt applications">
 <meta name="author" content="AlexVie">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.">
 <meta property="og:description" content="Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.">
-<link rel="canonical" href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">
-<meta property="og:url" content="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">
-<meta property="og:site_name" content="Silvercircle’s Jekyll playground">
+<link rel="canonical" href="http://localhost:4000/2017/09/03/qt-set-global-font-scale/">
+<meta property="og:url" content="http://localhost:4000/2017/09/03/qt-set-global-font-scale/">
+<meta property="og:site_name" content="silvercircle/github/io">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-09-03T10:25:13+02:00">
 <script type="application/ld+json">
-{"name":null,"description":"Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/","publisher":null,"image":null,"headline":"How to set global font scale for Qt applications","dateModified":"2017-09-03T10:25:13+02:00","datePublished":"2017-09-03T10:25:13+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"http://localhost:4000/2017/09/03/qt-set-global-font-scale/","publisher":null,"image":null,"headline":"How to set global font scale for Qt applications","dateModified":"2017-09-03T10:25:13+02:00","datePublished":"2017-09-03T10:25:13+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/09/03/qt-set-global-font-scale/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <header>
       <div class="inner">
-        <a href="https://silvercircle.github.io/">
-          <h2 class="header">Silvercircle's Jekyll playground</h2>
+        <a href="http://localhost:4000/">
+          <h1>silvercircle/github/io</h1>
         </a>
         <h2>A Jekyll test site with no particular purpose.</h2>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
@@ -78,10 +78,10 @@
               <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
               <ul style="display:none;">
                 <li>
-                  <a href="/category/fun/"><span>Fun</span></a>
+                  <a href="/software/"><span>Software</span></a>
                 </li>
                 <li>
-                  <a href="/category/got/"><span>Game of Thrones</span></a>
+                  <a href="/webdev/"><span>Web development</span></a>
                 </li>
                 <li>
                   <a href="/category/development/"><span>Development</span></a>
@@ -101,7 +101,8 @@
         
         <section id="main-content">
         
-          <h1 id="set-font-scaling-for-qt-applications">Set font scaling for Qt applications</h1>
+        <article>
+        <h1 id="set-font-scaling-for-qt-applications">Set font scaling for Qt applications</h1>
 <div class="author" style="font-size:smaller; float:right;">
     Written by AlexVie in <a href="/category/development/index.html">Development</a>, <a href="/category/qt/index.html">Qt</a>, <a href="/category/c++/index.html">C++</a> | <time class="timeago" datetime="2017-09-03T10:25:13+0200">2017-09-03 10:25:13 +0200</time>
 </div>
@@ -121,6 +122,7 @@ qtcreator.exe
 <p>So, you have the choice. You can set the <code class="highlighter-rouge">QT_SCALE_FACTOR</code> environment variable globally via the control panel, or use a <code class="highlighter-rouge">.cmd</code> file to set it before you launch a specific application. The value must be a <strong>floating point number</strong> and can be smaller than 1, so yes, it is possible to downscale the UI.</p>
 
 <p>The following screen shot illustrates the difference between no scale and <code class="highlighter-rouge">QT_SCALE_FACTOR = 2</code>. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.</p>
+<figure>
 <div class="blockimage">
 
 <a href="/assets/gfx/qtcreator-fontscale.png" data-fancybox="" data-caption="Screen shot showing the different scaling (click to enlarge)">
@@ -130,29 +132,34 @@ qtcreator.exe
 </a>
 
 
+<figcaption>
 <div class="floatimage_title" style="padding-bottom: 8px;">
     Screen shot showing the different scaling (click to enlarge)
 </div>
+</figcaption>
 
 </div>
+</figure>
 
 <div id="disqus_thread"></div>
-<p>&lt;script type”text/javascript”&gt;
+<script>
 var disqus_config = function () {
-this.page.url = “https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/”;  // Replace PAGE_URL with your page’s canonical URL variable
-this.page.identifier = “ALEXVIE#@#2017-09-03 10:25:13 +0200”; // Replace PAGE_IDENTIFIER with your page’s unique identifier variable
-};</p>
+this.page.url = "https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEXVIE#@#2017-09-03 10:25:13 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 
-<p>(function() { // DON’T EDIT BELOW THIS LINE
-var d = document, s = d.createElement(‘script’);
-s.src = ‘https://silvercircle-1.disqus.com/embed.js’;
-s.setAttribute(‘data-timestamp’, +new Date());
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-&lt;/script&gt;</p>
+</script>
+
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
 
+        </article>
         </section>
 
         <aside id="sidebar">
@@ -305,11 +312,11 @@ s.setAttribute(‘data-timestamp’, +new Date());
           <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
 
         </aside>
-        <div style="clear:both;min-height:50px;height:50px;"></div>
       </div>
      </div>
     </div>
-    <div class="site_footer_wrapper">
+    <footer>
+<div class="site_footer_wrapper">
 	<div class="inner clearfix">
 	<div class="site_footer">
 		<div class="column left">
@@ -327,7 +334,7 @@ s.setAttribute(‘data-timestamp’, +new Date());
 	</div>
 	</div>
 </div>
-
+</footer>
     
     <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
