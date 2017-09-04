@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-04T03:35:44+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-04T04:47:25+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller; float:right;&quot;&gt;
     Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/qt/index.html&quot;&gt;Qt&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/c++/index.html&quot;&gt;C++&lt;/a&gt; | &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:13+0200&quot;&gt;2017-09-03 10:25:13 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -17,24 +17,27 @@ qtcreator.exe
 &lt;p&gt;So, you have the choice. You can set the &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR&lt;/code&gt; environment variable globally via the control panel, or use a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; file to set it before you launch a specific application. The value must be a &lt;strong&gt;floating point number&lt;/strong&gt; and can be smaller than 1, so yes, it is possible to downscale the UI.&lt;/p&gt;
 
 &lt;p&gt;The following screen shot illustrates the difference between no scale and &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR = 2&lt;/code&gt;. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.&lt;/p&gt;
-&lt;figure&gt;
 &lt;div class=&quot;blockimage&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/qtcreator-fontscale.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Screen shot showing the different scaling (click to enlarge)&quot;&gt;
 
+&lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/qtcreator-fontscale.png&quot; alt=&quot;Screen shot showing the different scaling (click to enlarge)&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Screen shot showing the different scaling (click to enlarge)
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
     
 &lt;/a&gt;
 
 
-&lt;figcaption&gt;
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
     Screen shot showing the different scaling (click to enlarge)
 &lt;/div&gt;
-&lt;/figcaption&gt;
 
 &lt;/div&gt;
-&lt;/figure&gt;
 
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -191,27 +194,32 @@ Queen Cersei who still sits on the Iron Throne. Additionally, the ground work fo
 conflict between the human race and the White Walkers with their army of the dead, now strengthened
 by some undead giants and an undead dragon has been laid.&lt;/p&gt;
 
-&lt;figure&gt;
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:50%; max-width:50%;&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)&quot;&gt;
 
-	    &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
+&lt;figure&gt;
+        &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;width:50%px; max-width:50%px; height:auto; margin:0; display:inline;&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Learn from your masters, once you know enough, kill them. The principle of the Sith works in
+Westeros equally well and Sansa's outfit is probably a coincidence :)
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
 
 &lt;/a&gt;
 
 
-&lt;figcaption&gt;
 &lt;div class=&quot;floatimage_title&quot;&gt;
     Learn from your masters, once you know enough, kill them. The principle of the Sith works in
 Westeros equally well and Sansa's outfit is probably a coincidence :)
 &lt;/div&gt;
-&lt;/figcaption&gt;
 
 &lt;/div&gt;
-&lt;/figure&gt;
+
 &lt;p&gt;The cliffhanger in the final episode of season 7 happened as expected and thus shared a common
 problem that became more and more apparent during the seventh season: The show has become
 predictable, significantly more than ever before. For the most part, this is understandable though,
@@ -410,6 +418,19 @@ page that includes them..&lt;/p&gt;
 &lt;/span&gt;{%&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;endfor&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;h2 id=&quot;parse-markdown-in-a-frontmatter-variable&quot;&gt;Parse markdown in a Frontmatter variable.&lt;/h2&gt;
+
+&lt;p&gt;Normally, front matter content is not parsed, but you can always use the &lt;code class=&quot;highlighter-rouge&quot;&gt;markdownify&lt;/code&gt; filter to parse anything you want.&lt;/p&gt;
+
+&lt;p&gt;Let’s assume, you have defined an excerpt via front matter, a couple of lines and you want to include a hyperlink and some simple markup.&lt;/p&gt;
+
+&lt;h4 id=&quot;solution&quot;&gt;Solution:&lt;/h4&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;                 // raw content, &quot;as is&quot;
+   &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;markdownify&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;   // fully parsed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
 var disqus_config = function () {
@@ -517,27 +538,31 @@ JavaScript or a template language. As an author, you write content the way you
 do it in a word processor. In fact, many CMS allow authors to write content in 
 Microsoft Word and can accept the Word document format.&lt;/p&gt;
 
-&lt;figure&gt;
 &lt;div class=&quot;floatimage right&quot; style=&quot;width:300px; max-width:300px;&quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/vim.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;This is how a post can be written in Jekyll - with a simple text 
 editor&quot;&gt;
 
-	    &lt;img src=&quot;/assets/gfx/vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
+&lt;figure&gt;
+        &lt;img src=&quot;/assets/gfx/vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
 editor&quot; style=&quot;width:300pxpx; max-width:300pxpx; height:auto; margin:0; display:inline;&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                This is how a post can be written in Jekyll - with a simple text 
+editor
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
 
 &lt;/a&gt;
 
 
-&lt;figcaption&gt;
 &lt;div class=&quot;floatimage_title&quot;&gt;
     This is how a post can be written in Jekyll - with a simple text 
 editor
 &lt;/div&gt;
-&lt;/figcaption&gt;
 
 &lt;/div&gt;
-&lt;/figure&gt;
 &lt;p&gt;In Jekyll, you write posts using the markdown language. While the 
 basics of it are easy to learn, creating more advanced posts require either a 
 site administrator who can help or more learning. Either way, it’s a bit more 
@@ -668,14 +693,15 @@ s.setAttribute('data-timestamp', +new Date());
 &lt;blockquote&gt;
 
 &lt;/blockquote&gt;
-&lt;figure&gt;
 &lt;div class=&quot;blockimage&quot;&gt;
 
+&lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/archive/2011/05/watch-your-weight.png&quot; alt=&quot;&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;&quot; /&gt;
+        
+&lt;/figure&gt;
 
 
 &lt;/div&gt;
-&lt;/figure&gt;
 
 &lt;p&gt;There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.&lt;/p&gt;
 

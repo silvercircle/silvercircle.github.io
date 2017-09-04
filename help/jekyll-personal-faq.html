@@ -31,10 +31,10 @@
   <body>
     <header>
       <div class="inner">
-        <a href="https://silvercircle.github.io/">
-          <h1>silvercircle/github/io</h1>
-        </a>
-        <h2>A Jekyll test site with no particular purpose.</h2>
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
@@ -73,7 +73,7 @@
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
            </li>
-           <li id="button_topics" class="">
+           <li id="button_topics" class="active">
               <a class="firstlevel" href="/topics.html">Topics</a>
               <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
               <ul style="display:none;">
@@ -99,9 +99,8 @@
       <div class="inner clearfix">
         <div style="margin:0 20px;">
         
-        <section id="main-content">
+        <article id="main-content">
         
-        <article>
         <h1 id="jekyll-personal-faq">Jekyll personal FAQ</h1>
 <div class="author" style="font-size:smaller; float:right;">
     Written by AlexVie in <a href="/category/jekyll/index.html">Jekyll</a>, <a href="/category/site/index.html">site</a> | <time class="timeago" datetime="2017-08-22T22:45:00+0200">2017-08-22 22:45:00 +0200</time>
@@ -235,6 +234,20 @@ page that includes them..</p>
 </span></pre></td>
 </tr></tbody></table></code></pre></figure>
 
+<h2 id="parse-markdown-in-a-frontmatter-variable">Parse markdown in a Frontmatter variable.</h2>
+
+<p>Normally, front matter content is not parsed, but you can always use the <code class="highlighter-rouge">markdownify</code> filter to parse anything you want.</p>
+
+<p>Let’s assume, you have defined an excerpt via front matter, a couple of lines and you want to include a hyperlink and some simple markup.</p>
+
+<h4 id="solution">Solution:</h4>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code>   <span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="p">}}</span>                 // raw content, "as is"
+   <span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">markdownify</span><span class="w"> </span><span class="p">}}</span>   // fully parsed
+</code></pre>
+</div>
+
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
@@ -254,7 +267,6 @@ s.setAttribute('data-timestamp', +new Date());
 </noscript>
 
         </article>
-        </section>
 
         <aside id="sidebar">
           <div id="google-custom-search" style="height:20px;">

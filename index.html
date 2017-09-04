@@ -31,10 +31,10 @@
   <body>
     <header>
       <div class="inner">
-        <a href="https://silvercircle.github.io/">
-          <h1>silvercircle/github/io</h1>
-        </a>
-        <h2>A Jekyll test site with no particular purpose.</h2>
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
@@ -99,9 +99,8 @@
       <div class="inner clearfix">
         <div style="margin:0 20px;">
         
-        <section id="main-content">
+        <article id="main-content">
         
-        <article>
         <h1 id="so-whats-this-all-about">So, what’s this all about?</h1>
 <p><br>
 Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>,
@@ -126,24 +125,27 @@ possible way.</p>
 
 <p>It’s also easy to use. No special software is required to create or edit markdown files; it’s plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.</p>
 
-<figure>
 <div class="floatimage right" style="width:50%; max-width:50%;">
 
 <a href="/assets/gfx/vscode.png" data-fancybox="gallery" data-caption="A typical workflow when using Jekyll. A simple text editor is enough.">
 
-	    <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:50%px; max-width:50%px; height:auto; margin:0; display:inline;">
+<figure>
+        <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:50%px; max-width:50%px; height:auto; margin:0; display:inline;">
+        
+        <figcaption style="display:none;">
+                A typical workflow when using Jekyll. A simple text editor is enough.
+        </figcaption>
+        
+</figure>
 
 </a>
 
 
-<figcaption>
 <div class="floatimage_title">
     A typical workflow when using Jekyll. A simple text editor is enough.
 </div>
-</figcaption>
 
 </div>
-</figure>
 
 <p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll
 takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
@@ -165,7 +167,6 @@ deploy like we deployed our first web pages more than 20 years ago, except that 
 <p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p>
 
         </article>
-        </section>
 
         <aside id="sidebar">
           <div id="google-custom-search" style="height:20px;">

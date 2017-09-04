@@ -31,10 +31,10 @@
   <body>
     <header>
       <div class="inner">
-        <a href="https://silvercircle.github.io/">
-          <h1>silvercircle/github/io</h1>
-        </a>
-        <h2>A Jekyll test site with no particular purpose.</h2>
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
@@ -99,9 +99,8 @@
       <div class="inner clearfix">
         <div style="margin:0 20px;">
         
-        <section id="main-content">
+        <article id="main-content">
         
-        <article>
         <h1 id="blogging-with-a-static-site-generator">Blogging with a static site generator</h1>
 <div class="author" style="font-size:smaller; float:right;">
     Written by alex in <a href="/category/jekyll/index.html">Jekyll</a> | <time class="timeago" datetime="2017-08-22T16:30:00+0200">2017-08-22 16:30:00 +0200</time>
@@ -194,27 +193,31 @@ JavaScript or a template language. As an author, you write content the way you
 do it in a word processor. In fact, many CMS allow authors to write content in 
 Microsoft Word and can accept the Word document format.</p>
 
-<figure>
 <div class="floatimage right" style="width:300px; max-width:300px;">
 
 <a href="/assets/gfx/vim.png" data-fancybox="gallery" data-caption="This is how a post can be written in Jekyll - with a simple text 
 editor">
 
-	    <img src="/assets/gfx/vim.png" alt="This is how a post can be written in Jekyll - with a simple text 
+<figure>
+        <img src="/assets/gfx/vim.png" alt="This is how a post can be written in Jekyll - with a simple text 
 editor" style="width:300pxpx; max-width:300pxpx; height:auto; margin:0; display:inline;">
+        
+        <figcaption style="display:none;">
+                This is how a post can be written in Jekyll - with a simple text 
+editor
+        </figcaption>
+        
+</figure>
 
 </a>
 
 
-<figcaption>
 <div class="floatimage_title">
     This is how a post can be written in Jekyll - with a simple text 
 editor
 </div>
-</figcaption>
 
 </div>
-</figure>
 <p>In Jekyll, you write posts using the markdown language. While the 
 basics of it are easy to learn, creating more advanced posts require either a 
 site administrator who can help or more learning. Either way, it’s a bit more 
@@ -341,7 +344,6 @@ s.setAttribute('data-timestamp', +new Date());
 
 
         </article>
-        </section>
 
         <aside id="sidebar">
           <div id="google-custom-search" style="height:20px;">
