@@ -1,9 +1,9 @@
-<div class="floatimage {{include.align}}" style="width:{{include.width}}; max-width:{{include.width}};">
+<div class="floatimage {{include.align}} {{include.borderclass}}" style="width:{{include.width}}; max-width:{{include.width}};">
 {% unless include.nolink == 1 %}
 <a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox="gallery" data-caption="{{include.title}}">
 {% endunless %}
 <figure>
-        <img src="{% if include.thumb == 1 %}{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}{% else %}{{ site.baseurl }}/assets/gfx/{{ include.image }}{% endif %}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+        <img src="{% if include.thumb == 1 %}{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}{% else %}{{ site.baseurl }}/assets/gfx/{{ include.image }}{% endif %}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:block;" />
         {% if include.title and include.title != '' %}
         <figcaption style="display:none;">
                 {{ include.title }}
@@ -13,7 +13,7 @@
 {% unless include.nolink == 1 %}
 </a>
 {% endunless %}
-{% if include.title and include.title != '' %}
+{% if include.title and include.title != '' and include.omitbottomcaption != 1 %}
 <div class="floatimage_title">
     {{ include.title }}
 </div>

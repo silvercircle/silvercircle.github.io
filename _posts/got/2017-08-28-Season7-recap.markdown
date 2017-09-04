@@ -13,6 +13,10 @@ excerpt: >
   reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming 
   rate and some of these events were unfortunately too predictable. This might, however, just be a 
   side effect of the main plot approaching the final conclusion.
+image: got/sansa_the_sith.jpg
+image_align: right
+image_width: 30%
+image_title: "Sansa the Sith :)"
 ---
 
 # Season 7 was awesome, but...

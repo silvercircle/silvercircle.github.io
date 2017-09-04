@@ -1,5 +1,6 @@
  {% assign counter = 1 %}
- {% for post in site.posts %}
+ {% assign this_posts = site.posts | sort: 'modified' | reverse %}
+ {% for post in this_posts %}
    {% if post.isfollowup and post.isfollowup == 1 %}
    {% continue %}
    {% endif %}

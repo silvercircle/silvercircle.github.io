@@ -3,12 +3,13 @@ layout: topics
 title: "Topic: Web development - overview"
 pagination:
   enabled: true  
-  sort_field: date
+  sort_field: modified
   sort_reverse: true
   per_page: 3
   collection: webdev
   permalink: '/page:num.html'  
 ---
+{% include paginator_header.html %}
 <div class="blog-index">
     {% for post in paginator.posts %}
     {% include paginator_body.html %}

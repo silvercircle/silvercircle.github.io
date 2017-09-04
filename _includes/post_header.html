@@ -1,5 +1,8 @@
-<div class="author" style="font-size:smaller; float:right;">
-    Written by {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | <time class="timeago" datetime="{{page.date | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{page.date}}</time>
+<div class="author" style="float:right;font-size:smaller;">
+Last modified: <time class="timeago" datetime="{{page.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{page.modified}}</time>
+</div>    
+<div class="author" style="font-size:smaller;">
+    Written by {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{page.date | date: '%a, %d. %B %Y, %H:%M'}}
 </div>
 <div class="clearfix"></div>
 <hr>

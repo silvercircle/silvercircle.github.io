@@ -3,7 +3,7 @@
 <a href="{{ include.image }}" data-fancybox="gallery">
 {% endunless %}
 <figure>
-        <img src="{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
+        <img style="display:block;" src="{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
         {% if include.title and include.title != '' %}
         <figcaption style="display:none;">
                 {{ include.title }}

@@ -178,8 +178,9 @@
   /**
    * Address margin not present in IE 8/9 and Safari.
    */
-  figure {
-    margin: 1em 40px; }
+  figure, figcaption {
+    margin: 0;
+    padding: 0; }
   
   /**
    * Address differences between Firefox and other browsers.
@@ -628,7 +629,7 @@
   
   header dl {
     margin: 0; }
-    
+
   .inner {
     position: relative;
     width: 1040px;
@@ -752,8 +753,7 @@
   #main-content h1 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Monda', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 2.8em;
+    font-size: 20pt;
     font-weight: normal;
     color: #474747;
     text-indent: 6px;
@@ -761,8 +761,7 @@
   
   #main-content h2 {
     margin-bottom: 8px;
-    font-family: 'Monda', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 22px;
+    font-size: 17pt;
     font-weight: bold;
     color: #474747;
     text-indent: 4px; }
@@ -770,16 +769,14 @@
   #main-content h3 {
     margin-top: 24px;
     margin-bottom: 8px;
-    font-family: 'Monda', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 18px;
+    font-size: 15pt;
     font-weight: bold;
     color: #474747;
     text-indent: 3px; }
   
   #main-content h4 {
     margin-bottom: 8px;
-    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 15px;
+    font-size: 14pt;
     font-weight: bold;
     color: #474747;
     text-indent: 3px; }
@@ -787,14 +784,12 @@
   #main-content h5 {
     margin-bottom: 8px;
     margin-top: 8px;
-    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 14px;
+    font-size: 12pt;
     color: #474747;
     text-indent: 3px; }
   
   #main-content h6 {
     margin-bottom: 8px;
-    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
     font-size: .8em;
     color: #474747;
     text-indent: 3px; }
@@ -815,25 +810,12 @@
     font-weight: bold;
   }
   
-    #main-content h1 {
-    font-size: 20pt;
-  }
-  
-  #main-content h2 {
-      font-size: 17pt;
-  }
-  
-  #main-content h3 {
-      font-size: 15pt;
-  }
-  
-  #main-content h4 {
-      font-size: 14pt;
-  }
-      
   p {
     margin-bottom: 20px; }
   
+  .content.excerpt p {
+    margin: 0; }
+    
   a {
     text-decoration: none; }
   
@@ -981,6 +963,12 @@
     box-sizing: content-box;
     border: 1px solid #ccc;
 }
+
+  div.floatimage.borderless {
+    padding: 0;
+    border: none !important;
+    padding: 3px !important;
+    box-shadow: 0 0 2px #555; }
 
 div.blockimage {
     background-color: #efefef;
