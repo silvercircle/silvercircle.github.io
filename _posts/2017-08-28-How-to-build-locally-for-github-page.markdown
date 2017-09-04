@@ -9,6 +9,10 @@ menucontext: blog
 excerpt: >
   How to build your site locally with your own Jekyll installation and deploy 
   it on GitHub using different branches.
+image: logos/jekyll.png
+image_width: 130px
+image_align: right
+image_title: Jekyll Logo (CC-BY 4.0)
 ---
 
 # Build your GitHub Jekyll page locally

@@ -9,7 +9,12 @@ Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%d
 <hr class="separator">
 <div class="content excerpt">
   {% if post.image and post.image != '' %}
-  {% include gfx/float_image.html image=post.image align=post.image_align width=post.image_width title=post.image_title borderclass="borderless" omitbottomcaption=1 %}
+  {% if post.image_nolink and post.image_nolink == 1 %}
+    {% assign this_nolink = 1 %}
+  {% else %}
+    {% assign this_nolink = 0 %}
+  {% endif %}
+  {% include gfx/float_image.html image=post.image align=post.image_align width=post.image_width title=post.image_title borderclass="borderless" omitbottomcaption=1 nolink=this_nolink %}
   {% endif %}
   {{ post.excerpt | markdownify }}
 </div>

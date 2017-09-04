@@ -7,6 +7,11 @@ layout: default
 categories: [C++, Development]
 excerpt: >
   AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.
+image: archive/2010/09/agg_logo.jpg
+image_width: 70
+image_align: right
+image_nolink: 1
+image_title: The AGG Logo
 ---
 
 # Rendering with AGG under Windows
