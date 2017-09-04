@@ -1,5 +1,167 @@
-<!DOCTYPE html> <html lang="en-US"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css"> <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script> <link rel="shortcut icon" type="image/png" href="/favicon.png?"> <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> <title>Home | Silvercircle’s Jekyll playground</title> <meta property="og:title" content="Home"> <meta name="author" content="AlexVie"> <meta property="og:locale" content="en_US"> <meta name="description" content="A Jekyll test site with no particular purpose."> <meta property="og:description" content="A Jekyll test site with no particular purpose."> <link rel="canonical" href="https://silvercircle.github.io/"> <meta property="og:url" content="https://silvercircle.github.io/"> <meta property="og:site_name" content="Silvercircle’s Jekyll playground"> <meta property="og:type" content="article"> <meta property="article:published_time" content="2017-08-25T06:35:00+02:00"> <script type="application/ld+json">
-{"name":"Silvercircle’s Jekyll playground","description":"A Jekyll test site with no particular purpose.","author":{"@type":"Person","name":"AlexVie"},"@type":"WebSite","url":"https://silvercircle.github.io/","publisher":null,"image":null,"headline":"Home","dateModified":"2017-08-25T06:35:00+02:00","datePublished":"2017-08-25T06:35:00+02:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script> </head> <body> <header> <div class="inner"> <a href="https://silvercircle.github.io/"> <h2 class="header">Silvercircle's Jekyll playground</h2> </a> <h2>A Jekyll test site with no particular purpose.</h2> <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a> </div> </header> <div class="menubar_wrapper"> <div class="inner clearfix"> <div id="main_menu"> <ul id="menu_nav" class="dropmenu menu"> <li id="button_home" class="active"> <a class="firstlevel" href="/">Home</a> </li> <li id="button_about" class=""> <a class="firstlevel" href="/help/about.html">About</a> </li> <li id="button_blog" class=""> <a class="firstlevel" href="/blog/index.html">Blog</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span> <ul style="display:none;"> <li><a href="/category/development/"><span>Development</span></a></li> <li><a href="/category/fun/"><span>Fun</span></a></li> <li><a href="/category/jekyll/"><span>Jekyll</span></a></li> <li><a href="/category/site/"><span>site</span></a></li> <li><a href="/category/got/"><span>GoT</span></a></li> <li><a href="/category/qt/"><span>Qt</span></a></li> <li><a href="/category/c++/"><span>C++</span></a></li> </ul> </li> <li id="button_contact" class=""> <a class="firstlevel" href="/help/contact.html">Contact</a> </li> <li id="button_topics" class=""> <a class="firstlevel" href="/topics.html">Topics</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span> <ul style="display:none;"> <li> <a href="/category/fun/"><span>Fun</span></a> </li> <li> <a href="/category/got/"><span>Game of Thrones</span></a> </li> <li> <a href="/category/development/"><span>Development</span></a> </li> </ul> </li> </ul> </div> </div> </div> <div id="content-wrapper"> <div class="inner clearfix"> <div style="margin:0 20px;"> <section id="main-content"> <h1 id="so-whats-this-all-about">So, what’s this all about?</h1> <p><br> Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>, a static page generator that has enough flexibility to build a blog or documentation site with it, but leaves out all the bloat that makes modern content management systems slow and prone to security problems.</p> <p>With Jekyll, there is no need for a database or complex web server configuration. The only thing needed is a working ruby and Jekyll installation on either your local development machine or the server machine itself and a web server that can serve static files (basically, the role model of all web servers).</p> <p>I’m using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn’t exactly suitable for casual publishing. While it can do great things, it also needs <strong>a LOT</strong> of attention and maintenance for which I do not want to invest more time than absolutely necessary.</p> <h2 id="how-static-publishing-wit-jekyll-works">How static publishing wit Jekyll works?</h2> <p>Fairly simple. You write content in markdown format, a plain text format that has become popular among developers and blog authors over the years. MD is simple, yet powerful enough to create well formatted postings and has features to embed images and other rich media content. It also can output well formatted and syntax colored code in many programming languages which is a favorite feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any possible way.</p> <p>It’s also easy to use. No special software is required to create or edit markdown files; it’s plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.</p> <div class="floatimage right" style="width:50%; max-width:50%;"> <a href="/assets/gfx/vscode.png" data-fancybox="gallery" data-caption="A typical workflow when using Jekyll. A simple text editor is enough."> <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:50%px; max-width:50%px; height:auto; margin:0; display:inline;"> </a> <div class="floatimage_title"> A typical workflow when using Jekyll. A simple text editor is enough. </div> </div> <p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll takes your content and translates it from Markdown into HTML. The HTML is then fed into templates which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll comes with its own simple web server which you can use locally on your development machine to test your site, but on your host, you’ll most likely use the already installed web server software. Be it Apache, nginx, IIS or something completely different - it will work, because serving static pages is the bread and butter of all web servers.</p> <p>More advanced features in Jekyll will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.</p> <p>To deploy, you upload the generated site to your host into the document root folder. There is no need to install, set up a database, configure folder permissions or do any other fancy things. You deploy like we deployed our first web pages more than 20 years ago, except that we weren’t using <strong>S</strong>FTP, but you seriously should.</p> <p>The cool thing is that a static website works on every possible configuration and web server software you’ll find. There is no need to install add-on modules, no need for special configuration steps, if your server can serve HTML and recognize a <code class="highlighter-rouge">index.html</code> file as the index for an entire folder, everything will work.</p> <p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p> </section> <aside id="sidebar"> <div id="google-custom-search" style="height:20px;"> <script>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Home | Silvercircle’s Jekyll playground</title>
+<meta property="og:title" content="Home">
+<meta name="author" content="AlexVie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Jekyll test site with no particular purpose.">
+<meta property="og:description" content="A Jekyll test site with no particular purpose.">
+<link rel="canonical" href="https://silvercircle.github.io/">
+<meta property="og:url" content="https://silvercircle.github.io/">
+<meta property="og:site_name" content="Silvercircle’s Jekyll playground">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-08-25T06:35:00+02:00">
+<script type="application/ld+json">
+{"name":"Silvercircle’s Jekyll playground","description":"A Jekyll test site with no particular purpose.","author":{"@type":"Person","name":"AlexVie"},"@type":"WebSite","url":"https://silvercircle.github.io/","publisher":null,"image":null,"headline":"Home","dateModified":"2017-08-25T06:35:00+02:00","datePublished":"2017-08-25T06:35:00+02:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="https://silvercircle.github.io/">
+          <h2 class="header">Silvercircle's Jekyll playground</h2>
+        </a>
+        <h2>A Jekyll test site with no particular purpose.</h2>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="active">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/site/"><span>site</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/category/fun/"><span>Fun</span></a>
+                </li>
+                <li>
+                  <a href="/category/got/"><span>Game of Thrones</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <section id="main-content">
+        
+          <h1 id="so-whats-this-all-about">So, what’s this all about?</h1>
+<p><br>
+Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>,
+a static page generator that has enough flexibility to build a blog or documentation site with it,
+but leaves out all the bloat that makes modern content management systems slow and prone to
+security problems.</p>
+
+<p>With Jekyll, there is no need for a database or complex web server configuration. The only thing
+needed is a working ruby and Jekyll installation on either your local development machine or the
+server machine itself and a web server that can serve static files (basically, the role model of
+all web servers).</p>
+
+<p>I’m using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn’t exactly suitable for casual publishing. While it can do great things, it also needs <strong>a LOT</strong> of attention and maintenance for which I do not want to invest more time than absolutely necessary.</p>
+
+<h2 id="how-static-publishing-wit-jekyll-works">How static publishing wit Jekyll works?</h2>
+<p>Fairly simple. You write content in markdown format, a plain text format that has become popular
+among developers and blog authors over the years. MD is simple, yet powerful enough to create well
+formatted postings and has features to embed images and other rich media content. It also can
+output well formatted and syntax colored code in many programming languages which is a favorite
+feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any
+possible way.</p>
+
+<p>It’s also easy to use. No special software is required to create or edit markdown files; it’s plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.</p>
+
+<div class="floatimage right" style="width:50%; max-width:50%;">
+
+<a href="/assets/gfx/vscode.png" data-fancybox="gallery" data-caption="A typical workflow when using Jekyll. A simple text editor is enough.">
+
+	    <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:50%px; max-width:50%px; height:auto; margin:0; display:inline;">
+
+</a>
+
+<div class="floatimage_title">
+    A typical workflow when using Jekyll. A simple text editor is enough.
+</div>
+</div>
+
+<p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll
+takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
+which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll
+comes with its own simple web server which you can use locally on your development machine to test
+your site, but on your host, you’ll most likely use the already installed web server software. Be
+it Apache, nginx, IIS or something completely different - it will work, because serving static
+pages is the bread and butter of all web servers.</p>
+
+<p>More advanced features in Jekyll will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.</p>
+
+<p>To deploy, you upload the generated site to your host into the document root folder. There is no
+need to install, set up a database, configure folder permissions or do any other fancy things. You
+deploy like we deployed our first web pages more than 20 years ago, except that we weren’t using
+<strong>S</strong>FTP, but you seriously should.</p>
+
+<p>The cool thing is that a static website works on every possible configuration and web server software you’ll find. There is no need to install add-on modules, no need for special configuration steps, if your server can serve HTML and recognize a <code class="highlighter-rouge">index.html</code> file as the index for an entire folder, everything will work.</p>
+
+<p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p>
+
+        </section>
+
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
   (function() {
     var cx = '007859790308151113940:p-knqr4rpv0';
     var gcse = document.createElement('script');
@@ -9,13 +171,182 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script> <script type="text/javascript">
+</script>
+<script type="text/javascript">
   document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
-</script> </div> <br> <h2>Recent</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time> </span> </div> <span class="author"> AlexVie </span> <br> <br> <div style="float:right"><a href="/blog/">Show all blog posts</a></div> <br> <hr class="blueline"> <h2>Categories</h2> <div class="two_cols"> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3> </div> <hr class="blueline"> <h2>Quick links</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3> <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3> </aside> <div style="clear:both;min-height:50px;height:50px;"></div> </div> </div> </div> <div class="site_footer_wrapper"> <div class="inner clearfix"> <div class="site_footer"> <div class="column left"> <a href="/help/about.html">About</a><br> <a href="/help/contact.html">Contact</a> </div> <div class="column center"> All times are in UTC<br> <a href="/help/jekyll-personal-faq.html">Site FAQ</a> </div> <div class="column right"> <a href="https://jekyllrb.com">Built with Jekyll</a><br> <a href="https://github.com/pages-themes/architect">Theme based on Architect</a> </div> </div> </div> </div> <script type="text/javascript">
+</script>
+</div>
+<br>        
+
+          <h2>Recent</h2>
+           
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+</div>
+<hr class="blueline">
+
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+        <div style="clear:both;min-height:50px;height:50px;"></div>
+      </div>
+     </div>
+    </div>
+    <div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+
+    
+    <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-15512457-3', 'auto');
     ga('send', 'pageview');
-  </script> <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script> <script type="text/javascript" src="/assets/js/footerscripts.js"></script> <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css"> <link rel="stylesheet" href="/assets/css/fancybox.css" media="screen" type="text/css"> </body> </html>
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/fancybox.min.css" media="screen" type="text/css">
+
+  </body>
+</html>

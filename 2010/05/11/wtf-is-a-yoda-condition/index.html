@@ -1,26 +1,169 @@
-<!DOCTYPE html> <html lang="en-US"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css"> <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script> <link rel="shortcut icon" type="image/png" href="/favicon.png?"> <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> <title>WTF is a Yoda condition? | Silvercircle’s Jekyll playground</title> <meta property="og:title" content="WTF is a Yoda condition?"> <meta name="author" content="AlexVie"> <meta property="og:locale" content="en_US"> <meta name="description" content="What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++."> <meta property="og:description" content="What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++."> <link rel="canonical" href="https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/"> <meta property="og:url" content="https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/"> <meta property="og:site_name" content="Silvercircle’s Jekyll playground"> <meta property="og:type" content="article"> <meta property="article:published_time" content="2010-05-11T09:18:08+02:00"> <script type="application/ld+json">
-{"name":null,"description":"What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/","publisher":null,"image":null,"headline":"WTF is a Yoda condition?","dateModified":"2010-05-11T09:18:08+02:00","datePublished":"2010-05-11T09:18:08+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/"},"@context":"http://schema.org"}</script> </head> <body> <header> <div class="inner"> <a href="https://silvercircle.github.io/"> <h2 class="header">Silvercircle's Jekyll playground</h2> </a> <h2>A Jekyll test site with no particular purpose.</h2> <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a> </div> </header> <div class="menubar_wrapper"> <div class="inner clearfix"> <div id="main_menu"> <ul id="menu_nav" class="dropmenu menu"> <li id="button_home" class=""> <a class="firstlevel" href="/">Home</a> </li> <li id="button_about" class=""> <a class="firstlevel" href="/help/about.html">About</a> </li> <li id="button_blog" class="active"> <a class="firstlevel" href="/blog/index.html">Blog</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span> <ul style="display:none;"> <li><a href="/category/development/"><span>Development</span></a></li> <li><a href="/category/fun/"><span>Fun</span></a></li> <li><a href="/category/jekyll/"><span>Jekyll</span></a></li> <li><a href="/category/site/"><span>site</span></a></li> <li><a href="/category/got/"><span>GoT</span></a></li> <li><a href="/category/qt/"><span>Qt</span></a></li> <li><a href="/category/c++/"><span>C++</span></a></li> </ul> </li> <li id="button_contact" class=""> <a class="firstlevel" href="/help/contact.html">Contact</a> </li> <li id="button_topics" class=""> <a class="firstlevel" href="/topics.html">Topics</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span> <ul style="display:none;"> <li> <a href="/category/fun/"><span>Fun</span></a> </li> <li> <a href="/category/got/"><span>Game of Thrones</span></a> </li> <li> <a href="/category/development/"><span>Development</span></a> </li> </ul> </li> </ul> </div> </div> </div> <div id="content-wrapper"> <div class="inner clearfix"> <div style="margin:0 20px;"> <section id="main-content"> <h1 id="in-short-words">In short words…</h1> <div class="author" style="font-size:smaller; float:right;"> Written by AlexVie in <a href="/category/development/index.html">Development</a>, <a href="/category/fun/index.html">Fun</a> | <time class="timeago" datetime="2010-05-11T07:18:08+0000">2010-05-11 07:18:08 +0000</time> </div> <div class="clearfix"></div> <hr> <p>It’s a jargon term for writing an if condition in a programming language using bad looking grammar while keeping it syntactically correct. Pretty much the same thing that <a href="https://en.wikipedia.org/wiki/Yoda">Yoda</a> does when he speaks :) He screws up grammar, but his statements are still making sense and can be understood by most people familiar with the language he uses.</p> <h3 id="so-instead-of-writing"><strong>So, instead of writing</strong></h3> <div class="language-c highlighter-rouge"> <pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="n">foo</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span>
-</code></pre> </div> <h3 id="-some-c-and-c-programmers-insist-on-writing">.. some C and C++ programmers insist on writing</h3> <div class="language-c highlighter-rouge"> <pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="mi">0</span> <span class="o">==</span> <span class="n">foo</span> <span class="p">)</span>
-</code></pre> </div> <p>While this may look wrong, it is perfectly fine - it will compile and produce correct code. Moreover, In C and C++ <strong>using this syntax has a major advantage</strong>: It will protect you from an infamous and very common typing error:</p> <div class="language-c highlighter-rouge"> <pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="n">foo</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">)</span>
-</code></pre> </div> <p>…still compiles fine but will, in almost every case, produce a major bug. While most modern C++ compilers will throw a warning when they see such a code fragment, some won’t and happily accept that code (because it is syntactically correct - an assignment can be part of a condition).</p> <div class="language-c highlighter-rouge"> <pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="mi">0</span> <span class="o">=</span> <span class="n">foo</span> <span class="p">)</span>
-</code></pre> </div> <p>however, will <strong>not</strong> compile, because it is an invalid assignment. The compiler will throw an error and you’ll have to correct the code.</p> <p>It should be obvious that using this <em>Yoda notation</em> for conditions will only reliably work for simple conditions with variables and constants, but because it works and can help with avoiding a very common typing error, it is widely in use by C programmers.</p> <h3 id="so-where-does-the-term-yoda-condition-come-from">So, where does the term “Yoda condition” come from</h3> <p>The whole thing originated in a <a href="http://stackoverflow.com/questions/2349378/new-programming-jargon-you-coined">poll on stack overflow</a> that asked visitors to submit their favorite jargon terms for typical scenarios in software development. The thread quickly developed into something that could very well become a completely new jargon for programmers. Now, that wouldn’t be the first hacker or programmer jargon for sure, but according to the original thread, most of the terms should be fairly new, because people were asked to submit their own creations rather than already existing ones.</p> <p>There are a number of nice submissions on that thread and being a C/C++ programmer myself, I particularly like the Yoda condition - in fact, I have been using it quite often and while knowing, that it looks a bit weird and some people absolutely hate to see it (especially those without a C or C++ background), it has developed into some sort of (maybe bad) habit.</p> <p>The thread has a number of other cool terms and a guy from globalnerdy has <a href="http://www.globalnerdy.com/2010/05/09/new-programming-jargon/">compiled a list of terms</a> from the original stack overflow thread.</p> <div id="disqus_thread"></div> <script>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>WTF is a Yoda condition? | Silvercircle’s Jekyll playground</title>
+<meta property="og:title" content="WTF is a Yoda condition?">
+<meta name="author" content="AlexVie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.">
+<meta property="og:description" content="What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.">
+<link rel="canonical" href="https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/">
+<meta property="og:url" content="https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/">
+<meta property="og:site_name" content="Silvercircle’s Jekyll playground">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-05-11T09:18:08+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"What is a “Yoda condition” and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/","publisher":null,"image":null,"headline":"WTF is a Yoda condition?","dateModified":"2010-05-11T09:18:08+02:00","datePublished":"2010-05-11T09:18:08+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="https://silvercircle.github.io/">
+          <h2 class="header">Silvercircle's Jekyll playground</h2>
+        </a>
+        <h2>A Jekyll test site with no particular purpose.</h2>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/site/"><span>site</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/category/fun/"><span>Fun</span></a>
+                </li>
+                <li>
+                  <a href="/category/got/"><span>Game of Thrones</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
 
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <section id="main-content">
+        
+          <h1 id="in-short-words">In short words…</h1>
+<div class="author" style="font-size:smaller; float:right;">
+    Written by AlexVie in <a href="/category/development/index.html">Development</a>, <a href="/category/fun/index.html">Fun</a> | <time class="timeago" datetime="2010-05-11T07:18:08+0000">2010-05-11 07:18:08 +0000</time>
+</div>
+<div class="clearfix"></div>
+<hr>
+
+<p>It’s a jargon term for writing an if condition in a programming language using bad looking grammar while keeping it syntactically correct. Pretty much the same thing that <a href="https://en.wikipedia.org/wiki/Yoda">Yoda</a> does when he speaks :) He screws up grammar, but his statements are still making sense and can be understood by most people familiar with the language he uses.</p>
+
+<h3 id="so-instead-of-writing"><strong>So, instead of writing</strong></h3>
+<div class="language-c highlighter-rouge">
+<pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="n">foo</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span>
+</code></pre>
+</div>
+<h3 id="-some-c-and-c-programmers-insist-on-writing">.. some C and C++ programmers insist on writing</h3>
+<div class="language-c highlighter-rouge">
+<pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="mi">0</span> <span class="o">==</span> <span class="n">foo</span> <span class="p">)</span>
+</code></pre>
+</div>
+<p>While this may look wrong, it is perfectly fine - it will compile and produce correct code. Moreover, In C and C++ <strong>using this syntax has a major advantage</strong>: It will protect you from an infamous and very common typing error:</p>
+<div class="language-c highlighter-rouge">
+<pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="n">foo</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">)</span>
+</code></pre>
+</div>
+<p>…still compiles fine but will, in almost every case, produce a major bug. While most modern C++ compilers will throw a warning when they see such a code fragment, some won’t and happily accept that code (because it is syntactically correct - an assignment can be part of a condition).</p>
+<div class="language-c highlighter-rouge">
+<pre class="highlight"><code><span class="k">if</span> <span class="p">(</span> <span class="mi">0</span> <span class="o">=</span> <span class="n">foo</span> <span class="p">)</span>
+</code></pre>
+</div>
+<p>however, will <strong>not</strong> compile, because it is an invalid assignment. The compiler will throw an error and you’ll have to correct the code.</p>
+
+<p>It should be obvious that using this <em>Yoda notation</em> for conditions will only reliably work for simple conditions with variables and constants, but because it works and can help with avoiding a very common typing error, it is widely in use by C programmers.</p>
+
+<h3 id="so-where-does-the-term-yoda-condition-come-from">So, where does the term “Yoda condition” come from</h3>
+
+<p>The whole thing originated in a <a href="http://stackoverflow.com/questions/2349378/new-programming-jargon-you-coined">poll on stack overflow</a> that asked visitors to submit their favorite jargon terms for typical scenarios in software development. The thread quickly developed into something that could very well become a completely new jargon for programmers. Now, that wouldn’t be the first hacker or programmer jargon for sure, but according to the original thread, most of the terms should be fairly new, because people were asked to submit their own creations rather than already existing ones.</p>
+
+<p>There are a number of nice submissions on that thread and being a C/C++ programmer myself, I particularly like the Yoda condition - in fact, I have been using it quite often and while knowing, that it looks a bit weird and some people absolutely hate to see it (especially those without a C or C++ background), it has developed into some sort of (maybe bad) habit.</p>
+
+<p>The thread has a number of other cool terms and a guy from globalnerdy has <a href="http://www.globalnerdy.com/2010/05/09/new-programming-jargon/">compiled a list of terms</a> from the original stack overflow thread.</p>
+
+<div id="disqus_thread"></div>
+<p>&lt;script type”text/javascript”&gt;
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2010-05-11 07:18:08 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+this.page.url = “https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/”;  // Replace PAGE_URL with your page’s canonical URL variable
+this.page.identifier = “ALEXVIE#@#2010-05-11 07:18:08 +0000”; // Replace PAGE_IDENTIFIER with your page’s unique identifier variable
+};</p>
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
+<p>(function() { // DON’T EDIT BELOW THIS LINE
+var d = document, s = d.createElement(‘script’);
+s.src = ‘https://silvercircle-1.disqus.com/embed.js’;
+s.setAttribute(‘data-timestamp’, +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript> </section> <aside id="sidebar"> <div id="google-custom-search" style="height:20px;"> <script>
+&lt;/script&gt;</p>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        </section>
+
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
   (function() {
     var cx = '007859790308151113940:p-knqr4rpv0';
     var gcse = document.createElement('script');
@@ -30,13 +173,182 @@ s.setAttribute('data-timestamp', +new Date());
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script> <script type="text/javascript">
+</script>
+<script type="text/javascript">
   document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
-</script> </div> <br> <h2>Recent</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time> </span> </div> <span class="author"> AlexVie </span> <br> <br> <div style="float:right"><a href="/blog/">Show all blog posts</a></div> <br> <hr class="blueline"> <h2>Categories</h2> <div class="two_cols"> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3> </div> <hr class="blueline"> <h2>Quick links</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3> <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3> </aside> <div style="clear:both;min-height:50px;height:50px;"></div> </div> </div> </div> <div class="site_footer_wrapper"> <div class="inner clearfix"> <div class="site_footer"> <div class="column left"> <a href="/help/about.html">About</a><br> <a href="/help/contact.html">Contact</a> </div> <div class="column center"> All times are in UTC<br> <a href="/help/jekyll-personal-faq.html">Site FAQ</a> </div> <div class="column right"> <a href="https://jekyllrb.com">Built with Jekyll</a><br> <a href="https://github.com/pages-themes/architect">Theme based on Architect</a> </div> </div> </div> </div> <script type="text/javascript">
+</script>
+</div>
+<br>        
+
+          <h2>Recent</h2>
+           
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+</div>
+<hr class="blueline">
+
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+        <div style="clear:both;min-height:50px;height:50px;"></div>
+      </div>
+     </div>
+    </div>
+    <div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+
+    
+    <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-15512457-3', 'auto');
     ga('send', 'pageview');
-  </script> <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script> <script type="text/javascript" src="/assets/js/footerscripts.js"></script> <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css"> <link rel="stylesheet" href="/assets/css/fancybox.css" media="screen" type="text/css"> </body> </html>
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/fancybox.min.css" media="screen" type="text/css">
+
+  </body>
+</html>

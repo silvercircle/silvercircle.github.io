@@ -237,7 +237,7 @@ function onMenuArrowClick(el)
 {
 	var id = 'button' + el.attr('id');
 	$('#' + id).children('ul:first').show();
-	menu_active = true;
+  menu_active = true;
 	return(false);
 }
 
@@ -265,5 +265,4 @@ $(document).ready(function(){
       }
     }); 
     $('time.timeago').timeago();
-    return(false);
 });

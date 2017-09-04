@@ -1,22 +1,196 @@
-<!DOCTYPE html> <html lang="en-US"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css"> <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script> <link rel="shortcut icon" type="image/png" href="/favicon.png?"> <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> <title>Build a GitHub page locally with Jekyll | Silvercircle’s Jekyll playground</title> <meta property="og:title" content="Build a GitHub page locally with Jekyll"> <meta name="author" content="AlexVie"> <meta property="og:locale" content="en_US"> <meta name="description" content="How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches."> <meta property="og:description" content="How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches."> <link rel="canonical" href="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/"> <meta property="og:url" content="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/"> <meta property="og:site_name" content="Silvercircle’s Jekyll playground"> <meta property="og:type" content="article"> <meta property="article:published_time" content="2017-08-28T10:02:37+02:00"> <script type="application/ld+json">
-{"name":null,"description":"How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/","publisher":null,"image":null,"headline":"Build a GitHub page locally with Jekyll","dateModified":"2017-08-28T10:02:37+02:00","datePublished":"2017-08-28T10:02:37+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/"},"@context":"http://schema.org"}</script> </head> <body> <header> <div class="inner"> <a href="https://silvercircle.github.io/"> <h2 class="header">Silvercircle's Jekyll playground</h2> </a> <h2>A Jekyll test site with no particular purpose.</h2> <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a> </div> </header> <div class="menubar_wrapper"> <div class="inner clearfix"> <div id="main_menu"> <ul id="menu_nav" class="dropmenu menu"> <li id="button_home" class=""> <a class="firstlevel" href="/">Home</a> </li> <li id="button_about" class=""> <a class="firstlevel" href="/help/about.html">About</a> </li> <li id="button_blog" class="active"> <a class="firstlevel" href="/blog/index.html">Blog</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span> <ul style="display:none;"> <li><a href="/category/development/"><span>Development</span></a></li> <li><a href="/category/fun/"><span>Fun</span></a></li> <li><a href="/category/jekyll/"><span>Jekyll</span></a></li> <li><a href="/category/site/"><span>site</span></a></li> <li><a href="/category/got/"><span>GoT</span></a></li> <li><a href="/category/qt/"><span>Qt</span></a></li> <li><a href="/category/c++/"><span>C++</span></a></li> </ul> </li> <li id="button_contact" class=""> <a class="firstlevel" href="/help/contact.html">Contact</a> </li> <li id="button_topics" class=""> <a class="firstlevel" href="/topics.html">Topics</a> <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span> <ul style="display:none;"> <li> <a href="/category/fun/"><span>Fun</span></a> </li> <li> <a href="/category/got/"><span>Game of Thrones</span></a> </li> <li> <a href="/category/development/"><span>Development</span></a> </li> </ul> </li> </ul> </div> </div> </div> <div id="content-wrapper"> <div class="inner clearfix"> <div style="margin:0 20px;"> <section id="main-content"> <h1 id="build-your-github-jekyll-page-locally">Build your GitHub Jekyll page locally</h1> <div class="author" style="font-size:smaller; float:right;"> Written by AlexVie in <a href="/category/jekyll/index.html">Jekyll</a>, <a href="/category/site/index.html">site</a> | <time class="timeago" datetime="2017-08-28T10:02:37+0200">2017-08-28 10:02:37 +0200</time> </div> <div class="clearfix"></div> <hr> <p>GitHub supports Jekyll as site generator and in most cases, this is good enough. Some more advanced pages may require additional Jekyll plugins that are not available on GitHub. In that case, the site must be built with a local Jekyll installation and pushed to the GitHub repository.</p> <p>A personal homepage can only be served from content in the master branch, therefore the master branch must contain the output of Jekyll’s build command which normally goes to <code class="highlighter-rouge">_site</code>. Everything else is considered source code and has no business in the master branch. The separation into branches is necessary, because some files will exist twice but with different contents. The <code class="highlighter-rouge">index.html</code> in the source root is very likely different from the <code class="highlighter-rouge">index.html</code> in the compiled site.</p> <p>The following applies to personal and organization home pages hosted on <em>github.io</em>. Project pages are a bit different and actually easier to setup, because the content for a project page can be served from a configurable branch.</p> <p>We can leave intact the default directory structure with <code class="highlighter-rouge">_site</code> as our build target and do the following:</p> <ul> <li>create the project.</li> <li><code class="highlighter-rouge">git init</code></li> <li>Add your remote origin, set configuration options. Like always for a new repository.</li> <li>create a <code class="highlighter-rouge">.nojekyll</code> file in the root directory. This tells GitHub to not build your site at all. It then assumes, all the content is submitted ready-to-be-served from the root of your repository.</li> <li>create a <code class="highlighter-rouge">_site</code> folder and add it to <code class="highlighter-rouge">.gitignore</code> (in the root)</li> <li>in the root folder of your project, create a new branch. I called mine <code class="highlighter-rouge">source</code> but it’s really up to you. The important thing is that <code class="highlighter-rouge">_site</code> must <strong>not</strong> be part of your source branch (that’s why it goes to .gitignore) and must be on master, otherwise GitHub won’t serve the page.</li> <li><code class="highlighter-rouge">cd _site</code></li> <li><code class="highlighter-rouge">git init</code></li> <li><code class="highlighter-rouge">git remote add origin git@github.com:username/username.github.io.git</code></li> <li> <code class="highlighter-rouge">git checkout -b master</code> (switch to master, this step should be optional)</li> </ul> <p>Now, begin adding content to the root directory. Commit and push this to the <code class="highlighter-rouge">source</code> branch. Do a <code class="highlighter-rouge">jekyll build</code> to build your site, thereafter go to the <code class="highlighter-rouge">_site</code> directory, add, commit and push everything to master.</p> <p>Go to your GitHub repository and verify that everything is correct:</p> <ul> <li>The <code class="highlighter-rouge">source</code> branch should contain all your source files, but no <code class="highlighter-rouge">_site</code> folder.</li> <li>The <code class="highlighter-rouge">master</code> branch should contain the generated site and there shouldn’t be a <code class="highlighter-rouge">_site</code> folder at all, because GitHub serves from the root directory, so everything that is in <code class="highlighter-rouge">_site</code> locally (on your computer where you build it) must be in the root directory on GitHub. That’s why different branches are needed.</li> </ul> <p>That should do it. You can now build your site locally and use every Jekyll plugin you want.</p> <div id="disqus_thread"></div> <script>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/theme.css?v=13" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Build a GitHub page locally with Jekyll | Silvercircle’s Jekyll playground</title>
+<meta property="og:title" content="Build a GitHub page locally with Jekyll">
+<meta name="author" content="AlexVie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.">
+<meta property="og:description" content="How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.">
+<link rel="canonical" href="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/">
+<meta property="og:url" content="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/">
+<meta property="og:site_name" content="Silvercircle’s Jekyll playground">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-08-28T10:02:37+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/","publisher":null,"image":null,"headline":"Build a GitHub page locally with Jekyll","dateModified":"2017-08-28T10:02:37+02:00","datePublished":"2017-08-28T10:02:37+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="https://silvercircle.github.io/">
+          <h2 class="header">Silvercircle's Jekyll playground</h2>
+        </a>
+        <h2>A Jekyll test site with no particular purpose.</h2>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/site/"><span>site</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/category/fun/"><span>Fun</span></a>
+                </li>
+                <li>
+                  <a href="/category/got/"><span>Game of Thrones</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
 
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <section id="main-content">
+        
+          <h1 id="build-your-github-jekyll-page-locally">Build your GitHub Jekyll page locally</h1>
+<div class="author" style="font-size:smaller; float:right;">
+    Written by AlexVie in <a href="/category/jekyll/index.html">Jekyll</a>, <a href="/category/site/index.html">site</a> | <time class="timeago" datetime="2017-08-28T10:02:37+0200">2017-08-28 10:02:37 +0200</time>
+</div>
+<div class="clearfix"></div>
+<hr>
+
+<p>GitHub supports Jekyll as site generator and in most cases, this is good 
+enough. Some more advanced pages may require additional Jekyll plugins that 
+are not available on GitHub. In that case, the site must be built with a local 
+Jekyll installation and pushed to the GitHub repository.</p>
+
+<p>A personal homepage can only be served from content in the master branch, 
+therefore the master branch must contain the output of Jekyll’s build command 
+which normally goes to <code class="highlighter-rouge">_site</code>. Everything else is considered source code and 
+has no business in the master branch. The separation into branches is 
+necessary, because some files will exist twice but with different contents. 
+The <code class="highlighter-rouge">index.html</code> in the source root is very likely different from the 
+<code class="highlighter-rouge">index.html</code> in the compiled site.</p>
+
+<p>The following applies to personal and organization home pages hosted on 
+<em>github.io</em>. Project pages are a bit different and actually easier to setup, 
+because the content for a project page can be served from a configurable 
+branch.</p>
+
+<p>We can leave intact the default directory structure with <code class="highlighter-rouge">_site</code> as our build 
+target and do the following:</p>
+
+<ul>
+  <li>create the project.</li>
+  <li><code class="highlighter-rouge">git init</code></li>
+  <li>Add your remote origin, set configuration options. Like always for a new 
+repository.</li>
+  <li>create a <code class="highlighter-rouge">.nojekyll</code> file in the root directory. This tells GitHub to not 
+build your site at all. It then assumes, all the content is submitted 
+ready-to-be-served from the root of your repository.</li>
+  <li>create a <code class="highlighter-rouge">_site</code> folder and add it to <code class="highlighter-rouge">.gitignore</code> (in the root)</li>
+  <li>in the root folder of your project, create a new branch. I called mine 
+<code class="highlighter-rouge">source</code> but it’s really up to you. The important thing is that <code class="highlighter-rouge">_site</code> must 
+<strong>not</strong> be part of your source branch (that’s why it goes to .gitignore) and 
+must be on master, otherwise GitHub won’t serve the page.</li>
+  <li><code class="highlighter-rouge">cd _site</code></li>
+  <li><code class="highlighter-rouge">git init</code></li>
+  <li><code class="highlighter-rouge">git remote add origin git@github.com:username/username.github.io.git</code></li>
+  <li>
+<code class="highlighter-rouge">git checkout -b master</code> (switch to master, this step should be optional)</li>
+</ul>
+
+<p>Now, begin adding content to the root directory. Commit and push this to the 
+<code class="highlighter-rouge">source</code> branch. Do a <code class="highlighter-rouge">jekyll build</code> to build your site, thereafter go to the 
+<code class="highlighter-rouge">_site</code> directory, add, commit and push everything to master.</p>
+
+<p>Go to your GitHub repository and verify that everything is correct:</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">source</code> branch should contain all your source files, but no <code class="highlighter-rouge">_site</code> 
+folder.</li>
+  <li>The <code class="highlighter-rouge">master</code> branch should contain the generated site and there shouldn’t be 
+a <code class="highlighter-rouge">_site</code> folder at all, because GitHub serves from the root directory, so 
+everything that is in <code class="highlighter-rouge">_site</code> locally (on your computer where you build it) 
+must be in the root directory on GitHub. That’s why different branches are 
+needed.</li>
+</ul>
+
+<p>That should do it. You can now build your site locally and use every Jekyll 
+plugin you want.</p>
+
+<div id="disqus_thread"></div>
+<p>&lt;script type”text/javascript”&gt;
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2017-08-28 10:02:37 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+this.page.url = “https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/”;  // Replace PAGE_URL with your page’s canonical URL variable
+this.page.identifier = “ALEXVIE#@#2017-08-28 10:02:37 +0200”; // Replace PAGE_IDENTIFIER with your page’s unique identifier variable
+};</p>
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
+<p>(function() { // DON’T EDIT BELOW THIS LINE
+var d = document, s = d.createElement(‘script’);
+s.src = ‘https://silvercircle-1.disqus.com/embed.js’;
+s.setAttribute(‘data-timestamp’, +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript> </section> <aside id="sidebar"> <div id="google-custom-search" style="height:20px;"> <script>
+&lt;/script&gt;</p>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+        </section>
+
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
   (function() {
     var cx = '007859790308151113940:p-knqr4rpv0';
     var gcse = document.createElement('script');
@@ -26,13 +200,182 @@ s.setAttribute('data-timestamp', +new Date());
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script> <script type="text/javascript">
+</script>
+<script type="text/javascript">
   document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
-</script> </div> <br> <h2>Recent</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time> </span> </div> <span class="author"> AlexVie </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time> </span> </div> <span class="author"> alex </span> <br> <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3> <div class="author" style="float:right;"> <span class="date"> <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time> </span> </div> <span class="author"> AlexVie </span> <br> <br> <div style="float:right"><a href="/blog/">Show all blog posts</a></div> <br> <hr class="blueline"> <h2>Categories</h2> <div class="two_cols"> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3> <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3> </div> <hr class="blueline"> <h2>Quick links</h2> <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3> <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3> </aside> <div style="clear:both;min-height:50px;height:50px;"></div> </div> </div> </div> <div class="site_footer_wrapper"> <div class="inner clearfix"> <div class="site_footer"> <div class="column left"> <a href="/help/about.html">About</a><br> <a href="/help/contact.html">Contact</a> </div> <div class="column center"> All times are in UTC<br> <a href="/help/jekyll-personal-faq.html">Site FAQ</a> </div> <div class="column right"> <a href="https://jekyllrb.com">Built with Jekyll</a><br> <a href="https://github.com/pages-themes/architect">Theme based on Architect</a> </div> </div> </div> </div> <script type="text/javascript">
+</script>
+</div>
+<br>        
+
+          <h2>Recent</h2>
+           
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season7-recap.html">GoT Season 7 recap</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T02:31:36+0200">2017-08-28 02:31:36 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-24T22:27:26+0200">2017-08-24 22:27:26 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+</div>
+<hr class="blueline">
+
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+        <div style="clear:both;min-height:50px;height:50px;"></div>
+      </div>
+     </div>
+    </div>
+    <div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+
+    
+    <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-15512457-3', 'auto');
     ga('send', 'pageview');
-  </script> <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script> <script type="text/javascript" src="/assets/js/footerscripts.js"></script> <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css"> <link rel="stylesheet" href="/assets/css/fancybox.css" media="screen" type="text/css"> </body> </html>
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/fancybox.min.css" media="screen" type="text/css">
+
+  </body>
+</html>

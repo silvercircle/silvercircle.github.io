@@ -589,7 +589,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #666;
-    background: #fafafa url(../images/body-bg.jpg) 0 0 repeat; }
+    background: #fafafa; }
   
   p {
     margin-top: 0; }
@@ -604,7 +604,7 @@
     padding-bottom: 40px;
 	  font-family: Monda, Helvetica, Arial, serif;
 	  padding-top:20px;
-    background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+    background: #2e7bcf url(../images/theme/upper_bg.png) no-repeat 0 0;
   }
   
   header h1 {
@@ -663,7 +663,7 @@
     padding-left: 20px;
     font-size: 12px;
     line-height: 1.3;
-    background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat; }
+  }
   
   aside#sidebar p.repo-owner,
   aside#sidebar p.repo-owner a {
@@ -1319,7 +1319,7 @@ ul.dropmenu {
 ul.dropmenu  > li > a {
   float: left;
   color: #eee;
-	text-decoration: none;  
+  text-decoration: none;
 }
 ul.dropmenu.highcontrast li a {
 	color: #777;
@@ -1345,8 +1345,8 @@ ul.dropmenu > li {
 	float: left;
 	padding: 0;
   margin: 0;
-  margin-right: 20px;
-	position: relative;
+  position: relative;
+  padding: 0 10px;
 }
 ul.dropmenu li ul {
 	z-index: 90;
@@ -1430,7 +1430,9 @@ div.menuline {
 span.m_downarrow {
 	padding: 2px 4px 2px 0;
 	width: 14px;
-	height: 22px;
+  height: 22px;
+  margin-left: -2px;
+  margin-right: 2px;
 	background: transparent url(../images/theme/sprite.png) 2px 9px no-repeat;
 }
 span.m_downarrow.compact {
