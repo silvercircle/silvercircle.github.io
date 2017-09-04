@@ -2,7 +2,14 @@
 {% unless include.nolink == 1 %}
 <a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox data-caption="{{include.title}}">
 {% endunless %}
+<figure>
         <img src="{{ site.baseurl }}/assets/gfx/{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
+        {% if include.title and include.title != '' %}
+        <figcaption style="display:none;">
+                {{ include.title }}
+        </figcaption>
+        {% endif %}
+</figure>
 {% unless include.nolink == 1 %}    
 </a>
 {% endunless %}

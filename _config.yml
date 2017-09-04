@@ -31,12 +31,9 @@ plugins:
  - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate-v2
- - jekyll-tidy
-jekyll_tidy:
-  compress_html: true
 bcolor: "#ddd"
 excerpt_separator: <!--more-->
-title: Silvercircle's Jekyll playground
+title: silvercircle/github/io
 description: A Jekyll test site with no particular purpose.
 highlighter: rouge
 kramdown:

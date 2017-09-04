@@ -231,7 +231,38 @@
   document.createElement("time");
 }));
 
+var menu_active = false;
+
+function onMenuArrowClick(el) 
+{
+	var id = 'button' + el.attr('id');
+	$('#' + id).children('ul:first').show();
+  menu_active = true;
+	return(false);
+}
+
 $(document).ready(function(){
+    // this kills the pure CSS hover effect from the dropdown menus so they will
+    // only react on DOM events.
+    $('html > head').append('<style>ul.dropmenu li:hover ul { display: none; }</style>');
+    // pull down menu handlers
+    jQuery('.menu ul').hover(function() {
+    }, function() {
+      jQuery(this).hide();
+    });
+    jQuery('.dropmenu').hover(function() {
+    }, function() {
+      jQuery('#menu_nav ul').hide();
+      menu_active = false;
+    });
+    jQuery('.menu li').hover(function() {
+      if (menu_active) {
+        jQuery(this).children('ul').show();
+      }
+    }, function() {
+      if (menu_active) {
+        jQuery(this).children('ul').hide();
+      }
+    }); 
     $('time.timeago').timeago();
-    return(false);
 });

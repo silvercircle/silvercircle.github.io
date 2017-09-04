@@ -15,32 +15,54 @@
   <body>
     <header>
       <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h2 class="header">{{ site.title }}</h2>
-        </a>
-        <h2>{{ site.description }}</h2>
+        <dl>
+          <dt><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></dt>
+          <dd>{{ site.description }}</dd>
+        </dl>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
      <div class="menubar_wrapper">
       <div class="inner clearfix">
-	     <div class="menubar">
-         <div class="menu{% if page.menucontext == 'home' %} selected{% endif %}">
-              <a href="{{site.baseurl}}/">Home</a>
-	       </div>
-           <div class="menu{% if page.menucontext == 'about' %} selected{% endif %}">
-               <a href="{{site.baseurl}}/help/about.html">About</a>
-           </div>
-           <div class="menu{% if page.menucontext == 'blog' %} selected{% endif %}">
-              <a href="{{site.baseurl}}/blog/index.html">Blog</a>
-           </div>
-           <div class="menu{% if page.menucontext == 'contact' %} selected{% endif %}">
-              <a href="{{site.baseurl}}/help/contact.html">Contact</a>
-           </div>
-           <div class="menu{% if page.menucontext == 'topics' %} selected{% endif %}">
-              <a href="{{site.baseurl}}/topics.html">Topics</a>
-           </div>
-	     </div>
+      <nav>
+	     <div id = "main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="{% if page.menucontext == 'home' %}active{% endif %}">
+                <a class="firstlevel" href="{{site.baseurl}}/">Home</a>
+           </li>
+           <li id="button_about" class="{% if page.menucontext == 'about' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="{% if page.menucontext == 'blog' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+              {% for category in site.categories %}
+               <li><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/"><span>{{ category | first | strip_html }}</span></a></li>
+              {% endfor %}
+              </ul>
+           </li>
+           <li id="button_contact" class="{% if page.menucontext == 'contact' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="{% if page.menucontext == 'topics' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="{{site.baseurl}}/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/category/development/"><span>Development</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
       </div>
      </div>
     

@@ -2,11 +2,20 @@
 {% unless include.nolink == 1 %}
 <a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox="gallery" data-caption="{{include.title}}">
 {% endunless %}
-	    <img src="{% if include.thumb == 1 %}{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}{% else %}{{ site.baseurl }}/assets/gfx/{{ include.image }}{% endif %}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+<figure>
+        <img src="{% if include.thumb == 1 %}{{ site.baseurl }}/assets/gfx/thumb_{{ include.image }}{% else %}{{ site.baseurl }}/assets/gfx/{{ include.image }}{% endif %}" alt="{{include.title}}" style="width:{{include.width}}px; max-width:{{include.width}}px; height:auto; margin:0; display:inline;" />
+        {% if include.title and include.title != '' %}
+        <figcaption style="display:none;">
+                {{ include.title }}
+        </figcaption>
+        {% endif %}
+</figure>
 {% unless include.nolink == 1 %}
 </a>
 {% endunless %}
+{% if include.title and include.title != '' %}
 <div class="floatimage_title">
     {{ include.title }}
 </div>
+{% endif %}
 </div>

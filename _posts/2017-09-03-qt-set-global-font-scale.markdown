@@ -24,3 +24,5 @@ So, you have the choice. You can set the ```QT_SCALE_FACTOR``` environment varia
 
 The following screen shot illustrates the difference between no scale and ```QT_SCALE_FACTOR = 2```. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows. 
 {% include gfx/block_image.html image="qtcreator-fontscale.png" title="Screen shot showing the different scaling (click to enlarge)" %}
+
+{% include disqus_fragment.html %}

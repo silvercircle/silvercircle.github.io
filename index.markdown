@@ -18,7 +18,9 @@ needed is a working ruby and Jekyll installation on either your local developmen
 server machine itself and a web server that can serve static files (basically, the role model of
 all web servers).
 
-## How it works?
+I'm using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn't exactly suitable for casual publishing. While it can do great things, it also needs **a LOT** of attention and maintenance for which I do not want to invest more time than absolutely necessary.
+
+## How static publishing wit Jekyll works?
 Fairly simple. You write content in markdown format, a plain text format that has become popular
 among developers and blog authors over the years. MD is simple, yet powerful enough to create well
 formatted postings and has features to embed images and other rich media content. It also can
@@ -28,7 +30,7 @@ possible way.
 
 It's also easy to use. No special software is required to create or edit markdown files; it's plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.
 
-{% include gfx/block_image.html image="vscode.png" title="A typical workflow when using Jekyll. A simple text editor is enough." %}
+{% include gfx/float_image.html image="vscode.png" align="right" width="50%" title="A typical workflow when using Jekyll. A simple text editor is enough." %}
 
 Once you are done with writing, you tell Jekyll to *build* the site. During this process, Jekyll
 takes your content and translates it from Markdown into HTML. The HTML is then fed into templates

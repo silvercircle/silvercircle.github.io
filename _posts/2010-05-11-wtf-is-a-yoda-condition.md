@@ -4,6 +4,7 @@ date: 2010-05-11T07:18:08+00:00
 author: AlexVie
 layout: default
 categories: [Development,Fun]
+menucontext: blog
 excerpt: >
   What is a "Yoda condition" and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.
 ---

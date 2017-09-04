@@ -1,13 +1,21 @@
 <div class="floatimage">
-    {% unless include.nolink == 1 %}
-    <a href="{{ include.image }}" data-fancybox="gallery">
-    {% endunless %}
-            <img src="{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
-    {% unless include.nolink == 1 %}    
-    </a>
-    {% endunless %}
-    <div class="floatimage_title">
-        {{ include.title }}
-    </div>
-    </div>
-    
+{% unless include.nolink == 1 %}
+<a href="{{ include.image }}" data-fancybox="gallery">
+{% endunless %}
+<figure>
+        <img src="{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;" />
+        {% if include.title and include.title != '' %}
+        <figcaption style="display:none;">
+                {{ include.title }}
+        </figcaption>
+        {% endif %}
+</figure>
+{% unless include.nolink == 1 %}    
+</a>
+{% endunless %}
+{% if include.title and include.title != '' %}
+<div class="floatimage_title">
+    {{ include.title }}
+</div>
+{% endif %}
+</div>

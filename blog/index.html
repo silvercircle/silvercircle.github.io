@@ -1,6 +1,7 @@
 ---
 layout: default
 menucontext: blog
+title: Blog - overview
 pagination:
   enabled: true  
   sort_field: date
@@ -8,6 +9,7 @@ pagination:
   per_page: 10
   permalink: '/page:num.html'  
 ---
+{% include paginator_header.html %}
 <div class="blog-index">
     {% for post in paginator.posts %}
     {% include paginator_body.html %}

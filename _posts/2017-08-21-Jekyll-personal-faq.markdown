@@ -6,6 +6,7 @@ date: 2017-08-22 22:45:00+0200
 modified: 2017-08-24 22:27:26+0200
 layout: default
 categories: [Jekyll,site]
+menucontext: topics
 excerpt: >
   This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.
 ---
@@ -122,5 +123,19 @@ The *unless* statement outputs everything between it and the next *endunless* as
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
+
+## Parse markdown in a Frontmatter variable.
+
+Normally, front matter content is not parsed, but you can always use the ```markdownify``` filter to parse anything you want. 
+
+Let's assume, you have defined an excerpt via front matter, a couple of lines and you want to include a hyperlink and some simple markup.
+
+#### Solution:
+{% raw %}
+```liquid
+   {{ post.excerpt }}                 // raw content, "as is"
+   {{ post.excerpt | markdownify }}   // fully parsed
+```   
+{% endraw %}
 
 {% include disqus_fragment.html %}

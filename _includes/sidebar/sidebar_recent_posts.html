@@ -22,6 +22,11 @@
    {% break %}
    {% endif %}   
  {% endfor %}
+ {% if include.show_all %}
+  <br>
+  <div style="float:right"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
+  <br>
+ {% endif %}
 {% if include.list_cats %}
 <hr class="blueline">
 <h2>Categories</h2>
