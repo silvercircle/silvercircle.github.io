@@ -9,10 +9,10 @@ Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%d
 <hr class="separator">
 <div class="content excerpt">
   {% if post.image and post.image != '' %}
-  {% if post.image_nolink and post.image_nolink == 1 %}
-    {% assign this_nolink = 1 %}
-  {% else %}
+  {% if post.image_link and post.image_link == 1 %}
     {% assign this_nolink = 0 %}
+  {% else %}
+    {% assign this_nolink = 1 %}
   {% endif %}
   {% include gfx/float_image.html image=post.image align=post.image_align width=post.image_width title=post.image_title borderclass="borderless" omitbottomcaption=1 nolink=this_nolink %}
   {% endif %}

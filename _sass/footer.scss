@@ -1,0 +1,40 @@
+div.site_footer_wrapper {
+    background-color: #222;
+    color: white;
+    min-height:50px;
+    display: table;
+    width:100%;
+    overflow: hidden;
+}
+
+div.site_footer {
+	width: 100%;
+	margin:auto;
+	font-size: smaller;
+	display: table;
+}
+
+div.site_footer a, div.site_footer a:visited, div.menu a, div.menu a:visited {
+	color: orange;
+}
+
+div.site_footer div.column {
+	width: 33%;
+	padding:4px 10px;
+	box-sizing: border-box;
+    display: table-cell;
+    height:50px;
+    vertical-align: bottom;
+}
+
+div.site_footer div.column.left {
+    text-align: left;
+}
+
+div.site_footer div.column.center {
+    text-align: center;
+}
+
+div.site_footer div.column.right {
+    text-align: right;
+}

@@ -1,0 +1,168 @@
+/* pull down menu */
+
+div.menubar_wrapper {
+	background-color: black;
+  text-align: left;
+  border: 0;
+  padding: 0;
+}
+
+div.menubar {
+    width: 100%;
+    margin:auto;
+    font-size: larger;
+    display: table;
+    color:white;
+    border: 0;
+    padding: 2px 0;
+}
+
+div.menu {
+	float: left;
+	display: table-cell;
+	box-sizing: border-box;
+	width:100px;
+  padding: 0 5px;
+  margin: 0;
+}
+
+#main_menu {
+	padding: 0;
+  margin:0 auto;
+	background:#222;
+	font-size: 100%;  
+}
+ul.dropmenu, ul.dropmenu ul {
+	list-style: none;
+	line-height: 1em;
+	padding: 0;
+  margin: 0;
+  background-color: #222;
+}
+ul.dropmenu {
+	padding: 0 0.5em;
+}
+ul.dropmenu  > li > a {
+  float: left;
+  color: #eee;
+  text-decoration: none;
+}
+ul.dropmenu.highcontrast li a {
+	color: #777;
+}
+ul.dropmenu a span {
+	display: block;
+	padding: 0 6px;
+}
+ul.dropmenu li a.firstlevel {
+	padding: 2px 5px;
+	height:28px;
+	line-height:28px;
+}
+ul.dropmenu li a.firstlevel.compact {
+	height:24px;
+  line-height: 24px;
+	/*font-weight: bold;*/
+	font-size:11px;
+	color:white;
+	text-shadow: 0 0 2px #555;  
+}
+ul.dropmenu > li {
+	float: left;
+  margin: 0;
+  position: relative;
+  padding: 0 10px;
+}
+ul.dropmenu li ul {
+	z-index: 90;
+	display: none;
+	position: absolute;
+	top: 30px;
+	padding: 0;
+  width: 20em;
+	background-color: #222;
+	box-shadow: 1px 3px 10px 1px #888;  
+}
+ul.dropmenu li li {
+	margin: 2px 0;
+	padding: 0;
+}
+ul.dropmenu li li a {
+  display: block !important;
+  color:#f0f0f0;
+}
+ul.dropmenu li li a span {
+	display: block;
+	padding: 5px;
+	white-space: nowrap;
+}
+ul.dropmenu li ul ul {
+	margin: -1.8em 0 0 13em;
+}
+ul.dropmenu li.active {
+  margin-top:-2px;
+	background-color: #f5f5f5;
+	border-top:2px solid orange;  
+}
+ul.dropmenu.compact li.active {
+	border-top:0;
+  margin-top:0;
+	background-color: #eaeaea;
+	/*border-bottom:2px solid orange;*/
+	border-top:0;  
+}
+ul.dropmenu.compact li.active > a {
+	color:black;
+	text-shadow: none;
+}
+ul.dropmenu li.active > a {
+	color: black;
+	font-weight: bold;
+	text-shadow:none;
+}
+ul.dropmenu li:hover {
+	cursor: pointer;
+	background-color: #F0C20F;
+	cursor: pointer;
+  text-decoration: none;
+}
+ul.dropmenu li:hover > a {
+	color:black;
+}
+ul.dropmenu li li a:hover, ul.dropmenu li li:hover>a {
+	background: #d4dbe4;
+	color: #000;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px white;
+}
+ul.dropmenu li li.additional_items {
+	background-color: #98AABA;
+}
+ul.dropmenu li:hover ul ul, ul.dropmenu li:hover ul ul ul {
+	top: -999em;
+}
+ul.dropmenu li li:hover ul {
+	top: auto;
+}
+ul.dropmenu li:hover ul {
+	display: block;
+}
+div.menuline {
+	padding-top:2px;
+	border-top: 1px solid orange;
+  border-bottom: 2px solid orange;
+}
+span.m_downarrow {
+	padding: 4px 4px 0 0;
+	width: 14px;
+  height: 28px;
+  margin-left: -2px;
+  margin-right: 2px;
+	background: transparent url(../images/theme/sprite.png) 2px 12px no-repeat;
+}
+span.m_downarrow.compact {
+	height:20px;
+}
+span.m_downarrow:hover {
+	background-color: green !important;
+}

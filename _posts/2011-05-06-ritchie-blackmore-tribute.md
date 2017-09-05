@@ -4,6 +4,7 @@ date: 2011-05-06T15:23:56+00:00
 modified: 2011-05-06T15:23:56+00:00
 author: AlexVie
 categories: [Site]
+tag: first
 excerpt: >
   Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.
 layout: default

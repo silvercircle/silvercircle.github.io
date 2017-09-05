@@ -6,6 +6,7 @@ date: 2017-08-22 16:30:00+0200
 modified: 2017-08-28 05:12:58+0200
 categories: [Jekyll]
 menucontext: blog
+tag: first
 excerpt: >
   The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
 image: logos/jekyll.png

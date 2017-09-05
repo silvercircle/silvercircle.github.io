@@ -6,6 +6,8 @@ exclude:
  - "*.sublime-project"
  - "*.sublime-workspace"
 permalink: /:year/:month/:day/:title/
+sass:
+  style: compressed
 pagination:
   enabled: true
   debug: false

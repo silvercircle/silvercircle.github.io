@@ -6,6 +6,7 @@ modified: 2017-08-28 10:02:42+0200
 layout: default
 categories: [Jekyll,Site]
 menucontext: blog
+tag: first
 excerpt: >
   How to build your site locally with your own Jekyll installation and deploy 
   it on GitHub using different branches.

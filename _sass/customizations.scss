@@ -1,0 +1,87 @@
+div.clear {
+	clear: both;
+}
+
+div.two_cols {
+	column-count: 2;
+	column-gap: 30px;
+}
+
+figure.highlight {
+	margin: 0 5px 1em 0;
+	box-shadow: 0 0 2px #bbb;
+}
+
+figure.highlight pre {
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin-right: 5px;
+}
+code, pre {
+	font-family: Iosevka, Consolas, Monaco, monospace;
+	font-size:12pt;
+	border: none;
+	background-color: transparent;
+}
+
+td.code {
+	text-align:left;
+	width:100%;
+}
+
+.highlight table pre {
+	padding:4px;
+}
+
+.highlight table td {
+	padding: 0 5px;
+}
+
+pre table, pre td {
+	border: none;
+}
+
+.highlight td.gutter, pre.lineno {
+	background-color:#e5e5e5;
+	border-right: 2px solid #aaa;
+}
+
+hr.blueline {
+	color: orangered;
+	height: 1px;
+	border: none;
+	background-color: orangered;
+}
+
+hr.separator {
+	margin-top: 1px;
+}
+
+div.ytcontainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+iframe.yt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}  
+
+.sidebar_listheader {
+  font-weight:normal;
+  margin-bottom:2px;
+  margin-top: 8px;
+  font-size: 110%;
+}

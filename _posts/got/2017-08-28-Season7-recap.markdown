@@ -8,6 +8,7 @@ modified: 2017-08-28 02:31:36+0200
 categories: [GoT]
 permalink: /got/season7-recap.html
 menucontext: blog
+tag: first
 excerpt: >
   Game of Thrones Season 7 is already over and to me it seems it just started last week, but in 
   reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming 
@@ -17,6 +18,7 @@ image: got/sansa_the_sith.jpg
 image_align: right
 image_width: 30%
 image_title: "Sansa the Sith :)"
+image_link: 1
 ---
 
 # Season 7 was awesome, but...
