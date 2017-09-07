@@ -23,6 +23,9 @@ collections:
   software:
     output: true
     permalink: /:collection/:path/
+  tabsrmm:
+    output: true
+    permalink: /:collection/:path/
 plugins:
  - jekyll-feed
  - jekyll-redirect-from
@@ -33,7 +36,6 @@ plugins:
  - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate-v2
-bcolor: "#ddd"
 excerpt_separator: <!--more-->
 title: silvercircle/github/io
 description: A Jekyll test site with no particular purpose.

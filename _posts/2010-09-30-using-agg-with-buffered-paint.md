@@ -20,7 +20,7 @@ image_title: The AGG Logo
 # Rendering with AGG and buffered paint.
 {% include post_header.html %}
 {% include gfx/float_image.html align="right" image="archive/2010/09/agg_logo.jpg" width="71px" title="AGG Logo" nolink=1 borderclass="borderless" %}
-In the [last article]({{site.baseurl}}/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/), I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.
+In the [last article]({{site.baseurl}}{% post_url 2010-09-24-rendering-to-a-device-context-with-agg-antigrain %}), I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.
 
 [Buffered Paint](http://msdn.microsoft.com/en-us/library/bb773257%28v=VS.85%29.aspx">) is a set of new APIs allowing an application to perform flicker free painting without the overhead of creating memory device contexts and bitmaps. It is only available on Windows Vista or later and is part of the UxTheme library. Using it will either make your application incompatible with Windows XP or earlier or will require using the ```GetProcAddress()``` method on Vista or later while providing a fallback method when the buffered paint API is not available.
 

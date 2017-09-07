@@ -3,7 +3,7 @@ author: AlexVie
 title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00+0200
-modified: 2017-09-04 04:57:40+0200
+modified: 2017-09-06 23:03:16+0200
 layout: default
 categories: [Jekyll,Site]
 menucontext: topics
@@ -18,7 +18,7 @@ image_title: Jekyll Logo (CC-BY 4.0)
 
 # Jekyll personal FAQ
 {% include post_header.html %}
-
+{% include defs.md %}
 This is a list of questions (and answers) I stumbled over while designing this 
 site. It is by no means a complete list and will most likely cover topics that 
 are already documented elsewhere. I found many answers on [stackoverflow 
@@ -142,5 +142,31 @@ Let's assume, you have defined an excerpt via front matter, a couple of lines an
    {{ post.excerpt | markdownify }}   // fully parsed
 ```   
 {% endraw %}
+
+## Apply multiple style attributes to block or span level elements
+
+This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.
+{% raw %}
+```
+My paragraph text...[...]
+{:bold:}
+{: .indent}
+```
+{% endraw %}
+This applies both the predefined attribute `bold` and the CSS class `.indent` to the paragraph. Similar constructs are possible for <span>span</span>{:un}{: .c_red} level elements. Here, two classes were applied to the word span, one defining the `text-decoration: underline;`  and a second one setting the red color.
+
+It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, say defs.md, that holds all the style definitions, like so:
+{% raw %}
+```
+{:cols: .two_cols}
+{:red: .c_red}
+{:blue: .c_blue}
+{:green: .c_green}
+{:un: style="text-decoration: underline;"}
+{:ileft: style="padding-left: 20px; border-left: 3px solid #ccc"}
+{:iright: style="padding-right: 20px; border-right: 3px solid #ccc"}
+```
+{% endraw %}
+You can then include that file in any article by simply placing a {% raw %}`{% include defs.md %}`{% endraw %} at the beginning of the document and use the pre-defined style attributes.
 
 {% include disqus_fragment.html %}

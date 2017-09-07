@@ -1,0 +1,57 @@
+/*
+ * these styles should only be used in content, not in templates
+ */
+.c_red {
+    color: $red;
+}
+
+.c_green {
+    color: $green;
+}
+
+.c_blue {
+    color: $blue;
+}
+
+.c_pleft { padding-left: 30px !important; }
+.c_pright { padding-right: 30px !important; }
+.c_bleft { border-left: 3px solid $lightgrey; }
+.c_bright { border-right: 3px solid $lightgrey; }
+
+.note {
+    margin-left: -30px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid white;
+    padding: 5px 20px 0 20px;
+    box-shadow: 2px 2px 4px #ccc;
+    margin-bottom: 15px;
+}
+
+.note.red {
+    background: #f2e1f2; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2e1f2 0%, #f9ccea 100%, #ff7cd8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f2e1f2 0%,#f9ccea 100%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f2e1f2 0%,#f9ccea 100%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.note p {
+    margin: 0 20px 10px 20px;
+    font-family: Monda, Arial, Helvetica, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 120% !important;
+}
+
+.note.red h1::before {
+    content: "!";
+    min-width: 20px;
+    color: red; 
+    box-sizing: content-box;
+    display: inline-block;
+}
+.note h1 {
+    font-size: 16pt !important;
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0 !important;
+    margin-bottom: 10px;
+}
