@@ -18,13 +18,13 @@
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Jekyll test site with no particular purpose.">
 <meta property="og:description" content="A Jekyll test site with no particular purpose.">
-<link rel="canonical" href="http://localhost:4000/">
-<meta property="og:url" content="http://localhost:4000/">
+<link rel="canonical" href="https://silvercircle.github.io/">
+<meta property="og:url" content="https://silvercircle.github.io/">
 <meta property="og:site_name" content="silvercircle/github/io">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-08-25T06:35:00+02:00">
 <script type="application/ld+json">
-{"name":"silvercircle/github/io","description":"A Jekyll test site with no particular purpose.","author":{"@type":"Person","name":"AlexVie"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"Home","dateModified":"2017-08-25T06:35:00+02:00","datePublished":"2017-08-25T06:35:00+02:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":"silvercircle/github/io","description":"A Jekyll test site with no particular purpose.","author":{"@type":"Person","name":"AlexVie"},"@type":"WebSite","url":"https://silvercircle.github.io/","publisher":null,"image":null,"headline":"Home","dateModified":"2017-08-25T06:35:00+02:00","datePublished":"2017-08-25T06:35:00+02:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -32,7 +32,7 @@
     <header>
       <div class="inner">
         <dl>
-          <dt><a href="http://localhost:4000/">silvercircle/github/io</a></dt>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
           <dd>A Jekyll test site with no particular purpose.</dd>
         </dl>
         <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
@@ -86,6 +86,9 @@
                 <li>
                   <a href="/category/development/"><span>Development</span></a>
                 </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
               </ul>
             </li>
         </ul>
@@ -101,70 +104,72 @@
         
         <article id="main-content">
         
-        <h1 id="so-whats-this-all-about">So, what’s this all about?</h1>
-<p><br>
-Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>,
+        <h1 style="margin-bottom:20px;" id="so-whats-this-all-about">So, what’s this all about?</h1>
+<div class="two_cols">
+  <p>Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>,
 a static page generator that has enough flexibility to build a blog or documentation site with it,
 but leaves out all the bloat that makes modern content management systems slow and prone to
 security problems.</p>
 
-<p>With Jekyll, there is no need for a database or complex web server configuration. The only thing
+  <p>With Jekyll, there is no need for a database or complex web server configuration. The only thing
 needed is a working ruby and Jekyll installation on either your local development machine or the
 server machine itself and a web server that can serve static files (basically, the role model of
 all web servers).</p>
 
-<p>I’m using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn’t exactly suitable for casual publishing. While it can do great things, it also needs <strong>a LOT</strong> of attention and maintenance for which I do not want to invest more time than absolutely necessary.</p>
+  <p>I’m using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn’t exactly suitable for casual publishing. While it can do great things, it also needs <strong>a LOT</strong> of attention and maintenance for which I do not want to invest more time than absolutely necessary.</p>
+</div>
 
 <h2 id="how-static-publishing-wit-jekyll-works">How static publishing wit Jekyll works?</h2>
-<p>Fairly simple. You write content in markdown format, a plain text format that has become popular
+<p class="two_cols">Fairly simple. You write content in markdown format, a plain text format that has become popular
 among developers and blog authors over the years. MD is simple, yet powerful enough to create well
 formatted postings and has features to embed images and other rich media content. It also can
 output well formatted and syntax colored code in many programming languages which is a favorite
 feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any
 possible way.</p>
 
-<p>It’s also easy to use. No special software is required to create or edit markdown files; it’s plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.</p>
+<div class="two_cols">
+  <p>It’s also easy to use. No special software is required to create or edit markdown files; it’s plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.</p>
 
-<div class="floatimage right " style="width:50%; max-width:50%;">
+  <div class="blockimage">
 
-<a href="/assets/gfx/vscode.png" data-fancybox="gallery" data-caption="A typical workflow when using Jekyll. A simple text editor is enough.">
+<a href="/assets/gfx/vscode.png" data-fancybox="" data-caption="A typical workflow when using Jekyll. A simple text editor is enough.">
 
 <figure>
-        <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:50%px; max-width:50%px; height:auto; margin:0; display:block;">
+        <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:100%; max-width:100%; height:auto; margin:0;display:block;">
         
         <figcaption style="display:none;">
                 A typical workflow when using Jekyll. A simple text editor is enough.
         </figcaption>
         
 </figure>
-
+    
 </a>
 
 
-<div class="floatimage_title">
+<div class="floatimage_title" style="padding-bottom: 8px;">
     A typical workflow when using Jekyll. A simple text editor is enough.
 </div>
 
 </div>
 
-<p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll
-takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
+  <p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
 which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll
 comes with its own simple web server which you can use locally on your development machine to test
 your site, but on your host, you’ll most likely use the already installed web server software. Be
 it Apache, nginx, IIS or something completely different - it will work, because serving static
 pages is the bread and butter of all web servers.</p>
 
-<p>More advanced features in Jekyll will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.</p>
+  <p>More advanced features in Jekyll will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.</p>
 
-<p>To deploy, you upload the generated site to your host into the document root folder. There is no
+  <p>To deploy, you upload the generated site to your host into the document root folder. There is no
 need to install, set up a database, configure folder permissions or do any other fancy things. You
 deploy like we deployed our first web pages more than 20 years ago, except that we weren’t using
 <strong>S</strong>FTP, but you seriously should.</p>
 
-<p>The cool thing is that a static website works on every possible configuration and web server software you’ll find. There is no need to install add-on modules, no need for special configuration steps, if your server can serve HTML and recognize a <code class="highlighter-rouge">index.html</code> file as the index for an entire folder, everything will work.</p>
+  <p>The cool thing is that a static website works on every possible configuration and web server software you’ll find. There is no need to install add-on modules, no need for special configuration steps, if your server can serve HTML and recognize a <code class="highlighter-rouge">index.html</code> file as the index for an entire folder, everything will work.</p>
 
-<p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p>
+  <p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p>
+</div>
 
         </article>
 
@@ -196,7 +201,23 @@ deploy like we deployed our first web pages more than 20 years ago, except that 
    <div class="author" style="float:right;">
      <span class="date">
                
-        <time class="timeago" datetime="2017-09-04T04:57:40+0200">2017-09-04 04:57:40 +0200</time>
+        <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/articles/publishing-on-github">Publishing on GitHub</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-06T22:11:47+0200">2017-09-06 22:11:47 +0200</time>
         
      </span>
    </div>
@@ -266,22 +287,6 @@ deploy like we deployed our first web pages more than 20 years ago, except that 
    </div>
    <span class="author">
    alex
-   </span>
-   <br>
-   
-      
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2011/05/17/watch-your-weight-there-is-always-a-reason/">Watch your weight, there is always a reason :)</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-               
-        <time class="timeago" datetime="2011-05-17T04:53:27+0000">2011-05-17 04:53:27 +0000</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   AlexVie
    </span>
    <br>
    
@@ -356,7 +361,7 @@ deploy like we deployed our first web pages more than 20 years ago, except that 
     <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
 <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
-<link rel="stylesheet" href="/assets/css/fancybox.min.css" media="screen" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
 
   </body>
 </html>

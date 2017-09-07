@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Changes to the template system | silvercircle/github/io</title>
+<meta property="og:title" content="Changes to the template system">
+<meta name="author" content="Admin">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="This article describes the changes which have recently been made to the message log system in tabSRMM and which may be of interest for the users.">
+<meta property="og:description" content="This article describes the changes which have recently been made to the message log system in tabSRMM and which may be of interest for the users.">
+<link rel="canonical" href="https://silvercircle.github.io/tabsrmm/2006-06-28-changes-to-the-template-system/">
+<meta property="og:url" content="https://silvercircle.github.io/tabsrmm/2006-06-28-changes-to-the-template-system/">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2006-06-28T19:00:18+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"This article describes the changes which have recently been made to the message log system in tabSRMM and which may be of interest for the users.","author":{"@type":"Person","name":"Admin"},"@type":"BlogPosting","url":"https://silvercircle.github.io/tabsrmm/2006-06-28-changes-to-the-template-system/","publisher":null,"image":null,"headline":"Changes to the template system","dateModified":"2006-06-28T19:00:18+02:00","datePublished":"2006-06-28T19:00:18+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/tabsrmm/2006-06-28-changes-to-the-template-system/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+          <div class="note red">
+
+  <h1 id="warning">Warning</h1>
+  <p>This is an old archived article. It is here for historical and nostalgic reasons only. The software described in this article (Mianda IM and its components) is no longer a project I’m working on.</p>
+
+  <p>The article most likely will contain broken links, missing images as it was automatically converted from an old blog long gone.</p>
+
+  <p>The project is still an active Open Source project and should you be interested, more information about it is available <a href="https://www.miranda-ng.org/en/">here</a>.</p>
+</div>
+
+<h1 id="template-system-changes">Template system changes</h1>
+<p style="text-align: justify;">
+  This article describes the changes which have recently been made to the message log system in tabSRMM and which may be of interest for the users.
+</p>
+
+<p style="text-align: justify;">
+  These changes will be fully available with the next tabSRMM release (most likely, the next Miranda nightly build).
+</p>
+
+<p style="text-align: justify;">
+  Note that, especially the auto-bidi mode, may require that you update your configuration. You definately should reset your RTL template set (see below) to make it compatible with the auto-bidi operation.
+</p>
+
+<p style="text-align: justify;">
+  The template documentation has been updated aswell and the new version is now "available":http://miranda.or.at/tabsrmm-articles/tabsrmm-message-log-templates/
+</p>
+
+<!--more|inline-->
+
+<h3 id="1-automatic-bidirectional-mode">1. Automatic bidirectional mode</h3>
+
+<p style="text-align: justify;">
+  This is an important change. It allows to have both LTR (left to right) and RTL (right to left) messages together in the message log. There is no need to switch to a manual RTL mode anymore. Currently, this works only with MSN, because MSN is the only protocol which can transmit and receive the text direction information alogside each message.
+</p>
+
+<p style="text-align: justify;">
+  tabSRMM allows to send and receive this information. When the text input area is in RTL mode (RTL users can switch with Ctrl + Right Shift or Ctrl + Left Shift between RTL and LTR editing) *and* the message contains at least 2 characters of a valid RTL language (hebrew for example), tabSRMM will tell the protocol to send it as RTL message (currently, MSN can do it). This happens automatic and you don't need to activate RTL mode or anything else - it just detects RTL by analyzing the outgoing message.
+</p>
+
+<p>Messages containing both RTL and LTR character sequences should also work fine.</p>
+
+<p style="text-align: justify;">
+  However, the auto-bidi option will have some impact on the visual appearance of the message log, because of some technical limitations in the rich edit control, in particularly:
+</p>
+
+<p style="padding-left: 30px;">
+  <strong>auto-bidi support only works in the unicode build of tabSRMM.</strong>
+</p>
+
+<p style="padding-left: 30px;">
+  <strong>currently, it does NOT work with IEView, because IEView has no support for mixed LTR/RTL messages. This might be added by its author at a later time, but I don't know.</strong>
+</p>
+
+<p style="padding-left: 30px;">
+  <strong>When the message log is in auto-bidi mode (which happens when the first RTL message is received), some of the advanced formatting options are limited or not available. This is due to limitations in the rich edit control and cannot be solved. It includes things like horizontal grid lines and multiple background colors for incoming and outgoing messages (they work, but limited to new messages arriving in the log). Other options like text indent, icons, symbols should work as normal. Bug reports about these limiations or requests to change them will be ignored, because auto-bidi mode currently works in the best possible way.</strong>
+</p>
+
+<p style="text-align: justify;">
+  Maybe some of the limitations can be solved by using IEView when it gets auto-bidi implemented (no idea, if it is planned though).
+</p>
+
+<p style="text-align: justify;">
+  The old (manual) RTL mode is still supported though, but is now emulated with the automatic bidi mode. The ANSI version can still use manual mode.
+</p>
+
+<h3 id="2-changes-to-the-template-system">2. Changes to the template system.</h3>
+
+<ul>
+  <li>the default template sets have been changed, mainly to support auto-bidi mode which affects the RTL template set more than the LTR. If auto-bidi produces strange results, then most likely because you have custom templates loaded from a theme or skin.</li>
+  <li>the template editor has a new button: *Reset all templates* - this allows you to reset your current template set to the default (hardcoded) templates with a single click. Previously, you could only reset single templates.</li>
+  <li>When loading a theme (.tabsrmm file), tabSRMM will no longer automatically overwrite your templates without asking.</li>
+  <li>When loading a skin, it will, by default, not overwrite your fonts, colors and templates, even if the skin has a theme file integrated. You can set the options on the *Message window skin” option page.</li>
+  <li>Loading a skin at startup will never overwrite any message log related things - no fonts, colors, templates.</li>
+</ul>
+
+<h3 id="the-simple-template">The “Simple” template</h3>
+
+<p style="text-align: justify;">
+  This is a new feature in the template parser. There are 2 new variable modifiers available. The <strong><span style="color: #3366ff;">? </span></strong>modifier will skip the following variable, when the template set has been set to <strong>simple</strong> mode. The <strong><span style="color: #3366ff;">\</span></strong> modifier will skip it when the template set is <strong>not</strong> in simple mode. Switching between simple and normal template mode is avaialable from the message log menu (toolbar or menubar).
+</p>
+
+<p style="text-align: justify;">
+  With these 2 new modifiers, you can easily define a template which allows you to switch between 2 modes quickly. The first mode could be full display, including nickname, timestamp and so on, while the *simple* mode could skip these things and provide a more simple layout.
+</p>
+
+        </article>
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
+  (function() {
+    var cx = '007859790308151113940:p-knqr4rpv0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script type="text/javascript">
+  document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+</script>
+</div>
+<br>        
+
+          <h2>Recent in blog</h2>
+           
+ 
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/articles/publishing-on-github">Publishing on GitHub</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-06T22:11:47+0200">2017-09-06 22:11:47 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+          <hr class="blueline" style="clear:both;">
+          <h2>Topics</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev">Web development</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/software">Software</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/tabsrmm">TabSRMM</a></h3>
+          <hr class="blueline" style="clear:both;">
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>

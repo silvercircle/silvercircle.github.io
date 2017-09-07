@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>tabSRMM merge, part 2 | silvercircle/github/io</title>
+<meta property="og:title" content="tabSRMM merge, part 2">
+<meta name="author" content="Admin">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="The progress is faster than I first expected it to be and many things are already working (it is basically already possible to use the merged plugin for all kind of chats within miranda) and a you can expect a first testing release within the next few days (maybe a week or so, max). This release will also contain a more or less finished version of the container skinning engine, including the ability to skin the window frame and title bar and a sample skin.">
+<meta property="og:description" content="The progress is faster than I first expected it to be and many things are already working (it is basically already possible to use the merged plugin for all kind of chats within miranda) and a you can expect a first testing release within the next few days (maybe a week or so, max). This release will also contain a more or less finished version of the container skinning engine, including the ability to skin the window frame and title bar and a sample skin.">
+<link rel="canonical" href="https://silvercircle.github.io/tabsrmm/2006-03-22-tabsrmm-merge-part-2/">
+<meta property="og:url" content="https://silvercircle.github.io/tabsrmm/2006-03-22-tabsrmm-merge-part-2/">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2006-03-22T20:44:36+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"The progress is faster than I first expected it to be and many things are already working (it is basically already possible to use the merged plugin for all kind of chats within miranda) and a you can expect a first testing release within the next few days (maybe a week or so, max). This release will also contain a more or less finished version of the container skinning engine, including the ability to skin the window frame and title bar and a sample skin.","author":{"@type":"Person","name":"Admin"},"@type":"BlogPosting","url":"https://silvercircle.github.io/tabsrmm/2006-03-22-tabsrmm-merge-part-2/","publisher":null,"image":null,"headline":"tabSRMM merge, part 2","dateModified":"2006-03-22T20:44:36+02:00","datePublished":"2006-03-22T20:44:36+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/tabsrmm/2006-03-22-tabsrmm-merge-part-2/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+          <div class="note red">
+
+  <h1 id="warning">Warning</h1>
+  <p>This is an old archived article. It is here for historical and nostalgic reasons only. The software described in this article (Mianda IM and its components) is no longer a project I’m working on.</p>
+
+  <p>The article most likely will contain broken links, missing images as it was automatically converted from an old blog long gone.</p>
+
+  <p>The project is still an active Open Source project and should you be interested, more information about it is available <a href="https://www.miranda-ng.org/en/">here</a>.</p>
+</div>
+
+<h1 id="the-merge-part-2">The merge, part 2</h1>
+
+<p style="text-align: justify;">
+  The progress is faster than I first expected it to be and many things are already working (it is basically already possible to use the merged plugin for all kind of chats within miranda) and a you can expect a first testing release within the next few days (maybe a week or so, max). This release will also contain a more or less finished version of the container skinning engine, including the ability to skin the window frame and title bar and a sample skin.
+</p>
+
+<p>It is also pretty stable right now and doesn’t crash (at least, it didn’t so far for the last few days…)</p>
+
+<h3 id="a-few-design-decisions-which-have-been-already-made">A few design decisions which have been already made:</h3>
+
+<p style="text-align: justify;">
+  <strong>No IEView support will be added to chat rooms</strong>. Simple as it is, that won't happen. There are many technical reasons, most importantly the fact that IEView is WAY too slow to handle busy IRC channels which can generate a few events *per second*. Joining such an IRC channel may crash and burn Miranda within a short period of time - the memory requirements by the embedded Internet explorer control are way too high and it is also way too slow - imagine what will happen in a very busy channel with a complex template like satin :) Miranda will eat 100% CPU and consume memory like insane.
+</p>
+
+<p style="text-align: justify;">
+  Since this feature is dangerous and may even open potential security risks (it HAS the potential to be abused as a possible "Denial of Service" attack against Miranda users in IRC channels), it is not going to happen, not even as an option. This is not open for discussion, so please don't ask.
+</p>
+
+<p style="text-align: justify;">
+  Sorry, if this disappoints you, but it really doesn't make sense. I know that it is *NOT* IEViews fault as the author of IEView has done a great job to make the plugin as efficient as possible, but the real problem is the slow HTML rendering engine of IE (it is even slower when building pages dynamically which is exactly what happens in IEView).
+</p>
+
+<p style="text-align: justify;">
+  Of course, normal instant message sessions won't be affected. IEView support in tabSRMM will stay as it currently is and there are no plans to remove it in the future. So, don't panic :) The above decision will only affect chat rooms (IRC channels and such), but *not* IRC queries (they will continue to work as they currently do and use normal IM tabs).
+</p>
+
+<p style="text-align: justify;">
+  <strong>Send on double enter+ is back</strong>. This is another positive side-effect of the merge - the code which handles sending a message will be unified so that the way how you configure sending a message will work in all tabs, so you can send on double enter in both chat rooms and normal IM sessions. It is also no longer needed to configure it for both plugins. That also affects the "Alt-S" hotkey for sending a message which will then also work for chat rooms.
+</p>
+
+<p style="text-align: justify;">
+  <strong>The large send button is gone</strong> - sorry if you liked it. I don't as it is WAY too MSN-ish and looks weird with a bigger input area. Instead, a tabSRMM-style send button has been added to the toolbar.
+</p>
+
+<p style="text-align: justify;">
+  <strong>Icon pack changes -</strong> I've made the decision to merge all the icons into a single icon pack. Some of the chat-specific icons have been merged with tabSRMM icons to give the button bar a consistent look and feel and to eliminate resource usage. This step will require changes in the icon pack format, unfortunately. This will further reduce the size of the tabSRMM DLL by about 50K and simplify icon pack customization (one icon pack for everything...). Of course, IcoLib support is available for all icons.
+</p>
+
+<p style="text-align: justify;">
+  Icon pack customization is now also easier, because icons have been logically divided into groups and are no longer all mixed together within a single IcoLib section.
+</p>
+
+<p style="text-align: justify;">
+  <strong>Theme changes -</strong> TabSRMM message log themes (.tabsrmm files) will also import and export the look of the group chat window, including all fonts and colors, and the look of the info panel fields (fonts, colors, background). All font configuration has been merged into a single dialog (but there are sections to make the now rather long font list easier to navigate).
+</p>
+
+<p>A container skin can hold a reference to a .tabsrmm theme file so it is now really possible to change the look of the message container by just loading a skingle skin file.</p>
+
+        </article>
+        <aside id="sidebar">
+          <div id="google-custom-search" style="height:20px;">
+<script type="text/javascript">
+  (function() {
+    var cx = '007859790308151113940:p-knqr4rpv0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script type="text/javascript">
+  document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+</script>
+</div>
+<br>        
+
+          <h2>Recent in blog</h2>
+           
+ 
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/articles/publishing-on-github">Publishing on GitHub</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-06T22:11:47+0200">2017-09-06 22:11:47 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+               
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+          <hr class="blueline" style="clear:both;">
+          <h2>Topics</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev">Web development</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/software">Software</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="/tabsrmm">TabSRMM</a></h3>
+          <hr class="blueline" style="clear:both;">
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>
