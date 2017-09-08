@@ -7,7 +7,7 @@ layout: default
 categories: [Site]
 menucontext: blog
 permalink: /articles/publishing-on-github
-tag: first
+tag: [first, foo]
 excerpt: >
     [GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works.
     <br>
@@ -24,8 +24,10 @@ For many years, I was running my own website, containing a blog, a Forum and a W
 
 It was a more or less pure *LAMP* solution (Linux, Apache, MySQL, PHP), with the exception that my OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric approach stayed.
 
-For the purpose of this article, I'm going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year after I decided to start a blog. 
+For the purpose of this article, I'm going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year after I decided to start a blog, but it was good enough to run a simple blog with nothing but articles and the odd image every now and then.
 
+Eventually, I migrated to WordPress, because WP was hyped (and I was, admittedly, falling for the hype) and, to be honest, back then it was an excellent choice for a small personal weblog, because it did exactly what was needed.
+ 
 ## The advantages ("pros") 
 
 * basically unlimited storage.

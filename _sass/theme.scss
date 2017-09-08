@@ -402,10 +402,11 @@
 	  font-family: Monda, Helvetica, Arial, serif;
 	  padding-top:20px;
     background: #2e7bcf url(../images/theme/upper_bg.png) no-repeat 0 0;
+    border-top: 8px solid black;
   }
   
   header dt > a {
-    width: 540px;
+    max-width: 540px;
     margin-top: 0;
     margin-bottom: 0.2em;
     font-size: 18pt;
@@ -415,7 +416,7 @@
     letter-spacing: -1px; }
   
   header dd {
-    width: 540px;
+    max-width: 540px;
     margin: 0;
     font-size: 13pt;
     font-weight: normal;
