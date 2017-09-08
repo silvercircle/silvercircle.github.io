@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-07T15:39:12+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Publishing on GitHub</title><link href="https://silvercircle.github.io/articles/publishing-on-github" rel="alternate" type="text/html" title="Publishing on GitHub" /><published>2017-09-05T03:45:47+02:00</published><updated>2017-09-05T03:45:47+02:00</updated><id>https://silvercircle.github.io/articles/publishing-on-github</id><content type="html" xml:base="https://silvercircle.github.io/articles/publishing-on-github">&lt;h1 id=&quot;publishing-on-github&quot;&gt;Publishing on GitHub&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-08T17:52:07+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-06T22:11:47+0200&quot;&gt;2017-09-06 22:11:47 +0200&lt;/time&gt;
+Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 05. September 2017, 03:45
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Fri, 08. September 2017, 16:59
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back in the days when I was working on a fairly popular open source project and used my web presence for all kind of documentation and collaboration. This was before the social net took off, when forums, instant messaging and group chats were the #1 way to interact on the Net.&lt;/p&gt;
+&lt;p&gt;This picture was found on the net and was apparently taken in some super market in Texas after Hurricane Harvey hit in late August 2017.&lt;/p&gt;
 
-&lt;p&gt;It was a more or less pure &lt;em&gt;LAMP&lt;/em&gt; solution (Linux, Apache, MySQL, PHP), with the exception that my OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric approach stayed.&lt;/p&gt;
+&lt;p&gt;People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food products, despite the crisis and possible shortages that were to expect.&lt;/p&gt;
 
-&lt;p&gt;For the purpose of this article, I’m going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year after I decided to start a blog.&lt;/p&gt;
+&lt;div class=&quot;blockimage&quot;&gt;
 
-&lt;h2 id=&quot;the-advantages-pros&quot;&gt;The advantages (“pros”)&lt;/h2&gt;
+&lt;a href=&quot;/assets/gfx/fun/tofu.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;Vegetarian and vegan foot leftovers&quot;&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;basically unlimited storage.&lt;/li&gt;
-  &lt;li&gt;free revision control. This means, you can never lose work as it always remains possible to revert changes or get older versions of a particular article back for reference. Revision control is a major feature of most modern CMS and Wiki authoring systems. With GitHub, you get it for free and for everything - not only for articles, but also for templates, style sheets, even images.&lt;/li&gt;
-  &lt;li&gt;very stable, reliable hosting. I’ve never experienced GitHub being down, slow or even unresponsive.&lt;/li&gt;
-  &lt;li&gt;no resource limits. Your hosting isn’t limited in CPU power, RAM usage or number of database connections. It simply doesn’t matter with static pages.&lt;/li&gt;
-  &lt;li&gt;You can use your own domain name. All you need is access to your DNS record.&lt;/li&gt;
-  &lt;li&gt;You do not have to adopt the particular work flow of the CMS of your choice. You write with your favorite editor on your local computer, you have all the files available locally with exactly the same structure as on the host.&lt;/li&gt;
-  &lt;li&gt;want to keep a change log for later reference? Well, no need to do it explicitly. GitHub does it for you. Just use commit messages.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;figure&gt;
+        &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;Vegetarian and vegan foot leftovers&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Vegetarian and vegan foot leftovers
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+    
+&lt;/a&gt;
 
-&lt;p&gt;Well, that’s a lot of «pros» isn’t it?. When there is so much light, there must be shadow, right?&lt;/p&gt;
 
-&lt;p&gt;Of course. The fact that GitHub will only host static pages and does not allow PHP, Python, Ruby, Java or any other technology that would allow you to write dynamic web applications is a &lt;em&gt;con&lt;/em&gt; of its own and for many it might very well be the only con that is need to rule out hosting on GitHub. Without server sided&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
+&lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
+    Vegetarian and vegan foot leftovers
+&lt;/div&gt;
+
+&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;
 &lt;/div&gt;
