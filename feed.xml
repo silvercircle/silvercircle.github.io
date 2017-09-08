@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-08T17:52:07+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-08T18:01:18+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -32,7 +32,24 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:5
     Vegetarian and vegan foot leftovers
 &lt;/div&gt;
 
-&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var disqus_config = function () {
+this.page.url = &quot;https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = &quot;ALEXVIE#@#2017-09-08 16:59:03 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;
 &lt;/div&gt;
