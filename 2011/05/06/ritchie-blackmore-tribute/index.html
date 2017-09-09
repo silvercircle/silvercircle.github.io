@@ -29,6 +29,13 @@
 
   </head>
   <body>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.<br>
+        By clicking Allow cookies you give your permission to this website to store small bits of data on your device.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
     <header>
       <div class="inner">
         <dl>
@@ -49,7 +56,7 @@
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
           </li>
-          <li id="button_blog" class="">
+          <li id="button_blog" class="active">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
               <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
               <ul style="display:none;">
