@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-11T15:34:40+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-11T18:26:35+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -49,7 +49,167 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">Publishing on GitHub</title><link href="https://silvercircle.github.io/articles/publishing-on-github" rel="alternate" type="text/html" title="Publishing on GitHub" /><published>2017-09-05T03:45:47+02:00</published><updated>2017-09-05T03:45:47+02:00</updated><id>https://silvercircle.github.io/articles/publishing-on-github</id><content type="html" xml:base="https://silvercircle.github.io/articles/publishing-on-github">&lt;h1 id=&quot;publishing-on-github&quot;&gt;Publishing on GitHub&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
+Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:58:16+0200&quot;&gt;2017-09-11 16:58:16 +0200&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 05. September 2017, 03:45
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back in the days when I was working on a fairly popular open source project and used my web presence for all kind of documentation and collaboration. This was before the social net took off, when forums, instant messaging and group chats were the #1 way to interact on the Net.&lt;/p&gt;
+
+&lt;p&gt;It was a more or less pure &lt;em&gt;LAMP&lt;/em&gt; solution (Linux, Apache, MySQL, PHP), with the exception that my OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric approach stayed.&lt;/p&gt;
+
+&lt;p&gt;For the purpose of this article, I’m going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year later, but it was good enough to run a simple blog with nothing but articles and the odd image every now and then.&lt;/p&gt;
+
+&lt;p&gt;Eventually, I migrated to WordPress, because WP was hyped (and I was, admittedly, falling for the hype) and, to be honest, back then it was an excellent choice for a small personal weblog, because it did exactly what was needed. It worked reasonably well for a couple of years, but I always found upgrading a bit of a pain, particularly because add-ons and themes very often needed small adjustments and in some cases, features stopped working or started to behave strangely.&lt;/p&gt;
+
+&lt;p&gt;The final blow came, when some cracker decided to take over my blog to abuse it for spamming, listing my server in all imaginable e-mail black lists in the process. My fault was using an add-on that was vulnerable, but since it was an old and not a very widespread add-on, the vulnerability was not well known, so I missed it. The damage was not very big and certainly manageable, but I had no intention to repeat the experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;this-showed-me-one-thing&quot;&gt;This showed me one thing&lt;/h3&gt;
+
+&lt;p&gt;Running a blog requires attention and willingness to maintain it constantly. I could have outsourced that, but I always preferred to run things on my own server. The consequence was to take it down, because I wasn’t willing to invest more time than absolutely needed. It was a hobby and it never generated a single cent of income (which was never the goal anyway). In fact, it did cost me for hosting, but that lies in the nature of most hobbies: &lt;em&gt;They are not free&lt;/em&gt;. Because of all this, I decided to not have a blog at all. &lt;strong&gt;Until now&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;going-static-for-a-comeback&quot;&gt;Going static for a comeback&lt;/h2&gt;
+
+&lt;p&gt;Static site generators have become popular over the last couple of years.&lt;/p&gt;
+
+&lt;p&gt;Static publishing means one thing: No scripts on the server, no database, no complex configuration. You publish HTML pages and resources like style sheets, Javascript- and media files, like we did in the old days. The main difference is how the pages are created. In the old days, we authored them manually and while we did have software that made HTML authoring easier, it was still a cumbersome task.&lt;/p&gt;
+
+&lt;p&gt;A static site generator like Jekyll simplifies the task. It is a piece of software that generates pages from content, which is defined as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;articles written in some simple markup (&lt;strong&gt;Markdown&lt;/strong&gt; is very popular, but others can be used)&lt;/li&gt;
+  &lt;li&gt;Media files (images mainly)&lt;/li&gt;
+  &lt;li&gt;Style sheets (.css files that define how your site looks)&lt;/li&gt;
+  &lt;li&gt;Scripts that run on the client. jQuery is such an example.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The site generator will take all the content, translate it to HTML, inject the result into templates that define the overall look of your site and spit out an organized directory structure filled with HTML, CSS and all the other files. This folder structure is what you upload to your host’s document root folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-static-publishing-wit-jekyll-works&quot;&gt;How static publishing wit Jekyll works?&lt;/h2&gt;
+&lt;p&gt;Fairly simple. You write content in markdown format, a plain text format that has become popular
+among developers and blog authors over the years. MD is simple, yet powerful enough to create well
+formatted postings and has features to embed images and other rich media content. It also can
+output well formatted and syntax colored code in many programming languages which is a favorite
+feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any
+possible way.&lt;/p&gt;
+
+&lt;p&gt;Once you are done with writing, you tell Jekyll to &lt;em&gt;build&lt;/em&gt; the site. During this process, Jekyll takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
+which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll
+comes with its own simple web server which you can use locally on your development machine to test
+your site, but on your host, you’ll most likely use the already installed web server software. Be
+it Apache, nginx, IIS or something completely different - it will work, because serving static
+pages is the bread and butter of all web servers.&lt;/p&gt;
+
+&lt;p&gt;More advanced features in Jekyll and most other static site generators will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.&lt;/p&gt;
+
+&lt;p&gt;It’s a bit like software development using a compiled language. You write your page(s) as source code and the site generator can be seen as the compiler. Whenever you change something, you need to run the compiler. Once the site has been compiled, it must be uploaded to the web server, though this depends on the type of work flow you favorite.&lt;/p&gt;
+
+&lt;h3 id=&quot;different-work-flows&quot;&gt;Different work flows&lt;/h3&gt;
+
+&lt;p&gt;This is by no means complete, but some possible work flows are listed here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;build locally on a PC / laptop and upload the “compiled” site via FTP/SFTP to your host. Can be difficult for a huge site to keep track of all changes, so automatic directory synchronization and/or mirroring is definitely a must-have feature for this kind of work flow. For Windows users, I recommend &lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;WinSCP&lt;/a&gt;. This work flow requires that you install Ruby, Jekyll and all dependencies on your computer which is beyond of the scope for this article.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Upload / synchronize your source code only and build on the server. The site generator and all its dependencies must be installed on the server machine. It will build directly into the document root.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use a version control system and configure your server to serve from the repository root. This is a more advanced setup that requires knowledge on how to configure the version control system on your server. This is also beyond the scope of this article and this work flow is what you will use when you publish on GitHub.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use GitHub and their Jekyll support. This work flow doesn’t need a local or remote installation of Jekyll on your side. GitHub supports Jekyll and all you need to do is to push the source code of your site to the repository. GitHub will run Jekyll and build your site, though it is still possible to buld locally and push the results directly. The latter method gives you the freedom to use any Jekyll plugin you want while GitHub only supports a few.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;using-github-to-publish&quot;&gt;Using GitHub to publish&lt;/h2&gt;
+
+&lt;p&gt;GitHub offers free web hosting for personal home pages and project pages, but they only accept static content. On GitHub, you cannot run a WordPress blog or PHP-based forum software. You can only let it serve static HTML pages and supporting files.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-advantages-pros&quot;&gt;The advantages (“pros”)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;basically unlimited storage.&lt;/li&gt;
+  &lt;li&gt;free revision control. This means, you can never lose work as it always remains possible to revert changes or get older versions of a particular article back for reference. Revision control is a major feature of most modern CMS and Wiki authoring systems. With GitHub, you get it for free and for everything - not only for articles, but also for templates, style sheets, even images.&lt;/li&gt;
+  &lt;li&gt;very stable, reliable hosting. I’ve never experienced GitHub being down, slow or even unresponsive.&lt;/li&gt;
+  &lt;li&gt;no resource limits. Your hosting isn’t limited in CPU power, RAM usage or number of database connections. It simply doesn’t matter with static pages.&lt;/li&gt;
+  &lt;li&gt;You can use your own domain name. All you need is access to your DNS record.&lt;/li&gt;
+  &lt;li&gt;You do not have to adopt the particular work flow of the CMS of your choice. You write with your favorite editor on your local computer, you have all the files available locally with exactly the same structure as on the host.&lt;/li&gt;
+  &lt;li&gt;want to keep a change log for later reference? Well, no need to do it explicitly. GitHub does it for you. Just use commit messages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Well, that’s a lot of «pros» isn’t it?. When there is so much light, there must be shadow, right?&lt;/p&gt;
+
+&lt;p&gt;Of course. The fact that GitHub will only host static pages and does not allow PHP, Python, Ruby, Java or any other technology that would allow you to write dynamic web applications is a &lt;em&gt;con&lt;/em&gt; of its own and for many it might very well be the only con that is need to rule out hosting on GitHub.&lt;/p&gt;
+
+&lt;h3 id=&quot;some-cons&quot;&gt;Some cons&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;absolutely no server-sided dynamic content.&lt;/li&gt;
+  &lt;li&gt;no database. This means advanced queries for retrieving content is difficult if not impossible to implement. You can have tags, categories and similar things with static pages, but you cannot run a simple query to retrieve all articles that are tagged with 2 terms for example.&lt;/li&gt;
+  &lt;li&gt;no access control. GitHub does not allow this. If you host static pages on your own server, it is possible to use basic HTTP auth, but not on GitHub. This implies, all pages are public.&lt;/li&gt;
+  &lt;li&gt;no author profiles, unless you create static pages for them. Also, no user or member registration and no roles.&lt;/li&gt;
+  &lt;li&gt;site-wide full text search is difficult. Unless you let google do it and integrate a custom search box. Like I did here.&lt;/li&gt;
+  &lt;li&gt;not much interactive features. You can embed &lt;a href=&quot;https://www.disqus.com&quot;&gt;Disqus&lt;/a&gt; if you want, but you won’t have full control over all submitted content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;and-further&quot;&gt;And further….?&lt;/h2&gt;
+
+&lt;p&gt;What I personally like is the simple work flow. A text editor like Visual Studio Code or Sublime Text is enough. No need to deal with thorny CMS features.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;works on every simple web server. Even if GitHub would decide to stop hosting personal home pages, it wouldn’t take long to find a new (and cheap) home.&lt;/li&gt;
+  &lt;li&gt;absolute freedom. Every single line of HTML code is your own. It’s very easy to add features as client sided Javascript code.&lt;/li&gt;
+  &lt;li&gt;security. No one will hack your GitHub page. Seriously, no one will hack a static page anyway, no matter where it is hosted.&lt;/li&gt;
+  &lt;li&gt;Git. Did I say Git? It’s by far the easiest way to synchronize and have version control for all files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;blockimage &quot;&gt;
+
+&lt;a href=&quot;/assets/gfx/vscode.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;A typical workflow when using Jekyll. A simple text editor is enough.&quot;&gt;
+
+&lt;figure&gt;
+        &lt;img src=&quot;/assets/gfx/vscode.png&quot; alt=&quot;A typical workflow when using Jekyll. A simple text editor is enough.&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                A typical workflow when using Jekyll. A simple text editor is enough.
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+    
+&lt;/a&gt;
+
+
+&lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
+    A typical workflow when using Jekyll. A simple text editor is enough.
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var disqus_config = function () {
+this.page.url = &quot;https://silvercircle.github.io/articles/publishing-on-github&quot;;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = &quot;ALEXVIE#@#2017-09-05 03:45:47 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -928,115 +1088,4 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 &lt;/script&gt;
 
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" /></entry><entry><title type="html">Rendering to a device context with AGG (AntiGrain)</title><link href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" rel="alternate" type="text/html" title="Rendering to a device context with AGG (AntiGrain)" /><published>2010-09-25T00:36:38+02:00</published><updated>2010-09-25T00:36:38+02:00</updated><id>https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain</id><content type="html" xml:base="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">&lt;h1 id=&quot;rendering-with-agg-under-windows&quot;&gt;Rendering with AGG under Windows&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2010-09-24T22:36:38+0000&quot;&gt;2010-09-24 22:36:38 +0000&lt;/time&gt;
-&lt;/div&gt;
-&lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/c++/index.html&quot;&gt;C++&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt; | Fri, 24. September 2010, 22:36
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
-
-&lt;div class=&quot;floatimage right borderless&quot; style=&quot;width:71px; max-width:71px;&quot;&gt;
-
-&lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/archive/2010/09/agg_logo.jpg&quot; alt=&quot;AGG Logo&quot; style=&quot;width:71pxpx; max-width:71pxpx; height:auto; margin:0; display:block;&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                AGG Logo
-        &lt;/figcaption&gt;
-        
-&lt;/figure&gt;
-
-
-&lt;div class=&quot;floatimage_title&quot;&gt;
-    AGG Logo
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quite a few years ago, I discovered &lt;a href=&quot;http://www.antigrain.com&quot;&gt;AntiGrain Geometry&lt;/a&gt;, a high-performance, high-quality, platform-independent generic library for rendering 2d vector graphics.&lt;/p&gt;
-
-&lt;p&gt;AGG is fast, lightweight, implemented as a set of C++ classes, makes heavy use of templates and is fairly easy to integrate into a project. There is no need to build and link against libraries as you just add the files to your project and make sure you include the necessary headers. Clean and simple.&lt;/p&gt;
-
-&lt;p&gt;It can serve as a replacement for GDI+ and usually produces better results at higher speeds. It is also somewhat similar to cairo graphics, but has less features. It is perfect when you need to draw filled or outlined shapes, deal with all kinds of gradients or draw antialiased lines.&lt;/p&gt;
-
-&lt;p&gt;However, AGG also has a fairly steep learning curve as it follows a completely different approach. It’s all about creating and managing rendering pipelines and, at first, this can be a bit overwhelming when you are used to the simple approach of GDI+ that does everything with a Graphics object. I still think that learning to use AGG can be rewarding in the end.&lt;/p&gt;
-
-&lt;p&gt;The following paragraphs will try to explain how to actually produce visible output, using AGG on Windows. While AGG is fairly mature and complete, its documentation is lacking and the best way to learn is to read the source code of the countless examples that are included when you download it. So the very first question I had after learning how to set up a rendering pipeline was:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;How the hell can I render the output to a typical Windows device context?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;so-how-do-i-render-to-a-dc&quot;&gt;So how do I render to a DC?&lt;/h3&gt;
-
-&lt;p&gt;Well, you don’t :) A device context is not a real render target, it is just a data structure &lt;em&gt;holding information about a render target&lt;/em&gt;. When you use a GDI function to render to a DC, the function will only use the DC to obtain information how and where it has to set its pixels. The actual render target is a in-memory bitmap which is &lt;em&gt;selected&lt;/em&gt; into the device context. In GDI terminology, objects like brushes, pens and bitmaps are selected into a device context and any selected object becomes active, so when you select a memory bitmap into a device context, it becomes the active render target and any GDI function that draws to that DC will actually manipulate the bitmap that is selected into this DC.&lt;/p&gt;
-
-&lt;p&gt;That said, it should already be clear how to use AGG for rendering to a DC - you don’t render to the DC but to the bitmap that is selected into the DC.&lt;/p&gt;
-
-&lt;h3 id=&quot;but-how&quot;&gt;But how?&lt;/h3&gt;
-
-&lt;p&gt;Basically, you create a &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rendering_buffer&lt;/code&gt; object and attach it to the memory buffer that represents the bitmap’s pixels. The &lt;em&gt;agg::rendering_buffer&lt;/em&gt; is a simple abstract class that can be attached to any memory buffer and serves as the lowest level base object of an AGG rendering pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering buffer and do the actual drawing.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-bloody-details&quot;&gt;The bloody details&lt;/h3&gt;
-
-&lt;p&gt;For the following examples, we assume that all rendering must be done in 32bit color depth with a valid alpha channel (thus, 4 bytes per pixel). It is important to agree on the actual pixel format, because if your AGG pipeline uses a pixel format that doesn’t match the bitmap’s format, the results will look very broken. Windows bitmaps can use a variety of formats, but for the examples we will use a 32bit BGRa format. Windows reverts the color order from aRGB to BGRa for performance and other reasons, but since you do not have to manipulate pixels directly, you don’t have to care - just make sure to use the same pixel format when setting up your AGG rendering pipeline.&lt;/p&gt;
-
-&lt;p&gt;First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of the bitmap - usually the dimensions of your rendering area - for example, the client area of a window. Both are passed to this function as &lt;code class=&quot;highlighter-rouge&quot;&gt;cx&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;cy&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;BITMAPINFO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biSize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BITMAPINFOHEADER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;			&lt;span class=&quot;c1&quot;&gt;// use a &quot;topdown&quot; bitmap (0,0 = left, top corner)
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biPlanes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biBitCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmiHeader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;biCompression&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BI_RGB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CreateDIBSection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DIB_RGB_COLORS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;If all goes well, the function will return a valid handle for your new bitmap. You can now use this handle to select the bitmap into your DC and I won’t get into detail about this, because it should be well-known.&lt;/p&gt;
-
-&lt;p&gt;Next, you need to attach a &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rendering_buffer&lt;/code&gt; to your new bitmap. The prototype for the &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rendering_buffer::attach()&lt;/code&gt; method looks like this:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stride&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;buf&lt;/code&gt; is the memory buffer that holds the pixel data. Should be clear and I will explain shortly how to obtain it from your bitmap.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;height&lt;/code&gt; are the same &lt;code class=&quot;highlighter-rouge&quot;&gt;cx&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;cy&lt;/code&gt; - the dimensions of the bitmap and your corresponding drawing area.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stride&lt;/code&gt; is important. Basically, it is the length of a single pixel scan line of your bitmap in &lt;strong&gt;BYTES&lt;/strong&gt;. One would assume that for a 32bit BGRa bitmap, &lt;em&gt;stride&lt;/em&gt; would be &lt;code class=&quot;highlighter-rouge&quot;&gt;(4 * width)&lt;/code&gt;, but that is not always true. Because of performance reasons, Windows may round up the width of a bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than the drawing area, and this is why stride is so important. It tells the rendering buffer, how many bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) up or down.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The following code will attach a rendering buffer object to a memory bitmap. &lt;code class=&quot;highlighter-rouge&quot;&gt;m_rbuf&lt;/code&gt; is our &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rendering_buffer&lt;/code&gt; object and &lt;strong&gt;hbm&lt;/strong&gt; is the bitmap handle.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;  &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hbm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;m_rbuf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmBits&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bmWidthBytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;We use &lt;code class=&quot;highlighter-rouge&quot;&gt;GetObject()&lt;/code&gt; Win32 API to obtain information about our bitmap. It fills a structure from which we can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;bmBits&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;bmWith&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;bmHeight&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bmWidthBytes&lt;/code&gt; members for using it in &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rendering_buffer::attach()&lt;/code&gt;. The &lt;em&gt;bmWidthBytes&lt;/em&gt; member is our &lt;em&gt;stride&lt;/em&gt; (see above) - it indicates the internal width of the bitmap in bytes, so it is important to use this instead of calculating your own stride value from the width.&lt;/p&gt;
-
-&lt;p&gt;Note that this code is just an &lt;strong&gt;incomplete example&lt;/strong&gt; only showing the basic principle. It lacks safety checks which you should add when using it. At least, check the return value from &lt;code class=&quot;highlighter-rouge&quot;&gt;GetObject()&lt;/code&gt; and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.&lt;/p&gt;
-
-&lt;p&gt;Basically, that’s it. You now have a rendering buffer that uses a memory bitmap and to which you can attach your rendering pipeline. Make sure, your pipeline uses &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::pixfmt_bgra32&lt;/code&gt; to be compatible with the pixel format of your bitmap. When using colors, use &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rgba8&lt;/code&gt; and make sure to set the alpha value(s), otherwise you’ll most likely render fully transparent pixels, because the default alpha value is always 0 when you initialize a &lt;code class=&quot;highlighter-rouge&quot;&gt;agg::rgba8&lt;/code&gt; olor object.&lt;/p&gt;
-
-&lt;p&gt;Next time, I’ll show how to do it when using Windows Vista or later buffered paint API which allows you to paint flickerfree without creating your own memory bitmaps and device contexts.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2010-09-24 22:36:38 +0000&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" /></entry></feed>
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" /></entry></feed>

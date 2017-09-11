@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Publishing on GitHub | silvercircle/github/io</title>
+<meta property="og:title" content="Publishing on GitHub">
+<meta name="author" content="AlexVie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="GitHub is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.">
+<meta property="og:description" content="GitHub is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.">
+<link rel="canonical" href="https://silvercircle.github.io/articles/publishing-on-github">
+<meta property="og:url" content="https://silvercircle.github.io/articles/publishing-on-github">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:image" content="https://silvercircle.github.io/logos/github-mark.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-09-05T03:45:47+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"GitHub is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/articles/publishing-on-github","publisher":null,"image":"https://silvercircle.github.io/logos/github-mark.png","headline":"Publishing on GitHub","dateModified":"2017-09-05T03:45:47+02:00","datePublished":"2017-09-05T03:45:47+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/articles/publishing-on-github"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.<br>
+        By clicking Allow cookies you give your permission to this website to store small bits of data on your device.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
+    <header>
+      <div class="inner">
+          <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+        </dl>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>                    
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
+      <nav>
+	     <div id="main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+              </ul>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+        
+<h1 id="publishing-on-github">Publishing on GitHub</h1>
+<div class="author" style="float:right;font-size:smaller;">
+Last modified: <time class="timeago" datetime="2017-09-11T16:58:16+0200">2017-09-11 16:58:16 +0200</time>
+</div>
+<div class="author" style="font-size:smaller;">
+    Written by AlexVie in <a href="/category/site/index.html">Site</a> | Tue, 05. September 2017, 03:45
+</div>
+<div class="clearfix"></div>
+<hr>
+
+<p>For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back in the days when I was working on a fairly popular open source project and used my web presence for all kind of documentation and collaboration. This was before the social net took off, when forums, instant messaging and group chats were the #1 way to interact on the Net.</p>
+
+<p>It was a more or less pure <em>LAMP</em> solution (Linux, Apache, MySQL, PHP), with the exception that my OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric approach stayed.</p>
+
+<p>For the purpose of this article, I’m going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year later, but it was good enough to run a simple blog with nothing but articles and the odd image every now and then.</p>
+
+<p>Eventually, I migrated to WordPress, because WP was hyped (and I was, admittedly, falling for the hype) and, to be honest, back then it was an excellent choice for a small personal weblog, because it did exactly what was needed. It worked reasonably well for a couple of years, but I always found upgrading a bit of a pain, particularly because add-ons and themes very often needed small adjustments and in some cases, features stopped working or started to behave strangely.</p>
+
+<p>The final blow came, when some cracker decided to take over my blog to abuse it for spamming, listing my server in all imaginable e-mail black lists in the process. My fault was using an add-on that was vulnerable, but since it was an old and not a very widespread add-on, the vulnerability was not well known, so I missed it. The damage was not very big and certainly manageable, but I had no intention to repeat the experience.</p>
+
+<h3 id="this-showed-me-one-thing">This showed me one thing</h3>
+
+<p>Running a blog requires attention and willingness to maintain it constantly. I could have outsourced that, but I always preferred to run things on my own server. The consequence was to take it down, because I wasn’t willing to invest more time than absolutely needed. It was a hobby and it never generated a single cent of income (which was never the goal anyway). In fact, it did cost me for hosting, but that lies in the nature of most hobbies: <em>They are not free</em>. Because of all this, I decided to not have a blog at all. <strong>Until now</strong>.</p>
+
+<h2 id="going-static-for-a-comeback">Going static for a comeback</h2>
+
+<p>Static site generators have become popular over the last couple of years.</p>
+
+<p>Static publishing means one thing: No scripts on the server, no database, no complex configuration. You publish HTML pages and resources like style sheets, Javascript- and media files, like we did in the old days. The main difference is how the pages are created. In the old days, we authored them manually and while we did have software that made HTML authoring easier, it was still a cumbersome task.</p>
+
+<p>A static site generator like Jekyll simplifies the task. It is a piece of software that generates pages from content, which is defined as:</p>
+
+<ul>
+  <li>articles written in some simple markup (<strong>Markdown</strong> is very popular, but others can be used)</li>
+  <li>Media files (images mainly)</li>
+  <li>Style sheets (.css files that define how your site looks)</li>
+  <li>Scripts that run on the client. jQuery is such an example.</li>
+</ul>
+
+<p>The site generator will take all the content, translate it to HTML, inject the result into templates that define the overall look of your site and spit out an organized directory structure filled with HTML, CSS and all the other files. This folder structure is what you upload to your host’s document root folder.</p>
+
+<h2 id="how-static-publishing-wit-jekyll-works">How static publishing wit Jekyll works?</h2>
+<p>Fairly simple. You write content in markdown format, a plain text format that has become popular
+among developers and blog authors over the years. MD is simple, yet powerful enough to create well
+formatted postings and has features to embed images and other rich media content. It also can
+output well formatted and syntax colored code in many programming languages which is a favorite
+feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any
+possible way.</p>
+
+<p>Once you are done with writing, you tell Jekyll to <em>build</em> the site. During this process, Jekyll takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
+which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll
+comes with its own simple web server which you can use locally on your development machine to test
+your site, but on your host, you’ll most likely use the already installed web server software. Be
+it Apache, nginx, IIS or something completely different - it will work, because serving static
+pages is the bread and butter of all web servers.</p>
+
+<p>More advanced features in Jekyll and most other static site generators will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.</p>
+
+<p>It’s a bit like software development using a compiled language. You write your page(s) as source code and the site generator can be seen as the compiler. Whenever you change something, you need to run the compiler. Once the site has been compiled, it must be uploaded to the web server, though this depends on the type of work flow you favorite.</p>
+
+<h3 id="different-work-flows">Different work flows</h3>
+
+<p>This is by no means complete, but some possible work flows are listed here:</p>
+
+<ul>
+  <li>
+    <p>build locally on a PC / laptop and upload the “compiled” site via FTP/SFTP to your host. Can be difficult for a huge site to keep track of all changes, so automatic directory synchronization and/or mirroring is definitely a must-have feature for this kind of work flow. For Windows users, I recommend <a href="https://winscp.net/eng/index.php">WinSCP</a>. This work flow requires that you install Ruby, Jekyll and all dependencies on your computer which is beyond of the scope for this article.</p>
+  </li>
+  <li>
+    <p>Upload / synchronize your source code only and build on the server. The site generator and all its dependencies must be installed on the server machine. It will build directly into the document root.</p>
+  </li>
+  <li>
+    <p>Use a version control system and configure your server to serve from the repository root. This is a more advanced setup that requires knowledge on how to configure the version control system on your server. This is also beyond the scope of this article and this work flow is what you will use when you publish on GitHub.</p>
+  </li>
+  <li>
+    <p>Use GitHub and their Jekyll support. This work flow doesn’t need a local or remote installation of Jekyll on your side. GitHub supports Jekyll and all you need to do is to push the source code of your site to the repository. GitHub will run Jekyll and build your site, though it is still possible to buld locally and push the results directly. The latter method gives you the freedom to use any Jekyll plugin you want while GitHub only supports a few.</p>
+  </li>
+</ul>
+
+<h2 id="using-github-to-publish">Using GitHub to publish</h2>
+
+<p>GitHub offers free web hosting for personal home pages and project pages, but they only accept static content. On GitHub, you cannot run a WordPress blog or PHP-based forum software. You can only let it serve static HTML pages and supporting files.</p>
+
+<h3 id="the-advantages-pros">The advantages (“pros”)</h3>
+
+<ul>
+  <li>basically unlimited storage.</li>
+  <li>free revision control. This means, you can never lose work as it always remains possible to revert changes or get older versions of a particular article back for reference. Revision control is a major feature of most modern CMS and Wiki authoring systems. With GitHub, you get it for free and for everything - not only for articles, but also for templates, style sheets, even images.</li>
+  <li>very stable, reliable hosting. I’ve never experienced GitHub being down, slow or even unresponsive.</li>
+  <li>no resource limits. Your hosting isn’t limited in CPU power, RAM usage or number of database connections. It simply doesn’t matter with static pages.</li>
+  <li>You can use your own domain name. All you need is access to your DNS record.</li>
+  <li>You do not have to adopt the particular work flow of the CMS of your choice. You write with your favorite editor on your local computer, you have all the files available locally with exactly the same structure as on the host.</li>
+  <li>want to keep a change log for later reference? Well, no need to do it explicitly. GitHub does it for you. Just use commit messages.</li>
+</ul>
+
+<p>Well, that’s a lot of «pros» isn’t it?. When there is so much light, there must be shadow, right?</p>
+
+<p>Of course. The fact that GitHub will only host static pages and does not allow PHP, Python, Ruby, Java or any other technology that would allow you to write dynamic web applications is a <em>con</em> of its own and for many it might very well be the only con that is need to rule out hosting on GitHub.</p>
+
+<h3 id="some-cons">Some cons</h3>
+
+<ul>
+  <li>absolutely no server-sided dynamic content.</li>
+  <li>no database. This means advanced queries for retrieving content is difficult if not impossible to implement. You can have tags, categories and similar things with static pages, but you cannot run a simple query to retrieve all articles that are tagged with 2 terms for example.</li>
+  <li>no access control. GitHub does not allow this. If you host static pages on your own server, it is possible to use basic HTTP auth, but not on GitHub. This implies, all pages are public.</li>
+  <li>no author profiles, unless you create static pages for them. Also, no user or member registration and no roles.</li>
+  <li>site-wide full text search is difficult. Unless you let google do it and integrate a custom search box. Like I did here.</li>
+  <li>not much interactive features. You can embed <a href="https://www.disqus.com">Disqus</a> if you want, but you won’t have full control over all submitted content.</li>
+</ul>
+
+<h2 id="and-further">And further….?</h2>
+
+<p>What I personally like is the simple work flow. A text editor like Visual Studio Code or Sublime Text is enough. No need to deal with thorny CMS features.</p>
+
+<ul>
+  <li>works on every simple web server. Even if GitHub would decide to stop hosting personal home pages, it wouldn’t take long to find a new (and cheap) home.</li>
+  <li>absolute freedom. Every single line of HTML code is your own. It’s very easy to add features as client sided Javascript code.</li>
+  <li>security. No one will hack your GitHub page. Seriously, no one will hack a static page anyway, no matter where it is hosted.</li>
+  <li>Git. Did I say Git? It’s by far the easiest way to synchronize and have version control for all files.</li>
+</ul>
+
+<div class="blockimage ">
+
+<a href="/assets/gfx/vscode.png" data-fancybox="" data-caption="A typical workflow when using Jekyll. A simple text editor is enough.">
+
+<figure>
+        <img src="/assets/gfx/vscode.png" alt="A typical workflow when using Jekyll. A simple text editor is enough." style="width:100%; max-width:100%; height:auto; margin:0;display:block;">
+        
+        <figcaption style="display:none;">
+                A typical workflow when using Jekyll. A simple text editor is enough.
+        </figcaption>
+        
+</figure>
+    
+</a>
+
+
+<div class="floatimage_title" style="padding-bottom: 8px;">
+    A typical workflow when using Jekyll. A simple text editor is enough.
+</div>
+
+</div>
+
+<p>Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which <code class="highlighter-rouge">ruby</code> (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.</p>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/articles/publishing-on-github";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEXVIE#@#2017-09-05 03:45:47 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        </article>
+
+        <aside id="sidebar">
+          <h2>Recent</h2>
+           
+ 
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/articles/publishing-on-github">Publishing on GitHub</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-11T16:58:16+0200">2017-09-11 16:58:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/08/no-love-vegetarian-food/">No love for vegetarian food</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-08T16:59:07+0200">2017-09-08 16:59:07 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+      
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/22/Blogging-with-jekyll/">Blogging With Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-08-28T05:12:58+0200">2017-08-28 05:12:58 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   alex
+   </span>
+   <br>
+   
+   
+   
+ 
+  <br>
+  <div style="float:right"><a href="/blog/">Show all blog posts</a></div>
+  <br>
+ 
+
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">Site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+</div>
+<hr class="blueline">
+
+                    <h2>Quick links</h2>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+          <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC<br>
+		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.min.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>
