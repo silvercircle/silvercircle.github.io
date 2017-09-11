@@ -86,10 +86,12 @@ ul.dropmenu li ul {
 ul.dropmenu li li {
 	margin: 2px 0;
 	padding: 0;
+	line-height: 150%;
 }
 ul.dropmenu li li a {
   display: block !important;
-  color:#f0f0f0;
+	color:#f0f0f0;
+	padding: 0 10px;
 }
 ul.dropmenu li li a span {
 	display: block;
