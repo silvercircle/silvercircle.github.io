@@ -5,6 +5,7 @@ date: 2017-09-07T09:04:05+02:00
 modified: 2017-09-07T09:04:01+02:00
 collection: tabsrmm
 layout: topics
+menucontext: topics
 pagination:
   enabled: true  
   sort_field: modified

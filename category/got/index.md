@@ -11,7 +11,10 @@ pagination:
   per_page: 10
   tag: first
 ---
+
 {% include paginator_header.html %}
+{% include content/got-spoiler-warning.md %}
+<br>
 <div class="blog-index">
     {% for post in paginator.posts %}
     {% include paginator_body.html %}

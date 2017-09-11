@@ -3,6 +3,7 @@ title: Skin editor
 date: 2006-06-05T19:24:37+00:00
 modified: 2006-06-05T19:24:37+00:00
 author: Admin
+menucontext: topics
 layout: topics
 tag: first
 excerpt: >

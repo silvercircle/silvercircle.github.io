@@ -5,6 +5,7 @@ date: 2017-09-01 06:31:32+0200
 modified: 2017-09-01 06:31:36+0200
 title: My Vim collection
 permalink: /software/index.html
+menucontext: topics
 excerpt: >
     My collection of useful links, snippets and tips on various pieces of software. Including, Vim, Sublime Text, Mozilla Thunderbird, Firefox among others. Not much here, right now, I'm still collecting.
 ---

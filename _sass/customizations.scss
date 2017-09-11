@@ -2,11 +2,6 @@ div.clear {
 	clear: both;
 }
 
-.two_cols {
-	column-count: 2;
-	column-gap: 30px;
-}
-
 figure.highlight {
 	margin: 0 5px 1em 0;
 	box-shadow: 0 0 2px #bbb;
@@ -80,12 +75,38 @@ iframe.yt {
 }  
 
 .sidebar_listheader {
-  font-weight:normal;
-  margin-bottom:2px;
-  margin-top: 8px;
-  font-size: 110%;
+  font-weight:normal !important;
+  margin-bottom:2px !important;
+  margin-top: 8px !important;
+  font-size: 110% !important;
 }
 
 h3.listheading {
 	color: $darklink !important;
+}
+
+#cookiewarning {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	padding: 10px 30px;
+	background-color: yellowgreen;
+	z-index: 1000;
+}
+
+#allow_cookies {
+	border-radius: 3px;
+	border: 1px solid white;
+	background-color: black;
+	cursor: pointer;
+	padding: 5px 10px;
+	z-index: 1001;
+	position: relative;
+	margin-right: 60px;
+}
+
+#allow_cookies a {
+	color: white;
 }

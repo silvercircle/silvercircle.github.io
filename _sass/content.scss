@@ -5,6 +5,11 @@
     color: $red;
 }
 
+.two_cols {
+	column-count: 2;
+	column-gap: 30px;
+}
+
 .c_green {
     color: $green;
 }
@@ -41,17 +46,71 @@
     line-height: 120% !important;
 }
 
-.note.red h1::before {
+.note.red h3::before {
     content: "!";
     min-width: 20px;
     color: red; 
     box-sizing: content-box;
     display: inline-block;
 }
-.note h1 {
+.note h3 {
     font-size: 16pt !important;
     margin-left: 0;
     padding-left: 0;
     text-indent: 0 !important;
     margin-bottom: 10px;
+    margin-top: 0 !important;
+}
+
+div.contentbox {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10px;
+    width: 33.33333333%;
+    float: left;
+}
+
+div.boxcontainer {
+    width: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+div.contentbox_inner {
+//    border: 1px solid red;
+    font-size: smaller;
+}
+
+h3.cbox_header {
+    display:block;
+    background-color: black;
+    color: white !important;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 10px 5px 10px;
+}
+
+div.cbox_body {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 1px 10px;
+    margin: 0;
+    min-height: 280px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1039px) {
+    div.contentbox {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div.contentbox {
+        width: 100%;
+    }
+
+    .two_cols {
+        column-count: 1;
+    }        
 }

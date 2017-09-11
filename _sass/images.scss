@@ -6,17 +6,21 @@ div.floatimage {
     border: 1px solid #ccc;
 }
 
-  div.floatimage.borderless {
-    padding: 0;
-    border: none !important;
-    padding: 3px !important;
-    box-shadow: 0 0 4px #aaa; }
+div.floatimage.borderless {
+  padding: 0;
+  border: none !important;
+  padding: 3px !important;
+  box-shadow: 0 0 4px #aaa; }
 
+div.blockimage.borderless {
+  border: none;
+  padding: 0; }
+        
 div.blockimage {
-    background-color: #efefef;
-    padding: 0;
-    word-wrap: break-word;
-    box-sizing: border-box;
+  background-color: #efefef;
+  padding: 0;
+  word-wrap: break-word;
+  box-sizing: border-box;
 	border: 1px solid #ccc;
 	margin-bottom: 1em; 
 }

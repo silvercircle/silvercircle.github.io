@@ -35,8 +35,8 @@ div.gsc-control-searchbox-only {
 	background: transparent;
 }
 
-form.gsc-search-box {
-	margin: 0;
+form.gsc-search-box, table.gsc-search-box {
+	margin: 0 !important;
 	background: transparent;
 	padding: 0;
 }
@@ -46,12 +46,20 @@ input.gsc-input {
 }
 
 div.gsc-input-box {
-	padding: 3px 2px 2px 2px;
+	padding: 0 !important;
+	height: auto !important;
+	border: none !important;
+	margin-bottom: 3px !important;
 }
 
 td.gsib_a, td.gsc-input {
-	padding: 0;
+	padding: 0 !important;
 	border: none;
+	height: 27px !important;
+}
+
+td.gsc-input {
+	padding-right: 0 !important;
 }
 
 form.gsc-search-box td, form.gsc-search-box table {
@@ -72,4 +80,28 @@ form.gsc-search-box td, form.gsc-search-box table {
 }
 .gs-snippet {
   padding-left: 5px;
+}
+
+#___gcse_0 input[type="text"] {
+	height: 27px !important;
+	width: 170px !important;
+	padding: 0 6px !important;
+	background-color: #444 !important;
+	color: white;
+	margin: 0 !important;
+	margin-right: -5px !important;
+	box-sizing: border-box;
+	border: 1px solid #aaa !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1039px) {
+	#___gcse_0 input[type="text"] {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	#___gcse_0 input[type="text"] {
+        width: 80px !important;
+    }
 }

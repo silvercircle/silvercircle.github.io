@@ -4,6 +4,7 @@ date: 2006-03-09T02:20:19+00:00
 modified: 2006-03-09T02:20:19+00:00
 author: Admin
 layout: topics
+menucontext: topics
 tag: first
 excerpt: >
   This is a small warning for all people who are using (or building) CVS builds of Miranda and/or components.

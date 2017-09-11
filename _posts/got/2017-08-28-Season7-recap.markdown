@@ -5,7 +5,7 @@ author: alex
 blog: true
 date: 2017-08-28 01:31:31+0200
 modified: 2017-08-28 02:31:36+0200
-categories: [GoT]
+categories: [GoT, Fun]
 permalink: /got/season7-recap.html
 menucontext: blog
 tag: first

@@ -13,17 +13,40 @@
   {% seo %}
   </head>
   <body>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.<br>
+        By clicking Allow cookies you give your permission to this website to store small bits of data on your device.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
     <header>
       <div class="inner">
-        <dl>
+          <dl>
           <dt><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></dt>
           <dd>{{ site.description }}</dd>
         </dl>
-        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>                    
       </div>
     </header>
      <div class="menubar_wrapper">
       <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
       <nav>
 	     <div id = "main_menu">
          <ul id="menu_nav" class="dropmenu menu">

@@ -18,3 +18,5 @@ This picture was found on the net and was apparently taken in some super market 
 People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food products, despite the crisis and possible shortages that were to expect.
 
 {% include gfx/block_image.html image="fun/tofu.jpg" title="Vegetarian and vegan foot leftovers" %}
+
+{% include disqus_fragment.html %}

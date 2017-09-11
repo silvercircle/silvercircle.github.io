@@ -4,6 +4,7 @@ date: 2006-03-22T18:44:36+00:00
 modified: 2006-03-22T18:44:36+00:00
 author: Admin
 layout: topics
+menucontext: topics
 tag: first
 excerpt: >
   The progress is faster than I first expected it to be and many things are already working (it is basically already possible to use the merged plugin for all kind of chats within miranda) and a you can expect a first testing release within the next few days (maybe a week or so, max). This release will also contain a more or less finished version of the container skinning engine, including the ability to skin the window frame and title bar and a sample skin.

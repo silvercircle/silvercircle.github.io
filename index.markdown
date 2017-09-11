@@ -1,57 +1,90 @@
 ---
 author: AlexVie
 title: Home
-layout: default
+layout: no_sidebar
 menucontext: home
 date: 2017-08-25 06:35:00+0200
 modified: 2017-08-25 06:35:07+0200
 ---
-{:cols: .two_cols}
 # So, what's this all about?
 {: style="margin-bottom:20px;"}
 <div class="two_cols" markdown="1">
 Well, right now it's not much. It's some sort of playground to test [Jekyll](https://jekyllrb.com),
 a static page generator that has enough flexibility to build a blog or documentation site with it,
 but leaves out all the bloat that makes modern content management systems slow and prone to
-security problems.
+security problems. It also significantly lowers the requirements for hosting to a simple webserver that can serve static files (essentially, what basically **all** web servers can).
 
 With Jekyll, there is no need for a database or complex web server configuration. The only thing
 needed is a working ruby and Jekyll installation on either your local development machine or the
-server machine itself and a web server that can serve static files (basically, the role model of
-all web servers).
+server machine itself and a web server that can serve static files.
 
-I'm using Jekyll it to convert parts of my old Wordpress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that Wordpress isn't exactly suitable for casual publishing. While it can do great things, it also needs **a LOT** of attention and maintenance for which I do not want to invest more time than absolutely necessary.
+I'm using Jekyll to convert parts of my old WordPress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that WordPress isn't exactly suitable for casual publishing. While it can do great things, it also needs **a lot** of attention and maintenance for which I do not want to invest more time than absolutely necessary.
+
+Jekyll, on the contrary, might have a steeper learning curve, particularly if you come from a traditional CMS background, but once a Jekyll site is set up like you want it, it requires little to none maintainance other than adding new content.
 </div>
-
-## How static publishing wit Jekyll works?
-Fairly simple. You write content in markdown format, a plain text format that has become popular
-among developers and blog authors over the years. MD is simple, yet powerful enough to create well
-formatted postings and has features to embed images and other rich media content. It also can
-output well formatted and syntax colored code in many programming languages which is a favorite
-feature for many programmers. If you wish, you can write in HTML or mix Markdown and HTML in any
-possible way.
-{:cols}
-
-<div class="two_cols" markdown="1">
-It's also easy to use. No special software is required to create or edit markdown files; it's plain text and your preferred text editor will work. Since the format is so popular, it will likely provide a couple of features to make working with markdown files easier.
-
-{% include gfx/block_image.html image="vscode.png" align="right" width="90%" title="A typical workflow when using Jekyll. A simple text editor is enough." %}
-
-Once you are done with writing, you tell Jekyll to *build* the site. During this process, Jekyll takes your content and translates it from Markdown into HTML. The HTML is then fed into templates
-which are processed by the template compiler. It spits out ready-to-serve static HTML pages. Jekyll
-comes with its own simple web server which you can use locally on your development machine to test
-your site, but on your host, you'll most likely use the already installed web server software. Be
-it Apache, nginx, IIS or something completely different - it will work, because serving static
-pages is the bread and butter of all web servers.
-
-More advanced features in Jekyll will help with the creation of indexes, paginations, tag lists, category indexes and all other things a website will need. Since you have full control over the entire structure, there are almost no limits. Also, everything is built from theme templates, which you can override with your own, modified variants.
-
-To deploy, you upload the generated site to your host into the document root folder. There is no
-need to install, set up a database, configure folder permissions or do any other fancy things. You
-deploy like we deployed our first web pages more than 20 years ago, except that we weren't using
-**S**FTP, but you seriously should.
-
-The cool thing is that a static website works on every possible configuration and web server software you'll find. There is no need to install add-on modules, no need for special configuration steps, if your server can serve HTML and recognize a `index.html` file as the index for an entire folder, everything will work.
-
-Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which `ruby` (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.
+<hr class="blueline">
+<div class="boxcontainer" markdown="1">
+<div class="contentbox" markdown="1">
+<div class="contentbox_inner" style="font-size:smaller;" markdown="1">
+### Blog
+{: .cbox_header}
+<div class="cbox_body">
+ {% assign counter = 1 %}
+ {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
+ {% for post in this_posts %}
+   {% assign ttags = post.tags | join:'|' | append:'|' %}
+   {% if post.isfollowup and post.isfollowup == 1 %}
+   {% continue %}
+   {% endif %}
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        {% if post.modified %}
+        <time class="timeago" datetime="{{ post.modified | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.modified }}</time>
+        {% else %}
+        <time class="timeago" datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.date }}</time>
+        {% endif %}
+     </span>
+   </div>
+   <span class="author">
+   {{post.author}}
+   </span>
+   <br>
+   {% assign counter = counter | plus: 1 %}
+   {% if counter > 5 %}
+   {% break %}
+   {% endif %}   
+ {% endfor %}
+<div style="float:right"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
+<div style="clear:both;"></div>
+<br>
+</div>
+</div>
+</div>
+<div class="contentbox" markdown="1">
+<div class="contentbox_inner" markdown="1">
+### Topics
+{: .cbox_header}
+<div class="cbox_body">
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web development</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software">Software</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/tabsrmm">TabRSMM / Miranda IM (archived content)</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/development">Development</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/fun">Fun and entertainmentt</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/jekyll">Jekyll static site generator</a></h3>   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/got">Game of Thrones</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++ programming.</a></h3>
+</div>
+</div>
+</div>
+<div class="contentbox" markdown="1">
+<div class="contentbox_inner" markdown="1">
+### More...
+{: .cbox_header}
+<div class="cbox_body" markdown="1">
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software/Transylvania-theme-for-sublimetext-3/">Transylvania Theme for Sublime Text 3</a></h3>
+   {% include gfx/block_image.html image="st-transylvania.png" title="Click to enlarge" borderclass="borderless" %}
+</div>
+</div>
+</div>
 </div>

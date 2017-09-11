@@ -4,6 +4,7 @@ date: 2006-03-12T15:02:10+00:00
 modified: 2006-03-12T15:02:10+00:00
 author: Admin
 layout: topics
+menucontext: topics
 tag: first
 excerpt: >
   Now, with IRC + chat plugins being basically umaintained, I'm thinking again about an idea we had quite some time ago - to create the "ultimate" message window plugin which offers an unified user interface for all chat sessions in Miranda.

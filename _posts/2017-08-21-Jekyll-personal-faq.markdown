@@ -149,13 +149,13 @@ This is possible by simply adding them one by one. For block level elements (e.g
 {% raw %}
 ```
 My paragraph text...[...]
-{:bold:}
+{:bold}
 {: .indent}
 ```
 {% endraw %}
 This applies both the predefined attribute `bold` and the CSS class `.indent` to the paragraph. Similar constructs are possible for <span>span</span>{:un}{: .c_red} level elements. Here, two classes were applied to the word span, one defining the `text-decoration: underline;`  and a second one setting the red color.
 
-It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, say defs.md, that holds all the style definitions, like so:
+It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, say `defs.md`, that holds all the style definitions, like so:
 {% raw %}
 ```
 {:cols: .two_cols}
