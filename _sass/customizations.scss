@@ -77,7 +77,6 @@ iframe.yt {
 .sidebar_listheader {
   font-weight:normal !important;
   margin-bottom:2px !important;
-  margin-top: 8px !important;
   font-size: 110% !important;
 }
 
@@ -109,4 +108,20 @@ h3.listheading {
 
 #allow_cookies a {
 	color: white;
+}
+
+div.spoiler_header {
+    margin-left: 0 20px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid white;
+    padding: 5px 20px 0 20px;
+    box-shadow: 2px 2px 4px #ccc;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	text-align: justify;
+	background: #fcf8d1; /* Old browsers */
+	background: -moz-linear-gradient(top, #fcf8d1 0%, #ede3a8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fcf8d1 0%,#ede3a8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fcf8d1 0%,#ede3a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	cursor: pointer;
 }

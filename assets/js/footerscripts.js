@@ -442,4 +442,9 @@ $(document).ready(function(){
         //$.cookie("cookieconsent", "accepted", { path: '/' });
         return false;
     });
+
+    $('div.spoiler_header').on('click', function(event) {
+      $(this).hide();
+      $('div#' +  $(this).attr('data-target')).fadeIn();
+    });
 });

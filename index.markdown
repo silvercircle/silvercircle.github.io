@@ -73,6 +73,7 @@ Jekyll, on the contrary, might have a steeper learning curve, particularly if yo
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/fun">Fun and entertainmentt</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/jekyll">Jekyll static site generator</a></h3>   
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/got">Game of Thrones</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/got/theories">Game of Thrones theories</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++ programming.</a></h3>
 </div>
 </div>

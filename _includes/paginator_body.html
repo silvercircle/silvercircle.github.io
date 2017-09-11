@@ -1,3 +1,7 @@
+{% if post.spoiler and post.spoiler == 1 and include.showspoiler != 1 %}
+<div class="spoiler_header" data-target="{{post.slug}}">Spoiler content, click to reveal.</div>
+<div id="{{post.slug}}" style="display:none;">
+{% endif %}
 <a href="{{post.url}}"><h3 class="listheading" style="margin: 10px 0 0 0;">{{ post.title }}</h3></a>
 <div class="author" style="float:right;font-size:smaller;">
 Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{post.modified}}</time>
@@ -22,4 +26,7 @@ Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%d
   <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
 </div>
 <div class="clear"></div>
+{% if post.spoiler and post.spoiler == 1 and include.showspoiler != 1 %}
+</div>
+{% endif %}
 <br>

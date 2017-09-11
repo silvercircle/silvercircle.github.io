@@ -8,7 +8,7 @@ modified: 2017-08-28 02:31:36+0200
 categories: [GoT, Fun]
 permalink: /got/season7-recap.html
 menucontext: blog
-tag: first
+tag: [first, got, video]
 excerpt: >
   Game of Thrones Season 7 is already over and to me it seems it just started last week, but in 
   reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming 
