@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-10T22:05:46+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-11T15:34:40+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -12,7 +12,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:5
 
 &lt;p&gt;People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food products, despite the crisis and possible shortages that were to expect.&lt;/p&gt;
 
-&lt;div class=&quot;blockimage&quot;&gt;
+&lt;div class=&quot;blockimage &quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/fun/tofu.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;Vegetarian and vegan foot leftovers&quot;&gt;
 
@@ -71,7 +71,7 @@ qtcreator.exe
 &lt;p&gt;So, you have the choice. You can set the &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR&lt;/code&gt; environment variable globally via the control panel, or use a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; file to set it before you launch a specific application. The value must be a &lt;strong&gt;floating point number&lt;/strong&gt; and can be smaller than 1, so yes, it is possible to downscale the UI.&lt;/p&gt;
 
 &lt;p&gt;The following screen shot illustrates the difference between no scale and &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR = 2&lt;/code&gt;. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.&lt;/p&gt;
-&lt;div class=&quot;blockimage&quot;&gt;
+&lt;div class=&quot;blockimage &quot;&gt;
 
 &lt;a href=&quot;/assets/gfx/qtcreator-fontscale.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Screen shot showing the different scaling (click to enlarge)&quot;&gt;
 
@@ -499,14 +499,14 @@ page that includes them..&lt;/p&gt;
 &lt;p&gt;This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;My paragraph text...[...]
-{:bold:}
+{:bold}
 {: .indent}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;This applies both the predefined attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;bold&lt;/code&gt; and the CSS class &lt;code class=&quot;highlighter-rouge&quot;&gt;.indent&lt;/code&gt; to the paragraph. Similar constructs are possible for &lt;span style=&quot;text-decoration: underline;&quot; class=&quot;c_red&quot;&gt;span&lt;/span&gt; level elements. Here, two classes were applied to the word span, one defining the &lt;code class=&quot;highlighter-rouge&quot;&gt;text-decoration: underline;&lt;/code&gt;  and a second one setting the red color.&lt;/p&gt;
 
-&lt;p&gt;It is also possible to &lt;em&gt;include&lt;/em&gt; style definitions. Just create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.markdown&lt;/code&gt; file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt;, say defs.md, that holds all the style definitions, like so:&lt;/p&gt;
+&lt;p&gt;It is also possible to &lt;em&gt;include&lt;/em&gt; style definitions. Just create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.markdown&lt;/code&gt; file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt;, say &lt;code class=&quot;highlighter-rouge&quot;&gt;defs.md&lt;/code&gt;, that holds all the style definitions, like so:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:cols:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.two_cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:red:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.c_red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -788,7 +788,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:5
 &lt;blockquote&gt;
 
 &lt;/blockquote&gt;
-&lt;div class=&quot;blockimage&quot;&gt;
+&lt;div class=&quot;blockimage &quot;&gt;
 
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/archive/2011/05/watch-your-weight.png&quot; alt=&quot;&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
