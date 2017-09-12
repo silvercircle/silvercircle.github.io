@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-12T17:00:46+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-12T22:33:56+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -32,24 +32,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:5
     Vegetarian and vegan foot leftovers
 &lt;/div&gt;
 
-&lt;/div&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2017-09-08 16:59:03 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">Publishing on GitHub</title><link href="https://silvercircle.github.io/articles/publishing-on-github" rel="alternate" type="text/html" title="Publishing on GitHub" /><published>2017-09-05T03:45:47+02:00</published><updated>2017-09-05T03:45:47+02:00</updated><id>https://silvercircle.github.io/articles/publishing-on-github</id><content type="html" xml:base="https://silvercircle.github.io/articles/publishing-on-github">&lt;h1 id=&quot;publishing-on-github&quot;&gt;Publishing on GitHub&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">Publishing on GitHub</title><link href="https://silvercircle.github.io/articles/publishing-on-github" rel="alternate" type="text/html" title="Publishing on GitHub" /><published>2017-09-05T03:45:47+02:00</published><updated>2017-09-05T03:45:47+02:00</updated><id>https://silvercircle.github.io/articles/publishing-on-github</id><content type="html" xml:base="https://silvercircle.github.io/articles/publishing-on-github">&lt;h1 id=&quot;publishing-on-github&quot;&gt;Publishing on GitHub&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:58:16+0200&quot;&gt;2017-09-11 16:58:16 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -88,7 +71,10 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:5
   &lt;li&gt;Scripts that run on the client. jQuery is such an example.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The site generator will take all the content, translate it to HTML, inject the result into templates that define the overall look of your site and spit out an organized directory structure filled with HTML, CSS and all the other files. This folder structure is what you upload to your host’s document root folder.&lt;/p&gt;
+&lt;p&gt;The site generator will take all the content, translate it to HTML, inject the result into templates 
+that define the overall look of your site and spit out an organized directory structure filled with 
+HTML, CSS and all the other files. This folder structure is what you upload to your host’s document 
+root folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-static-publishing-wit-jekyll-works&quot;&gt;How static publishing wit Jekyll works?&lt;/h2&gt;
 &lt;p&gt;Fairly simple. You write content in markdown format, a plain text format that has become popular
@@ -192,24 +178,7 @@ pages is the bread and butter of all web servers.&lt;/p&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/articles/publishing-on-github&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2017-09-05 03:45:47 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
+&lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -228,47 +197,35 @@ qtcreator.exe
 &lt;/div&gt;
 &lt;p&gt;do this in a shell, and QtCreator will launch with everything scaled to twice its size. Fonts will appear bigger, but also all UI elements. Since this scaling is implemented in Qt at a very low level, it works consistently throughout the entire application.&lt;/p&gt;
 
-&lt;p&gt;So, you have the choice. You can set the &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR&lt;/code&gt; environment variable globally via the control panel, or use a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; file to set it before you launch a specific application. The value must be a &lt;strong&gt;floating point number&lt;/strong&gt; and can be smaller than 1, so yes, it is possible to downscale the UI.&lt;/p&gt;
+&lt;p&gt;So, you have the choice. You can set the &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR&lt;/code&gt; environment variable globally via the 
+control panel, or use a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; file to set it before you launch a specific application. The value 
+must be a &lt;strong&gt;floating point number&lt;/strong&gt; and can be smaller than 1, so yes, it is possible to downscale 
+the UI.&lt;/p&gt;
 
-&lt;p&gt;The following screen shot illustrates the difference between no scale and &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR = 2&lt;/code&gt;. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.&lt;/p&gt;
-&lt;div class=&quot;blockimage &quot;&gt;
+&lt;p&gt;The following screen shot illustrates the difference between no scale and &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR = 2&lt;/code&gt;. It 
+was taken at a resolution of 1920x1080 at the standard DPI setting under Windows. &amp;lt;div class=&quot;blockimage &quot;&amp;gt;&lt;/p&gt;
 
-&lt;a href=&quot;/assets/gfx/qtcreator-fontscale.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Screen shot showing the different scaling (click to enlarge)&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/gfx/qtcreator-fontscale.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Screen shot showing the different  scaling (click to enlarge)&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/qtcreator-fontscale.png&quot; alt=&quot;Screen shot showing the different scaling (click to enlarge)&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/qtcreator-fontscale.png&quot; alt=&quot;Screen shot showing the different 
+scaling (click to enlarge)&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Screen shot showing the different scaling (click to enlarge)
+                Screen shot showing the different 
+scaling (click to enlarge)
         &lt;/figcaption&gt;
         
 &lt;/figure&gt;
-    
-&lt;/a&gt;
 
+&lt;p&gt;&amp;lt;/a&amp;gt;&lt;/p&gt;
 
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
-    Screen shot showing the different scaling (click to enlarge)
+    Screen shot showing the different 
+scaling (click to enlarge)
 &lt;/div&gt;
 
-&lt;/div&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2017-09-03 10:25:13 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/qt.png" /></entry><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
+&lt;p&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/qt.png" /></entry><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:42+0200&quot;&gt;2017-08-28 10:02:42 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -335,24 +292,7 @@ needed.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;That should do it. You can now build your site locally and use every Jekyll 
-plugin you want.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2017-08-28 10:02:37 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">GoT Season 7 recap</title><link href="https://silvercircle.github.io/got/season7-recap.html" rel="alternate" type="text/html" title="GoT Season 7 recap" /><published>2017-08-28T01:31:31+02:00</published><updated>2017-08-28T01:31:31+02:00</updated><id>https://silvercircle.github.io/got/Season7-recap</id><content type="html" xml:base="https://silvercircle.github.io/got/season7-recap.html">&lt;h1 id=&quot;season-7-was-awesome-but&quot;&gt;Season 7 was awesome, but…&lt;/h1&gt;
+plugin you want.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">GoT Season 7 recap</title><link href="https://silvercircle.github.io/got/season7-recap.html" rel="alternate" type="text/html" title="GoT Season 7 recap" /><published>2017-08-28T01:31:31+02:00</published><updated>2017-08-28T01:31:31+02:00</updated><id>https://silvercircle.github.io/got/Season7-recap</id><content type="html" xml:base="https://silvercircle.github.io/got/season7-recap.html">&lt;h1 id=&quot;season-7-was-awesome-but&quot;&gt;Season 7 was awesome, but…&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T02:31:36+0200&quot;&gt;2017-08-28 02:31:36 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -503,24 +443,7 @@ What about Tormund and Brienne, will they finally get the chance to make &lt;em&
 
 &lt;blockquote&gt;
   &lt;p&gt;Who the hell will still be among the living at the end of the final episode?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/got/season7-recap.html&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEX#@#2017-08-28 01:31:31 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>alex</name></author><category term="first" /><category term="got" /><category term="video" /><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming rate and some of these events were unfortunately too predictable. This might, however, just be a side effect of the main plot approaching the final conclusion.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/got/sansa_the_sith.jpg" /></entry><entry><title type="html">Jekyll personal FAQ</title><link href="https://silvercircle.github.io/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>https://silvercircle.github.io/help/Jekyll-personal-faq</id><content type="html" xml:base="https://silvercircle.github.io/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
+&lt;/blockquote&gt;</content><author><name>alex</name></author><category term="first" /><category term="got" /><category term="video" /><summary type="html">Game of Thrones Season 7 is already over and to me it seems it just started last week, but in reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming rate and some of these events were unfortunately too predictable. This might, however, just be a side effect of the main plot approaching the final conclusion.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/got/sansa_the_sith.jpg" /></entry><entry><title type="html">Jekyll personal FAQ</title><link href="https://silvercircle.github.io/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>https://silvercircle.github.io/help/Jekyll-personal-faq</id><content type="html" xml:base="https://silvercircle.github.io/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-06T23:03:16+0200&quot;&gt;2017-09-06 23:03:16 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -678,24 +601,7 @@ page that includes them..&lt;/p&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You can then include that file in any article by simply placing a &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;defs.md&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; at the beginning of the document and use the pre-defined style attributes.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/help/jekyll-personal-faq.html&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2017-08-22 22:45:00 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Blogging With Jekyll</title><link href="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
+&lt;p&gt;You can then include that file in any article by simply placing a &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;defs.md&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; at the beginning of the document and use the pre-defined style attributes.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Blogging With Jekyll</title><link href="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T05:12:58+0200&quot;&gt;2017-08-28 05:12:58 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -705,10 +611,12 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T05:1
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;The big question is: &lt;strong&gt;WHY?&lt;/strong&gt; Why should someone give up all the innovations 
-of the last 20 years or so that made the Web a dynamic, lively and social 
-place and go back to publishing static HTML pages - something we did 25 years 
-ago? Doesn’t sound very logical, nor does it seem to make any sense, does it?&lt;/p&gt;
+&lt;p&gt;The big question is: &lt;strong&gt;WHY?&lt;/strong&gt; Why should someone give up all the innovations of the last 20 years or 
+so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;something we did 25 years ago? Doesn’t sound very logical, nor does it seem to make any sense, 
+does it?&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;a-not-so-short-history-lesson&quot;&gt;A not so short history lesson&lt;/h2&gt;
 
@@ -919,24 +827,7 @@ such features and they are generally well accepted by users.&lt;/p&gt;
 becomes difficult, but again, like in the above example with a comment system, 
 3rd party providers may come to rescue. It’s simple to add a customized google 
 search box to your site, giving you all of Google’s knowledge on searching web 
-pages for free (well, there be &lt;del&gt;dragons&lt;/del&gt; ads, of course).&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEX#@#2017-08-22 16:30:00 +0200&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>alex</name></author><category term="first" /><summary type="html">The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Watch your weight, there is always a reason :)</title><link href="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/" rel="alternate" type="text/html" title="Watch your weight, there is always a reason :)" /><published>2011-05-17T06:53:27+02:00</published><updated>2011-05-17T06:53:27+02:00</updated><id>https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/">&lt;h1 id=&quot;a-good-reason-to-watch-your-weight&quot;&gt;A good reason to watch your weight&lt;/h1&gt;
+pages for free (well, there be &lt;del&gt;dragons&lt;/del&gt; ads, of course).&lt;/p&gt;</content><author><name>alex</name></author><category term="first" /><summary type="html">The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Watch your weight, there is always a reason :)</title><link href="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/" rel="alternate" type="text/html" title="Watch your weight, there is always a reason :)" /><published>2011-05-17T06:53:27+02:00</published><updated>2011-05-17T06:53:27+02:00</updated><id>https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/">&lt;h1 id=&quot;a-good-reason-to-watch-your-weight&quot;&gt;A good reason to watch your weight&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:53:27+0000&quot;&gt;2011-05-17 04:53:27 +0000&lt;/time&gt;
 &lt;/div&gt;
@@ -958,24 +849,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:5
 
 &lt;/div&gt;
 
-&lt;p&gt;There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2011-05-17 04:53:27 +0000&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">There is always a reason to watch your weight. This is a special one :)</summary></entry><entry><title type="html">Ritchie Blackmore tribute</title><link href="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" rel="alternate" type="text/html" title="Ritchie Blackmore tribute" /><published>2011-05-06T17:23:56+02:00</published><updated>2011-05-06T17:23:56+02:00</updated><id>https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">&lt;h1 id=&quot;son-of-alerik&quot;&gt;Son of Alerik…&lt;/h1&gt;
+&lt;p&gt;There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">There is always a reason to watch your weight. This is a special one :)</summary></entry><entry><title type="html">Ritchie Blackmore tribute</title><link href="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" rel="alternate" type="text/html" title="Ritchie Blackmore tribute" /><published>2011-05-06T17:23:56+02:00</published><updated>2011-05-06T17:23:56+02:00</updated><id>https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">&lt;h1 id=&quot;son-of-alerik&quot;&gt;Son of Alerik…&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-06T15:23:56+0000&quot;&gt;2011-05-06 15:23:56 +0000&lt;/time&gt;
 &lt;/div&gt;
@@ -1000,24 +874,7 @@ The song’s name is &lt;strong&gt;Son of Alerik&lt;/strong&gt; and it cannot be
 
 &lt;p&gt;Also, there is, to my knowledge, no live footage of this song as it was never played live and was probably only played once in the band’s entire history. The video just mixes some some parts of the 1986/87 perfect strangers tour with snippets of Rainbow gigs publicly available on YouTube.&lt;/p&gt;
 
-&lt;p&gt;The origins of the song are unknown but it is said that it’s the result of a Jam session they did while they were bored in the studio, so this isn’t a song that was written, just improvised. These guys were true musicians and artists and the music speaks for itself.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2011-05-06 15:23:56 +0000&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.</summary></entry><entry><title type="html">Using AGG with buffered paint</title><link href="https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/" rel="alternate" type="text/html" title="Using AGG with buffered paint" /><published>2010-09-30T13:02:28+02:00</published><updated>2010-09-30T13:02:28+02:00</updated><id>https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint</id><content type="html" xml:base="https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/">&lt;h1 id=&quot;rendering-with-agg-and-buffered-paint&quot;&gt;Rendering with AGG and buffered paint.&lt;/h1&gt;
+&lt;p&gt;The origins of the song are unknown but it is said that it’s the result of a Jam session they did while they were bored in the studio, so this isn’t a song that was written, just improvised. These guys were true musicians and artists and the music speaks for itself.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.</summary></entry><entry><title type="html">Using AGG with buffered paint</title><link href="https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/" rel="alternate" type="text/html" title="Using AGG with buffered paint" /><published>2010-09-30T13:02:28+02:00</published><updated>2010-09-30T13:02:28+02:00</updated><id>https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint</id><content type="html" xml:base="https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/">&lt;h1 id=&quot;rendering-with-agg-and-buffered-paint&quot;&gt;Rendering with AGG and buffered paint.&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2010-09-30T11:02:28+0000&quot;&gt;2010-09-30 11:02:28 +0000&lt;/time&gt;
 &lt;/div&gt;
@@ -1047,9 +904,17 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2010-09-30T11:0
 
 &lt;p&gt;In the &lt;a href=&quot;/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&quot;&gt;last article&lt;/a&gt;, I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/bb773257%28v=VS.85%29.aspx&amp;quot;&amp;gt;&quot;&gt;Buffered Paint&lt;/a&gt; is a set of new APIs allowing an application to perform flicker free painting without the overhead of creating memory device contexts and bitmaps. It is only available on Windows Vista or later and is part of the UxTheme library. Using it will either make your application incompatible with Windows XP or earlier or will require using the &lt;code class=&quot;highlighter-rouge&quot;&gt;GetProcAddress()&lt;/code&gt; method on Vista or later while providing a fallback method when the buffered paint API is not available.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/bb773257%28v=VS.85%29.aspx&amp;quot;&amp;gt;&quot;&gt;Buffered Paint&lt;/a&gt; is a set of 
+new APIs allowing an application to perform flicker free painting without the overhead of creating 
+memory device contexts and bitmaps. It is only available on Windows Vista or later and is part of 
+the UxTheme library. Using it will either make your application incompatible with Windows XP or 
+earlier or will require using the &lt;code class=&quot;highlighter-rouge&quot;&gt;GetProcAddress()&lt;/code&gt; method on Vista or later while providing a 
+fallback method when the buffered paint API is not available.&lt;/p&gt;
 
-&lt;p&gt;When using buffered paint, there is no need to create your own memory DC and bitmaps - you simply use &lt;code class=&quot;highlighter-rouge&quot;&gt;BeginBufferedPaint()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;EndBufferedPaint()&lt;/code&gt; APIs to obtain a device context handle for drawing. The back buffer is managed by Windows itself and the window is automatically updated when you flush a buffered paint operation by calling &lt;em&gt;EndBufferedPaint()&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When using buffered paint, there is no need to create your own memory DC and bitmaps - you simply 
+use &lt;code class=&quot;highlighter-rouge&quot;&gt;BeginBufferedPaint()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;EndBufferedPaint()&lt;/code&gt; APIs to obtain a device context handle for 
+drawing. The back buffer is managed by Windows itself and the window is automatically updated when 
+you flush a buffered paint operation by calling &lt;em&gt;EndBufferedPaint()&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-to-obtain-the-bitmap-pixel-buffer&quot;&gt;How to obtain the bitmap pixel buffer&lt;/h3&gt;
 
@@ -1071,21 +936,4 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2010-09-30T11:0
 
 &lt;p&gt;There is one thing to note when using buffered paint in general. This isn’t exactly related to AGG, but nevertheless it is important when your application must be able to deal with RTL rendering and you are using the GDI &lt;code class=&quot;highlighter-rouge&quot;&gt;SetLayout()&lt;/code&gt; API. According to MSDN, the real width of a buffered paint back buffer is usually greater than the width of the rendering area (for example, the client area of your window). When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;SetLayout()&lt;/code&gt; function to mirror the device context you obtained from &lt;code class=&quot;highlighter-rouge&quot;&gt;BeginBufferedPaint()&lt;/code&gt;, things will go awry, because of the difference in width. When doing left-to-right rendering, it doesn’t matter, because the POINT(0,0) will always be top left, but when mirroring the device context, the point(0,0) will now be &lt;strong&gt;outside&lt;/strong&gt; of your client area.&lt;/p&gt;
 
-&lt;p&gt;I ran into this problem in one of my apps where RTL is a requirement and I didn’t want to give up using buffered paint because of the obvious performance advantages, so I had to find a solution. It’s actually pretty simple: From &lt;code class=&quot;highlighter-rouge&quot;&gt;GetBufferedPaintBits()&lt;/code&gt; we know the real width of the back buffer and we can calculate the difference to the actual width of our rendering area. We can then use the difference as an offset value for all our coordinates while the rendering direction is mirrored due to &lt;code class=&quot;highlighter-rouge&quot;&gt;SetLayout(hdc, LAYOUT_RTL)&lt;/code&gt;. Don’t forget to only add the offset when the mirroring is active, otherwise it will screw up left-to-right rendering.&lt;/p&gt;
-
-&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-var disqus_config = function () {
-this.page.url = &quot;https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;ALEXVIE#@#2010-09-30 11:02:28 +0000&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://silvercircle-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" /></entry></feed>
+&lt;p&gt;I ran into this problem in one of my apps where RTL is a requirement and I didn’t want to give up using buffered paint because of the obvious performance advantages, so I had to find a solution. It’s actually pretty simple: From &lt;code class=&quot;highlighter-rouge&quot;&gt;GetBufferedPaintBits()&lt;/code&gt; we know the real width of the back buffer and we can calculate the difference to the actual width of our rendering area. We can then use the difference as an offset value for all our coordinates while the rendering direction is mirrored due to &lt;code class=&quot;highlighter-rouge&quot;&gt;SetLayout(hdc, LAYOUT_RTL)&lt;/code&gt;. Don’t forget to only add the offset when the mirroring is active, otherwise it will screw up left-to-right rendering.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" /></entry></feed>
