@@ -403,7 +403,7 @@ function onMenuArrowClick(el)
 {
 	var id = 'button' + el.attr('id');
 	$('#' + id).children('ul:first').show();
-  menu_active = true;
+    menu_active = true;
 	return(false);
 }
 
@@ -432,14 +432,28 @@ $(document).ready(function(){
     });
     if (Cookies.get("cookieconsent") != 'accepted') {
       $('div#cookiewarning').css('visibility', 'visible');
-      $('div#cookiewarning').fadeIn();      
+      $('div#cookiewarning').fadeIn();
     }
     $('time.timeago').timeago();
 
     $('div#allow_cookies a').on("click", function(event) {
         $('div#cookiewarning').fadeOut();
         Cookies.set("cookieconsent", "accepted", { path: '/', expires: 350});
-        //$.cookie("cookieconsent", "accepted", { path: '/' });
         return false;
+    });
+
+    $('div.spoiler_header').on('click', function(event) {
+      $(this).hide();
+        $('div#' +  $(this).attr('data-target')).fadeIn();
+        if($(this).attr('data-saveable') != undefined) {
+            Cookies.set($(this).attr('data-target'), 'saved', { path: '/', expires: 350});
+        }
+    });
+
+    $('.hideable').each(function(event) {
+        if(Cookies.get($(this).attr('id')) == 'saved') {
+            $(this).show();
+            $("[data-target='" + $(this).attr('id') + "']").hide();
+        }
     });
 });
