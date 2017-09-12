@@ -26,6 +26,9 @@ collections:
   tabsrmm:
     output: true
     permalink: /:collection/:path/
+  got-theories:
+    output: true
+    permalink: /:collection/:path/
 plugins:
  - jekyll-feed
  - jekyll-redirect-from

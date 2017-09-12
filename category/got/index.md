@@ -1,6 +1,6 @@
 ---
-layout: default
-menucontext: blog
+layout: got
+menucontext: got
 title: "Category: Game of Thrones - overview"
 pagination:
   enabled: true
@@ -13,6 +13,11 @@ pagination:
 ---
 
 {% include paginator_header.html %}
+
+<p>This is a list of articles and blog posts about Game of Thrones. It avoids listing theories and 
+other spoiler-heavy content. If you are interested in fan theories, <a 
+href="{{site.baseurl}}/got-theories">go here.</a></p>
+
 {% include content/got-spoiler-warning.md %}
 <br>
 <div class="blog-index">

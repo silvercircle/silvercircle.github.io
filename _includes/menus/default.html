@@ -1,0 +1,47 @@
+	     <div id = "main_menu">
+         <ul id="menu_nav" class="dropmenu menu">
+            <li id="button_home" class="{% if page.menucontext == 'home' %}active{% endif %}">
+                <a class="firstlevel" href="{{site.baseurl}}/">Home</a>
+           </li>
+           <li id="button_about" class="{% if page.menucontext == 'about' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/help/about.html">About</a>
+          </li>
+          <li id="button_blog" class="{% if page.menucontext == 'blog' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/blog/index.html">Blog</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+              {% for category in site.categories %}
+               <li><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/"><span>{{ category | first | strip_html }}</span></a></li>
+              {% endfor %}
+              </ul>
+           </li>
+           <li id="button_contact" class="{% if page.menucontext == 'contact' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="{% if page.menucontext == 'topics' %}active{% endif %}">
+              <a class="firstlevel" href="{{site.baseurl}}/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="{{site.baseurl}}/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/got-theories/"><span>Game of Thrones Season 8 theories</span></a>
+                </li>
+              </ul>
+          </li>
+          {% if include.custom_menu and include.custom_menu != '' %}
+              {% include menus/custom/{{ include.custom_menu }}.html %}
+          {% endif %}
+        </ul>
+       </div>
+

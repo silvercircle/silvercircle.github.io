@@ -125,3 +125,20 @@ div.spoiler_header {
 	background: linear-gradient(to bottom, #fcf8d1 0%,#ede3a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	cursor: pointer;
 }
+
+div.hideable {
+    display: none;
+}
+
+div.footnotes li, div.footnotes li > p { 
+    font-size: 10pt !important;
+}
+
+div.footnotes::before {
+    content: "______________";
+}
+
+div.footnotes ol {
+    margin-top: 0;
+}
+
