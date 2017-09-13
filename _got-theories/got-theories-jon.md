@@ -5,6 +5,7 @@ author: Alex Vie
 date: 2017-09-11 19:05:06+0200
 modified: 2017-09-12T15:40:49+0200
 menucontext: got
+disqus: 1
 tag: [first, got, theory, jon]
 excerpt: >
     Some theories about Jon who is now officially no longer a Snow, but a Targaryen.
@@ -29,9 +30,11 @@ King</span>{:ul} - left in the show), he is obviously topic in many theories.
 
 We already know that he is not a bastard (a "Snow") at all, but this is our viewer's privilege. In 
 the show, nobody except Bran and Samwell Tarly know it, at least not officially. It is possible that 
-Melisandre or, even more likely, Kinvara know it for sure, or at least consider it a possibility, 
-but this is pure speculation.
+Melisandre or Kinvara know it for sure, or at least consider it a possibility, but this is pure 
+speculation.
 
+{% include gfx/block_image.html image="got/jon-snow-iron-throne.jpg" title="Is this Jon's fate?" 
+nolink=1 borderclass="borderless" %}
 Being a true Targaryen[^secret_marriage], he is also *First of His Name* and therefore rightful heir 
 to the Iron Throne, and this fact alone opens up a lot of new theories. Until now, the Dragon Queen 
 Daenerys was thought to be the only rightful heir of house Targaryen, but the new situation makes 
@@ -41,17 +44,31 @@ revealed to her in season 8 and it will be interesting to see the outcome.
 To us fans, Jon's heritage became clear with [the famous Tower of Joy scene in season 6, episode 
 3](https://www.youtube.com/watch?v=5aO_CsqfBAo), featuring the epic sword fight between young Ned 
 stark and Ser Arthur Dayne and was finally confirmed in the season 6 final. In S07x05 we learned 
-that Jon's parents were married.
+that Jon's parents were married in a secret ceremony after Rhaegar abandoned his wife Elia Sands, 
+which finally strips him from his bastard status and makes him a true Targaryen.
 
 ## First, Jon is the Azor Ahai
 
 Very plausible theory on <a href="{{site.baseurl}}{% link _got-theories/jon/jon-is-the-azor-ahai.md 
-%}">good and solid foundations</a>, thus very popular.
+%}">good and solid foundations</a>, thus very popular in the community, but not without flaws and 
+possible missing links.
 
+## Jon will not survive
 
+GRMM [has stated](http://time.com/4101276/game-of-thrones-ending-george-r-r-martin/) the end of the 
+show will be *bittersweet*{:ul}. Whatever that means in detail, I think it is safe to assume that at 
+least one, possibly more of the favorite main characters will die in the final season. Some may die 
+under tragic circumstances, maybe by (self-)sacrifice. The article about the Azor Ahai theory 
+discusses one such possible event.
+
+### Who may die?
+
+Anyone could, though I'm very positive about Arya and - for some reason I cannot explain - also 
+believe The Hound will survive. I wouldn't bet on anyone else, particularly not on Jon who may or 
+may not have to fight the final battle versus the Night King, possibly riding a dragon in the 
+process. I'm also very certain that Cersei, Varys and Melisandre are all going to perish in the 
+final season.
 
 [^secret_marriage]: True in that he is the righteous son of Rhaegar Targaryen and Lyanna Stark who
     were married in a secret ceremony before Rhaegar died in battle during Robert's rebellion.
-
-
 

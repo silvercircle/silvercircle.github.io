@@ -515,10 +515,14 @@
   
   pre code {
     padding: 0;
+    font-family: Iosevka, Consolas, Monaco, monospace;
+    font-size:11pt;
+    line-height: 120%;
+    background-color: transparent;
     margin: 0;
-    color: #2879d0;
-    background-color: #fff;
-    border: none; }
+    color: #555;
+    border: none;
+}
   
   ul, ol, dl {
     margin-bottom: 20px; }

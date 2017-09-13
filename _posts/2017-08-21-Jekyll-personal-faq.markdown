@@ -14,6 +14,7 @@ image: logos/jekyll.png
 image_width: 130px
 image_align: right
 image_title: Jekyll Logo (CC-BY 4.0)
+disqus: 1
 ---
 
 # Jekyll personal FAQ
@@ -169,4 +170,3 @@ It is also possible to *include* style definitions. Just create a `.markdown` fi
 {% endraw %}
 You can then include that file in any article by simply placing a {% raw %}`{% include defs.md %}`{% endraw %} at the beginning of the document and use the pre-defined style attributes.
 
-{% include disqus_fragment.html %}

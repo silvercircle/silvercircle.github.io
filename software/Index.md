@@ -6,6 +6,7 @@ modified: 2017-09-01 06:31:36+0200
 title: My Vim collection
 permalink: /software/index.html
 menucontext: topics
+disqus: 1
 excerpt: >
     My collection of useful links, snippets and tips on various pieces of software. Including, Vim, Sublime Text, Mozilla Thunderbird, Firefox among others. Not much here, right now, I'm still collecting.
 ---
@@ -51,4 +52,3 @@ This theme is inspired by the very popular [Dracula theme](https://draculatheme.
 It is currently work in progress and only available [via GitHub](https://github.com/silvercircle/ST_Transylvania). It also has its [own page]({{site.baseurl}}/software/Transylvania-theme-for-sublimetext-3/).
 
 <div class="clear"></div>
-{% include disqus_fragment.html %}

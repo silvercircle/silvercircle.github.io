@@ -23,8 +23,25 @@ image_link: 0
 {% include post_header.html %}
 {% include defs.md %}
 
-This is likely possible. As a Targaryen, he can indeed bring peace and fulfill the prophecy about 
-the *Prince who was Promised*.
+This is one of the very popular theories centering on Jon, claiming that he will be the 
+reincarnation of the legendary *Prince who was promised* 
+
+## Who is this ominous prince?
+
+According to the legend as it is described in the books, the Azor Ahai lived approximately 8000 
+years before the events of GoT, before the conquest of Westeros by *Aegon the Conqueror*{:ul} and 
+during the last *long night* that lasted for a full generation and can be understood as the last 
+*winter*.
+
+>"It is also written that there are annals in Asshai of such a darkness, and of a hero who fought 
+>against it with a red sword. His deeds are said to have been performed before the rise of Valyria, 
+>in the earliest age when Old Ghis was first forming its empire. This legend has spread west from 
+>Asshai, and the followers of R'hllor [the Lord of Light] claim that this hero was named Azor Ahai, 
+>and prophesy his return. In the Jade Compendium, Colloquo Votar recounts a curious legend from Yi 
+>Ti, which states that the sun hid its face from the earth for a lifetime, ashamed at something none 
+>could discover, and that disaster was averted only by the deeds of a woman with a monkey's tail."
+
+## What speaks for the theory?
 
 * he does have Dragon blood (as seen in episode 5 of the seventh season)[^dragonblood].
 * he was reborn through smoke and salt.

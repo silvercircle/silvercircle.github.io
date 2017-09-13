@@ -7,6 +7,7 @@ layout: default
 categories: [Jekyll,Site]
 menucontext: blog
 tag: first
+disqus: 1
 excerpt: >
   How to build your site locally with your own Jekyll installation and deploy 
   it on GitHub using different branches.
@@ -73,4 +74,3 @@ Go to your GitHub repository and verify that everything is correct:
 That should do it. You can now build your site locally and use every Jekyll 
 plugin you want.
 
-{% include disqus_fragment.html %}

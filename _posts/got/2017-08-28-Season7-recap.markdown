@@ -19,6 +19,7 @@ image_align: right
 image_width: 30%
 image_title: "Sansa the Sith :)"
 image_link: 1
+disqus: 1
 ---
 
 # Season 7 was awesome, but...
@@ -133,5 +134,4 @@ What about Tormund and Brienne, will they finally get the chance to make *monste
 
 > Who the hell will still be among the living at the end of the final episode?
 
-{% include disqus_fragment.html %}
 

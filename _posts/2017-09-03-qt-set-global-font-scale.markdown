@@ -7,6 +7,7 @@ layout: default
 categories: [Development,Qt,C++]
 menucontext: blog
 tag: first
+disqus: 1
 excerpt: >
     Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.
 image: logos/qt.png
@@ -25,9 +26,13 @@ qtcreator.exe
 ```
 do this in a shell, and QtCreator will launch with everything scaled to twice its size. Fonts will appear bigger, but also all UI elements. Since this scaling is implemented in Qt at a very low level, it works consistently throughout the entire application.
 
-So, you have the choice. You can set the ```QT_SCALE_FACTOR``` environment variable globally via the control panel, or use a ```.cmd``` file to set it before you launch a specific application. The value must be a **floating point number** and can be smaller than 1, so yes, it is possible to downscale the UI.
+So, you have the choice. You can set the `QT_SCALE_FACTOR` environment variable globally via the 
+control panel, or use a `.cmd` file to set it before you launch a specific application. The value 
+must be a **floating point number** and can be smaller than 1, so yes, it is possible to downscale 
+the UI.
 
-The following screen shot illustrates the difference between no scale and ```QT_SCALE_FACTOR = 2```. It was taken at a resolution of 1920x1080 at the standard DPI setting under Windows. 
-{% include gfx/block_image.html image="qtcreator-fontscale.png" title="Screen shot showing the different scaling (click to enlarge)" %}
+The following screen shot illustrates the difference between no scale and `QT_SCALE_FACTOR = 2`. It 
+was taken at a resolution of 1920x1080 at the standard DPI setting under Windows. {% include 
+gfx/block_image.html image="qtcreator-fontscale.png" title="Screen shot showing the different 
+scaling (click to enlarge)" %}
 
-{% include disqus_fragment.html %}

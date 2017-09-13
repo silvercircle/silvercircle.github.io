@@ -8,8 +8,10 @@
         <article id="main-content">
         {% endif %}
         {{ content }}
+        {% if page.disqus and page.disqus == 1 %}
+            {% include disqus_fragment.html %}
+        {% endif %}
         </article>
-
         <aside id="sidebar">
          <h2>GoT in the blog</h2>
          {% assign counter = 1 %}

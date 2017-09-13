@@ -7,6 +7,7 @@ layout: default
 categories: [Development,Fun]
 menucontext: blog
 tag: first
+disqus: 1
 excerpt: >
   What is a "Yoda condition" and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.
 ---
@@ -42,4 +43,3 @@ There are a number of nice submissions on that thread and being a C/C++ programm
 
 The thread has a number of other cool terms and a guy from globalnerdy has [compiled a list of terms](http://www.globalnerdy.com/2010/05/09/new-programming-jargon/) from the original stack overflow thread.
 
-{% include disqus_fragment.html %}

@@ -7,7 +7,10 @@
         {% else %}
         <article id="main-content">
         {% endif %}
-          {{ content }}
+        {{ content }}
+        {% if page.disqus and page.disqus == 1 %}
+            {% include disqus_fragment.html %}
+        {% endif %}
         </article>
         <aside id="sidebar">
           <h2>Recent in blog</h2>

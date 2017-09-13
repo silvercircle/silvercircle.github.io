@@ -13,16 +13,19 @@ div.floatimage.borderless {
   background: transparent; }
 
 div.blockimage.borderless {
-  border: none;
-  padding: 0; }
-        
+    border: none;
+    padding: 0; 
+    background: transparent;}
+
 div.blockimage {
-  background-color: #efefef;
-  padding: 0;
-  word-wrap: break-word;
-  box-sizing: border-box;
-	border: 1px solid #ccc;
-	margin-bottom: 1em; 
+    background-color: #efefef;
+    padding: 0;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 1em; 
+    width: auto;
+    max-width: 100%;
 }
 
 div.floatimage.right {

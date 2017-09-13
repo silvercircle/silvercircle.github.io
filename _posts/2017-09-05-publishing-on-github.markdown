@@ -8,6 +8,7 @@ categories: [Site]
 menucontext: blog
 permalink: /articles/publishing-on-github
 tag: [first, Jekyll, GitHub]
+disqus: 1
 excerpt: >
     [GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works.
     <br>
@@ -47,7 +48,10 @@ A static site generator like Jekyll simplifies the task. It is a piece of softwa
 * Style sheets (.css files that define how your site looks)
 * Scripts that run on the client. jQuery is such an example.
 
-The site generator will take all the content, translate it to HTML, inject the result into templates that define the overall look of your site and spit out an organized directory structure filled with HTML, CSS and all the other files. This folder structure is what you upload to your host's document root folder.
+The site generator will take all the content, translate it to HTML, inject the result into templates 
+that define the overall look of your site and spit out an organized directory structure filled with 
+HTML, CSS and all the other files. This folder structure is what you upload to your host's document 
+root folder.
 
 ## How static publishing wit Jekyll works?
 Fairly simple. You write content in markdown format, a plain text format that has become popular
@@ -120,4 +124,3 @@ What I personally like is the simple work flow. A text editor like Visual Studio
 
 Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which `ruby` (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.
 
-{% include disqus_fragment.html %}

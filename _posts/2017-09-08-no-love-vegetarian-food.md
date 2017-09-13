@@ -7,6 +7,7 @@ layout: default
 categories: [Fun]
 menucontext: blog
 tag: first
+disqus: 1
 excerpt: >
     Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.
 ---
@@ -19,4 +20,3 @@ People apparently stocked up with lots of food, but showed little love for veget
 
 {% include gfx/block_image.html image="fun/tofu.jpg" title="Vegetarian and vegan foot leftovers" %}
 
-{% include disqus_fragment.html %}

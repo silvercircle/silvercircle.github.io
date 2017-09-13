@@ -5,6 +5,7 @@ date: 2017-09-02T06:18:35+02:00
 modified: 2017-09-05T02:05:43+02:00
 collection: software
 layout: topics
+disqus: 1
 ---
 
 # Transylvania Theme for Sublime Text 3.
@@ -33,4 +34,3 @@ Alternatively, you can always create the ```Theme - Transylvania``` folder in yo
 
 The theme's home on the web is [on GitHub](https://github.com/silvercircle/ST_Transylvania) and its issue tracker should be used for all inquiries.
 
-{% include disqus_fragment.html %}

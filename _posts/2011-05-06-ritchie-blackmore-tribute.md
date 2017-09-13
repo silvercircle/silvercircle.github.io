@@ -6,6 +6,7 @@ author: AlexVie
 categories: [Site]
 tag: first
 menucontext: blog
+disqus: 1
 excerpt: >
   Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.
 layout: default
@@ -24,4 +25,3 @@ Also, there is, to my knowledge, no live footage of this song as it was never pl
 
 The origins of the song are unknown but it is said that it's the result of a Jam session they did while they were bored in the studio, so this isn't a song that was written, just improvised. These guys were true musicians and artists and the music speaks for itself.
 
-{% include disqus_fragment.html %}

@@ -6,6 +6,7 @@ date: 2017-09-04 12:19:58+0200
 modified: 2017-09-04 12:20:02+0200
 menucontext: topics
 tag: first
+disqus: 1
 excerpt: >
     Sometimes, images enclosed by divs or other block level elements show apparently strange and unwanted 2-3 pixels of padding on the bottom edge even though the containing element has no padding set at all.
 ---
@@ -34,4 +35,3 @@ This happens, because ```img``` elements are __inline__ elements by default. Suc
 <br>
 Now, the unwanted additional padding on the bottom edge is gone. The image behaves like a block element and will perfectly fit in the surrounding box model.
 
-{% include disqus_fragment.html %}

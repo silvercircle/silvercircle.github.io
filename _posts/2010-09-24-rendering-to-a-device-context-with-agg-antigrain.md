@@ -6,6 +6,7 @@ author: AlexVie
 layout: default
 categories: [C++, Development]
 tag: first
+disqus: 1
 excerpt: >
   AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.
 image: archive/2010/09/agg_logo.jpg
@@ -88,4 +89,3 @@ Basically, that's it. You now have a rendering buffer that uses a memory bitmap 
 
 Next time, I'll show how to do it when using Windows Vista or later buffered paint API which allows you to paint flickerfree without creating your own memory bitmaps and device contexts.
 
-{% include disqus_fragment.html %}

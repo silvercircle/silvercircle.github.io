@@ -3,7 +3,7 @@
 <a href="{{ site.baseurl }}/assets/gfx/{{ include.image }}" data-fancybox data-caption="{{include.title}}">
 {% endunless %}
 <figure>
-        <img src="{{ site.baseurl }}/assets/gfx/{{ include.image }}" alt="{{include.title}}" style="width:100%; max-width:100%; height:auto; margin:0;display:block;" />
+        <img src="{{ site.baseurl }}/assets/gfx/{{ include.image }}" alt="{{include.title}}" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;" />
         {% if include.title and include.title != '' %}
         <figcaption style="display:none;">
                 {{ include.title }}
