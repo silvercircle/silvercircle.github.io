@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-12T22:33:56+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-13T10:56:44+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -17,7 +17,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:5
 &lt;a href=&quot;/assets/gfx/fun/tofu.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;Vegetarian and vegan foot leftovers&quot;&gt;
 
 &lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;Vegetarian and vegan foot leftovers&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;Vegetarian and vegan foot leftovers&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 Vegetarian and vegan foot leftovers
@@ -161,7 +161,7 @@ pages is the bread and butter of all web servers.&lt;/p&gt;
 &lt;a href=&quot;/assets/gfx/vscode.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;A typical workflow when using Jekyll. A simple text editor is enough.&quot;&gt;
 
 &lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/vscode.png&quot; alt=&quot;A typical workflow when using Jekyll. A simple text editor is enough.&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/vscode.png&quot; alt=&quot;A typical workflow when using Jekyll. A simple text editor is enough.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 A typical workflow when using Jekyll. A simple text editor is enough.
@@ -209,7 +209,7 @@ was taken at a resolution of 1920x1080 at the standard DPI setting under Windows
 
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/qtcreator-fontscale.png&quot; alt=&quot;Screen shot showing the different 
-scaling (click to enlarge)&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+scaling (click to enlarge)&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 Screen shot showing the different 
@@ -842,7 +842,7 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:5
 &lt;div class=&quot;blockimage &quot;&gt;
 
 &lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/archive/2011/05/watch-your-weight.png&quot; alt=&quot;&quot; style=&quot;width:100%; max-width:100%; height:auto; margin:0;display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/archive/2011/05/watch-your-weight.png&quot; alt=&quot;&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
 &lt;/figure&gt;
 
