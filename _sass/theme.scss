@@ -21,25 +21,48 @@
 @font-face {
     font-family: 'PS Savoy';
     font-weight: bold;
-    src: url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff2") format("woff2"),
-         url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff") format("woff");
+    src: url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: 'PS Savoy';
     font-weight: normal;
     font-style: italic;
-    src: url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff2") format("woff2"),
-         url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff") format("woff");
+    src: url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: 'PS Savoy';
     font-weight: normal;
-    src: url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff2") format("woff2"),
-         url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff") format("woff");
+    src: url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff") format("woff");
+}
+/*
+@font-face {
+    font-family: 'Guardian';
+    font-weight: normal;
+    src: url("#{$base}/assets/fonts/GuardianTextEgyptianWeb-Regular.woff") format("woff");
 }
 
+@font-face {
+    font-family: 'Guardian';
+    font-weight: bold;
+    src: url("#{$base}/assets/fonts/GuardianTextEgyptianWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Guardian';
+    font-weight: normal;
+    font-style: italic;
+    src: url("#{$base}/assets/fonts/GuardianTextEgyptianWeb-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Guardian';
+    font-weight: bold;
+    font-style: italic;
+    src: url("#{$base}/assets/fonts/GuardianTextEgyptianWeb-BoldItalic.woff") format("woff");
+}
+*/
  html {
     font-family: Monda, sans-serif;
     /* 1 */
@@ -622,10 +645,14 @@
       text-align: justify;
       text-justify: inter-word;
       font-family: "PS Savoy", Georgia, Constantia, Serif;
-      font-size:14pt;
-      line-height: 120%;
+      font-size:14pt;       /* 14pt for PS Savoy */
+      line-height: 120%;    /* 120% for PS Savoy */
   }
-  
+
+  #main-content ul {
+      margin-top: 0 !important;
+  }
+
   #main-content.no_sidebar {
     width: 100%;
   }
@@ -661,7 +688,7 @@
   ol {
     list-style-position: inside;
     list-style: decimal;
-    padding-left: 3px; }
+    padding-left: 20px; }
   
   dl dd {
     font-style: italic;

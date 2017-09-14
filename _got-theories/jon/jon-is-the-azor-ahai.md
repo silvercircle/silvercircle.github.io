@@ -52,7 +52,7 @@ also sacrificed his wife Nissa Nissa while forging his magic sword Lightbringer)
 considered a person with good virtues.
 * he is a very skilled swordsman with the proven ability to kill white walkers.
 
-<div class="floatbox right" style="width:30%" markdown="1">
+<div class="floatbox right" style="width:30%;margin-top: 0;" markdown="1">
 This theory could also mean that Jon's romance to Dany will be short-lived
 {:aleft}
 </div>
