@@ -14,15 +14,35 @@
         </article>
         <aside id="sidebar">
           <h2>Recent in blog</h2>
-          {% include sidebar/sidebar_recent_posts.html count=5 show_all=1 %}
-          <hr class="blueline" style="clear:both;">
-          <h2>Topics</h2>
+          {% include sidebar/sidebar_recent_posts.html count=3 show_all=1 %}
+          {% if page.collection and page.collection != '' %}
+            <h2>Recent in this topic</h2>
+            {% for collection in site.collections %}
+                {% if collection.label == page.collection %}
+                    {% assign pages = collection.docs | where: "tags", "first" | sort: 'modified' | reverse %}
+                    {% assign counter = 1 %}
+                    {% for page in pages %}
+                        {% include sidebar/document_entry.html %}
+                        {% assign counter = counter | plus: 1 %}
+                        {% if counter > 5 %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/{{page.collection}}">Show all...</a></div>
+                    <div class="clear"></div>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+          <hr class="blueline">
+          {% endif %}
+          <h2>All topics</h2>
           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web development</a></h3>
           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software">Software</a></h3>
           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/tabsrmm">TabSRMM</a></h3>
           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of Thrones theories</a></h3>
-          <hr class="blueline" style="clear:both;">
+          <hr class="blueline">
           {% include sidebar/quick_links.html %}
+          <br>
         </aside>
       </div>
      </div>

@@ -55,20 +55,7 @@
            {% if page.isfollowup and page.isfollowup == 1 %}
            {% continue %}
            {% endif %}
-           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
-           <div class="author" style="float:right;">
-             <span class="date">
-                {% if page.modified %}
-                <time class="timeago" datetime="{{ page.modified | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ page.modified }}</time>
-                {% else %}
-                <time class="timeago" datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ page.date }}</time>
-                {% endif %}
-             </span>
-           </div>
-           <span class="author">
-           {{page.author}}
-           </span>
-           <br>
+           {% include sidebar/document_entry.html %}
           {% endfor %}
           <br>
           <div style="float:right"><a href="{{site.baseurl}}/got-theories/">Show all GoT theories</a></div>

@@ -6,6 +6,7 @@ date: 2017-09-11 19:05:06+0200
 modified: 2017-09-12T16:10:49+0200
 menucontext: got
 tag: [first, got, theory, jon]
+disqus: 1
 excerpt: >
     This is a popular theory, claiming that Jon is indeed the *Prince that was promised*.
     <br><br>
@@ -19,7 +20,7 @@ image_title: "GoT Logo"
 image_link: 0
 ---
 
-# Jon ~~Snow~~ Targaryen is the Azor Ahai
+# ~~Jon~~ Aegon ~~Snow~~ Targaryen is the Azor Ahai
 {% include post_header.html %}
 {% include defs.md %}
 
@@ -31,7 +32,7 @@ reincarnation of the legendary *Prince who was promised*
 According to the legend as it is described in the books, the Azor Ahai lived approximately 8000 
 years before the events of GoT, before the conquest of Westeros by *Aegon the Conqueror*{:ul} and 
 during the last *long night* that lasted for a full generation and can be understood as the last 
-*winter*.
+*winter* that came.
 
 >"It is also written that there are annals in Asshai of such a darkness, and of a hero who fought 
 >against it with a red sword. His deeds are said to have been performed before the rise of Valyria, 
@@ -51,6 +52,10 @@ also sacrificed his wife Nissa Nissa while forging his magic sword Lightbringer)
 considered a person with good virtues.
 * he is a very skilled swordsman with the proven ability to kill white walkers.
 
+<div class="floatbox right" style="width:30%" markdown="1">
+This theory could also mean that Jon's romance to Dany will be short-lived
+{:aleft}
+</div>
 All the above makes sense in supporting the theory about Jon being the Azor Ahai and is much 
 stronger evidence than rivaling theories can present for their respective candidates. Other 
 candidates for the role are Daenerys and Tyrion - the latter one is a relatively new one.
@@ -70,9 +75,11 @@ unclear what its effectivity against the Night King would be. So maybe an additi
 powerful weapon will be needed should he ever face the Night King in direct combat. If that is true,
 it might have dire consequences for Daenerys who may become his *loving wife* only to be sacrificed 
 in the process of forging a weapon for the final battle to come. This would be consistent with 
-GRRM's claim the end will be <<bittersweet>>.
+GRRM's claim of a <<bittersweet>> ending.
 
 [^dragonblood]: In episode 5, when Dany returns from the battle against the Lannister army, Jon
     interacts with Drogon and doesn't seem to be afraid. Also, Drogon allows Jon to touch him, which 
     leaves Dany somewhat startled. [Video](https://www.youtube.com/watch?v=rlesc2MYVoA)
+
+{% include content/got/got-theory-footer.md %}
 

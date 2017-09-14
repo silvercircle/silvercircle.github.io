@@ -3,7 +3,7 @@ title: GoT Theories about Jon
 layout: got
 author: Alex Vie
 date: 2017-09-11 19:05:06+0200
-modified: 2017-09-12T15:40:49+0200
+modified: 2017-09-13T18:40:49+0200
 menucontext: got
 disqus: 1
 tag: [first, got, theory, jon]
@@ -30,8 +30,7 @@ King</span>{:ul} - left in the show), he is obviously topic in many theories.
 
 We already know that he is not a bastard (a "Snow") at all, but this is our viewer's privilege. In 
 the show, nobody except Bran and Samwell Tarly know it, at least not officially. It is possible that 
-Melisandre or Kinvara know it for sure, or at least consider it a possibility, but this is pure 
-speculation.
+Melisandre or Kinvara know it, or at least consider it a possibility, but this is pure speculation.
 
 {% include gfx/block_image.html image="got/jon-snow-iron-throne.jpg" title="Is this Jon's fate?" 
 nolink=1 borderclass="borderless" %}
@@ -41,11 +40,17 @@ Daenerys was thought to be the only rightful heir of house Targaryen, but the ne
 her only number 2 after Jon and this is something she has not yet learned. For sure, it will be 
 revealed to her in season 8 and it will be interesting to see the outcome.
 
-To us fans, Jon's heritage became clear with [the famous Tower of Joy scene in season 6, episode 
+To us fans, Jon's ancestry became clear with [the famous Tower of Joy scene in season 6, episode 
 3](https://www.youtube.com/watch?v=5aO_CsqfBAo), featuring the epic sword fight between young Ned 
 stark and Ser Arthur Dayne and was finally confirmed in the season 6 final. In S07x05 we learned 
-that Jon's parents were married in a secret ceremony after Rhaegar abandoned his wife Elia Sands, 
-which finally strips him from his bastard status and makes him a true Targaryen.
+that Jon's parents got married in a secret ceremony after Rhaegar had his marriage to Elia Martell 
+annulled by the High Septon, which finally strips Jon/Aegon from his bastard status and makes him a 
+true Targaryen.
+
+We also know, that his real name is *Aegon Targaryen*, but for historical reasons and because this 
+fact is still unbeknownst to him, I'll continue to use the name Jon, which was given to him by Ned 
+Stark as part of the protection scheme against the wrath of Robert Baratheon, whose intention was to 
+wipe out all Targaryens left in the world.
 
 ## First, Jon is the Azor Ahai
 
@@ -58,8 +63,8 @@ possible missing links.
 GRMM [has stated](http://time.com/4101276/game-of-thrones-ending-george-r-r-martin/) the end of the 
 show will be *bittersweet*{:ul}. Whatever that means in detail, I think it is safe to assume that at 
 least one, possibly more of the favorite main characters will die in the final season. Some may die 
-under tragic circumstances, maybe by (self-)sacrifice. The article about the Azor Ahai theory 
-discusses one such possible event.
+under tragic circumstances, maybe by (self-)sacrifice. The article about the Azor Ahai (linked 
+above) theory discusses one such possible event.
 
 ### Who may die?
 

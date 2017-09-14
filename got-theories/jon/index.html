@@ -1,0 +1,25 @@
+---
+layout: got
+menucontext: got
+title: "Game of Thrones - Jon theories"
+pagination:
+  enabled: true
+  permalink: '/got-theories/jon/page:num/'
+  sort_field: modified
+  sort_reverse: true
+  per_page: 10
+  collection: got-theories
+  tag: first, jon
+---
+{% include paginator_header.html %}
+{% include content/got-spoiler-warning.md %}
+<br>
+<div class="spoiler_header" data-saveable data-target="got-theory-spoiler">Spoiler content, click to 
+reveal (this choice will be saved to a Cookie).</div>
+<div id="got-theory-spoiler" class="blog-index hideable">
+    {% for post in paginator.posts %}
+    {% include paginator_body.html showspoiler=1 %}
+    {% endfor %}
+    {% include paginator_trail.html %}  
+</div>
+

@@ -14,7 +14,6 @@ excerpt: >
     interesting characters in the series. Neither exceptionally good nor evil, he is seen by many as 
     a selfish and in most cases not very loyal person. He is also an excellent politician and a 
     cunning strategist and we know he *drinks and knows things*.
-
 image: got/logo.png
 image_align: right
 image_width: 100px
@@ -69,8 +68,8 @@ know this cannot be the truth, as Lyanna likely fell in love with Rhaegar and ma
 secret ceremony.
 
 Still, the possibility that Aerys had an affair with Tywin's wife (or maybe just raped her) would be 
-a driving force behind Tywin hatred for all Targaryen and his decision to support Robert's rebellion 
-with all his force.
+a driving force behind Tywin's hatred for all Targaryen and his decision to support Robert's 
+rebellion with all his force.
 
 ## Tyrion will (or already did?) betray Daenerys
 
@@ -86,16 +85,17 @@ survived it for sure.
 What we have **not** seen is **how** Tyrion convinced Cersei to come back for further negotiations. 
 Later we learned about her sinister plan to betray the people of Westeros by denying them all 
 support in the upcoming battle(s) against the Night King. This disgusts Jaime so much that he 
-ultimately decides to leave her and King's Landing to ride north. 
+ultimately decides to leave her and King's Landing to ride north, risking his own death at the hands 
+of Ser Zombified. 
 
 **The big question here are:**{:ul} 
 
 * Does Tyrion know anything about that evil plan to use the Night King against the people of 
   Westeros?
 * If he does indeed know, how will he use this knowledge? Will he warn Daenerys or will he change 
-  sides?
+  sides and support his sister during the upcoming events of the final season?
   
-Or maybe he **DID** already change sides? Some people believe that Tyrion has been sabotaging 
+Or maybe he **did** already change sides? Some people believe that Tyrion has been sabotaging 
 Daenerys' war efforts ever since they arrived in Dragonstone. The fact that his "*clever plans*" 
 earned Daenerys some significant losses in the first couple of episodes in connection with his 
 status as able strategist whose planning never before failed so hard, has the potential to fuel some 
@@ -105,4 +105,5 @@ speculations at least.
 [^joffrey_tyrion]: Joffrey openly humiliates Tyrion at the <<purple wedding>> in episode 2, season 4
     [Video](https://www.youtube.com/watch?v=CjtlHCZS1Mg)
 
+{% include content/got/got-theory-footer.md %}
 

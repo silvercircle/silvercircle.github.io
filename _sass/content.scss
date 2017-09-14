@@ -6,8 +6,8 @@
 }
 
 .two_cols {
-	column-count: 2;
-	column-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
 }
 
 .c_green {
@@ -30,13 +30,17 @@
     padding: 5px 20px 0 20px;
     box-shadow: 2px 2px 4px #ccc;
     margin-bottom: 15px;
+    box-sizing: content-box;
 }
 
 .note.red {
-    background: #f2e1f2; /* Old browsers */
-    background: -moz-linear-gradient(top, #f2e1f2 0%, #f9ccea 100%, #ff7cd8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f2e1f2 0%,#f9ccea 100%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f2e1f2 0%,#f9ccea 100%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #f2e1f2;
+    background: linear-gradient(to bottom, #f2e1f2 0%,#f9ccea 100%);
+}
+
+.note.blue {
+    background: #e1ffff;
+    background: linear-gradient(to bottom, #e5ffff 0%,#c8e7f7 100%);
 }
 
 .note p {
@@ -54,12 +58,17 @@
     display: inline-block;
 }
 .note h3 {
-    font-size: 16pt !important;
+    font-size: 14pt !important;
     margin-left: 0;
     padding-left: 0;
     text-indent: 0 !important;
     margin-bottom: 10px;
     margin-top: 0 !important;
+    color: #555 !important;
+}
+
+.note.got-theory-footer {
+    margin-left: 0;
 }
 
 div.contentbox {
@@ -103,6 +112,35 @@ div.cbox_body {
     min-height: 280px !important;
 }
 
+div.floatbox {
+    margin: 0 20px 0 20px;
+    padding: 0 10px;
+    border-left: 2px solid #FF4500;
+    border-right: 2px solid #FF4500;
+}
+
+div.floatbox.left {
+    float:left;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+div.floatbox.right {
+    float: right;
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+}
+
+div.floatbox p, div.floatbox li {
+    font-family: Monda, Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+div.floatbox p:last-child, div.floatbox li:last-child {
+    margin-bottom: 0 !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1039px) {
     div.contentbox {
         width: 50%;
@@ -116,5 +154,5 @@ div.cbox_body {
 
     .two_cols {
         column-count: 1;
-    }        
+    }
 }

@@ -7,6 +7,8 @@ $blue: #0000bb;
 $green: #00bb00;
 $lightgrey: #c5c5c5;
 
+$base: '{{site.baseurl}}';
+
 @import "theme";
 @import "images";
 @import "paginator-trails";

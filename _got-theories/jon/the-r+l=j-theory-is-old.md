@@ -46,8 +46,13 @@ original post archived on google groups. The thread contains a few more interest
 
 It should be noted, that reading the books makes theory forging easier in my opinion. The reason for 
 this is the vast amount of background information that very often does not make it into the TV show, 
-simply because it would bloat a season to 20 or more episodes. GRRM has a habit of describing things 
-with much attention to detail and his first book makes no difference. We learn quite some things 
-about Robert's rebellion, the Targaryen and many other events that are either completely absent from 
-the show or get only scratched on the surface.
+simply because it would bloat a season to 20 or more episodes and is generally difficult to include 
+without having some kind of "narrator" or extensive dialogues discussing past events.
+
+GRRM has a habit of describing things with much attention to detail and his first book makes no 
+difference. We learn quite some things about Robert's rebellion, the Targaryen and many other events 
+that are either completely absent from the show or get only scratched on the surface. The TV series 
+concentrates more on current events and does not always explain the reasoning behind 
+
+{% include content/got/got-theory-footer.md %}
 

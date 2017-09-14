@@ -22,15 +22,14 @@
    {% assign counter = counter | plus: 1 %}
    {% if counter > include.count %}
    {% break %}
-   {% endif %}   
+   {% endif %}
  {% endfor %}
  {% if include.show_all %}
-  <br>
-  <div style="float:right"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
-  <br>
+  <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
+  <div class="clear"></div>
  {% endif %}
-{% if include.list_cats %}
-<hr class="blueline">
+ <hr class="blueline">
+ {% if include.list_cats %}
 <h2>Categories</h2>
 <div class="two_cols">
 {% for category in site.categories %}
@@ -39,3 +38,4 @@
 </div>
 <hr class="blueline">
 {% endif %}
+

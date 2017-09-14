@@ -5,6 +5,7 @@ title: Strange unwanted padding around images and how to fix
 date: 2017-09-04 12:19:58+0200
 modified: 2017-09-04 12:20:02+0200
 menucontext: topics
+collection: webdev
 tag: first
 disqus: 1
 excerpt: >
@@ -19,11 +20,19 @@ excerpt: >
 <img src="{{site.baseurl}}/assets/gfx/thumb_vim.png" alt="image" style="margin:0; padding:0;">
 </div>
 <br>
-As you can clearly see, the padding below the image is larger than on the other three sides even though the padding for the surrounding container is set to **4px** on all sides and the margin for the ```img``` element is set to zero.
+As you can clearly see, the padding below the image is larger than on the other three sides even 
+though the padding for the surrounding container is set to **4px** on all sides and the margin for 
+the `img` element is set to zero.
 
-At first, it looks like a browser issue or some rogue CSS margin or padding attribute affecting the placement, but it's not. You can verify that it will look the same in all modern browsers and the rogue CSS theory can be counteracted by explicitly setting all margins and paddings to zero via *style* attributes (which is exactly what I did in the example above).
+At first, it looks like a browser issue or some rogue CSS margin or padding attribute affecting the 
+placement, but it's not. You can verify that it will look the same in all modern browsers and the 
+rogue CSS theory can be counteracted by explicitly setting all margins and paddings to zero via 
+*style* attributes (which is exactly what I did in the example above).
 
-This happens, because ```img``` elements are __inline__ elements by default. Such elements are treated like text and therefore the browser will align them to the baseline of the surrounding text grid. Inline elements will receive automatic vertical padding, that depends on their alignment and placement. So what the browser does is correct and required by specifications.
+This happens, because `img` elements are __inline__ elements by default. Such elements are treated 
+like text and therefore the browser will align them to the baseline of the surrounding text grid. 
+Inline elements will receive automatic vertical padding, that depends on their alignment and 
+placement. So what the browser does is correct and required by specifications.
 
 ### The fix is fairly easy. Just make the image a __block__ element.
 ```html
@@ -33,5 +42,6 @@ This happens, because ```img``` elements are __inline__ elements by default. Suc
 <img src="{{site.baseurl}}/assets/gfx/thumb_vim.png" alt="image" style="display:block;">
 </div>
 <br>
-Now, the unwanted additional padding on the bottom edge is gone. The image behaves like a block element and will perfectly fit in the surrounding box model.
+Now, the unwanted additional padding on the bottom edge is gone. The image behaves like a block 
+element and will perfectly fit in the surrounding box model.
 

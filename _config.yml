@@ -20,15 +20,19 @@ collections:
   webdev:
     output: true
     permalink: /:collection/:path/
+    label: webdev
   software:
     output: true
     permalink: /:collection/:path/
+    label: software
   tabsrmm:
     output: true
     permalink: /:collection/:path/
+    label: tabsrmm
   got-theories:
     output: true
     permalink: /:collection/:path/
+    label: got
 plugins:
  - jekyll-feed
  - jekyll-redirect-from

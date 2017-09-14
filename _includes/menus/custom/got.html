@@ -1,4 +1,17 @@
            <li id="button_got" class="{% if page.menucontext == 'got' %}active{% endif %}">
               <a class="firstlevel" href="{{site.baseurl}}/category/got">Game of Thrones</a>
-           </li>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_got" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="{{site.baseurl}}/got-theories"><span>All S8 Theories</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/got-theories/jon"><span>Theories about Jon/Aegon</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/got-theories/tyrion"><span>Theories about Tyrion</span></a>
+                </li>
+              </ul>
+            </li>
+
 

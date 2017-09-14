@@ -17,7 +17,29 @@
     font-weight: 400;
     src: local("Monda Regular"), local("Monda-Regular"), url("https://fonts.gstatic.com/s/monda/v4/sk05J8GA1NvUxDnk43EgAQ.woff") format("woff");
   }
-  
+
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: bold;
+    src: url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff2") format("woff2"),
+         url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: normal;
+    font-style: italic;
+    src: url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff2") format("woff2"),
+         url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: normal;
+    src: url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff2") format("woff2"),
+         url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff") format("woff");
+}
+
  html {
     font-family: Monda, sans-serif;
     /* 1 */
@@ -378,7 +400,7 @@
   
     .highlight {
     background-color: #f8f8f8; }
-  
+
   /* LAYOUT STYLES */
   body {
     font-family: 'Monda', Verdana, Helvetica, Arial, serif;
@@ -387,20 +409,20 @@
     line-height: 1.5;
     color: #666;
     background: #f0f0f0; }
-  
+
   p {
     margin-top: 0; }
-  
+
   a {
     color: #2879d0; }
-  
+
   a:hover {
     color: #2268b2; }
-  
+
   header {
     padding-bottom: 40px;
-	  font-family: Monda, Helvetica, Arial, serif;
-	  padding-top:20px;
+    font-family: Monda, Helvetica, Arial, serif;
+    padding-top:20px;
     background: #2e7bcf url(../images/theme/upper_bg.png) no-repeat 0 0;
     border-top: 8px solid black;
   }
@@ -599,8 +621,9 @@
   #main-content p, #main-content li {
       text-align: justify;
       text-justify: inter-word;
-      font-family: Georgia, Constantia, Serif;
-      font-size:12pt;	
+      font-family: "PS Savoy", Georgia, Constantia, Serif;
+      font-size:14pt;
+      line-height: 120%;
   }
   
   #main-content.no_sidebar {
