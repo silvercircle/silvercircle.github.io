@@ -14,7 +14,9 @@ excerpt: >
 # Strange unwanted padding around images and how to fix
 {% include post_header.html %}
 ## The problem:
-... is best demonstrated by example. The container, a ```div```element with a red border and a padding of 4 pixel, shall contain an image. We want equal padding on all 4 sides and a one pixel wide border around the container.
+... is best demonstrated by example. The container, a `div`element with a red border and a padding 
+of 4 pixel, shall contain an image. We want equal padding on all 4 sides and a one pixel wide border 
+around the container.
 
 <div style="margin:auto; border:1px solid red; padding: 4px;width:50%;">
 <img src="{{site.baseurl}}/assets/gfx/thumb_vim.png" alt="image" style="margin:0; padding:0;">

@@ -21,18 +21,27 @@ It is work in progress and you can currently only obtain it from its [GitHub rep
 ## How to install manually
 
 * [Download]({{site.baseurl}}/assets/download/Theme - Transylvania.zip) the file.
-* Find your **packages** folder. The easiest way is to ask Sublime Text by navigating to ```Preferences -> Browse Packages...```. This will open a explorer window with the base folder of all installed packages.
-* Unzip the downloaded file to this folder. Make sure, **you unzip it with full path name**, creating a ```Theme - Transylvania``` folder in the packages directory. This folder name is case sensitive under Linux.
-* Navigate to ```Preferences -> Theme...``` and activate **Transylvania.sublime-theme** from the list of available themes.
-* Navigate to ```Preferences ->Color Scheme...``` and activate **Transylvania** from the list of available color schemes.
+* Find your **packages** folder. The easiest way is to ask Sublime Text by navigating to 
+`Preferences -> Browse Packages...`. This will open a explorer window with the base folder of all 
+installed packages.
+* Unzip the downloaded file to this folder. Make sure, **you unzip it with full path name**, 
+creating a `Theme - Transylvania` folder in the packages directory. This folder name is case 
+sensitive under Linux.
+* Navigate to `Preferences -> Theme...` and activate **Transylvania.sublime-theme** from the list of 
+available themes.
+* Navigate to `Preferences ->Color Scheme...` and activate **Transylvania** from the list of 
+available color schemes.
 
-If you do not like the included syntax highlighting scheme, you can always use the Dracula scheme which I used as a base. My modifications are minor, the overall color schemes harmonize well enough.
+If you do not like the included syntax highlighting scheme, you can always use the Dracula scheme 
+which I used as a base. My modifications are minor, the overall color schemes harmonize well enough.
 
 ## Use git to install / update
 
-Alternatively, you can always create the ```Theme - Transylvania``` folder in your packages root and then clone the theme with git into that folder. Makes updating a bit easier.
+Alternatively, you can always create the `Theme - Transylvania` folder in your packages root and 
+then clone the theme with git into that folder. Makes updating a bit easier.
 
 ## Bugs, issues, wishes
 
-The theme's home on the web is [on GitHub](https://github.com/silvercircle/ST_Transylvania) and its issue tracker should be used for all inquiries.
+The theme's home on the web is [on GitHub](https://github.com/silvercircle/ST_Transylvania) and its 
+issue tracker should be used for all inquiries.
 
