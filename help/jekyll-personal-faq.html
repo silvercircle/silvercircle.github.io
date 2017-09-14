@@ -136,7 +136,7 @@
         
         <h1 id="jekyll-personal-faq">Jekyll personal FAQ</h1>
 <div class="author" style="float:right;font-size:smaller;">
-Last modified: <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
+Last modified: <time class="timeago" datetime="2017-09-14T23:03:16+0200">2017-09-14 23:03:16 +0200</time>
 </div>
 <div class="author" style="font-size:smaller;">
     Written by AlexVie in <a href="/category/jekyll/index.html">Jekyll</a>, <a href="/category/site/index.html">Site</a> | Tue, 22. August 2017, 22:45
@@ -272,9 +272,11 @@ page that includes them..</p>
 
 <h2 id="parse-markdown-in-a-frontmatter-variable">Parse markdown in a Frontmatter variable.</h2>
 
-<p>Normally, front matter content is not parsed, but you can always use the <code class="highlighter-rouge">markdownify</code> filter to parse anything you want.</p>
+<p>Normally, front matter content is not parsed, but you can always use the <code class="highlighter-rouge">markdownify</code> filter to 
+parse anything you want.</p>
 
-<p>Let’s assume, you have defined an excerpt via front matter, a couple of lines and you want to include a hyperlink and some simple markup.</p>
+<p>Let’s assume, you have defined an excerpt via front matter, a couple of lines and you want to 
+include a hyperlink and some simple markup.</p>
 
 <h4 id="solution">Solution:</h4>
 
@@ -295,9 +297,13 @@ page that includes them..</p>
 </code></pre>
 </div>
 
-<p>This applies both the predefined attribute <code class="highlighter-rouge">bold</code> and the CSS class <code class="highlighter-rouge">.indent</code> to the paragraph. Similar constructs are possible for <span style="text-decoration: underline;" class="c_red">span</span> level elements. Here, two classes were applied to the word span, one defining the <code class="highlighter-rouge">text-decoration: underline;</code>  and a second one setting the red color.</p>
+<p>This applies both the predefined attribute <code class="highlighter-rouge">bold</code> and the CSS class <code class="highlighter-rouge">.indent</code> to the paragraph. 
+Similar constructs are possible for <span style="text-decoration: underline;" class="c_red">span</span> level elements. Here, two 
+classes were applied to the word span, one defining the <code class="highlighter-rouge">text-decoration: underline;</code>  and a second 
+one setting the red color.</p>
 
-<p>It is also possible to <em>include</em> style definitions. Just create a <code class="highlighter-rouge">.markdown</code> file in <code class="highlighter-rouge">_includes</code>, say <code class="highlighter-rouge">defs.md</code>, that holds all the style definitions, like so:</p>
+<p>It is also possible to <em>include</em> style definitions. Just create a <code class="highlighter-rouge">.markdown</code> file in <code class="highlighter-rouge">_includes</code>, 
+say <code class="highlighter-rouge">defs.md</code>, that holds all the style definitions, like so:</p>
 
 <div class="highlighter-rouge">
 <pre class="highlight"><code><span class="p">{</span><span class="err">:cols:</span><span class="w"> </span><span class="err">.two_cols</span><span class="p">}</span><span class="w">
@@ -311,6 +317,24 @@ page that includes them..</p>
 </div>
 
 <p>You can then include that file in any article by simply placing a <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">defs.md</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> at the beginning of the document and use the pre-defined style attributes.</p>
+
+<h2 id="how-to-loop-over-a-collection-with-the-name-given-in-a-variable">How to loop over a collection with the name given in a variable?</h2>
+
+<p>You want to iterate over all documents in the collection when the name of the collection is given in 
+the variable <code class="highlighter-rouge">page.collection</code>.</p>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>collection<span class="w"> </span>in<span class="w"> </span>site.collections<span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">collection</span><span class="p">.</span><span class="nv">label</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">collection</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">collection</span><span class="p">.</span><span class="nv">docs</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="s2">"first"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'modified'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">reverse</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>page<span class="w"> </span>in<span class="w"> </span>pages<span class="w"> </span><span class="na">limit</span><span class="o">:</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="p">%}</span>
+            <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">sidebar/document_entry</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">break</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
 
 
         
@@ -338,6 +362,23 @@ s.setAttribute('data-timestamp', +new Date());
           <h2>Recent</h2>
            
  
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-14T23:03:16+0200">2017-09-14 23:03:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
  
    
    
@@ -380,23 +421,6 @@ s.setAttribute('data-timestamp', +new Date());
      <span class="date">
         
         <time class="timeago" datetime="2017-09-08T16:59:07+0200">2017-09-08 16:59:07 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   AlexVie
-   </span>
-   <br>
-   
-   
- 
-   
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-09-06T23:03:16+0200">2017-09-06 23:03:16 +0200</time>
         
      </span>
    </div>
