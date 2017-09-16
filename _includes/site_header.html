@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="{{ site.site-verification}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% if site.url contains 'https://' %}
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=14' | relative_url }}" media="screen" type="text/css">
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.js?v=14"></script>
     <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/favicon.png?">

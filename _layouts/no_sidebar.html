@@ -4,6 +4,9 @@
         <div style="margin:0 20px;">
         <article id="main-content" style="width:100%;">
           {{ content }}
+        {% if page.share and page.share == 1 %}
+            {% include share_post.html %}
+        {% endif %}
           {% if page.disqus and page.disqus == 1 %}
             {% include disqus_fragment.html %}
           {% endif %}

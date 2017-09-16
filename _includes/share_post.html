@@ -1,55 +1,42 @@
-<div class="shareButtons shareButtons--iconic" data-xf-init="share-buttons">
-<span class="shareButtons-label">Share:</span>
+{% capture full_url %}{{site.url}}{{site.baseurl}}{{page.url}}{% endcapture %}
+<div class="share_buttons sb-iconic">
+<span class="sb-label">Share:</span>
 
-<a class="shareButtons-button shareButtons-button--facebook" data-href="https://www.facebook.com/sharer.php?u={url}" title="" id="js-XFUniqueId8" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F">
-    <i aria-hidden="true"></i>
-    <span>Facebook</span>
-</a>
-
-<a class="shareButtons-button shareButtons-button--twitter" data-href="https://twitter.com/intent/tweet?url={url}&amp;text={title}&amp;via=XenForo" title="" id="js-XFUniqueId9" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F&amp;text=Upgrading%20flat%20awesome%20to%20XF2...&amp;via=XenForo">
+<a class="sbutton b-twitter" title="Share on Twitter" title="" href="https://twitter.com/intent/tweet?url={{full_url}}&amp;text={{page.title}}">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--gplus" data-href="https://plus.google.com/share?url={url}" title="" id="js-XFUniqueId10" href="https://plus.google.com/share?url=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F">
+<a class="sbutton b-facebook" title="Share on Facebook" title="" href="https://www.facebook.com/sharer.php?u={{full_url}}">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton b-gplus" title="Share on Google+" title="" href="https://plus.google.com/share?url={{full_url}}">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--reddit" data-href="https://reddit.com/submit?url={url}&amp;title={title}" title="" id="js-XFUniqueId11" href="https://reddit.com/submit?url=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F&amp;title=Upgrading%20flat%20awesome%20to%20XF2...">
+<a class="sbutton b-reddit" title="Share on reddit" title="" href="https://reddit.com/submit?url={{full_url}}&amp;title={{page.title}}">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--pinterest" data-href="https://pinterest.com/pin/create/bookmarklet/?url={url}&amp;description={title}" title="" id="js-XFUniqueId12" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F&amp;description=Upgrading%20flat%20awesome%20to%20XF2...">
+<a class="sbutton b-pinterest" title="Share on Pinterest" title="" href="https://pinterest.com/pin/create/bookmarklet/?url={{full_url}}&amp;description={{page.title}}">
     <i></i>
     <span>Pinterest</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--tumblr" data-href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&amp;title={title}" title="" id="js-XFUniqueId13" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F&amp;title=Upgrading%20flat%20awesome%20to%20XF2...">
+<a class="sbutton b-tumblr" title="Share on Tumblr" title="" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{full_url}}&amp;title={{page.title}}">
     <i></i>
     <span>Tumblr</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--whatsApp" data-href="https://api.whatsapp.com/send?text={title}&nbsp;{url}" title="" id="js-XFUniqueId14" href="https://api.whatsapp.com/send?text=Upgrading%20flat%20awesome%20to%20XF2...&nbsp;https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F">
-    <i></i>
-    <span>WhatsApp</span>
-</a>
-
-<a class="shareButtons-button shareButtons-button--email" data-href="mailto:?subject={title}&amp;body={url}" title="" id="js-XFUniqueId15" href="mailto:?subject=Upgrading%20flat%20awesome%20to%20XF2...&amp;body=https%3A%2F%2Fxenforo.com%2Fcommunity%2Fthreads%2Fupgrading-flat-awesome-to-xf2.133523%2F">
+<a class="sbutton b-email" title="" title="Share by e-mail" href="mailto:?subject={{page.title}}&amp;body={{full_url}}">
     <i></i>
     <span>Email</span>
 </a>
-
-<a class="shareButtons-button shareButtons-button--link" data-clipboard="{url}" title="" id="js-XFUniqueId16">
+<a class="sbutton b-whatsApp" title="Share on Whatsapp" title="" href="https://api.whatsapp.com/send?text={{page.title}}&nbsp;{{full_url}}">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton b-link" data-href="{{full_url}}" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>
-
-
-
-</div>
-
-
 </div>
 

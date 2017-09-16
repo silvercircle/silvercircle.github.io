@@ -6,6 +6,7 @@ date: 2017-09-14T01:56:00+0200
 modified: 2017-09-14T02:03:58+0200
 menucontext: got
 disqus: 1
+share: 1
 tag: [first, got, theory, generic]
 excerpt: >
     A theory that gained new momentum during season 7 is this older theory about Brandon Stark and 

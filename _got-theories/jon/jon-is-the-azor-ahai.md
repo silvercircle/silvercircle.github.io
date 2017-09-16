@@ -7,6 +7,7 @@ modified: 2017-09-12T16:10:49+0200
 menucontext: got
 tag: [first, got, theory, jon]
 disqus: 1
+share: 1
 excerpt: >
     This is a popular theory, claiming that Jon is indeed the *Prince that was promised*.
     <br><br>

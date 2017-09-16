@@ -8,15 +8,24 @@ layout: topics
 menucontext: topics
 tag: first
 disqus: 1
+share: 1
+excerpt: >
+    This is a UI theme for Sublime Text 3 that goes well with the [Dracula syntax coloring 
+    scheme](https://draculatheme.com/).
+    
 ---
 
 # Transylvania Theme for Sublime Text 3.
 {% include post_header.html %}
 This is a UI theme for Sublime Text 3 that goes well with the [Dracula syntax coloring scheme](https://draculatheme.com/).
 
-{% include gfx/block_image.html image="st-transylvania.png" title="Sublime Text 3 with the Transylvania theme and Dracula syntax coloring scheme" %}
+{% include gfx/block_image.html image="st-transylvania.png" title="Sublime Text 3 with the 
+Transylvania theme and Dracula syntax coloring scheme" %}
 
-It is work in progress and you can currently only obtain it from its [GitHub repo](https://github.com/silvercircle/ST_Transylvania) or this page. You need to install it manually, but once it's done and I'm fully satisfied (which can take quite some time), I'm going to submit it to package control.
+It is work in progress and you can currently only obtain it from its [GitHub 
+repo](https://github.com/silvercircle/ST_Transylvania) or this page. You need to install it 
+manually, but once it's done and I'm fully satisfied (which can take quite some time), I'm going to 
+submit it to package control.
 
 ## How to install manually
 

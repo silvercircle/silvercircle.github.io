@@ -6,6 +6,7 @@ date: 2017-09-11 19:05:06+0200
 modified: 2017-09-13T18:40:49+0200
 menucontext: got
 disqus: 1
+share: 1
 tag: [first, got, theory, jon]
 excerpt: >
     Some theories about Jon who is now officially no longer a Snow, but a Targaryen.

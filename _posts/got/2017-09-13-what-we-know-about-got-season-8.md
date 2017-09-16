@@ -21,6 +21,7 @@ image_width: 15%
 image_title: "GoT logo"
 image_link: 0
 disqus: 1
+share: 1
 ---
 
 # GoT season 8 facts known in September 2017

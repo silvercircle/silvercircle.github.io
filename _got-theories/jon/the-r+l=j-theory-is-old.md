@@ -7,6 +7,7 @@ modified: 2017-09-13T10:08:15+0200
 menucontext: got
 tag: [first, got, theory, jon]
 disqus: 1
+share: 1
 excerpt: >
     We all know by now what the R+L=J theory states. But where did it come from?
     <br><br>

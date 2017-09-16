@@ -36,6 +36,12 @@
     font-weight: normal;
     src: url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff") format("woff");
 }
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    src: url("#{$base}/assets/fonts/fontawesome-webfont.woff") format("woff");
+}
 /*
 @font-face {
     font-family: 'Guardian';

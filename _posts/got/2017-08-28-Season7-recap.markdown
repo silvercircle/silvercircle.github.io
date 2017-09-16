@@ -20,6 +20,7 @@ image_width: 30%
 image_title: "sansa the sith :)"
 image_link: 1
 disqus: 1
+share: 1
 ---
 
 # Season 7 was awesome, but...

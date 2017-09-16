@@ -20,6 +20,7 @@ image_width: 100px
 image_title: "GoT Logo"
 image_link: 0
 disqus: 1
+share: 1
 ---
 
 # Theories about Tyrion Lannister

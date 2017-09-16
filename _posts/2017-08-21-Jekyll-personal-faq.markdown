@@ -9,12 +9,17 @@ categories: [Jekyll,Site]
 menucontext: topics
 tag: [first, Jekyll]
 excerpt: >
-  This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.
+  This is a list of questions (and answers) I stumbled over while designing this site. It is by no 
+  means a complete list and will most likely cover topics that are already documented elsewhere. I 
+  found many answers on [stackoverflow questions tagged with 
+  Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still 
+  available. As almost always with such matter, stackoverflow is the #1 resource for such questions.
 image: logos/jekyll.png
 image_width: 130px
 image_align: right
 image_title: Jekyll Logo (CC-BY 4.0)
 disqus: 1
+share: 1
 ---
 
 # Jekyll personal FAQ
