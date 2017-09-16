@@ -41,8 +41,9 @@ getting even more complex, because there are varieties, one of them (the relevan
 {% include gfx/float_image.html image="got/hodor.jpg" width="35%" title="How Hodor became Hodor" 
 align="right" %}
 The theory basically states, that Bran is responsible for the existence of the Night King in the 
-same way he was responsible for the fate of Hodor. We remember, as seen in famous season 6 episode 
-*The Door*, Bran essentially **created** Hodor by mixing his warg ability with his visions. 
+same way he is responsible for the fate of Hodor. We remember, as seen in famous season 6 episode 
+*The Door*, Bran's reckless and inexperienced use of his supernatural abilities is the cause for 
+Hodor's mental state in present time.
 
 He traveled back in time and showed Hodor - by warging into Hodor's past presence Wylis - an event 
 of the future: The dreadful cave scene during which Hodor died at the hands of wights while saving 
@@ -197,6 +198,16 @@ things and gave us some of the best scenes in the show (Ser Arthur Dayne fight, 
 Hodor), but what's the point of his time travels? So far, the only outcome has been background 
 knowledge; we know who Jon Snow really is, we know how the Night King came into existence, and we 
 know, why Hodor behaved the way he did.
+
+I will conclude this with another hint from the final episode of the seventh season. After the NK 
+breached the wall with undead Viserion, the army of White Walkers and wights was seen marching south 
+from a bird's eye perspective:
+
+{% include gfx/block_image.html image="got/7x7-finale-walkers-formation.jpg" title="The final image 
+of S07E07" borderclass="borderless" %}
+
+Now, if you carefully look at the formation of the undead army, does it look familiar, or what? If 
+you do not recognize it, here is a hint: Google *stark sigil* :)
 
 
 [^legend]: In the legend, the Azor Ahai had to sacrifice his wife for creating a powerful weapon

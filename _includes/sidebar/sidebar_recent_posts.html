@@ -28,14 +28,13 @@
   <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
   <div class="clear"></div>
  {% endif %}
- <hr class="blueline">
  {% if include.list_cats %}
+<hr class="blueline">
 <h2>Categories</h2>
 <div class="two_cols">
 {% for category in site.categories %}
    <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/">{{ category | first | strip_html | tolower}}</a></h3>
 {% endfor %}
 </div>
-<hr class="blueline">
 {% endif %}
 

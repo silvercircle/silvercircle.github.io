@@ -11,7 +11,7 @@ Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%d
 </div>
 <div class="clearfix"></div>
 <hr class="separator">
-<div class="content excerpt">
+<div class="content excerpt" style="margin-bottom: 4px;">
   {% if post.image and post.image != '' %}
   {% if post.image_link and post.image_link == 1 %}
     {% assign this_nolink = 0 %}
@@ -22,9 +22,15 @@ Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%d
   {% endif %}
   {{ post.excerpt | markdownify }}
 </div>
-<div style="float:right;">
+<div style="float:right">
   <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
 </div>
+{% for tag in post.tag %}
+    {% if tag == 'first' %}
+        {% continue %}
+    {% endif %}
+    <a class="tag" href="{{site.baseurl}}/tags/{{tag || downcase}}">{{tag}}</a>
+{% endfor %}
 <div class="clear"></div>
 {% if post.spoiler and post.spoiler == 1 and include.showspoiler != 1 %}
 </div>

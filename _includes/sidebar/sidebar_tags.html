@@ -1,0 +1,11 @@
+<hr class="blueline">
+<h2>Site tags</h2>
+{%- assign tags = site.documents | map: 'tag' | join: ',' | split: ',' | uniq | sort -%}
+{%- for tag in tags -%}
+{%- if tag == 'first' -%}
+{%- continue -%}
+{%- endif -%}
+{% unless forloop.first %}, {% endunless %}
+<a href="{{site.baseurl}}/tags/{{tag | downcase }}">{{tag | strip}}</a>
+{%- endfor -%}
+

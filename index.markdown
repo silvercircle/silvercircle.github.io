@@ -8,30 +8,44 @@ modified: 2017-08-25 06:35:07+0200
 ---
 # So, what's this all about?
 {: style="margin-bottom:20px;"}
-<div class="two_cols" markdown="1">
+<div markdown="1">
+<div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
+### Featured
+{: .cbox_header}
+{% include gfx/block_image.html image="st-transylvania.png" borderclass="borderless" 
+title="Transylvania Theme for ST 3" omitbottomcaption=1 %}
+[ST-Transylvania]({{site.baseurl}}/software/Transylvania-theme-for-sublimetext-3) is a theme for 
+Sublime Text 3 that harmonizes well with the dracula color scheme.
+{: style="font-size:100%;text-align:center;"}
+</div>
 Well, right now it's not much. It's some sort of playground to test [Jekyll](https://jekyllrb.com),
-a static page generator that has enough flexibility to build a blog or documentation site with it,
+a static page generator that has enough flexibility to build a blog or documentation site,
 but leaves out all the bloat that makes modern content management systems slow and prone to
-security problems. It also significantly lowers the requirements for hosting to a simple webserver that can serve static files (essentially, what basically **all** web servers can).
+security problems. It also significantly lowers the requirements for hosting to a simple web server 
+that can serve static files (essentially, what basically **all** web servers can).
 
 With Jekyll, there is no need for a database or complex web server configuration. The only thing
 needed is a working ruby and Jekyll installation on either your local development machine or the
 server machine itself and a web server that can serve static files.
 
-I'm using Jekyll to convert parts of my old WordPress blog, that was unmaintained for years and I decided to take down, after some clever guy found a way to abuse it for sending a couple ten-thousand spam mails, successfully listing my server in all kind RBLs :) Which is precisely why I think, that WordPress isn't exactly suitable for casual publishing. While it can do great things, it also needs **a lot** of attention and maintenance for which I do not want to invest more time than absolutely necessary.
+Jekyll is also supported by [GitHub pages](https://pages.github.com/) who give you essentially 
+unlimited free web hosting, but won't allow you to run PHP, Python, Java or whatever else on their 
+servers. But you can use Jekyll either locally to build your static site or let GibHub run it 
+whenever you change content.
 
-Jekyll, on the contrary, might have a steeper learning curve, particularly if you come from a traditional CMS background, but once a Jekyll site is set up like you want it, it requires little to none maintainance other than adding new content.
+Plus, you get free awesome revision control for your entire site. Never lose a change or important 
+article again.
 </div>
+<div class="clear"></div>
 <hr class="blueline">
 <div class="boxcontainer" markdown="1">
 <div class="contentbox" markdown="1">
 <div class="contentbox_inner" style="font-size:smaller;" markdown="1">
-### Blog
+### Recent blog
 {: .cbox_header}
 <div class="cbox_body">
- {% assign counter = 1 %}
  {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
- {% for post in this_posts %}
+ {% for post in this_posts limit: 5 %}
    {% assign ttags = post.tags | join:'|' | append:'|' %}
    {% if post.isfollowup and post.isfollowup == 1 %}
    {% continue %}
@@ -50,10 +64,6 @@ Jekyll, on the contrary, might have a steeper learning curve, particularly if yo
    {{post.author}}
    </span>
    <br>
-   {% assign counter = counter | plus: 1 %}
-   {% if counter > 5 %}
-   {% break %}
-   {% endif %}   
  {% endfor %}
 <div style="float:right"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>
 <div style="clear:both;"></div>
@@ -63,10 +73,31 @@ Jekyll, on the contrary, might have a steeper learning curve, particularly if yo
 </div>
 <div class="contentbox" markdown="1">
 <div class="contentbox_inner" markdown="1">
-### Topics
+### Recent articles
 {: .cbox_header}
 <div class="cbox_body">
-   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web development</a></h3>
+ {% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
+ {% assign counter = 1 %}
+ {% for page in docs %}
+ {% if page.menucontext == 'blog' or page.blog == 1 or page.blog == true %}
+    {% continue %}
+ {% endif %}
+ {% include sidebar/document_entry.html %}
+ {% assign counter = counter | plus: 1 %}
+ {% if counter > 6 %}
+ {% break %}
+ {% endif %}
+ {% endfor %}
+</div>
+</div>
+</div>
+<div class="contentbox" markdown="1">
+<div class="contentbox_inner" markdown="1">
+### All site topics
+{: .cbox_header}
+<div class="cbox_body">
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web 
+   development</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software">Software</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/tabsrmm">TabRSMM / Miranda IM (archived content)</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/development">Development</a></h3>
@@ -75,18 +106,10 @@ Jekyll, on the contrary, might have a steeper learning curve, particularly if yo
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/got">Game of Thrones</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of 
    Thrones theories</a></h3>
-   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++ programming.</a></h3>
-</div>
-</div>
-</div>
-<div class="contentbox" markdown="1">
-<div class="contentbox_inner" markdown="1">
-### More...
-{: .cbox_header}
-<div class="cbox_body" markdown="1">
-   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software/Transylvania-theme-for-sublimetext-3/">Transylvania Theme for Sublime Text 3</a></h3>
-   {% include gfx/block_image.html image="st-transylvania.png" title="Click to enlarge" borderclass="borderless" %}
-</div>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++ 
+   programming.</a></h3>
+   
+   </div>
 </div>
 </div>
 </div>

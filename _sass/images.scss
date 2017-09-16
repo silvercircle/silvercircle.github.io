@@ -17,6 +17,9 @@ div.blockimage.borderless {
     padding: 0; 
     background: transparent;}
 
+div.blockimage.borderless.nomargin {
+    margin: 0 !important;}
+
 div.blockimage {
     background-color: #efefef;
     padding: 0;

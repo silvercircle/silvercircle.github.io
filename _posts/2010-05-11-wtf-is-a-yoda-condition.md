@@ -6,7 +6,7 @@ author: AlexVie
 layout: default
 categories: [Development,Fun]
 menucontext: blog
-tag: first
+tag: [first]
 disqus: 1
 excerpt: >
   What is a "Yoda condition" and do I really need it? In short, it is a reverse notation of certain conditional statements in C/C++.

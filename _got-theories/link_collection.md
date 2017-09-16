@@ -25,7 +25,17 @@ of Thrones.
 ### The Night King
 
 * [This](http://www.independent.co.uk/arts-entertainment/tv/news/game-of-thrones-season-8-theory-night-king-white-walker-motive-gods-eye-isle-of-faces-a7939331.html) 
-  theory claims to have found out the Night King's true motivation.
+  theory claims to have found out the Night King's true motivation and sees a grande finale at the 
+  God's Eye near Harrenhal in the center of Westeros. The place where many thousand years ago, [the 
+  Pact](http://awoiaf.westeros.org/index.php/Pact) between the first men, who came as conquerors, 
+  and the indigenous people of Westeros, to use known as Children of the Forst, was signed.
+
+  This ended a long war, during which the Night King was magically created from one of the first 
+  men.
+
+* [This]({{site.baseurl}}/got-theories/bran-is-the-night-king/) is my interpretation of a theory 
+  that has become popular stating that Bran and the Night King is the same person. It's backed by 
+  quite some facts and hints.
 
 ### General theories
 

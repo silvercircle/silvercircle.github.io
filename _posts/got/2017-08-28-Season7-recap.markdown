@@ -1,23 +1,23 @@
 ---
-title: GoT Season 7 recap
+title: got season 7 recap
 layout: default
 author: alex
 blog: true
 date: 2017-08-28 01:31:31+0200
 modified: 2017-08-28 02:31:36+0200
-categories: [GoT, Fun]
+categories: [GoT, fun]
 permalink: /got/season7-recap.html
 menucontext: blog
 tag: [first, got, video]
 excerpt: >
-  Game of Thrones Season 7 is already over and to me it seems it just started last week, but in 
-  reality, it's been 6 weeks ago. The shortest season so far brought a major events at an alarming 
-  rate and some of these events were unfortunately too predictable. This might, however, just be a 
-  side effect of the main plot approaching the final conclusion.
+    game of thrones season 7 is already over and to me it seems it just started last week, but in 
+    reality, it's been 6 weeks ago. the shortest season so far brought a major events at an alarming 
+    rate and some of these events were unfortunately too predictable. this might, however, just be a 
+    side effect of the main plot approaching the final conclusion.
 image: got/sansa_the_sith.jpg
 image_align: right
 image_width: 30%
-image_title: "Sansa the Sith :)"
+image_title: "sansa the sith :)"
 image_link: 1
 disqus: 1
 ---

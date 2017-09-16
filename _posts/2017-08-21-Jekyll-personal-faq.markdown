@@ -3,11 +3,11 @@ author: AlexVie
 title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00+0200
-modified: 2017-09-06 23:03:16+0200
+modified: 2017-09-14 23:03:16+0200
 layout: default
 categories: [Jekyll,Site]
 menucontext: topics
-tag: first
+tag: [first, Jekyll]
 excerpt: >
   This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.
 image: logos/jekyll.png
@@ -132,16 +132,18 @@ The *unless* statement outputs everything between it and the next *endunless* as
 
 ## Parse markdown in a Frontmatter variable.
 
-Normally, front matter content is not parsed, but you can always use the ```markdownify``` filter to parse anything you want. 
+Normally, front matter content is not parsed, but you can always use the `markdownify` filter to 
+parse anything you want. 
 
-Let's assume, you have defined an excerpt via front matter, a couple of lines and you want to include a hyperlink and some simple markup.
+Let's assume, you have defined an excerpt via front matter, a couple of lines and you want to 
+include a hyperlink and some simple markup.
 
 #### Solution:
 {% raw %}
 ```liquid
    {{ post.excerpt }}                 // raw content, "as is"
    {{ post.excerpt | markdownify }}   // fully parsed
-```   
+```
 {% endraw %}
 
 ## Apply multiple style attributes to block or span level elements
@@ -154,9 +156,13 @@ My paragraph text...[...]
 {: .indent}
 ```
 {% endraw %}
-This applies both the predefined attribute `bold` and the CSS class `.indent` to the paragraph. Similar constructs are possible for <span>span</span>{:un}{: .c_red} level elements. Here, two classes were applied to the word span, one defining the `text-decoration: underline;`  and a second one setting the red color.
+This applies both the predefined attribute `bold` and the CSS class `.indent` to the paragraph. 
+Similar constructs are possible for <span>span</span>{:un}{: .c_red} level elements. Here, two 
+classes were applied to the word span, one defining the `text-decoration: underline;`  and a second 
+one setting the red color.
 
-It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, say `defs.md`, that holds all the style definitions, like so:
+It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, 
+say `defs.md`, that holds all the style definitions, like so:
 {% raw %}
 ```
 {:cols: .two_cols}
@@ -168,5 +174,24 @@ It is also possible to *include* style definitions. Just create a `.markdown` fi
 {:iright: style="padding-right: 20px; border-right: 3px solid #ccc"}
 ```
 {% endraw %}
-You can then include that file in any article by simply placing a {% raw %}`{% include defs.md %}`{% endraw %} at the beginning of the document and use the pre-defined style attributes.
+You can then include that file in any article by simply placing a {% raw %}`{% include defs.md %}`{% 
+endraw %} at the beginning of the document and use the pre-defined style attributes.
+
+## How to loop over a collection with the name given in a variable?
+
+You want to iterate over all documents in the collection when the name of the collection is given in 
+the variable `page.collection`.
+{% raw %}
+```liquid
+{% for collection in site.collections %}
+    {% if collection.label == page.collection %}
+        {% assign pages = collection.docs | where: "tags", "first" | sort: 'modified' | reverse %}
+        {% for page in pages limit: 5 %}
+            {% include sidebar/document_entry.html %}
+        {% endfor %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+```
+{% endraw %}
 
