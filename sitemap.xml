@@ -25,6 +25,10 @@
 <lastmod>2017-09-14T01:56:00+02:00</lastmod>
 </url>
 <url>
+<loc>https://silvercircle.github.io/got-theories/jaime/got-theories-jaime/</loc>
+<lastmod>2017-09-17T19:48:34+02:00</lastmod>
+</url>
+<url>
 <loc>https://silvercircle.github.io/2010/05/11/wtf-is-a-yoda-condition/</loc>
 <lastmod>2010-05-11T09:18:08+02:00</lastmod>
 </url>
@@ -47,10 +51,6 @@
 <url>
 <loc>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/</loc>
 <lastmod>2017-08-22T16:30:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://silvercircle.github.io/help/jekyll-personal-faq-page2.html</loc>
-<lastmod>2017-08-22T22:45:00+02:00</lastmod>
 </url>
 <url>
 <loc>https://silvercircle.github.io/help/jekyll-personal-faq.html</loc>
@@ -179,7 +179,7 @@
 <loc>https://silvercircle.github.io/category/fun/</loc>
 </url>
 <url>
-<loc>https://silvercircle.github.io/webdev/</loc>
+<loc>https://silvercircle.github.io/tags/</loc>
 </url>
 <url>
 <loc>https://silvercircle.github.io/category/jekyll/</loc>
@@ -188,7 +188,7 @@
 <loc>https://silvercircle.github.io/category/qt/</loc>
 </url>
 <url>
-<loc>https://silvercircle.github.io/category/site/</loc>
+<loc>https://silvercircle.github.io/category/development/</loc>
 </url>
 <url>
 <loc>https://silvercircle.github.io/got-theories/generic/</loc>
@@ -203,9 +203,6 @@
 <loc>https://silvercircle.github.io/got-theories/</loc>
 </url>
 <url>
-<loc>https://silvercircle.github.io/category/development/</loc>
-</url>
-<url>
 <loc>https://silvercircle.github.io/category/c++/</loc>
 </url>
 <url>
@@ -215,10 +212,7 @@
 <loc>https://silvercircle.github.io/blog/page2.html</loc>
 </url>
 <url>
-<loc>https://silvercircle.github.io/tags/</loc>
-</url>
-<url>
-<loc>https://silvercircle.github.io/tags/video/</loc>
+<loc>https://silvercircle.github.io/webdev/</loc>
 </url>
 <url>
 <loc>https://silvercircle.github.io/all/</loc>
@@ -231,6 +225,12 @@
 </url>
 <url>
 <loc>https://silvercircle.github.io/all/page4.html</loc>
+</url>
+<url>
+<loc>https://silvercircle.github.io/tags/video/</loc>
+</url>
+<url>
+<loc>https://silvercircle.github.io/category/site/</loc>
 </url>
 <url>
 <loc>https://silvercircle.github.io/tags/tyrion/</loc>
@@ -249,6 +249,9 @@
 </url>
 <url>
 <loc>https://silvercircle.github.io/tags/got/</loc>
+</url>
+<url>
+<loc>https://silvercircle.github.io/tags/jaime/</loc>
 </url>
 <url>
 <loc>https://silvercircle.github.io/tags/jekyll/</loc>
