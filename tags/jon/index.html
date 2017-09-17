@@ -41,8 +41,31 @@
           <dl>
           <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
           <dd>A Jekyll test site with no particular purpose.</dd>
-        </dl>
-        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+          </dl>
+            <div class="share_buttons header sb-iconic">
+            <span class="sb-label header">Connect:</span>
+
+            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+                <i aria-hidden="true"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+                <i aria-hidden="true"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback%20https://silvercircle.github.io/tags/jon/index.html%20(Tag:%20Jon%20-%20all%20content)">
+                <i></i>
+                <span>Email</span>
+            </a>
+            </div>
       </div>
     </header>
      <div class="menubar_wrapper">
@@ -71,6 +94,15 @@
            </li>
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
           </li>
           <li id="button_blog" class="">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
@@ -300,11 +332,18 @@ Last modified: <time class="timeago" datetime="2017-09-12T16:10:49+0200">2017-09
 </div>
 
 
+        <div style="margin-top: 0.5em">
+
+
+<div class="clear"></div>
+</div>
+
+
         
         
         </article>
         <aside id="sidebar">
-          <h2>Recent content</h2>
+                    <h2>Recent content</h2>
             
             
             
@@ -430,6 +469,8 @@ Last modified: <time class="timeago" datetime="2017-09-12T16:10:49+0200">2017-09
             
             <div style="float:right;margin: 5px 0;"><a href="/all/">Show all...</a></div>
             <div class="clear"></div>
+
+
           <hr class="blueline">
 <h2>Site tags</h2>
 <a href="/tags/github">GitHub</a>, 
@@ -466,8 +507,8 @@ Last modified: <time class="timeago" datetime="2017-09-12T16:10:49+0200">2017-09
           <a href="/help/contact.html">Contact</a>
 		</div>
 		<div class="column center">
-          All times are in UTC<br>
-		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
 		</div>
 		<div class="column right">
 		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
@@ -477,6 +518,7 @@ Last modified: <time class="timeago" datetime="2017-09-12T16:10:49+0200">2017-09
 	</div>
 </div>
 </footer>
+
     
     <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -44,8 +44,31 @@
           <dl>
           <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
           <dd>A Jekyll test site with no particular purpose.</dd>
-        </dl>
-        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+          </dl>
+            <div class="share_buttons header sb-iconic">
+            <span class="sb-label header">Connect:</span>
+
+            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+                <i aria-hidden="true"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+                <i aria-hidden="true"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback%20https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/%20(Strange%20unwanted%20padding%20around%20images%20and%20how%20to%20fix)">
+                <i></i>
+                <span>Email</span>
+            </a>
+            </div>
       </div>
     </header>
      <div class="menubar_wrapper">
@@ -74,6 +97,15 @@
            </li>
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
           </li>
           <li id="button_blog" class="">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
@@ -184,10 +216,23 @@ Now, the unwanted additional padding on the bottom edge is gone. The image behav
 element and will perfectly fit in the surrounding box model.</p>
 
 
+        <div style="margin-top: 0.5em">
+
+<div style="float:right;">
+    Words: 338
+</div>
+
+
+    
+        
+<div class="clear"></div>
+</div>
+
+
         
         
             
-<div id="disqus_thread"></div>
+<div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/";  // Replace PAGE_URL with your page's canonical URL variable
@@ -203,6 +248,7 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>                            
+
 
         
         </article>
@@ -270,21 +316,22 @@ s.setAttribute('data-timestamp', +new Date());
 
 
           
-            <h2>Recent in this topic</h2>
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    
-                    
-                    
-                                   <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/">Strange unwanted padding around images and how to fix</a></h3>
+<hr class="blueline">
+<h2>Recent in this topic</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+        
+                       <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/">Strange unwanted padding around images and how to fix</a></h3>
            <div class="author" style="float:right;">
              <span class="date">
                 
@@ -298,10 +345,10 @@ s.setAttribute('data-timestamp', +new Date());
            <br>
 
 
-                        
-                        
-                    
-                                   <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev/css/embed-youtube-any-size-and-correct-aspect/">YouTube embedding with correct aspect and any width</a></h3>
+            
+            
+        
+                       <h3 class="text-ellipsis sidebar_listheader"><a href="/webdev/css/embed-youtube-any-size-and-correct-aspect/">YouTube embedding with correct aspect and any width</a></h3>
            <div class="author" style="float:right;">
              <span class="date">
                 
@@ -315,13 +362,15 @@ s.setAttribute('data-timestamp', +new Date());
            <br>
 
 
-                        
-                        
-                    
-                    <div style="float:right;margin: 5px 0;"><a href="/webdev">Show all...</a></div>
-                    <div class="clear"></div>
-                    
-          
+            
+            
+        
+        <div style="float:right;margin: 5px 0;"><a href="/webdev">Show all...</a></div>
+        <div class="clear"></div>
+        
+
+
+
           <hr class="blueline">
 <h2>Site tags</h2>
 <a href="/tags/github">GitHub</a>, 
@@ -358,8 +407,8 @@ s.setAttribute('data-timestamp', +new Date());
           <a href="/help/contact.html">Contact</a>
 		</div>
 		<div class="column center">
-          All times are in UTC<br>
-		  <a href="/help/jekyll-personal-faq.html">Site FAQ</a>
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
 		</div>
 		<div class="column right">
 		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
@@ -369,6 +418,7 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </div>
 </footer>
+
     
     <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

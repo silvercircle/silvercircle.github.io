@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-16T13:45:56+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T19:40:54+02:00</published><updated>2017-09-13T19:40:54+02:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-17T02:20:54+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T19:40:54+02:00</published><updated>2017-09-13T19:40:54+02:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-13T19:41:05+0200&quot;&gt;2017-09-13 19:41:05 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -94,9 +94,16 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:5
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back in the days when I was working on a fairly popular open source project and used my web presence for all kind of documentation and collaboration. This was before the social net took off, when forums, instant messaging and group chats were the #1 way to interact on the Net.&lt;/p&gt;
+&lt;p&gt;For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a 
+dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back 
+in the days when I was working on a fairly popular open source project and used my web presence for 
+all kind of documentation and collaboration. This was before the social net took off, when forums, 
+instant messaging and group chats were the #1 way to interact on the Net.&lt;/p&gt;
 
-&lt;p&gt;It was a more or less pure &lt;em&gt;LAMP&lt;/em&gt; solution (Linux, Apache, MySQL, PHP), with the exception that my OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric approach stayed.&lt;/p&gt;
+&lt;p&gt;It was a more or less pure &lt;em&gt;LAMP&lt;/em&gt; solution (Linux, Apache, MySQL, PHP), with the exception that my 
+OS of choice was always FreeBSD, but that makes little difference. Later, Apache got replaced by 
+Nginx, MySQL by MariaDB, and I experimented a lot with Python-based software, but the PHP-centric 
+approach stayed.&lt;/p&gt;
 
 &lt;p&gt;For the purpose of this article, I’m going to limit it to the blog part, which is probably the part I invested most time over the years. It started around 2002 or so with a software then named jBlog (or jLog), written in PHP, which was later renamed to Serendipity and is still around 15 years later in 2017. It was very basic, even more basic than WordPress 1.0 which appeared about a year later, but it was good enough to run a simple blog with nothing but articles and the odd image every now and then.&lt;/p&gt;
 
@@ -173,7 +180,9 @@ pages is the bread and butter of all web servers.&lt;/p&gt;
 &lt;h3 id=&quot;the-advantages-pros&quot;&gt;The advantages (“pros”)&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;basically unlimited storage.&lt;/li&gt;
+  &lt;li&gt;generous resource limits (it’s not unlimited, but what you &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/#usage-limits&quot;&gt;get for 
+free&lt;/a&gt; is still very 
+impressive).&lt;/li&gt;
   &lt;li&gt;free revision control. This means, you can never lose work as it always remains possible to revert changes or get older versions of a particular article back for reference. Revision control is a major feature of most modern CMS and Wiki authoring systems. With GitHub, you get it for free and for everything - not only for articles, but also for templates, style sheets, even images.&lt;/li&gt;
   &lt;li&gt;very stable, reliable hosting. I’ve never experienced GitHub being down, slow or even unresponsive.&lt;/li&gt;
   &lt;li&gt;no resource limits. Your hosting isn’t limited in CPU power, RAM usage or number of database connections. It simply doesn’t matter with static pages.&lt;/li&gt;
