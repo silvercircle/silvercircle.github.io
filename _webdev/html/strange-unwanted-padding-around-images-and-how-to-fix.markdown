@@ -8,6 +8,7 @@ menucontext: topics
 collection: webdev
 tag: first
 disqus: 1
+share: 1
 excerpt: >
     Sometimes, images enclosed by divs or other block level elements show apparently strange and unwanted 2-3 pixels of padding on the bottom edge even though the containing element has no padding set at all.
 ---

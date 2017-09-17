@@ -1,0 +1,21 @@
+{% if page.collection and page.collection != '' %}
+<hr class="blueline">
+<h2>Recent in this topic</h2>
+{% for collection in site.collections %}
+    {% if collection.label == page.collection %}
+        {% assign pages = collection.docs | where: "tags", "first" | sort: 'modified' | reverse %}
+        {% assign counter = 1 %}
+        {% for page in pages %}
+            {% include sidebar/document_entry.html %}
+            {% assign counter = counter | plus: 1 %}
+            {% if counter > 5 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/{{page.collection}}">Show all...</a></div>
+        <div class="clear"></div>
+        {% break %}
+    {% endif %}
+{% endfor %}
+{% endif %}
+

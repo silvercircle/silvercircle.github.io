@@ -28,8 +28,31 @@
           <dl>
           <dt><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></dt>
           <dd>{{ site.description }}</dd>
-        </dl>
-        <a href="https://github.com/silvercircle/silvercircle.github.io" class="button"><small>Follow me on</small> GitHub</a>
+          </dl>
+            <div class="share_buttons header sb-iconic">
+            <span class="sb-label header">Connect:</span>
+
+            <a class="sbutton contrast b-twitter" title="Twitter" href="{{site.data.social_profiles.twitter}}">
+                <i aria-hidden="true"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="sbutton contrast b-facebook" title="Facebook" href="{{site.data.social_profiles.facebook}}">
+                <i aria-hidden="true"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="sbutton contrast b-gplus" title="Google+" href="{{site.data.social_profiles.google}}">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-github" title="GitHub" href="{{site.data.social_profiles.github}}">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to={{site.data.social_profiles.email}}&amp;subject=Site_Feedback {{page.url | absolute_url}} ({{page.title}})">
+                <i></i>
+                <span>Email</span>
+            </a>
+            </div>
       </div>
     </header>
      <div class="menubar_wrapper">

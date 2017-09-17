@@ -8,6 +8,7 @@ categories: [Development,Qt,C++]
 menucontext: blog
 tag: first
 disqus: 1
+share: 1
 excerpt: >
     Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is 
     possible, either globally for all Qt applications or per application.

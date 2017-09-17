@@ -1,6 +1,9 @@
-div.share_uttons {
-    padding: 10px;
+div.share_buttons.header {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
+
 .share_buttons:before,
 .share_buttons:after {
     content: " ";
@@ -17,6 +20,9 @@ div.share_uttons {
     line-height: 35px;
     font-size: 16pt;
 }
+.sb-label.header {
+    line-height: 47px;
+}
 .sbutton {
     float: left;
     margin-right: 3px;
@@ -31,6 +37,15 @@ div.share_uttons {
     -webkit-transition: all .25s ease;
     transition: all .25s ease
 }
+
+.sbutton.contrast {
+    color: white;
+    background-color: rgba(200, 200, 220, 0.3);
+    border-radius: 50%;
+    line-height: 30px;
+    min-height: 35px;
+}
+
 .sbutton:last-of-type {
     margin-right: 0
 }
@@ -66,6 +81,15 @@ div.share_uttons {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden
+}
+
+.sbutton.b-github:hover {
+    background-color: #24292E;
+}
+.sbutton.b-github>i:before {
+    content: "\f09b";
+    display: inline-block;
+    width: .93em
 }
 .sbutton.b-facebook:hover {
     background-color: #3B5998
@@ -185,3 +209,14 @@ div.share_uttons {
 .shareInput-button.is-hidden+.shareInput-input {
     border-radius: 4px
 }
+
+@media only screen and (max-width: 767px) {
+    div.share_buttons.header {
+        display:block;
+        position: inherit;
+    }
+    .sb-label.header {
+        display: none;
+    }
+}
+

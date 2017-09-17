@@ -16,6 +16,7 @@ image_align: right
 image_nolink: 1
 image_title: The AGG Logo
 disqus: 1
+share: 1
 ---
 
 # Rendering with AGG and buffered paint.

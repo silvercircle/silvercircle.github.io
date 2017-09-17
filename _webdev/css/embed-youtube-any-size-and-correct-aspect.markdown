@@ -7,6 +7,7 @@ modified: 2017-08-31T23:56:30+02:00
 menucontext: topics
 tag: [first,css]
 disqus: 1
+share: 1
 collection: webdev
 excerpt: >
   This is a HowTo and deals with the problem of embedding YouTube videos at any desired size. The size of the video should be determined by the surrounding container. No fixed width and height values are needed.

@@ -8,6 +8,7 @@
         <article id="main-content">
         {% endif %}
         {{ content }}
+        {% include content_footer.html %}
         {% if page.share and page.share == 1 %}
             {% include share_post.html %}
         {% endif %}
@@ -16,14 +17,7 @@
         {% endif %}
         </article>
         <aside id="sidebar">
-          <h2>Recent content</h2>
-            {% assign pages = site.documents | where: "tags", "first" | sort: 'modified' | reverse %}
-            {% assign counter = 1 %}
-            {% for page in pages limit:8 %}
-                {% include sidebar/document_entry.html %}
-            {% endfor %}
-            <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/all/">Show all...</a></div>
-            <div class="clear"></div>
+          {% include sidebar/tags_content_recent.html %}
           {% include sidebar/sidebar_tags.html %}
           <hr class="blueline">
           <h2>All topics</h2>

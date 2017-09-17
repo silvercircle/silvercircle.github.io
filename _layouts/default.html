@@ -8,6 +8,7 @@
         <article id="main-content">
         {% endif %}
         {{ content }}
+        {% include content_footer.html %}
         {% if page.share and page.share == 1 %}
             {% include share_post.html %}
         {% endif %}

@@ -482,7 +482,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.shareButtons-button').on('click', function(event) {
+    $('.sbutton.clickable').on('click', function(event) {
         PopupCenter($(this).attr('href'), $(this).attr('data-title'), 640, 480);
         return(false);
     });

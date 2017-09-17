@@ -7,6 +7,7 @@ layout: default
 categories: [Fun]
 menucontext: blog
 tag: first
+share: 1
 disqus: 1
 excerpt: >
     Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.

@@ -3,7 +3,8 @@
       <div class="inner clearfix">
         <div style="margin:0 20px;">
         <article id="main-content" style="width:100%;">
-          {{ content }}
+        {{ content }}
+        {% include content_footer.html %}
         {% if page.share and page.share == 1 %}
             {% include share_post.html %}
         {% endif %}

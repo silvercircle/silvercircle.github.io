@@ -1,40 +1,44 @@
-{% capture full_url %}{{site.url}}{{site.baseurl}}{{page.url}}{% endcapture %}
-<div class="share_buttons sb-iconic">
+{% if page.share_url and page.share_url != '' %}
+    {% capture full_url %}{{site.url}}{{site.baseurl}}{{page.share_url}}{% endcapture %}
+{% else %}
+    {% capture full_url %}{{site.url}}{{site.baseurl}}{{page.url}}{% endcapture %}
+{% endif %}
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton b-twitter" title="Share on Twitter" title="" href="https://twitter.com/intent/tweet?url={{full_url}}&amp;text={{page.title}}">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url={{full_url}}&amp;text={{page.title}}">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-<a class="sbutton b-facebook" title="Share on Facebook" title="" href="https://www.facebook.com/sharer.php?u={{full_url}}">
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u={{full_url}}">
     <i aria-hidden="true"></i>
     <span>Facebook</span>
 </a>
-<a class="sbutton b-gplus" title="Share on Google+" title="" href="https://plus.google.com/share?url={{full_url}}">
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url={{full_url}}">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton b-reddit" title="Share on reddit" title="" href="https://reddit.com/submit?url={{full_url}}&amp;title={{page.title}}">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url={{full_url}}&amp;title={{page.title}}">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton b-pinterest" title="Share on Pinterest" title="" href="https://pinterest.com/pin/create/bookmarklet/?url={{full_url}}&amp;description={{page.title}}">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url={{full_url}}&amp;description={{page.title}}">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton b-tumblr" title="Share on Tumblr" title="" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{full_url}}&amp;title={{page.title}}">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{full_url}}&amp;title={{page.title}}">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton b-email" title="" title="Share by e-mail" href="mailto:?subject={{page.title}}&amp;body={{full_url}}">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject={{page.title}}&amp;body={{full_url}}">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton b-whatsApp" title="Share on Whatsapp" title="" href="https://api.whatsapp.com/send?text={{page.title}}&nbsp;{{full_url}}">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text={{page.title}}&nbsp;{{full_url}}">
     <i></i>
     <span>WhatsApp</span>
 </a>
-<a class="sbutton b-link" data-href="{{full_url}}" title="Copy link to clipboard">
+<a class="sbutton clickable b-link" data-href="{{full_url}}" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>

@@ -5,6 +5,15 @@
            </li>
            <li id="button_about" class="{% if page.menucontext == 'about' %}active{% endif %}">
               <a class="firstlevel" href="{{site.baseurl}}/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="{{site.baseurl}}/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="{{site.baseurl}}/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
           </li>
           <li id="button_blog" class="{% if page.menucontext == 'blog' %}active{% endif %}">
               <a class="firstlevel" href="{{site.baseurl}}/blog/index.html">Blog</a>

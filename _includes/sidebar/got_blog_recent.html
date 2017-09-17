@@ -1,0 +1,31 @@
+         <h2>GoT in the blog</h2>
+         {% assign counter = 1 %}
+         {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
+         {% for post in this_posts %}
+           {% unless post.categories contains 'GoT' %}
+               {% continue %}
+           {% endunless %}
+           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+           <div class="author" style="float:right;">
+             <span class="date">
+                {% if post.modified %}
+                <time class="timeago" datetime="{{ post.modified | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.modified }}</time>
+                {% else %}
+                <time class="timeago" datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.date }}</time>
+                {% endif %}
+             </span>
+           </div>
+           <span class="author">
+           {{post.author}}
+           </span>
+           <br>
+           {% assign counter = counter | plus: 1 %}
+           {% if counter > 6 %}
+           {% break %}
+           {% endif %}
+         {% endfor %}
+          <br>
+          <div style="float:right"><a href="{{site.baseurl}}/category/got/">Show all GoT blog content</a></div>
+          <br>
+          <hr class="blueline">
+

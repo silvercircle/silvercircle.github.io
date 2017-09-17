@@ -1,0 +1,9 @@
+          <h2>Recent content</h2>
+            {% assign pages = site.documents | where: "tags", "first" | sort: 'modified' | reverse %}
+            {% assign counter = 1 %}
+            {% for page in pages limit:8 %}
+                {% include sidebar/document_entry.html %}
+            {% endfor %}
+            <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/all/">Show all...</a></div>
+            <div class="clear"></div>
+

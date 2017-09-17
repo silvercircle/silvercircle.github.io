@@ -8,6 +8,7 @@
         <article id="main-content">
         {% endif %}
         {{ content }}
+        {% include content_footer.html %}
         {% if page.share and page.share == 1 %}
             {% include share_post.html %}
         {% endif %}
@@ -16,49 +17,8 @@
         {% endif %}
         </article>
         <aside id="sidebar">
-         <h2>GoT in the blog</h2>
-         {% assign counter = 1 %}
-         {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
-         {% for post in this_posts %}
-           {% unless post.categories contains 'GoT' %}
-               {% continue %}
-           {% endunless %}
-           <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-           <div class="author" style="float:right;">
-             <span class="date">
-                {% if post.modified %}
-                <time class="timeago" datetime="{{ post.modified | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.modified }}</time>
-                {% else %}
-                <time class="timeago" datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ post.date }}</time>
-                {% endif %}
-             </span>
-           </div>
-           <span class="author">
-           {{post.author}}
-           </span>
-           <br>
-           {% assign counter = counter | plus: 1 %}
-           {% if counter > 6 %}
-           {% break %}
-           {% endif %}
-         {% endfor %}
-          <br>
-          <div style="float:right"><a href="{{site.baseurl}}/category/got/">Show all GoT blog content</a></div>
-          <br>
-          <hr class="blueline">
-          <h2>GoT Theories</h2>
-          {% assign pages = site.got-theories | where: "tags", "first" | sort: 'modified' | reverse %}
-          {% assign counter = 1 %}
-          {% for page in pages %}
-           {% assign ttags = page.tags | join:'|' | append:'|' %}
-           {% if page.isfollowup and page.isfollowup == 1 %}
-           {% continue %}
-           {% endif %}
-           {% include sidebar/document_entry.html %}
-          {% endfor %}
-          <br>
-          <div style="float:right"><a href="{{site.baseurl}}/got-theories/">Show all GoT theories</a></div>
-          <br>
+        {% include sidebar/got_blog_recent.html %}
+        {% include sidebar/got_theories_recent.html %}
           <hr class="blueline">
           <h2>Other categories</h2>
             <div class="two_cols">

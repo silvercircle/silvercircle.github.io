@@ -7,6 +7,7 @@ layout: default
 categories: [C++, Development]
 tag: first
 disqus: 1
+share: 1
 excerpt: >
   AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.
 image: archive/2010/09/agg_logo.jpg
@@ -40,13 +41,19 @@ That said, it should already be clear how to use AGG for rendering to a DC - you
 
 ###  But how?
 
-Basically, you create a ```agg::rendering_buffer``` object and attach it to the memory buffer that represents the bitmap's pixels. The *agg::rendering_buffer* is a simple abstract class that can be attached to any memory buffer and serves as the lowest level base object of an AGG rendering pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering buffer and do the actual drawing.
+Basically, you create a `agg::rendering_buffer` object and attach it to the memory buffer that 
+represents the bitmap's pixels. The *agg::rendering_buffer* is a simple abstract class that can be 
+attached to any memory buffer and serves as the lowest level base object of an AGG rendering 
+pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering 
+buffer and do the actual drawing.
 
 ###  The bloody details
 
 For the following examples, we assume that all rendering must be done in 32bit color depth with a valid alpha channel (thus, 4 bytes per pixel). It is important to agree on the actual pixel format, because if your AGG pipeline uses a pixel format that doesn't match the bitmap's format, the results will look very broken. Windows bitmaps can use a variety of formats, but for the examples we will use a 32bit BGRa format. Windows reverts the color order from aRGB to BGRa for performance and other reasons, but since you do not have to manipulate pixels directly, you don't have to care - just make sure to use the same pixel format when setting up your AGG rendering pipeline.
 
-First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of the bitmap - usually the dimensions of your rendering area - for example, the client area of a window. Both are passed to this function as ```cx``` and ```cy```.
+First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of 
+the bitmap - usually the dimensions of your rendering area - for example, the client area of a 
+window. Both are passed to this function as `cx` and `cy`.
 
 {% highlight c++ lineos %}
 {
@@ -65,27 +72,49 @@ First, we must create a 32bit BGRa memory bitmap. The only information we need a
 
 If all goes well, the function will return a valid handle for your new bitmap. You can now use this handle to select the bitmap into your DC and I won't get into detail about this, because it should be well-known.
 
-Next, you need to attach a ```agg::rendering_buffer``` to your new bitmap. The prototype for the ```agg::rendering_buffer::attach()``` method looks like this:
+Next, you need to attach a `agg::rendering_buffer` to your new bitmap. The prototype for the 
+`agg::rendering_buffer::attach()` method looks like this:
 
 {% highlight c++ lineos %}
   void attach(T* buf, unsigned width, unsigned height, int stride)
 {% endhighlight %}
 
-  * ```buf``` is the memory buffer that holds the pixel data. Should be clear and I will explain shortly how to obtain it from your bitmap.
-  * ```width``` and ```height``` are the same ```cx``` and ```cy``` - the dimensions of the bitmap and your corresponding drawing area.
-  * ```stride``` is important. Basically, it is the length of a single pixel scan line of your bitmap in **BYTES**. One would assume that for a 32bit BGRa bitmap, *stride* would be ```(4 * width)```, but that is not always true. Because of performance reasons, Windows may round up the width of a bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than the drawing area, and this is why stride is so important. It tells the rendering buffer, how many bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) up or down.
+* `buf` is the memory buffer that holds the pixel data. Should be clear and I will explain shortly 
+how to obtain it from your bitmap.
+* `width` and `height` are the same `cx` and `cy` - the dimensions of the bitmap and 
+your corresponding drawing area.
+* `stride` is important. Basically, it is the length of a single pixel scan line of your bitmap 
+in **BYTES**. One would assume that for a 32bit BGRa bitmap, *stride* would be `(4 * width)`,
+but that is not always true. Because of performance reasons, Windows may round up the width of a 
+bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than 
+the drawing area, and this is why stride is so important. It tells the rendering buffer, how many 
+bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) 
+up or down.
 
-  The following code will attach a rendering buffer object to a memory bitmap. ```m_rbuf``` is our ```agg::rendering_buffer``` object and **hbm** is the bitmap handle.
+  The following code will attach a rendering buffer object to a memory bitmap. `m_rbuf` is our 
+  `agg::rendering_buffer` object and **hbm** is the bitmap handle.
 {% highlight c++ lineos %}
   ::GetObject(hbm, sizeof(bm), &bm);
   m_rbuf.attach((unsigned char*)bm.bmBits, bm.bmWidth, bm.bmHeight, bm.bmWidthBytes);
 {% endhighlight %}
 
-We use ```GetObject()``` Win32 API to obtain information about our bitmap. It fills a structure from which we can use the ```bmBits```, ```bmWith```, ```bmHeight``` and ```bmWidthBytes``` members for using it in ```agg::rendering_buffer::attach()```. The *bmWidthBytes* member is our *stride* (see above) - it indicates the internal width of the bitmap in bytes, so it is important to use this instead of calculating your own stride value from the width.
+We use `GetObject()` Win32 API to obtain information about our bitmap. It fills a structure from 
+which we can use the `bmBits`, `bmWith`, `bmHeight` and `bmWidthBytes` members for using it in 
+`agg::rendering_buffer::attach()`. The *bmWidthBytes* member is our *stride* (see above) - it 
+indicates the internal width of the bitmap in bytes, so it is important to use this instead of 
+calculating your own stride value from the width.
 
-Note that this code is just an **incomplete example** only showing the basic principle. It lacks safety checks which you should add when using it. At least, check the return value from ```GetObject()``` and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.
+Note that this code is just an **incomplete example** only showing the basic principle. It lacks 
+safety checks which you should add when using it. At least, check the return value from 
+`GetObject()` and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. 
+Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.
 
-Basically, that's it. You now have a rendering buffer that uses a memory bitmap and to which you can attach your rendering pipeline. Make sure, your pipeline uses ```agg::pixfmt_bgra32``` to be compatible with the pixel format of your bitmap. When using colors, use ```agg::rgba8``` and make sure to set the alpha value(s), otherwise you'll most likely render fully transparent pixels, because the default alpha value is always 0 when you initialize a ```agg::rgba8``` olor object.
+Basically, that's it. You now have a rendering buffer that uses a memory bitmap and to which you can 
+attach your rendering pipeline. Make sure, your pipeline uses `agg::pixfmt_bgra32` to be compatible 
+with the pixel format of your bitmap. When using colors, use `agg::rgba8` and make sure to set the 
+alpha value(s), otherwise you'll most likely render fully transparent pixels, because the default 
+alpha value is always 0 when you initialize a `agg::rgba8` color object.
 
-Next time, I'll show how to do it when using Windows Vista or later buffered paint API which allows you to paint flickerfree without creating your own memory bitmaps and device contexts.
+Next time, I'll show how to do it when using Windows Vista or later buffered paint API which allows 
+you to paint flicker-free without creating your own memory bitmaps and device contexts.
 
