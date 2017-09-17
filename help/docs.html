@@ -187,7 +187,7 @@ fragments (includes) and outlines conventions that are valid site-wide.</p>
 
 <ul>
   <li>all file names should be all-lowercase. This applies to template fragment in <code class="highlighter-rouge">_includes</code> as well 
-as for all kind of embedable content (images, style sheets, scripts).</li>
+as for all kind of embed able content (images, style sheets, scripts).</li>
   <li>The template includes for embedding images assume that all media resides below <code class="highlighter-rouge">assets/gfx</code>. File 
 names must be relative to this location, file names, including sub-folders and extensions, should be 
 all-lowercase.</li>
@@ -198,6 +198,48 @@ that, all the rules listed for menu systems apply here. The custom menu name <st
 to the site header template as <code class="highlighter-rouge">custom_menu</code> parameter, but may be an empty string in which case no 
 optional menu will be rendered.</li>
 </ul>
+
+<h2 id="url-schemes">URL schemes</h2>
+
+<p>Most posts, articles and automated lists (tags, categories) use the <code class="highlighter-rouge">pretty</code> scheme with the 
+document, category or tag name as a sub folder and the document itself using <code class="highlighter-rouge">index.html</code>. The 
+exception of this rule are site documents like <code class="highlighter-rouge">/help/contact.html</code> for example.</p>
+
+<p>The site is designed both protocol- and base path agnostic. The variable  is always 
+used, so it should be easy to transfer the entire site to a prefixed url (e.g. 
+<strong>http://mysite.foo/</strong> to <strong>http://mysite.foo/blog/</strong>).</p>
+
+<h2 id="frontmatter-variables-for-posts-and-articles">Frontmatter variables for posts and articles</h2>
+
+<p>The following variables are supported</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">first</code> - This is mandatory for all posts and pages that should appear in listings and indexes. 
+Basically, every page should set it to the value <strong>1</strong>, unless it should be excluded from indexes. 
+One example would be followup pages in long articles wit multiple pages.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">disqus</code> - Set to <strong>1</strong> if disqus should be embedded for the article/post.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">share</code> - Set to <strong>1</strong> if a share bar should appear below the content.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">menucontext</code> - which entry of the menu bar should be highlighted. Can be <code class="highlighter-rouge">home, about, contact, 
+blog, topics or got</code>.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">share_url</code> - will be used instead of <code class="highlighter-rouge">page.url</code> when present. Useful for followup pages when the 
+first page should be the target to share.
+*</p>
+    <h2 id="disqus-thread-identifier">Disqus thread identifier</h2>
+  </li>
+</ul>
+
+<p>This identifier is built from the author’s name and the post’s date (the <code class="highlighter-rouge">date:</code> variable, not the 
+<code class="highlighter-rouge">modified:</code> time). For followup pages, it is therefore <em>important</em> to have the <em>exact same</em> author 
+name and post date.</p>
 
 
         <div style="margin-top: 0.5em">

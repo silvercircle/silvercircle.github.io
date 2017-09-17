@@ -221,13 +221,19 @@ Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09
 
 <h3 id="but-how">But how?</h3>
 
-<p>Basically, you create a <code class="highlighter-rouge">agg::rendering_buffer</code> object and attach it to the memory buffer that represents the bitmap’s pixels. The <em>agg::rendering_buffer</em> is a simple abstract class that can be attached to any memory buffer and serves as the lowest level base object of an AGG rendering pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering buffer and do the actual drawing.</p>
+<p>Basically, you create a <code class="highlighter-rouge">agg::rendering_buffer</code> object and attach it to the memory buffer that 
+represents the bitmap’s pixels. The <em>agg::rendering_buffer</em> is a simple abstract class that can be 
+attached to any memory buffer and serves as the lowest level base object of an AGG rendering 
+pipeline. Once done, you can attach the remaining parts of your rendering pipeline to the rendering 
+buffer and do the actual drawing.</p>
 
 <h3 id="the-bloody-details">The bloody details</h3>
 
 <p>For the following examples, we assume that all rendering must be done in 32bit color depth with a valid alpha channel (thus, 4 bytes per pixel). It is important to agree on the actual pixel format, because if your AGG pipeline uses a pixel format that doesn’t match the bitmap’s format, the results will look very broken. Windows bitmaps can use a variety of formats, but for the examples we will use a 32bit BGRa format. Windows reverts the color order from aRGB to BGRa for performance and other reasons, but since you do not have to manipulate pixels directly, you don’t have to care - just make sure to use the same pixel format when setting up your AGG rendering pipeline.</p>
 
-<p>First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of the bitmap - usually the dimensions of your rendering area - for example, the client area of a window. Both are passed to this function as <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code>.</p>
+<p>First, we must create a 32bit BGRa memory bitmap. The only information we need are the dimensions of 
+the bitmap - usually the dimensions of your rendering area - for example, the client area of a 
+window. Both are passed to this function as <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code>.</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="p">{</span>
   <span class="n">BITMAPINFO</span> <span class="n">dib</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
@@ -244,43 +250,110 @@ Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09
 
 <p>If all goes well, the function will return a valid handle for your new bitmap. You can now use this handle to select the bitmap into your DC and I won’t get into detail about this, because it should be well-known.</p>
 
-<p>Next, you need to attach a <code class="highlighter-rouge">agg::rendering_buffer</code> to your new bitmap. The prototype for the <code class="highlighter-rouge">agg::rendering_buffer::attach()</code> method looks like this:</p>
+<p>Next, you need to attach a <code class="highlighter-rouge">agg::rendering_buffer</code> to your new bitmap. The prototype for the 
+<code class="highlighter-rouge">agg::rendering_buffer::attach()</code> method looks like this:</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="kt">void</span> <span class="n">attach</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">stride</span><span class="p">)</span></code></pre></figure>
 
 <ul>
   <li>
-<code class="highlighter-rouge">buf</code> is the memory buffer that holds the pixel data. Should be clear and I will explain shortly how to obtain it from your bitmap.</li>
+<code class="highlighter-rouge">buf</code> is the memory buffer that holds the pixel data. Should be clear and I will explain shortly 
+how to obtain it from your bitmap.</li>
   <li>
-<code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> are the same <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code> - the dimensions of the bitmap and your corresponding drawing area.</li>
+<code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> are the same <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code> - the dimensions of the bitmap and 
+your corresponding drawing area.</li>
   <li>
-<code class="highlighter-rouge">stride</code> is important. Basically, it is the length of a single pixel scan line of your bitmap in <strong>BYTES</strong>. One would assume that for a 32bit BGRa bitmap, <em>stride</em> would be <code class="highlighter-rouge">(4 * width)</code>, but that is not always true. Because of performance reasons, Windows may round up the width of a bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than the drawing area, and this is why stride is so important. It tells the rendering buffer, how many bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) up or down.</li>
-</ul>
+    <p><code class="highlighter-rouge">stride</code> is important. Basically, it is the length of a single pixel scan line of your bitmap 
+in <strong>BYTES</strong>. One would assume that for a 32bit BGRa bitmap, <em>stride</em> would be <code class="highlighter-rouge">(4 * width)</code>,
+but that is not always true. Because of performance reasons, Windows may round up the width of a 
+bitmap to be WORD or DWORD aligned, so the in-memory bitmap can actually be 1-3 pixels wider than 
+the drawing area, and this is why stride is so important. It tells the rendering buffer, how many 
+bytes must be added (or subtracted) to or from a pointer when you step exactly ONE pixel (scanline) 
+up or down.</p>
 
-<p>The following code will attach a rendering buffer object to a memory bitmap. <code class="highlighter-rouge">m_rbuf</code> is our <code class="highlighter-rouge">agg::rendering_buffer</code> object and <strong>hbm</strong> is the bitmap handle.</p>
+    <p>The following code will attach a rendering buffer object to a memory bitmap. <code class="highlighter-rouge">m_rbuf</code> is our 
+<code class="highlighter-rouge">agg::rendering_buffer</code> object and <strong>hbm</strong> is the bitmap handle.</p>
+  </li>
+</ul>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="o">::</span><span class="n">GetObject</span><span class="p">(</span><span class="n">hbm</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bm</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">bm</span><span class="p">);</span>
   <span class="n">m_rbuf</span><span class="p">.</span><span class="n">attach</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">bm</span><span class="p">.</span><span class="n">bmBits</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmWidth</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmHeight</span><span class="p">,</span> <span class="n">bm</span><span class="p">.</span><span class="n">bmWidthBytes</span><span class="p">);</span></code></pre></figure>
 
-<p>We use <code class="highlighter-rouge">GetObject()</code> Win32 API to obtain information about our bitmap. It fills a structure from which we can use the <code class="highlighter-rouge">bmBits</code>, <code class="highlighter-rouge">bmWith</code>, <code class="highlighter-rouge">bmHeight</code> and <code class="highlighter-rouge">bmWidthBytes</code> members for using it in <code class="highlighter-rouge">agg::rendering_buffer::attach()</code>. The <em>bmWidthBytes</em> member is our <em>stride</em> (see above) - it indicates the internal width of the bitmap in bytes, so it is important to use this instead of calculating your own stride value from the width.</p>
+<p>We use <code class="highlighter-rouge">GetObject()</code> Win32 API to obtain information about our bitmap. It fills a structure from 
+which we can use the <code class="highlighter-rouge">bmBits</code>, <code class="highlighter-rouge">bmWith</code>, <code class="highlighter-rouge">bmHeight</code> and <code class="highlighter-rouge">bmWidthBytes</code> members for using it in 
+<code class="highlighter-rouge">agg::rendering_buffer::attach()</code>. The <em>bmWidthBytes</em> member is our <em>stride</em> (see above) - it 
+indicates the internal width of the bitmap in bytes, so it is important to use this instead of 
+calculating your own stride value from the width.</p>
 
-<p>Note that this code is just an <strong>incomplete example</strong> only showing the basic principle. It lacks safety checks which you should add when using it. At least, check the return value from <code class="highlighter-rouge">GetObject()</code> and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.</p>
+<p>Note that this code is just an <strong>incomplete example</strong> only showing the basic principle. It lacks 
+safety checks which you should add when using it. At least, check the return value from 
+<code class="highlighter-rouge">GetObject()</code> and make sure you do NOT attach the rendering buffer to a non existing pixel buffer. 
+Doing so will lead to a crash as soon as you attach your rendering pipeline to the rendering buffer.</p>
 
-<p>Basically, that’s it. You now have a rendering buffer that uses a memory bitmap and to which you can attach your rendering pipeline. Make sure, your pipeline uses <code class="highlighter-rouge">agg::pixfmt_bgra32</code> to be compatible with the pixel format of your bitmap. When using colors, use <code class="highlighter-rouge">agg::rgba8</code> and make sure to set the alpha value(s), otherwise you’ll most likely render fully transparent pixels, because the default alpha value is always 0 when you initialize a <code class="highlighter-rouge">agg::rgba8</code> olor object.</p>
+<p>Basically, that’s it. You now have a rendering buffer that uses a memory bitmap and to which you can 
+attach your rendering pipeline. Make sure, your pipeline uses <code class="highlighter-rouge">agg::pixfmt_bgra32</code> to be compatible 
+with the pixel format of your bitmap. When using colors, use <code class="highlighter-rouge">agg::rgba8</code> and make sure to set the 
+alpha value(s), otherwise you’ll most likely render fully transparent pixels, because the default 
+alpha value is always 0 when you initialize a <code class="highlighter-rouge">agg::rgba8</code> color object.</p>
 
-<p>Next time, I’ll show how to do it when using Windows Vista or later buffered paint API which allows you to paint flickerfree without creating your own memory bitmaps and device contexts.</p>
+<p>Next time, I’ll show how to do it when using Windows Vista or later buffered paint API which allows 
+you to paint flicker-free without creating your own memory bitmaps and device contexts.</p>
 
 
         <div style="margin-top: 0.5em">
 
 <div style="float:right;">
-    Words: 1459
+    Words: 1461
 </div>
 
 
     
         
 <div class="clear"></div>
+</div>
+
+
+        
+            
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
+<span class="sb-label">Share:</span>
+
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+    <i aria-hidden="true"></i>
+    <span>Twitter</span>
+</a>
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+    <i aria-hidden="true"></i>
+    <span>Google+</span>
+</a>
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+    <i aria-hidden="true"></i>
+    <span>Reddit</span>
+</a>
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;description=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+    <i></i>
+    <span>Pinterest</span>
+</a>
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+    <i></i>
+    <span>Tumblr</span>
+</a>
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&amp;body=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+    <i></i>
+    <span>Email</span>
+</a>
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)%C2%A0https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" title="Copy link to clipboard">
+    <i></i>
+    <span>Link</span>
+</a>
 </div>
 
 
