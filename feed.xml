@@ -1,4 +1,276 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-17T23:12:08+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T19:40:54+02:00</published><updated>2017-09-13T19:40:54+02:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-18T20:03:37+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T05:18:14+02:00</published><updated>2017-09-18T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;testpage-gallery&quot;&gt;Testpage (Gallery)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+Build a gallery from information held in a yaml file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;gallery&quot;&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/vIlBboj5Ua9m1tduo8odmRjwdHpEiGVDjw0-MoqzzLxQR20bwTBtQoUGLndEdT4ypQYRTmiSA29JOJY89gTU-pA-SNWenXb3UukwT7245foGQ0xc5kt_zlmI5ZaTm0f_7kpp5dFUESxuT5SRv6etq9n_qwDpsvYIgOW2Xta9HlkXKJ0r-Z8MJRVyJMwKXDY2h-ngtARybEeNE_AnfuV4CW3vRGzETDaKztfyo7Dn99zf6eJJP1Df3AAnxqMAGvUcecIg60fJGTP_zZ4z0weNNPCtQtTDhCVmlRsYp8O8AVmnItxGeoGEd-BnWbbrKC1ydufAzvf5zzbaEYZWFwjcpKzhchRVFDnpFqjPwrFBKkb8j3BlPiyyyEpLhiu-f46FSl_yWyn0nTNXGW0RcJ-0zlr1hFYN5OMIuLnhMqRWsinFlRpdKswVfoLwRGvLx1ivjoP-iguyjHzXH7dYBAcRCfLCezwRRNAO5KdUXMi_XoQ9b9Qq4pKxDuL8bjGGqmArxClckANxmZNf7XK9kJmoxfTwnMNNIMbAjEHeT0JAv533yNpWBkVymg8qqiDciEMeJjluiscdIloYJgvVDY7enQFSCx4KApSPjSo3Pw3cfA=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/vIlBboj5Ua9m1tduo8odmRjwdHpEiGVDjw0-MoqzzLxQR20bwTBtQoUGLndEdT4ypQYRTmiSA29JOJY89gTU-pA-SNWenXb3UukwT7245foGQ0xc5kt_zlmI5ZaTm0f_7kpp5dFUESxuT5SRv6etq9n_qwDpsvYIgOW2Xta9HlkXKJ0r-Z8MJRVyJMwKXDY2h-ngtARybEeNE_AnfuV4CW3vRGzETDaKztfyo7Dn99zf6eJJP1Df3AAnxqMAGvUcecIg60fJGTP_zZ4z0weNNPCtQtTDhCVmlRsYp8O8AVmnItxGeoGEd-BnWbbrKC1ydufAzvf5zzbaEYZWFwjcpKzhchRVFDnpFqjPwrFBKkb8j3BlPiyyyEpLhiu-f46FSl_yWyn0nTNXGW0RcJ-0zlr1hFYN5OMIuLnhMqRWsinFlRpdKswVfoLwRGvLx1ivjoP-iguyjHzXH7dYBAcRCfLCezwRRNAO5KdUXMi_XoQ9b9Qq4pKxDuL8bjGGqmArxClckANxmZNf7XK9kJmoxfTwnMNNIMbAjEHeT0JAv533yNpWBkVymg8qqiDciEMeJjluiscdIloYJgvVDY7enQFSCx4KApSPjSo3Pw3cfA=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/x1YgTurhbnNNVCgB3BbHDJarfDVOL7KfvnlJPl5a255zQq2PD-vYmBkHOhqTKIyORU9poxYjfUMigugYqOfR9OIY9cEJX69J-EDr8acI-GfdR1EQv9MafHNOxKTlmm1dY0U2Es5jrMb3N7XZLXhgHrouL5LzpIpKLYCIPldL4l13iR8GmYR-3VkEkvR6uef0MMXqbfgAmdegABnUPuRR2hZDCh8erdnMlgC1zADyz_9_AxfqvvYOsgwhaIHCH74vkvJwSJzz_8NFeye3VeuCminMJhv35iZXmBrR2iI3nPGGP0a7WIlGC1yQqoywz2oSDBLEIcX1YFll1f6-NHI-xP0yfXR8O2RPRwEea-8islciQi-2BWSd3EtzY7ZZMOpSAYyM81OavlVVUfr4bXovQKQuH4eJLluwfSR3QPKtHaPRsqzzYWMFa2mlxX4AM02zlVo3g-jh73Ykoh6twiFXpCKABm3zZog4l4kbl7SnmGTy0qMHTJ9NPRYzWjtyADi6RopKHzTF_UixUFaw0eGEkPl-nuEU-ZII-CAiFzjjeMj3Yx4yUZtKiErhHnytx-pOwrX_vQP2ybCvE1Z3zDAWoP209QGSO1rvpZ70bpIjcQ=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/x1YgTurhbnNNVCgB3BbHDJarfDVOL7KfvnlJPl5a255zQq2PD-vYmBkHOhqTKIyORU9poxYjfUMigugYqOfR9OIY9cEJX69J-EDr8acI-GfdR1EQv9MafHNOxKTlmm1dY0U2Es5jrMb3N7XZLXhgHrouL5LzpIpKLYCIPldL4l13iR8GmYR-3VkEkvR6uef0MMXqbfgAmdegABnUPuRR2hZDCh8erdnMlgC1zADyz_9_AxfqvvYOsgwhaIHCH74vkvJwSJzz_8NFeye3VeuCminMJhv35iZXmBrR2iI3nPGGP0a7WIlGC1yQqoywz2oSDBLEIcX1YFll1f6-NHI-xP0yfXR8O2RPRwEea-8islciQi-2BWSd3EtzY7ZZMOpSAYyM81OavlVVUfr4bXovQKQuH4eJLluwfSR3QPKtHaPRsqzzYWMFa2mlxX4AM02zlVo3g-jh73Ykoh6twiFXpCKABm3zZog4l4kbl7SnmGTy0qMHTJ9NPRYzWjtyADi6RopKHzTF_UixUFaw0eGEkPl-nuEU-ZII-CAiFzjjeMj3Yx4yUZtKiErhHnytx-pOwrX_vQP2ybCvE1Z3zDAWoP209QGSO1rvpZ70bpIjcQ=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/OPwBnIG10AnJC2jebry33dPWuiZnTL2UWrz3vZSd-FhUVtMfoAH8-IX4z98ysCcYRrgOInMeOjnmvMS4jZ0IW6IgrAA0wKOQVMoJ_LVlyP2faXTS2nHxfUDotGGK7XxQ2NcjUHoF1PPgm6-p3wIGLxgSDa9dSsZOpcAXrNqTWnxOsEsWyXpQm0BVad6rDeAx7Xu5pWIITU_86Xp6YNf7ywb9WGvMe5KWrE2r0DAmRgbeNNBZsr0egtHkJ2PeMAZy5YhEn2q8U0LE_WfPSMwEgbDUfVByZd4wXa5I_Kem8LOd56aYEHoufYljoeKBlyQz6Y_OOljZ9EEYmF_jo4cmeYuudQ5JUQY6GsC4HZByR95EZRlEvWdUWeBDH0U6CdnIsZ881cTWRaDpTqpnVBz-5liZML92etFSFVh_QFe5CxidARv8uqvBwNwfR4WYb4guGdGwxHlmNlpsyHcXm9F6v7oHwS48TttixQsGFhxt0riNmsPQbj_1-VamnJC0ChDhyVASWP15AT5wWaywf2qnnFdPRx3EpbL9amiWQF0-IOuD8An2wgLK9eaKA5NHBFU-EYMUBzmFjJ3n4YKkDea2eKa3EnXVL4h9AOvbxYMzbA=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Image 4&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/OPwBnIG10AnJC2jebry33dPWuiZnTL2UWrz3vZSd-FhUVtMfoAH8-IX4z98ysCcYRrgOInMeOjnmvMS4jZ0IW6IgrAA0wKOQVMoJ_LVlyP2faXTS2nHxfUDotGGK7XxQ2NcjUHoF1PPgm6-p3wIGLxgSDa9dSsZOpcAXrNqTWnxOsEsWyXpQm0BVad6rDeAx7Xu5pWIITU_86Xp6YNf7ywb9WGvMe5KWrE2r0DAmRgbeNNBZsr0egtHkJ2PeMAZy5YhEn2q8U0LE_WfPSMwEgbDUfVByZd4wXa5I_Kem8LOd56aYEHoufYljoeKBlyQz6Y_OOljZ9EEYmF_jo4cmeYuudQ5JUQY6GsC4HZByR95EZRlEvWdUWeBDH0U6CdnIsZ881cTWRaDpTqpnVBz-5liZML92etFSFVh_QFe5CxidARv8uqvBwNwfR4WYb4guGdGwxHlmNlpsyHcXm9F6v7oHwS48TttixQsGFhxt0riNmsPQbj_1-VamnJC0ChDhyVASWP15AT5wWaywf2qnnFdPRx3EpbL9amiWQF0-IOuD8An2wgLK9eaKA5NHBFU-EYMUBzmFjJ3n4YKkDea2eKa3EnXVL4h9AOvbxYMzbA=w1356-h763-no&quot; alt=&quot;Image 4&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Image 4
+        &lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/40qPmpVhflxi3Qn8v9npd0XBJziqSivbLIXHhRDNRtkw2GDB3Mq0z4n9VzjRdPegnhMutoC_9IvTryuHgU7hMYEHvbalsahEy636rX0C6U_9MXzZUqoQgVA_DTC4X_6uvq7K70bH5AI1-h2WEh7hmDGQQu17NsSLwtlNmn22P1iq4O8Qowyy_4fuQ81GpTybny-B2TlU1ydpQXqTGW0CpTtSZ4yGKlky5NiSZrdUX1kozCwnlSxtDMia69P3AnYU55yGy02nWIHehS4OsMourMdk1Xq5h7erFRLl8BzNj9u8WYtsHd0IhFVd2XsZhuQ-dRwtoDOvtAvxb_Ldt45VZWzes6gfQkYHutKLKRN1qOUBFvAIAiFdLzQCtkHT2sAzhMeGsqkvrkKksN6kiixD-erGJ_p1MPoopYEKhN77PflLMwxp-nWjSm8ibXQhIqwlas78WTitvrrpQlwQNX-TrwrMbjWrf_tYaO-xmrq6ot64ZBOySu5gLK2AfQbmQK3k0fdufcVIMIG3D5L__u5c0aP6Kuj6DXEVqAsZ1gjyXwsCnqiDJxMRFKcRI4TkadIFnBL463NxzkU1QSdBkLGQJ_T-Pn2FrNn1Y1WKDSoKdw=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Image 5&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/40qPmpVhflxi3Qn8v9npd0XBJziqSivbLIXHhRDNRtkw2GDB3Mq0z4n9VzjRdPegnhMutoC_9IvTryuHgU7hMYEHvbalsahEy636rX0C6U_9MXzZUqoQgVA_DTC4X_6uvq7K70bH5AI1-h2WEh7hmDGQQu17NsSLwtlNmn22P1iq4O8Qowyy_4fuQ81GpTybny-B2TlU1ydpQXqTGW0CpTtSZ4yGKlky5NiSZrdUX1kozCwnlSxtDMia69P3AnYU55yGy02nWIHehS4OsMourMdk1Xq5h7erFRLl8BzNj9u8WYtsHd0IhFVd2XsZhuQ-dRwtoDOvtAvxb_Ldt45VZWzes6gfQkYHutKLKRN1qOUBFvAIAiFdLzQCtkHT2sAzhMeGsqkvrkKksN6kiixD-erGJ_p1MPoopYEKhN77PflLMwxp-nWjSm8ibXQhIqwlas78WTitvrrpQlwQNX-TrwrMbjWrf_tYaO-xmrq6ot64ZBOySu5gLK2AfQbmQK3k0fdufcVIMIG3D5L__u5c0aP6Kuj6DXEVqAsZ1gjyXwsCnqiDJxMRFKcRI4TkadIFnBL463NxzkU1QSdBkLGQJ_T-Pn2FrNn1Y1WKDSoKdw=w1356-h763-no&quot; alt=&quot;Image 5&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Image 5
+        &lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/NcQM3MdvqU-kIVIPvGl9ybBiB6oTSU4zWc2ZvrGpJocQh88BobK_CdYpYkKh34Zv_Qe_R5T3l1s4HgNCyz6SWTX08b4rWHK7UjW6xlyYYf8QP2GqGj_0IkFZODK_0y0dEK7jhlfvi4Dnt_4m38xMdpW2H9b0OkaPdtX9L-r4FWci4dvulVP65AUzk8B-eFxMCOZnnZ5WHKlGaCLfpw668FSDcMIjv6gCQsxaH46nWRXsBmNrXdWoPQ9AvSg4pxJbaiC_IAtNaeKybu2X08MAuiakL0dqLrdl56ZtOBzoH2IpIrfKLxdUEsWq3FLYmHNhN6Oy-l0MATzeb_2ltEK8XvUdBaEBsyUZFd3WUWQw9D_x9v_sCNs3_XZ4X6qyUBJ1Xi1gAwrD3hyKcqJpQxeU4hraWd-tughKMW0AnnS956Vezx71oZ-_dk-HZ6Gk95i-KMTYmEn9PcZiipMgw4jlqFa7X9BmHXZq3WhuRCQmY-Jti6k-utSe9G64kt78R0BZUiDiXZXun_SXAdo7YtfjFfNakIPvFR0GJKqkF9VkKLnPvnaEyGS7Hu7kXeFi6-weJ7YO70OKcDzMt4Byky1WXRpzXbRJALyJNrZjc1ZM5Q=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/NcQM3MdvqU-kIVIPvGl9ybBiB6oTSU4zWc2ZvrGpJocQh88BobK_CdYpYkKh34Zv_Qe_R5T3l1s4HgNCyz6SWTX08b4rWHK7UjW6xlyYYf8QP2GqGj_0IkFZODK_0y0dEK7jhlfvi4Dnt_4m38xMdpW2H9b0OkaPdtX9L-r4FWci4dvulVP65AUzk8B-eFxMCOZnnZ5WHKlGaCLfpw668FSDcMIjv6gCQsxaH46nWRXsBmNrXdWoPQ9AvSg4pxJbaiC_IAtNaeKybu2X08MAuiakL0dqLrdl56ZtOBzoH2IpIrfKLxdUEsWq3FLYmHNhN6Oy-l0MATzeb_2ltEK8XvUdBaEBsyUZFd3WUWQw9D_x9v_sCNs3_XZ4X6qyUBJ1Xi1gAwrD3hyKcqJpQxeU4hraWd-tughKMW0AnnS956Vezx71oZ-_dk-HZ6Gk95i-KMTYmEn9PcZiipMgw4jlqFa7X9BmHXZq3WhuRCQmY-Jti6k-utSe9G64kt78R0BZUiDiXZXun_SXAdo7YtfjFfNakIPvFR0GJKqkF9VkKLnPvnaEyGS7Hu7kXeFi6-weJ7YO70OKcDzMt4Byky1WXRpzXbRJALyJNrZjc1ZM5Q=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/fs72pkt5lPtrdYFlIjYsfL8ZwWVtdidWzmzkYbpXRC45njw6mcfZgxUdjm4h2fHJUmIoYV9Odl0FlcbVqa2WwZ2yxjs6Moj6HCNHQJFMO5KrMIvAYiJVFq5qkavfGqSbwiKhMD01BAF9cNN-1ukky7o7TBwicUlqdSfLbiTmuyknyR-ktCfPH2JXzQHo2UU0-4D3OZxZC2h5vSBPTLUS9Et3P79Ykrs7fFklJcYnQna6YxWOsrMpiZrsY7uLLI2foGShRl5OKD9VDY2gM7Tj5XBdfhFPm7jKBJR-zPfSkqD-OQr6YeRl38OHt9JXCnCBf-k8O-VqFxIDfF6tCBlaAS5EntYhiFyRLtCi_5j5TfNjwCCG1pXS11fgj9jVdCaQUDlWQTUCwyes-6x7zeniHHX1VJlDzYawWPq-Rio2xItKuRKM0G2GrF5wvOfnatG4v1xQCiKkMjUQ6wC2SPe9r7XBYB40OjJIExJ7BWLI_LE8B1zKNW_BFNKzGKy45T8CiISBqfRZfjNb9tZUdVd5vzDG5TNRPBW2Kf7gbBreMRa_lIOVWYs5ayukMcQuhwwnmG1eEMnU6jNdIVdPY_N9RlYssuRsElvVQdlJ0Em8Kg=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/fs72pkt5lPtrdYFlIjYsfL8ZwWVtdidWzmzkYbpXRC45njw6mcfZgxUdjm4h2fHJUmIoYV9Odl0FlcbVqa2WwZ2yxjs6Moj6HCNHQJFMO5KrMIvAYiJVFq5qkavfGqSbwiKhMD01BAF9cNN-1ukky7o7TBwicUlqdSfLbiTmuyknyR-ktCfPH2JXzQHo2UU0-4D3OZxZC2h5vSBPTLUS9Et3P79Ykrs7fFklJcYnQna6YxWOsrMpiZrsY7uLLI2foGShRl5OKD9VDY2gM7Tj5XBdfhFPm7jKBJR-zPfSkqD-OQr6YeRl38OHt9JXCnCBf-k8O-VqFxIDfF6tCBlaAS5EntYhiFyRLtCi_5j5TfNjwCCG1pXS11fgj9jVdCaQUDlWQTUCwyes-6x7zeniHHX1VJlDzYawWPq-Rio2xItKuRKM0G2GrF5wvOfnatG4v1xQCiKkMjUQ6wC2SPe9r7XBYB40OjJIExJ7BWLI_LE8B1zKNW_BFNKzGKy45T8CiISBqfRZfjNb9tZUdVd5vzDG5TNRPBW2Kf7gbBreMRa_lIOVWYs5ayukMcQuhwwnmG1eEMnU6jNdIVdPY_N9RlYssuRsElvVQdlJ0Em8Kg=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/Xot_Dn2UiO9Zq62gyVl_4ocW9Ll9_EwPokY8UMHgHMbqbxxfoACt5lz_LoMml05QayOq7wMlHzcRjC_A1nL-oTzCMQFqH0zF7CuSLVrxrnrKEVOOoaB-tPpCzpTZDP19xTgkkEKM1hbS3xVel1fyqPgjnyTTG7ECtTG9Wc9ja0fRBqysM2MpXadliVl0p2UYKboDz-_iLJ5CssxAPkyQ04ucutiH0lS8j0Dn0wOJx0wYgMJQFE49W1K5xYisB1TrEF_g9yEMh6XkSDcPjlEWRsG0YVxaTQ1UBmS3j2ZmKL385ud4pL7EQrIWI6efMyZyP-pYPQwKJqLG4-59hdzj9UPFeTzcp2SUn70vKTw_OWrSl8FuCNOqE6-vHN1ka_0ZufsxZkKr16BT87FwbssV5M916Vcp42k0NVyRyZLQCbRgZB69-oRi1gg_XRnD-nrbLBBuMcnSJUhhB5AbGDEdTv03M2UxCiOQxPVxNHi8gUS359PRTEjBO4yzh3i8_lWTLs_cq7LhHFGyMPDYhHy_Xqqj2teqHcKqCvTEA3PYi4_CVbMaWQT3_zyXOPz_7euctKpmMsSd3IgTh1fWAL5s1NSjDcLV6iemcqJT-GiwXA=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/Xot_Dn2UiO9Zq62gyVl_4ocW9Ll9_EwPokY8UMHgHMbqbxxfoACt5lz_LoMml05QayOq7wMlHzcRjC_A1nL-oTzCMQFqH0zF7CuSLVrxrnrKEVOOoaB-tPpCzpTZDP19xTgkkEKM1hbS3xVel1fyqPgjnyTTG7ECtTG9Wc9ja0fRBqysM2MpXadliVl0p2UYKboDz-_iLJ5CssxAPkyQ04ucutiH0lS8j0Dn0wOJx0wYgMJQFE49W1K5xYisB1TrEF_g9yEMh6XkSDcPjlEWRsG0YVxaTQ1UBmS3j2ZmKL385ud4pL7EQrIWI6efMyZyP-pYPQwKJqLG4-59hdzj9UPFeTzcp2SUn70vKTw_OWrSl8FuCNOqE6-vHN1ka_0ZufsxZkKr16BT87FwbssV5M916Vcp42k0NVyRyZLQCbRgZB69-oRi1gg_XRnD-nrbLBBuMcnSJUhhB5AbGDEdTv03M2UxCiOQxPVxNHi8gUS359PRTEjBO4yzh3i8_lWTLs_cq7LhHFGyMPDYhHy_Xqqj2teqHcKqCvTEA3PYi4_CVbMaWQT3_zyXOPz_7euctKpmMsSd3IgTh1fWAL5s1NSjDcLV6iemcqJT-GiwXA=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/IDDW0oupvmuHisCAxBw8puWW7BOu7dIyNbe2bz2aySr0jbxJUHspaMc8Hm9JXuiXFoI-Hye12d8WxHrlhsLseL_G4xXj5f7lkdpDHOLMFgcco-L_xUbQLWKxnSNu75QjT23ddKyJ2m80iaVYRoQ4ra9iXBEHpkW-MaSCUthCEJKjRBwgEJ_4Iwl0g263WGb3gg9gWfHtS1N3L-kNfXpyBxLRjYeQcbHoDAL6Ehr312s3bgylQ6xUgSGUW7tgsHLFKTf_SblJwGixGo6VGnNzrrNOAkhqo60PU3xG9246BFMwbvrvH53iBoExLSp78feo-2M4n9Zi2yJJ3e7-J4P0jaMGFOX1OZibPTEadr9AeX9u8VzB5kFGvTXu0rKXj36uA6vsl2w-YcDCx5WjVoK_xvJb8lRo6B3GYrxqN8BNpGcVMe0PfQCtvAmuTmv78zrtK8VPfc_sl2_SfWXxbtuuJMJpyMURI79OibDV86DQmcDX2k4TVnsmTBFUTck5pxqLl0OMZq6_tqrIKy3-CMivR0t0S4uZ9WTh_sLHrzRis2tNoj4KALJXPCPmHgjsDoMQpqUFT2DEpGeK-2g2UCFqeFAfyRdPMe_b_Y9zlYBC7g=w1403-h790-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/IDDW0oupvmuHisCAxBw8puWW7BOu7dIyNbe2bz2aySr0jbxJUHspaMc8Hm9JXuiXFoI-Hye12d8WxHrlhsLseL_G4xXj5f7lkdpDHOLMFgcco-L_xUbQLWKxnSNu75QjT23ddKyJ2m80iaVYRoQ4ra9iXBEHpkW-MaSCUthCEJKjRBwgEJ_4Iwl0g263WGb3gg9gWfHtS1N3L-kNfXpyBxLRjYeQcbHoDAL6Ehr312s3bgylQ6xUgSGUW7tgsHLFKTf_SblJwGixGo6VGnNzrrNOAkhqo60PU3xG9246BFMwbvrvH53iBoExLSp78feo-2M4n9Zi2yJJ3e7-J4P0jaMGFOX1OZibPTEadr9AeX9u8VzB5kFGvTXu0rKXj36uA6vsl2w-YcDCx5WjVoK_xvJb8lRo6B3GYrxqN8BNpGcVMe0PfQCtvAmuTmv78zrtK8VPfc_sl2_SfWXxbtuuJMJpyMURI79OibDV86DQmcDX2k4TVnsmTBFUTck5pxqLl0OMZq6_tqrIKy3-CMivR0t0S4uZ9WTh_sLHrzRis2tNoj4KALJXPCPmHgjsDoMQpqUFT2DEpGeK-2g2UCFqeFAfyRdPMe_b_Y9zlYBC7g=w1403-h790-no&quot; alt=&quot;&quot; /&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/BEyicJ7ztuvHxVZ_QlTdICu6QSELoffp-6cWtq03gM738Io2Y6yIjapjO27fHHI7zoC5uUsMTb7QSo2R3bMpIUd_HsT3eWZf3IY4BqdaGl6d5bRMmDcWiG8BgLiZ3_QC_nOCoaXYk0O6dr1wvP7ora6Bkhi_sAQ31WCSgYABevZI-qrFAxOEB-bUe9e6WDyPDdvX7XUkcO8snoGXwD4eJDi3zua7AaKuakn7_-1BBXt81mUEHMftx_FtRC8HjT5onyx0ZG8msxjLT2aSMYguaKIZNIaU9W1sSOjoLGUx0jTtAX3vCS0xjNYeFkyrNVf4Bekgc65x3ZeeDQYCBwTR9To6ajTPQHapSJ5RyzL2gE7MSc84tMncWBlSgNjZi5eb5cB7hANf7VVoBmflkbeopuPdYLl-2fHspXJKwGNNPs1DzYCQpN8rOcxcP3hhkF58gtd8_gsEFrkTeBrxE0ItI0SNe9DCXkd8Ni_GiIJfhBKO2QXyvQhsaDRubiQ2-qqajarwT3R9uqYKUf2853_pgirnj-sAc8vHWZAbZru8v0-gjAyxeE1tqhyMJixI3AZJTJF4-aO9csDQF9qlUkdSFG_jQQg4685t70GGS7iK2A=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/BEyicJ7ztuvHxVZ_QlTdICu6QSELoffp-6cWtq03gM738Io2Y6yIjapjO27fHHI7zoC5uUsMTb7QSo2R3bMpIUd_HsT3eWZf3IY4BqdaGl6d5bRMmDcWiG8BgLiZ3_QC_nOCoaXYk0O6dr1wvP7ora6Bkhi_sAQ31WCSgYABevZI-qrFAxOEB-bUe9e6WDyPDdvX7XUkcO8snoGXwD4eJDi3zua7AaKuakn7_-1BBXt81mUEHMftx_FtRC8HjT5onyx0ZG8msxjLT2aSMYguaKIZNIaU9W1sSOjoLGUx0jTtAX3vCS0xjNYeFkyrNVf4Bekgc65x3ZeeDQYCBwTR9To6ajTPQHapSJ5RyzL2gE7MSc84tMncWBlSgNjZi5eb5cB7hANf7VVoBmflkbeopuPdYLl-2fHspXJKwGNNPs1DzYCQpN8rOcxcP3hhkF58gtd8_gsEFrkTeBrxE0ItI0SNe9DCXkd8Ni_GiIJfhBKO2QXyvQhsaDRubiQ2-qqajarwT3R9uqYKUf2853_pgirnj-sAc8vHWZAbZru8v0-gjAyxeE1tqhyMJixI3AZJTJF4-aO9csDQF9qlUkdSFG_jQQg4685t70GGS7iK2A=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Frecche Tricolori at Airpower 2011, Austria
+        &lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/EdKCFjpiQ9PqAHJ5pt44bqscLWrZcwCutooJPN8JDMbZVzDO1FtHb0dtUtz1FJBQCCkQe9x0KqQ65mfl2dmouButsOsE1_6sGyJfQI-1beM1CNJ8nfr4m3cE5AjeJhI4IzVwKpBjP3NKw5jY-CH5fdIWlL0214SnIchy_vwQzRwsfuxQwuHSkx7TToQ9V1m0J4ojSDHhn99Aj51bxMCgc-l0q6S2zIRzIlDF1pWldxFPKGiocbS1EtWrfrmm9xVZfKg0t4jqdwYHckyLfyosEjIa33eJ0hQwnYNHMu6dU7R05jfXhK7PAN8FQZwbcnKIzHS1h9p6GDk6tv-cHhtgAVLdUn-mD3bdUgHddgHRdy5f2VCzBCgSp0ifoluoufBeYmNzTfnHbWcKXajnPUUtfkpCTD-y4yJk0ShJ_iw5yOk-ryhX0_CdF_6352xlM1_c7QD6UcA0lM_s0bbDoFT6goYdMKXVjpr3cVkY2rL_BEzZeuzx4cYw1wyOrTbZRjzqX4vHOtIHTyYn_HjzFgp2NqO0scKaeTU52qrtDRcQQKW1IsbFpmcDv0nms3b-G5k8x9VZfK7s-H6w57M27hfi8A1hBZHJUnclUg1JXxi3Ng=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/EdKCFjpiQ9PqAHJ5pt44bqscLWrZcwCutooJPN8JDMbZVzDO1FtHb0dtUtz1FJBQCCkQe9x0KqQ65mfl2dmouButsOsE1_6sGyJfQI-1beM1CNJ8nfr4m3cE5AjeJhI4IzVwKpBjP3NKw5jY-CH5fdIWlL0214SnIchy_vwQzRwsfuxQwuHSkx7TToQ9V1m0J4ojSDHhn99Aj51bxMCgc-l0q6S2zIRzIlDF1pWldxFPKGiocbS1EtWrfrmm9xVZfKg0t4jqdwYHckyLfyosEjIa33eJ0hQwnYNHMu6dU7R05jfXhK7PAN8FQZwbcnKIzHS1h9p6GDk6tv-cHhtgAVLdUn-mD3bdUgHddgHRdy5f2VCzBCgSp0ifoluoufBeYmNzTfnHbWcKXajnPUUtfkpCTD-y4yJk0ShJ_iw5yOk-ryhX0_CdF_6352xlM1_c7QD6UcA0lM_s0bbDoFT6goYdMKXVjpr3cVkY2rL_BEzZeuzx4cYw1wyOrTbZRjzqX4vHOtIHTyYn_HjzFgp2NqO0scKaeTU52qrtDRcQQKW1IsbFpmcDv0nms3b-G5k8x9VZfK7s-H6w57M27hfi8A1hBZHJUnclUg1JXxi3Ng=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Frecche Tricolori at Airpower 2011, Austria
+        &lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&quot;galleryitem &quot;&gt;
+&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
+
+
+&lt;a href=&quot;https://lh3.googleusercontent.com/Mw0LNBiJi0JfEqmXAWVgVdwcgejx8GbkCuRYNq1hcz8_hT6kVzWuk-aYg_JE3AoG7Vb_2ti5V8a9chwJXmoJDEXHYyMO0fKiqRTtrlpihLkQKgzh8nEPz8CRRq5l1T7Zf4HQNYy4vVvo_Vs24rqH9c42RuO9NVel1-RPQWs37y9HMN_ac1AgfpzP780kJTG96dnbrH6OPUJNtxe-0lacx9R9PTF4Ui3TuOi0lwmHAKwxtowHR8EzxBjuHxa9fPEpNRnJuDMRju0EABiJjJ5zAk8tO7FUUKUDQSrDnpK-3K1kimXcgO6_rxUHOF3gsD4C-Y3P9nR7kc1Gkk0_dC0QHSyHDHRuVZ3AdtUIcu4pyL6HPs9yHBK4zZdzExqwxFqNLf9U5YzVXIXu2yGOg1VKjE44jBv4O2ba-6F5v6mKs0JkY5khHyXk4scFHY0yhd5_CNoVXiuXuMiHXhLJUnO9xuI4H6d_5DcRu1ZzXmuPy7otCdMCqjS37D6eDTRIPUjSCOwdEQaQG_UCPLuS9CRtcXz0o-f8Qw1wnfTgkiHv5g-9-5gyiLDR0F6Xd9gxcEJjMuRzUcJmAdXrsN3OzGfvM2rhjQgb-ezNsfC-V7f6Vw=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
+
+&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
+    &lt;figure&gt;
+    &lt;img src=&quot;https://lh3.googleusercontent.com/Mw0LNBiJi0JfEqmXAWVgVdwcgejx8GbkCuRYNq1hcz8_hT6kVzWuk-aYg_JE3AoG7Vb_2ti5V8a9chwJXmoJDEXHYyMO0fKiqRTtrlpihLkQKgzh8nEPz8CRRq5l1T7Zf4HQNYy4vVvo_Vs24rqH9c42RuO9NVel1-RPQWs37y9HMN_ac1AgfpzP780kJTG96dnbrH6OPUJNtxe-0lacx9R9PTF4Ui3TuOi0lwmHAKwxtowHR8EzxBjuHxa9fPEpNRnJuDMRju0EABiJjJ5zAk8tO7FUUKUDQSrDnpK-3K1kimXcgO6_rxUHOF3gsD4C-Y3P9nR7kc1Gkk0_dC0QHSyHDHRuVZ3AdtUIcu4pyL6HPs9yHBK4zZdzExqwxFqNLf9U5YzVXIXu2yGOg1VKjE44jBv4O2ba-6F5v6mKs0JkY5khHyXk4scFHY0yhd5_CNoVXiuXuMiHXhLJUnO9xuI4H6d_5DcRu1ZzXmuPy7otCdMCqjS37D6eDTRIPUjSCOwdEQaQG_UCPLuS9CRtcXz0o-f8Qw1wnfTgkiHv5g-9-5gyiLDR0F6Xd9gxcEJjMuRzUcJmAdXrsN3OzGfvM2rhjQgb-ezNsfC-V7f6Vw=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Frecche Tricolori at Airpower 2011, Austria
+        &lt;/figcaption&gt;
+        
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;gallery&quot; markdown=&quot;1&quot;&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;image&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.data.galleries.default.testgallery&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this_image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gfx/GITEM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this_image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;the-data-file&quot;&gt;The data file&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_data/galleries/default.yaml&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;testgallery&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image4&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;4&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;5&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="jekyll" /><summary type="html">Building simple galleries using includes and Jekyll YAML data files.</summary></entry><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T19:40:54+02:00</published><updated>2017-09-13T19:40:54+02:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-13T19:41:05+0200&quot;&gt;2017-09-13 19:41:05 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -60,9 +332,11 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:5
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;This picture was found on the net and was apparently taken in some super market in Texas after Hurricane Harvey hit in late August 2017.&lt;/p&gt;
+&lt;p&gt;This picture was found on the net and was apparently taken in some super market in Texas after 
+Hurricane Harvey hit in late August 2017.&lt;/p&gt;
 
-&lt;p&gt;People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food products, despite the crisis and possible shortages that were to expect.&lt;/p&gt;
+&lt;p&gt;People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food 
+products, despite the crisis and possible shortages that were to expect.&lt;/p&gt;
 
 &lt;div class=&quot;blockimage &quot;&gt;
 
@@ -432,7 +706,7 @@ Westeros equally well and Sansa's outfit is probably a coincidence :)&quot;&gt;
 
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/got/sansa_the_sith.jpg&quot; alt=&quot;Learn from your masters, once you know enough, kill them. The principle of the Sith works in
-Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;width:50%px; max-width:50%px; height:auto; margin:0; display:block;&quot; /&gt;
+Westeros equally well and Sansa's outfit is probably a coincidence :)&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 Learn from your masters, once you know enough, kill them. The principle of the Sith works in
@@ -695,7 +969,60 @@ the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;page.collection&lt;
     &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Blogging With Jekyll</title><link href="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;access-all-documents-on-the-site&quot;&gt;Access all documents on the site.&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;site.documents&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;documents&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tags'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'first'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'modified'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This gives you an array, containing all posts, pages and collection items tagged with &lt;em&gt;first&lt;/em&gt; and 
+sorted by the &lt;code class=&quot;highlighter-rouge&quot;&gt;modified:&lt;/code&gt; front matter field in reverse order (newest first).&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-avoid-auto-numbering-in-numbered-lists&quot;&gt;How to avoid auto-numbering in numbered lists&lt;/h2&gt;
+
+&lt;p&gt;The following markdown code should produce a numbered list starting with the number 4. But this 
+doesn’t work.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;4. four
+5. five
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;It will produce the following output:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;four&lt;/li&gt;
+  &lt;li&gt;five&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is because markdown will auto-number lists always starting with 1. This can be avoided by 
+explicitly specifying the start value before the first list item:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:start=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;4&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;four&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;five&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start=&quot;4&quot;&gt;
+  &lt;li&gt;four&lt;/li&gt;
+  &lt;li&gt;five&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Will produce the desired output.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-concatenate-strings&quot;&gt;How to concatenate strings&lt;/h2&gt;
+
+&lt;p&gt;Use the capture keyword.&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Creates a new variable &lt;strong&gt;foo&lt;/strong&gt; containing the result of &lt;code class=&quot;highlighter-rouge&quot;&gt;site.foo&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;site.bar&lt;/code&gt; concatenated.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Blogging With Jekyll</title><link href="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
 &lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
 Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T05:12:58+0200&quot;&gt;2017-08-28 05:12:58 +0200&lt;/time&gt;
 &lt;/div&gt;
@@ -799,7 +1126,7 @@ editor&quot;&gt;
 
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/vim.png&quot; alt=&quot;This is how a post can be written in Jekyll - with a simple text 
-editor&quot; style=&quot;width:300pxpx; max-width:300pxpx; height:auto; margin:0; display:block;&quot; /&gt;
+editor&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 This is how a post can be written in Jekyll - with a simple text 
@@ -943,37 +1270,4 @@ Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:5
 
 &lt;/div&gt;
 
-&lt;p&gt;There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">There is always a reason to watch your weight. This is a special one :)</summary></entry><entry><title type="html">Ritchie Blackmore tribute</title><link href="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" rel="alternate" type="text/html" title="Ritchie Blackmore tribute" /><published>2011-05-06T17:23:56+02:00</published><updated>2011-05-06T17:23:56+02:00</updated><id>https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">&lt;h1 id=&quot;son-of-alerik&quot;&gt;Son of Alerik…&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-06T15:23:56+0000&quot;&gt;2011-05-06 15:23:56 +0000&lt;/time&gt;
-&lt;/div&gt;
-&lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Fri, 06. May 2011, 15:23
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;This is what happens when 5 genius musicians gather together to play their instruments. A 
-masterpiece that was in their opinion not good enough to make it on one of their albums.&lt;/p&gt;
-
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
-
-&lt;div class=&quot;ytcontainer&quot;&gt;
-&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/viYqDfbsT6M&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-The song’s name is &lt;strong&gt;Son of Alerik&lt;/strong&gt; and it cannot be found on any Deep Purple album except the 
-remastered version of 1984 album Perfect Strangers, released in 1999.&lt;/p&gt;
-
-&lt;p&gt;I remember reading somewhere that this song was also the B side of a limited edition of the Knocking 
-at Your Back Door single in the 80’s - don’t think that this is still available though.&lt;/p&gt;
-
-&lt;p&gt;Also, there is, to my knowledge, no live footage of this song as it was never played live and was 
-probably only played once in the band’s entire history. The video just mixes some some parts of the 
-1986/87 perfect strangers tour with snippets of Rainbow gigs publicly available on YouTube.&lt;/p&gt;
-
-&lt;p&gt;The origins of the song are unknown but it is said that it’s the result of a Jam session they did 
-while they were bored in the studio, so this isn’t a song that was written, just improvised. These 
-guys were true musicians and artists and the music speaks for itself.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="video" /><summary type="html">Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.</summary></entry></feed>
+&lt;p&gt;There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">There is always a reason to watch your weight. This is a special one :)</summary></entry></feed>

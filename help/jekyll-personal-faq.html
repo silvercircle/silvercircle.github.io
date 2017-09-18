@@ -373,11 +373,68 @@ the variable <code class="highlighter-rouge">page.collection</code>.</p>
 </code></pre>
 </div>
 
+<h2 id="access-all-documents-on-the-site">Access all documents on the site.</h2>
+
+<p>Use <code class="highlighter-rouge">site.documents</code></p>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">docs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">documents</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'tags'</span><span class="p">,</span><span class="w"> </span><span class="s1">'first'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'modified'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">reverse</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p>This gives you an array, containing all posts, pages and collection items tagged with <em>first</em> and 
+sorted by the <code class="highlighter-rouge">modified:</code> front matter field in reverse order (newest first).</p>
+
+<h2 id="how-to-avoid-auto-numbering-in-numbered-lists">How to avoid auto-numbering in numbered lists</h2>
+
+<p>The following markdown code should produce a numbered list starting with the number 4. But this 
+doesn’t work.</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>4. four
+5. five
+</code></pre>
+</div>
+<p>It will produce the following output:</p>
+
+<ol>
+  <li>four</li>
+  <li>five</li>
+</ol>
+
+<p>This is because markdown will auto-number lists always starting with 1. This can be avoided by 
+explicitly specifying the start value before the first list item:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="err">:start=</span><span class="nt">"4"</span><span class="err">}</span><span class="w">
+</span><span class="mi">4</span><span class="err">.</span><span class="w"> </span><span class="err">four</span><span class="w">
+</span><span class="mi">5</span><span class="err">.</span><span class="w"> </span><span class="err">five</span><span class="w">
+</span></code></pre>
+</div>
+
+<ol start="4">
+  <li>four</li>
+  <li>five</li>
+</ol>
+
+<p>Will produce the desired output.</p>
+
+<h2 id="how-to-concatenate-strings">How to concatenate strings</h2>
+
+<p>Use the capture keyword.</p>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">foo</span><span class="w"> </span><span class="p">%}{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">foo</span><span class="p">}}{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">bar</span><span class="p">}}{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p>Creates a new variable <strong>foo</strong> containing the result of <code class="highlighter-rouge">site.foo</code> + <code class="highlighter-rouge">site.bar</code> concatenated.</p>
+
 
         <div style="margin-top: 0.5em">
 
 <div style="float:right;">
-    Words: 1413
+    Words: 1664
 </div>
 
 
@@ -464,6 +521,23 @@ s.setAttribute('data-timestamp', +new Date());
  
    
    
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/18/building-galleries/">Build simple galleries with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-18T05:18:23+0200">2017-09-18 05:18:23 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   Alex Vie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
    <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
    <div class="author" style="float:right;">
      <span class="date">
@@ -546,23 +620,6 @@ s.setAttribute('data-timestamp', +new Date());
    <br>
    
    
- 
-   
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/08/28/How-to-build-locally-for-github-page/">Build a GitHub page locally with Jekyll</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   AlexVie
-   </span>
-   <br>
-   
-   
    
  
   <div style="float:right;margin: 5px 0;"><a href="/blog/">Show all blog posts</a></div>
@@ -601,6 +658,7 @@ s.setAttribute('data-timestamp', +new Date());
 <a href="/tags/generic">generic</a>, 
 <a href="/tags/got">got</a>, 
 <a href="/tags/jaime">jaime</a>, 
+<a href="/tags/jekyll">jekyll</a>, 
 <a href="/tags/jon">jon</a>, 
 <a href="/tags/theory">theory</a>, 
 <a href="/tags/tyrion">tyrion</a>, 
