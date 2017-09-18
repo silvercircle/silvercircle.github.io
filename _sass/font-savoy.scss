@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: bold;
+    src: url("#{$base}/assets/fonts/Savoy-Bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: normal;
+    font-style: italic;
+    src: url("#{$base}/assets/fonts/Savoy-Italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PS Savoy';
+    font-weight: normal;
+    src: url("#{$base}/assets/fonts/Savoy-Roman-webfont.woff") format("woff");
+}

@@ -1,0 +1,27 @@
+<div class="blockimage {{include.borderclass}}">
+{% if include.image.url == blank %}
+    {% capture image_name %}{{site.baseurl}}/assets/gfx/{{include.image.path}}{{include.image.name}}{% endcapture %}
+{% else %}
+    {% assign image_name = include.image.url %}
+{% endif %}
+{% unless include.nolink == 1 %}
+<a href="{{ image_name }}" data-fancybox data-caption="{{include.image.desc}}">
+{% endunless %}
+<figure>
+        <img src="{{ image_name }}" alt="{{include.image.desc}}" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;" />
+        {% if include.image.desc != blank %}
+        <figcaption style="display:none;">
+                {{ include.image.desc }}
+        </figcaption>
+        {% endif %}
+</figure>
+{% unless include.nolink == 1 %}
+</a>
+{% endunless %}
+{% if include.image.desc != blank and include.omitbottomcaption != 1 %}
+<div class="floatimage_title" style="padding-bottom: 8px;">
+    {{ include.image.desc }}
+</div>
+{% endif %}
+</div>
+

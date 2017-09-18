@@ -15,9 +15,11 @@ excerpt: >
 
 # No love for vegetarian / vegan food
 {% include post_header.html %}
-This picture was found on the net and was apparently taken in some super market in Texas after Hurricane Harvey hit in late August 2017.
+This picture was found on the net and was apparently taken in some super market in Texas after 
+Hurricane Harvey hit in late August 2017.
 
-People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food products, despite the crisis and possible shortages that were to expect.
+People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food 
+products, despite the crisis and possible shortages that were to expect.
 
 {% include gfx/block_image.html image="fun/tofu.jpg" title="Vegetarian and vegan foot leftovers" %}
 

@@ -1,0 +1,41 @@
+/*
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Cormorant SC Light'), local('CormorantSC-Light'),
+       url('../fonts/cormorant-sc-v4-latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cormorant SC Regular'), local('CormorantSC-Regular'),
+       url('../fonts/cormorant-sc-v4-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Cormorant SC Medium'), local('CormorantSC-Medium'),
+       url('../fonts/cormorant-sc-v4-latin-500.woff') format('woff');
+}
+*/
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Cormorant SC SemiBold'), local('CormorantSC-SemiBold'),
+       url('../fonts/cormorant-sc-v4-latin-600.woff') format('woff');
+}
+/*
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cormorant SC Bold'), local('CormorantSC-Bold'),
+       url('../fonts/cormorant-sc-v4-latin-700.woff') format('woff');
+}
+*/

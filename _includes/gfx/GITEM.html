@@ -1,0 +1,25 @@
+<div class="galleryitem {{include.borderclass}}">
+<div class="gallery_imgwrapper">
+{% if include.image.url == blank %}
+    {% capture image_name %}{{site.baseurl}}/assets/gfx/{{include.image.path}}{{include.image.name}}{% endcapture %}
+{% else %}
+    {% capture image_name %}{{include.image.url}}{% endcapture %}
+{% endif %}
+{% unless include.nolink == 1 %}
+<a href="{{ image_name }}" data-fancybox="gallery" data-caption="{{include.image.desc}}">
+{% endunless %}
+<div style="margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;">
+    <figure>
+    <img src="{% if include.image.thumb == 1 %}{{ site.baseurl }}/assets/gfx/{{ include.image.path }}/thumb_{{include.image.name}}{% else %}{{ image_name }}{% endif %}" alt="{{include.image.desc}}"/>
+        {% if include.image.desc and include.image.desc != '' %}
+        <figcaption style="display:none;">
+                {{ include.image.desc }}
+        </figcaption>
+        {% endif %}
+    </figure>
+</div>
+{% unless include.nolink == 1 %}
+</a>
+{% endunless %}
+</div>
+</div>

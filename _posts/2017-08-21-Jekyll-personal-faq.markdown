@@ -200,3 +200,59 @@ the variable `page.collection`.
 ```
 {% endraw %}
 
+## Access all documents on the site.
+
+Use `site.documents`
+
+{% raw %}
+```liquid
+{% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
+```
+{% endraw %}
+
+This gives you an array, containing all posts, pages and collection items tagged with *first* and 
+sorted by the `modified:` front matter field in reverse order (newest first).
+
+## How to avoid auto-numbering in numbered lists
+
+The following markdown code should produce a numbered list starting with the number 4. But this 
+doesn't work.
+
+```
+4. four
+5. five
+```
+It will produce the following output:
+
+4. four
+5. five
+
+This is because markdown will auto-number lists always starting with 1. This can be avoided by 
+explicitly specifying the start value before the first list item:
+
+{% raw %}
+```
+{:start="4"}
+4. four
+5. five
+```
+{% endraw %}
+
+{:start="4"}
+4. four
+5. five
+
+Will produce the desired output.
+
+## How to concatenate strings
+
+Use the capture keyword.
+
+{% raw %}
+```liquid
+{% capture foo %}{{site.foo}}{{site.bar}}{% endcapture %}
+```
+{% endraw %}
+
+Creates a new variable **foo** containing the result of `site.foo` + `site.bar` concatenated.
+

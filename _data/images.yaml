@@ -1,0 +1,14 @@
+got:
+  jaime_hand:
+    path: got/
+    name: jaime-hand.jpg
+    desc: "Jaime loses his sword hand - a character-defining moment."
+
+  old_hodor:
+    path: got/
+    name: old-hodor.jpg
+
+  jaime_cersei_prophecy:
+    url: "https://i.redditmedia.com/kK0PrPdwk-KeKDSzvZ8UmeRhZ6xjk55lJsRnpK-aX_E.png?w=1024&s=194cd211eaacbc187362f63d0b6575ca"
+    desc: "Jaime and Cersei in season 7 episode 1"
+

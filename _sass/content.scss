@@ -100,6 +100,7 @@ h3.cbox_header {
     color: white !important;
     text-align: center;
     margin: 0 !important;
+    font-size: $h3_listheader_size !important;
     padding: 0 10px 5px 10px;
 }
 
@@ -135,14 +136,79 @@ div.floatbox.right {
 
 div.floatbox p, div.floatbox li {
     font-family: Monda, Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 11pt !important;
 }
 
 div.floatbox p:last-child, div.floatbox li:last-child {
     margin-bottom: 0 !important;
 }
 
+blockquote.fancy {
+  display:block;
+  background: #fff;
+  padding: 0 20px 0 45px;
+  margin: 0;
+  position: relative;
+  /*Borders - (Optional)*/
+  border: 0;
+}
+
+blockquote.fancy.bordered {
+    border-left: 5px solid orange;
+}
+blockquote.fancy::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  margin: 0;
+
+  /*Positioning*/
+  position: absolute;
+  left: 5px;
+  top:-15px;
+}
+
+blockquote.fancy::after{
+  /*Reset to make sure*/
+  content: "";
+}
+.galleryitem {
+    width:33.3333333333%;
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.galleryitem img {
+/*    width: auto;
+    height: 100%;
+    max-height:100%;*/
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+
+div.gallery_imgwrapper {
+    width: auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    position:relative;
+}
+div.gallery {
+    width: 100%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1039px) {
     div.contentbox {
+        width: 50%;
+    }
+    .galleryitem {
         width: 50%;
     }
 }
@@ -151,8 +217,11 @@ div.floatbox p:last-child, div.floatbox li:last-child {
     div.contentbox {
         width: 100%;
     }
-
+    .galleryitem {
+        width: 100%;
+    }
     .two_cols {
         column-count: 1;
     }
 }
+

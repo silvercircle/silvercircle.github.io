@@ -7,7 +7,7 @@ date: 2017-08-25 06:35:00+0200
 modified: 2017-08-25 06:35:07+0200
 ---
 # So, what's this all about?
-{: style="margin-bottom:20px;"}
+{: style="margin-bottom:10px;"}
 <div markdown="1">
 <div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
 ### Featured
@@ -22,11 +22,7 @@ Well, right now it's not much. It's some sort of playground to test [Jekyll](htt
 a static page generator that has enough flexibility to build a blog or documentation site,
 but leaves out all the bloat that makes modern content management systems slow and prone to
 security problems. It also significantly lowers the requirements for hosting to a simple web server 
-that can serve static files (essentially, what basically **all** web servers can).
-
-With Jekyll, there is no need for a database or complex web server configuration. The only thing
-needed is a working ruby and Jekyll installation on either your local development machine or the
-server machine itself and a web server that can serve static files.
+that can serve static files.
 
 Jekyll is also supported by [GitHub pages](https://pages.github.com/) who give you essentially 
 unlimited free web hosting, but won't allow you to run PHP, Python, Java or whatever else on their 

@@ -32,15 +32,16 @@ that didn't make it into the show.
 In September, 1997, a user going by the name **Rodrick Su** posted a theory that was almost 
 identical to our R+L=J formula to the usenet group *rec.arts.sf.written*. 
 
-```
-4. Jon Snow's parent.  It is wholely consistent that Jon Snow is the
+>{:start="4"}
+>4. Jon Snow's parent.  It is wholely consistent that Jon Snow is the
    offspring of Rhaegar Targaryen and Lyanna Stark.  Ned probably
    keep this a secret because Rober Baratheon is obsess with killing
    off all Targaryen, especially any offspring of Rhaegar.
-
-5. If Jon Snow is a Targaryen, then by tradition, he is the most likely
+>
+>5. If Jon Snow is a Targaryen, then by tradition, he is the most likely
    mate to Daenery, being that she is his aunt...
-```
+{: .fancy}
+{: .bordered}
 
 [Here](https://groups.google.com/forum/#!msg/rec.arts.sf.written/G2KnTQFeLQ4/tEq2sMdlMSAJ) is the 
 original post archived on google groups. The thread contains a few more interesting theories 

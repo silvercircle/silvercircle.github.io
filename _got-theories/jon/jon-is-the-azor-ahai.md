@@ -54,8 +54,8 @@ considered a person with good virtues.
 * he is a very skilled swordsman with the proven ability to kill white walkers.
 
 <div class="floatbox right" style="width:30%;margin-top: 0;" markdown="1">
-This theory could also mean that Jon's romance to Dany will be short-lived
-{:aleft}
+>This theory could also mean that Jon's romance to Dany will be short-lived
+{: .fancy}
 </div>
 All the above makes sense in supporting the theory about Jon being the Azor Ahai and is much 
 stronger evidence than rivaling theories can present for their respective candidates. Other 

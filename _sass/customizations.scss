@@ -81,6 +81,7 @@ h3.sidebar_listheader:first-child {
 
 h3.listheading {
     color: $darklink !important;
+    font-size: $h3_listheader_size !important;
 }
 
 #sidebar h2 {
@@ -134,7 +135,7 @@ div.hideable {
 }
 
 div.footnotes li, div.footnotes li > p { 
-    font-size: 100% !important;
+    font-size: $footnotes_fontsize !important;
 }
 
 div.footnotes::before {

@@ -7,8 +7,26 @@ $blue: #0000bb;
 $green: #00bb00;
 $lightgrey: #c5c5c5;
 
+$h1_base_size: 26;
+$header_weight: 600;
+$header_color: #752;
+
+$text_color: #444;
+$text_size: 15pt;
+$text_line_height: 115%;
+$text_weight: 400;
+
+$footnotes_fontsize: 12pt;
+$h3_listheader_size: 16pt;
+
 $base: '{{site.baseurl}}';
 
+@import "font-monda";
+/*@import "font-oswald";*/
+/*@import "font-roboto_slab";*/
+/*@import "font-vollkorn";*/
+@import "font-cormorant_sc.scss";
+@import "font-cormorant.scss";
 @import "theme";
 @import "images";
 @import "paginator-trails";
