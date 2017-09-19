@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-19T06:35:17+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T05:18:14+02:00</published><updated>2017-09-18T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;build-simple-galleries-with-jekyll&quot;&gt;Build simple galleries with Jekyll.&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-18T05:18:23+0200&quot;&gt;2017-09-18 05:18:23 +0200&lt;/time&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-19T08:05:21+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T05:18:14+02:00</published><updated>2017-09-18T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;build-simple-galleries-with-jekyll&quot;&gt;Build simple galleries with Jekyll.&lt;/h1&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-18T05:18:23+0200&quot;&gt;2017-09-18 05:18:23 +0200&lt;/time&gt;&lt;br /&gt;314 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by Alex Vie | Mon, 18. September 2017, 05:18
+    Written by Alex Vie | Mon, 18. September 2017, 05:18&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;Data files are a fairly powerful feature in Jekyll. They can be used to store all kind of structured 
 data in as many different files and multiple formats. Currently supported are:&lt;/p&gt;
@@ -312,14 +314,16 @@ node &lt;code class=&quot;highlighter-rouge&quot;&gt;testgallery&lt;/code&gt;.&l
       &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;5&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="jekyll" /><summary type="html">Building simple galleries using includes and Jekyll YAML data files.</summary></entry><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T19:40:54+02:00</published><updated>2017-09-13T19:40:54+02:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-13T19:41:05+0200&quot;&gt;2017-09-13 19:41:05 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-13T19:41:05+0200&quot;&gt;2017-09-13 19:41:05 +0200&lt;/time&gt;&lt;br /&gt;334 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Wed, 13. September 2017, 19:40
+    Written by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Wed, 13. September 2017, 19:40&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;Season 7 has concluded just a bit over 2 weeks ago, but the community is already looking forward to 
 the last and final season that will bring an end to one of the most popular TV shows of all time. We 
@@ -364,14 +368,16 @@ will enter the stage.&lt;/p&gt;
 &lt;/p&gt;
   &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="got" /><summary type="html">Game of Thrones Season 7 has seen its final just ab it over two weeks ago, but fans are already talking a lot about season 8. The premiere of season 8 is still at least one year away, but a lot is already known about the final season that will bring everthing to an end.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/got/logo.png" /></entry><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T16:59:03+02:00</published><updated>2017-09-08T16:59:03+02:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;&lt;br /&gt;75 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Fri, 08. September 2017, 16:59
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Fri, 08. September 2017, 16:59&lt;br /&gt;
+    Reading time: approx. 0 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;This picture was found on the net and was apparently taken in some super market in Texas after 
 Hurricane Harvey hit in late August 2017.&lt;/p&gt;
@@ -400,14 +406,16 @@ products, despite the crisis and possible shortages that were to expect.&lt;/p&g
 &lt;/div&gt;
 
 &lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry><entry><title type="html">Publishing on GitHub</title><link href="https://silvercircle.github.io/articles/publishing-on-github" rel="alternate" type="text/html" title="Publishing on GitHub" /><published>2017-09-05T03:45:47+02:00</published><updated>2017-09-05T03:45:47+02:00</updated><id>https://silvercircle.github.io/articles/publishing-on-github</id><content type="html" xml:base="https://silvercircle.github.io/articles/publishing-on-github">&lt;h1 id=&quot;publishing-on-github&quot;&gt;Publishing on GitHub&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:58:16+0200&quot;&gt;2017-09-11 16:58:16 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-11T16:58:16+0200&quot;&gt;2017-09-11 16:58:16 +0200&lt;/time&gt;&lt;br /&gt;2007 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 05. September 2017, 03:45
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 05. September 2017, 03:45&lt;br /&gt;
+    Reading time: approx. 8 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;For many years, I was running my own website, containing a blog, a Forum and a Wiki, all hosted on a 
 dedicated server - a quite expensive solution 15 years ago, but all three parts were essential back 
@@ -555,14 +563,16 @@ impressive).&lt;/li&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;&lt;br /&gt;250 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/qt/index.html&quot;&gt;Qt&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/c++/index.html&quot;&gt;C++&lt;/a&gt; | Sun, 03. September 2017, 10:25
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/qt/index.html&quot;&gt;Qt&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/c++/index.html&quot;&gt;C++&lt;/a&gt; | Sun, 03. September 2017, 10:25&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;Qt is a great thing, for most parts, but sometimes it does not follow UI guidelines strictly enough. 
 On Windows, Qt applications have a tendency of using non-standard fonts at non-standard sizes. For 
@@ -611,14 +621,16 @@ different scaling (click to enlarge)
 &lt;/div&gt;
 
 &lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/qt.png" /></entry><entry><title type="html">Build a GitHub page locally with Jekyll</title><link href="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/" rel="alternate" type="text/html" title="Build a GitHub page locally with Jekyll" /><published>2017-08-28T10:02:37+02:00</published><updated>2017-08-28T10:02:37+02:00</updated><id>https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/28/How-to-build-locally-for-github-page/">&lt;h1 id=&quot;build-your-github-jekyll-page-locally&quot;&gt;Build your GitHub Jekyll page locally&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:42+0200&quot;&gt;2017-08-28 10:02:42 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T10:02:42+0200&quot;&gt;2017-08-28 10:02:42 +0200&lt;/time&gt;&lt;br /&gt;470 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Mon, 28. August 2017, 10:02
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Mon, 28. August 2017, 10:02&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;GitHub supports Jekyll as site generator and in most cases, this is good 
 enough. Some more advanced pages may require additional Jekyll plugins that 
@@ -678,14 +690,16 @@ needed.&lt;/li&gt;
 
 &lt;p&gt;That should do it. You can now build your site locally and use every Jekyll 
 plugin you want.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">How to build your site locally with your own Jekyll installation and deploy it on GitHub using different branches.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">got season 7 recap</title><link href="https://silvercircle.github.io/got/season7-recap.html" rel="alternate" type="text/html" title="got season 7 recap" /><published>2017-08-28T01:31:31+02:00</published><updated>2017-08-28T01:31:31+02:00</updated><id>https://silvercircle.github.io/got/Season7-recap</id><content type="html" xml:base="https://silvercircle.github.io/got/season7-recap.html">&lt;h1 id=&quot;season-7-was-awesome-but&quot;&gt;Season 7 was awesome, but…&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T02:31:36+0200&quot;&gt;2017-08-28 02:31:36 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T02:31:36+0200&quot;&gt;2017-08-28 02:31:36 +0200&lt;/time&gt;&lt;br /&gt;1327 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;fun&lt;/a&gt; | Mon, 28. August 2017, 01:31
+    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;fun&lt;/a&gt; | Mon, 28. August 2017, 01:31&lt;br /&gt;
+    Reading time: approx. 5 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;&lt;strong&gt;Good things do not last long enough&lt;/strong&gt;. Our perception makes us believe that
 good and enjoyable times zoom by way faster than their not so enjoyable
@@ -830,14 +844,16 @@ What about Tormund and Brienne, will they finally get the chance to make &lt;em&
 &lt;blockquote&gt;
   &lt;p&gt;Who the hell will still be among the living at the end of the final episode?&lt;/p&gt;
 &lt;/blockquote&gt;</content><author><name>alex</name></author><category term="first" /><category term="got" /><category term="video" /><summary type="html">game of thrones season 7 is already over and to me it seems it just started last week, but in reality, it's been 6 weeks ago. the shortest season so far brought a major events at an alarming rate and some of these events were unfortunately too predictable. this might, however, just be a side effect of the main plot approaching the final conclusion.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/got/sansa_the_sith.jpg" /></entry><entry><title type="html">Jekyll personal FAQ</title><link href="https://silvercircle.github.io/help/jekyll-personal-faq.html" rel="alternate" type="text/html" title="Jekyll personal FAQ" /><published>2017-08-22T22:45:00+02:00</published><updated>2017-08-22T22:45:00+02:00</updated><id>https://silvercircle.github.io/help/Jekyll-personal-faq</id><content type="html" xml:base="https://silvercircle.github.io/help/jekyll-personal-faq.html">&lt;h1 id=&quot;jekyll-personal-faq&quot;&gt;Jekyll personal FAQ&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-14T23:03:16+0200&quot;&gt;2017-09-14 23:03:16 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-14T23:03:16+0200&quot;&gt;2017-09-14 23:03:16 +0200&lt;/time&gt;&lt;br /&gt;1277 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 22. August 2017, 22:45
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt; | Tue, 22. August 2017, 22:45&lt;br /&gt;
+    Reading time: approx. 5 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;This is a list of questions (and answers) I stumbled over while designing this 
 site. It is by no means a complete list and will most likely cover topics that 
@@ -1064,14 +1080,16 @@ explicitly specifying the start value before the first list item:&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Creates a new variable &lt;strong&gt;foo&lt;/strong&gt; containing the result of &lt;code class=&quot;highlighter-rouge&quot;&gt;site.foo&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;site.bar&lt;/code&gt; concatenated.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><summary type="html">This is a list of questions (and answers) I stumbled over while designing this site. It is by no means a complete list and will most likely cover topics that are already documented elsewhere. I found many answers on [stackoverflow questions tagged with Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Blogging With Jekyll</title><link href="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/" rel="alternate" type="text/html" title="Blogging With Jekyll" /><published>2017-08-22T16:30:00+02:00</published><updated>2017-08-22T16:30:00+02:00</updated><id>https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/08/22/Blogging-with-jekyll/">&lt;h1 id=&quot;blogging-with-a-static-site-generator&quot;&gt;Blogging with a static site generator&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T05:12:58+0200&quot;&gt;2017-08-28 05:12:58 +0200&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-08-28T05:12:58+0200&quot;&gt;2017-08-28 05:12:58 +0200&lt;/time&gt;&lt;br /&gt;2037 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt; | Tue, 22. August 2017, 16:30
+    Written by alex&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt; | Tue, 22. August 2017, 16:30&lt;br /&gt;
+    Reading time: approx. 8 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
 &lt;p&gt;The big question is: &lt;strong&gt;WHY?&lt;/strong&gt; Why should someone give up all the innovations of the last 20 years or 
 so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages&lt;/p&gt;
@@ -1290,14 +1308,17 @@ becomes difficult, but again, like in the above example with a comment system,
 3rd party providers may come to rescue. It’s simple to add a customized google 
 search box to your site, giving you all of Google’s knowledge on searching web 
 pages for free (well, there be &lt;del&gt;dragons&lt;/del&gt; ads, of course).&lt;/p&gt;</content><author><name>alex</name></author><category term="first" /><category term="Jekyll" /><summary type="html">The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/jekyll.png" /></entry><entry><title type="html">Watch your weight, there is always a reason :)</title><link href="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/" rel="alternate" type="text/html" title="Watch your weight, there is always a reason :)" /><published>2011-05-17T06:53:27+02:00</published><updated>2011-05-17T06:53:27+02:00</updated><id>https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason</id><content type="html" xml:base="https://silvercircle.github.io/2011/05/17/watch-your-weight-there-is-always-a-reason/">&lt;h1 id=&quot;a-good-reason-to-watch-your-weight&quot;&gt;A good reason to watch your weight&lt;/h1&gt;
-&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
-Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:53:27+0000&quot;&gt;2011-05-17 04:53:27 +0000&lt;/time&gt;
+
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2011-05-17T04:53:27+0000&quot;&gt;2011-05-17 04:53:27 +0000&lt;/time&gt;&lt;br /&gt;42 Words
 &lt;/div&gt;
 &lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Tue, 17. May 2011, 04:53
+    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt; | Tue, 17. May 2011, 04:53&lt;br /&gt;
+    Reading time: approx. 0 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr /&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
 &lt;blockquote&gt;
 
 &lt;/blockquote&gt;
