@@ -7,6 +7,7 @@ modified: 2017-09-17T19:48:45+0200
 menucontext: got
 disqus: 1
 share: 1
+backlink: /got-theories
 tag: [first, got, theory, jaime]
 excerpt: >
     Jaime Lannister is one of the most interesting characters in Game of Thrones. This is mainly, 
@@ -39,7 +40,7 @@ believed he was the greatest sword fighter of all time and crippled an innocent 
 he and his even more evil sister didn't want to face consequences for their treacherous and 
 incestious behavior.
 
-{% include gfx/FD.html image=site.data.images.got.jaime_hand align="right" width="45%" %}
+{% include gfx/FD.html image=I.got.jaime_hand align="right" width="45%" %}
 His excessive amount of self-confidence quickly took a sharp decline when he fell prisoner to the 
 Starks at the end of season 1, and was ultimately shattered in season 3, when his fate as best sword 
 fighter in all of Westeros was sealed at the hands of Locke and Jaime lost his sword hand in an act 
@@ -171,7 +172,7 @@ quite a few reasons for Jaime having accumulated enough hate:
   during season 7 and will continue to serve her into season 8 by ferrying the Golden Company to 
   Westeros.
 
-{%include gfx/FD.html image=site.data.images.got.jaime_cersei_prophecy align="right" width="40%"%}
+{%include gfx/FD.html image=I.got.jaime_cersei_prophecy align="right" width="40%"%}
 Then we have this image seen by many as a big hint on how Cersei *may* die later in the show. We see 
 her standing on the *neck* of Westeros (the narrowest part) while Jaime has positioned himself near 
 the part that is commonly known as *fingers*.

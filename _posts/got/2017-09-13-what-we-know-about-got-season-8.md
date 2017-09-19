@@ -8,6 +8,7 @@ modified: 2017-09-13T19:41:05+0200
 categories: [GoT, Fun]
 permalink: /got/season-8-facts-known-in-september-2017
 menucontext: blog
+backlink: /blog
 tag: [first, got]
 excerpt: >
   Game of Thrones Season 7 has seen its final just ab it over two weeks ago, but fans are already 

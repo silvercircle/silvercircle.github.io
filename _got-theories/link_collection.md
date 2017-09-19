@@ -16,6 +16,7 @@ image_align: right
 image_width: 100px
 image_title: "GoT Logo"
 image_link: 0
+backlink: /got-theories
 ---
 
 # Link collection

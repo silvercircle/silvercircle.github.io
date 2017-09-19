@@ -8,12 +8,13 @@ modified: 2017-08-25 06:35:07+0200
 ---
 # So, what's this all about?
 {: style="margin-bottom:10px;"}
+{% include defs.md %}
 <div markdown="1">
 <div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
 ### Featured
 {: .cbox_header}
-{% include gfx/block_image.html image="st-transylvania.png" borderclass="borderless" 
-title="Transylvania Theme for ST 3" omitbottomcaption=1 %}
+{% include gfx/BD.html image=G.default.st-transylvania borderclass="borderless" omitbottomcaption=1 
+%}
 [ST-Transylvania]({{site.baseurl}}/software/Transylvania-theme-for-sublimetext-3) is a theme for 
 Sublime Text 3 that harmonizes well with the dracula color scheme.
 {: style="font-size:100%;text-align:center;"}

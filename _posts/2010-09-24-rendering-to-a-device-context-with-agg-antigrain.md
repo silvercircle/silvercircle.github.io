@@ -6,6 +6,7 @@ author: AlexVie
 layout: default
 categories: [C++, Development]
 tag: first
+backlink: /blog
 disqus: 1
 share: 1
 excerpt: >

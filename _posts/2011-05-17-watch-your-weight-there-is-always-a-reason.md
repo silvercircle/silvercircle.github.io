@@ -7,13 +7,15 @@ layout: default
 menucontext: blog
 disqus: 1
 share: 1
+backlink: /blog
 tag: first
 categories: [Fun]
 excerpt: There is always a reason to watch your weight. This is a special one :)
 ---
 #  A good reason to watch your weight
-{% include post_header.html %}>
-{% include gfx/block_image.html image="archive/2011/05/watch-your-weight.png" nolink=1 %}
+{% include post_header.html %}
+{% include defs.md %}
+{% include gfx/BD.html image=G.fun.aliens nolink=1 omitbottomcaption=1 borderclass="borderless" %}
 
 There are plenty of reasons why you should be careful about your weight, but this is one I have not yet seen being mentioned.
 

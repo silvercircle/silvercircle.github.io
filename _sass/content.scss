@@ -1,5 +1,5 @@
 /*
- * these styles should only be used in content, not in templates
+ * these styles should only be used in content via markdown, not in templates
  */
 .c_red {
     color: $red;
@@ -45,7 +45,7 @@
 
 .note p {
     margin: 0 20px 10px 20px;
-    font-family: Monda, Arial, Helvetica, sans-serif !important;
+    font-family: $sans_font, sans-serif !important;
     font-size: 11pt !important;
     line-height: 120% !important;
 }
@@ -135,7 +135,7 @@ div.floatbox.right {
 }
 
 div.floatbox p, div.floatbox li {
-    font-family: Monda, sans-serif !important;
+    font-family: $sans_font, sans-serif !important;
     font-size: $floatbox_fontsize !important;
     color: $floatbox_color !important;
     line-height: 120% !important;

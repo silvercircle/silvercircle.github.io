@@ -12,3 +12,22 @@ got:
     url: "https://i.redditmedia.com/kK0PrPdwk-KeKDSzvZ8UmeRhZ6xjk55lJsRnpK-aX_E.png?w=1024&s=194cd211eaacbc187362f63d0b6575ca"
     desc: "Jaime and Cersei in season 7 episode 1"
 
+  hodor:
+    path: got/
+    name: hodor.jpg
+    desc: "How Hodor became Hodor."
+
+  walkers_sigil:
+    path: got/
+    name: 7x7-finale-walkers-formation.jpg
+    desc: "The final image of S07E07"
+
+  jon_snow_iron_throne:
+    path: got/
+    name: jon-snow-iron-throne.jpg
+    desc: "Is this Jon's fate?"
+
+qtcreator_fontscale:
+    name: qtcreator-fontscale.png
+    desc: "Screen shot showing the different scaling (click to enlarge)"
+

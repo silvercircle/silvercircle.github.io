@@ -21,6 +21,7 @@ image_title: "GoT Logo"
 image_link: 0
 disqus: 1
 share: 1
+backlink: /got-theories
 ---
 
 # Theories about Tyrion Lannister

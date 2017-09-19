@@ -7,6 +7,7 @@ modified: 2017-09-13T18:40:49+0200
 menucontext: got
 disqus: 1
 share: 1
+backlink: /got-theories
 tag: [first, got, theory, jon]
 excerpt: >
     Some theories about Jon who is now officially no longer a Snow, but a Targaryen.
@@ -33,8 +34,7 @@ We already know that he is not a bastard (a "Snow") at all, but this is our view
 the show, nobody except Bran and Samwell Tarly know it, at least not officially. It is possible that 
 Melisandre or Kinvara know it, or at least consider it a possibility, but this is pure speculation.
 
-{% include gfx/block_image.html image="got/jon-snow-iron-throne.jpg" title="Is this Jon's fate?" 
-nolink=1 borderclass="borderless" %}
+{% include gfx/BD.html image=I.got.jon_snow_iron_throne nolink=1 borderclass="borderless" %}
 Being a true Targaryen[^secret_marriage], he is also *First of His Name* and therefore rightful heir 
 to the Iron Throne, and this fact alone opens up a lot of new theories. Until now, the Dragon Queen 
 Daenerys was thought to be the only rightful heir of house Targaryen, but the new situation makes 

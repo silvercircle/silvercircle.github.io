@@ -8,6 +8,7 @@ modified: 2017-08-28 02:31:36+0200
 categories: [GoT, fun]
 permalink: /got/season7-recap.html
 menucontext: blog
+backlink: /blog
 tag: [first, got, video]
 excerpt: >
     game of thrones season 7 is already over and to me it seems it just started last week, but in 

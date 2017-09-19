@@ -10,6 +10,7 @@ permalink: /articles/publishing-on-github
 tag: [first, Jekyll, GitHub]
 disqus: 1
 share: 1
+backlink: /blog
 excerpt: >
     [GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works.
     <br>

@@ -8,6 +8,7 @@ menucontext: about
 share: 1
 tag: [first, jekyll]
 disqus: 1
+backlink: /blog
 excerpt: >
     Building simple galleries using includes and Jekyll YAML data files.
 ---

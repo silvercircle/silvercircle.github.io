@@ -7,6 +7,7 @@ modified: 2017-09-14T02:03:58+0200
 menucontext: got
 disqus: 1
 share: 1
+backlink: /got-theories
 tag: [first, got, theory, generic]
 excerpt: >
     A theory that gained new momentum during season 7 is this older theory about Brandon Stark and 
@@ -39,8 +40,7 @@ getting even more complex, because there are varieties, one of them (the relevan
   happens when a future event causes an event in the past which will in turn cause the event in the 
   future that caused it. Yes, it sounds weird and it is - in some ways.
 
-{% include gfx/float_image.html image="got/hodor.jpg" width="35%" title="How Hodor became Hodor" 
-align="right" %}
+{% include gfx/FD.html image=site.data.images.got.hodor width="35%" align="right" %}
 The theory basically states, that Bran is responsible for the existence of the Night King in the 
 same way he is responsible for the fate of Hodor. We remember, as seen in famous season 6 episode 
 *The Door*, Bran's reckless and inexperienced use of his supernatural abilities is the cause for 
@@ -206,8 +206,7 @@ I will conclude this with another hint from the final episode of the seventh sea
 breached the wall with undead Viserion, the army of White Walkers and wights was seen marching south 
 from a bird's eye perspective:
 
-{% include gfx/block_image.html image="got/7x7-finale-walkers-formation.jpg" title="The final image 
-of S07E07" borderclass="borderless" %}
+{% include gfx/BD.html image=site.data.images.got.walkers_sigil borderclass="borderless" %}
 
 Now, if you carefully look at the formation of the undead army, does it look familiar, or what? If 
 you do not recognize it, here is a hint: Google *stark sigil* :)

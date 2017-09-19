@@ -1,9 +1,4 @@
 <div style="margin-top: 0.5em">
-{% if page.tags contains 'first' %}
-<div style="float:right;">
-    Words: {{page.content | number_of_words}}
-</div>
-{% endif %}
 {% for tag in page.tags %}
     {% if tag == 'first' %}
         {% continue %}

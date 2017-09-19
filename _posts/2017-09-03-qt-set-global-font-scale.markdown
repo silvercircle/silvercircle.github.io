@@ -9,6 +9,7 @@ menucontext: blog
 tag: first
 disqus: 1
 share: 1
+backlink: /blog
 excerpt: >
     Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is 
     possible, either globally for all Qt applications or per application.
@@ -19,6 +20,7 @@ image_title: Qt 5 Logo
 ---
 # Set font scaling for Qt applications
 {% include post_header.html %}
+{% include defs.md %}
 Qt is a great thing, for most parts, but sometimes it does not follow UI guidelines strictly enough. 
 On Windows, Qt applications have a tendency of using non-standard fonts at non-standard sizes. For 
 example, QtCreator uses the *Tahoma* font at a fairly small size - too small for standard DPI 
@@ -41,8 +43,7 @@ the UI.
 
 The following screen shot illustrates the difference between no scale and `QT_SCALE_FACTOR = 2`. It 
 was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.
-{% include gfx/block_image.html image="qtcreator-fontscale.png" title="Screen shot showing the 
-different scaling (click to enlarge)" borderclass="borderless" %}
+{% include gfx/BD.html image=I.qtcreator_fontscale borderclass="borderless" %}
 
 
 

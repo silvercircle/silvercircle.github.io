@@ -17,12 +17,17 @@ li.paginator_trail {
 }
 
 li.paginator_trail a {
-	text-decoration: none;
-	padding: 0 4px;
-	margin: 0;
+    text-decoration: none;
+    padding: 0 4px;
+    margin: 0;
 }
 
 li.paginator_trail.selected {
-	background-color: #ccc;
+	background-color: #55d;
 	border: 1px solid #aaa;
 }
+
+li.paginator_trail.selected a {
+	color: white;
+}
+

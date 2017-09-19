@@ -6,6 +6,10 @@ div.menubar_wrapper {
     border: 0;
     padding: 0;
     min-height: 32px;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+    box-shadow: 0 8px 8px 2px #ddd;
 }
 
 div.menubar {
@@ -60,16 +64,24 @@ ul.dropmenu li a.firstlevel {
     height:28px;
     line-height:28px;
 }
+ul.dropmenu li a.firstlevel.backlink {
+    font: normal normal normal 24px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 0.93em;
+    line-height:28px !important;
+}
 ul.dropmenu li a.firstlevel.compact {
     height:24px;
-  line-height: 24px;
+    line-height: 24px;
     /*font-weight: bold;*/
     font-size:11px;
     color:white;
     text-shadow: 0 0 2px #555;  
 }
 ul.dropmenu > li {
-    float: left;
+  float: left;
   margin: 0;
   position: relative;
   padding: 0 10px;
@@ -80,7 +92,7 @@ ul.dropmenu li ul {
     position: absolute;
     top: 30px;
     padding: 0;
-  width: 20em;
+    width: 20em;
     background-color: #222;
     box-shadow: 1px 3px 10px 1px #888;  
 }
@@ -103,8 +115,8 @@ ul.dropmenu li ul ul {
     margin: -1.8em 0 0 13em;
 }
 ul.dropmenu li.active {
-  margin-top:-4px;
-    background-color: #f5f5f5;
+    margin-top:-4px;
+    background-color: #ddd;
     border-top:4px solid #55d;
 }
 ul.dropmenu.compact li.active {

@@ -39,3 +39,6 @@ vscode:
   thumb: 1
   desc: "Visual Studio code"
 
+st-transylvania:
+  name: "st-transylvania.png"
+  desc: "Transylvania Theme for Sublime Text 3"

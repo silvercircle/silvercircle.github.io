@@ -9,6 +9,7 @@ menucontext: blog
 tag: [first, Jekyll, GitHub]
 disqus: 1
 share: 1
+backlink: /blog
 excerpt: >
   How to build your site locally with your own Jekyll installation and deploy 
   it on GitHub using different branches.

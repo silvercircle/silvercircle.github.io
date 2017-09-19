@@ -8,6 +8,7 @@ menucontext: got
 tag: [first, got, theory, jon]
 disqus: 1
 share: 1
+backlink: /got-theories
 excerpt: >
     This is a popular theory, claiming that Jon is indeed the *Prince that was promised*.
     <br><br>

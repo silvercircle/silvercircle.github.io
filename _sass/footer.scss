@@ -10,7 +10,7 @@ div.site_footer_wrapper {
 div.site_footer {
 	width: 100%;
 	margin:auto;
-	font-size: smaller;
+	font-size: $footer_font_size;
 	display: table;
 }
 

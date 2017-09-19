@@ -15,7 +15,7 @@ $header_color: #752;
 $text_color: #444;
 $text_size: 15pt;
 $text_line_height: 115%;
-$text_weight: 500;
+$text_weight: 400;
 
 $footnotes_fontsize: 13pt;
 $h3_listheader_size: 16pt;
@@ -23,15 +23,24 @@ $h3_listheader_size: 16pt;
 $floatbox_fontsize: 12pt;
 $floatbox_color: #777;
 
+$sans_font: "Lato";
+
+$author_font_size: 13;
+$author_font_color: #444;
+
+$footer_font_size: 15px;
 $base: '{{site.baseurl}}';
 
-@import "font-monda";
+/*@import "font-monda";*/
+@import "font-lato";
+/*@import "font-merriweather_sans.scss";*/
 /*@import "font-oswald";*/
 /*@import "font-roboto_slab";*/
 /*@import "font-vollkorn";*/
 @import "font-cormorant_sc.scss";
 /*@import "font-cormorant.scss";*/
 @import "font-cormorant_infant.scss";
+/*@import "font-merriweather_serif.scss";*/
 /*@import "font-cormorant_regular.scss";*/
 /*@import "font-lora.scss";
 @import "font-pt_serif.scss";*/
