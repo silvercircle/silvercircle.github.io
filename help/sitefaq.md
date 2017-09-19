@@ -66,14 +66,28 @@ relative time stamps.
 
 ## What fonts are used?
 
-* [Oswald](https://fonts.google.com/specimen/Oswald) for big headlines in the main content area. 
-It's a condensed sans font and very nice for headings at bigger sizes.
+* [Cormorant SC](https://fonts.google.com/specimen/Cormorant+SC) for big headlines in the main 
+content area. It's a small caps Garamond variant that pairs well with most old-style serif 
+typefaces.
 
 * [Monda](https://fonts.google.com/specimen/Monda) for most parts except article text. It's a modern 
 sans serif font that provides good readability at small to medium sizes.
 
-* [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab) for article text. An easy and 
-  lightweight serif font, basically the serif variant of the popular Roboto font.
+I have not yet decided on the typeface for the article text, there are a few candidates. I 
+particularly like the Cormorant family, consisting of:
+
+* [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond). An 
+easy and lightweight *old style* serif font of the [Garamond 
+family](https://en.wikipedia.org/wiki/Garamond) of french origin.
+
+* [Cormorant Infant](https://fonts.google.com/specimen/Cormorant+Infant). A variation of the 
+Garamond style with some alternate glyphs.
+
+#### Other favorite serif fonts on Google fonts:
+
+* [Vollkorn](https://fonts.google.com/specimen/Vollkorn).
+
+* [Lora](https://fonts.google.com/specimen/Lora)
 
 All fonts are implemented as web fonts, so it should look the same on all platforms.
 

@@ -43,11 +43,11 @@ incestious behavior.
 His excessive amount of self-confidence quickly took a sharp decline when he fell prisoner to the 
 Starks at the end of season 1, and was ultimately shattered in season 3, when his fate as best sword 
 fighter in all of Westeros was sealed at the hands of Locke and Jaime lost his sword hand in an act 
-of violence. *Well, deserved for being such a disgusting asshole* was probably what many fans, 
+of violence. ***Well deserved for being such a disgusting asshole*** was probably what many fans, 
 including myself, were thinking. Some even sympathized with Locke for doing what he did, because 
 Jaime's arrogance at first didn't fade as a prisoner and he repeatedly mocked his captors, telling 
 them how rich his family was and that he was worth *way* too much and therefore *had* to remain 
-unharmed.
+unharmed. Guess, he was wrong.
 
 <div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
 > take all your money and put it where the sun never shines, here's what I think of you and your 
@@ -72,7 +72,7 @@ were observable for those looking carefully on various occasions:
   to draw blood during his deeds in Riverrun.
 
 * On various occasions, he showed emotional bonds to Brienne, not because he thought she 
-  was hot, but he was visibly impressed by what she *was*. Her take on virtues like loyalty, honor 
+  was hot, but he was visibly impressed by what she *is*. Her stance on virtues like loyalty, honor 
   and how she stuck to her words and kept her oaths and promises, impressed him. He also had to 
   recognize soon after he met her, that she was a formidable sword fighter, maybe better than he 
   ever was.
@@ -96,9 +96,10 @@ and it **does** sound plausible on quite a few levels.
 
 Personally, I don't really like these theories, because they are flawed for a couple of reasons:
 
-* Jaime is no prince (unless, he *really* is a Targaryen and, together with his sister, a bastard 
-  child of Aerys II and Joanna Lannister (Tywin's wife), like it is speculated in the theory 
-  above)..
+* Jaime is no prince, unless, he *really* is a Targaryen and, together with his sister, a bastard 
+  child of Aerys II and Joanna Lannister (Tywin's wife), like it is speculated in the theory above. 
+  Personally, I don't really like this, because it's just another *one more hidden Targaryen* theory 
+  of which we already have our fair share.
 
 * Jaime is no longer the hero-class sword fighter. He may have improved a lot with his left hand, 
   but I doubt he would hold up well against a White Walker or one of the top fighters in the realm.
@@ -109,14 +110,19 @@ fate.
 ## Jaime will kill his sister
 
 Another popular one that got fueled dramatically in season 7, but was around much earlier due to all 
-the prophecies made to Cersei by the fortuneteller Maggy at the beginning of season 5.
+the prophecies made to Cersei by fortuneteller *Maggy the Frog* at the beginning of season 5.
 
->Oh yes. You will be queen, for a time ... until there comes another, younger and more beautiful, to 
-cast you down and take all that you hold dear.
+>*Oh yes. You will be queen, for a time ... until there comes another, younger and more beautiful, 
+to cast you down and take all that you hold dear*.
 {: .fancy .bordered}
 
 This is generally seen as a reference to Daenerys, who is a) younger, b) arguably more beautiful and 
-c) very much determined to cast down Cersei and take the Iron Throne for herself.
+c) very much determined to cast down Cersei and take the Iron Throne for herself, but it could have 
+been misunderstood by Cersei as reference to either Sansa Stark or Margaery Tyrell. Both were young 
+and beautiful and while Sansa, unlike Margaery, did not become Queen, she got pretty close. Cersei's 
+interpretation of the prophecy explains her animosity towards the two young ladies - she hated them, 
+because she felt threatened and she thought they were standing in her way and one of them may strip 
+her of all the powers she so dearly loves.
 
 So far, so good, but in all those prophecies concerning Cersei's future, there was no reference to 
 Jaime, right? She was told she will have three children, but all three will die, she was promised to 
@@ -135,12 +141,15 @@ granted her three. But the fourth child is unborn, so it's too early to say Magg
 In the show, indeed none of Maggy's prophecies can be linked to Jaime, but this is because the show 
 omitted one prophecy from the book that opens up quite a few new paths:
 
->“When your tears have drowned you, the **valonqar** shall wrap his hands about your pale white 
-throat and choke the life from you.”
+>*When your tears have drowned you, the **valonqar** shall wrap his hands about your pale white 
+throat and choke the life from you*.
 {: .fancy .bordered}
 
-According to GRRM, **valonqar** means *younger sibling*, which can bei either Jaime (her younger 
-twin brother) OR Tyrion (the youngest child of Tywin and Joanna Lannister).
+According to GRRM, **valonqar** is high-valyrian language and means *younger sibling*[^valonqar], 
+which can bei either Jaime (her younger twin brother) or Tyrion, the youngest Lannister offspring - 
+*if* the prophecy was about one of Cersei's **own** siblings at all, which we do not know. It could 
+also mean simply any other sibling, for example, the Stark sisters or Daenerys as the younger sister 
+of Viserys. If that is indeed the case, a lot of identities for the valonqar would seem plausible.
 
 In my opinion, this theory holds more merit than the Azor Ahai theory outlined above. There are 
 quite a few reasons for Jaime having accumulated enough hate:
@@ -167,23 +176,24 @@ Then we have this image seen by many as a big hint on how Cersei *may* die later
 her standing on the *neck* of Westeros (the narrowest part) while Jaime has positioned himself near 
 the part that is commonly known as *fingers*.
 
-It is very consistent with the **valonqar** prophecy from the books, which states that Jaime will 
-strangle Cersei while she drowns in her own tears[^cerseitears].
+It is very consistent with the **valonqar** prophecy from the books, which states that a *little 
+sibling* (or brother) will strangle her while she drowns in her own tears[^cerseitears].
 
-#### Can this co-exist with the Azor Ahai theory?
+#### Can this co-exist with the Jaime=Azor Ahai theory?
 
-Sort of, it could, but it's still unlikely. The Azor Ahai theory states that the *Prince that was 
-promised* sacrificed his wife in order to fulfill his purpose by driving his newly forged sword 
-directly into her heart, forging the weapon capable of destroying the *Great Other* in the process.
+Sort of it, but it's still unlikely. The Azor Ahai theory states that the *Prince that was promised* 
+sacrificed his wife in order to fulfill his purpose by driving his newly forged sword directly into 
+her heart, forging the weapon capable of destroying the *Great Other* in the process.
 
 It could be that this is just a metaphor. What if Cersei becomes a White Walker and Jaime has to 
 kill her using his Valyrian Steel sword? In that case, the hint seen on the picture above would just 
-be a hint at what's going to happen globally (Jaime killing Cersei), but not in detail.
+be a hint at what's going to happen on a global scale (Jaime killing Cersei), but not in detail.
 
 It could also mean, Arya taking revenge on all Lannisters by first killing Jaime and then using his 
 face to assassinate Cersei. Since the Lannisters are to blame for the downfall of the Starks, Arya's 
 hate is probably still significant and we know that mercy is not one of her strongest virtues as 
-being merciful contradicts being a member of the faceless men.
+being merciful contradicts being a member of the faceless men. Arya also possibly matches the 
+valonqar pattern, as she is a *little sister* (or sibling).
 
 ### Conclusions?
 
@@ -202,4 +212,11 @@ they re-unite. I'm pretty sure though, they are not going to share a bed.
      capital and every single soul in it, because he was *hearing voices*.
 
 [^cerseitears]: Drowning in tears could hint at the death of her fourth child, either losing it
-     while still being pregnant or wile giving birth.
+    while still being pregnant or wile giving birth.
+
+[^valonqar]: There has been quite a lot of speculation about the exact meaning of this word.
+    Initially, its meaning has been determined as *little brother*, but this could be wrong. From 
+    the prophecy concerning the *Prince that was promised*, we know that the high-valyrian language 
+    made use of many gender-neutral words. Consequently, it is possible that the *prince* mentioned 
+    in said prophecy could also be a *princess*, and valonqar's true meaning could indeed be 
+    ***little sibling***.

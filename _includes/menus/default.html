@@ -17,12 +17,13 @@
           </li>
           <li id="button_blog" class="{% if page.menucontext == 'blog' %}active{% endif %}">
               <a class="firstlevel" href="{{site.baseurl}}/blog/index.html">Blog</a>
-              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
               {% for category in site.categories %}
                <li><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/"><span>{{ category | first | strip_html }}</span></a></li>
               {% endfor %}
               </ul>
+              -->
            </li>
            <li id="button_contact" class="{% if page.menucontext == 'contact' %}active{% endif %}">
               <a class="firstlevel" href="{{site.baseurl}}/help/contact.html">Contact</a>

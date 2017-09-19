@@ -213,7 +213,9 @@ div.share_buttons.header {
 @media only screen and (max-width: 767px) {
     div.share_buttons.header {
         display:block;
-        position: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .sb-label.header {
         display: none;

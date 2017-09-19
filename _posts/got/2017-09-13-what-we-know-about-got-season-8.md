@@ -42,7 +42,7 @@ excitement to make you think the show might already be running.
 * The scripts are [already 
 done](https://www.vanityfair.com/hollywood/2017/07/deadwood-movie-true-detective-season-3-night-of-season-2-hbo).
 * filming may start in late 2017, possibly in October, in other words: *soon*. More has not been 
-* confirmed yet.
+  confirmed yet.
 * The air date is still unclear. We should not expect it to air before late 2018 though, possibly 
   early 2019.
 * The plot will be based on the two yet-to-be-finished novels *The Winds of Winter* and *A Dream of 

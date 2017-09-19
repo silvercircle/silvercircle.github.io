@@ -7,17 +7,21 @@ $blue: #0000bb;
 $green: #00bb00;
 $lightgrey: #c5c5c5;
 
-$h1_base_size: 26;
+$article_font: "Cormorant Infant";
+$h1_base_size: 24;
 $header_weight: 600;
 $header_color: #752;
 
 $text_color: #444;
 $text_size: 15pt;
 $text_line_height: 115%;
-$text_weight: 400;
+$text_weight: 500;
 
-$footnotes_fontsize: 12pt;
+$footnotes_fontsize: 13pt;
 $h3_listheader_size: 16pt;
+
+$floatbox_fontsize: 12pt;
+$floatbox_color: #777;
 
 $base: '{{site.baseurl}}';
 
@@ -26,7 +30,11 @@ $base: '{{site.baseurl}}';
 /*@import "font-roboto_slab";*/
 /*@import "font-vollkorn";*/
 @import "font-cormorant_sc.scss";
-@import "font-cormorant.scss";
+/*@import "font-cormorant.scss";*/
+@import "font-cormorant_infant.scss";
+/*@import "font-cormorant_regular.scss";*/
+/*@import "font-lora.scss";
+@import "font-pt_serif.scss";*/
 @import "theme";
 @import "images";
 @import "paginator-trails";

@@ -116,8 +116,8 @@ failed:
 1. he tried to drive King Aerys II into burning the armies of the Night King. He failed, the Mad 
    King misunderstood the words and the consequences are well known.
 
-2. Further in the past, he became Bran the Builder, who built the great wall in the north and  
-founded Winterfell stating <<*There must always be a Stark in Winterfell*>>
+2. Further in the past, he became Bran the Builder, who built the great wall in the north and 
+   founded Winterfell stating <<*There must always be a Stark in Winterfell*>>
 
 These first two attempts are, of course, the results of his third travel, which will happen in the 
 future (some episode in Season 8). In this third travel, which is essentially the cause of all the 
@@ -144,7 +144,8 @@ things about himself being from the future (that's why they gagged him) and was 
 vessel for the Night King. He then failed to travel back, because he stayed for too long in the 
 past. Remember what the Three-Eyed Raven said about staying too long?
 
->  It's beautiful beneath the sea, but if you stay too long, you drown.
+>  *It's beautiful beneath the sea, but if you stay too long, you drown.*
+{: .fancy .bordered}
 
 I would go as far and say: **He had to fail**. This would be consistent with Three-Eyed Raven's 
 <<*The past is alredy written, the ink is dry*>> statement. This essentially means, the past cannot 
@@ -173,7 +174,8 @@ and our brave person **would never have a reason for traveling back in time**{:u
 But what if he or she fails? What if Hitler only gets injured and traumatized from the assault - and 
 what if this trauma causes him losing his mind and becoming the evil and mad person he was? In that 
 case, our brave person becomes the cause of everything that happened and *gives himself the reason* 
-to travel back in time with the intention to correct it.
+to travel back in time with the intention to correct it., but since it is impossible to change the 
+past, he is destined to fail over and over again. A causal loop.
 
 We cannot explain this logically, because it doesn't fit in our reality. Time travel is not possible 
 (as far as we know) so everything related to it cannot be fully explained. This is one of the 

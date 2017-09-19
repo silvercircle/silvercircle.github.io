@@ -135,8 +135,10 @@ div.floatbox.right {
 }
 
 div.floatbox p, div.floatbox li {
-    font-family: Monda, Verdana, Geneva, Tahoma, sans-serif !important;
-    font-size: 11pt !important;
+    font-family: Monda, sans-serif !important;
+    font-size: $floatbox_fontsize !important;
+    color: $floatbox_color !important;
+    line-height: 120% !important;
 }
 
 div.floatbox p:last-child, div.floatbox li:last-child {
@@ -155,6 +157,7 @@ blockquote.fancy {
 
 blockquote.fancy.bordered {
     border-left: 5px solid orange;
+    margin-left: 20px;
 }
 blockquote.fancy::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
