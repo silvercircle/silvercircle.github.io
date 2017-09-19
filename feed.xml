@@ -1,6 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-18T20:03:37+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T05:18:14+02:00</published><updated>2017-09-18T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;testpage-gallery&quot;&gt;Testpage (Gallery)&lt;/h1&gt;
-&lt;p&gt;&lt;br /&gt;
-Build a gallery from information held in a yaml file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-09-19T06:35:17+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T05:18:14+02:00</published><updated>2017-09-18T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;build-simple-galleries-with-jekyll&quot;&gt;Build simple galleries with Jekyll.&lt;/h1&gt;
+&lt;div class=&quot;author&quot; style=&quot;float:right;font-size:smaller;&quot;&gt;
+Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-18T05:18:23+0200&quot;&gt;2017-09-18 05:18:23 +0200&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;author&quot; style=&quot;font-size:smaller;&quot;&gt;
+    Written by Alex Vie | Mon, 18. September 2017, 05:18
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Data files are a fairly powerful feature in Jekyll. They can be used to store all kind of structured 
+data in as many different files and multiple formats. Currently supported are:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;CSV, YAML and JSON&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, I started using data files to store all information about images, both local uploads 
+and remote (linked) images, after I realized that passing a single handle is easier than remembering 
+the exact location of an image in the file system (and then screw up case sensitivity in the 
+process). Such an entry might look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;testgallery&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;remoteimage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://path.to/image.png&quot;&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&quot;&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Telling&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;us&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;why&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;localimage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;logo.png&quot;&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# the presence of name indicates a local image&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;site/logos/&quot;&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&quot;&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Telling&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;us...&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;well,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;it&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Consider this entry is within &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/images.yaml&lt;/code&gt;, then the image record will be available in 
+templates as &lt;code class=&quot;highlighter-rouge&quot;&gt;site.data.images.testgallery.remoteimage&lt;/code&gt;. Its attributes are accessible as 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;site.data.images.testgallery.remoteimage.url&lt;/code&gt; and so on.&lt;/p&gt;
+
+&lt;p&gt;Of course, it’s possible to omit the &lt;code class=&quot;highlighter-rouge&quot;&gt;testgallery&lt;/code&gt; part and organize images differently. One file 
+per gallery, or any combination is possible. It just needs to be somewhat hierarchical and following 
+the conventions you have defined.&lt;/p&gt;
 
 &lt;div class=&quot;gallery&quot;&gt;
 
@@ -245,6 +283,9 @@ Build a gallery from information held in a yaml file in &lt;code class=&quot;hig
 
 &lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
 
+&lt;p&gt;This assumes, the images are in &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/galleries/default.yaml&lt;/code&gt; organized as children of the main 
+node &lt;code class=&quot;highlighter-rouge&quot;&gt;testgallery&lt;/code&gt;.&lt;/p&gt;
+
 &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;gallery&quot; markdown=&quot;1&quot;&amp;gt;
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;image&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.data.galleries.default.testgallery&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this_image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
@@ -294,8 +335,8 @@ be of feature-film length, that would mean at least 80 minutes per episode. What
 is that it is going to be a &lt;em&gt;big season&lt;/em&gt;, whatever that means.&lt;/li&gt;
   &lt;li&gt;The scripts are &lt;a href=&quot;https://www.vanityfair.com/hollywood/2017/07/deadwood-movie-true-detective-season-3-night-of-season-2-hbo&quot;&gt;already 
 done&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;filming may start in late 2017, possibly in October, in other words: &lt;em&gt;soon&lt;/em&gt;. More has not been&lt;/li&gt;
-  &lt;li&gt;confirmed yet.&lt;/li&gt;
+  &lt;li&gt;filming may start in late 2017, possibly in October, in other words: &lt;em&gt;soon&lt;/em&gt;. More has not been 
+confirmed yet.&lt;/li&gt;
   &lt;li&gt;The air date is still unclear. We should not expect it to air before late 2018 though, possibly 
 early 2019.&lt;/li&gt;
   &lt;li&gt;The plot will be based on the two yet-to-be-finished novels &lt;em&gt;The Winds of Winter&lt;/em&gt; and &lt;em&gt;A Dream of 

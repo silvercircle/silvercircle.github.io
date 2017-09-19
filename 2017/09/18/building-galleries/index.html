@@ -109,7 +109,7 @@
           </li>
           <li id="button_blog" class="">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
-              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow"> </span>
+              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
               
                <li><a href="/category/development/"><span>Development</span></a></li>
@@ -129,6 +129,7 @@
                <li><a href="/category/qt/"><span>Qt</span></a></li>
               
               </ul>
+              -->
            </li>
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
@@ -170,9 +171,48 @@
         
         <article id="main-content">
         
-        <h1 id="testpage-gallery">Testpage (Gallery)</h1>
-<p><br>
-Build a gallery from information held in a yaml file in <code class="highlighter-rouge">_data</code>.</p>
+        <h1 id="build-simple-galleries-with-jekyll">Build simple galleries with Jekyll.</h1>
+<div class="author" style="float:right;font-size:smaller;">
+Last modified: <time class="timeago" datetime="2017-09-18T05:18:23+0200">2017-09-18 05:18:23 +0200</time>
+</div>
+<div class="author" style="font-size:smaller;">
+    Written by Alex Vie | Mon, 18. September 2017, 05:18
+</div>
+<div class="clearfix"></div>
+<hr>
+
+<p>Data files are a fairly powerful feature in Jekyll. They can be used to store all kind of structured 
+data in as many different files and multiple formats. Currently supported are:</p>
+
+<blockquote>
+  <p><strong>CSV, YAML and JSON</strong></p>
+</blockquote>
+
+<p>For example, I started using data files to store all information about images, both local uploads 
+and remote (linked) images, after I realized that passing a single handle is easier than remembering 
+the exact location of an image in the file system (and then screw up case sensitivity in the 
+process). Such an entry might look like this:</p>
+
+<div class="language-yaml highlighter-rouge">
+<pre class="highlight"><code><span class="s">testgallery</span><span class="pi">:</span>
+    <span class="s">remoteimage</span><span class="pi">:</span>
+        <span class="s">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://path.to/image.png"</span>
+        <span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">cool</span><span class="nv"> </span><span class="s">image"</span>
+        <span class="s">desc</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Telling</span><span class="nv"> </span><span class="s">us</span><span class="nv"> </span><span class="s">why</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">image</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">cool"</span>
+    <span class="s">localimage</span><span class="pi">:</span>
+        <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">logo.png"</span>     <span class="c1"># the presence of name indicates a local image</span>
+        <span class="s">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">site/logos/"</span>
+        <span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">A</span><span class="nv"> </span><span class="s">cool</span><span class="nv"> </span><span class="s">local</span><span class="nv"> </span><span class="s">image"</span>
+        <span class="s">desc</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Telling</span><span class="nv"> </span><span class="s">us...</span><span class="nv"> </span><span class="s">well,</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">get</span><span class="nv"> </span><span class="s">it"</span>
+</code></pre>
+</div>
+<p>Consider this entry is within <code class="highlighter-rouge">_data/images.yaml</code>, then the image record will be available in 
+templates as <code class="highlighter-rouge">site.data.images.testgallery.remoteimage</code>. Its attributes are accessible as 
+<code class="highlighter-rouge">site.data.images.testgallery.remoteimage.url</code> and so on.</p>
+
+<p>Of course, it’s possible to omit the <code class="highlighter-rouge">testgallery</code> part and organize images differently. One file 
+per gallery, or any combination is possible. It just needs to be somewhat hierarchical and following 
+the conventions you have defined.</p>
 
 <div class="gallery">
 
@@ -417,6 +457,9 @@ Build a gallery from information held in a yaml file in <code class="highlighter
 
 <h3 id="the-code">The Code</h3>
 
+<p>This assumes, the images are in <code class="highlighter-rouge">_data/galleries/default.yaml</code> organized as children of the main 
+node <code class="highlighter-rouge">testgallery</code>.</p>
+
 <div class="language-liquid highlighter-rouge">
 <pre class="highlight"><code>&lt;div class="gallery" markdown="1"&gt;
 <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>image<span class="w"> </span>in<span class="w"> </span>site.data.galleries.default.testgallery<span class="w"> </span><span class="p">%}</span>
@@ -450,7 +493,7 @@ Build a gallery from information held in a yaml file in <code class="highlighter
         <div style="margin-top: 0.5em">
 
 <div style="float:right;">
-    Words: 555
+    Words: 864
 </div>
 
 
