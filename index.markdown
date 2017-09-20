@@ -37,9 +37,10 @@ article again.
 <hr class="blueline">
 <div class="boxcontainer" markdown="1">
 <div class="contentbox" markdown="1">
-<div class="contentbox_inner" style="font-size:smaller;" markdown="1">
+<div class="contentbox_inner" markdown="1">
 ### Recent blog
-{: .cbox_header}
+{: .listheading .smallindent}
+{:smallvmargin}
 <div class="cbox_body">
  {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
  {% for post in this_posts limit: 5 %}
@@ -71,7 +72,8 @@ article again.
 <div class="contentbox" markdown="1">
 <div class="contentbox_inner" markdown="1">
 ### Recent articles
-{: .cbox_header}
+{: .listheading .smallindent}
+{:smallvmargin}
 <div class="cbox_body">
  {% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
  {% assign counter = 1 %}
@@ -91,7 +93,8 @@ article again.
 <div class="contentbox" markdown="1">
 <div class="contentbox_inner" markdown="1">
 ### All site topics
-{: .cbox_header}
+{: .listheading .smallindent}
+{:smallvmargin}
 <div class="cbox_body">
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web 
    development</a></h3>

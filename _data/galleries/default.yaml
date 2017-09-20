@@ -42,3 +42,12 @@ vscode:
 st-transylvania:
   name: "st-transylvania.png"
   desc: "Transylvania Theme for Sublime Text 3"
+
+ramstein:
+  white_car:
+    name: "white_car.jpg"
+    path: "ramstein/"
+    desc: "We stood near this place maybe an hour earlier, left and behind is the icecream truck 
+      that received a direct hit. These people probably didn't realize what hit them as everything happened
+      extremely fast."
+

@@ -7,7 +7,7 @@ div.menubar_wrapper {
     padding: 0;
     min-height: 32px;
     position: sticky;
-    top: -1px;
+    top: -2px;
     z-index: 1000;
     box-shadow: 0 8px 8px 2px #ddd;
 }
@@ -85,6 +85,7 @@ ul.dropmenu > li {
   margin: 0;
   position: relative;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 ul.dropmenu li ul {
     z-index: 90;
@@ -117,14 +118,13 @@ ul.dropmenu li ul ul {
 ul.dropmenu li.active {
     margin-top:-4px;
     background-color: #ddd;
-    border-top:4px solid #55d;
+    border-top: 4px solid #55d;
 }
 ul.dropmenu.compact li.active {
-    border-top:0;
-  margin-top:0;
+    margin-top:0;
     background-color: #eaeaea;
     /*border-bottom:2px solid orange;*/
-    border-top:0;  
+    border-top:0;
 }
 ul.dropmenu.compact li.active > a {
     color:black;
