@@ -157,7 +157,7 @@
                   <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
                 </li>
                 <li>
-                  <a href="/got-theories/"><span>Game of Thrones Season 8 theories</span></a>
+                  <a href="/got-theories/"><span>Game of Thrones</span></a>
                 </li>
               </ul>
           </li>
@@ -180,7 +180,7 @@
         <h1 id="jekyll-personal-faq">Jekyll personal FAQ</h1>
 
 <div class="author" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-09-14T23:03:16+0200">2017-09-14 23:03:16 +0200</time><br>1277 Words
+    Last modified: <time class="timeago" datetime="2017-09-14T23:03:16+0200">2017-09-14 23:03:16 +0200</time><br>1390 Words
 </div>
 <div class="author">
     Written by AlexVie in <a href="/category/jekyll/index.html">Jekyll</a>, <a href="/category/site/index.html">Site</a> | Tue, 22. August 2017, 22:45<br>
@@ -331,7 +331,7 @@ include a hyperlink and some simple markup.</p>
 </code></pre>
 </div>
 
-<h2 id="apply-multiple-style-attributes-to-block-or-span-level-elements">Apply multiple style attributes to block or span level elements</h2>
+<h2 id="apply-multiple-style-attributes">Apply multiple style attributes</h2>
 
 <p>This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.</p>
 
@@ -363,7 +363,7 @@ say <code class="highlighter-rouge">defs.md</code>, that holds all the style def
 
 <p>You can then include that file in any article by simply placing a <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">defs.md</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> at the beginning of the document and use the pre-defined style attributes.</p>
 
-<h2 id="how-to-loop-over-a-collection-with-the-name-given-in-a-variable">How to loop over a collection with the name given in a variable?</h2>
+<h2 id="loop-over-a-collection-with-the-name-given-in-a-variable">Loop over a collection with the name given in a variable?</h2>
 
 <p>You want to iterate over all documents in the collection when the name of the collection is given in 
 the variable <code class="highlighter-rouge">page.collection</code>.</p>
@@ -437,6 +437,25 @@ explicitly specifying the start value before the first list item:</p>
 </div>
 
 <p>Creates a new variable <strong>foo</strong> containing the result of <code class="highlighter-rouge">site.foo</code> + <code class="highlighter-rouge">site.bar</code> concatenated.</p>
+
+<h2 id="access-data-elements-via-variables">Access data elements via variables</h2>
+
+<p>Suppose you have a list of images in <code class="highlighter-rouge">site.data.gallery</code> and you want to access one of the images 
+via a page variable, say <code class="highlighter-rouge">image</code>. This is possible by using the bracket notation, for example 
+<code class="highlighter-rouge">site.data.gallery[page.image]</code>. Assume <code class="highlighter-rouge">page.image</code> contains <code class="highlighter-rouge">foo</code>, then that would be the same as 
+writing <code class="highlighter-rouge">site.data.gallery.foo</code>. If your data elements have additional attributes, it’s possible to 
+access them as <code class="highlighter-rouge">site.data.gallery[page.image].description</code>.</p>
+
+<p>However, you cannot pass such a construct as parameter to a <em>include</em> statement. You need to 
+<strong>assign</strong> it first, like so:</p>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">gallery</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">image</span><span class="p">]</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">foo</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">image</span><span class="o">=</span><span class="nv">image</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p>You can then use the element normally as <code class="highlighter-rouge">include.image</code> in your include fragment.</p>
 
 
         <div style="margin-top: 0.5em">
