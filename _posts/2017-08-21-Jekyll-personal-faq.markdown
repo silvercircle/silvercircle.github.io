@@ -152,7 +152,7 @@ include a hyperlink and some simple markup.
 ```
 {% endraw %}
 
-## Apply multiple style attributes to block or span level elements
+## Apply multiple style attributes
 
 This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.
 {% raw %}
@@ -183,7 +183,7 @@ say `defs.md`, that holds all the style definitions, like so:
 You can then include that file in any article by simply placing a {% raw %}`{% include defs.md %}`{% 
 endraw %} at the beginning of the document and use the pre-defined style attributes.
 
-## How to loop over a collection with the name given in a variable?
+## Loop over a collection with the name given in a variable?
 
 You want to iterate over all documents in the collection when the name of the collection is given in 
 the variable `page.collection`.
@@ -256,4 +256,22 @@ Use the capture keyword.
 {% endraw %}
 
 Creates a new variable **foo** containing the result of `site.foo` + `site.bar` concatenated.
+
+## Access data elements via variables
+
+Suppose you have a list of images in `site.data.gallery` and you want to access one of the images 
+via a page variable, say `image`. This is possible by using the bracket notation, for example 
+`site.data.gallery[page.image]`. Assume `page.image` contains `foo`, then that would be the same as 
+writing `site.data.gallery.foo`. If your data elements have additional attributes, it's possible to 
+access them as `site.data.gallery[page.image].description`.
+
+However, you cannot pass such a construct as parameter to a *include* statement. You need to 
+**assign** it first, like so:
+{% raw %}
+```liquid
+{% assign image = site.data.gallery[page.image] %}
+{% include foo.html image=image %}
+```
+{% endraw %}
+You can then use the element normally as `include.image` in your include fragment.
 

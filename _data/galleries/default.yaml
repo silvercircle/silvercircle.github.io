@@ -51,3 +51,13 @@ ramstein:
       that received a direct hit. These people probably didn't realize what hit them as everything happened
       extremely fast."
 
+mor:
+  mor_banner:
+    name: "mor_banner.jpg"
+    desc: "The official Monsters of Rock 1988 poster"
+    path: /
+
+  great_white:
+    path: /
+    name: greatwhite.jpg
+    desc: "Great White performing at Monsters Of Rock 1988"
