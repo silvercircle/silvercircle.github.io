@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Visual Assist = Visual Studio on steroids | silvercircle/github/io</title>
+<meta property="og:title" content="Visual Assist = Visual Studio on steroids">
+<meta name="author" content="Admin">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Visual Assist is an add-on product for Microsoft Visual Studio that offers many features to enhance the code editor and improve the general user experience. It can be a real time saver, providing significant gains in productivity.">
+<meta property="og:description" content="Visual Assist is an add-on product for Microsoft Visual Studio that offers many features to enhance the code editor and improve the general user experience. It can be a real time saver, providing significant gains in productivity.">
+<link rel="canonical" href="https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+<meta property="og:url" content="https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-04-21T21:57:08+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"Visual Assist is an add-on product for Microsoft Visual Studio that offers many features to enhance the code editor and improve the general user experience. It can be a real time saver, providing significant gains in productivity.","author":{"@type":"Person","name":"Admin"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/","publisher":null,"image":null,"headline":"Visual Assist = Visual Studio on steroids","dateModified":"2010-04-21T21:57:08+02:00","datePublished":"2010-04-21T21:57:08+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.<br>
+        By clicking Allow cookies you give your permission to this website to store small bits of data on your device.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
+    <header>
+      <div class="inner">
+          <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+          </dl>
+            <div class="share_buttons header sb-iconic">
+            <span class="sb-label header">Connect:</span>
+
+            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+                <i aria-hidden="true"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+                <i aria-hidden="true"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback%20https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/%20(Visual%20Assist%20=%20Visual%20Studio%20on%20steroids)">
+                <i></i>
+                <span>Email</span>
+            </a>
+            </div>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
+      <nav>
+          	     <div id="main_menu">
+           <ul id="menu_nav" class="dropmenu menu">
+               
+               <li id="button_backlink">
+                <a class="firstlevel backlink" href="https://silvercircle.github.io/blog/"></a>
+               </li>
+               
+           <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/fun/"><span>fun</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+              </ul>
+              -->
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+                <li>
+                  <a href="/got-theories/"><span>Game of Thrones</span></a>
+                </li>
+              </ul>
+          </li>
+          
+        </ul>
+       </div>
+
+
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+        <h1 id="here-is-an-excellent-time-saver-for-visual-studio-users">Here is an excellent time saver for Visual Studio users</h1>
+
+<div class="author" style="float:right;text-align:right;">
+    Last modified: <time class="timeago" datetime="2010-04-21T19:57:08+0000">2010-04-21 19:57:08 +0000</time><br>1774 Words
+</div>
+<div class="author">
+    Written by Admin in <a href="/category/development/index.html">Development</a> | Wed, 21. April 2010, 19:57<br>
+    Reading time: approx. 7 minute(s).
+</div>
+<div class="clearfix"></div>
+<hr style="margin-top:2px;">
+
+<div class="note red">
+
+<h3>Warning</h3>
+<p>This is an archived article. It is here for historical and nostalgic reasons only. The article 
+will most likely contain broken links and/or missing images as it was automatically converted from 
+an old blog long gone.</p>
+</div>
+
+<p>A <a href="http://msdn.microsoft.com/en-us/ff625297.aspx">new version of Visual Studio</a> was 
+released recently, so it’s time to talk about it. The 2010 release of this most popular IDE for 
+Microsoft Windows adds a number of new features, a new language (F#), a overhauled WPF based user 
+interface that looks and performs better, multi-monitor support (it was about time) a new browser 
+based help system, a improved debugger (historical debugging can be incredibly useful, really), and 
+a lot more. It also comes with a new .NET framework (version 4) and the ability to build for 
+different platform toolsets - even in C++ it is possible to build for the old Visual C++ 2008 
+version, thus avoiding the need for a new runtime at the user’s end and new toolsets can be added 
+with relative ease.</p>
+<div class="blockimage borderless">
+
+
+
+<a href="/assets/gfx/archive/2010/04/va_x_complete.png" data-fancybox="" data-caption="Visual Assist X running in Visual Studio 2010">
+
+<figure>
+        <img src="/assets/gfx/archive/2010/04/va_x_complete.png" alt="Visual Assist X running in Visual Studio 2010" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
+        
+        <figcaption style="display:none;">
+                Visual Assist X running in Visual Studio 2010
+        </figcaption>
+        
+</figure>
+
+</a>
+
+
+<div class="floatimage_title" style="padding-bottom: 8px;">
+    Visual Assist X running in Visual Studio 2010
+</div>
+
+</div>
+
+<p>Also, Visual Studio 2010 has a new extension system which should greatly simplify the development of 
+add-ins (aka extensions). MEF (Managed Extensibility Framework) is the name for the new extension 
+framework and one of the most useful extensions that did exist for previous versions has already 
+been adopted. I’m talking about <a href="http://www.wholetomato.com">Visual Assist X</a>, a tool 
+that aims at developers who need to write large amounts of code and have a strong demand for an 
+improved code editor.</p>
+
+<p style="text-align: justify;">
+  Like any software product, Visual Studio has a few weak points and one of them is, at least in my book, the code editor. While it is not exactly a <em>bad</em> editor, it always feels a bit basic to me in comparison to other editors, like Eclipse CDT or SlickEdit. Visual Studio 2010 introduces a few improvements to the editor with better outlining (the MS term for code folding) and slightly enhanced intellisense functionality.
+</p>
+
+<p style="text-align: justify;">
+  Like I wrote in <a href="http://blog.miranda.or.at/development/eclipse-cdt-7-a-preview">this article</a>, I'm a Eclipse fan, simply because Eclipse, in combination with the C++ development tools (CDT), features one of the best code editors you can get. I really like it for its comprehensive code navigation, semantic code highlighting, real time syntax analysis and powerful code assistance.
+</p>
+
+<h2 id="features-the-visual-studio-editor-does-lack-in-my-opinion">Features, the Visual Studio editor does lack in my opinion:</h2>
+
+<ul>
+  <li>
+    <p>advanced or like it is sometimes called, <em>semantic</em> code highlighting. Instead of only 
+highlighting basic language elements like keywords, strings and numbers, the editor will also 
+allow to highlight macro definitions, classes, methods, different kind of variables (global, 
+local) and more with different colors, making the code easier to read.</p>
+  </li>
+  <li>
+    <p>code navigation. It is somewhat limited in Visual Studio.</p>
+  </li>
+  <li>
+    <p>more intelligent code assistance - auto-complete suggestions while you type.</p>
+  </li>
+  <li>
+    <p>Structural outline view of current file.</p>
+  </li>
+  <li>
+    <p>automatic formatting of pasted code, automatic brace/parenthesis placement.</p>
+  </li>
+  <li>
+    <p>some automatic correction features (identifier misspelling, case correction and such nifty little 
+helpers).</p>
+  </li>
+</ul>
+
+<div class="blockimage borderless">
+
+
+
+<a href="/assets/gfx/archive/2010/04/va_x_highlight.png" data-fancybox="" data-caption="Improved syntax highlighting in Visual Assist X">
+
+<figure>
+        <img src="/assets/gfx/archive/2010/04/va_x_highlight.png" alt="Improved syntax highlighting in Visual Assist X" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
+        
+        <figcaption style="display:none;">
+                Improved syntax highlighting in Visual Assist X
+        </figcaption>
+        
+</figure>
+
+</a>
+
+
+<div class="floatimage_title" style="padding-bottom: 8px;">
+    Improved syntax highlighting in Visual Assist X
+</div>
+
+</div>
+
+<p style="text-align: justify;">
+  <strong><span style="color: #ff0000;"><span style="font-size: medium;">Visual Assist X</span></span></strong> adds all these nice features and much more to the editor and works seamlessly throughout Visual Studio. Currently, it supports C/C++, C#, ASP, Visual Basic, HTML, XML, JavaScript and VBScript. It also works in any version of Visual Studio, beginning with version 6 (aka Visual Studio 98) up to version 2008, <strong>except all Express editions </strong>(but this isn't their fault, it is because Express editions do not support this kind of extensions or add-ins).
+</p>
+
+<p>Support for Visual Studio 2010 was added recently and is currently in release candidate state. This is the version I tested on my Visual Studio 2010 installation.</p>
+
+<p style="text-align: justify;">
+  I'm writing this article from the view point of a C++ programmer and while there are competing solutions for C# and other .NET languages (examples: <a href="http://www.jetbrains.com/resharper/">JetBrains Resharper</a> or <a href="http://www.devexpress.com/Products/Visual_Studio_Add-in/Coding_Assistance/">CodeRush</a>), Visual Assist X is really the only major extension that does not ignore C and C++ developers.
+</p>
+
+<p style="text-align: justify;">
+  VA's main job is to improve default intellisense with clever suggestions while you type and this works impressively well. In most cases, you'll just have to type 2 or 3 characters of a variable or function name and hit the TAB key to complete it. This works for local and global variables or functions and instantly at your fingertips. You'll rarely experience delays as Visual Assist performs nicely, even with large projects.
+</p>
+
+<h2 id="clever-tooltips">Clever tooltips</h2>
+
+<div class="blockimage borderless">
+
+
+
+<figure>
+        <img src="/assets/gfx/archive/2010/04/va_x_tooltip.png" alt="Visual Assist X smart tooltips" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
+        
+        <figcaption style="display:none;">
+                Visual Assist X smart tooltips
+        </figcaption>
+        
+</figure>
+
+
+<div class="floatimage_title" style="padding-bottom: 8px;">
+    Visual Assist X smart tooltips
+</div>
+
+</div>
+
+<p style="text-align: justify;">
+  Tooltips are available for almost everything. They will appear when you hover a symbol or identifier and will pop up alongside the list of class/structure members when the auto-list members feature kicks in. The tool tips can be syntax colored, using the same colors as in the editor and may include comments that belong to the symbol or identifier. With syntax coloring, they are easier to read and the included comment(s) provide an additional level of help.
+</p>
+
+<h2 id="syntax-analysis-on-the-fly-and-a-smarter-editor">Syntax analysis on the fly and a smarter editor</h2>
+
+<p style="text-align: justify;">
+  Visual Assist constantly watches what you type and can mark typing- or simple syntax errors with squiggly red underlines. Several <strong>auto-correct</strong> features are available as you type and their purpose is to correct simple typing errors or support your laziness :). For example, one auto-correct feature will replace a dot with the reference operator (<strong>-&gt;</strong>) when you (wrongly) use the object itself instead of a pointer (or vice versa). Another auto-correction will insert the underline character when you type a small <strong>m</strong> followed by pressing the SHIFT key (typical m_foo member variable).  Case correction is another auto-correct feature which allows you to type a camel case function- or identifier name in all lower case and let the editor correct it while you type.
+</p>
+
+<p style="text-align: justify;">
+  Visual Assist can automatically close all types of braces, properly indented of course and it will automatically reformat your code on paste. The latter one is quite handy when you paste larger pieces of code with different indentation levels. No more need to manually reformat the code after some copy/paste operations. By default, matching pairs of braces are highlighted whenever the cursor is between them (unlike in the default editor, which only highlights a matching brace when you position the cursor on its sibling).
+</p>
+
+<h1 id="additional-views">Additional views</h1>
+
+<div class="floatimage right " style="width:30%; max-width:30%;">
+
+
+
+<a href="/assets/gfx/archive/2010/04/va_x_outline.png" data-fancybox="gallery" data-caption="Visual Assist X outline view">
+
+<figure>
+        <img src="/assets/gfx/archive/2010/04/va_x_outline.png" alt="Visual Assist X outline view" style="height:auto; margin:0; display:block;">
+        
+        <figcaption style="display:none;">
+                Visual Assist X outline view
+        </figcaption>
+        
+</figure>
+
+</a>
+
+
+<div class="floatimage_title">
+    Visual Assist X outline view
+</div>
+
+</div>
+
+<p style="text-align: justify;">
+  A hover-sensitive class view and a structured outline view are available as additional dockable windows. The first one is somewhat similar to the default class view, but offers a bit more features, while the second one presents the current file in a structured tree view with all the symbols, declarations and methods.
+</p>
+
+<p style="text-align: justify;">
+  VA offers an improved navigation bar that can replace the default Visual Studio combo box bar at the top of the editor window. The VA version has more features, presents all content with syntax coloring and allows for easy search operations. It is the perfect companion for the new <em>"Navigate To..."</em> feature of Visual Studio 2010.
+</p>
+
+<h2 id="refactoring">Refactoring</h2>
+
+<p style="text-align: justify;">
+  No matter how good Visual Studio is in some areas, its code refactoring tools are poor and Visual Studio 2010 doesn't improve in that area. Not really a surprise that VA fixes most of these weaknesses as it offers <a href="http://www.wholetomato.com/products/featureRefactoring.asp">all basic refactoring functionality</a>. Doing some tests with a medium sized C++ project, I found no problems in the basic refactoring functionality.
+</p>
+
+<h2 id="much-more">Much more</h2>
+
+<p style="text-align: justify;">
+  Here is <a href="http://www.wholetomato.com/products/default.asp">the complete feature matrix</a> which looks quite impressive. Note that Visual Assist is also highly customizable. Most features can be enabled or disabled selectively, and some more complex features have options to make them work exactly the way you want.
+</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p style="text-align: justify;">
+  For C++ developers using Visual Studio, this product is almost a must have. It brings the code editor of Visual Studio to a new level of usability and make it compare to or even surpass other excellent code editors like <a href="http://www.slickedit.com">SlickEdit</a> or Eclipse. Working with Visual Assist is almost always a pleasant experience - it doesn't stand in your way but simply works when you need it and you never get the feeling you have to fight the IDE to get some work done. Despite its vast amount of features, it performs nicely and I have not noticed significant performance penalties compared to a vanilla Visual Studio installation. In fact, some of its functions, like the "Find references" tool work faster than its default Visual Studio counterpart. Also, when using Visual Assist, you can disable some of Visual Studio's database functions to regain some speed, because VA maintains its own code database which appears to be much more efficiently designed than the intellisense database.
+</p>
+
+<p style="text-align: justify;">
+  If you are not convinced by this article, there is a 30 day trial offer which you can download from <a href="http://www.wholetomato.com/downloads/downloadTrial.asp">WholeTomato's website</a>. Be warned though, once you get used to it, you will develop a strong affinity to it and you will definitely miss it when the trial period is over.
+</p>
+
+<p style="text-align: justify; padding-left: 30px;">
+  <span style="font-size: medium;"><strong><span style="color: #800000;"><span style="font-size: large;">+ Pros</span></span></strong></span>
+</p>
+
+<ul>
+  <li>
+    <p>advanced syntax coloring for better readable code.</p>
+  </li>
+  <li>
+    <p>very clever code assistance and auto-correct features while you type</p>
+  </li>
+  <li>
+    <p>comprehensive refactoring feature set</p>
+  </li>
+  <li>
+    <p>improved code navigation, hovering tool tips for almost anything, structured outline view</p>
+  </li>
+  <li>
+    <p>customizable</p>
+  </li>
+  <li>
+    <p>no major impact on the IDE performance, even with most of its features enabled.</p>
+  </li>
+</ul>
+
+<p style="padding-left: 30px;">
+  <strong><span style="color: #800000;"><span style="font-size: large;">- Cons</span></span></strong>
+</p>
+
+<ul>
+  <li>Hard to find any in the implemented set of features, so I have to file the - in my opinion - 
+missing things as cons :) Personally, I would like to see some more keyboard shortcuts for less 
+important functions (all major features are, of course, available via keyboard commands). A VA-style 
+call hierarchy would be another fine addition - I know that Visual Studio has such a feature, but it 
+is slow and does not use a syntax colored view. They already offer a <em>Find References</em> replacement, 
+which works better than the default one, so a replacement for the call hierarchy would appear 
+logical.</li>
+</ul>
+
+<h2 id="price--availability">Price / Availability</h2>
+
+<p>The standard license goes for about $250 for a single seat which includes 1 year of support and free 
+upgrades (with possible discounts when ordering for multiple seats). After that, you can 
+(optionally) renew the license for $99 per year which will give you support and upgrades. For 
+non-professional users, they offer a $99 personal license which includes 6 months of support and 
+upgrades and is - unfortunately - not renewable.</p>
+
+
+        <div style="margin-top: 0.5em">
+
+    
+        
+<div class="clear"></div>
+</div>
+
+
+        
+            
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
+<span class="sb-label">Share:</span>
+
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/&amp;text=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids">
+    <i aria-hidden="true"></i>
+    <span>Twitter</span>
+</a>
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+    <i aria-hidden="true"></i>
+    <span>Google+</span>
+</a>
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/&amp;title=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids">
+    <i aria-hidden="true"></i>
+    <span>Reddit</span>
+</a>
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/&amp;description=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids">
+    <i></i>
+    <span>Pinterest</span>
+</a>
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/&amp;title=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids">
+    <i></i>
+    <span>Tumblr</span>
+</a>
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids&amp;body=https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+    <i></i>
+    <span>Email</span>
+</a>
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Visual%20Assist%20=%20Visual%20Studio%20on%20steroids%C2%A0https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/" title="Copy link to clipboard">
+    <i></i>
+    <span>Link</span>
+</a>
+</div>
+
+
+        
+        
+            
+<div id="disqus_thread" style="margin-top:0.5em;"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ADMIN#@#2010-04-21 19:57:08 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>                            
+
+
+        
+        </article>
+        <aside id="sidebar">
+          <h2>Recent</h2>
+           
+ 
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-10-02T15:35:52+0200">2017-10-02 15:35:52 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/18/building-galleries/">Build simple galleries with Jekyll</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-18T05:18:23+0200">2017-09-18 05:18:23 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   Alex Vie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season-8-facts-known-in-september-2017">What we currently know about season 8</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-13T19:41:05+0200">2017-09-13 19:41:05 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   Alex Vie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/articles/publishing-on-github">Publishing on GitHub</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-11T16:58:16+0200">2017-09-11 16:58:16 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/08/no-love-vegetarian-food/">No love for vegetarian food</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-08T16:59:07+0200">2017-09-08 16:59:07 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/03/qt-set-global-font-scale/">How to set global font scale for Qt applications</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-09-03T10:25:17+0200">2017-09-03 10:25:17 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+   
+ 
+  <div style="float:right;margin: 5px 0;"><a href="/blog/">Show all blog posts</a></div>
+  <div class="clear"></div>
+ 
+ 
+<hr class="blueline">
+<h2>Categories</h2>
+<div class="two_cols">
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">Site</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">fun</a></h3>
+
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
+
+</div>
+
+
+
+          <hr class="blueline">
+<h2>Site tags</h2>
+<a href="/tags/github">GitHub</a>, <a href="/tags/jekyll">Jekyll</a>, <a href="/tags/css">css</a>, <a href="/tags/generic">generic</a>, <a href="/tags/got">got</a>, <a href="/tags/jaime">jaime</a>, <a href="/tags/jekyll">jekyll</a>, <a href="/tags/jon">jon</a>, <a href="/tags/theory">theory</a>, <a href="/tags/tyrion">tyrion</a>, <a href="/tags/video">video</a>
+                  <hr class="blueline">
+        <h2>Quick links</h2>
+        <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
+        <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
+
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>

@@ -179,7 +179,7 @@
         <h1 id="build-simple-galleries-with-jekyll">Build simple galleries with Jekyll.</h1>
 
 <div class="author" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-09-18T05:18:23+0200">2017-09-18 05:18:23 +0200</time><br>314 Words
+    Last modified: <time class="timeago" datetime="2017-09-18T05:18:23+0200">2017-09-18 05:18:23 +0200</time><br>385 Words
 </div>
 <div class="author">
     Written by Alex Vie | Mon, 18. September 2017, 05:18<br>
@@ -495,6 +495,12 @@ node <code class="highlighter-rouge">testgallery</code>.</p>
       <span class="s">desc</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Image</span><span class="nv"> </span><span class="s">5"</span>
 </code></pre>
 </div>
+<p>The above is only an example of what is possible. Another method is to include image definitions in 
+a post’s front matter. This is useful when the images are private to the post and you want to avoid 
+excessive population of the <code class="highlighter-rouge">_data</code> folder.</p>
+
+<p>Suppose you include the gallery definition above in the front matter of a post, you can then access 
+the items via <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">img</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">page.testgallery</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code></p>
 
 
         <div style="margin-top: 0.5em">
@@ -582,6 +588,23 @@ s.setAttribute('data-timestamp', +new Date());
  
    
    
+   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
+   <div class="author" style="float:right;">
+     <span class="date">
+        
+        <time class="timeago" datetime="2017-10-02T15:35:52+0200">2017-10-02 15:35:52 +0200</time>
+        
+     </span>
+   </div>
+   <span class="author">
+   AlexVie
+   </span>
+   <br>
+   
+   
+ 
+   
+   
    <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/09/18/building-galleries/">Build simple galleries with Jekyll</a></h3>
    <div class="author" style="float:right;">
      <span class="date">
@@ -592,23 +615,6 @@ s.setAttribute('data-timestamp', +new Date());
    </div>
    <span class="author">
    Alex Vie
-   </span>
-   <br>
-   
-   
- 
-   
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-09-14T23:03:16+0200">2017-09-14 23:03:16 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   AlexVie
    </span>
    <br>
    
@@ -713,17 +719,7 @@ s.setAttribute('data-timestamp', +new Date());
 
           <hr class="blueline">
 <h2>Site tags</h2>
-<a href="/tags/github">GitHub</a>, 
-<a href="/tags/jekyll">Jekyll</a>, 
-<a href="/tags/css">css</a>, 
-<a href="/tags/generic">generic</a>, 
-<a href="/tags/got">got</a>, 
-<a href="/tags/jaime">jaime</a>, 
-<a href="/tags/jekyll">jekyll</a>, 
-<a href="/tags/jon">jon</a>, 
-<a href="/tags/theory">theory</a>, 
-<a href="/tags/tyrion">tyrion</a>, 
-<a href="/tags/video">video</a>
+<a href="/tags/github">GitHub</a>, <a href="/tags/jekyll">Jekyll</a>, <a href="/tags/css">css</a>, <a href="/tags/generic">generic</a>, <a href="/tags/got">got</a>, <a href="/tags/jaime">jaime</a>, <a href="/tags/jekyll">jekyll</a>, <a href="/tags/jon">jon</a>, <a href="/tags/theory">theory</a>, <a href="/tags/tyrion">tyrion</a>, <a href="/tags/video">video</a>
                   <hr class="blueline">
         <h2>Quick links</h2>
         <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
