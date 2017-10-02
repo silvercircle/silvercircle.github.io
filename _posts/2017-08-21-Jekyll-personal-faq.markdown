@@ -3,7 +3,7 @@ author: AlexVie
 title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00+0200
-modified: 2017-09-14 23:03:16+0200
+modified: 2017-10-02T15:35:52+0200
 layout: default
 categories: [Jekyll,Site]
 menucontext: topics
@@ -261,9 +261,9 @@ Creates a new variable **foo** containing the result of `site.foo` + `site.bar` 
 
 Suppose you have a list of images in `site.data.gallery` and you want to access one of the images 
 via a page variable, say `image`. This is possible by using the bracket notation, for example 
-`site.data.gallery[page.image]`. Assume `page.image` contains `foo`, then that would be the same as 
-writing `site.data.gallery.foo`. If your data elements have additional attributes, it's possible to 
-access them as `site.data.gallery[page.image].description`.
+`site.data.gallery[page.image]`. Assume `page.image` contains the string `foo`, then that notation 
+would be the same as writing `site.data.gallery.foo`. If your data elements have additional 
+attributes, it's possible to access them as `site.data.gallery[page.image].description`.
 
 However, you cannot pass such a construct as parameter to a *include* statement. You need to 
 **assign** it first, like so:

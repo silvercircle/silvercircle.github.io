@@ -1,6 +1,11 @@
 <div class="blockimage {{include.borderclass}}">
+{% if include.prefix != blank %}
+    {% assign prefix = include.prefix %}
+{% else %}
+    {% assign prefix = '/assets/gfx/' %}
+{% endif %}
 {% if include.image.url == blank %}
-    {% capture image_name %}{{site.baseurl}}/assets/gfx/{{include.image.path}}{{include.image.name}}{% endcapture %}
+    {% capture image_name %}{{site.baseurl}}{{prefix}}{{include.image.path}}{{include.image.name}}{% endcapture %}
 {% else %}
     {% assign image_name = include.image.url %}
 {% endif %}

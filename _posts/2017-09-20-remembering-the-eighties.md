@@ -6,7 +6,6 @@ date: 2017-09-20T05:18:14+0200
 modified: 2017-09-20T19:18:23+0200
 menucontext: blog
 share: 1
-tag: [first]
 disqus: 1
 testimage: white_car
 backlink: /blog
@@ -15,6 +14,21 @@ excerpt: >
    of them turning into a capital disaster. I was a young teenage boy and this weekend was meant to 
    become an exciting last summer vacations weekend as my dad took me and my older brother on a two 
    days long journey with the intention to visit both these events.
+media:
+    mor_banner:
+        name: mor_banner.jpg
+        path: /
+        desc: "The official Monsters of Rock 1988 poster"
+    great_white:
+        name: greatwhite.jpg
+        path: /
+        desc: "Great White performing at Monsters Of Rock 1988"
+    white_car:
+        name: white_car.jpg
+        path: ramstein/
+        desc: "We stood near this place maybe an hour earlier, left and behind is the icecream truck 
+        that received a direct hit. These people probably didn't realize what hit them as everything 
+        happened extremely fast."
 ---
 
 # Remembering the eighties
@@ -25,7 +39,8 @@ them turning into a capital disaster. I was a young teenage boy and this weekend
 an exciting last summer vacations weekend as my dad took me and my older brother on a 2 days long 
 journey with the intention to visit both these events.
 
-{% include gfx/FD.html align="right" image=G.default.mor.mor_banner width="220px" nolink=1 %}
+## Day one: Saturday, Aug 27th 1988
+{% include gfx/FD.html align="right" image=page.media.mor_banner width="220px" nolink=1 %}
 On August, 27th, very early in the morning, my father, my elder brother and myself hopped into the 
 car for a journey that should leave impressions carved so deeply into my soul, making them appear as 
 they happened yesterday even today - 30 years later. Our first target was the city of [Schweinfurt 
@@ -46,18 +61,19 @@ on huge festivals before, but for me it was the first such event. At 14, I was p
 young for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year 
 before and was already a big metalhead at that age. The influence of my brother was clearly showing.
 
-I do not remember much of the drive, because I slept through it, but I know the 400 mile drive took 
-about 7 hours and we arrived in Schweinfurt around noon. The situation was "chaotic" and that's 
-quite some understatement. Close to 50.000 metal fans do have some impact, even on a medium sized 
-city and we heard, some savage idiots caused chaos and mayhem the evening before, making it into the 
-headlines on many German news networks. There were rumors of deaths among vandalizing fans, but 
-later we thankfully learned, they were false alerts, probably launched by press which has taken an 
-ambivalent stance towards the festival. There was quite some opposition among the people of the city 
-and many politicians would have banned the festival from taking place in *their city* if they had 
-been among those with the power to decide. The reputation of metal and hard rock fans was mediocre 
-at best, and sadly, some idiots again helped with consolidating that poor image.
+I do not remember much of the drive, because I slept through most of it, but I know the 400 mile 
+drive took us about 7-8 hours and we arrived in Schweinfurt around noon. The situation was "chaotic" 
+and that's quite some understatement. Close to 50.000 metal fans do have some impact, even on a 
+medium sized city and we heard, some savage idiots caused chaos and mayhem the evening before, 
+making it into the headlines on many German news networks. There were rumors of deaths among 
+vandalizing fans, but later we thankfully learned, they were false alerts, probably launched by 
+press which has taken an ambivalent stance towards the festival. There was quite some opposition 
+among the people of the city and many politicians would have banned the festival from taking place 
+in *their city* if they had been among those with the power to decide. The reputation of metal and 
+hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that 
+poor image.
 
-{% include gfx/BD.html borderclass="borderless" image=G.default.mor.great_white nolink=1 %}
+{% include gfx/BD.html borderclass="borderless" image=page.media.great_white nolink=1 %}
 To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
 long before the first band was scheduled to play. I was totally excited, because I was going to see 
 one of my favorite bands, **Iron Maiden**, for the first time ever in a live gig, but because of my 
@@ -98,10 +114,12 @@ night before, but I was quite exhausted from the gig.
 
 Soon after we finished this midnight diner and took a shower at around 2am, my father told us we had 
 about 2 hours left, until we had to get ready for the next stage of our journey, a 200 mile travel 
-to the city of Ramstein in the Rhineland area, where the Flugtag 88 was going to to take place on 
-the US Air Force base. Enough time for a short nap, which we both thankfully took even though I 
-knew, I was going to sleep in the car for most of the upcoming drive.
+to the city of Ramstein in the Rhineland area, where the [Flugtag 
+88](https://en.wikipedia.org/wiki/Ramstein_air_show_disaster) was going to to take place on the US 
+Air Force base. Enough time for a short nap, which we both thankfully took even though I knew, I was 
+going to sleep in the car for most of the upcoming drive.
 
+## Day two: Sunday, Aug 28th 1988
 This drive, which would normally take approximately 3 hours, took at least 5, possibly more, because 
 of major traffic jams around the air force base, but like on the day before, I had slept most of the 
 time during the drive. My brother, who later told me, he didn't sleep so well, occupied the front 
@@ -125,19 +143,35 @@ So we decided to get out of the way of the masses and set up our "camp" in a les
 sat down into the grass and watched the still ongoing aircraft display teams. My dad took pictures 
 with his Nikon and I remember my brother was a bit annoyed, because his Sony Video-8 camcorder was 
 out of battery power and he had not listened to our dad telling him he might want to save a bit for 
-the Italien team.
+the Italian team.
 
 At around 3:30pm, the Italian display team Frecche Tricolori was announced as one of the highlights 
 and I think, they were scheduled as the last flying display of the show. My dad told us to pay extra 
 attention, because they were awesome and the only team flying with 10 aircraft. The show was indeed 
-spectacular as promised and we watched for minutes from our position at least 150 yards away from 
+spectacular as promised and we watched for minutes from our position at least 150 meters away from 
 the place, that was soon going to turn into hell on earth. I later realized that it was **pure 
 luck** we didn't get affected by the dreadful accident. We *had* been near the ice cream truck that 
 got fully hit by the cartwheeling aircraft maybe an hour before, and we *had* been close to the 
 place where the white station wagon was parked near the perimeter road. That place took a direct hit 
 and people standing there had little chance to survive. We had seen all these places that got turned 
 into a patch of scorched earth within seconds.
-{% assign img=G.default.ramstein[page.testimage] %}
+
+<div class="floatbox right ruled" style="width: 35%;margin-top:0;margin-bottom:0;" markdown="1">
+The decision to move away from the area that was later going to be affected by the terrible accident 
+probably saved us from a lot of harm, and possibly saved our lives.
+</div>
+I often asked myself what would have happened had we been staying near the white station wagon? 
+Would I still be here to write these lines? I do not know, because from all the pictures and videos 
+and my blurred memory concerning our exact position, I cannot tell whether we had been in the path 
+of the crashing aircraft. The more I tried to figure it out in the past, often discussing it with my 
+dad and my brother, the more I believe we were not directly standing in the path. The most exact 
+guess I can do - and that would be consistent with my father's view - would be near the lower right 
+corner of the picture below, but about 20 meters towards the camera position. Whether this spot 
+would have been safe or not, I cannot tell. Given the fact that many victims died from trauma caused 
+by being directly hit with debris let me conclude, the place around the impact site was far from 
+safe, even for those not standing in the path of the cartwheeling aircraft.
+
+{% assign img=page.media[page.testimage] %}
 {% include gfx/BD.html image=img borderclass="borderless" %}
 [...]
 So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
@@ -185,9 +219,18 @@ the dreadful images on TV and heard that dozens died and hundreds got injured - 
 ## Consequences?
 
 Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
-expected. I acknowledge that we were just lucky enough to get away unharmed, like many ten-thousand 
-others, but I still feel sad thinking about the many people who were injured or died on that day. I 
-still remember two teenage girls in the area of the crash near the ice cream truck we had been at 
-maybe an hour before. They were about my age and we exchanged some shy smiles and until today, I 
-have no idea what happened to them. Did they leave that area like we did and got away unaffected, or
+expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
+many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
+died on that day. I still remember two teenage girls, probably sisters or close friends, in the area 
+of the crash near the ice cream truck we had been around maybe an hour before. They were about my 
+age and we exchanged some shy smiles and until today, I have no idea what happened to them. Did they 
+leave that area like we did and escaped unharmed like us or did their luck run out sooner than ours?
 
+Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
+fairly rational manner. As I already mentioned, my dad is a professional airline pilot (now retired) 
+and he had a pragmatic approach in handling the situation. He explained that some equally disastrous 
+and rare event happened on that day, and that the probability for such an event happening again in 
+one's close environment during a life time was extremely low, close to zero. That, and the fact we 
+escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
+in the future. In fact, until I decided to pursue a career in information technology at the age of 
+19, my plan was to become a professional pilot. 

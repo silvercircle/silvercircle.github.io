@@ -132,6 +132,13 @@ div.floatbox.right {
     margin-right: 0;
 }
 
+div.floatbox.ruled {
+    border: 2px solid #ff4500;
+    border-left: none;
+    border-right: none;
+    padding: 3px;
+}
+
 div.floatbox p, div.floatbox li {
     font-family: $sans_font, sans-serif !important;
     font-size: $floatbox_fontsize !important;

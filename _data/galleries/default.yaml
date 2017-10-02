@@ -1,3 +1,17 @@
+tofu:
+  name: "tofu.jpg"
+  path: "fun/"
+  desc: "No love for Tofu"
+
+vscode:
+  name: "vscode.png"
+  thumb: 1
+  desc: "Visual Studio code"
+
+st-transylvania:
+  name: "st-transylvania.png"
+  desc: "Transylvania Theme for Sublime Text 3"
+
 testgallery:
   image1:
     url: "https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no"
@@ -28,36 +42,3 @@ testgallery:
   image12:  
     url: "https://lh3.googleusercontent.com/Mw0LNBiJi0JfEqmXAWVgVdwcgejx8GbkCuRYNq1hcz8_hT6kVzWuk-aYg_JE3AoG7Vb_2ti5V8a9chwJXmoJDEXHYyMO0fKiqRTtrlpihLkQKgzh8nEPz8CRRq5l1T7Zf4HQNYy4vVvo_Vs24rqH9c42RuO9NVel1-RPQWs37y9HMN_ac1AgfpzP780kJTG96dnbrH6OPUJNtxe-0lacx9R9PTF4Ui3TuOi0lwmHAKwxtowHR8EzxBjuHxa9fPEpNRnJuDMRju0EABiJjJ5zAk8tO7FUUKUDQSrDnpK-3K1kimXcgO6_rxUHOF3gsD4C-Y3P9nR7kc1Gkk0_dC0QHSyHDHRuVZ3AdtUIcu4pyL6HPs9yHBK4zZdzExqwxFqNLf9U5YzVXIXu2yGOg1VKjE44jBv4O2ba-6F5v6mKs0JkY5khHyXk4scFHY0yhd5_CNoVXiuXuMiHXhLJUnO9xuI4H6d_5DcRu1ZzXmuPy7otCdMCqjS37D6eDTRIPUjSCOwdEQaQG_UCPLuS9CRtcXz0o-f8Qw1wnfTgkiHv5g-9-5gyiLDR0F6Xd9gxcEJjMuRzUcJmAdXrsN3OzGfvM2rhjQgb-ezNsfC-V7f6Vw=w1415-h1061-no"
     desc: "Frecche Tricolori at Airpower 2011, Austria"
-
-tofu:
-  name: "tofu.jpg"
-  path: "fun/"
-  desc: "No love for Tofu"
-
-vscode:
-  name: "vscode.png"
-  thumb: 1
-  desc: "Visual Studio code"
-
-st-transylvania:
-  name: "st-transylvania.png"
-  desc: "Transylvania Theme for Sublime Text 3"
-
-ramstein:
-  white_car:
-    name: "white_car.jpg"
-    path: "ramstein/"
-    desc: "We stood near this place maybe an hour earlier, left and behind is the icecream truck 
-      that received a direct hit. These people probably didn't realize what hit them as everything happened
-      extremely fast."
-
-mor:
-  mor_banner:
-    name: "mor_banner.jpg"
-    desc: "The official Monsters of Rock 1988 poster"
-    path: /
-
-  great_white:
-    path: /
-    name: greatwhite.jpg
-    desc: "Great White performing at Monsters Of Rock 1988"

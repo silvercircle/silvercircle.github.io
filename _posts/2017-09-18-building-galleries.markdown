@@ -6,7 +6,7 @@ date: 2017-09-18T05:18:14+0200
 modified: 2017-09-18T05:18:23+0200
 menucontext: about
 share: 1
-tag: [first, jekyll]
+tag: [first,jekyll]
 disqus: 1
 backlink: /blog
 excerpt: >
@@ -85,5 +85,10 @@ testgallery:
       url: "...."
       desc: "Image 5"
 ```
+The above is only an example of what is possible. Another method is to include image definitions in 
+a post's front matter. This is useful when the images are private to the post and you want to avoid 
+excessive population of the `_data` folder.
 
+Suppose you include the gallery definition above in the front matter of a post, you can then access 
+the items via `{%raw%}{% for img in page.testgallery %}{%endraw%}`
 

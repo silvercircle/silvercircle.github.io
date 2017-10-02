@@ -2,10 +2,10 @@
 <h2>Site tags</h2>
 {%- assign tags = site.documents | map: 'tag' | join: ',' | split: ',' | uniq | sort -%}
 {%- for tag in tags -%}
-{%- if tag == 'first' -%}
+{%- if tag == 'first' or tag == '' -%}
 {%- continue -%}
 {%- endif -%}
-{% unless forloop.first %}, {% endunless %}
 <a href="{{site.baseurl}}/tags/{{tag | downcase }}">{{tag | strip}}</a>
+{%- unless forloop.last %}, {% endunless %}
 {%- endfor -%}
 

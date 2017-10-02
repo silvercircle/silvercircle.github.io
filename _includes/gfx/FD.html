@@ -1,6 +1,11 @@
 <div class="floatimage {{include.align}} {{include.borderclass}}" style="width:{{include.width}}; max-width:{{include.width}};">
+{% if include.prefix != blank %}
+    {% assign prefix = include.prefix %}
+{% else %}
+    {% assign prefix = '/assets/gfx/' %}
+{% endif %}
 {% if include.image.url == blank %}
-    {% capture image_name %}{{site.baseurl}}/assets/gfx/{{include.image.path}}{{include.image.name}}{% endcapture %}
+    {% capture image_name %}{{site.baseurl}}{{prefix}}{{include.image.path}}{{include.image.name}}{% endcapture %}
 {% else %}
     {% assign image_name = include.image.url %}
 {% endif %}
@@ -8,7 +13,7 @@
 <a href="{{ image_name }}" data-fancybox="gallery" data-caption="{{include.image.desc}}">
 {% endunless %}
 <figure>
-        <img src="{% if include.image.thumb == 1 %}{{ site.baseurl }}/assets/gfx/{{ include.image.path }}/thumb_{{include.image.name}}{% else %}{{ image_name }}{% endif %}" alt="{{include.image.desc}}" style="height:auto; margin:0; display:block;" />
+        <img src="{% if include.image.thumb == 1 %}{{ site.baseurl }}{{prefix}}{{ include.image.path }}/thumb_{{include.image.name}}{% else %}{{ image_name }}{% endif %}" alt="{{include.image.desc}}" style="height:auto; margin:0; display:block;" />
         {% if include.image.desc != blank %}
         <figcaption style="display:none;">
                 {{ include.image.desc }}
