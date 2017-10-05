@@ -12,10 +12,10 @@ backlink: /blog
 tag: [first, Jekyll]
 excerpt: >
   The big question is: WHY? Why should someone give up all the innovations of the last 20 years or so that made the Web a dynamic, lively and social place and go back to publishing static HTML pages something we did 25 years ago? Doesn't sound very logical, nor does it seem to make any sense, does it?
-image: logos/jekyll.png
-image_width: 130px
-image_align: right
-image_title: Jekyll Logo (CC-BY 4.0)
+image:
+  source: jekyll
+  width: 130px
+  align: right
 ---
 
 # Blogging with a static site generator

@@ -13,10 +13,10 @@ backlink: /blog
 excerpt: >
     Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is 
     possible, either globally for all Qt applications or per application.
-image: logos/qt.png
-image_width: 130px
-image_align: right
-image_title: Qt 5 Logo
+image:
+    source: qt
+    width: 130px
+    align: right
 ---
 # Set font scaling for Qt applications
 {% include post_header.html %}

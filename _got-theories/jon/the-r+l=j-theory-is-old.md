@@ -14,11 +14,10 @@ excerpt: >
     <br><br>
     People may think this theory developed during seasons 5 and 6 of the show, but in reality, it is 
     much, much older.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 ---
 
 # The R+L=J theory is much older than some may think.

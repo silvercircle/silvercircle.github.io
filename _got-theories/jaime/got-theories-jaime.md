@@ -15,11 +15,10 @@ excerpt: >
     <br><br>
     After he parted ways with his lover-sister at the end of season 7, he is now on his way towards 
     the north. This opens a lot of potential for speculations and theories.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 ---
 
 # Theories about Jaime

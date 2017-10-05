@@ -15,11 +15,10 @@ excerpt: >
     So, obviously, he is one of the most represented characters in theories, because he will 
     certainly play a major role in the eight and final season and we can assume, he will also be a 
     main protagonist in the show's finale.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 ---
 
 # Theories about Jon

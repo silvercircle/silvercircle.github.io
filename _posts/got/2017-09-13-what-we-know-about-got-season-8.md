@@ -16,11 +16,11 @@ excerpt: >
   <br><br>
   The premiere of season 8 is still at least one year away, but a lot is already known about the 
   final season that will bring everthing to an end.
-image: got/logo.png
-image_align: right
-image_width: 15%
-image_title: "GoT logo"
-image_link: 0
+  
+image:
+  source: got
+  align: right
+  width: 15%
 disqus: 1
 share: 1
 ---
@@ -40,12 +40,16 @@ excitement to make you think the show might already be running.
   each episode will have. It is *possible* (but unconfirmed) that some or even all 6 episodes might 
   be of feature-film length, that would mean at least 80 minutes per episode. What *has* been said 
   is that it is going to be a *big season*, whatever that means.
+
 * The scripts are [already 
-done](https://www.vanityfair.com/hollywood/2017/07/deadwood-movie-true-detective-season-3-night-of-season-2-hbo).
+  done](https://www.vanityfair.com/hollywood/2017/07/deadwood-movie-true-detective-season-3-night-of-season-2-hbo).
+
 * filming may start in late 2017, possibly in October, in other words: *soon*. More has not been 
   confirmed yet.
+
 * The air date is still unclear. We should not expect it to air before late 2018 though, possibly 
   early 2019.
+
 * The plot will be based on the two yet-to-be-finished novels *The Winds of Winter* and *A Dream of 
   Spring* that are currently in the works by master mind GRRM.
 

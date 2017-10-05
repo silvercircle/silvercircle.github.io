@@ -16,13 +16,11 @@ excerpt: >
     Understanding it can be a bit difficult though, since it centers around time loops or temporal 
     paradoxes, a scenario more popular in science fiction than fantasy. Nevertheless, fascinating 
     stuff.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 ---
-
 # Bran is the Night King
 {% include post_header.html %}
 {% include defs.md %}

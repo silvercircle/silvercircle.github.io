@@ -17,11 +17,11 @@ excerpt: >
 media:
     mor_banner:
         name: mor_banner.jpg
-        path: /
+        path: 
         desc: "The official Monsters of Rock 1988 poster"
     great_white:
         name: greatwhite.jpg
-        path: /
+        path: 
         desc: "Great White performing at Monsters Of Rock 1988"
     white_car:
         name: white_car.jpg
@@ -120,75 +120,94 @@ Air Force base. Enough time for a short nap, which we both thankfully took even 
 going to sleep in the car for most of the upcoming drive.
 
 ## Day two: Sunday, Aug 28th 1988
-This drive, which would normally take approximately 3 hours, took at least 5, possibly more, because 
-of major traffic jams around the air force base, but like on the day before, I had slept most of the 
-time during the drive. My brother, who later told me, he didn't sleep so well, occupied the front 
-seat next to my dad, so I had all the backseats of our comfortable series 5 BMW for myself - nice 
-and spacey enough for a good sleep.
+The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
+least five, possibly more, because of *major* traffic jams around the Air Force base. Like the day 
+before, I had slept most of the time during the drive. My brother, who later told me, he didn't 
+sleep so well, occupied the front seat next to my dad, so I had all the backseats of our comfortable 
+series 5 BMW for myself - nice and spacey enough for a good sleep.
 
-The Flugtag was a huge event with more than 150.000 spectators expected and probably about 300.000 
-attending - quoted numbers varied greatly. We finally arrived on the location around 11am and a lot 
-later than we wanted. The show had already opened its doors, but the most interesting part, the 
-flying air show displays, was about to start in the afternoon, so there was still enough time left 
-to walk around, get some burgers, see all the cool aircraft on ground display and enjoy a beautiful, 
-hot, late summer day.
+The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
+attending - quoted numbers varied greatly, some claim up to 350.000. I can only say, there were 
+massive crowds of cars and people everywhere on the base, which is **huge**. The almost flawless 
+weather - like the day before, the 28th was a beautiful late summer day with temperatures up to 
+30&#8451; (85&#8457;), steel blue, clear sky with little clouds and excellent visibility - probably 
+attracted even more people. My father later said, the weather on that day was *any pilot's dream* 
+and the perfect weather to fly under 
+[VMC](https://en.wikipedia.org/wiki/Visual_meteorological_conditions)[^vmc], which is what pilots 
+need to do when flying aerial displays. We finally arrived at the parking space on site around 11am; 
+a lot later than we had planned, but while we did expect traffic problems, the reality was much, 
+much worse than what we had anticipated. The show had already opened its doors, but the most 
+interesting part, the flying air show displays, was about to start around noon, so there was still 
+enough time left to walk around, get some burgers and french fries, visit the aircraft in the static 
+ground exhibition and enjoy a beautiful, hot, late summer day.
 
 At around 3pm - the flight displays were still in progress - we decided, we had no intention to be 
-among the first huge crowds heading towards the exit soon after the show's end, ending up in the 
-major unavoidable traffic jam. My father had taken days off from work and my brother and me were 
-still in our summer breaks from university and school so we had plenty of time available for a 
-relaxed trip home.
+among the first huge crowds heading towards the parking space(s) soon after the show's end, because 
+we expected a traffic jam even worse than the one in the morning. My father had taken days off from 
+work and my brother and me were still in our summer breaks from university and school so we had 
+plenty of time available for a relaxed trip home and no need to rush anything. Also, my dad wanted 
+to take better pictures from the soon-to-be flying Italian team and therefore decided it would be 
+better to leave the densely packed crowd.
 
-So we decided to get out of the way of the masses and set up our "camp" in a lesser crowded area. We 
-sat down into the grass and watched the still ongoing aircraft display teams. My dad took pictures 
-with his Nikon and I remember my brother was a bit annoyed, because his Sony Video-8 camcorder was 
-out of battery power and he had not listened to our dad telling him he might want to save a bit for 
-the Italian team.
+So we made our way out of the masses and settled down in a lesser crowded area. We sat down into the 
+grass and watched the still ongoing aircraft display teams. My dad took pictures with his Nikon and 
+I remember my brother was a bit annoyed, because his Sony Video-8 camcorder was out of battery power 
+and he had not listened to our dad telling him he might want to save a bit for the Italian team.
 
-At around 3:30pm, the Italian display team Frecche Tricolori was announced as one of the highlights 
-and I think, they were scheduled as the last flying display of the show. My dad told us to pay extra 
-attention, because they were awesome and the only team flying with 10 aircraft. The show was indeed 
-spectacular as promised and we watched for minutes from our position at least 150 meters away from 
-the place, that was soon going to turn into hell on earth. I later realized that it was **pure 
-luck** we didn't get affected by the dreadful accident. We *had* been near the ice cream truck that 
-got fully hit by the cartwheeling aircraft maybe an hour before, and we *had* been close to the 
-place where the white station wagon was parked near the perimeter road. That place took a direct hit 
-and people standing there had little chance to survive. We had seen all these places that got turned 
+At around 3:30pm, the Italian display team Frecche Tricolori was announced as the highlight of the 
+show and the last flying display team for the day. My dad told us to pay extra attention, because 
+they were awesome and the only team flying with 10 aircraft. The show was indeed spectacular as 
+promised and we watched for minutes from our position at least 200 meters away from the place, that 
+was soon going to turn into hell on earth. I later realized that it was **pure luck** we were able 
+to leave the scene physically unharmed, because about an hour or so before, we *had* been near the 
+ice cream truck that got fully hit by the cartwheeling aircraft and we *had* been close to the place 
+where the white station wagon was parked near the perimeter road. That place took a direct hit and 
+people standing there had little chance to survive. We had seen all these places that got turned 
 into a patch of scorched earth within seconds.
-
-<div class="floatbox right ruled" style="width: 35%;margin-top:0;margin-bottom:0;" markdown="1">
-The decision to move away from the area that was later going to be affected by the terrible accident 
-probably saved us from a lot of harm, and possibly saved our lives.
-</div>
-I often asked myself what would have happened had we been staying near the white station wagon? 
-Would I still be here to write these lines? I do not know, because from all the pictures and videos 
-and my blurred memory concerning our exact position, I cannot tell whether we had been in the path 
-of the crashing aircraft. The more I tried to figure it out in the past, often discussing it with my 
-dad and my brother, the more I believe we were not directly standing in the path. The most exact 
-guess I can do - and that would be consistent with my father's view - would be near the lower right 
-corner of the picture below, but about 20 meters towards the camera position. Whether this spot 
-would have been safe or not, I cannot tell. Given the fact that many victims died from trauma caused 
-by being directly hit with debris let me conclude, the place around the impact site was far from 
-safe, even for those not standing in the path of the cartwheeling aircraft.
 
 {% assign img=page.media[page.testimage] %}
 {% include gfx/BD.html image=img borderclass="borderless" %}
-[...]
+
 So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
-mean love and peace and was meant to be the final stunt in the show of the Italian display team.
+mean love and peace and was meant to be the final stunt in the show of the Italian display team. At 
+this time, still nobody even remotely thought that love and peace would soon turn into war-like 
+conditions and dozens of people dying instantly without ever knowing what hit them.
 
 What then happened, I do not fully remember. I do remember a strange, metallic sound, followed by 
-some kind of "thud". It was not a very loud sound, at least not the loud "big bang" one might expect 
-from a mid-air crash of two aircraft at high speed. I *do* remember the yellow-orange fire ball and 
-billowing black smoke and I *believe*, I felt heated air and some kind of pressure wave that hurt my 
-ears. I also *believe*, my father let loose a loud vulgar curse before everything started to turn 
-into a nightmare, but he said later, he wasn't able to remember. He, being a pilot (although not a 
-military one), might have realized that they were going to crash mid-air. Or maybe, it wasn't real 
-and I fantasized. I really cannot tell.
+some kind of "thud". It was not a very loud sound, at least not the loud "bang" one might expect 
+from a mid-air crash of two aircraft at high speed. Others claim, the sound was in fact a loud bang, 
+but maybe they were closer[^position] or maybe it *was* loud and my memories are not working as they 
+should. I also *do* remember the yellow-orange fire ball and billowing black smoke and I *believe*, 
+I felt heated air and some kind of pressure wave that hurt my ears. I also *believe*, my father let 
+loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
+wasn't able to remember. He, being a pilot (although not a military one), might have realized that 
+they were going to crash mid-air. Or maybe, it wasn't real and I fantasized. I really cannot tell.
 {% include youtube.html id="rhiyeMxC5hM" %}
 <br>
-And I remember lots of people, including ourselves, running and screaming, but my dad quickly 
-realized there was no imminent danger for us and he yelled at us to stop and stick together.
+And I remember lots of people, including ourselves, running away from the huge fireball, many of 
+them screaming, but my dad quickly realized there was no imminent danger for us and he yelled at us 
+to stop and stick together.
+
+<div class="floatbox right ruled" style="width: 35%;margin-top:0;margin-bottom:0;" markdown="1">
+The decision to move away from the area that became the epicenter of that terrible accident probably 
+saved us from a lot of harm, and possibly saved our lives.
+</div>
+I often asked myself what would have happened had we been staying near the white station wagon in 
+the middle of the massive crowd that had built up around the ice cream truck and the nearby static 
+aircraft displays? Would I still be here to write these lines? I do not know, because from all the 
+pictures and videos and my blurred memory concerning our exact position, I cannot tell whether we 
+had been in the path of the crashing aircraft. The more I tried to figure it out in the past, often 
+discussing it with my dad and my brother, the more I believe we were not directly standing in the 
+path. The most accurate guess I can do - and that would be consistent with my father's view - would 
+be near the lower right corner of the picture above about 20 meters towards the camera position - 
+with a fairly generous margin for error. Whether this spot would have been safe or not, I cannot 
+tell. Given the fact that many victims died from trauma caused by being directly hit with debris let 
+me conclude, the place around the impact site was far from safe, even for those not standing in the 
+path of the cartwheeling aircraft.
+
+The place we had settled down was safe though. Not only was it far enough away from the place of 
+impact, it was also located more or less perpendicular in relation to the track of the doomed 
+aircraft that went down 50 meters in front of the crowd. So no debris headed in our direction.
 
 [...]
 
@@ -213,8 +232,9 @@ What I *clearly* remember is my mom when we finally arrived home - she was in te
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn't realize that we didn't get hurt until we finally arrived. She *had* seen the reports 
-on TV *after* my dad phoned home, but that didn't help much. She knew we were there and she had seen 
-the dreadful images on TV and heard that dozens died and hundreds got injured - that was enough.
+on TV *before* my dad called her, because finding a phone on site was impossible and we had to wait 
+until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
+on TV and heard that dozens died and hundreds got injured - that was enough.
 
 ## Consequences?
 
@@ -234,3 +254,11 @@ one's close environment during a life time was extremely low, close to zero. Tha
 escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
 in the future. In fact, until I decided to pursue a career in information technology at the age of 
 19, my plan was to become a professional pilot. 
+
+[^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or
+    more from the actual mid-air crash.
+
+[^vmc]: In aviation, visual meteorological conditions (or VMC) is an aviation flight category in
+    which visual flight rules (VFR) flight is permitted—that is, conditions in which pilots have
+    sufficient visibility to fly the aircraft maintaining visual separation from terrain and other
+    aircraft.

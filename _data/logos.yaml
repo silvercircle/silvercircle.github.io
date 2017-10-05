@@ -1,0 +1,26 @@
+jekyll: 
+  path: logos/
+  name: jekyll.png
+  desc: "Jekyll Logo"
+
+got:
+  path: logos/
+  name: got.png
+  desc: "GoT Logo"
+
+qt:
+  path: logos/
+  name: qt.png
+  desc: "Qt Logo"
+
+sardinia_cover:
+  path: 2017_vacation/
+  name: sardinia_cover.jpg
+  thumb: 1
+  desc: "The marina in Porto Cervo"
+
+sansa:
+  path: got/
+  name: sansa_the_sith.jpg
+  desc: "Sansa the sith lord :)"
+

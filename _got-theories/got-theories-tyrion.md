@@ -14,11 +14,10 @@ excerpt: >
     interesting characters in the series. Neither exceptionally good nor evil, he is seen by many as 
     a selfish and in most cases not very loyal person. He is also an excellent politician and a 
     cunning strategist and we know he *drinks and knows things*.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 disqus: 1
 share: 1
 backlink: /got-theories

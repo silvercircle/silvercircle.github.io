@@ -14,13 +14,14 @@
 <div class="clearfix"></div>
 <hr class="separator">
 <div class="content excerpt" style="margin-bottom: 4px;">
-  {% if post.image and post.image != '' %}
-  {% if post.image_link and post.image_link == 1 %}
+  {% if post.image != blank %}
+  {% if post.image.link != blank %}
     {% assign this_nolink = 0 %}
   {% else %}
     {% assign this_nolink = 1 %}
   {% endif %}
-  {% include gfx/float_image.html image=post.image align=post.image_align width=post.image_width title=post.image_title borderclass="borderless" omitbottomcaption=1 nolink=this_nolink %}
+  {% assign source=site.data.logos[post.image.source] %}
+  {% include gfx/FD.html image=source align=post.image.align width=post.image.width borderclass="borderless" omitbottomcaption=1 nolink=this_nolink %}
   {% endif %}
   {{ post.excerpt | markdownify }}
 </div>

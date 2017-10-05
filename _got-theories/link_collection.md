@@ -11,11 +11,10 @@ tag: [first, got, theory, generic]
 excerpt: >
     A collection of links, containing interesting theories for the future of Game of Thrones.
     <br><br>
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 backlink: /got-theories
 ---
 

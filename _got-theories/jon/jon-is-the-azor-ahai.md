@@ -15,11 +15,10 @@ excerpt: >
     It's an easy-to-support theory, because it is based on relatively solid foundations and this 
     quite plausible. It is not without flaws though, but since it is based on a legend, some flaws 
     are to be expected.
-image: got/logo.png
-image_align: right
-image_width: 100px
-image_title: "GoT Logo"
-image_link: 0
+image:
+    source: got
+    align: right
+    width: 100px
 ---
 
 # ~~Jon~~ Aegon ~~Snow~~ Targaryen is the Azor Ahai

@@ -12,9 +12,9 @@ collection: webdev
 backlink: /webdev
 excerpt: >
   In CSS3, it is possible to have multiple background images for any given element. This allows for 
-  interesting effects, like gradient overlays with varying transparency or tinted background images. 
-
+  interesting effects, like gradient overlays with varying transparency or tinted background images.
 ---
+
 # Multiple/layered background images with CSS3
 {%include post_header.html%}
 {%include defs.md%}

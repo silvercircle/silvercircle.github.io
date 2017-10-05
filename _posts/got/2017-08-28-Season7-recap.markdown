@@ -15,13 +15,13 @@ excerpt: >
     reality, it's been 6 weeks ago. the shortest season so far brought a major events at an alarming 
     rate and some of these events were unfortunately too predictable. this might, however, just be a 
     side effect of the main plot approaching the final conclusion.
-image: got/sansa_the_sith.jpg
-image_align: right
-image_width: 30%
-image_title: "sansa the sith :)"
-image_link: 1
 disqus: 1
 share: 1
+image:
+    source: sansa
+    width: 40%
+    align: right
+
 ---
 
 # Season 7 was awesome, but...
@@ -45,9 +45,8 @@ the show came to mind:
 
 > The man who passes the sentence should swing the sword
 
-{% include youtube.html id="Fc4jGZcO7M0" %} 
-<br> 
-Clearly, Sansa and Arya did it not the *Ned Stark way* by sealing Littlefinger's fate with a
+{% include youtube.html id="24zxhpRB8kg" %}
+<br>Clearly, Sansa and Arya did it not the *Ned Stark way* by sealing Littlefinger's fate with a
 perfect example of team work, violating one of their father's core principles. But who cares, the
 scene was still good and both Arya and Sansa are not *man* anyway.
 
