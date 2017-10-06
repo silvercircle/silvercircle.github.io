@@ -5,7 +5,7 @@ title: Multiple background images with CSS3
 date: 2017-10-02T16:50:26+0200
 modified: 2017-10-02T16:50:17+0200
 menucontext: topics
-tag: [first,css]
+tag: [css]
 disqus: 1
 share: 1
 collection: webdev

@@ -43,20 +43,28 @@
     background: linear-gradient(to bottom, #e5ffff 0%,#c8e7f7 100%);
 }
 
-.note p {
+.note p, .note li {
     margin: 0 20px 10px 20px;
     font-family: $sans_font, sans-serif !important;
     font-size: 11pt !important;
-    line-height: 120% !important;
+    line-height: 130% !important;
 }
 
-.note.red h3::before {
-    content: "!";
+.note h3.alert::before {
+    font: normal normal normal 14pt/1 FontAwesome;
+    content: '\f129';
     min-width: 20px;
     color: red; 
     box-sizing: content-box;
     display: inline-block;
+    margin-left: -5px;
+    margin-right: 5px;
 }
+
+.note.red h3.alert::before {
+    content: '\f071';
+}
+
 .note h3 {
     font-size: 14pt !important;
     margin-left: 0;

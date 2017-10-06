@@ -4,7 +4,7 @@ layout: default
 author: Alex Vie
 blog: true
 date: 2017-09-13T19:40:54+0200
-modified: 2017-09-13T19:41:05+0200
+modified: 2017-10-07T00:04:07+0200
 categories: [GoT, Fun]
 permalink: /got/season-8-facts-known-in-september-2017
 menucontext: blog
@@ -29,6 +29,19 @@ share: 1
 {% include post_header.html %}
 {% include defs.md %}
 
+<div class="note blue" markdown="1">
+<h3 class="alert">Update</h3>
+
+It has become pretty clear that season 8 won't premiere before 2019. Several sources, including some 
+actors and others close to the production team have confirmed that filming of the final season will 
+take longer than usual, possibly into late summer 2018, mainly quoting two reasons:
+
+* The episodes will be longer, rumors have it, all 6 episodes will be of feature film length, which 
+  means at least 80 minutes each.
+* Parallel shooting of multiple plot lines will be more difficult, thus less likely, simply because 
+  the majority of the main cast will participate in the same events and splitting won't be as easy 
+  as before.
+</div>
 Season 7 has concluded just a bit over 2 weeks ago, but the community is already looking forward to 
 the last and final season that will bring an end to one of the most popular TV shows of all time. We 
 already see lots of speculation, some interesting and some rather stupid theories and enough 

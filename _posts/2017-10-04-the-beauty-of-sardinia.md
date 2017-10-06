@@ -27,21 +27,24 @@ image:
 {% include post_header.html %}
 {% include defs.md %}
 
+<div class="two_cols" markdown="1">
 Recently, we did a nice journey on a [smaller cruise ship](https://en.wikipedia.org/wiki/AIDAaura) 
 during which we had the chance to visit two of the most scenic places in the mediterranean sea. One 
 of the benefits of a cruise travel is that it allows one to find targets which may be worth a longer 
 stay at some future point in time. During the cruise, you will rarely stay longer than one day in a 
 single location, which is of course totally insufficient, but even a single day can give you a good 
 idea about the place.
+</div>
 
 ## The strait of Bonifacio
 
+<div class="two_cols" markdown="1">
 We crossed [this](https://en.wikipedia.org/wiki/Strait_of_Bonifacio) narrow water strait (about 
 11km, 7 miles) between Corsica and Sardinia twice on our journey. The first time in darkness between 
 our stops in Corsica's capital Ajaccio and Olbia scheduled for the next day, and the second time on 
 our way back from Rome (Civitavecchia) to the Balearic Islands. This was during daylight and all the 
 pictures were taken on that day.
-
+</div>
 <div class="gallery" markdown="1">
 {% for image in site.data.galleries.sardinia.strait %}
   {% assign this_image = image[1] %}
@@ -52,6 +55,7 @@ pictures were taken on that day.
 
 ## Sardinia facts
 
+<div class="two_cols" markdown="1">
 Sardinia is the second largest island in the Mediterranean Sea (after Sicily, before Cyprus) with an 
 area of slightly more than 24.000km² (about 9.300 square miles). That's a bit smaller than Albania 
 or about the same size as the U.S state of Vermont. It is located south of Corsica from which it is 
@@ -108,10 +112,10 @@ languages, is spoken on some smaller island in the far southwest.
 **Sardinia's Economy** is actually doing quite well, better than all other regions in southern 
 Italy. It is hindered a bit by high prices for resources, which are a result of high transportation 
 costs. Everything that isn't naturally available on the island must be ferried in by ship or 
-airplane. 
-
+airplane.
+</div>
 ### Porto Cervo / Costa Smeralda
-
+<div class="two_cols" markdown="1">
 This is an interesting place. It was founded and built artificially during the the 50's and 60's of 
 the 20th Century after the then [richest man on earth](https://en.wikipedia.org/wiki/Aga_Khan_IV) 
 fell in love with the Costa Smeralda region in the northeast of Sardinia - which is perfectly 
@@ -129,7 +133,7 @@ expensive. Every now and then, tourist groups, mostly from cruise ships visiting
 to the village for a short visit, but otherwise, there is little activity, except for the jet-set 
 people who party on their yachts and in the many clubs that are often well hidden and inaccessible 
 for us normal people.
-
+</div>
 <div class="gallery" markdown="1">
 {% for image in site.data.galleries.sardinia.cervo %}
   {% assign this_image = image[1] %}
@@ -139,7 +143,7 @@ for us normal people.
 <div class="clear"></div>
 
 ### Baja Sardinia
-
+<div class="two_cols" markdown="1">
 This little village is located a couple of miles to the northwest of Porto Cervo - a 10 to 15 
 minutes drive and yet it appears to be a completely different world. While the scenic beauty of the 
 surrounding landscape is stunning as usual - as it is in most coastal areas of Sardinia - the 
@@ -148,7 +152,7 @@ affordable price level, yet it does not attract mass tourism, because this is so
 thankfully has not yet found its way onto this beautiful island. There are no huge hotels or 
 apartment complexes in Baja and everything, including the cafes, restaurants and bars, do not look 
 as being built for huge crowds.
-
+</div>
 <div class="gallery" markdown="1">
 {% for image in site.data.galleries.sardinia.baja %}
   {% assign this_image = image[1] %}
@@ -170,7 +174,7 @@ Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.
 {% include gfx/BD.html image=site.data.galleries.sardinia.beach borderclass="borderless" %}
 
 ## Conclusion?
-
+<div class="two_cols" markdown="1">
 We had only one day, but that convinced us we want to see more of that wonderful island that has not 
 yet been exploited by mass tourism. Our guide told us, the Sards do not want this - they certainly 
 could earn billions with tourism like they do in mainland Italy, but so far, they preferred to stay 
@@ -189,4 +193,5 @@ tourism and lots of opportunities in the close neighborhood. Hiking, biking, and
 activities like diving, surfing, boat trips are all possible here, so one would not get bored to 
 easily. I'm sure though, there are many more interesting and breathtakingly beautiful places on this 
 mediterranean island, particularly in the southern part.
+</div>
 

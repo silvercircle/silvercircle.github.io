@@ -12,4 +12,13 @@ thinner and less powerful than
 
 Sadly, there are not many videos from that time and the few that do exist have terrible sound 
 quality. There are no official recordings - I think, the first official live recording is from the 
-Wishmaster tour.
+Wishmaster tour
+
+
+## Ach ja, Änwälte
+Der Angeklagte zu seinem Rechtsanwalt:
+> "Wenn ich nur sechs Monate bekomme, zahle ich ihnen das Doppelte."
+Nach dem Prozess:
+> "Das war wirklich knapp. Die wollten Sie eigentlich freisprechen.".
+
+

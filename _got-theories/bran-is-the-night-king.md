@@ -172,7 +172,7 @@ and our brave person **would never have a reason for traveling back in time**{:u
 But what if he or she fails? What if Hitler only gets injured and traumatized from the assault - and 
 what if this trauma causes him losing his mind and becoming the evil and mad person he was? In that 
 case, our brave person becomes the cause of everything that happened and *gives himself the reason* 
-to travel back in time with the intention to correct it., but since it is impossible to change the 
+to travel back in time with the intention to correct it, but since it is impossible to change the 
 past, he is destined to fail over and over again. A causal loop.
 
 We cannot explain this logically, because it doesn't fit in our reality. Time travel is not possible 
@@ -209,6 +209,13 @@ from a bird's eye perspective:
 Now, if you carefully look at the formation of the undead army, does it look familiar, or what? If 
 you do not recognize it, here is a hint: Google *stark sigil* :)
 
+## And what speaks against it?
+
+The complexity and "weirdness" factor, primarily. It's a bit hard to understand and I'm unsure 
+whether GRRM or the producers would take such risk for a key element of the final season where all 
+the mysteries around the Night King need to be resolved in a satisfying manner. A simpler and more 
+logical explanation for the existence of the Night King is possible and, in fact, quite a lot such 
+explanations do exist.
 
 [^legend]: In the legend, the Azor Ahai had to sacrifice his wife for creating a powerful weapon
     required to kill the Great Other. Jon will have to sacrifice his little brother.
