@@ -5,7 +5,7 @@ title: "Category: Game of Thrones - overview"
 pagination:
   enabled: true
   category: GoT
-  permalink: '/category/got/page:num/'
+  permalink: '/page:num.html'
   sort_field: modified
   sort_reverse: true
   per_page: 10

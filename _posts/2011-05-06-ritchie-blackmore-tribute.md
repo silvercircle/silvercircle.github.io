@@ -3,8 +3,8 @@ title: Ritchie Blackmore tribute
 date: 2011-05-06T15:23:56+00:00
 modified: 2011-05-06T15:23:56+00:00
 author: AlexVie
-categories: [Site]
-tag: [first,video]
+categories: [Entertainment]
+tag: [first,video,music]
 backlink: /blog
 menucontext: blog
 disqus: 1
