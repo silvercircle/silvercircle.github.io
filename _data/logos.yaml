@@ -19,6 +19,12 @@ sardinia_cover:
   thumb: 1
   desc: "The marina in Porto Cervo"
 
+mahon_cover:
+  path: 2017_vacation/
+  name: mahon_cover.jpg
+  thumb: 1
+  desc: "Mahon / Menorca"
+
 sansa:
   path: got/
   name: sansa_the_sith.jpg

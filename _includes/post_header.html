@@ -1,8 +1,8 @@
 {% assign words = page.content | number_of_words %}
-<div class="author" style="float:right;text-align:right;">
+<div class="author subheader" style="float:right;text-align:right;">
     Last modified: <time class="timeago" datetime="{{page.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{page.modified}}</time><br>{{words}} Words
 </div>    
-<div class="author">
+<div class="author subheader">
     Written by {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{page.date | date: '%a, %d. %B %Y, %H:%M'}}<br>
     Reading time: approx. {{words | divided_by: 250}} minute(s).
 </div>

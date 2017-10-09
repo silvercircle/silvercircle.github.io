@@ -33,6 +33,7 @@ I consider [this song](https://en.wikipedia.org/wiki/Light_of_the_Seven) of the 
 ever made. It's just perfect in how it captures the dark mood of this more than 10 minutes long 
 sequence of unfolding events. The composition with piano, strings, the organ and some sparse vocal 
 action at certain, important stages, can hardly be made better.
+{:dc}
 
 The score was composed by [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi) and recorded 
 in multiple split sessions for the show. Djawadi played the organ and the piano himself. 

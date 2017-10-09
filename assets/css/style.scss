@@ -7,20 +7,28 @@ $blue: #0000bb;
 $green: #00bb00;
 $lightgrey: #c5c5c5;
 
+/* header definitions (h1...h6 in main content only) */
 $header_font: "Oswald";
-$article_font: "Cormorant Infant";
+/* base size for h1, others are calculated by subtracting 2pt per level */
 $h1_base_size: 22;
 $h1_bottom_margin: 10px;
 $h1_letter_spacing: 0;
 $header_weight: 400;
-$header_color: #752;
+$header_color: #653;
+$title_color: #7c795d;
+$subheader_color: #bf994d;
 
+/* float text definitions (p, li, quotes in main content only) */
+$article_font: "Lora";
 $text_color: #333;
-$text_size: 15pt;
-$text_line_height: 120%;
+$text_size: 12.5pt;
+$text_line_height: 125%;
 $text_weight: 400;
+$dropcaps_size: 34pt;
+$dropcaps_leading: 30pt;
+$dropcaps_top_padding: 0;
 
-$footnotes_fontsize: 13pt;
+$footnotes_fontsize: 12pt;
 $h3_listheader_size: 16pt;
 
 $floatbox_fontsize: 12pt;
@@ -36,17 +44,19 @@ $base: '{{site.baseurl}}';
 
 /*@import "font-monda";*/
 @import "font-lato";
-/*@import "font-merriweather_sans.scss";*/
+@import "font-savoy";
+/*@import "font-merriweather_sans";*/
 @import "font-oswald";
 /*@import "font-roboto_slab";*/
 /*@import "font-vollkorn";*/
-/*@import "font-cormorant_sc.scss";*/
-/*@import "font-cormorant.scss";*/
-@import "font-cormorant_infant.scss";
-/*@import "font-merriweather_serif.scss";*/
-/*@import "font-cormorant_regular.scss";*/
-/*@import "font-lora.scss";
-@import "font-pt_serif.scss";*/
+/*@import "font-cormorant_sc";*/
+/*@import "font-cormorant";*/
+/*@import "font-cormorant_infant";*/
+/*@import "font-merriweather_serif";*/
+/*@import "font-cormorant_regular";*/
+@import "font-lora";
+/*@import "font-pt_serif";*/
+/*@import "font-source-serif";*/
 @import "theme";
 @import "images";
 @import "paginator-trails";

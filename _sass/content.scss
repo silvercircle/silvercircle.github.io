@@ -8,6 +8,10 @@
 .two_cols {
     column-count: 2;
     column-gap: 30px;
+    padding-bottom: 20px;
+}
+.two_cols p:last-child {
+    margin-bottom: 0;
 }
 
 .c_green {
@@ -52,17 +56,17 @@
 
 .note h3.alert::before {
     font: normal normal normal 14pt/1 FontAwesome;
-    content: '\f129';
+    content: '\f129' !important;
     min-width: 20px;
     color: red; 
     box-sizing: content-box;
     display: inline-block;
-    margin-left: -5px;
-    margin-right: 5px;
+    margin-left: -5px !important;
+    margin-right: 5px !important;
 }
 
 .note.red h3.alert::before {
-    content: '\f071';
+    content: '\f071' !important;
 }
 
 .note h3 {
@@ -124,6 +128,9 @@ div.floatbox {
     padding: 0 10px;
     border-left: 2px solid #FF4500;
     border-right: 2px solid #FF4500;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 div.floatbox.left {

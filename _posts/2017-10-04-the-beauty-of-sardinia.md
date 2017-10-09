@@ -5,9 +5,10 @@ layout: no_sidebar
 date: 2017-10-04T16:52:59+0200
 modified: 2017-10-04T16:53:08+0200
 menucontext: blog
+category: Travel
 share: 1
 disqus: 1
-tag: first
+tag: [first,travel]
 backlink: /blog
 excerpt: >
     I recently spent some time in the mediterranean, visiting places I've never been before in my 
@@ -34,6 +35,7 @@ of the benefits of a cruise travel is that it allows one to find targets which m
 stay at some future point in time. During the cruise, you will rarely stay longer than one day in a 
 single location, which is of course totally insufficient, but even a single day can give you a good 
 idea about the place.
+{:dc}
 </div>
 
 ## The strait of Bonifacio
@@ -65,7 +67,8 @@ Tyrrhenian Sea, which is in itself a part of the Mediterranean Sea. Sardinia has
 about 1.6 millions, so it's rather sparsely populated with only 70 inhabitants per square kilometer 
 (180 per sq mi). Approximately 1/4 of the population lives in the metropolitan area of 
 [Cagliari](https://en.wikipedia.org/wiki/Cagliari), which also serves as the capital city and is
-the hub for all administrative matters of the autonomous region Sardinia. 
+the hub for all administrative matters of the autonomous region Sardinia.
+{:dc}
 
 On the contrary, more than 4 million sheep are living on the island, resulting in a sheep density 
 similar to some regions in New Zealand. Breeding of sheep is an important cornerstone of the 
@@ -121,6 +124,7 @@ the 20th Century after the then [richest man on earth](https://en.wikipedia.org/
 fell in love with the Costa Smeralda region in the northeast of Sardinia - which is perfectly 
 understandable given the wild beauty of the region. He invested millions into the region to fulfill 
 his dream of creating a holiday resort and a yacht club.
+{:dc}
 
 Today, Porto Cervo is a small village with only about 400 residents, but it's said to be the most 
 expensive area in Europe. Billions worth of luxury yachts can often be seen in the marina which is 
@@ -152,6 +156,7 @@ affordable price level, yet it does not attract mass tourism, because this is so
 thankfully has not yet found its way onto this beautiful island. There are no huge hotels or 
 apartment complexes in Baja and everything, including the cafes, restaurants and bars, do not look 
 as being built for huge crowds.
+{:dc}
 </div>
 <div class="gallery" markdown="1">
 {% for image in site.data.galleries.sardinia.baja %}
@@ -182,6 +187,7 @@ off the radar of big-scale touristic activities. They do have the jet-set destin
 east (the [Costa Smeralda](https://en.wikipedia.org/wiki/Costa_Smeralda)) which co-exists nicely and 
 more or less friction-free with the locals and certainly does bring in some good cash, but for the 
 rest of the island, tourism does not play a major role in Sardinia's economy.
+{:dc}
 
 With Porto Cervo, we have seen a place that looks interesting at the first glance, but is definitely 
 not the place where I would want to spend a vacation - even if I had the money (which I do not), I 

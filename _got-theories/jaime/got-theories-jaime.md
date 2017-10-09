@@ -1,6 +1,6 @@
 ---
 title: Jaime theories
-layout: got
+layout: no_sidebar
 author: Alex Vie
 date: 2017-09-17T19:48:34+0200
 modified: 2017-09-17T19:48:45+0200
@@ -33,13 +33,14 @@ image:
 Jaime Lannister is one of my favorite characters next to Arya, The Hound, Cersei and Brienne. This 
 was not always the case, I remember disliking him a lot during the first season and thought he was 
 boring and pointless.
+{:dc}
 
 During season one, he was the barely likable arrogant, self centered, snob-ish kingslayer, who 
 believed he was the greatest sword fighter of all time and crippled an innocent young boy, because 
 he and his even more evil sister didn't want to face consequences for their treacherous and 
 incestious behavior.
 
-{% include gfx/FD.html image=I.got.jaime_hand align="right" width="45%" %}
+{% include gfx/FD.html image=I.got.jaime_hand align="right" width="60%" %}
 His excessive amount of self-confidence quickly took a sharp decline when he fell prisoner to the 
 Starks at the end of season 1, and was ultimately shattered in season 3, when his fate as best sword 
 fighter in all of Westeros was sealed at the hands of Locke and Jaime lost his sword hand in an act 
@@ -83,12 +84,13 @@ were observable for those looking carefully on various occasions:
 
 ## Theories for the final season
 
-[Here is an interesting 
+Here is [an interesting 
 one](http://www.asoiaf-theories.com/the-azor-ahai-theory-daenerys-jon-snow-or-jaime-lannister/). It 
 links Westeros with ancient norse mythology and deduces that Jaime could be the Azor Ahai. Granted, 
 it is an older theory, but most of the listed evidence is still valid and at least somewhat 
 plausible. The link to norse mythology is an interesting approach, but it is unclear whether GRRM 
 used it for some kind of inspiration.
+{:dc}
 
 [This tries to explain it without links to norse 
 mythology](https://www.romper.com/p/is-jaime-lannister-azor-ahai-on-game-of-thrones-this-theory-could-hold-water-75967) 
@@ -111,6 +113,7 @@ fate.
 
 Another popular one that got fueled dramatically in season 7, but was around much earlier due to all 
 the prophecies made to Cersei by fortuneteller *Maggy the Frog* at the beginning of season 5.
+{:dc}
 
 >*Oh yes. You will be queen, for a time ... until there comes another, younger and more beautiful, 
 to cast you down and take all that you hold dear*.
@@ -140,6 +143,7 @@ granted her three. But the fourth child is unborn, so it's too early to say Magg
 
 In the show, indeed none of Maggy's prophecies can be linked to Jaime, but this is because the show 
 omitted one prophecy from the book that opens up quite a few new paths:
+{:dc}
 
 >*When your tears have drowned you, the **valonqar** shall wrap his hands about your pale white 
 throat and choke the life from you*.
@@ -184,6 +188,7 @@ sibling* (or brother) will strangle her while she drowns in her own tears[^cerse
 Sort of it, but it's still unlikely. The Azor Ahai theory states that the *Prince that was promised* 
 sacrificed his wife in order to fulfill his purpose by driving his newly forged sword directly into 
 her heart, forging the weapon capable of destroying the *Great Other* in the process.
+{:dc}
 
 It could be that this is just a metaphor. What if Cersei becomes a White Walker and Jaime has to 
 kill her using his Valyrian Steel sword? In that case, the hint seen on the picture above would just 
@@ -204,6 +209,7 @@ example - she reveals everything to their servants, and completely ignores his o
 scolded him for being stupid and for never listening to their father when he was talking about the 
 importance of gold, forgetting that without **him** and his men she wouldn't sit on the heaps of 
 gold taken from Highgarden.
+{:dc}
 
 So, in short, I think, Jaime and Cersei will meet again and nobody can tell what will happen when 
 they re-unite. I'm pretty sure though, they are not going to share a bed.

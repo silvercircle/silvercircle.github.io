@@ -486,4 +486,8 @@ $(document).ready(function(){
         PopupCenter($(this).attr('href'), $(this).attr('data-title'), 640, 480);
         return(false);
     });
+
+    $('p.dc').html(function(_, html) {
+        return('<span class="dropcaps">' + html.substr(0,1) + '</span>' + html.substr(1));
+    });
 });

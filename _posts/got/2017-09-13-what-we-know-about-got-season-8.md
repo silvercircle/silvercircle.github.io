@@ -30,11 +30,12 @@ share: 1
 {% include defs.md %}
 
 <div class="note blue" markdown="1">
-<h3 class="alert">Update</h3>
+<h3 class="alert">Update (October 7th, 2017)</h3>
 
-It has become pretty clear that season 8 won't premiere before 2019. Several sources, including some 
-actors and others close to the production team have confirmed that filming of the final season will 
-take longer than usual, possibly into late summer 2018, mainly quoting two reasons:
+It has now become fairly certain, that season 8 won't premiere before 2019. Several sources, 
+including some actors and others close to the production team have confirmed that filming of the 
+final season will take longer than usual, possibly into late summer 2018, mainly quoting two 
+reasons:
 
 * The episodes will be longer, rumors have it, all 6 episodes will be of feature film length, which 
   means at least 80 minutes each.
@@ -46,6 +47,7 @@ Season 7 has concluded just a bit over 2 weeks ago, but the community is already
 the last and final season that will bring an end to one of the most popular TV shows of all time. We 
 already see lots of speculation, some interesting and some rather stupid theories and enough 
 excitement to make you think the show might already be running.
+{:dc}
 
 ## So here are some things we currently know for sure:
 
@@ -68,12 +70,12 @@ excitement to make you think the show might already be running.
 
 ## What we can expect
 
-<span>A lot</span>{:ul}. Seriously, there are still so many things to finish, so many open ends to 
-collect, we should really expect the pace at which events will happen in the final season to 
-increase again, even when compared to the already fast-moving season seven. Which is something, I 
-personally do not always like, but we need to realize that it's a necessity as the plot will 
-culminate in a series of events for which a couple of new entities (the Golden Company for example) 
-will enter the stage.
+A lot. Seriously, there are still so many things to finish, so many open ends to collect, we should 
+really expect the pace at which events will happen in the final season to increase again, even when 
+compared to the already fast-moving season seven. Which is something, I personally do not always 
+like, but we need to realize that it's a necessity as the plot will culminate in a series of events 
+for which a couple of new entities (the Golden Company for example) will enter the stage.
+{:dc}
 
 {% include content/got/got-theory-footer.md %}
 

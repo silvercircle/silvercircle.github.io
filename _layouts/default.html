@@ -1,7 +1,7 @@
 {% include site_header.html menu='default' custom_menu='' %}
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <div style="margin:0 20px;">
+        <div id="inner-content-wrapper" style="margin:0 20px;">
         {% if page.columns and page.columns > 1 %}
         <article id="main-content" style="column-count:{{page.columns}}; column-gap:20px;">
         {% else %}
@@ -9,18 +9,18 @@
         {% endif %}
         {{ content }}
         {% include content_footer.html %}
-        {% if page.share and page.share == 1 %}
+        {% if page.share != blank %}
             {% include share_post.html %}
         {% endif %}
-        {% if page.disqus and page.disqus == 1 %}
+        {% if page.disqus != blank %}
             {% include disqus_fragment.html %}
         {% endif %}
         </article>
-        <aside id="sidebar">
-          <h2>Recent</h2>
-          {% include sidebar/sidebar_recent_posts.html count=6 list_cats=1 show_all=1 %}
-          {% include sidebar/sidebar_tags.html %}
-          {% include sidebar/quick_links.html %}
+        <aside id="sidebar" class="sidebar">
+              <h2>Recent</h2>
+              {% include sidebar/sidebar_recent_posts.html count=6 list_cats=1 show_all=1 %}
+              {% include sidebar/sidebar_tags.html %}
+              {% include sidebar/quick_links.html %}
         </aside>
       </div>
      </div>

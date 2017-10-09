@@ -2,11 +2,8 @@
           {% assign pages = site.got-theories | where: "tags", "first" | sort: 'modified' | reverse %}
           {% assign counter = 1 %}
           {% for page in pages %}
-           {% assign ttags = page.tags | join:'|' | append:'|' %}
-           {% if page.isfollowup and page.isfollowup == 1 %}
-           {% continue %}
-           {% endif %}
-           {% include sidebar/document_entry.html %}
+          {% assign ttags = page.tags | join:'|' | append:'|' %}
+          {% include sidebar/document_entry.html %}
           {% endfor %}
           <br>
           <div style="float:right"><a href="{{site.baseurl}}/got-theories/">Show all GoT theories</a></div>

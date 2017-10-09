@@ -24,6 +24,7 @@ a static page generator that has enough flexibility to build a blog or documenta
 but leaves out all the bloat that makes modern content management systems slow and prone to
 security problems. It also significantly lowers the requirements for hosting to a simple web server 
 that can serve static files.
+{:dc}
 
 Jekyll is also supported by [GitHub pages](https://pages.github.com/) who give you essentially 
 unlimited free web hosting, but won't allow you to run PHP, Python, Java or whatever else on their 

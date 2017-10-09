@@ -1,10 +1,7 @@
  {% assign counter = 1 %}
  {% assign this_posts = site.posts | where: "tags", "first" | sort: 'modified' | reverse %}
- {% for post in this_posts %}
+ {% for post in this_posts limit: include.count %}
    {% assign ttags = post.tags | join:'|' | append:'|' %}
-   {% if post.isfollowup and post.isfollowup == 1 %}
-   {% continue %}
-   {% endif %}
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
    <div class="author" style="float:right;">
      <span class="date">
@@ -19,10 +16,6 @@
    {{post.author}}
    </span>
    <br>
-   {% assign counter = counter | plus: 1 %}
-   {% if counter > include.count %}
-   {% break %}
-   {% endif %}
  {% endfor %}
  {% if include.show_all %}
   <div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/blog/">Show all blog posts</a></div>

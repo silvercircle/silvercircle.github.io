@@ -73,6 +73,7 @@ iframe.yt {
     margin-top: 5px !important;
     margin-bottom: 0 !important;
     font-size: #{$author_font_size + 1}px !important;
+    font-family: $sans_font !important;
     text-indent: 0 !important;
     line-height: 1.2 !important;
 }
@@ -82,9 +83,8 @@ h3.sidebar_listheader:first-child {
 }
 
 h3.listheading {
-    color: $darklink !important;
-    font-size: $h3_listheader_size !important;
-    font-weight: 700;
+    color: $title_color !important;
+    text-indent: 10px !important;
 }
 
 #sidebar h2 {
@@ -162,5 +162,23 @@ a.tag {
 div.author, span.author {
     font-size: #{$author_font_size}px !important;
     color: $author_font_color !important;
+}
+
+.sidebar{
+    will-change: min-height;
+}
+
+span.dropcaps {
+  font-size: $dropcaps_size !important;
+  line-height: $dropcaps_leading !important;
+  padding-top: $dropcaps_top_padding !important;
+  padding-right: 4px !important;
+  font-weight: bold !important;
+  vertical-align: center !important;
+  float:left !important;
+}
+
+div.author.subheader {
+    color: $subheader_color !important;
 }
 

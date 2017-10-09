@@ -26,10 +26,11 @@ image:
 
 # Season 7 was awesome, but...
 {% include post_header.html %}
-
+{% include defs.md %}
 **Good things do not last long enough**. Our perception makes us believe that
 good and enjoyable times zoom by way faster than their not so enjoyable
-counterparts. 
+counterparts.
+{:dc}
 
 You know what? The headline contains the word *but*, and at the beginning of the season, we learned 
 through Jon Snow what Ned Stark thought about said word, or, more precisely, sentences using it:
@@ -61,7 +62,9 @@ my opinion, there was only one truly excellent episode and I'm talking about the
 third one brought us a couple of excellent dialogues and high quality acting, mainly from Cersei
 Jaime, Ellaria Sand and The Queen Of Thorns. Unfortunately, it also brought to us the end of one of 
 the deepest and most interesting characters in the show, but otherwise, it wouldn't be Game Of 
-Thrones. The first, sixth and seventh were decent, but no real match for the last two episodes we've seen in season six and the remaining two were typical buildup episodes with no big events happening.
+Thrones. The first, sixth and seventh were decent, but no real match for the last two episodes we've 
+seen in season six and the remaining two were typical buildup episodes with no big events happening.
+{:dc}
 
 In season seven, the plot has been brought to its first climax, the war for the Iron Throne between
 the challenger from across the narrow sea, our well-known Targaryen princess and self-proclaimed
@@ -122,6 +125,7 @@ are missing and the holes they left were never filled. I'm talking about Tywin L
 Tyrell or Ramsay Bolton - truly remarkable personalities in all their evil- and corruptness.
 Personalities who fueled the show and were the masterminds behind the awesomeness of a red or
 purple wedding that made the show such a remarkable experience.
+{:dc}
 
 Season 8 will only consist of six episodes. So far, it's not clear whether some of them will come
 at an overlength, yet I'm afraid, six episodes will require a fast moving plot, pretty much at the

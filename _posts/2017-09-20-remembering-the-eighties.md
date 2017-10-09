@@ -253,7 +253,8 @@ and rare event happened on that day, and that the probability for such an event 
 one's close environment during a life time was extremely low, close to zero. That, and the fact we 
 escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
 in the future. In fact, until I decided to pursue a career in information technology at the age of 
-19, my plan was to become a professional pilot. 
+19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
+interest in computer technology and physics while attending high school.
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or
     more from the actual mid-air crash.

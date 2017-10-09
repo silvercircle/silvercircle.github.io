@@ -4,10 +4,10 @@
 {% endif %}
 {% assign words = post.content | number_of_words %}
 <a href="{{post.url}}"><h3 class="listheading" style="margin: 10px 0 0 0;">{{ post.title }}</h3></a>
-<div class="author" style="float:right;text-align:right;">
+<div class="author subheader" style="float:right;text-align:right;">
     Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{post.modified}}</time><br>{{words}} Words
 </div>
-<div class="author">
+<div class="author subheader">
     Written by {{post.author}}{% if post.categories %}{% for cat in post.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{post.date | date: '%a, %d. %B %Y, %H:%M'}}<br>
     Reading time: approx. {{words | divided_by: 275}} minute(s)
 </div>
