@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-10T11:36:01+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-09T00:31:53+02:00</published><updated>2017-10-09T00:31:53+02:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-10T23:32:36+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-10T19:42:02+0200&quot;&gt;2017-10-10 19:42:02 +0200&lt;/time&gt;&lt;br /&gt;309 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    Written by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt; | Tue, 10. October 2017, 19:41&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc&quot;&gt;Throughout this site, I use the following HTML fragment to include videos from YouTube, passing only 
+the video ID as a parameter. The &lt;code class=&quot;highlighter-rouge&quot;&gt;IFRAME&lt;/code&gt; is wrapped into two &lt;code class=&quot;highlighter-rouge&quot;&gt;DIV&lt;/code&gt; elements, the outer one being 
+responsible for setting the overall width of the element and the inner one containing the CSS 
+“magic” that let it maintain correct aspect ratio.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% if include.width != '' %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width: {{include.width}}; margin:0 auto;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+{% else %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+{% endif %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ytcontainer&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/{{include.id}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h6 id=&quot;use-it-with&quot;&gt;Use it with:&lt;/h6&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Specify an optional width for the outer container:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;80%&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;the-required-css&quot;&gt;The required CSS&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;The following CSS is required for smooth and responsive embedding of a video element. The resulting 
+video will use all the available width of the parent container and resize itself accordingly to use 
+a 16:9 aspect ratio (which is the default for the YouTube video player). The available width is, by 
+default, set to 100% of the parent element, but can be specified as percentile or absolute width by 
+passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; parameter..&lt;/p&gt;
+
+&lt;p&gt;The CSS and how it works is explained in more detail in &lt;a href=&quot;/webdev/css/embed-youtube-any-size-and-correct-aspect/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ytcontainer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;56.25%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.yt&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;As you can test, it is fully responsive and will adjust its width while maintaining correct aspect 
+ratio.&lt;/p&gt;
+
+&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+
+&lt;div class=&quot;ytcontainer&quot;&gt;
+&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/1ST9TZBb9v8&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-09T00:31:53+02:00</published><updated>2017-10-09T00:31:53+02:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;736 Words
@@ -1871,62 +1969,4 @@ impressive).&lt;/li&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry><entry><title type="html">How to set global font scale for Qt applications</title><link href="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/" rel="alternate" type="text/html" title="How to set global font scale for Qt applications" /><published>2017-09-03T10:25:13+02:00</published><updated>2017-09-03T10:25:13+02:00</updated><id>https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/03/qt-set-global-font-scale/">&lt;h1 id=&quot;set-font-scaling-for-qt-applications&quot;&gt;Set font scaling for Qt applications&lt;/h1&gt;
-
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-03T10:25:17+0200&quot;&gt;2017-09-03 10:25:17 +0200&lt;/time&gt;&lt;br /&gt;245 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    Written by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/qt/index.html&quot;&gt;Qt&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/c++/index.html&quot;&gt;C++&lt;/a&gt; | Sun, 03. September 2017, 10:25&lt;br /&gt;
-    Reading time: approx. 0 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;p&gt;Qt is a great thing, for most parts, but sometimes it does not follow UI guidelines strictly enough. 
-On Windows, Qt applications have a tendency of using non-standard fonts at non-standard sizes. For 
-example, QtCreator uses the &lt;em&gt;Tahoma&lt;/em&gt; font at a fairly small size - too small for standard DPI 
-settings that are still widely in use on some older systems, mainly laptops.&lt;/p&gt;
-
-&lt;p&gt;But Qt also allows hassle free UI scaling at any desirable value that works fairly well and can be 
-set globally or per application by defining an environment variable:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set QT_SCALE_FACTOR=2
-qtcreator.exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;do this in a shell, and QtCreator will launch with everything scaled to twice its size. Fonts will 
-appear bigger, but also all UI elements. Since this scaling is implemented in Qt at a very low 
-level, it works consistently throughout the entire application.&lt;/p&gt;
-
-&lt;p&gt;So, you have the choice. You can set the &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR&lt;/code&gt; environment variable globally via the 
-control panel, or use a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; file to set it before you launch a specific application. The value 
-must be a &lt;strong&gt;floating point number&lt;/strong&gt; and can be smaller than 1, so yes, it is possible to downscale 
-the UI.&lt;/p&gt;
-
-&lt;p&gt;The following screen shot illustrates the difference between no scale and &lt;code class=&quot;highlighter-rouge&quot;&gt;QT_SCALE_FACTOR = 2&lt;/code&gt;. It 
-was taken at a resolution of 1920x1080 at the standard DPI setting under Windows.&lt;/p&gt;
-
-&lt;div class=&quot;blockimage borderless&quot;&gt;
-
-
-
-
-&lt;a href=&quot;/assets/gfx/qtcreator-fontscale.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Screen shot showing the different scaling (click to enlarge)&quot;&gt;
-
-&lt;figure&gt;
-        &lt;img src=&quot;/assets/gfx/qtcreator-fontscale.png&quot; alt=&quot;Screen shot showing the different scaling (click to enlarge)&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Screen shot showing the different scaling (click to enlarge)
-        &lt;/figcaption&gt;
-        
-&lt;/figure&gt;
-
-&lt;/a&gt;
-
-
-&lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
-    Screen shot showing the different scaling (click to enlarge)
-&lt;/div&gt;
-
-&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Sometimes, fonts appear to small in Qt applications. If that is the case, a simple solution is possible, either globally for all Qt applications or per application.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22qt%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
+&lt;p&gt;Jekyll is a fairly unproblematic piece of software. It works on Windows, OS X and every flavor of Unix for which &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt; (the programming language) is available. It does not need a particularly powerful system nor any prerequisites. Install-and-run is how it works.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="first" /><category term="Jekyll" /><category term="GitHub" /><summary type="html">[GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works. It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/logos/github-mark.png" /></entry></feed>

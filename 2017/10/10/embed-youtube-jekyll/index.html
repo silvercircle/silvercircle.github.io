@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Embedding YouTube videos in Jekyll | silvercircle/github/io</title>
+<meta property="og:title" content="Embedding YouTube videos in Jekyll">
+<meta name="author" content="Alex Vie">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll’s.">
+<meta property="og:description" content="A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll’s.">
+<link rel="canonical" href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+<meta property="og:url" content="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+<meta property="og:site_name" content="silvercircle/github/io">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-10-10T19:41:31+02:00">
+<script type="application/ld+json">
+{"name":null,"description":"A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll’s.","author":{"@type":"Person","name":"Alex Vie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/","publisher":null,"image":null,"headline":"Embedding YouTube videos in Jekyll","dateModified":"2017-10-10T19:41:31+02:00","datePublished":"2017-10-10T19:41:31+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality.<br>
+        No cookie used by this website will contain personalized information or will be used to identify or contact you.<br>
+        <br>
+        By clicking <strong>Allow cookies</strong> you give your permission to this website to store small bits of unpersonalized data on your device.<br>
+        If you cannot agree with the above and do not want cookies to be stored in your browser, please leave this site now.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
+    <header>
+      <div class="inner">
+          <dl>
+          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+          <dd>A Jekyll test site with no particular purpose.</dd>
+          </dl>
+            <div class="share_buttons header sb-iconic">
+            <span class="sb-label header">Connect:</span>
+
+            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+                <i aria-hidden="true"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+                <i aria-hidden="true"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
+                <i aria-hidden="true"></i>
+                <span>Google+</span>
+            </a>
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback%20https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/%20(Embedding%20YouTube%20videos%20in%20Jekyll)">
+                <i></i>
+                <span>Email</span>
+            </a>
+            </div>
+      </div>
+    </header>
+     <div class="menubar_wrapper">
+      <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
+      <nav>
+          	     <div id="main_menu">
+           <ul id="menu_nav" class="dropmenu menu">
+               
+               <li id="button_backlink">
+                <a class="firstlevel backlink" href="https://silvercircle.github.io/blog/"></a>
+               </li>
+               
+           <li id="button_home" class="">
+                <a class="firstlevel" href="/">Home</a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/entertainment/"><span>Entertainment</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/fun/"><span>fun</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+               <li><a href="/category/travel/"><span>Travel</span></a></li>
+              
+              </ul>
+              -->
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+                <li>
+                  <a href="/got-theories/"><span>Game of Thrones</span></a>
+                </li>
+              </ul>
+          </li>
+          
+        </ul>
+       </div>
+
+
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div id="inner-content-wrapper" style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+        <h1 id="embedding-youtube-videos-in-jekyll">Embedding YouTube videos in Jekyll</h1>
+
+<div class="author subheader" style="float:right;text-align:right;">
+    Last modified: <time class="timeago" datetime="2017-10-10T19:42:02+0200">2017-10-10 19:42:02 +0200</time><br>309 Words
+</div>
+<div class="author subheader">
+    Written by Alex Vie in <a href="/category/jekyll/index.html">Jekyll</a> | Tue, 10. October 2017, 19:41<br>
+    Reading time: approx. 1 minute(s).
+</div>
+<div class="clearfix"></div>
+<hr style="margin-top:2px;">
+
+<p class="dc">Throughout this site, I use the following HTML fragment to include videos from YouTube, passing only 
+the video ID as a parameter. The <code class="highlighter-rouge">IFRAME</code> is wrapped into two <code class="highlighter-rouge">DIV</code> elements, the outer one being 
+responsible for setting the overall width of the element and the inner one containing the CSS 
+“magic” that let it maintain correct aspect ratio.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr>
+<td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+<td class="code"><pre>{% if include.width != '' %}
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: {{include.width}}; margin:0 auto;"</span><span class="nt">&gt;</span>
+{% else %}
+  <span class="nt">&lt;div&gt;</span>
+{% endif %}
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ytcontainer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"yt"</span> <span class="na">allowfullscreen</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/{{include.id}}"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td>
+</tr></tbody></table></code></pre></figure>
+
+<h6 id="use-it-with">Use it with:</h6>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">youtube</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p><strong>Specify an optional width for the outer container:</strong></p>
+
+<div class="language-liquid highlighter-rouge">
+<pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">youtube</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"80%"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p><br></p>
+<h2 id="the-required-css">The required CSS</h2>
+
+<p class="dc">The following CSS is required for smooth and responsive embedding of a video element. The resulting 
+video will use all the available width of the parent container and resize itself accordingly to use 
+a 16:9 aspect ratio (which is the default for the YouTube video player). The available width is, by 
+default, set to 100% of the parent element, but can be specified as percentile or absolute width by 
+passing it in the <code class="highlighter-rouge">width</code> parameter..</p>
+
+<p>The CSS and how it works is explained in more detail in <a href="/webdev/css/embed-youtube-any-size-and-correct-aspect/">this post</a>.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><table style="border-spacing: 0"><tbody><tr>
+<td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td>
+<td class="code"><pre><span class="nt">div</span><span class="nc">.ytcontainer</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">56.25%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">iframe</span><span class="nc">.yt</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span><span class="w">
+</span></pre></td>
+</tr></tbody></table></code></pre></figure>
+
+<h2 id="example">Example</h2>
+
+<p>As you can test, it is fully responsive and will adjust its width while maintaining correct aspect 
+ratio.</p>
+
+<div style="width: ; margin:0 auto;">
+
+<div class="ytcontainer">
+<iframe class="yt" allowfullscreen="" src="https://www.youtube.com/embed/1ST9TZBb9v8"></iframe>
+</div>
+</div>
+
+
+        <div style="margin-top: 0.5em">
+
+    
+        
+    
+    <a class="tag" href="/tags/jekyll">jekyll</a>
+
+    
+    <a class="tag" href="/tags/css">css</a>
+
+    
+    <a class="tag" href="/tags/video">video</a>
+
+<div class="clear"></div>
+</div>
+
+
+        
+            
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
+<span class="sb-label">Share:</span>
+
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/&amp;text=Embedding%20YouTube%20videos%20in%20Jekyll">
+    <i aria-hidden="true"></i>
+    <span>Twitter</span>
+</a>
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+    <i aria-hidden="true"></i>
+    <span>Google+</span>
+</a>
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/&amp;title=Embedding%20YouTube%20videos%20in%20Jekyll">
+    <i aria-hidden="true"></i>
+    <span>Reddit</span>
+</a>
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/&amp;description=Embedding%20YouTube%20videos%20in%20Jekyll">
+    <i></i>
+    <span>Pinterest</span>
+</a>
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/&amp;title=Embedding%20YouTube%20videos%20in%20Jekyll">
+    <i></i>
+    <span>Tumblr</span>
+</a>
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Embedding%20YouTube%20videos%20in%20Jekyll&amp;body=https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+    <i></i>
+    <span>Email</span>
+</a>
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Embedding%20YouTube%20videos%20in%20Jekyll%C2%A0https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" title="Copy link to clipboard">
+    <i></i>
+    <span>Link</span>
+</a>
+</div>
+
+
+        
+        
+            
+<div id="disqus_thread" style="margin-top:0.5em;"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEX VIE#@#2017-10-10 19:41:31 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>                            
+
+
+        
+        </article>
+        <aside id="sidebar" class="sidebar">
+            <script>
+                var _r_sidebar = true;
+                
+                var _r_sidebarcontent = "/sys/sbar_default/";
+                
+            </script>
+            <noscript>
+                some features require javaScript, particularly navigation menus and the side bar
+            </noscript>
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>

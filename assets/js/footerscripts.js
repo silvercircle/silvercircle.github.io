@@ -490,4 +490,13 @@ $(document).ready(function(){
     $('p.dc').html(function(_, html) {
         return('<span class="dropcaps">' + html.substr(0,1) + '</span>' + html.substr(1));
     });
+
+    if (_r_sidebar) {
+        $.ajax({
+            url: _r_sidebarcontent,
+            context: document.body
+        }).done(function(data) {
+            $('aside#sidebar').html(data);
+        });
+    }
 });
