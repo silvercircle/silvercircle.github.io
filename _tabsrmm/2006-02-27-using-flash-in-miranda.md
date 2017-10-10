@@ -4,7 +4,7 @@ date: 2006-02-27T05:40:35+00:00
 modified: 2006-02-27T05:40:35+00:00
 author: Admin
 menucontext: topics
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   This is not a really useful plugin. It is more like a small coding experiment which I created for testing various impacts of writing a MFC plugin for Miranda which can use ActiveX objects.

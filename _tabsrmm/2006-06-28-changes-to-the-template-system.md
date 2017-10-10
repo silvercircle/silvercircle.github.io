@@ -4,7 +4,7 @@ date: 2006-06-28T17:00:18+00:00
 modified: 2006-06-28T17:00:18+00:00
 author: Admin
 menucontext: topics
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   This article describes the changes which have recently been made to the message log system in tabSRMM and which may be of interest for the users.

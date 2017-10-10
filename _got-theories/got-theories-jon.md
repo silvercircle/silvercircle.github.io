@@ -1,6 +1,6 @@
 ---
 title: GoT Theories about Jon
-layout: got
+layout: got_dyn
 author: Alex Vie
 date: 2017-09-11 19:05:06+0200
 modified: 2017-09-13T18:40:49+0200

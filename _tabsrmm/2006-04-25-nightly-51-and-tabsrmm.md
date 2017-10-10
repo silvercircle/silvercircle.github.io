@@ -4,7 +4,7 @@ date: 2006-04-25T04:44:52+00:00
 modified: 2006-04-25T04:44:52+00:00
 author: Admin
 menucontext: topics
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   Unfortunately, the tabSRMM coming with that build has a few problems. It was mistakenly built from outdated sources older than 2 weeks and we are still investigating why it happend (either, my last CVS commit came too late or we have another CVS issue - it wouldn't be the first one, SF.net CVS had quite a few problems lately).

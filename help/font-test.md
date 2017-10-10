@@ -1,7 +1,8 @@
 ---
 author: Alex Vie
 title: Font test page
-layout: default
+layout: default_dyn
+sidebarcontent: sbar_default
 date: 2017-09-15T14:05:09+0200
 modified: 2017-09-15T14:05:26+0200
 menucontext: about

@@ -1,7 +1,7 @@
 ---
 author: Alex Vie
 title: Build simple galleries with Jekyll
-layout: default
+layout: default_dyn
 date: 2017-09-18T05:18:14+0200
 modified: 2017-09-18T05:18:23+0200
 menucontext: about

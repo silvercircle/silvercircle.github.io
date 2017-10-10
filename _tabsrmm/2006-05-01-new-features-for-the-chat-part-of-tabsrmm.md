@@ -4,7 +4,7 @@ date: 2006-05-01T04:06:23+00:00
 modified: 2006-05-01T04:06:23+00:00
 menucontext: topics
 author: Admin
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   This is a short list of new features which I plan or already have added to the group chat window implementation. Most of them are IRC specific and might not be so useful for other group chats, but then.. they don't hurt in any way.

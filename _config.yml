@@ -33,6 +33,11 @@ collections:
     output: true
     permalink: /:collection/:path/
     label: got
+  sys:
+    output: true
+    permalink: /:collection/:path/
+    label: sys
+    
 plugins:
  - jekyll-feed
  - jekyll-redirect-from

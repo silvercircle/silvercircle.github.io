@@ -3,7 +3,7 @@ title: Clist_nicer+ currently unstable in CVS
 date: 2006-03-09T02:20:19+00:00
 modified: 2006-03-09T02:20:19+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 menucontext: topics
 tag: first
 excerpt: >

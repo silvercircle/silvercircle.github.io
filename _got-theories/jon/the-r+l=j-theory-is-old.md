@@ -1,6 +1,6 @@
 ---
 title: The R+L=J theory is OLD
-layout: got
+layout: got_dyn
 author: Alex Vie
 date: 2017-09-13T10:07:58+0200
 modified: 2017-09-13T10:08:15+0200

@@ -1,4 +1,8 @@
+{% if include.width != blank %}
+<div style="width:{{include.width}};margin:0 auto;" class="blockimage {{include.borderclass}}">
+{% else %}
 <div class="blockimage {{include.borderclass}}">
+{% endif %}
 {% if include.prefix != blank %}
     {% assign prefix = include.prefix %}
 {% else %}

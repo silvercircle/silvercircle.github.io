@@ -3,7 +3,7 @@ title: 'Merging tabSRMM + chat.dll -  an idea'
 date: 2006-03-12T15:02:10+00:00
 modified: 2006-03-12T15:02:10+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 menucontext: topics
 tag: first
 excerpt: >

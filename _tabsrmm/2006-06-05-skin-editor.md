@@ -4,7 +4,7 @@ date: 2006-06-05T19:24:37+00:00
 modified: 2006-06-05T19:24:37+00:00
 author: Admin
 menucontext: topics
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   Today, I made the decision to outsource the skin editor for clist_nicer+ and make it an extra plugin.

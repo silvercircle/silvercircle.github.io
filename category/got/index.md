@@ -1,5 +1,5 @@
 ---
-layout: got
+layout: got_dyn
 menucontext: got
 title: "Category: Game of Thrones - overview"
 pagination:

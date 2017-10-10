@@ -3,7 +3,7 @@ title: The merge, part 1
 date: 2006-03-17T19:25:45+00:00
 modified: 2006-03-17T19:25:45+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   A few days ago I posted the idea of creating a unified message window for all kind of chats - normal IM sessions and group chats like IRC channels. Now, a few days later, the first part is done and the resulting plugin is already working. Overall, I'am quite satisfied with the result - the UNICODE DLL is <strong>less than 500 K</strong> (dynamically linked) which is quite good, given the fact, that it also includes the almost complete skinning engine, including frame skinning.

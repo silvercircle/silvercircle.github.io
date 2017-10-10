@@ -17,16 +17,13 @@
         {% endif %}
         </article>
         <aside id="sidebar">
-          {% include sidebar/tags_content_recent.html %}
-          {% include sidebar/sidebar_tags.html %}
-          <hr class="blueline">
-          <h2>All topics</h2>
-          <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web development</a></h3>
-          <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software">Software</a></h3>
-          <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/tabsrmm">TabSRMM</a></h3>
-          <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of Thrones theories</a></h3>
-          {% include sidebar/quick_links.html %}
-          <br>
+            <script>
+                var _r_sidebar = true;
+                var _r_sidebarcontent = "{{site.baseurl}}/sys/sbar_tags/";
+            </script>
+            <noscript>
+                some features require javaScript, particularly navigation menus and the side bar
+            </noscript>
         </aside>
       </div>
      </div>

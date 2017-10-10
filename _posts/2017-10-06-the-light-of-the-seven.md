@@ -1,7 +1,7 @@
 ---
 author: Alex Vie
 title: The Light of the Seven
-layout: default
+layout: default_dyn
 date: 2017-10-06T00:48:02+0200
 modified: 2017-10-06T00:48:08+0200
 menucontext: blog

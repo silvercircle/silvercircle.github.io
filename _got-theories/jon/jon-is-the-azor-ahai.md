@@ -1,6 +1,6 @@
 ---
 title: Jon is the Azor Ahai
-layout: got
+layout: got_dyn
 author: Alex Vie
 date: 2017-09-11 19:05:06+0200
 modified: 2017-09-12T16:10:49+0200

@@ -1,16 +1,16 @@
 <div style="display:table; width:100%">
-    {% if page.prevpage and page.prevpage != "" %}
+    {% if page.prevpage != blank %}
     <div style="font-size:smaller;box-sizing: border-box; width:50%; float:left; display: table-cell; height: 50px">
     <a href="{{site.baseurl}}{{page.prevpage}}.html">Previous page</a>
-    {% if page.prevtitle and page.prevtitle != "" %}
+    {% if page.prevtitle != blank %}
     <br>({{page.prevtitle}})
     {% endif %}
     </div>
     {% endif %}
-    {% if page.nextpage and page.nextpage != "" %}
+    {% if page.nextpage != blank %}
     <div style="font-size:smaller;box-sizing: border-box; width:50%; float:right; display: table-cell; height: 50px; text-align:right;">
     <a href="{{site.baseurl}}{{page.nextpage}}.html">Next page</a>
-    {% if page.nexttitle and page.nexttitle != "" %}
+    {% if page.nexttitle != blank %}
     <br>({{page.nexttitle}})
     {% endif %}
     </div>

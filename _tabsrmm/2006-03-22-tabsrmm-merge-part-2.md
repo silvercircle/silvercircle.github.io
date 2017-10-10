@@ -3,7 +3,7 @@ title: tabSRMM merge, part 2
 date: 2006-03-22T18:44:36+00:00
 modified: 2006-03-22T18:44:36+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 menucontext: topics
 tag: first
 excerpt: >

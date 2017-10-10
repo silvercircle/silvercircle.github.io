@@ -1,4 +1,4 @@
-{% if post.spoiler and post.spoiler == 1 and include.showspoiler != 1 %}
+{% if post.spoiler != blank and include.showspoiler != 1 %}
 <div class="spoiler_header" data-target="{{post.slug}}">Spoiler content, click to reveal.</div>
 <div id="{{post.slug}}" style="display:none;">
 {% endif %}
@@ -35,7 +35,7 @@
     <a class="tag" href="{{site.baseurl}}/tags/{{tag || downcase}}">{{tag}}</a>
 {% endfor %}
 <div class="clear"></div>
-{% if post.spoiler and post.spoiler == 1 and include.showspoiler != 1 %}
+{% if post.spoiler != blank and include.showspoiler != 1 %}
 </div>
 {% endif %}
 <br>

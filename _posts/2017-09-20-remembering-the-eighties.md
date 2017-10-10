@@ -125,6 +125,7 @@ least five, possibly more, because of *major* traffic jams around the Air Force 
 before, I had slept most of the time during the drive. My brother, who later told me, he didn't 
 sleep so well, occupied the front seat next to my dad, so I had all the backseats of our comfortable 
 series 5 BMW for myself - nice and spacey enough for a good sleep.
+{:dc}
 
 The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
 attending - quoted numbers varied greatly, some claim up to 350.000. I can only say, there were 
@@ -184,9 +185,15 @@ wasn't able to remember. He, being a pilot (although not a military one), might 
 they were going to crash mid-air. Or maybe, it wasn't real and I fantasized. I really cannot tell.
 {% include youtube.html id="rhiyeMxC5hM" %}
 <br>
-And I remember lots of people, including ourselves, running away from the huge fireball, many of 
-them screaming, but my dad quickly realized there was no imminent danger for us and he yelled at us 
-to stop and stick together.
+And I remember lots of people, including ourselves, running away from the huge, black smoke column, 
+many of them screaming, but my dad quickly realized there was no imminent danger for us and he 
+yelled at us to stop and stick together. I then looked around noticing two areas of rising smoke and 
+almost immediately, it became clear something terrible must have happened. The Italian display team 
+was gone from the skies and it appeared unusually quiet, probably just an impression after all the 
+noise from 10 jet aircraft flying overhead at low altitudes only minutes before. My father and older 
+brother both looked very worried and I remember my dad staring in disbelief at the black smoke cloud 
+in the not-so-far distance, probably realizing that one aircraft must have had crashed into the 
+crowd.
 
 <div class="floatbox right ruled" style="width: 35%;margin-top:0;margin-bottom:0;" markdown="1">
 The decision to move away from the area that became the epicenter of that terrible accident probably 

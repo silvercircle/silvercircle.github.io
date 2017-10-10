@@ -3,7 +3,7 @@ title: Source code questions
 date: 2006-03-25T04:32:31+00:00
 modified: 2006-03-25T04:32:31+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 menucontext: topics
 tag: first
 excerpt: >

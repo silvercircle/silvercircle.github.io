@@ -1,0 +1,37 @@
+{% include site_header.html menu='default' custom_menu='got' %}
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div id="inner-content-wrapper" style="margin:0 20px;">
+        {% if page.columns and page.columns > 1 %}
+        <article id="main-content" style="column-count:{{page.columns}}; column-gap:20px;">
+        {% else %}
+        <article id="main-content">
+        {% endif %}
+        {{ content }}
+        {% include content_footer.html %}
+        {% if page.share != blank  %}
+            {% include share_post.html %}
+        {% endif %}
+        {% if page.disqus != blank  %}
+            {% include disqus_fragment.html %}
+        {% endif %}
+        </article>
+        <aside id="sidebar">
+            <script>
+                var _r_sidebar = true;
+                var _r_sidebarcontent = "{{site.baseurl}}/sys/sbar_got/";
+            </script>
+            <noscript>
+                some features require javaScript, particularly navigation menus and the side bar
+            </noscript>
+        </aside>
+      </div>
+     </div>
+    </div>
+    {% include site_footer.html %}
+    {% if site.google_analytics %}
+    {% include google_analytics.html %}
+    {% endif %}
+    {% include footer_scripts.html %}
+  </body>
+</html>

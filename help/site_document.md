@@ -1,7 +1,8 @@
 ---
 author: Alex Vie
 title: Site documentation
-layout: default
+layout: default_dyn
+sidebarcontent: sbar_default
 date: 2017-09-12T11:42:19+0200
 modified: 2017-09-12T11:42:29+0200
 menucontext: about

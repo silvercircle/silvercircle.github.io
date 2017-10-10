@@ -1,0 +1,16 @@
+---
+---
+{% include sidebar/got_blog_recent.html %}
+{% include sidebar/got_theories_recent.html %}
+  <hr class="blueline">
+  <h2>Other categories</h2>
+    <div class="two_cols">
+        {% for category in site.categories %}
+            {% if category == 'GoT' %}
+                {% continue %}
+            {% endif %}
+       <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/">{{ category | first | strip_html}}</a></h3>
+    {% endfor %}
+    </div>
+ {% include sidebar/quick_links.html %}
+

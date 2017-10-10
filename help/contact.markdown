@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default_dyn
+sidebarcontent: sbar_default
 author: alex
 title: Contact
 menucontext: contact

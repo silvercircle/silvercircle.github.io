@@ -1,7 +1,8 @@
 ---
 author: Alex Vie
+sidebarcontent: sbar_default
 title: About this page
-layout: default
+layout: default_dyn
 menucontext: about
 permalink: /help/about.html
 ---
