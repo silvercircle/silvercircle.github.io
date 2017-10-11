@@ -497,6 +497,16 @@ $(document).ready(function(){
             context: document.body
         }).done(function(data) {
             $('aside#sidebar').html(data);
+            $('aside#sidebar time.timeago').timeago();
         });
     }
+
+    $('div.img_overlay_indicator').hover(function() {
+        $('#' + $(this).data('target')).fadeIn('slow');
+    }, function() {
+    });
+
+    $('div.tt_closebutton').click(function() {
+        $(this).parent().fadeOut('slow');
+    });
 });

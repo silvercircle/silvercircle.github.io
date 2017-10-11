@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-10T23:32:36+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-11T07:33:01+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-10T19:42:02+0200&quot;&gt;2017-10-10 19:42:02 +0200&lt;/time&gt;&lt;br /&gt;309 Words
@@ -53,7 +53,7 @@ responsible for setting the overall width of the element and the inner one conta
 video will use all the available width of the parent container and resize itself accordingly to use 
 a 16:9 aspect ratio (which is the default for the YouTube video player). The available width is, by 
 default, set to 100% of the parent element, but can be specified as percentile or absolute width by 
-passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; parameter..&lt;/p&gt;
+passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; parameter.&lt;/p&gt;
 
 &lt;p&gt;The CSS and how it works is explained in more detail in &lt;a href=&quot;/webdev/css/embed-youtube-any-size-and-correct-aspect/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
 
@@ -91,7 +91,7 @@ passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code
 &lt;p&gt;As you can test, it is fully responsive and will adjust its width while maintaining correct aspect 
 ratio.&lt;/p&gt;
 
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
 
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/1ST9TZBb9v8&quot;&gt;&lt;/iframe&gt;
@@ -123,13 +123,17 @@ moderate touristic activities.&lt;/p&gt;
 
 
 
-&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The storehouse and former wharf of the Royal Naval base near Mahon. (&amp;copy;Enric, own work, CC BY-SA 4.0)&quot;&gt;
+&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The storehouse and former wharf of the Royal Naval base near Mahon.&quot;&gt;
 
-&lt;figure&gt;
-        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; alt=&quot;The storehouse and former wharf of the Royal Naval base near Mahon. (&amp;copy;Enric, own work, CC BY-SA 4.0)&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
+        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; alt=&quot;The storehouse and former wharf of the Royal Naval base near Mahon.&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+        
+        &lt;div data-target=&quot;tt_mahon_naval&quot; class=&quot;img_overlay_indicator&quot; style=&quot;position:absolute;bottom:20px;right:20px;&quot;&gt;
+        &lt;/div&gt;
+        
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The storehouse and former wharf of the Royal Naval base near Mahon. (&amp;copy;Enric, own work, CC BY-SA 4.0)
+                The storehouse and former wharf of the Royal Naval base near Mahon.
         &lt;/figcaption&gt;
         
 &lt;/figure&gt;
@@ -137,8 +141,23 @@ moderate touristic activities.&lt;/p&gt;
 &lt;/a&gt;
 
 
+    &lt;div id=&quot;tt_mahon_naval&quot; class=&quot;img_tooltip&quot; style=&quot;display:none;&quot;&gt;
+        &lt;div class=&quot;tt_closebutton&quot; style=&quot;float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;&quot;&gt;
+        &lt;/div&gt;
+        &lt;p&gt;This is part of the former &lt;a href=&quot;https://en.wikipedia.org/wiki/Royal_Navy_Dockyard&quot;&gt;Royal Navy Dockyard&lt;/a&gt;, that was built in the early
+18&lt;sup&gt;th&lt;/sup&gt; century by the British Royal Navy in Mahon’s natural harbor. The base is still in use today as a Spanish Naval Station
+and can be seen from the city looking across the harbor. 
+&lt;br /&gt;
+&lt;br /&gt;
+Another test is to make sure the stuff sticks when attached.”&lt;/p&gt;
+&lt;h6 id=&quot;license&quot;&gt;License:&lt;/h6&gt;
+&lt;p&gt;©&lt;a href=&quot;https://commons.wikimedia.org/wiki/User:Enric&quot;&gt;Enric&lt;/a&gt;, own work, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;&lt;/p&gt;
+
+    &lt;/div&gt;
+
+
 &lt;div class=&quot;floatimage_title&quot;&gt;
-    The storehouse and former wharf of the Royal Naval base near Mahon. (&amp;copy;Enric, own work, CC BY-SA 4.0)
+    The storehouse and former wharf of the Royal Naval base near Mahon.
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -494,7 +513,7 @@ in multiple split sessions for the show. Djawadi played the organ and the piano 
 &lt;p&gt;This is how it appeared on the show. Performed by session musicians and the composer playing piano 
 and the organ himself.&lt;/p&gt;
 
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
 
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/jSCbTIaLbrg&quot;&gt;&lt;/iframe&gt;
@@ -508,7 +527,7 @@ a more rocky note. The vocal part has been contributed by &lt;a href=&quot;https
 Lesnik&lt;/a&gt;, a young and talented German rock and 
 metal vocalist with a beautiful soprano voice.&lt;/p&gt;
 
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
 
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/u5uAy8oSsDU&quot;&gt;&lt;/iframe&gt;
@@ -520,7 +539,7 @@ metal vocalist with a beautiful soprano voice.&lt;/p&gt;
 &lt;p&gt;The City of Prague Philharmonic Orchestra recorded this version and it certainly does give it a very 
 special touch.&lt;/p&gt;
 
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
 
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/lNroNErjdo0&quot;&gt;&lt;/iframe&gt;
@@ -1015,6 +1034,7 @@ Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.&
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/sardinia/beach.jpg&quot; alt=&quot;Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
+        
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.
         &lt;/figcaption&gt;
@@ -1022,6 +1042,7 @@ Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.&
 &lt;/figure&gt;
 
 &lt;/a&gt;
+
 
 
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
@@ -1053,7 +1074,7 @@ mediterranean island, particularly in the southern part.&lt;/p&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">I recently spent some time in the mediterranean, visiting places I've never been before in my life - the islands of Sardinia, which belongs to Italy, and the neighbouring French Corsica. Even though the two islands are close neighbours, separated by the only 11 kilometers (a little under 7 miles) wide [Strait of Bonifacio](https://en.wikipedia.org/wiki/Strait_of_Bonifacio), they are very different...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22sardinia_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T05:18:14+02:00</published><updated>2017-09-20T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/">&lt;h1 id=&quot;remembering-the-eighties&quot;&gt;Remembering the eighties&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3182 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3208 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     Written by Alex Vie | Wed, 20. September 2017, 05:18&lt;br /&gt;
@@ -1062,18 +1083,20 @@ mediterranean island, particularly in the southern part.&lt;/p&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
-&lt;p&gt;In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of 
+&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of 
 them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become 
 an exciting last summer vacations weekend as my dad took me and my older brother on a 2 days long 
 journey with the intention to visit both these events.&lt;/p&gt;
 
 &lt;h2 id=&quot;day-one-saturday-aug-27th-1988&quot;&gt;Day one: Saturday, Aug 27th 1988&lt;/h2&gt;
-&lt;div class=&quot;floatimage right &quot; style=&quot;width:220px; max-width:220px;&quot;&gt;
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;div class=&quot;floatimage left &quot; style=&quot;width:220px; max-width:220px;&quot;&gt;
 
 
 
-&lt;figure&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
         &lt;img src=&quot;/assets/gfx/mor_banner.jpg&quot; alt=&quot;The official Monsters of Rock 1988 poster&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+        
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 The official Monsters of Rock 1988 poster
@@ -1082,13 +1105,14 @@ journey with the intention to visit both these events.&lt;/p&gt;
 &lt;/figure&gt;
 
 
+
 &lt;div class=&quot;floatimage_title&quot;&gt;
     The official Monsters of Rock 1988 poster
 &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;On August, 27th, very early in the morning, my father, my elder brother and myself hopped into the 
+  &lt;p class=&quot;dc&quot;&gt;On August, 27th, very early in the morning, my father, my elder brother and myself hopped into the 
 car for a journey that should leave impressions carved so deeply into my soul, making them appear as 
 they happened yesterday even today - 30 years later. Our first target was the city of &lt;a href=&quot;https://en.wikipedia.org/wiki/Schweinfurt&quot;&gt;Schweinfurt 
 in Bavaria&lt;/a&gt;, Germany, where the 1988 &lt;a href=&quot;https://en.wikipedia.org/wiki/Monsters_of_Rock&quot;&gt;Monsters of 
@@ -1100,7 +1124,7 @@ performed on a single day, forming a live gig that lasted 6-8 hours. Later, Mons
 extended into South America while it gradually died off in Europe and the U.S only to get 
 resurrected about 25 years later.&lt;/p&gt;
 
-&lt;p&gt;There was always a &lt;strong&gt;main act&lt;/strong&gt; performing at the end of the show and it was typically one of the 
+  &lt;p&gt;There was always a &lt;strong&gt;main act&lt;/strong&gt; performing at the end of the show and it was typically one of the 
 big rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van 
 Halen, Guns’n Roses, Whitesnake and many more all have at least one appearance at a Monsters Of Rock 
 festival. My older brother was a big hard rock and heavy metal fan back these days and he had been 
@@ -1108,7 +1132,7 @@ on huge festivals before, but for me it was the first such event. At 14, I was p
 young for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year 
 before and was already a big metalhead at that age. The influence of my brother was clearly showing.&lt;/p&gt;
 
-&lt;p&gt;I do not remember much of the drive, because I slept through most of it, but I know the 400 mile 
+  &lt;p&gt;I do not remember much of the drive, because I slept through most of it, but I know the 400 mile 
 drive took us about 7-8 hours and we arrived in Schweinfurt around noon. The situation was “chaotic” 
 and that’s quite some understatement. Close to 50.000 metal fans do have some impact, even on a 
 medium sized city and we heard, some savage idiots caused chaos and mayhem the evening before, 
@@ -1120,13 +1144,38 @@ in &lt;em&gt;their city&lt;/em&gt; if they had been among those with the power t
 hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that 
 poor image.&lt;/p&gt;
 
-&lt;div class=&quot;blockimage borderless&quot;&gt;
+  &lt;p&gt;To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
+long before the first band was scheduled to play. I was totally excited, because I was going to see 
+one of my favorite bands, &lt;strong&gt;Iron Maiden&lt;/strong&gt;, for the first time ever in a live gig, but because of my 
+age, alcohol was a no-go. My dad was usually a tolerant person, but this was something he didn’t 
+want to see and he told my older brother to “&lt;em&gt;watch it&lt;/em&gt;”.&lt;/p&gt;
+
+  &lt;p&gt;My dad didn’t want to attend the gig as metal was never among his favorites in music, but he had 
+planned to find a bed and some food at a small hotel in a nearby village, owned by an old friend of 
+him and we agreed on a meeting point on a large parking space near the festival grounds later in the 
+evening.&lt;/p&gt;
+
+  &lt;p&gt;[…]&lt;/p&gt;
+
+  &lt;p&gt;I remember many impressions from that gig
+[…]
+Just a couple days before he event it had been announced that Megadeath had to drop out and their 
+position was to be filled by a less popular band called Testament. […]&lt;/p&gt;
+
+  &lt;p&gt;When Iron Maiden finally went off stage, it was already dark, but I don’t remember the exact time. 
+It took us at least one hour to reach the meeting point where our father was already waiting for us, 
+even though it wasn’t a long walk, but there were sooo many people, many of them totally drunk and 
+still headbanging on their way out. It was a really huge mess. My brother, tall and fairly well in 
+shape, looked after me, so it wasn’t a problem.&lt;/p&gt;
+
+  &lt;div class=&quot;blockimage borderless&quot;&gt;
 
 
 
 
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/greatwhite.jpg&quot; alt=&quot;Great White performing at Monsters Of Rock 1988&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
+        
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 Great White performing at Monsters Of Rock 1988
@@ -1135,43 +1184,20 @@ poor image.&lt;/p&gt;
 &lt;/figure&gt;
 
 
+
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
     Great White performing at Monsters Of Rock 1988
 &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
-long before the first band was scheduled to play. I was totally excited, because I was going to see 
-one of my favorite bands, &lt;strong&gt;Iron Maiden&lt;/strong&gt;, for the first time ever in a live gig, but because of my 
-age, alcohol was a no-go. My dad was usually a tolerant person, but this was something he didn’t 
-want to see and he told my older brother to “&lt;em&gt;watch it&lt;/em&gt;”.&lt;/p&gt;
-
-&lt;p&gt;My dad didn’t want to attend the gig as metal was never among his favorites in music, but he had 
-planned to find a bed and some food at a small hotel in a nearby village, owned by an old friend of 
-him and we agreed on a meeting point on a large parking space near the festival grounds later in the 
-evening.&lt;/p&gt;
-
-&lt;p&gt;[…]&lt;/p&gt;
-
-&lt;p&gt;I remember many impressions from that gig
-[…]
-Just a couple days before he event it had been announced that Megadeath had to drop out and their 
-position was to be filled by a less popular band called Testament. […]&lt;/p&gt;
-
-&lt;p&gt;When Iron Maiden finally went off stage, it was already dark, but I don’t remember the exact time. 
-It took us at least one hour to reach the meeting point where our father was already waiting for us, 
-even though it wasn’t a long walk, but there were sooo many people, many of them totally drunk and 
-still headbanging on their way out. It was a really huge mess. My brother, tall and fairly well in 
-shape, looked after me, so it wasn’t a problem.&lt;/p&gt;
-
-&lt;p&gt;When we finally reached the agreed meeting point on the parking space, my dad was there, waiting. He 
+  &lt;p&gt;When we finally reached the agreed meeting point on the parking space, my dad was there, waiting. He 
 looked fresh and told us he had slept well and agreed with his friend at the hotel to get us all 
 some special service in form of late night food. I remember, I realized I had not eaten anything 
 since the breakfast at home, some 18 hours or so earlier. The excitement had taken over and let me 
 forget basic needs, I guess.&lt;/p&gt;
 
-&lt;p&gt;We arrived at our father’s friend’s hotel around midnight (I guess so, could have been later) after 
+  &lt;p&gt;We arrived at our father’s friend’s hotel around midnight (I guess so, could have been later) after 
 a relatively short drive of which I do not remember much. The hotel, I remember quite clearly 
 though; It was small (often called a pension in Germany) with only a couple of rooms, ran by my 
 father’s friend and his wife, both of whom I had never met before. They were friendly and humorous 
@@ -1179,21 +1205,23 @@ folk and the food was excellent, but strangely, the thing I remember most is, ho
 was. I had not been up for an extended period of time, maybe just 14 hours and had slept enough the 
 night before, but I was quite exhausted from the gig.&lt;/p&gt;
 
-&lt;p&gt;Soon after we finished this midnight diner and took a shower at around 2am, my father told us we had 
+  &lt;p&gt;Soon after we finished this midnight diner and took a shower at around 2am, my father told us we had 
 about 2 hours left, until we had to get ready for the next stage of our journey, a 200 mile travel 
 to the city of Ramstein in the Rhineland area, where the &lt;a href=&quot;https://en.wikipedia.org/wiki/Ramstein_air_show_disaster&quot;&gt;Flugtag 
 88&lt;/a&gt; was going to to take place on the US 
 Air Force base. Enough time for a short nap, which we both thankfully took even though I knew, I was 
 going to sleep in the car for most of the upcoming drive.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;day-two-sunday-aug-28th-1988&quot;&gt;Day two: Sunday, Aug 28th 1988&lt;/h2&gt;
-&lt;p class=&quot;dc&quot;&gt;The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p class=&quot;dc&quot;&gt;The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
 least five, possibly more, because of &lt;em&gt;major&lt;/em&gt; traffic jams around the Air Force base. Like the day 
 before, I had slept most of the time during the drive. My brother, who later told me, he didn’t 
 sleep so well, occupied the front seat next to my dad, so I had all the backseats of our comfortable 
 series 5 BMW for myself - nice and spacey enough for a good sleep.&lt;/p&gt;
 
-&lt;p&gt;The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
+  &lt;p&gt;The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
 attending - quoted numbers varied greatly, some claim up to 350.000. I can only say, there were 
 massive crowds of cars and people everywhere on the base, which is &lt;strong&gt;huge&lt;/strong&gt;. The almost flawless 
 weather - like the day before, the 28th was a beautiful late summer day with temperatures up to 
@@ -1208,7 +1236,7 @@ interesting part, the flying air show displays, was about to start around noon, 
 enough time left to walk around, get some burgers and french fries, visit the aircraft in the static 
 ground exhibition and enjoy a beautiful, hot, late summer day.&lt;/p&gt;
 
-&lt;p&gt;At around 3pm - the flight displays were still in progress - we decided, we had no intention to be 
+  &lt;p&gt;At around 3pm - the flight displays were still in progress - we decided, we had no intention to be 
 among the first huge crowds heading towards the parking space(s) soon after the show’s end, because 
 we expected a traffic jam even worse than the one in the morning. My father had taken days off from 
 work and my brother and me were still in our summer breaks from university and school so we had 
@@ -1216,12 +1244,12 @@ plenty of time available for a relaxed trip home and no need to rush anything. A
 to take better pictures from the soon-to-be flying Italian team and therefore decided it would be 
 better to leave the densely packed crowd.&lt;/p&gt;
 
-&lt;p&gt;So we made our way out of the masses and settled down in a lesser crowded area. We sat down into the 
+  &lt;p&gt;So we made our way out of the masses and settled down in a lesser crowded area. We sat down into the 
 grass and watched the still ongoing aircraft display teams. My dad took pictures with his Nikon and 
 I remember my brother was a bit annoyed, because his Sony Video-8 camcorder was out of battery power 
 and he had not listened to our dad telling him he might want to save a bit for the Italian team.&lt;/p&gt;
 
-&lt;p&gt;At around 3:30pm, the Italian display team Frecche Tricolori was announced as the highlight of the 
+  &lt;p&gt;At around 3:30pm, the Italian display team Frecche Tricolori was announced as the highlight of the 
 show and the last flying display team for the day. My dad told us to pay extra attention, because 
 they were awesome and the only team flying with 10 aircraft. The show was indeed spectacular as 
 promised and we watched for minutes from our position at least 200 meters away from the place, that 
@@ -1231,6 +1259,7 @@ ice cream truck that got fully hit by the cartwheeling aircraft and we &lt;em&gt
 where the white station wagon was parked near the perimeter road. That place took a direct hit and 
 people standing there had little chance to survive. We had seen all these places that got turned 
 into a patch of scorched earth within seconds.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;blockimage borderless&quot;&gt;
 
@@ -1242,6 +1271,7 @@ into a patch of scorched earth within seconds.&lt;/p&gt;
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/ramstein/white_car.jpg&quot; alt=&quot;We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
+        
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.
         &lt;/figcaption&gt;
@@ -1251,18 +1281,20 @@ into a patch of scorched earth within seconds.&lt;/p&gt;
 &lt;/a&gt;
 
 
+
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
     We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.
 &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p&gt;So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
 mean love and peace and was meant to be the final stunt in the show of the Italian display team. At 
 this time, still nobody even remotely thought that love and peace would soon turn into war-like 
 conditions and dozens of people dying instantly without ever knowing what hit them.&lt;/p&gt;
 
-&lt;p&gt;What then happened, I do not fully remember. I do remember a strange, metallic sound, followed by 
+  &lt;p&gt;What then happened, I do not fully remember. I do remember a strange, metallic sound, followed by 
 some kind of “thud”. It was not a very loud sound, at least not the loud “bang” one might expect 
 from a mid-air crash of two aircraft at high speed. Others claim, the sound was in fact a loud bang, 
 but maybe they were closer&lt;sup id=&quot;fnref:position&quot;&gt;&lt;a href=&quot;#fn:position&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or maybe it &lt;em&gt;was&lt;/em&gt; loud and my memories are not working as they 
@@ -1271,16 +1303,17 @@ I felt heated air and some kind of pressure wave that hurt my ears. I also &lt;e
 loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
 wasn’t able to remember. He, being a pilot (although not a military one), might have realized that 
 they were going to crash mid-air. Or maybe, it wasn’t real and I fantasized. I really cannot tell.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;div style=&quot;width: ; margin:0 auto;&quot;&gt;
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
 
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/rhiyeMxC5hM&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;
-And I remember lots of people, including ourselves, running away from the huge, black smoke column, 
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p&gt;And I remember lots of people, including ourselves, running away from the huge, black smoke column, 
 many of them screaming, but my dad quickly realized there was no imminent danger for us and he 
 yelled at us to stop and stick together. I then looked around noticing two areas of rising smoke and 
 almost immediately, it became clear something terrible must have happened. The Italian display team 
@@ -1290,11 +1323,11 @@ brother both looked very worried and I remember my dad staring in disbelief at t
 in the not-so-far distance, probably realizing that one aircraft must have had crashed into the 
 crowd.&lt;/p&gt;
 
-&lt;div class=&quot;floatbox right ruled&quot; style=&quot;width: 35%;margin-top:0;margin-bottom:0;&quot;&gt;
-  &lt;p&gt;The decision to move away from the area that became the epicenter of that terrible accident probably 
+  &lt;div class=&quot;floatbox right ruled&quot; style=&quot;width: 50%;margin-top:0;margin-bottom:0;&quot;&gt;
+    &lt;p&gt;The decision to move away from the area that became the epicenter of that terrible accident probably 
 saved us from a lot of harm, and possibly saved our lives.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;I often asked myself what would have happened had we been staying near the white station wagon in 
+  &lt;/div&gt;
+  &lt;p&gt;I often asked myself what would have happened had we been staying near the white station wagon in 
 the middle of the massive crowd that had built up around the ice cream truck and the nearby static 
 aircraft displays? Would I still be here to write these lines? I do not know, because from all the 
 pictures and videos and my blurred memory concerning our exact position, I cannot tell whether we 
@@ -1307,21 +1340,21 @@ tell. Given the fact that many victims died from trauma caused by being directly
 me conclude, the place around the impact site was far from safe, even for those not standing in the 
 path of the cartwheeling aircraft.&lt;/p&gt;
 
-&lt;p&gt;The place we had settled down was safe though. Not only was it far enough away from the place of 
+  &lt;p&gt;The place we had settled down was safe though. Not only was it far enough away from the place of 
 impact, it was also located more or less perpendicular in relation to the track of the doomed 
 aircraft that went down 50 meters in front of the crowd. So no debris headed in our direction.&lt;/p&gt;
 
-&lt;p&gt;[…]&lt;/p&gt;
-
+  &lt;p&gt;[…]&lt;/p&gt;
+&lt;/div&gt;
 &lt;h2 id=&quot;looking-back&quot;&gt;Looking back&lt;/h2&gt;
-
-&lt;p&gt;When I look back, I’m not even sure if everything was real. If there weren’t for the many videos, 
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p&gt;When I look back, I’m not even sure if everything was real. If there weren’t for the many videos, 
 pictures, reports from other people, which - as a rational thinking being - I accept as being real, 
 I would have doubts. Sometimes, it feels like a bad dream, or a Hollywood movie. The images of the 
 large fire pretty much looked like from an action movie and some of these pictures are still 
 surprisingly clear in my mind, even though everything happened 30 years ago.&lt;/p&gt;
 
-&lt;p&gt;Other pictures are blurred and I remember very little from what happened after the disaster. At some 
+  &lt;p&gt;Other pictures are blurred and I remember very little from what happened after the disaster. At some 
 point, we reached our car and there was a massive traffic chaos, but I cannot remember details from 
 our drive home which took us many hours, probably 10 or more. I only know we arrived the next day, 
 early in the morning. Later I was told it could have been some kind of mild shock. Even I was only 
@@ -1330,17 +1363,17 @@ TV or in newspapers. The chaos, the screams, the smoke clouds, the smell of burn
 of uniformed guys, some armed, the many ambulances and helicopters, the overall noise level, it all 
 might have contributed.&lt;/p&gt;
 
-&lt;p&gt;What I &lt;em&gt;clearly&lt;/em&gt; remember is my mom when we finally arrived home - she was in tears and couldn’t 
+  &lt;p&gt;What I &lt;em&gt;clearly&lt;/em&gt; remember is my mom when we finally arrived home - she was in tears and couldn’t 
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn’t realize that we didn’t get hurt until we finally arrived. She &lt;em&gt;had&lt;/em&gt; seen the reports 
 on TV &lt;em&gt;before&lt;/em&gt; my dad called her, because finding a phone on site was impossible and we had to wait 
 until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
 on TV and heard that dozens died and hundreds got injured - that was enough.&lt;/p&gt;
-
+&lt;/div&gt;
 &lt;h2 id=&quot;consequences&quot;&gt;Consequences?&lt;/h2&gt;
-
-&lt;p&gt;Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p&gt;Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
 expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
 many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
 died on that day. I still remember two teenage girls, probably sisters or close friends, in the area 
@@ -1348,7 +1381,7 @@ of the crash near the ice cream truck we had been around maybe an hour before. T
 age and we exchanged some shy smiles and until today, I have no idea what happened to them. Did they 
 leave that area like we did and escaped unharmed like us or did their luck run out sooner than ours?&lt;/p&gt;
 
-&lt;p&gt;Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
+  &lt;p&gt;Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
 fairly rational manner. As I already mentioned, my dad is a professional airline pilot (now retired) 
 and he had a pragmatic approach in handling the situation. He explained that some equally disastrous 
 and rare event happened on that day, and that the probability for such an event happening again in 
@@ -1357,6 +1390,7 @@ escaped physically unharmed enabled me to realize that there was no need to stay
 in the future. In fact, until I decided to pursue a career in information technology at the age of 
 19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
 interest in computer technology and physics while attending high school.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -1799,6 +1833,7 @@ products, despite the crisis and possible shortages that were to expect.&lt;/p&g
 &lt;figure&gt;
         &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;No love for Tofu&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
+        
         &lt;figcaption style=&quot;display:none;&quot;&gt;
                 No love for Tofu
         &lt;/figcaption&gt;
@@ -1806,6 +1841,7 @@ products, despite the crisis and possible shortages that were to expect.&lt;/p&g
 &lt;/figure&gt;
 
 &lt;/a&gt;
+
 
 
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
