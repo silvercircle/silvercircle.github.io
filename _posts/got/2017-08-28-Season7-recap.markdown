@@ -1,6 +1,6 @@
 ---
-title: got season 7 recap
-layout: default
+title: GoT season 7 recap
+layout: no_sidebar
 author: alex
 blog: true
 date: 2017-08-28 01:31:31+0200
@@ -27,7 +27,8 @@ image:
 # Season 7 was awesome, but...
 {% include post_header.html %}
 {% include defs.md %}
-**Good things do not last long enough**. Our perception makes us believe that
+<div class="two_cols" markdown="1">
+Good things do not last long enough. Our perception makes us believe that
 good and enjoyable times zoom by way faster than their not so enjoyable
 counterparts.
 {:dc}
@@ -36,7 +37,8 @@ You know what? The headline contains the word *but*, and at the beginning of the
 through Jon Snow what Ned Stark thought about said word, or, more precisely, sentences using it:
 
 > Everything before the word **but** is horseshit.
-
+{: .fancy}
+<br>
 Sorry Ned, I have to use the word here. Also sorry for not thinking that you were always right, 
 because if you were, you wouldn't have lost your ~~mind~~ head. 
 
@@ -45,14 +47,19 @@ while watching one of the key scenes in episode 7, another Ned-ism from the very
 the show came to mind:
 
 > The man who passes the sentence should swing the sword
+{: .fancy}
 
+</div>
 {% include youtube.html id="24zxhpRB8kg" %}
-<br>Clearly, Sansa and Arya did it not the *Ned Stark way* by sealing Littlefinger's fate with a
+
+<div class="two_cols" markdown="1">
+Clearly, Sansa and Arya did it not the *Ned Stark way* by sealing Littlefinger's fate with a
 perfect example of team work, violating one of their father's core principles. But who cares, the
 scene was still good and both Arya and Sansa are not *man* anyway.
+</div>
 
 ## So, yeah, it's over - for now
-
+<div class="two_cols" markdown="1">
 Game of Thrones Season 7 is over and to me it seems it just started last week, but in reality, it's
 been 6 weeks ago. Despite all the problems that manifested themselves in this most recent season,
 caused by a way too fast moving and *compressed* plot, GoT is still a very enjoyable show. The
@@ -72,9 +79,7 @@ Queen Cersei who still sits on the Iron Throne. Additionally, the ground work fo
 conflict between the human race and the White Walkers with their army of the dead, now strengthened
 by some undead giants and an undead dragon has been laid.
 
-{% include gfx/float_image.html image="got/sansa_the_sith.jpg" align="right" width="50%"
-title="Learn from your masters, once you know enough, kill them. The principle of the Sith works in
-Westeros equally well and Sansa's outfit is probably a coincidence :)" %} 
+{% include gfx/BD.html image=I.got.sansa_sith %}
 The cliffhanger in the final episode of season 7 happened as expected and thus shared a common
 problem that became more and more apparent during the seventh season: The show has become
 predictable, significantly more than ever before. For the most part, this is understandable though,
@@ -113,9 +118,9 @@ The fact that she paid a huge price works well to make her even more believable.
 enjoy everything she had at the beginning of the show, that character would certainly be less
 authentic and probably also less realistic: You can't be an asshole of such dimensions without ever
 having to pay a price.
-
+</div>
 ## And season 8?
-
+<div class="two_cols" markdown="1">
 So, season 7 is over. Lots of things happened, we saw Dragons, fire, ice, quite a lot of blood,
 many dead and undead people and even an undead dragon, we saw lots of agony and some love - the
 usual ingredients that have always worked so well for Game Of Thrones. We also saw the plot moving
@@ -134,9 +139,10 @@ loose ends to collect, not only Cersei vs Dany, and everyone vs the Night King a
 are many smaller things that matter, what about Gendry, will he meet Arya again? Will the Hound
 finally get his revenge for the atrocities committed by his brother when they still were children?
 What about Tormund and Brienne, will they finally get the chance to make *monster babies*?
-
+</div>
 #### And, most importantly:
 
 > Who the hell will still be among the living at the end of the final episode?
 
+{% include content/got/got-theory-footer.md %}
 

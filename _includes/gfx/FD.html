@@ -12,8 +12,12 @@
 {% unless include.nolink == 1 %}
 <a href="{{ image_name }}" data-fancybox="gallery" data-caption="{{include.image.desc}}">
 {% endunless %}
-<figure>
+<figure style="position:relative;">
         <img src="{% if include.image.thumb == 1 %}{{ site.baseurl }}{{prefix}}{{ include.image.path }}/thumb_{{include.image.name}}{% else %}{{ image_name }}{% endif %}" alt="{{include.image.desc}}" style="height:auto; margin:0; display:block;" />
+        {% if include.image.long != blank %}
+        <div data-target="tt_{{include.image.id}}" class="img_overlay_indicator" style="position:absolute;bottom:20px;right:20px;">
+        </div>
+        {% endif %}
         {% if include.image.desc != blank %}
         <figcaption style="display:none;">
                 {{ include.image.desc }}
@@ -23,6 +27,13 @@
 {% unless include.nolink == 1 %}
 </a>
 {% endunless %}
+{% if include.image.long != blank %}
+    <div id="tt_{{include.image.id}}" class="img_tooltip" style="display:none;">
+        <div class="tt_closebutton" style="float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;">
+        </div>
+        {{ include.image.long | markdownify }}
+    </div>
+{% endif %}
 {% if include.image.desc != blank and include.omitbottomcaption != 1 %}
 <div class="floatimage_title">
     {{ include.image.desc }}

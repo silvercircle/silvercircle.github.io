@@ -182,3 +182,42 @@ div.author.subheader {
     color: $subheader_color !important;
 }
 
+.img_overlay_indicator, .tt_closebutton {
+    font: normal normal normal 24px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 0.93em;
+    line-height:27px !important;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    min-width: 27px !important;
+    text-align: center;
+    cursor: pointer;
+}
+.img_overlay_indicator:before {
+    content: "\f05a";
+}
+
+.tt_closebutton:before {
+    content: "\f2d3";
+}
+
+div.img_tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#eEeEc2;
+	border-radius:3px;
+	padding:10px;
+	z-index: 9999;
+}
+div.img_tooltip p:last-child {
+    margin-bottom: 0 !important;
+}
+
+div.dynlayout {
+    padding-left: 80px !important;
+    background: linear-gradient(to right, #000 0, #000 80px, #fff 81px, #fff 100%);
+}
+

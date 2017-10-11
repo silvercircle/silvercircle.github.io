@@ -72,6 +72,10 @@ ul.dropmenu li a.firstlevel.backlink {
     width: 0.93em;
     line-height:28px !important;
 }
+ul.dropmenu li a.firstlevel.backlink:before {
+    content: "\f0a8";
+}
+
 ul.dropmenu li a.firstlevel.compact {
     height:24px;
     line-height: 24px;

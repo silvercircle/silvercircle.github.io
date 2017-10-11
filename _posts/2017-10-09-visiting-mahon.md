@@ -17,7 +17,6 @@ excerpt: >
     <br>
     It's a beautiful small town on the shore of one of the largest natural harbours in the world
     with a length of more than 3km.
-
 image:
     source: mahon_cover
     width: 40%

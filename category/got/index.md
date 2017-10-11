@@ -15,7 +15,7 @@ pagination:
 {% include paginator_header.html %}
 
 <p>This is a list of articles and blog posts about Game of Thrones. It avoids listing theories and 
-other spoiler-heavy content. If you are interested in fan theories, <a 
+other spoiler-heavy content. <strong>If you are interested in fan theories</strong>, <a 
 href="{{site.baseurl}}/got-theories">go here.</a></p>
 
 {% include content/got-spoiler-warning.md %}

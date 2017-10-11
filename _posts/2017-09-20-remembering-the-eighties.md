@@ -1,7 +1,7 @@
 ---
 author: Alex Vie
 title: Remembering the eighties
-layout: default
+layout: no_sidebar
 date: 2017-09-20T05:18:14+0200
 modified: 2017-09-20T19:18:23+0200
 menucontext: blog
@@ -38,9 +38,12 @@ In 1998, the late August 27th and 28th weekend saw two major events in southern 
 them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become 
 an exciting last summer vacations weekend as my dad took me and my older brother on a 2 days long 
 journey with the intention to visit both these events.
+{:dc}
+{:cols}
 
 ## Day one: Saturday, Aug 27th 1988
-{% include gfx/FD.html align="right" image=page.media.mor_banner width="220px" nolink=1 %}
+<div class="two_cols" markdown="1">
+{% include gfx/FD.html align="left" image=page.media.mor_banner width="220px" nolink=1 %}
 On August, 27th, very early in the morning, my father, my elder brother and myself hopped into the 
 car for a journey that should leave impressions carved so deeply into my soul, making them appear as 
 they happened yesterday even today - 30 years later. Our first target was the city of [Schweinfurt 
@@ -51,7 +54,8 @@ seventies into the early nineties, often attracting six digit numbers of heavy m
 fans. A *Monsters of Rock festival* usually featured a huge main stage where multiple bands 
 performed on a single day, forming a live gig that lasted 6-8 hours. Later, Monsters Of Rock 
 extended into South America while it gradually died off in Europe and the U.S only to get 
-resurrected about 25 years later. 
+resurrected about 25 years later.
+{:dc}
 
 There was always a **main act** performing at the end of the show and it was typically one of the 
 big rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van 
@@ -73,7 +77,6 @@ in *their city* if they had been among those with the power to decide. The reput
 hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that 
 poor image.
 
-{% include gfx/BD.html borderclass="borderless" image=page.media.great_white nolink=1 %}
 To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
 long before the first band was scheduled to play. I was totally excited, because I was going to see 
 one of my favorite bands, **Iron Maiden**, for the first time ever in a live gig, but because of my 
@@ -98,6 +101,7 @@ even though it wasn't a long walk, but there were sooo many people, many of them
 still headbanging on their way out. It was a really huge mess. My brother, tall and fairly well in 
 shape, looked after me, so it wasn't a problem.
 
+{% include gfx/BD.html borderclass="borderless" image=page.media.great_white nolink=1 %}
 When we finally reached the agreed meeting point on the parking space, my dad was there, waiting. He 
 looked fresh and told us he had slept well and agreed with his friend at the hotel to get us all 
 some special service in form of late night food. I remember, I realized I had not eaten anything 
@@ -118,8 +122,10 @@ to the city of Ramstein in the Rhineland area, where the [Flugtag
 88](https://en.wikipedia.org/wiki/Ramstein_air_show_disaster) was going to to take place on the US 
 Air Force base. Enough time for a short nap, which we both thankfully took even though I knew, I was 
 going to sleep in the car for most of the upcoming drive.
+</div>
 
 ## Day two: Sunday, Aug 28th 1988
+<div class="two_cols" markdown="1">
 The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
 least five, possibly more, because of *major* traffic jams around the Air Force base. Like the day 
 before, I had slept most of the time during the drive. My brother, who later told me, he didn't 
@@ -165,10 +171,11 @@ ice cream truck that got fully hit by the cartwheeling aircraft and we *had* bee
 where the white station wagon was parked near the perimeter road. That place took a direct hit and 
 people standing there had little chance to survive. We had seen all these places that got turned 
 into a patch of scorched earth within seconds.
-
+</div>
 {% assign img=page.media[page.testimage] %}
 {% include gfx/BD.html image=img borderclass="borderless" %}
 
+<div class="two_cols" markdown="1">
 So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
 mean love and peace and was meant to be the final stunt in the show of the Italian display team. At 
 this time, still nobody even remotely thought that love and peace would soon turn into war-like 
@@ -183,8 +190,9 @@ I felt heated air and some kind of pressure wave that hurt my ears. I also *beli
 loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
 wasn't able to remember. He, being a pilot (although not a military one), might have realized that 
 they were going to crash mid-air. Or maybe, it wasn't real and I fantasized. I really cannot tell.
+</div>
 {% include youtube.html id="rhiyeMxC5hM" %}
-<br>
+<div class="two_cols" markdown="1">
 And I remember lots of people, including ourselves, running away from the huge, black smoke column, 
 many of them screaming, but my dad quickly realized there was no imminent danger for us and he 
 yelled at us to stop and stick together. I then looked around noticing two areas of rising smoke and 
@@ -195,7 +203,7 @@ brother both looked very worried and I remember my dad staring in disbelief at t
 in the not-so-far distance, probably realizing that one aircraft must have had crashed into the 
 crowd.
 
-<div class="floatbox right ruled" style="width: 35%;margin-top:0;margin-bottom:0;" markdown="1">
+<div class="floatbox right ruled" style="width: 50%;margin-top:0;margin-bottom:0;" markdown="1">
 The decision to move away from the area that became the epicenter of that terrible accident probably 
 saved us from a lot of harm, and possibly saved our lives.
 </div>
@@ -217,9 +225,9 @@ impact, it was also located more or less perpendicular in relation to the track 
 aircraft that went down 50 meters in front of the crowd. So no debris headed in our direction.
 
 [...]
-
+</div>
 ## Looking back
-
+<div class="two_cols" markdown="1">
 When I look back, I'm not even sure if everything was real. If there weren't for the many videos, 
 pictures, reports from other people, which - as a rational thinking being - I accept as being real, 
 I would have doubts. Sometimes, it feels like a bad dream, or a Hollywood movie. The images of the 
@@ -242,9 +250,9 @@ probably didn't realize that we didn't get hurt until we finally arrived. She *h
 on TV *before* my dad called her, because finding a phone on site was impossible and we had to wait 
 until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
 on TV and heard that dozens died and hundreds got injured - that was enough.
-
+</div>
 ## Consequences?
-
+<div class="two_cols" markdown="1">
 Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
 expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
 many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
@@ -262,6 +270,7 @@ escaped physically unharmed enabled me to realize that there was no need to stay
 in the future. In fact, until I decided to pursue a career in information technology at the age of 
 19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
 interest in computer technology and physics while attending high school.
+</div>
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or
     more from the actual mid-air crash.

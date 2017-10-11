@@ -1,4 +1,4 @@
-{:cols: .two_cols}
+{:cols: .two_cols markdown="1"}
 {:red: .c_red}
 {:blue: .c_blue}
 {:green: .c_green}

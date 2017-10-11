@@ -1,14 +1,14 @@
 {% include site_header.html menu='default' custom_menu='' %}
-    <div id="content-wrapper">
+    <div id="content-wrapper" style="border-top: none;">
       <div class="inner clearfix">
         <div id="inner-content-wrapper" style="margin:0 20px;">
         <article id="main-content" style="width:100%;">
         {{ content }}
         {% include content_footer.html %}
-        {% if page.share and page.share == 1 %}
+        {% if page.share != blank %}
             {% include share_post.html %}
         {% endif %}
-          {% if page.disqus and page.disqus == 1 %}
+          {% if page.disqus != blank %}
             {% include disqus_fragment.html %}
           {% endif %}
         </article>

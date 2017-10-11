@@ -27,6 +27,11 @@ got:
     name: jon-snow-iron-throne.jpg
     desc: "Is this Jon's fate?"
 
+  sansa_sith:
+    path: got/
+    name: sansa_the_sith.jpg
+    desc: "Learn from your masters, once you know enough, kill them. The principle of the Sith works in Westeros equally well and Sansa's outfit is probably a coincidence :)"
+
 qtcreator_fontscale:
     name: qtcreator-fontscale.png
     desc: "Screen shot showing the different scaling (click to enlarge)"

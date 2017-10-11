@@ -45,5 +45,15 @@ testgallery:
 
 mahon_naval:
   url: https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG
-  desc: The storehouse and former wharf of the Royal Naval base near Mahon. (&copy;Enric, own work, CC BY-SA 4.0)
+  desc: The storehouse and former wharf of the Royal Naval base near Mahon.
+  long: |
+    This is part of the former [Royal Navy Dockyard](https://en.wikipedia.org/wiki/Royal_Navy_Dockyard), that was built in the early
+    18<sup>th</sup> century by the British Royal Navy in Mahon's natural harbor. The base is still in use today as a Spanish Naval Station
+    and can be seen from the city looking across the harbor. 
+    <br>
+    <br>
+    Another test is to make sure the stuff sticks when attached."
+    ###### License:
+    &copy;[Enric](https://commons.wikimedia.org/wiki/User:Enric), own work, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  id: mahon_naval
 

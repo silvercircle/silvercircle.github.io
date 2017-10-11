@@ -68,7 +68,7 @@ The following CSS is required for smooth and responsive embedding of a video ele
 video will use all the available width of the parent container and resize itself accordingly to use 
 a 16:9 aspect ratio (which is the default for the YouTube video player). The available width is, by 
 default, set to 100% of the parent element, but can be specified as percentile or absolute width by 
-passing it in the `width` parameter..
+passing it in the `width` parameter.
 {:dc}
 
 The CSS and how it works is explained in more detail in [this post]({{site.baseurl}}{% link 
