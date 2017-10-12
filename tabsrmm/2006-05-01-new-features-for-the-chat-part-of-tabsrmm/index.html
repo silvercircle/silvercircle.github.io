@@ -235,7 +235,22 @@ about it is available [here](https://www.miranda-ng.org/en/).</p>
         </article>
         <aside id="sidebar">
             <script>
-                var _r_sidebar = true;
+                $(document).ready(function() {
+                    $.ajax({
+                        url: "/tabsrmm/sbar/",
+                        context: document.body
+                    }).done(function(data) {
+                        var _html = data;
+                        $.ajax({
+                            url: "/sys/sbar_topics/",
+                            context: document.body
+                        }).done(function(data) {
+                            _html = _html + data;
+                            $('aside#sidebar').html(_html);
+                            $('aside#sidebar time.timeago').timeago();
+                        });
+                    });
+                });
                 var _r_sidebarcontent = "/sys/sbar_topics/";
             </script>
             <noscript>

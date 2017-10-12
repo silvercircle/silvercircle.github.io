@@ -180,10 +180,32 @@
      </div>
     
 
-    <div id="content-wrapper" style="border-top: none;">
-      <div class="inner clearfix">
-        <div id="inner-content-wrapper" style="margin:0 20px;">
-        <article id="main-content" style="width:100%;">
+    <style>
+        nav {
+            margin-left: 72px !important;
+        }
+    </style>
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>SIDEBAR</label> 
+                </div>
+                <div class="vmenu_button star" data-target="/sys/sbar_default/">
+                <label>RECENT</label> 
+                </div>
+                <div class="vmenu_button tags" data-target="/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <div id="inner-content-wrapper" style="float:left;margin:0">
+        <article id="main-content" class="dynlayout">
         <h1 id="season-7-was-awesome-but">Season 7 was awesome, but…</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
