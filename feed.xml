@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-12T06:33:50+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-12T10:06:07+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-10T19:42:02+0200&quot;&gt;2017-10-10 19:42:02 +0200&lt;/time&gt;&lt;br /&gt;309 Words
@@ -148,8 +148,7 @@ moderate touristic activities.&lt;/p&gt;
 18&lt;sup&gt;th&lt;/sup&gt; century by the British Royal Navy in Mahon’s natural harbor. The base is still in use today as a Spanish Naval Station
 and can be seen from the city looking across the harbor. 
 &lt;br /&gt;
-&lt;br /&gt;
-Another test is to make sure the stuff sticks when attached.”&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
 &lt;h6 id=&quot;license&quot;&gt;License:&lt;/h6&gt;
 &lt;p&gt;©&lt;a href=&quot;https://commons.wikimedia.org/wiki/User:Enric&quot;&gt;Enric&lt;/a&gt;, own work, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;&lt;/p&gt;
 

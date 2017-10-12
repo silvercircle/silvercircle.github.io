@@ -562,7 +562,7 @@ $(document).ready(function(){
                 $('aside.sliderbar').css({left: pos.left + 'px', width: 0, height: h + 'px', 'max-height': h + 'px'});
             }
             $('aside.sliderbar').show();
-            $('aside.sliderbar').animate({width: '290px'}, 400, 'swing', function() {
+            $('aside.sliderbar').animate({width: '290px'}, 200, 'swing', function() {
                 $('aside.sliderbar').html(data);
                 $('aside.sliderbar time.timeago').timeago();
             });
