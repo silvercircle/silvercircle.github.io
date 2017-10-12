@@ -1,3 +1,36 @@
+/**
+ * detect IE
+ * returns version of IE or false, if browser is not Internet Explorer
+ *
+ * https://stackoverflow.com/questions/19999388/check-if-user-is-using-ie-with-jquery
+ *
+ */
+function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+        // IE 10 or older => return version number
+        return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+       // Edge (IE 12+) => return version number
+       return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+
+    // other browser
+    return false;
+}
+
 /*!
  * JavaScript Cookie v2.1.4
  * https://github.com/js-cookie/js-cookie
@@ -433,6 +466,8 @@ function PopupCenter(url, title, w, h) {
 }
 
 $(document).ready(function(){
+
+    var isIE = detectIE();
     // this kills the pure CSS hover effect from the dropdown menus so they will
     // only react on DOM events.
     $('html > head').append('<style>ul.dropmenu li:hover ul { display: none; }</style>');
@@ -509,4 +544,50 @@ $(document).ready(function(){
     $('div.tt_closebutton').click(function() {
         $(this).parent().fadeOut('slow');
     });
+
+    /*
+     * handle the vertical menu bar
+     * show an element in a dynamically animated side bar
+     * content is retrieved via ajax request
+     */
+    $('.vmenu_button').click(function() {
+        var pos = $('#vmenu').offset();
+        var h = parseInt($(window).height() - (pos.top - $(document).scrollTop()));   // the remaining height in pixels
+        //alert('w: ' + $(window).height() + ', p: ' + pos.top + ', d: ' + $(document).scrollTop() + ', h: ' + h);
+        $.ajax({ url: $(this).data('target'), context: document.body}).done(function(data) {
+            if(isIE) {
+                $('aside.sliderbar').css({top: pos.top + 'px', left: pos.left + 'px', width: 0, height: h + 'px', 'max-height': h + 'px'});
+            }
+            else {
+                $('aside.sliderbar').css({left: pos.left + 'px', width: 0, height: h + 'px', 'max-height': h + 'px'});
+            }
+            $('aside.sliderbar').show();
+            $('aside.sliderbar').animate({width: '290px'}, 200, 'swing', function() {
+                $('aside.sliderbar').html(data);
+                $('aside.sliderbar time.timeago').timeago();
+            });
+        });
+    });
+
+    /*
+     * hide the dynamic side bar, clear everything and make sure
+     * it can be re-used
+     * whenever a click is registered somewhere on the page
+     */
+        $(document).click(function() {
+        $('aside.sliderbar').fadeOut();
+        $('aside.sliderbar').hide();
+        $('aside.sliderbar').html('');
+        $('aside.sliderbar').css({width: 0});
+    });
+
+    /*
+     * but clicking inside the sidebar itself will not dismiss it
+     */
+    /*
+    $("aside.sliderbar").click(function(e) {
+        e.stopPropagation();
+        return false;
+    });
+    */
 });

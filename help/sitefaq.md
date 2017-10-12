@@ -15,12 +15,12 @@ disqus: 1
 {% include post_header.html %}
 {% include defs.md %}
 This is a FAQ concerning the site itself and the software behind it.
-## What's behind this site, which CMS?
+#### What's behind this site, which CMS?
 
 No CMS at all. The site is created with [Jekyll](https://jekyllrb.com), a so-called static site 
 generator written in [Ruby](https://www.ruby-lang.org/en/).
 
-## But this is so 90's, what's the point?
+#### But this is so 90's, what's the point?
 
 Basically, it is indeed "so 90's", because the web started as static, using a markup language with 
 only [18 tags](https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html). Of 
@@ -31,7 +31,7 @@ The point is that it's good enough for the job and hosting static content is inc
 easy. No need to worry about overloaded servers, security nightmares like WordPress (the software 
 itself is fine, but the plugins are sometimes horrible) and other problems.
 
-## It's hosted on GitHub, sounds cool, can I haz it?
+#### It's hosted on GitHub, sounds cool, can I haz it?
 
 Sure. Everyone can. Sign up at GitHub and [get started with hosting a page for 
 free](https://help.github.com/articles/what-is-github-pages/). Resource limits are generous (though 
@@ -40,7 +40,7 @@ not unlimited) and it's totally free.
 Note that they won't host a database and you cannot run any server-sided code. No PHP, no Java, no 
 Python, just HTML, CSS and JavaScript.
 
-## What about CSS, frameworks, anything?
+#### What about CSS, frameworks, anything?
 
 Nope, CSS is a modified version of the [jekyll-architect](https://github.com/pages-themes/architect) 
 theme. The gallery functionality is provided by [fancybox](http://fancybox.net/). The site uses 
@@ -48,7 +48,7 @@ parts of [Font Awesome](http://fontawesome.io/) (for the social icons in the sha
 [jQuery](https://jquery.com/), and the [jQuery Timeago](http://timeago.yarp.com/) plugin for 
 relative time stamps.
 
-## What Jekyll plugins are used
+#### What Jekyll plugins are used
 
 * [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) for awesome pagination of 
   everything.
@@ -65,7 +65,7 @@ relative time stamps.
 
 * jekyll-include-cache (speed up building by caching reusable include fragments.
 
-## What fonts are used?
+#### What fonts are used?
 
 * [Cormorant SC](https://fonts.google.com/specimen/Cormorant+SC) for big headlines in the main 
 content area. It's a small caps Garamond variant that pairs well with most old-style serif 

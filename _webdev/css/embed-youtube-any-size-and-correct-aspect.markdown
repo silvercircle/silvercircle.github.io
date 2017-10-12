@@ -1,5 +1,5 @@
 ---
-layout: topics
+layout: topics_dyn
 author: alex
 title: YouTube embedding with correct aspect and any width
 date: 2017-08-31T23:56:26+02:00

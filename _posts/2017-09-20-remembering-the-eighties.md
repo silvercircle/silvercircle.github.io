@@ -29,6 +29,10 @@ media:
         desc: "We stood near this place maybe an hour earlier, left and behind is the icecream truck 
         that received a direct hit. These people probably didn't realize what hit them as everything 
         happened extremely fast."
+image:
+    source: mor
+    width: 100px
+    align: right
 ---
 
 # Remembering the eighties

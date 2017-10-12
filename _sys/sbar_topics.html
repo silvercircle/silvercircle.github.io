@@ -2,14 +2,9 @@
 ---
 <h2>Recent in blog</h2>
 {% include sidebar/sidebar_recent_posts.html count=5 show_all=1 %}
-{% include sidebar/topic_recent_content.html %}
 {% include sidebar/sidebar_tags.html %}
 <hr class="blueline">
-<h2>All topics</h2>
-<h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/webdev">Web development</a></h3>
-<h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/software">Software</a></h3>
-<h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/tabsrmm">TabSRMM</a></h3>
-<h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of Thrones theories</a></h3>
+{% include sidebar/all_topics.html %}
 {% include sidebar/quick_links.html %}
 <br>
 

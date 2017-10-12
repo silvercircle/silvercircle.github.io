@@ -1,0 +1,11 @@
+---
+---
+<h2>Recent in this topic</h2>
+{% assign pages = site.software | where: "tags", "first" | sort: 'modified' | reverse %}
+{% for page in pages limit: 5 %}
+    {% include sidebar/document_entry.html %}
+{% endfor %}
+<div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/software/">Show all...</a></div>
+<div class="clear"></div>
+
+

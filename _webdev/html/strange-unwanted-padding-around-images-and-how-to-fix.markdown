@@ -1,5 +1,5 @@
 ---
-layout: topics
+layout: topics_dyn
 author: AlexVie
 title: Strange unwanted padding around images and how to fix
 date: 2017-09-04 12:19:58+0200

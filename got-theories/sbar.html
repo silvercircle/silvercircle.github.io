@@ -1,0 +1,14 @@
+---
+---
+<h2>Recent in this topic</h2>
+{% assign pages = site.got-theories | where: "tags", "first" | sort: 'modified' | reverse %}
+{% for page in pages limit: 10 %}
+    {% include sidebar/document_entry.html %}
+{% endfor %}
+<div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/got-theories/">Show all...</a></div>
+<div class="clear"></div>
+<hr class="blueline">
+
+
+
+

@@ -1,5 +1,5 @@
 ---
-layout: topics
+layout: topics_dyn
 author: Alex Vie
 title: Multiple background images with CSS3
 date: 2017-10-02T16:50:26+0200

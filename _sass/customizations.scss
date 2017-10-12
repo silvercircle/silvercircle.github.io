@@ -216,8 +216,196 @@ div.img_tooltip p:last-child {
     margin-bottom: 0 !important;
 }
 
-div.dynlayout {
-    padding-left: 80px !important;
+div.dynbg {
     background: linear-gradient(to right, #000 0, #000 80px, #fff 81px, #fff 100%);
 }
+
+div.inner.dynlayout {
+/*    width: 1104px;*/
+    width: 960px;
+}
+
+#main-content.dynlayout {
+    width: 920px !important;
+}
+
+div.inner.dynvmenu_wrapper {
+    /*width: 1184px;*/
+    width: 1040px;
+}
+
+#content-wrapper.dynbg {
+    border-top: none;
+    padding-left:80px;
+    float:left;
+    margin-left:-80px;
+}
+
+#vmenu {
+    float:left;
+    width: 80px;
+    height:200px;
+    background:black;
+}
+
+.vmenu_button {
+    font: normal normal normal 48px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height:66px !important;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
+    width: 76px;
+    height: 76px;
+    color:#ddd;
+    position: relative;
+}
+
+.vmenu_button label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    width: 76px;
+    height: 44px;
+    font-family: $sans_font;
+    color: white !important;
+}
+.vmenu_button:hover {
+    background: rgba(215,215,215,0.5);
+}
+
+.vmenu_button:hover {
+    color: black !important;
+}
+
+.vmenu_button.hamburger:before {
+    content: "\f0c9";
+}
+
+.vmenu_button.star {
+    color: orange;
+}
+.vmenu_button.star:before {
+    content: "\f006";
+}
+
+.vmenu_button.tags {
+    color: #66f;
+}
+.vmenu_button.tags:before {
+    content: "\f02c";
+}
+
+.vmenu_button.links {
+    color: #aad;
+}
+
+.vmenu_button.links:before {
+    content: "\f0c1";
+}
+
+.vmenu_button.topic {
+    color: #aad;
+}
+
+.vmenu_button.topic:before {
+    content: "\f02d";
+}
+
+aside.sliderbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    float:left;
+    display:none;
+    background: #444;
+    padding: 20px !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+    min-height: 100px !important;
+    z-index: 1010 !important;
+}
+aside.sliderbar .author {
+    color: white !important;
+    height: 1.2em !important;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: #{$author_font_size - 1}px !important;
+}
+
+aside.sliderbar a {
+    color: yellow !important;
+}
+
+aside.sliderbar h3.sidebar_listheader {
+    font-family: Oswald !important;
+    font-weight: 300 !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1039px) {
+    div.inner.dynvmenu_wrapper {
+        width: 740px !important;
+    }
+    #main-content.dynlayout {
+        width: 620px !important;
+    }
+    div.inner.dynlayout {
+        width: 660px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div.inner.dynlayout {
+        width:100% !important;
+    }
+    div.inner.dynvmenu_wrapper {
+        width: 100% !important;
+    }
+    #main-content.dynlayout {
+        width: auto !important;
+    }
+    #vmenu {
+        width: 40px;
+        left: 0;
+        top: 0;
+    }
+    #content-wrapper.dynbg {
+        margin-left: 40px;
+        padding-left: 0;
+        float:none;
+    }
+    div.dynbg {
+        background: linear-gradient(to right, #000 0, #000 40px, #fff 41px, #fff 100%);
+    }
+    .vmenu_button label {
+        display:none;
+    }
+
+    .vmenu_button {
+        font: normal normal normal 24px/1 FontAwesome !important;
+        line-height:36px !important;
+        border-radius: 2px;
+        text-align: center;
+        cursor: pointer;
+        margin: 2px;
+        width: 36px;
+        height: 36px;
+        color:#ddd;
+        position: relative;
+    }
+    aside.sliderbar {
+        width: 0;
+        float:left !important;
+        border: none !important;
+    }
+    body {
+        background: black;
+    }
+}
+
 

@@ -1,8 +1,38 @@
 {% include site_header.html menu='default' custom_menu='' %}
-    <div id="content-wrapper" style="border-top: none;">
-      <div class="inner clearfix">
-        <div id="inner-content-wrapper" style="margin:0 20px;">
-        <article id="main-content" style="width:100%;">
+    <style>
+        nav {
+            margin-left: 72px !important;
+        }
+    </style>
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div class="vmenu_button hamburger" data-target="{{site.baseurl}}/sys/sbar_default/">
+                <label>SIDEBAR</label> 
+                </div>
+                <div title="Recent content" class="vmenu_button star" data-target="{{site.baseurl}}/sys/sbar_default/">
+                <label>RECENT</label> 
+                </div>
+                <div title="Tags" class="vmenu_button tags" data-target="{{site.baseurl}}/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+                <div title="Links" class="vmenu_button links" data-target="{{site.baseurl}}/sys/sbar_tags/">
+                <label>LINKS</label> 
+                </div>
+                {% if page.collection != blank and page.collection != 'posts' %}
+                <div title="More in this topic" class="vmenu_button topic" data-target="{{site.baseurl}}/{{page.collection}}/sbar/">
+                <label>TOPIC</label> 
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <div id="inner-content-wrapper" style="float:left;margin:0">
+        <article id="main-content" class="dynlayout">
         {{ content }}
         {% include content_footer.html %}
         {% if page.share != blank %}
