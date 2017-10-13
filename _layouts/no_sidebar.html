@@ -1,48 +1,57 @@
 {% include site_header.html menu='default' custom_menu='' %}
     <style>
         nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
             margin-left: 72px !important;
         }
     </style>
     <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
         <div class="inner dynvmenu_wrapper">
             <div id="vmenu">
-                <div class="vmenu_button hamburger" data-target="{{site.baseurl}}/sys/sbar_default/">
-                <label>SIDEBAR</label> 
+                <div title="More blog..." class="vmenu_button hamburger" data-target="{{site.baseurl}}/sys/sbar_default/">
+                <label>BLOG</label> 
                 </div>
-                <div title="Recent content" class="vmenu_button star" data-target="{{site.baseurl}}/sys/sbar_default/">
+                <div title="Recent content" class="vmenu_button star" data-target="{{site.baseurl}}/sys/sbar_recent/">
                 <label>RECENT</label> 
                 </div>
                 <div title="Tags" class="vmenu_button tags" data-target="{{site.baseurl}}/sys/sbar_tags/">
                 <label>TAGS</label> 
-                </div>
-                <div title="Links" class="vmenu_button links" data-target="{{site.baseurl}}/sys/sbar_tags/">
-                <label>LINKS</label> 
                 </div>
                 {% if page.collection != blank and page.collection != 'posts' %}
                 <div title="More in this topic" class="vmenu_button topic" data-target="{{site.baseurl}}/{{page.collection}}/sbar/">
                 <label>TOPIC</label> 
                 </div>
                 {% endif %}
+                {% if page.categories != blank %}
+                <div title="More in this category" class="vmenu_button category" data-target="{{site.baseurl}}/category/{{page.categories | first | downcase}}/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                {% endif %}
+                <div title="Links" class="vmenu_button links" data-target="{{site.baseurl}}/sys/sbar_tags/">
+                <label>LINKS</label> 
+                </div>
             </div>
         </div>
         <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
         </aside>
     </div>
     <div id="content-wrapper" class="dynbg">
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
-        <div id="inner-content-wrapper" style="float:left;margin:0">
         <article id="main-content" class="dynlayout">
+        <div class="{% if page.reduced != blank %}reduce {{page.reduced}}{% endif %}">
         {{ content }}
         {% include content_footer.html %}
         {% if page.share != blank %}
             {% include share_post.html %}
         {% endif %}
-          {% if page.disqus != blank %}
+        {% if page.disqus != blank %}
             {% include disqus_fragment.html %}
-          {% endif %}
+        {% endif %}
+        </div>
         </article>
-      </div>
       </div>
     </div>
     {% include site_footer.html %}

@@ -90,7 +90,10 @@ plenty available. Same goes for rental cars available at moderate rates.
 Arriving via ship is more interesting and much more scenic. The natural harbor of Mahon is 
 fjord-like, about 3km long and only a few hundred feet wide. The water is deep enough to allow 
 medium size cruise ships and ferries, but the really big and ugly ones have to stay outside as their 
-draft is too high and they wouldn't be able to turn around inside the narrow channel.
+draft is too high and they wouldn't be able to turn around inside the narrow channel. We arrived on 
+a 200m long 42.000GRT ship, a small and tiny one when compared to the massive behemoths of more than 
+300m length and three times the mass, and yet, turning around 180 degrees before reaching our final 
+position was a fairly difficult maneuver according to the captain's speech.
 
 </div>
 <div class="gallery" markdown="1">

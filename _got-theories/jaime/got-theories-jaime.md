@@ -1,6 +1,7 @@
 ---
 title: Jaime theories
 layout: no_sidebar
+reduced: big
 author: Alex Vie
 date: 2017-09-17T19:48:34+0200
 modified: 2017-09-17T19:48:45+0200

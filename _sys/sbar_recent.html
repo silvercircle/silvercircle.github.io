@@ -1,0 +1,22 @@
+---
+---
+<h2>Recently modified</h2>
+{% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
+{% for page in docs limit: 12 %}
+{% include sidebar/document_entry.html %}
+{% endfor %}
+<div style="float:right">
+    <a href="{{site.baseurl}}/all">Show all content</a>
+</div>
+<div class="clear"></div>
+<hr class="blueline">
+<h2>Other categories</h2>
+<div class="two_cols">
+    {% for category in site.categories %}
+    <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/">{{ category | first | strip_html}}</a></h3>
+    {% endfor %}
+</div>
+{% include sidebar/sidebar_tags.html %}
+<br>
+
+

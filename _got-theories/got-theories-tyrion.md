@@ -1,6 +1,7 @@
 ---
 title: GoT Theories about Tyrion
-layout: got_dyn
+layout: no_sidebar
+reduced: big
 author: Alex Vie
 date: 2017-09-11 19:05:06+0200
 modified: 2017-09-12T17:40:49+0200

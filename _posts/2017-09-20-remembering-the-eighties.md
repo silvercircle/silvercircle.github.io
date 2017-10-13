@@ -15,6 +15,11 @@ excerpt: >
    become an exciting last summer vacations weekend as my dad took me and my older brother on a two 
    days long journey with the intention to visit both these events.
 media:
+    aerial_overview:
+        name: ramstein_base.jpg
+        path: ramstein/
+        desc: "Aerial image showing the key locations of the disaster. Taken from the north, looking 
+        straight south."
     mor_banner:
         name: mor_banner.jpg
         path: 
@@ -29,6 +34,23 @@ media:
         desc: "We stood near this place maybe an hour earlier, left and behind is the icecream truck 
         that received a direct hit. These people probably didn't realize what hit them as everything 
         happened extremely fast."
+        long: |
+            "One of the best images showing the crash of the doomed ircraft that crashed right next 
+            to the road and then continued cartwheeling into the crowd, setting ablaze everything in 
+            its path. It must have been taken from top of one of the structures near the static 
+            aircraft display, probably with a tele lens of high focal length.
+            <br>
+            <br>
+            These structures, together with the icecream truck and other vehicles in the area 
+            probably saved a lot of lives, because they absorbed a lot of the kinetic energy the 
+            careening jet still posessed when it crashed into them. Without those heavy obstacles, 
+            the path of total destruction would have been much longer and the death toll probably 
+            much, much higher, because the area behind the trucks was particularly densely crowded.
+            <br>
+            <br>
+            About an hour (or maybe more) before the catastrophical event, we stood near this 
+            location, about 20 or 30 meters from the road in the direction where photographer, who 
+            took this image, must have been standing."
 image:
     source: mor
     width: 100px
@@ -47,7 +69,8 @@ journey with the intention to visit both these events.
 
 ## Day one: Saturday, Aug 27th 1988
 <div class="two_cols" markdown="1">
-{% include gfx/FD.html align="left" image=page.media.mor_banner width="220px" nolink=1 %}
+{% include gfx/FD.html align="left" image=page.media.mor_banner width="220px" nolink=1 
+borderclass="borderless" %}
 On August, 27th, very early in the morning, my father, my elder brother and myself hopped into the 
 car for a journey that should leave impressions carved so deeply into my soul, making them appear as 
 they happened yesterday even today - 30 years later. Our first target was the city of [Schweinfurt 
@@ -251,29 +274,43 @@ What I *clearly* remember is my mom when we finally arrived home - she was in te
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn't realize that we didn't get hurt until we finally arrived. She *had* seen the reports 
-on TV *before* my dad called her, because finding a phone on site was impossible and we had to wait 
-until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
-on TV and heard that dozens died and hundreds got injured - that was enough.
+on TV **before** my dad called her, because finding a phone on site was impossible and we had to 
+wait until we were able to leave the chaos and finally found a phone at a *Autobahn* service 
+station. She knew we were there and she had seen the dreadful images on TV and heard that dozens 
+died and hundreds got injured - that was enough.
 </div>
 ## Consequences?
 <div class="two_cols" markdown="1">
 Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
 expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
-many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
-died on that day. I still remember two teenage girls, probably sisters or close friends, in the area 
-of the crash near the ice cream truck we had been around maybe an hour before. They were about my 
-age and we exchanged some shy smiles and until today, I have no idea what happened to them. Did they 
-leave that area like we did and escaped unharmed like us or did their luck run out sooner than ours?
+hundred-thousands others, but I still feel sad thinking about the many people who were injured or 
+died on that day. One particularly strong memory of that day centers around two teenage girls, 
+probably sisters or close friends in the area of the crash near the ice cream truck we had been 
+around maybe an hour and a half before. They were pretty young girls, about my age and we exchanged 
+some shy smiles and had we met elsewhere, we may have approached each other - who knows, but this is 
+what young boys and girls sometimes do when they meet. Until today, I have no idea what happened to 
+them. Did they leave that area like we did and escaped unharmed like us or did their luck run out 
+sooner than ours? I wish I could know.
 
 Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
 fairly rational manner. As I already mentioned, my dad is a professional airline pilot (now retired) 
-and he had a pragmatic approach in handling the situation. He explained that some equally disastrous 
-and rare event happened on that day, and that the probability for such an event happening again in 
-one's close environment during a life time was extremely low, close to zero. That, and the fact we 
-escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
-in the future. In fact, until I decided to pursue a career in information technology at the age of 
-19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
-interest in computer technology and physics while attending high school.
+and because of this, his take on aviation disasters was different and more professional than the 
+ordinary public view of journalists and mass media. Thanks to him, I understood, even at my young 
+age, that some terrible, but otherwise extremely rare and unlikely event had happened and his 
+rational approach helped me to realize that said event was no reason to develop fears and shall not 
+take any influence on my decisions and overall path of life. A tragic event, that killed many and 
+injured hundreds more, many of them so severe that it took them decades to recover and some never 
+fully recovered.
+
+However, I also do realize how easy it is to talk about not being traumatized and being able to deal 
+with a terrible event when one was lucky enough to walk away unharmed, thus turning the event into a 
+not-so-terrible personal experience. I do, even 30 years later, realize - and that I have stated 
+before - that we were lucky and for that I'm thankful. I also do not want to make claims about how I 
+can understand those who were harmed or lost loved ones and never got over it, because I most 
+certainly can **not** understand it. I too have lost loved ones in my life and thus know how hard it 
+can be, even though these losses were natural events and did not happen unexpected (which I guess, 
+makes it a bit easier to bear with them) and were not the result of a terrible disaster.
+
 </div>
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or

@@ -1,6 +1,7 @@
 ---
 title: Bran is the Night King
-layout: got_dyn
+layout: no_sidebar
+reduced: big
 author: Alex Vie
 date: 2017-09-14T01:56:00+0200
 modified: 2017-09-14T02:03:58+0200

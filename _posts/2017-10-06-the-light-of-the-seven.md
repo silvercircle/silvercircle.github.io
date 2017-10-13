@@ -1,12 +1,13 @@
 ---
 author: Alex Vie
 title: The Light of the Seven
-layout: default_dyn
+layout: no_sidebar
 date: 2017-10-06T00:48:02+0200
 modified: 2017-10-06T00:48:08+0200
 menucontext: blog
 share: 1
 disqus: 1
+reduced: "big"
 tag: [first,music,video,got]
 category: [Entertainment,GoT]
 backlink: /blog
@@ -24,7 +25,6 @@ image:
     width: 110px
     align: right
 ---
-
 # Light of the Seven
 {% include defs.md %}
 {% include post_header.html %}
@@ -61,4 +61,3 @@ special touch.
 {% include youtube.html id='lNroNErjdo0' %}
 <br>
 There are probably more awesome cover versions and I'll update this article when I find some.
-

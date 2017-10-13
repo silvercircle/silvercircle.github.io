@@ -4,13 +4,18 @@ author: AlexVie
 date: 2017-09-07T09:04:05+02:00
 modified: 2017-09-07T09:04:01+02:00
 collection: tabsrmm
-layout: topics_dyn
+layout: no_sidebar
 tag: first
 menucontext: topics
 ---
 
+<div class="reducer" markdown="1">
 # What is tabSRMM?
 {% include post_header.html %}
+{% include defs.md %}
+</div>
+{% include content/tabsrmm_warning.md %}
+<div class="two_cols reducer" markdown="1">
 This is an archived category of old posts (some as old as 13 years) about an Open Source project I 
 was once working on. Tabsrmm is a part of the multiprotocol instant messaging client Miranda IM that 
 was once very poplar during the golden era of instant messaging (10-15 years ago, before social 
@@ -27,3 +32,5 @@ The list of articles on TabSRMM can be found [here]({{site.baseurl}}/tabsrmm/lis
 is archived content. It is by no means complete, most links are probably broken by now, images might 
 be missing. The formatting may suck, because back in those days, I wrote blog posts with textile and 
 auto-converting it to markdown isn't perfect. It is for reference only.
+</div>
+

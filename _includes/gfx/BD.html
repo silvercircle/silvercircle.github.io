@@ -16,7 +16,7 @@
 {% unless include.nolink == 1 %}
 <a href="{{ image_name }}" data-fancybox data-caption="{{include.image.desc}}">
 {% endunless %}
-<figure>
+<figure style="position:relative;">
         <img src="{{ image_name }}" alt="{{include.image.desc}}" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;" />
         {% if include.image.long != blank %}
         <div data-target="tt_{{include.image.id}}" class="img_overlay_indicator" style="position:absolute;bottom:20px;right:20px;">

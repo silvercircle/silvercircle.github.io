@@ -316,6 +316,14 @@ div.inner.dynvmenu_wrapper {
     content: "\f02d";
 }
 
+.vmenu_button.category {
+    color: yellow;
+}
+
+.vmenu_button.category:before {
+    content: "\f115";
+}
+
 aside.sliderbar {
     position: absolute;
     top: 0;
@@ -345,6 +353,15 @@ aside.sliderbar a {
 aside.sliderbar h3.sidebar_listheader {
     font-family: Oswald !important;
     font-weight: 300 !important;
+    line-height: 1.3em !important;
+    margin-top: 5px !important;
+}
+aside.sliderbar h3.sidebar_listheader:first-child {
+    margin-top: 0 !important;
+}
+
+aside.sliderbar h2 {
+    margin-bottom: 10px !important;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1039px) {

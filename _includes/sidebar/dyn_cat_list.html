@@ -1,0 +1,15 @@
+<h2>Category: Travel</h2>
+{% assign pages = site.categories[include.cat] | where: "tags", "first" | sort: 'modified' | reverse %}
+{% for page in pages limit: 10 %} 
+    {% include sidebar/document_entry.html %}
+{% endfor %}
+<div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/category/{{include.cat | downcase}}/">Show all...</a></div>
+<div class="clear"></div>
+<hr class="blueline">
+<h2>All categories</h2>
+<div class="two_cols">
+{% for category in site.categories %}
+   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="{{site.baseurl}}/category/{{ category | first | strip_html | downcase}}/">{{ category | first | strip_html | tolower}}</a></h3>
+{% endfor %}
+
+

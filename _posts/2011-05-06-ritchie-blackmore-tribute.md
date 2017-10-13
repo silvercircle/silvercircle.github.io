@@ -13,7 +13,8 @@ excerpt: >
   Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam 
   Session that took place while they were recording the Perfect Strangers album. An instrumental 
   track with mostly Mr. Blackmore showing off.
-layout: default
+layout: no_sidebar
+reduced: big
 ---
 # Son of Alerik...
 {% include post_header.html %}
