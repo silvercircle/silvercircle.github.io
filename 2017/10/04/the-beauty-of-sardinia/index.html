@@ -182,34 +182,43 @@
 
     <style>
         nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
             margin-left: 72px !important;
         }
     </style>
     <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
         <div class="inner dynvmenu_wrapper">
             <div id="vmenu">
-                <div class="vmenu_button hamburger" data-target="/sys/sbar_default/">
-                <label>SIDEBAR</label> 
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
                 </div>
-                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_default/">
+                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_recent/">
                 <label>RECENT</label> 
                 </div>
                 <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
                 <label>TAGS</label> 
                 </div>
+                
+                
+                <div title="More in this category" class="vmenu_button category" data-target="/category/travel/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                
                 <div title="Links" class="vmenu_button links" data-target="/sys/sbar_tags/">
                 <label>LINKS</label> 
                 </div>
-                
             </div>
         </div>
         <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
         </aside>
     </div>
     <div id="content-wrapper" class="dynbg">
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
-        <div id="inner-content-wrapper" style="float:left;margin:0">
         <article id="main-content" class="dynlayout">
+        <div class="">
         <h1 id="some-days-in-sardinia">Some days in Sardinia</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
@@ -694,7 +703,7 @@ Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.<
 
 <a href="/assets/gfx/sardinia/beach.jpg" data-fancybox="" data-caption="Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.">
 
-<figure>
+<figure style="position:relative;">
         <img src="/assets/gfx/sardinia/beach.jpg" alt="Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors." style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
         
         
@@ -793,7 +802,7 @@ mediterranean island, particularly in the southern part.</p>
 
 
         
-          
+        
             
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
@@ -813,9 +822,9 @@ s.setAttribute('data-timestamp', +new Date());
 </noscript>                            
 
 
-          
+        
+        </div>
         </article>
-      </div>
       </div>
     </div>
     <footer>

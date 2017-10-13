@@ -171,25 +171,6 @@
               </ul>
           </li>
           
-                         <li id="button_got" class="active">
-              <a class="firstlevel" href="/category/got">GoT</a>
-              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_got" class="m_downarrow"> </span>
-              <ul style="display:none;">
-                <li>
-                  <a href="/got-theories"><span>All S8 Theories</span></a>
-                </li>
-                <li>
-                  <a href="/got-theories/jon"><span>Theories about Jon/Aegon</span></a>
-                </li>
-                <li>
-                  <a href="/got-theories/tyrion"><span>Theories about Tyrion</span></a>
-                </li>
-              </ul>
-            </li>
-
-
-
-          
         </ul>
        </div>
 
@@ -199,12 +180,45 @@
      </div>
     
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <div id="inner-content-wrapper" style="margin:0 20px;">
-        
-        <article id="main-content">
-        
+    <style>
+        nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
+            margin-left: 72px !important;
+        }
+    </style>
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
+                </div>
+                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_recent/">
+                <label>RECENT</label> 
+                </div>
+                <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+                
+                <div title="More in this topic" class="vmenu_button topic" data-target="/got-theories/sbar/">
+                <label>TOPIC</label> 
+                </div>
+                
+                
+                <div title="Links" class="vmenu_button links" data-target="/sys/sbar_tags/">
+                <label>LINKS</label> 
+                </div>
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <article id="main-content" class="dynlayout">
+        <div class="reduce big">
         <h1 id="theories-about-jon">Theories about Jon</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
@@ -230,7 +244,7 @@ Melisandre or Kinvara know it, or at least consider it a possibility, but this i
 
 
 
-<figure>
+<figure style="position:relative;">
         <img src="/assets/gfx/got/jon-snow-iron-throne.jpg" alt="Is this Jon's fate?" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
         
         
@@ -379,18 +393,9 @@ s.setAttribute('data-timestamp', +new Date());
 
 
         
+        </div>
         </article>
-        <aside id="sidebar">
-            <script>
-                var _r_sidebar = true;
-                var _r_sidebarcontent = "/sys/sbar_got/";
-            </script>
-            <noscript>
-                some features require javaScript, particularly navigation menus and the side bar
-            </noscript>
-        </aside>
       </div>
-     </div>
     </div>
     <footer>
 <div class="site_footer_wrapper">
@@ -414,15 +419,14 @@ s.setAttribute('data-timestamp', +new Date());
 </footer>
 
     
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-15512457-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15512457-3', 'auto');
+        ga('send', 'pageview');
+      </script>
     
     <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/assets/js/footerscripts.js"></script>

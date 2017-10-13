@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-12T10:06:07+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-13T20:21:06+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-10T19:42:02+0200&quot;&gt;2017-10-10 19:42:02 +0200&lt;/time&gt;&lt;br /&gt;309 Words
@@ -99,11 +99,11 @@ ratio.&lt;/p&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-09T00:31:53+02:00</published><updated>2017-10-09T00:31:53+02:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;736 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;786 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     Written by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/travel/index.html&quot;&gt;Travel&lt;/a&gt; | Mon, 09. October 2017, 00:31&lt;br /&gt;
-    Reading time: approx. 2 minute(s).
+    Reading time: approx. 3 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
@@ -147,7 +147,6 @@ moderate touristic activities.&lt;/p&gt;
         &lt;p&gt;This is part of the former &lt;a href=&quot;https://en.wikipedia.org/wiki/Royal_Navy_Dockyard&quot;&gt;Royal Navy Dockyard&lt;/a&gt;, that was built in the early
 18&lt;sup&gt;th&lt;/sup&gt; century by the British Royal Navy in Mahon’s natural harbor. The base is still in use today as a Spanish Naval Station
 and can be seen from the city looking across the harbor. 
-&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;h6 id=&quot;license&quot;&gt;License:&lt;/h6&gt;
 &lt;p&gt;©&lt;a href=&quot;https://commons.wikimedia.org/wiki/User:Enric&quot;&gt;Enric&lt;/a&gt;, own work, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;&lt;/p&gt;
@@ -208,7 +207,10 @@ plenty available. Same goes for rental cars available at moderate rates.&lt;/p&g
   &lt;p&gt;Arriving via ship is more interesting and much more scenic. The natural harbor of Mahon is 
 fjord-like, about 3km long and only a few hundred feet wide. The water is deep enough to allow 
 medium size cruise ships and ferries, but the really big and ugly ones have to stay outside as their 
-draft is too high and they wouldn’t be able to turn around inside the narrow channel.&lt;/p&gt;
+draft is too high and they wouldn’t be able to turn around inside the narrow channel. We arrived on 
+a 200m long 42.000GRT ship, a small and tiny one when compared to the massive behemoths of more than 
+300m length and three times the mass, and yet, turning around 180 degrees before reaching our final 
+position was a fairly difficult maneuver according to the captain’s speech.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class=&quot;gallery&quot;&gt;
@@ -1030,7 +1032,7 @@ Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.&
 
 &lt;a href=&quot;/assets/gfx/sardinia/beach.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.&quot;&gt;
 
-&lt;figure&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
         &lt;img src=&quot;/assets/gfx/sardinia/beach.jpg&quot; alt=&quot;Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         
@@ -1073,11 +1075,11 @@ mediterranean island, particularly in the southern part.&lt;/p&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">I recently spent some time in the mediterranean, visiting places I've never been before in my life - the islands of Sardinia, which belongs to Italy, and the neighbouring French Corsica. Even though the two islands are close neighbours, separated by the only 11 kilometers (a little under 7 miles) wide [Strait of Bonifacio](https://en.wikipedia.org/wiki/Strait_of_Bonifacio), they are very different...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22sardinia_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T05:18:14+02:00</published><updated>2017-09-20T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/">&lt;h1 id=&quot;remembering-the-eighties&quot;&gt;Remembering the eighties&lt;/h1&gt;
 
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3208 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3399 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     Written by Alex Vie | Wed, 20. September 2017, 05:18&lt;br /&gt;
-    Reading time: approx. 12 minute(s).
+    Reading time: approx. 13 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
@@ -1089,7 +1091,7 @@ journey with the intention to visit both these events.&lt;/p&gt;
 
 &lt;h2 id=&quot;day-one-saturday-aug-27th-1988&quot;&gt;Day one: Saturday, Aug 27th 1988&lt;/h2&gt;
 &lt;div class=&quot;two_cols&quot;&gt;
-  &lt;div class=&quot;floatimage left &quot; style=&quot;width:220px; max-width:220px;&quot;&gt;
+  &lt;div class=&quot;floatimage left borderless&quot; style=&quot;width:220px; max-width:220px;&quot;&gt;
 
 
 
@@ -1172,7 +1174,7 @@ shape, looked after me, so it wasn’t a problem.&lt;/p&gt;
 
 
 
-&lt;figure&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
         &lt;img src=&quot;/assets/gfx/greatwhite.jpg&quot; alt=&quot;Great White performing at Monsters Of Rock 1988&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         
@@ -1267,8 +1269,11 @@ into a patch of scorched earth within seconds.&lt;/p&gt;
 
 &lt;a href=&quot;/assets/gfx/ramstein/white_car.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.&quot;&gt;
 
-&lt;figure&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
         &lt;img src=&quot;/assets/gfx/ramstein/white_car.jpg&quot; alt=&quot;We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
+        
+        &lt;div data-target=&quot;tt_&quot; class=&quot;img_overlay_indicator&quot; style=&quot;position:absolute;bottom:20px;right:20px;&quot;&gt;
+        &lt;/div&gt;
         
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
@@ -1279,6 +1284,28 @@ into a patch of scorched earth within seconds.&lt;/p&gt;
 
 &lt;/a&gt;
 
+
+    &lt;div id=&quot;tt_&quot; class=&quot;img_tooltip&quot; style=&quot;display:none;&quot;&gt;
+        &lt;div class=&quot;tt_closebutton&quot; style=&quot;float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;&quot;&gt;
+        &lt;/div&gt;
+        &lt;p&gt;“One of the best images showing the crash of the doomed ircraft that crashed right next 
+to the road and then continued cartwheeling into the crowd, setting ablaze everything in 
+its path. It must have been taken from top of one of the structures near the static 
+aircraft display, probably with a tele lens of high focal length.
+&lt;br /&gt;
+&lt;br /&gt;
+These structures, together with the icecream truck and other vehicles in the area 
+probably saved a lot of lives, because they absorbed a lot of the kinetic energy the 
+careening jet still posessed when it crashed into them. Without those heavy obstacles, 
+the path of total destruction would have been much longer and the death toll probably 
+much, much higher, because the area behind the trucks was particularly densely crowded.
+&lt;br /&gt;
+&lt;br /&gt;
+About an hour (or maybe more) before the catastrophical event, we stood near this 
+location, about 20 or 30 meters from the road in the direction where photographer, who 
+took this image, must have been standing.”&lt;/p&gt;
+
+    &lt;/div&gt;
 
 
 &lt;div class=&quot;floatimage_title&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
@@ -1366,29 +1393,43 @@ might have contributed.&lt;/p&gt;
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn’t realize that we didn’t get hurt until we finally arrived. She &lt;em&gt;had&lt;/em&gt; seen the reports 
-on TV &lt;em&gt;before&lt;/em&gt; my dad called her, because finding a phone on site was impossible and we had to wait 
-until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
-on TV and heard that dozens died and hundreds got injured - that was enough.&lt;/p&gt;
+on TV &lt;strong&gt;before&lt;/strong&gt; my dad called her, because finding a phone on site was impossible and we had to 
+wait until we were able to leave the chaos and finally found a phone at a &lt;em&gt;Autobahn&lt;/em&gt; service 
+station. She knew we were there and she had seen the dreadful images on TV and heard that dozens 
+died and hundreds got injured - that was enough.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&quot;consequences&quot;&gt;Consequences?&lt;/h2&gt;
 &lt;div class=&quot;two_cols&quot;&gt;
   &lt;p&gt;Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
 expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
-many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
-died on that day. I still remember two teenage girls, probably sisters or close friends, in the area 
-of the crash near the ice cream truck we had been around maybe an hour before. They were about my 
-age and we exchanged some shy smiles and until today, I have no idea what happened to them. Did they 
-leave that area like we did and escaped unharmed like us or did their luck run out sooner than ours?&lt;/p&gt;
+hundred-thousands others, but I still feel sad thinking about the many people who were injured or 
+died on that day. One particularly strong memory of that day centers around two teenage girls, 
+probably sisters or close friends in the area of the crash near the ice cream truck we had been 
+around maybe an hour and a half before. They were pretty young girls, about my age and we exchanged 
+some shy smiles and had we met elsewhere, we may have approached each other - who knows, but this is 
+what young boys and girls sometimes do when they meet. Until today, I have no idea what happened to 
+them. Did they leave that area like we did and escaped unharmed like us or did their luck run out 
+sooner than ours? I wish I could know.&lt;/p&gt;
 
   &lt;p&gt;Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
 fairly rational manner. As I already mentioned, my dad is a professional airline pilot (now retired) 
-and he had a pragmatic approach in handling the situation. He explained that some equally disastrous 
-and rare event happened on that day, and that the probability for such an event happening again in 
-one’s close environment during a life time was extremely low, close to zero. That, and the fact we 
-escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
-in the future. In fact, until I decided to pursue a career in information technology at the age of 
-19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
-interest in computer technology and physics while attending high school.&lt;/p&gt;
+and because of this, his take on aviation disasters was different and more professional than the 
+ordinary public view of journalists and mass media. Thanks to him, I understood, even at my young 
+age, that some terrible, but otherwise extremely rare and unlikely event had happened and his 
+rational approach helped me to realize that said event was no reason to develop fears and shall not 
+take any influence on my decisions and overall path of life. A tragic event, that killed many and 
+injured hundreds more, many of them so severe that it took them decades to recover and some never 
+fully recovered.&lt;/p&gt;
+
+  &lt;p&gt;However, I also do realize how easy it is to talk about not being traumatized and being able to deal 
+with a terrible event when one was lucky enough to walk away unharmed, thus turning the event into a 
+not-so-terrible personal experience. I do, even 30 years later, realize - and that I have stated 
+before - that we were lucky and for that I’m thankful. I also do not want to make claims about how I 
+can understand those who were harmed or lost loved ones and never got over it, because I most 
+certainly can &lt;strong&gt;not&lt;/strong&gt; understand it. I too have lost loved ones in my life and thus know how hard it 
+can be, even though these losses were natural events and did not happen unexpected (which I guess, 
+makes it a bit easier to bear with them) and were not the result of a terrible disaster.&lt;/p&gt;
+
 &lt;/div&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
@@ -1829,7 +1870,7 @@ products, despite the crisis and possible shortages that were to expect.&lt;/p&g
 
 &lt;a href=&quot;/assets/gfx/fun/tofu.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;No love for Tofu&quot;&gt;
 
-&lt;figure&gt;
+&lt;figure style=&quot;position:relative;&quot;&gt;
         &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;No love for Tofu&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         

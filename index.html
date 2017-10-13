@@ -178,34 +178,39 @@
 
     <style>
         nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
             margin-left: 72px !important;
         }
     </style>
     <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
         <div class="inner dynvmenu_wrapper">
             <div id="vmenu">
-                <div class="vmenu_button hamburger" data-target="/sys/sbar_default/">
-                <label>SIDEBAR</label> 
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
                 </div>
-                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_default/">
+                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_recent/">
                 <label>RECENT</label> 
                 </div>
                 <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
                 <label>TAGS</label> 
                 </div>
+                
+                
                 <div title="Links" class="vmenu_button links" data-target="/sys/sbar_tags/">
                 <label>LINKS</label> 
                 </div>
-                
             </div>
         </div>
         <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
         </aside>
     </div>
     <div id="content-wrapper" class="dynbg">
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
-        <div id="inner-content-wrapper" style="float:left;margin:0">
         <article id="main-content" class="dynlayout">
+        <div class="">
         <h1 style="margin-bottom:10px;" id="so-whats-this-all-about">So, what’s this all about?</h1>
 
 <div>
@@ -219,7 +224,7 @@
 
 <a href="/assets/gfx/st-transylvania.png" data-fancybox="" data-caption="Transylvania Theme for Sublime Text 3">
 
-<figure>
+<figure style="position:relative;">
         <img src="/assets/gfx/st-transylvania.png" alt="Transylvania Theme for Sublime Text 3" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
         
         
@@ -488,9 +493,9 @@ article again.</p>
 
 
         
-          
+        
+        </div>
         </article>
-      </div>
       </div>
     </div>
     <footer>

@@ -182,42 +182,47 @@
 
     <style>
         nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
             margin-left: 72px !important;
         }
     </style>
     <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
         <div class="inner dynvmenu_wrapper">
             <div id="vmenu">
-                <div class="vmenu_button hamburger" data-target="/sys/sbar_default/">
-                <label>SIDEBAR</label> 
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
                 </div>
-                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_default/">
+                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_recent/">
                 <label>RECENT</label> 
                 </div>
                 <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
                 <label>TAGS</label> 
                 </div>
+                
+                
                 <div title="Links" class="vmenu_button links" data-target="/sys/sbar_tags/">
                 <label>LINKS</label> 
                 </div>
-                
             </div>
         </div>
         <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
         </aside>
     </div>
     <div id="content-wrapper" class="dynbg">
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
-        <div id="inner-content-wrapper" style="float:left;margin:0">
         <article id="main-content" class="dynlayout">
+        <div class="">
         <h1 id="remembering-the-eighties">Remembering the eighties</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-09-20T19:18:23+0200">2017-09-20 19:18:23 +0200</time><br>3208 Words
+    Last modified: <time class="timeago" datetime="2017-09-20T19:18:23+0200">2017-09-20 19:18:23 +0200</time><br>3399 Words
 </div>
 <div class="author subheader">
     Written by Alex Vie | Wed, 20. September 2017, 05:18<br>
-    Reading time: approx. 12 minute(s).
+    Reading time: approx. 13 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;">
@@ -229,7 +234,7 @@ journey with the intention to visit both these events.</p>
 
 <h2 id="day-one-saturday-aug-27th-1988">Day one: Saturday, Aug 27th 1988</h2>
 <div class="two_cols">
-  <div class="floatimage left " style="width:220px; max-width:220px;">
+  <div class="floatimage left borderless" style="width:220px; max-width:220px;">
 
 
 
@@ -312,7 +317,7 @@ shape, looked after me, so it wasn’t a problem.</p>
 
 
 
-<figure>
+<figure style="position:relative;">
         <img src="/assets/gfx/greatwhite.jpg" alt="Great White performing at Monsters Of Rock 1988" style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
         
         
@@ -407,8 +412,11 @@ into a patch of scorched earth within seconds.</p>
 
 <a href="/assets/gfx/ramstein/white_car.jpg" data-fancybox="" data-caption="We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast.">
 
-<figure>
+<figure style="position:relative;">
         <img src="/assets/gfx/ramstein/white_car.jpg" alt="We stood near this place maybe an hour earlier, left and behind is the icecream truck that received a direct hit. These people probably didn't realize what hit them as everything happened extremely fast." style="width:auto; max-width:100%; height:auto; margin:0 auto;display:block;">
+        
+        <div data-target="tt_" class="img_overlay_indicator" style="position:absolute;bottom:20px;right:20px;">
+        </div>
         
         
         <figcaption style="display:none;">
@@ -419,6 +427,28 @@ into a patch of scorched earth within seconds.</p>
 
 </a>
 
+
+    <div id="tt_" class="img_tooltip" style="display:none;">
+        <div class="tt_closebutton" style="float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;">
+        </div>
+        <p>“One of the best images showing the crash of the doomed ircraft that crashed right next 
+to the road and then continued cartwheeling into the crowd, setting ablaze everything in 
+its path. It must have been taken from top of one of the structures near the static 
+aircraft display, probably with a tele lens of high focal length.
+<br>
+<br>
+These structures, together with the icecream truck and other vehicles in the area 
+probably saved a lot of lives, because they absorbed a lot of the kinetic energy the 
+careening jet still posessed when it crashed into them. Without those heavy obstacles, 
+the path of total destruction would have been much longer and the death toll probably 
+much, much higher, because the area behind the trucks was particularly densely crowded.
+<br>
+<br>
+About an hour (or maybe more) before the catastrophical event, we stood near this 
+location, about 20 or 30 meters from the road in the direction where photographer, who 
+took this image, must have been standing.”</p>
+
+    </div>
 
 
 <div class="floatimage_title" style="padding-bottom: 8px;">
@@ -506,29 +536,43 @@ might have contributed.</p>
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn’t realize that we didn’t get hurt until we finally arrived. She <em>had</em> seen the reports 
-on TV <em>before</em> my dad called her, because finding a phone on site was impossible and we had to wait 
-until we were able to leave the chaos. She knew we were there and she had seen the dreadful images 
-on TV and heard that dozens died and hundreds got injured - that was enough.</p>
+on TV <strong>before</strong> my dad called her, because finding a phone on site was impossible and we had to 
+wait until we were able to leave the chaos and finally found a phone at a <em>Autobahn</em> service 
+station. She knew we were there and she had seen the dreadful images on TV and heard that dozens 
+died and hundreds got injured - that was enough.</p>
 </div>
 <h2 id="consequences">Consequences?</h2>
 <div class="two_cols">
   <p>Naturally, witnessing such a dreadful event at the age of 14, does leave some, that is to be 
 expected. I realized soon after the event that we were just lucky enough to get away unharmed, like 
-many ten-thousand others, but I still feel sad thinking about the many people who were injured or 
-died on that day. I still remember two teenage girls, probably sisters or close friends, in the area 
-of the crash near the ice cream truck we had been around maybe an hour before. They were about my 
-age and we exchanged some shy smiles and until today, I have no idea what happened to them. Did they 
-leave that area like we did and escaped unharmed like us or did their luck run out sooner than ours?</p>
+hundred-thousands others, but I still feel sad thinking about the many people who were injured or 
+died on that day. One particularly strong memory of that day centers around two teenage girls, 
+probably sisters or close friends in the area of the crash near the ice cream truck we had been 
+around maybe an hour and a half before. They were pretty young girls, about my age and we exchanged 
+some shy smiles and had we met elsewhere, we may have approached each other - who knows, but this is 
+what young boys and girls sometimes do when they meet. Until today, I have no idea what happened to 
+them. Did they leave that area like we did and escaped unharmed like us or did their luck run out 
+sooner than ours? I wish I could know.</p>
 
   <p>Thanks to my dad, I was able to deal with the impressions and the aftermath of the disaster in a 
 fairly rational manner. As I already mentioned, my dad is a professional airline pilot (now retired) 
-and he had a pragmatic approach in handling the situation. He explained that some equally disastrous 
-and rare event happened on that day, and that the probability for such an event happening again in 
-one’s close environment during a life time was extremely low, close to zero. That, and the fact we 
-escaped physically unharmed enabled me to realize that there was no need to stay away from aircraft 
-in the future. In fact, until I decided to pursue a career in information technology at the age of 
-19, my plan was to become a professional pilot. I opted against, because I developed a very strong 
-interest in computer technology and physics while attending high school.</p>
+and because of this, his take on aviation disasters was different and more professional than the 
+ordinary public view of journalists and mass media. Thanks to him, I understood, even at my young 
+age, that some terrible, but otherwise extremely rare and unlikely event had happened and his 
+rational approach helped me to realize that said event was no reason to develop fears and shall not 
+take any influence on my decisions and overall path of life. A tragic event, that killed many and 
+injured hundreds more, many of them so severe that it took them decades to recover and some never 
+fully recovered.</p>
+
+  <p>However, I also do realize how easy it is to talk about not being traumatized and being able to deal 
+with a terrible event when one was lucky enough to walk away unharmed, thus turning the event into a 
+not-so-terrible personal experience. I do, even 30 years later, realize - and that I have stated 
+before - that we were lucky and for that I’m thankful. I also do not want to make claims about how I 
+can understand those who were harmed or lost loved ones and never got over it, because I most 
+certainly can <strong>not</strong> understand it. I too have lost loved ones in my life and thus know how hard it 
+can be, even though these losses were natural events and did not happen unexpected (which I guess, 
+makes it a bit easier to bear with them) and were not the result of a terrible disaster.</p>
+
 </div>
 
 <div class="footnotes">
@@ -597,7 +641,7 @@ more from the actual mid-air crash. <a href="#fnref:position" class="reversefoo
 
 
         
-          
+        
             
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
@@ -617,9 +661,9 @@ s.setAttribute('data-timestamp', +new Date());
 </noscript>                            
 
 
-          
+        
+        </div>
         </article>
-      </div>
       </div>
     </div>
     <footer>

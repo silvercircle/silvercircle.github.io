@@ -182,42 +182,51 @@
 
     <style>
         nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
             margin-left: 72px !important;
         }
     </style>
     <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
         <div class="inner dynvmenu_wrapper">
             <div id="vmenu">
-                <div class="vmenu_button hamburger" data-target="/sys/sbar_default/">
-                <label>SIDEBAR</label> 
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
                 </div>
-                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_default/">
+                <div title="Recent content" class="vmenu_button star" data-target="/sys/sbar_recent/">
                 <label>RECENT</label> 
                 </div>
                 <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
                 <label>TAGS</label> 
                 </div>
+                
+                
+                <div title="More in this category" class="vmenu_button category" data-target="/category/travel/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                
                 <div title="Links" class="vmenu_button links" data-target="/sys/sbar_tags/">
                 <label>LINKS</label> 
                 </div>
-                
             </div>
         </div>
         <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
         </aside>
     </div>
     <div id="content-wrapper" class="dynbg">
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
-        <div id="inner-content-wrapper" style="float:left;margin:0">
         <article id="main-content" class="dynlayout">
+        <div class="">
         <h1 id="visiting-mahon-in-early-autumn">Visiting Mahon in early autumn</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-10-09T00:31:59+0200">2017-10-09 00:31:59 +0200</time><br>736 Words
+    Last modified: <time class="timeago" datetime="2017-10-09T00:31:59+0200">2017-10-09 00:31:59 +0200</time><br>786 Words
 </div>
 <div class="author subheader">
     Written by Alex Vie in <a href="/category/travel/index.html">Travel</a> | Mon, 09. October 2017, 00:31<br>
-    Reading time: approx. 2 minute(s).
+    Reading time: approx. 3 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;">
@@ -261,7 +270,6 @@ moderate touristic activities.</p>
         <p>This is part of the former <a href="https://en.wikipedia.org/wiki/Royal_Navy_Dockyard">Royal Navy Dockyard</a>, that was built in the early
 18<sup>th</sup> century by the British Royal Navy in Mahon’s natural harbor. The base is still in use today as a Spanish Naval Station
 and can be seen from the city looking across the harbor. 
-<br>
 <br></p>
 <h6 id="license">License:</h6>
 <p>©<a href="https://commons.wikimedia.org/wiki/User:Enric">Enric</a>, own work, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></p>
@@ -322,7 +330,10 @@ plenty available. Same goes for rental cars available at moderate rates.</p>
   <p>Arriving via ship is more interesting and much more scenic. The natural harbor of Mahon is 
 fjord-like, about 3km long and only a few hundred feet wide. The water is deep enough to allow 
 medium size cruise ships and ferries, but the really big and ugly ones have to stay outside as their 
-draft is too high and they wouldn’t be able to turn around inside the narrow channel.</p>
+draft is too high and they wouldn’t be able to turn around inside the narrow channel. We arrived on 
+a 200m long 42.000GRT ship, a small and tiny one when compared to the massive behemoths of more than 
+300m length and three times the mass, and yet, turning around 180 degrees before reaching our final 
+position was a fairly difficult maneuver according to the captain’s speech.</p>
 
 </div>
 <div class="gallery">
@@ -659,7 +670,7 @@ sub-type). <a href="#fnref:climate" class="reversefootnote">↩</a></p>
 
 
         
-          
+        
             
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
@@ -679,9 +690,9 @@ s.setAttribute('data-timestamp', +new Date());
 </noscript>                            
 
 
-          
+        
+        </div>
         </article>
-      </div>
       </div>
     </div>
     <footer>
