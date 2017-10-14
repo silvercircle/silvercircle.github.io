@@ -313,7 +313,7 @@
                             url: "/sys/sbar_topics/",
                             context: document.body
                         }).done(function(data) {
-                            _html = _html + data;
+                            _html = _html + '<hr class="blueline">' + data;
                             $('aside#sidebar').html(_html);
                             $('aside#sidebar time.timeago').timeago();
                         });
