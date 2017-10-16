@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -14,23 +13,33 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Rendering to a device context with AGG (AntiGrain) | silvercircle/github/io</title>
-<meta property="og:title" content="Rendering to a device context with AGG (AntiGrain)">
-<meta name="author" content="AlexVie">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.">
-<meta property="og:description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.">
-<link rel="canonical" href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
-<meta property="og:url" content="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
-<meta property="og:site_name" content="silvercircle/github/io">
-<meta property="og:image" content="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg">
-<meta property="og:type" content="article">
-<meta property="article:published_time" content="2010-09-25T00:36:38+02:00">
+<meta property="og:title" content="Rendering to a device context with AGG (AntiGrain)" />
+<meta name="author" content="AlexVie" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL." />
+<meta property="og:description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL." />
+<link rel="canonical" href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" />
+<meta property="og:url" content="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" />
+<meta property="og:site_name" content="silvercircle/github/io" />
+<meta property="og:image" content="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2010-09-25T00:36:38+02:00" />
 <script type="application/ld+json">
 {"name":null,"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/","publisher":null,"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","headline":"Rendering to a device context with AGG (AntiGrain)","dateModified":"2010-09-25T00:36:38+02:00","datePublished":"2010-09-25T00:36:38+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    
+    <style>
+        nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
+            margin-left: 72px !important;
+        }
+    </style>
+    
   </head>
   <body>
     <script>
@@ -46,7 +55,7 @@
           <a href="#">Got It! (Allow cookies)</a>
         </div>
     </div>
-    <header>
+        <header>
       <div class="inner">
           <dl>
           <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
@@ -71,14 +80,16 @@
                 <i aria-hidden="true"></i>
                 <span>Google+</span>
             </a>
-            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback%20https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/%20(Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain))">
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/ (Rendering to a device context with AGG (AntiGrain))">
                 <i></i>
                 <span>Email</span>
             </a>
             </div>
       </div>
     </header>
-     <div class="menubar_wrapper">
+
+
+    <div class="menubar_wrapper">
       <div class="inner clearfix">
           <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
               <script type="text/javascript">
@@ -97,7 +108,7 @@
               </script>
               </div>
       <nav>
-          	     <div id="main_menu">
+          	     <div id = "main_menu">
            <ul id="menu_nav" class="dropmenu menu">
                
                <li id="button_backlink">
@@ -109,7 +120,7 @@
            </li>
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
-              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow"> </span>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
                 <li>
                   <a href="/help/docs"><span>Documentation</span></a>
@@ -152,7 +163,7 @@
            </li>
            <li id="button_topics" class="">
               <a class="firstlevel" href="/topics.html">Topics</a>
-              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow"> </span>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
                 <li>
                   <a href="/software/"><span>Software</span></a>
@@ -181,28 +192,53 @@
      </div>
     
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <div id="inner-content-wrapper" style="margin:0 20px;">
-        
-        <article id="main-content">
-        
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
+                </div>
+                <div title="Recently modified or added" class="vmenu_button star" data-target="/sys/sbar_recent/">
+                <label>RECENT</label> 
+                </div>
+                <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+                
+                
+                <div title="More in this category" class="vmenu_button category" data-target="/category/c++/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                
+                <div title="On-site and external Links" class="vmenu_button links" data-target="/sys/sbar_links/">
+                <label>LINKS</label> 
+                </div>
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg ">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <article id="main-content" class="dynlayout">
+        <div class="reduce big">
         <h1 id="rendering-with-agg-under-windows">Rendering with AGG under Windows</h1>
 
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09-24 22:36:38 +0000</time><br>1273 Words
+    Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09-24 22:36:38 +0000</time><br />1273 Words
 </div>
 <div class="author subheader">
-    Written by AlexVie in <a href="/category/c++/index.html">C++</a>, <a href="/category/development/index.html">Development</a> | Fri, 24. September 2010, 22:36<br>
+    Written by AlexVie&nbsp;in&nbsp;<a href="/category/c++/index.html">C++</a>,&nbsp;<a href="/category/development/index.html">Development</a> | Fri, 24. September 2010, 22:36<br />
     Reading time: approx. 5 minute(s).
 </div>
 <div class="clearfix"></div>
-<hr style="margin-top:2px;">
+<hr style="margin-top:2px;" />
 
 <div class="floatimage right borderless" style="width:71px; max-width:71px;">
 
 <figure>
-        <img src="/assets/gfx/archive/2010/09/agg_logo.jpg" alt="AGG Logo" style="height:auto; margin:0; display:block;">
+        <img src="/assets/gfx/archive/2010/09/agg_logo.jpg" alt="AGG Logo" style="height:auto; margin:0; display:block;" />
         
         <figcaption style="display:none;">
                 AGG Logo
@@ -274,11 +310,9 @@ window. Both are passed to this function as <code class="highlighter-rouge">cx</
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="kt">void</span> <span class="n">attach</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">stride</span><span class="p">)</span></code></pre></figure>
 
 <ul>
-  <li>
-<code class="highlighter-rouge">buf</code> is the memory buffer that holds the pixel data. Should be clear and I will explain shortly 
+  <li><code class="highlighter-rouge">buf</code> is the memory buffer that holds the pixel data. Should be clear and I will explain shortly 
 how to obtain it from your bitmap.</li>
-  <li>
-<code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> are the same <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code> - the dimensions of the bitmap and 
+  <li><code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> are the same <code class="highlighter-rouge">cx</code> and <code class="highlighter-rouge">cy</code> - the dimensions of the bitmap and 
 your corresponding drawing area.</li>
   <li>
     <p><code class="highlighter-rouge">stride</code> is important. Basically, it is the length of a single pixel scan line of your bitmap 
@@ -331,7 +365,7 @@ you to paint flicker-free without creating your own memory bitmaps and device co
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;text=Rendering to a device context with AGG (AntiGrain)">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
@@ -343,23 +377,23 @@ you to paint flicker-free without creating your own memory bitmaps and device co
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering to a device context with AGG (AntiGrain)">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;description=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;description=Rendering to a device context with AGG (AntiGrain)">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering to a device context with AGG (AntiGrain)">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&amp;body=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Rendering to a device context with AGG (AntiGrain)&amp;body=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)%C2%A0https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Rendering to a device context with AGG (AntiGrain)&nbsp;https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
     <i></i>
     <span>WhatsApp</span>
 </a>
@@ -387,145 +421,13 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>                            
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                            
 
 
         
+        </div>
         </article>
-        <aside id="sidebar" class="sidebar">
-              <h2>Recent</h2>
-               
- 
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/10/10/embed-youtube-jekyll/">Embedding YouTube videos in Jekyll</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-10T19:42:02+0200">2017-10-10 19:42:02 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   Alex Vie
-   </span>
-   <br>
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/10/09/visiting-mahon/">Visiting Mahon</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-09T00:31:59+0200">2017-10-09 00:31:59 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   Alex Vie
-   </span>
-   <br>
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/got/season-8-facts-known-in-september-2017">What we currently know about season 8</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-07T00:04:07+0200">2017-10-07 00:04:07 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   Alex Vie
-   </span>
-   <br>
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/10/06/the-light-of-the-seven/">The Light of the Seven</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-06T00:48:08+0200">2017-10-06 00:48:08 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   Alex Vie
-   </span>
-   <br>
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/2017/10/04/the-beauty-of-sardinia/">The beauty of Sardinia</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-04T16:53:08+0200">2017-10-04 16:53:08 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   Alex Vie
-   </span>
-   <br>
- 
-   
-   <h3 class="text-ellipsis sidebar_listheader"><a href="/help/jekyll-personal-faq.html">Jekyll personal FAQ</a></h3>
-   <div class="author" style="float:right;">
-     <span class="date">
-        
-        <time class="timeago" datetime="2017-10-02T15:35:52+0200">2017-10-02 15:35:52 +0200</time>
-        
-     </span>
-   </div>
-   <span class="author">
-   AlexVie
-   </span>
-   <br>
- 
- 
-  <div style="float:right;margin: 5px 0;"><a href="/blog/">Show all blog posts</a></div>
-  <div class="clear"></div>
- 
- 
-<hr class="blueline">
-<h2>Categories</h2>
-<div class="two_cols">
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/development/">Development</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">Fun</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/c++/">C++</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/entertainment/">Entertainment</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/jekyll/">Jekyll</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/site/">Site</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/got/">GoT</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/fun/">fun</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/qt/">Qt</a></h3>
-
-   <h3 class="text-ellipsis sidebar_listheader" style="margin-top: 0; margin-bottom: 10px;"><a href="/category/travel/">Travel</a></h3>
-
-</div>
-
-
-
-              <hr class="blueline">
-<h2>Site tags</h2>
-<a href="/tags/github">GitHub</a>, <a href="/tags/jekyll">Jekyll</a>, <a href="/tags/css">css</a>, <a href="/tags/generic">generic</a>, <a href="/tags/got">got</a>, <a href="/tags/jaime">jaime</a>, <a href="/tags/jekyll">jekyll</a>, <a href="/tags/jon">jon</a>, <a href="/tags/music">music</a>, <a href="/tags/theory">theory</a>, <a href="/tags/travel">travel</a>, <a href="/tags/tyrion">tyrion</a>, <a href="/tags/video">video</a>
-                      <hr class="blueline">
-        <h2>Quick links</h2>
-        <h3 class="text-ellipsis sidebar_listheader"><a href="https://kramdown.gettalong.org/syntax.html">Kramdown reference</a></h3>
-        <h3 class="text-ellipsis sidebar_listheader"><a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a></h3>
-
-        </aside>
       </div>
-     </div>
     </div>
     <footer>
 <div class="site_footer_wrapper">
@@ -549,15 +451,14 @@ s.setAttribute('data-timestamp', +new Date());
 </footer>
 
     
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-15512457-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15512457-3', 'auto');
+        ga('send', 'pageview');
+      </script>
     
     <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/assets/js/footerscripts.js"></script>
