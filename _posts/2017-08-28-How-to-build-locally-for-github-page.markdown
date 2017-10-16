@@ -3,7 +3,8 @@ author: AlexVie
 title: Build a GitHub page locally with Jekyll
 date: 2017-08-28 10:02:37+0200
 modified: 2017-08-28 10:02:42+0200
-layout: default
+layout: no_sidebar
+reduced: big
 categories: [Jekyll,Site]
 menucontext: blog
 tag: [first, Jekyll, GitHub]

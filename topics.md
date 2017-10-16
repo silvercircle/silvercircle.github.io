@@ -3,7 +3,8 @@ title: Topics
 menucontext: topics
 author: Alex Vie
 permalink: /topics.html
-layout: topics
+layout: no_sidebar
+reduced: big
 ---
 
 ## Web development
@@ -31,4 +32,11 @@ Right now, there is not much as I'm still collecting the content from my old blo
 updated for a couple of years, and converting it to markdown.
 
 [Here is the list]({{site.baseurl}}/software/).
+
+***
+
+## Game of Thrones
+
+I'm a fan of both the TV show and the books. One of the great things is the fan community which is 
+not only *huge*, but also very creative. 
 

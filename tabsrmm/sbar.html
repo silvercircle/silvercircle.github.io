@@ -1,12 +1,4 @@
 ---
 ---
-<h2>Recent in this topic</h2>
-{% assign pages = site.tabsrmm | where: "tags", "first" | sort: 'modified' | reverse %}
-{% for page in pages limit: 10 %}
-    {% include sidebar/document_entry.html %}
-{% endfor %}
-<div style="float:right;margin: 5px 0;"><a href="{{site.baseurl}}/tabsrmm/list/">Show all...</a></div>
-<div class="clear"></div>
-<hr class="blueline">
-
+{% include sidebar/dyn_topic_list.html topic="tabsrmm" %}
 

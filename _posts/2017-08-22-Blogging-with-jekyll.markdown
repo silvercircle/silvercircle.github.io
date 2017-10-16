@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: no_sidebar
+reduced: big
 author: alex
 blog: true
 date: 2017-08-22 16:30:00+0200

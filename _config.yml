@@ -43,11 +43,12 @@ plugins:
  - jekyll-redirect-from
  - jekyll-seo-tag
  - jekyll-sitemap
- - jekyll-avatar
- - jemoji
- - jekyll-mentions
  - jekyll-include-cache
  - jekyll-paginate-v2
+ - jemoji
+
+   # - jekyll-mentions
+   # - jekyll-avatar
 excerpt_separator: <!--more-->
 title: silvercircle/github/io
 description: A Jekyll test site with no particular purpose.

@@ -3,7 +3,8 @@ title: Watch your weight, there is always a reason :)
 date: 2011-05-17T04:53:27+00:00
 modified: 2011-05-17T04:53:27+00:00
 author: AlexVie
-layout: default
+layout: no_sidebar
+reduced: big
 menucontext: blog
 disqus: 1
 share: 1

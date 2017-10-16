@@ -3,7 +3,8 @@ title: Visual Assist = Visual Studio on steroids
 date: 2010-04-21T19:57:08+00:00
 modified: 2010-04-21T19:57:08+00:00
 author: Admin
-layout: default
+layout: no_sidebar
+reduced: big
 tag: [first]
 share: 1
 disqus: 1

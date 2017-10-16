@@ -1,5 +1,6 @@
 ---
-layout: topics_dyn
+layout: no_sidebar
+reduced: big
 author: alex
 title: YouTube embedding with correct aspect and any width
 date: 2017-08-31T23:56:26+02:00
@@ -10,7 +11,9 @@ disqus: 1
 share: 1
 collection: webdev
 excerpt: >
-  This is a HowTo and deals with the problem of embedding YouTube videos at any desired size. The size of the video should be determined by the surrounding container. No fixed width and height values are needed.
+  This is a HowTo  and deals with the problem of embedding YouTube videos at any desired size. The 
+  size of the video should be determined by the surrounding container. No fixed width and height 
+  values are needed.
 ---
 
 # Embed YouTube videos - the flexible way

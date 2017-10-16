@@ -3,7 +3,8 @@ title: Eclipse CDT 7 - a preview
 date: 2010-04-08T02:40:31+00:00
 modified: 2010-04-08T02:40:31+00:00
 author: Admin
-layout: default
+layout: no_sidebar
+reduced: big
 tag: first
 category: Development
 share: 1

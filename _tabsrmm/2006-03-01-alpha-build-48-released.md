@@ -3,8 +3,8 @@ title: Alpha Build #48 released
 date: 2006-03-01T02:21:27+00:00
 modified: 2006-03-01T02:21:27+00:00
 author: Admin
-menucontext: topics_dyn
-layout: topics
+menucontext: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   Ghazan has released a new alpha build - #48 - with quite a lot of changes and fixes.

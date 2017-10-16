@@ -3,7 +3,8 @@ title: Using AGG with buffered paint
 date: 2010-09-30T11:02:28+00:00
 modified: 2010-09-30T11:02:28+00:00
 author: AlexVie
-layout: default
+layout: no_sidebar
+reduced: big
 categories: [C++, Development]
 tag: first
 backlink: /blog

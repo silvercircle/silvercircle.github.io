@@ -3,7 +3,7 @@ author: AlexVie
 title: No love for vegetarian food
 date: 2017-09-08 16:59:03+0200
 modified: 2017-09-08 16:59:07+0200
-layout: default
+layout: default_dyn
 categories: [Fun]
 menucontext: blog
 tag: first

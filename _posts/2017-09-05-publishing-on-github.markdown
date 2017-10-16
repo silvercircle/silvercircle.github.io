@@ -3,7 +3,8 @@ author: AlexVie
 title: Publishing on GitHub
 date: 2017-09-05 03:45:47+0200
 modified: 2017-09-11 16:58:16+0200
-layout: default
+layout: no_sidebar
+reduced: big
 categories: [Site]
 menucontext: blog
 permalink: /articles/publishing-on-github

@@ -4,6 +4,7 @@ div.floatimage {
     word-wrap: break-word;
     box-sizing: content-box;
     border: 1px solid #ccc;
+    position: relative;
 }
 
 div.floatimage.borderless {
@@ -15,6 +16,7 @@ div.floatimage.borderless {
 div.blockimage.borderless {
     border: none;
     padding: 0; 
+    position: relative;
     background: transparent;}
 
 div.blockimage.borderless.nomargin {

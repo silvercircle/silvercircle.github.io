@@ -4,7 +4,7 @@ date: 2006-02-22T01:49:49+00:00
 modified: 2006-02-22T01:49:49+00:00
 menucontext: topics_dyn
 author: Admin
-layout: topics
+layout: topics_dyn
 tag: first
 excerpt: >
   Recently, I discovered a new plugin for Miranda which made me want to revise a somewhat older and partially unmaintained plugin...

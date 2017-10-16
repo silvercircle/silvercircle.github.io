@@ -3,7 +3,7 @@ title: WTF is a Yoda condition?
 date: 2010-05-11T07:18:08+00:00
 modified: 2010-05-11T07:18:08+00:00
 author: AlexVie
-layout: default
+layout: default_dyn
 categories: [Development,Fun]
 menucontext: blog
 tag: [first]

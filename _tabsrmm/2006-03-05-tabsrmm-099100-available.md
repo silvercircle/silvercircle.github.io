@@ -3,7 +3,7 @@ title: tabSRMM 0.9.9.100 available
 date: 2006-03-05T15:00:48+00:00
 modified: 2006-03-05T15:00:48+00:00
 author: Admin
-layout: topics
+layout: topics_dyn
 tag: first
 collection: tabsrmm
 excerpt: >

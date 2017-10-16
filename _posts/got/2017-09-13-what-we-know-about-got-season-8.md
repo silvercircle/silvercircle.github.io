@@ -1,6 +1,6 @@
 ---
 title: What we currently know about season 8
-layout: default
+layout: default_dyn
 author: Alex Vie
 blog: true
 date: 2017-09-13T19:40:54+0200

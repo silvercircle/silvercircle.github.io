@@ -3,7 +3,7 @@ author: AlexVie
 title: How to set global font scale for Qt applications
 date: 2017-09-03 10:25:13+0200
 modified: 2017-09-03 10:25:17+0200
-layout: default
+layout: default_dyn
 categories: [Development,Qt,C++]
 menucontext: blog
 tag: first

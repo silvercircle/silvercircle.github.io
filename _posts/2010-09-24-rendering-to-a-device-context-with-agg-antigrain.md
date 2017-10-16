@@ -3,7 +3,8 @@ title: Rendering to a device context with AGG (AntiGrain)
 date: 2010-09-24T22:36:38+00:00
 modified: 2010-09-24T22:36:38+00:00
 author: AlexVie
-layout: default
+layout: no_sidebar
+reduced: big
 categories: [C++, Development]
 tag: first
 backlink: /blog

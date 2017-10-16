@@ -4,7 +4,7 @@ title: Jekyll personal FAQ
 permalink: /help/jekyll-personal-faq.html
 date: 2017-08-22 22:45:00+0200
 modified: 2017-10-02T15:35:52+0200
-layout: default
+layout: default_dyn
 categories: [Jekyll,Site]
 menucontext: topics
 backlink: /blog
