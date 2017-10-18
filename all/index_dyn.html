@@ -1,0 +1,20 @@
+---
+layout: tags_dyn
+reduced: big
+menucontext: topics
+title: "All content"
+sidebarcontent: sbar_tags
+redirect_from: /tags/
+---
+<div class="pagecontainer">
+</div>
+<script>
+    var dynpager = true;
+    var site_baseurl = "{{site.baseurl}}";
+    $(document).ready(function() {
+        $.ajax({ url: "{{site.baseurl}}/all/pages/", context: document.body}).done(function(data) {
+            $('div.pagecontainer').html(data);
+        });
+    });
+</script>
+

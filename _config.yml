@@ -39,14 +39,13 @@ collections:
     label: sys
     
 plugins:
- - jekyll-feed
  - jekyll-redirect-from
  - jekyll-seo-tag
  - jekyll-sitemap
  - jekyll-include-cache
  - jekyll-paginate-v2
+ - jekyll-feed
  - jemoji
-
    # - jekyll-mentions
    # - jekyll-avatar
 excerpt_separator: <!--more-->

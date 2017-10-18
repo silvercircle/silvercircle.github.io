@@ -39,19 +39,23 @@ during the last *long night* that lasted for a full generation and can be unders
 >"It is also written that there are annals in Asshai of such a darkness, and of a hero who fought 
 >against it with a red sword. His deeds are said to have been performed before the rise of Valyria, 
 >in the earliest age when Old Ghis was first forming its empire. This legend has spread west from 
->Asshai, and the followers of R'hllor [the Lord of Light] claim that this hero was named Azor Ahai, 
->and prophesy his return. In the Jade Compendium, Colloquo Votar recounts a curious legend from Yi 
->Ti, which states that the sun hid its face from the earth for a lifetime, ashamed at something none 
+>Asshai, and the followers of R'hllor[^Lordoflight] claim that this hero was named Azor Ahai, and 
+>prophesy his return. In the Jade Compendium, Colloquo Votar recounts a curious legend from Yi Ti, 
+>which states that the sun hid its face from the earth for a lifetime, ashamed at something none 
 >could discover, and that disaster was averted only by the deeds of a woman with a monkey's tail."
-
+{: .fancy .bordered}
 ## What speaks for the theory?
 
 * he does have Dragon blood (as seen in episode 5 of the seventh season)[^dragonblood].
+
 * he was reborn through smoke and salt.
+
 * he chose his Nightwatch duty over his love for Ygritte (according to the legend, the Azor Ahai 
 also sacrificed his wife Nissa Nissa while forging his magic sword Lightbringer).
+
 * he was raised by Ned Stark like a son of his own blood to high moral standards and can be 
 considered a person with good virtues.
+
 * he is a very skilled swordsman with the proven ability to kill white walkers.
 
 <div class="floatbox right" style="width:30%;margin-top: 0;" markdown="1">
@@ -82,6 +86,14 @@ GRRM's claim of a <<bittersweet>> ending.
 [^dragonblood]: In episode 5, when Dany returns from the battle against the Lannister army, Jon
     interacts with Drogon and doesn't seem to be afraid. Also, Drogon allows Jon to touch him, which 
     leaves Dany somewhat startled. [Video](https://www.youtube.com/watch?v=rlesc2MYVoA)
+
+[^Lordoflight]: The native name for the Lord Of Light, a deity worshiped in large parts of Essos.
+    It is also known as the God of Flame and Shadow or simply the Red God. The religion is actually
+    not a monotheistic one, because there is also the God Of Darkness, also often referred to as the 
+    Great Other. Followers of the faith of R'hllor believe that these two deities are at constant 
+    conflict and the long night, which occurs every few thousand years and is about to occur during 
+    the events of Game Of Thrones, is a creation of the Great Other.
+
 
 {% include content/got/got-theory-footer.md %}
 

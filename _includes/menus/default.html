@@ -54,7 +54,7 @@
                 </li>
               </ul>
           </li>
-          {% if include.custom_menu != blank %}
+          {% if include.custom_menu != '' %}
               {% include menus/custom/{{ include.custom_menu }}.html %}
           {% endif %}
         </ul>

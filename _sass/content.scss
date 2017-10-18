@@ -167,7 +167,7 @@ div.floatbox p, div.floatbox li {
     line-height: 120% !important;
 }
 
-div.floatbox p:last-child, div.floatbox li:last-child {
+div.floatbox p:last-child, div.floatbox li:last-child, div.floatbox ul:last-child {
     margin-bottom: 0 !important;
 }
 
