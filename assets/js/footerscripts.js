@@ -490,15 +490,17 @@ $(document).ready(function(){
         jQuery(this).children('ul').hide();
       }
     });
+
     if (Cookies.get("cookieconsent") != 'accepted') {
       $('div#cookiewarning').css('visibility', 'visible');
       $('div#cookiewarning').fadeIn();
     }
+
     $('time.timeago').timeago();
 
     $('div#allow_cookies a').on("click", function(event) {
         $('div#cookiewarning').fadeOut();
-        Cookies.set("cookieconsent", "accepted", { path: '/', expires: 350});
+        Cookies.set("cookieconsent", "accepted", { path: '/', expires: 1350});
         return false;
     });
 
@@ -517,15 +519,22 @@ $(document).ready(function(){
         }
     });
 
+    // share icons (open targ in popup)
     $('.sbutton.clickable').on('click', function(event) {
         PopupCenter($(this).attr('href'), $(this).attr('data-title'), 640, 480);
         return(false);
     });
 
+    // add a span for the first letter of a paragraph that should be formatted
+    // with dropcaps.
+    //
+    // necessary to avoid problems with the :first-letter pseudo selector in
+    // some browsers (I'm looking at you, Firefox).
     $('p.dc').html(function(_, html) {
         return('<span class="dropcaps">' + html.substr(0,1) + '</span>' + html.substr(1));
     });
 
+    // request sidebar content if needed
     if (_r_sidebar) {
         $.ajax({
             url: _r_sidebarcontent,
@@ -536,6 +545,7 @@ $(document).ready(function(){
         });
     }
 
+    // reveal tool tips for images with an info overlay icon.
     $('div.img_overlay_indicator').hover(function() {
         $('#' + $(this).data('target')).fadeIn('slow');
     }, function() {
@@ -553,7 +563,6 @@ $(document).ready(function(){
     $('.vmenu_button').click(function() {
         var pos = $('#vmenu').offset();
         var h = parseInt($(window).height() - (pos.top - $(document).scrollTop()));   // the remaining height in pixels
-        //alert('w: ' + $(window).height() + ', p: ' + pos.top + ', d: ' + $(document).scrollTop() + ', h: ' + h);
         $.ajax({ url: $(this).data('target'), context: document.body}).done(function(data) {
             if(isIE) {
                 $('aside.sliderbar').css({top: pos.top + 'px', left: pos.left + 'px', width: 0, height: h + 'px', 'max-height': h + 'px'});
@@ -574,20 +583,26 @@ $(document).ready(function(){
      * it can be re-used
      * whenever a click is registered somewhere on the page
      */
-        $(document).click(function() {
+    $(document).click(function() {
         $('aside.sliderbar').fadeOut();
         $('aside.sliderbar').hide();
         $('aside.sliderbar').html('');
         $('aside.sliderbar').css({width: 0});
     });
 
-    /*
-     * but clicking inside the sidebar itself will not dismiss it
-     */
-    /*
-    $("aside.sliderbar").click(function(e) {
-        e.stopPropagation();
-        return false;
+    $(document).on('click', 'li.paginator_trail', function() {
+        if(typeof dynpager != 'undefined') {
+            $.ajax({ url: site_baseurl + $(this).children('a').first().data('target')}).done(function(data) {
+                $('div.pagecontainer').html(data);
+                $('div.pagecontainer')[0].scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+                return false();
+            });
+            return false;
+        } else {
+            return true;
+        }
     });
-    */
 });

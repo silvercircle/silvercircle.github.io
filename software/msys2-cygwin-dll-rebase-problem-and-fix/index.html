@@ -14,19 +14,19 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Ritchie Blackmore tribute | silvercircle/github/io</title>
-<meta property="og:title" content="Ritchie Blackmore tribute" />
+<title>Fix DLL rebasing problems in Cygwin and MSYS2 | silvercircle/github/io</title>
+<meta property="og:title" content="Fix DLL rebasing problems in Cygwin and MSYS2" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off." />
-<meta property="og:description" content="Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off." />
-<link rel="canonical" href="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" />
-<meta property="og:url" content="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" />
+<meta name="description" content="Sometimes, when launching new programs under Cygwin or MSYS2, you may encounter an error like this: 0 [main] zsh 8712 child_info_fork::abort: address space needed by ‘datetime.dll’ (0x3F0000) is already occupied This means, a by default non-rebaseable DLL cannot be loaded into the address space it wants to go." />
+<meta property="og:description" content="Sometimes, when launching new programs under Cygwin or MSYS2, you may encounter an error like this: 0 [main] zsh 8712 child_info_fork::abort: address space needed by ‘datetime.dll’ (0x3F0000) is already occupied This means, a by default non-rebaseable DLL cannot be loaded into the address space it wants to go." />
+<link rel="canonical" href="https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/" />
+<meta property="og:url" content="https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-05-06T17:23:56+02:00" />
+<meta property="article:published_time" content="2017-10-18T01:33:37+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Some lesser known stuff from Deep Purple. Not exactly a song either, but more a recorded Jam Session that took place while they were recording the Perfect Strangers album. An instrumental track with mostly Mr. Blackmore showing off.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/","publisher":null,"image":null,"headline":"Ritchie Blackmore tribute","dateModified":"2011-05-06T17:23:56+02:00","datePublished":"2011-05-06T17:23:56+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Sometimes, when launching new programs under Cygwin or MSYS2, you may encounter an error like this: 0 [main] zsh 8712 child_info_fork::abort: address space needed by ‘datetime.dll’ (0x3F0000) is already occupied This means, a by default non-rebaseable DLL cannot be loaded into the address space it wants to go.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/","publisher":null,"image":null,"headline":"Fix DLL rebasing problems in Cygwin and MSYS2","dateModified":"2017-10-18T01:33:37+02:00","datePublished":"2017-10-18T01:33:37+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -79,7 +79,7 @@
                 <i aria-hidden="true"></i>
                 <span>Google+</span>
             </a>
-            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/ (Ritchie Blackmore tribute)">
+            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/ (Fix DLL rebasing problems in Cygwin and MSYS2)">
                 <i></i>
                 <span>Email</span>
             </a>
@@ -110,10 +110,6 @@
           	     <div id = "main_menu">
            <ul id="menu_nav" class="dropmenu menu">
                
-               <li id="button_backlink">
-                <a class="firstlevel backlink" href="https://silvercircle.github.io/blog/"></a>
-               </li>
-               
            <li id="button_home" class="">
                 <a class="firstlevel" href="/">Home</a>
            </li>
@@ -129,7 +125,7 @@
                 </li>
               </ul>
           </li>
-          <li id="button_blog" class="active">
+          <li id="button_blog" class="">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
               <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
@@ -160,7 +156,7 @@
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
            </li>
-           <li id="button_topics" class="">
+           <li id="button_topics" class="active">
               <a class="firstlevel" href="/topics.html">Topics</a>
               <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
@@ -204,10 +200,10 @@
                 <label>TAGS</label> 
                 </div>
                 
-                
-                <div title="More in this category" class="vmenu_button category" data-target="/category/entertainment/sbar/">
-                <label>CATEGORY</label> 
+                <div title="More in this topic" class="vmenu_button topic" data-target="/software/sbar/">
+                <label>TOPIC</label> 
                 </div>
+                
                 
                 <div title="On-site and external Links" class="vmenu_button links" data-target="/sys/sbar_links/">
                 <label>LINKS</label> 
@@ -222,59 +218,74 @@
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
         <article id="main-content" class="dynlayout">
         <div class="reduce big">
-        <h1 id="son-of-alerik">Son of Alerik…</h1>
+        <h1 id="fix-the-dll-rebasing-problem-in-cygwin--msys2">Fix the DLL (re)basing problem in Cygwin / MSYS2</h1>
 
-<time style="margin-top:-30px;" datetime="2011-05-06T15:23:56+0000" class="icon">
-    <em>May</em>
-  <strong>Friday</strong>
-  <span>06</span>
+<time style="margin-top:-30px;" datetime="2017-10-18T01:33:37+0200" class="icon">
+    <em>October</em>
+  <strong>Wednesday</strong>
+  <span>18</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2011-05-06T15:23:56+0000">2011-05-06 15:23:56 +0000</time><br />213 Words
+    Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />366 Words
 </div>
 <div class="author subheader">
-    By AlexVie&nbsp;in&nbsp;<a href="/category/entertainment/index.html">Entertainment</a> | Fri, 06. 05 2011, 15:23<br />
-    Reading time: approx. 0 minute(s).
+    By AlexVie | Wed, 18. 10 2017, 01:33<br />
+    Reading time: approx. 1 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p>This is what happens when 5 genius musicians gather together to play their instruments. A 
-masterpiece that was in their opinion not good enough to make it on one of their albums.</p>
-
-<div style="width: ; margin:0 auto 20px auto;">
-
-<div class="ytcontainer">
-<iframe class="yt" allowfullscreen="" src="https://www.youtube.com/embed/viYqDfbsT6M"></iframe>
+<div class="floatbox right" style="width:40%; margin-top:0;">
+  <ul>
+    <li>can affect Cygwin and MSYS2</li>
+    <li>is much more likely to occur in the 32bit versions</li>
+    <li>can be fixed easily</li>
+  </ul>
 </div>
+<p class="dc">DLL memory management problems are known issues that plague Cygwin and MSYS2 for quite a while and 
+particularly affect the 32bit versions. The 64bit versions benefit from the much larger address 
+space, so collisions are less likely to occur. It is therefore strongly recommended to use the 64bit 
+versions of Cygwin or MSYS2 whenever possible.</p>
+
+<p>I ran into the problem when I recently installed MSYS2 on an old laptop which still runs 32bit 
+Windows 7 and has only 4 GB of RAM, so upgrading the OS to a 64bit variant does not make a lot of 
+sense.</p>
+
+<h2 id="the-error-message">The error message</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>0 [main] zsh 8712 child_info_fork::abort: address space needed by 'parameter.dll' (0x3F0000) is already occupied
+/home/myusername/.zsh/tools/check_for_upgrade.sh:37: fork failed: resource temporarily unavailable
+</code></pre>
 </div>
+<p>Obviously, the process names and address values can vary and it can occur with any process that 
+tries to load a DLL, that is not re-baseable, into memory. The virtual address space it claims being 
+already occupied by another process is the most common cause for the error.</p>
 
-<p><br />
-The song’s name is <strong>Son of Alerik</strong> and it cannot be found on any Deep Purple album except the 
-remastered version of 1984 album Perfect Strangers, released in 1999.</p>
+<h2 id="easily-fixable">Easily fixable</h2>
 
-<p>I remember reading somewhere that this song was also the B side of a limited edition of the Knocking 
-at Your Back Door single in the 80’s - don’t think that this is still available though.</p>
+<p>Fortunately, the issue is easily fixable and only requires that the DLL in question must be marked 
+as re-baseable, which an be done with the <code class="highlighter-rouge">peflags</code> and <code class="highlighter-rouge">rebase</code> commands.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>peflags -d1 /usr/lib/zsh/5.4.2/zsh/parameter.dll
+<span class="gp">$ </span>rebase /usr/lib/zsh/5.4.2/zsh/parameter.dll
+</code></pre>
+</div>
+<p>Note that in order to mark a DLL as re-baseable, it must not be in use, so for best results, you 
+should do this using <code class="highlighter-rouge">/usr/bin/dash</code> (a minimalistic shell that does not depend on DLLs).</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>/usr/lib/zsh/5.4.2/zsh/parameter.dll: skipped because could not open
+</code></pre>
+</div>
+<p>When using <code class="highlighter-rouge">peflags</code> or <code class="highlighter-rouge">rebase</code> on it is a good sign for a DLL being in use. To fix, terminate all 
+running Cygwin/MSYS2 processes, start <code class="highlighter-rouge">/usr/bin/dash</code> (from windows desktop or command line) and try 
+again.</p>
 
-<p>Also, there is, to my knowledge, no live footage of this song as it was never played live and was 
-probably only played once in the band’s entire history. The video just mixes some some parts of the 
-1986/87 perfect strangers tour with snippets of Rainbow gigs publicly available on YouTube.</p>
-
-<p>The origins of the song are unknown but it is said that it’s the result of a Jam session they did 
-while they were bored in the studio, so this isn’t a song that was written, just improvised. These 
-guys were true musicians and artists and the music speaks for itself.</p>
+<p>The command <code class="highlighter-rouge">peflags</code> accepts wild cards and instead of <code class="highlighter-rouge">rebase</code> you can use <code class="highlighter-rouge">rebaseall -v</code> which 
+will try to re-base every executable file that is marked as re-baseable.</p>
 
 
         <div style="margin-top: 0.5em">
 
     
         
-    
-    <a class="tag" href="/tags/video">video</a>
-
-    
-    <a class="tag" href="/tags/music">music</a>
-
 <div class="clear"></div>
 </div>
 
@@ -284,39 +295,39 @@ guys were true musicians and artists and the music speaks for itself.</p>
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/&amp;text=Ritchie Blackmore tribute">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;text=Fix DLL rebasing problems in Cygwin and MSYS2">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i aria-hidden="true"></i>
     <span>Facebook</span>
 </a>
-<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/&amp;title=Ritchie Blackmore tribute">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix DLL rebasing problems in Cygwin and MSYS2">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/&amp;description=Ritchie Blackmore tribute">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;description=Fix DLL rebasing problems in Cygwin and MSYS2">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/&amp;title=Ritchie Blackmore tribute">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix DLL rebasing problems in Cygwin and MSYS2">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Ritchie Blackmore tribute&amp;body=https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Fix DLL rebasing problems in Cygwin and MSYS2&amp;body=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Ritchie Blackmore tribute&nbsp;https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Fix DLL rebasing problems in Cygwin and MSYS2&nbsp;https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i></i>
     <span>WhatsApp</span>
 </a>
-<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/" title="Copy link to clipboard">
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>
@@ -329,8 +340,8 @@ guys were true musicians and artists and the music speaks for itself.</p>
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/2011/05/06/ritchie-blackmore-tribute/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2011-05-06 15:23:56 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEXVIE#@#2017-10-18 01:33:37 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
