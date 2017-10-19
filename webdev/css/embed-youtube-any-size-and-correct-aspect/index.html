@@ -226,7 +226,7 @@
   <span>31</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-08-31T23:56:30+0200">2017-08-31 23:56:30 +0200</time><br />386 Words
+    Last modified: <time class="timeago" datetime="2017-08-31T23:56:30+0200">2017-08-31 23:56:30 +0200</time><br />393 Words
 </div>
 <div class="author subheader">
     By alex | Thu, 31. 08. 2017, 23:56<br />
@@ -235,24 +235,23 @@
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p>It should be noted that this works on modern browsers only, where modern means anything newer than 
+<p class="dc">It should be noted that this works on modern browsers only, where modern means anything newer than 
 IE8 or so. Any modern version of Firefox, Chrome, Opera, Safari, IE, Edge and the zillion of 
 Chromium based browsers will work.</p>
-
 <p>It does not use <code class="highlighter-rouge">object</code> or <code class="highlighter-rouge">embed</code> tags, but instead embeds videos in an <code class="highlighter-rouge">iframe</code> element, which is 
 the preferred way to embed a video that does not use flash.</p>
 
 <h3 id="the-problem">The problem</h3>
 
-<p>We want a video that adopts to a given width and adjusts it’s height. We assume the aspect ratio at 
+<p class="dc">We want a video that adopts to a given width and adjusts it’s height. We assume the aspect ratio at 
 16:9 (which is safe, because the YouTube player always uses it and videos of different format will 
 be cropped or letterboxed accordingly) and the height should be set automatically from the given 
 width.</p>
-
 <h4 id="case-1-the-video-should-take-all-available-width">Case 1, the video should take all available width.</h4>
 
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ytcontainer"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"ytframe"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/[ID]"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+    <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"ytframe"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span> 
+    <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/[ID]"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
@@ -282,10 +281,9 @@ width.</p>
 value of 56.25 percent, which is <strong>exactly the aspect ratio of a 16:9 rectangle</strong>. The rectangle 
 will have a content height of zero, but the padding will set its overall height to 56% of its width.</p>
 
-<p>The other important thing to note is the <code class="highlighter-rouge">position: absolute</code> given to the iframe. This allows the 
+<p class="dc">The other important thing to note is the <code class="highlighter-rouge">position: absolute</code> given to the iframe. This allows the 
 iframe to fill the padding space in the enclosing div element and inherit the 16:9 ascpect ratio of 
 the box.</p>
-
 <h4 id="case-2-we-want-a-custom-width">Case 2, we want a custom width:</h4>
 
 <p>This isn’t much more difficult. The only thing you need to do is to wrap the above construct in one 
