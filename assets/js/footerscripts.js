@@ -590,7 +590,10 @@ $(document).ready(function(){
         $('aside.sliderbar').css({width: 0});
     });
 
-    $(document).on('click', 'li.paginator_trail', function() {
+    /*
+     * dynamic pager, load page via ajax
+     */
+    $(document).on('click', 'li.paginator_trail.dynamic', function() {
         if(typeof dynpager != 'undefined') {
             $.ajax({ url: site_baseurl + $(this).children('a').first().data('target')}).done(function(data) {
                 $('div.pagecontainer').html(data);

@@ -226,10 +226,10 @@
   <span>18</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />366 Words
+    Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />425 Words
 </div>
 <div class="author subheader">
-    By AlexVie | Wed, 18. 10 2017, 01:33<br />
+    By AlexVie | Wed, 18. 10. 2017, 01:33<br />
     Reading time: approx. 1 minute(s).
 </div>
 <div class="clearfix"></div>
@@ -245,11 +245,14 @@
 <p class="dc">DLL memory management problems are known issues that plague Cygwin and MSYS2 for quite a while and 
 particularly affect the 32bit versions. The 64bit versions benefit from the much larger address 
 space, so collisions are less likely to occur. It is therefore strongly recommended to use the 64bit 
-versions of Cygwin or MSYS2 whenever possible.</p>
+versions of Cygwin or MSYS2 whenever possible. The requirements for the 64bit versions are not 
+steep, it’s basically just a 64bit Windows OS and slightly more RAM than the 32bit versions would 
+use.</p>
 
 <p>I ran into the problem when I recently installed MSYS2 on an old laptop which still runs 32bit 
-Windows 7 and has only 4 GB of RAM, so upgrading the OS to a 64bit variant does not make a lot of 
-sense.</p>
+Windows 7 and has only 4 GB of RAM, so using the 64bit version of MSYS2 was not an option. Upgrading 
+the OS to a 64bit variant does not make a lot of sense nor would it bring benefits to that somewhat 
+ancient hardware.</p>
 
 <h2 id="the-error-message">The error message</h2>
 
@@ -259,12 +262,13 @@ sense.</p>
 </div>
 <p>Obviously, the process names and address values can vary and it can occur with any process that 
 tries to load a DLL, that is not re-baseable, into memory. The virtual address space it claims being 
-already occupied by another process is the most common cause for the error.</p>
+already occupied by another process is the most (or only) common cause for the error.</p>
 
 <h2 id="easily-fixable">Easily fixable</h2>
 
 <p>Fortunately, the issue is easily fixable and only requires that the DLL in question must be marked 
-as re-baseable, which an be done with the <code class="highlighter-rouge">peflags</code> and <code class="highlighter-rouge">rebase</code> commands.</p>
+as re-baseable, which can be done using the <code class="highlighter-rouge">peflags</code> and <code class="highlighter-rouge">rebase</code> commands. These should be part of 
+every standard Cygwin / MSYS2 installation.</p>
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>peflags -d1 /usr/lib/zsh/5.4.2/zsh/parameter.dll
 <span class="gp">$ </span>rebase /usr/lib/zsh/5.4.2/zsh/parameter.dll
 </code></pre>
