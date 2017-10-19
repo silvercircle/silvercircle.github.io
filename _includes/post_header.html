@@ -8,7 +8,7 @@
     Last modified: <time class="timeago" datetime="{{page.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{page.modified}}</time><br>{{words}} Words
 </div>
 <div class="author subheader">
-    By {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{page.date | date: '%a, %d. %m %Y, %H:%M'}}<br>
+    By {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{page.date | date: '%a, %d. %m. %Y, %H:%M'}}<br>
     Reading time: approx. {{words | divided_by: 250}} minute(s).
 </div>
 <div class="clearfix"></div>

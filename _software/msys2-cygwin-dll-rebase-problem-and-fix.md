@@ -35,12 +35,15 @@ excerpt: >
 DLL memory management problems are known issues that plague Cygwin and MSYS2 for quite a while and 
 particularly affect the 32bit versions. The 64bit versions benefit from the much larger address 
 space, so collisions are less likely to occur. It is therefore strongly recommended to use the 64bit 
-versions of Cygwin or MSYS2 whenever possible.
+versions of Cygwin or MSYS2 whenever possible. The requirements for the 64bit versions are not 
+steep, it's basically just a 64bit Windows OS and slightly more RAM than the 32bit versions would 
+use.
 {:dc}
 
 I ran into the problem when I recently installed MSYS2 on an old laptop which still runs 32bit 
-Windows 7 and has only 4 GB of RAM, so upgrading the OS to a 64bit variant does not make a lot of 
-sense.
+Windows 7 and has only 4 GB of RAM, so using the 64bit version of MSYS2 was not an option. Upgrading 
+the OS to a 64bit variant does not make a lot of sense nor would it bring benefits to that somewhat 
+ancient hardware.
 
 ## The error message
 
@@ -50,12 +53,13 @@ sense.
 ```
 Obviously, the process names and address values can vary and it can occur with any process that 
 tries to load a DLL, that is not re-baseable, into memory. The virtual address space it claims being 
-already occupied by another process is the most common cause for the error.
+already occupied by another process is the most (or only) common cause for the error.
 
 ## Easily fixable
 
 Fortunately, the issue is easily fixable and only requires that the DLL in question must be marked 
-as re-baseable, which an be done with the `peflags` and `rebase` commands.
+as re-baseable, which can be done using the `peflags` and `rebase` commands. These should be part of 
+every standard Cygwin / MSYS2 installation.
 ```shell
 $ peflags -d1 /usr/lib/zsh/5.4.2/zsh/parameter.dll
 $ rebase /usr/lib/zsh/5.4.2/zsh/parameter.dll

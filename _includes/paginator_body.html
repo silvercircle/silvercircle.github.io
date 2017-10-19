@@ -16,7 +16,7 @@
     Last modified: <time class="timeago" datetime="{{post.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{post.modified}}</time><br>{{words}} Words
 </div>
 <div class="author subheader">
-    By {{post.author}}{% if post.categories %}{% for cat in post.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{post.date | date: '%a, %d. %m %Y, %H:%M'}}<br>
+    By {{post.author}}{% if post.categories %}{% for cat in post.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{post.date | date: '%a, %d. %m. %Y, %H:%M'}}<br>
     Reading time: approx. {{words | divided_by: 275}} minute(s)
 </div>
 <div class="clearfix"></div>

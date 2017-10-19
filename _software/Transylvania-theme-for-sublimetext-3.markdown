@@ -10,17 +10,31 @@ tag: first
 disqus: 1
 share: 1
 excerpt: >
-    This is a UI theme for Sublime Text 3 that goes well with the [Dracula syntax coloring 
-    scheme](https://draculatheme.com/).
-    
+    This is a UI theme for Sublime Text 3 that harmonizes well with the [Dracula syntax coloring 
+    scheme](https://draculatheme.com/) or other dark-ish color schemes.
+    <br>
+    <br>
+    [Available](https://github.com/silvercircle/ST_Transylvania) on GitHub.
+    <br>
+    <br>
+
+image:
+    source: st_transylvania
+    width: 20%;
+    align: right
+    link: 1
 ---
 
 # Transylvania Theme for Sublime Text 3.
 {% include post_header.html %}
-This is a UI theme for Sublime Text 3 that goes well with the [Dracula syntax coloring scheme](https://draculatheme.com/).
+{% include defs.md %}
+This is a UI theme for Sublime Text 3 that harmonizes nicely with the popular [Dracula syntax 
+coloring scheme](https://draculatheme.com/). It is compatible with all Sublime Text 3 builds, 
+including the release version.
+{:dc It is compatible with all Sublime Text 3 builds, including the release version.
+{:dc}
 
-{% include gfx/block_image.html image="st-transylvania.png" title="Sublime Text 3 with the 
-Transylvania theme and Dracula syntax coloring scheme" %}
+{% include gfx/BD.html image=G.default.st-transylvania borderclass="borderless" %}
 
 It is work in progress and you can currently only obtain it from its [GitHub 
 repo](https://github.com/silvercircle/ST_Transylvania) or this page. You need to install it 
@@ -30,14 +44,18 @@ submit it to package control.
 ## How to install manually
 
 * [Download]({{site.baseurl}}/assets/download/Theme - Transylvania.zip) the file.
+
 * Find your **packages** folder. The easiest way is to ask Sublime Text by navigating to 
 `Preferences -> Browse Packages...`. This will open a explorer window with the base folder of all 
 installed packages.
+
 * Unzip the downloaded file to this folder. Make sure, **you unzip it with full path name**, 
 creating a `Theme - Transylvania` folder in the packages directory. This folder name is case 
 sensitive under Linux.
+
 * Navigate to `Preferences -> Theme...` and activate **Transylvania.sublime-theme** from the list of 
 available themes.
+
 * Navigate to `Preferences ->Color Scheme...` and activate **Transylvania** from the list of 
 available color schemes.
 

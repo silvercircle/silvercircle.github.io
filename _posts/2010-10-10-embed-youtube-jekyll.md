@@ -96,5 +96,3 @@ iframe.yt {
 As you can test, it is fully responsive and will adjust its width while maintaining correct aspect 
 ratio.
 {% include youtube.html id="1ST9TZBb9v8" %}
-
-

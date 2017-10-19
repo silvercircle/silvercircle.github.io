@@ -36,3 +36,7 @@ qtcreator_fontscale:
     name: qtcreator-fontscale.png
     desc: "Screen shot showing the different scaling (click to enlarge)"
 
+tb_screenshot:
+    name: tbird_custom.png
+    desc: Thunderbird 52.x with my userChrome modifications
+

@@ -33,3 +33,13 @@ sansa:
 mor:
   name: mor_banner.jpg
   desc: "The official Monsters of Rock 1988 poster"
+
+tb_screenshot:
+  name: tbird_custom.png
+  desc: "Thunderbird screenshot"
+
+st_transylvania:
+  name: st-transylvania.png
+  thumb: 1
+  desc: "Sublime Text 3 Theme"
+
