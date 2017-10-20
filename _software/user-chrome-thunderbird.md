@@ -60,8 +60,7 @@ GitHub**.
 * Copy the `userChrome.css` that you'll find inside the .ZIP you downloaded from GitHub into that 
  
 * folder. Under Linux, the case matters, the `C` must be capital, the extension lower case. The 
- 
-* folder `chrome` must be all lowercase.
+folder `chrome` must be all lowercase.
 
 To activate it, you have to restart Thunderbird. If anything goes wrong and TB looks strange, you 
 can simply remove that file from its folder. It does not change anything outside itself. No special 

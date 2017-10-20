@@ -8,9 +8,9 @@ $green: #00bb00;
 $lightgrey: #c5c5c5;
 
 /* header definitions (h1...h6 in main content only) */
-$header_font: "Oswald";
+$header_font: "Roboto Condensed";
 /* base size for h1, others are calculated by subtracting 2pt per level */
-$h1_base_size: 22;
+$h1_base_size: 24;
 $h1_bottom_margin: 10px;
 $h1_letter_spacing: 0;
 $header_weight: 400;
@@ -43,10 +43,12 @@ $footer_font_size: 15px;
 $base: '{{site.baseurl}}';
 
 /*@import "font-monda";*/
+/*@import "font-signika";*/
+@import "font-roboto_condensed";
 @import "font-lato";
-@import "font-savoy";
+/*@import "font-savoy";*/
 /*@import "font-merriweather_sans";*/
-@import "font-oswald";
+/*@import "font-oswald";*/
 /*@import "font-roboto_slab";*/
 /*@import "font-vollkorn";*/
 /*@import "font-cormorant_sc";*/

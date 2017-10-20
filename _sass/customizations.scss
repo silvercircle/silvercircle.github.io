@@ -72,10 +72,10 @@ iframe.yt {
 
 .sidebar_listheader {
     font-weight:normal !important;
+    font-family: $header_font !important;
     margin-top: 5px !important;
     margin-bottom: 0 !important;
     font-size: #{$author_font_size + 1}px !important;
-    font-family: $sans_font !important;
     text-indent: 0 !important;
     line-height: 1.2 !important;
 }
@@ -362,14 +362,19 @@ aside.sliderbar .author {
 }
 
 aside.sliderbar a {
+    color: #79f !important;
+}
+
+aside.sliderbar a:hover {
     color: yellow !important;
 }
 
 aside.sliderbar h3.sidebar_listheader {
-    font-family: Oswald !important;
-    font-weight: 300 !important;
+    font-family: $header_font !important;
+    font-weight: 400 !important;
     line-height: 1.3em !important;
     margin-top: 5px !important;
+    font-size: 12pt !important;
 }
 aside.sliderbar h3.sidebar_listheader:first-child {
     margin-top: 0 !important;

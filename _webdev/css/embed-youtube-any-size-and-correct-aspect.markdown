@@ -11,18 +11,18 @@ disqus: 1
 share: 1
 collection: webdev
 excerpt: >
-  This is a HowTo  and deals with the problem of embedding YouTube videos at any desired size. The 
-  size of the video should be determined by the surrounding container. No fixed width and height 
-  values are needed.
+   <span class="dropcaps">T</span>his is a HowTo  and deals with the problem of embedding YouTube 
+   videos at any desired size. The size of the video should be determined by the surrounding 
+   container. No fixed width and height values are needed.
 ---
 
 # Embed YouTube videos - the flexible way
 {% include post_header.html %}
-
+{% include defs.md %}
 It should be noted that this works on modern browsers only, where modern means anything newer than 
 IE8 or so. Any modern version of Firefox, Chrome, Opera, Safari, IE, Edge and the zillion of 
-Chromium based browsers will work. 
-
+Chromium based browsers will work.
+{:dc}
 It does not use `object` or `embed` tags, but instead embeds videos in an `iframe` element, which is 
 the preferred way to embed a video that does not use flash.
 
@@ -32,12 +32,13 @@ We want a video that adopts to a given width and adjusts it's height. We assume 
 16:9 (which is safe, because the YouTube player always uses it and videos of different format will 
 be cropped or letterboxed accordingly) and the height should be set automatically from the given 
 width.
-
+{:dc}
 #### Case 1, the video should take all available width.
 
 ```html
 <div class="ytcontainer">
-	<iframe class="ytframe" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/[ID]"></iframe>
+    <iframe class="ytframe" frameborder="0" allowfullscreen 
+    src="https://www.youtube.com/embed/[ID]"></iframe>
 </div>
 ```
 The [ID] is a placeholder for the video ID on YouTube, which is the part that normally goes behind 
@@ -69,7 +70,7 @@ will have a content height of zero, but the padding will set its overall height 
 The other important thing to note is the `position: absolute` given to the iframe. This allows the 
 iframe to fill the padding space in the enclosing div element and inherit the 16:9 ascpect ratio of 
 the box.
-
+{:dc}
 #### Case 2, we want a custom width:
 
 This isn't much more difficult. The only thing you need to do is to wrap the above construct in one 

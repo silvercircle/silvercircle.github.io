@@ -67,11 +67,11 @@ relative time stamps.
 
 #### What fonts are used?
 
-* [Cormorant SC](https://fonts.google.com/specimen/Cormorant+SC) for big headlines in the main 
-content area. It's a small caps Garamond variant that pairs well with most old-style serif 
-typefaces.
+* [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) for headlines in the 
+main content area and sidebar areas. As the name implies, it's a condensed version of the popular 
+Roboto font, ideal for longer headlines.
 
-* [Monda](https://fonts.google.com/specimen/Monda) for most parts except article text. It's a modern 
+* [Lato](https://fonts.google.com/specimen/Lato) for most parts except article text. It's a modern 
 sans serif font that provides good readability at small to medium sizes.
 
 I have not yet decided on the typeface for the article text, there are a few candidates. I 
