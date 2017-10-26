@@ -28,12 +28,14 @@ image:
 
 <div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
 >Jaime's moral stance is far less fucked up than his sister's. He is like a troubled Jedi Knight 
->who has fallen to the dark side, but there is still hope; he is not completely lost.
+>who has fallen to the dark side, but there is still hope; he is not completely lost yet.
 {: .fancy}
 </div>
 Jaime Lannister is one of my favorite characters next to Arya, The Hound, Cersei and Brienne. This 
-was not always the case, I remember disliking him a lot during the first season and thought he was 
-boring and pointless.
+was not always the case, I remember disliking him a lot during the first season and thought he was a 
+boring and pointless character whose evil nature did not appear very believable to me. Well, maybe 
+it did not, because Jaime's nature is not necessarily pure evil; instead, it is a much more complex 
+mixture wit many nuances. It also changed a lot over the course of the show..
 {:dc}
 
 During season one, he was the barely likable arrogant, self centered, snob-ish kingslayer, who 
@@ -124,9 +126,9 @@ This is generally seen as a reference to Daenerys, who is a) younger, b) arguabl
 c) very much determined to cast down Cersei and take the Iron Throne for herself, but it could have 
 been misunderstood by Cersei as reference to either Sansa Stark or Margaery Tyrell. Both were young 
 and beautiful and while Sansa, unlike Margaery, did not become Queen, she got pretty close. Cersei's 
-interpretation of the prophecy explains her animosity towards the two young ladies - she hated them, 
-because she felt threatened and she thought they were standing in her way and one of them may strip 
-her of all the powers she so dearly loves.
+interpretation of the prophecy **explains** her animosity towards the two young ladies - she hated 
+them, because she felt threatened and she thought they were standing in her way and one of them may 
+strip her of all the powers she so dearly loves.
 
 So far, so good, but in all those prophecies concerning Cersei's future, there was no reference to 
 Jaime, right? She was told she will have three children, but all three will die, she was promised to 
@@ -204,13 +206,16 @@ valonqar pattern, as she is a *little sister* (or sibling).
 ### Conclusions?
 
 Only one so far. Jaime will play his important part in season 8, that I am sure of. He finally 
-parted with his sister, after realizing that she only abused him anyway. She never really listened 
-to him, she always did how she felt, ignoring his wishes (the bed scene in season 7 was a good 
-example - she reveals everything to their servants, and completely ignores his objections). She 
-scolded him for being stupid and for never listening to their father when he was talking about the 
-importance of gold, forgetting that without **him** and his men she wouldn't sit on the heaps of 
-gold taken from Highgarden.
+parted with his sister, after realizing how abusive she always has been towards him. She never 
+really listened to him, she always did how she felt, ignoring his wishes (the bed scene in season 7 
+was a good example - she reveals everything to their servants, and completely ignores his 
+objections). She scolded him for being stupid and for never listening to their father when he was 
+talking about the importance of gold, forgetting that without **him** and his men she wouldn't sit 
+on the heaps of gold taken from Highgarden.
 {:dc}
+
+He probably also realized that the death of all their children was mostly, if not exclusively, her 
+fault.
 
 So, in short, I think, Jaime and Cersei will meet again and nobody can tell what will happen when 
 they re-unite. I'm pretty sure though, they are not going to share a bed.

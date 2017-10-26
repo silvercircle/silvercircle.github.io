@@ -64,7 +64,7 @@ ul.dropmenu li a.firstlevel {
     height:28px;
     line-height:28px;
 }
-ul.dropmenu li a.firstlevel.backlink {
+ul.dropmenu li a.firstlevel.symbolized {
     font: normal normal normal 24px/1 FontAwesome !important;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -72,8 +72,12 @@ ul.dropmenu li a.firstlevel.backlink {
     width: 0.93em;
     line-height:28px !important;
 }
-ul.dropmenu li a.firstlevel.backlink:before {
+ul.dropmenu li a.firstlevel.symbolized.backlink:before {
     content: "\f0a8";
+}
+
+ul.dropmenu li a.firstlevel.symbolized.home:before {
+    content: "\f015";
 }
 
 ul.dropmenu li a.firstlevel.compact {

@@ -3,6 +3,10 @@ div.share_buttons.header {
     top: 0;
     right: 0;
 }
+div.share_buttons.header.min {
+    right:20px;
+    top: 5px;
+}
 
 .share_buttons:before,
 .share_buttons:after {
@@ -24,6 +28,11 @@ div.share_buttons.header {
     line-height: 47px;
     color: #aaf;
 }
+.sb-label.header.min {
+    line-height: 30px;
+    font-size: 12pt;
+}
+
 .sbutton {
     float: left;
     margin-right: 3px;
@@ -45,6 +54,17 @@ div.share_buttons.header {
     border-radius: 50%;
     line-height: 30px;
     min-height: 35px;
+}
+
+.sbutton.contrast.min {
+    border-radius: 2px;
+    line-height: 16px;
+    min-height: 23px;
+    padding: 2px;
+    width: 25px;
+    height: 23px;
+    min-width:25px;
+    margin-top: 2px;
 }
 
 .sbutton:last-of-type {

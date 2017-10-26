@@ -43,8 +43,10 @@ Eclipse code editor has always been good and CDT offers a host of nice features,
 highlighting (and this with good performance, even in large projects), excellent code navigation and 
 very good code assistance. The CDT build system is flexible and does not force you to use one 
 specific compiler (i.e. GCC) as it is perfectly possible to use the MS compilers and build tools.
+{:dc}
 
-Eclipse's integration of the Subversion version control system is also excellent and makes using SVN enjoyable.
+Eclipse's integration of the Subversion version control system is also excellent and makes using SVN 
+enjoyable.
 
 # CDT version 7 is on the way
 
@@ -52,6 +54,7 @@ And I can tell you, it will be even better. I have installed the latest mileston
 CDT version 7 on my Eclipse 3.6 M6 installation, just to test it out a bit. Rather quickly, I 
 realized that this is already a very mature, though not perfect, build and I'am now using it on a 
 daily base with few or little issues.
+{:dc}
 
 ## Much better indexer
 
@@ -64,6 +67,7 @@ fully index your code which usually resulted in symbols or methods being unknown
 unknown symbols are not properly highlighted nor are they available for the various content assist 
 features. The full indexer had fewer issues with recognizing symbols except for the occasional 
 problem with overloaded functions or functions with default parameters.
+{:dc}
 
 In CDT7, there is only one indexer and I have got the impression that it works more accurate and 
 much faster than the old full indexer and, honestly, it doesn't appear to be slower than the old 
@@ -84,13 +88,14 @@ as the code inspection Eclipse offers for Java or what IntelliJ IDEA does for al
 supports, but it does its job of detecting a number of very common mistakes. I also do not know if 
 this feature is already complete in the current milestone as there is little documentation available 
 at the moment.
+{:dc}
 
 ### Conclusion
 
 The new indexer alone will make this a good release as it solves most of the small issues the old 
 code indexer had shown every now and then. The simple (but useful) problem analyzer is a nice goodie 
 and complements the already good syntax checker.
-
+{:dc}
 <span style="text-decoration: underline;">If you want to try it out yourself</span>, you can get it 
 <strong><a href="http://www.eclipse.org/cdt/">here</a></strong>. Of course, I strongly recommend to 
 install this on a fresh extra Eclipse installation and leave your current environment untouched. I 

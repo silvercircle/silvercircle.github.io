@@ -380,6 +380,15 @@
     background-position: 0 0, 0 0, -100px -205px;
     border-top: 8px solid black;
   }
+  header.minimal {
+    background: url(../images/theme/upper_bg.png), rgba(0,0,0,1.0);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 0 0;
+    padding: 4px 20px;
+    height:27px;
+    max-height:27px;
+    border-top: 5px solid orange;
+ }
 
   header dt > a {
     max-width: 540px;
@@ -631,7 +640,7 @@
     .inner {
       width: 740px; }
 
-    header {
+    header.default {
         background: url(../images/theme/upper_bg.png),linear-gradient(to right, rgba(130,130,190,0.99) 0%,rgba(130,130,190,0.7) 300%);}
 
     header h1, header h2 {
@@ -654,7 +663,7 @@
     .inner {
       width: 93%; }
 
-    header {
+    header.default {
         background: url(../images/theme/upper_bg.png),linear-gradient(to right, rgba(130,130,190,0.99) 0%,rgba(130,130,190,0.7) 300%);}
 
     header .inner {

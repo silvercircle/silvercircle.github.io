@@ -1,7 +1,8 @@
 ---
 author: Alex Vie
 title: Site FAQ
-layout: default_dyn
+layout: no_sidebar
+reduced: yes
 sidebarcontent: sbar_default
 date: 2017-09-16T14:05:09+0200
 modified: 2017-09-16T14:05:26+0200
