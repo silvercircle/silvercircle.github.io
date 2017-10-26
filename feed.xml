@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-20T13:48:48+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-10-26T11:11:47+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-10T19:41:31+0200&quot; class=&quot;icon&quot;&gt;
     &lt;em&gt;October&lt;/em&gt;
@@ -109,7 +109,7 @@ ratio.&lt;/p&gt;
   &lt;span&gt;09&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;786 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;829 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     By Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/travel/index.html&quot;&gt;Travel&lt;/a&gt; | Mon, 09. 10. 2017, 00:31&lt;br /&gt;
@@ -216,11 +216,15 @@ plenty available. Same goes for rental cars available at moderate rates.&lt;/p&g
 
   &lt;p&gt;Arriving via ship is more interesting and much more scenic. The natural harbor of Mahon is 
 fjord-like, about 3km long and only a few hundred feet wide. The water is deep enough to allow 
-medium size cruise ships and ferries, but the really big and ugly ones have to stay outside as their 
-draft is too high and they wouldn’t be able to turn around inside the narrow channel. We arrived on 
-a 200m long 42.000GRT ship, a small and tiny one when compared to the massive behemoths of more than 
-300m length and three times the mass, and yet, turning around 180 degrees before reaching our final 
-position was a fairly difficult maneuver according to the captain’s speech.&lt;/p&gt;
+medium size cruise ships and ferries, but the really big and ugly ones have to stay outside, because 
+the water is not deep enough and they wouldn’t be able to turn around 180 degrees inside the narrow 
+channel. We arrived on a 200m long 42.000GRT ship, a small one when compared to the massive 
+behemoths of more than 300m length and three times the mass, and yet, the turn before reaching our 
+final position was a fairly difficult maneuver according to the captain’s speech.&lt;/p&gt;
+
+  &lt;p&gt;From the port’s land side exit, the city’s center is just a couple minutes walk away. Since the city 
+is elevated by about 30 meters from water level, you can either take some stairs or the road, the 
+latter one being a longer walk.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class=&quot;gallery&quot;&gt;

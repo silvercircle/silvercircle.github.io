@@ -54,38 +54,34 @@
           <a href="#">Got It! (Allow cookies)</a>
         </div>
     </div>
-        <header>
-      <div class="inner">
-          <dl>
-          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
-          <dd>A Jekyll test site with no particular purpose.</dd>
-          </dl>
-            <div class="share_buttons header sb-iconic">
-            <span class="sb-label header">Connect:</span>
+    <header class="minimal">
+  <dl>
+  <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+  </dl>
+    <div class="share_buttons header min sb-iconic">
+    <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+        <i aria-hidden="true"></i>
+        <span>Twitter</span>
+    </a>
+    <a class="sbutton contrast min b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+        <i aria-hidden="true"></i>
+        <span>Facebook</span>
+    </a>
+    <a class="sbutton contrast min b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-github" title="GitHub" href="https://github.com/silvercircle">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2010/04/08/eclipse-cdt-7-a-preview/ (Eclipse CDT 7 - a preview)">
+        <i></i>
+        <span>Email</span>
+    </a>
+    </div>
+</header>
 
-            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
-                <i aria-hidden="true"></i>
-                <span>Twitter</span>
-            </a>
-            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
-                <i aria-hidden="true"></i>
-                <span>Facebook</span>
-            </a>
-            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
-                <i aria-hidden="true"></i>
-                <span>Google+</span>
-            </a>
-            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
-                <i aria-hidden="true"></i>
-                <span>Google+</span>
-            </a>
-            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2010/04/08/eclipse-cdt-7-a-preview/ (Eclipse CDT 7 - a preview)">
-                <i></i>
-                <span>Email</span>
-            </a>
-            </div>
-      </div>
-    </header>
 
 
     <div class="menubar_wrapper">
@@ -109,13 +105,13 @@
       <nav>
           	     <div id = "main_menu">
            <ul id="menu_nav" class="dropmenu menu">
-               
-               <li id="button_backlink">
-                <a class="firstlevel backlink" href="https://silvercircle.github.io/blog/"></a>
-               </li>
-               
+           
+           <li id="button_backlink">
+            <a class="firstlevel symbolized backlink" href="https://silvercircle.github.io/blog/"></a>
+           </li>
+           
            <li id="button_home" class="">
-                <a class="firstlevel" href="/">Home</a>
+                <a class="firstlevel symbolized home" href="/"></a>
            </li>
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
@@ -230,7 +226,7 @@
   <span>08</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2010-04-08T02:40:31+0000">2010-04-08 02:40:31 +0000</time><br />668 Words
+    Last modified: <time class="timeago" datetime="2010-04-08T02:40:31+0000">2010-04-08 02:40:31 +0000</time><br />673 Words
 </div>
 <div class="author subheader">
     By Admin&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a> | Thu, 08. 04. 2010, 02:40<br />
@@ -274,18 +270,19 @@ an old blog long gone.</p>
 
 </div>
 
-<p>I consider the C/C++ development tools (short: CDT) one of the best plugins for Eclipse. Since 
+<p class="dc">I consider the C/C++ development tools (short: CDT) one of the best plugins for Eclipse. Since 
 version 6, they are so good that Eclipse has become my favorite IDE for C and C++ development. The 
 Eclipse code editor has always been good and CDT offers a host of nice features, like semantic 
 highlighting (and this with good performance, even in large projects), excellent code navigation and 
 very good code assistance. The CDT build system is flexible and does not force you to use one 
 specific compiler (i.e. GCC) as it is perfectly possible to use the MS compilers and build tools.</p>
 
-<p>Eclipse’s integration of the Subversion version control system is also excellent and makes using SVN enjoyable.</p>
+<p>Eclipse’s integration of the Subversion version control system is also excellent and makes using SVN 
+enjoyable.</p>
 
 <h1 id="cdt-version-7-is-on-the-way">CDT version 7 is on the way</h1>
 
-<p>And I can tell you, it will be even better. I have installed the latest milestone (M5) release of 
+<p class="dc">And I can tell you, it will be even better. I have installed the latest milestone (M5) release of 
 CDT version 7 on my Eclipse 3.6 M6 installation, just to test it out a bit. Rather quickly, I 
 realized that this is already a very mature, though not perfect, build and I’am now using it on a 
 daily base with few or little issues.</p>
@@ -319,7 +316,7 @@ daily base with few or little issues.</p>
 
 </div>
 
-<p>Up to version 6, the CDT offered two different indexing methods. The <em>fast indexer</em> (which 
+<p class="dc">Up to version 6, the CDT offered two different indexing methods. The <em>fast indexer</em> (which 
 was the recommended one to use), optimized for good performance and the <em>full indexer</em> which 
 was working slower but more accurate. The fast indexer was indeed fast, but sometimes failed to 
 fully index your code which usually resulted in symbols or methods being unknown. As a consequence, 
@@ -364,7 +361,7 @@ highlighted and available in the content assist.</p>
 
 </div>
 
-<p>Also new is a feature that analyzes your code as you type and will warn you about some common errors 
+<p class="dc">Also new is a feature that analyzes your code as you type and will warn you about some common errors 
 like missing braces or the infamous <strong>if( foo = bar )</strong> typo. The warnings can be 
 customized somewhat and will appear in the <em>General/Problems</em> view. It might not be as clever 
 as the code inspection Eclipse offers for Java or what IntelliJ IDEA does for all languages it 
@@ -374,10 +371,9 @@ at the moment.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>The new indexer alone will make this a good release as it solves most of the small issues the old 
+<p class="dc">The new indexer alone will make this a good release as it solves most of the small issues the old 
 code indexer had shown every now and then. The simple (but useful) problem analyzer is a nice goodie 
 and complements the already good syntax checker.</p>
-
 <p><span style="text-decoration: underline;">If you want to try it out yourself</span>, you can get it 
 <strong><a href="http://www.eclipse.org/cdt/">here</a></strong>. Of course, I strongly recommend to 
 install this on a fresh extra Eclipse installation and leave your current environment untouched. I 

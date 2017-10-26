@@ -54,38 +54,34 @@
           <a href="#">Got It! (Allow cookies)</a>
         </div>
     </div>
-        <header>
-      <div class="inner">
-          <dl>
-          <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
-          <dd>A Jekyll test site with no particular purpose.</dd>
-          </dl>
-            <div class="share_buttons header sb-iconic">
-            <span class="sb-label header">Connect:</span>
+    <header class="minimal">
+  <dl>
+  <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+  </dl>
+    <div class="share_buttons header min sb-iconic">
+    <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+        <i aria-hidden="true"></i>
+        <span>Twitter</span>
+    </a>
+    <a class="sbutton contrast min b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+        <i aria-hidden="true"></i>
+        <span>Facebook</span>
+    </a>
+    <a class="sbutton contrast min b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-github" title="GitHub" href="https://github.com/silvercircle">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/ (Visual Assist = Visual Studio on steroids)">
+        <i></i>
+        <span>Email</span>
+    </a>
+    </div>
+</header>
 
-            <a class="sbutton contrast b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
-                <i aria-hidden="true"></i>
-                <span>Twitter</span>
-            </a>
-            <a class="sbutton contrast b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
-                <i aria-hidden="true"></i>
-                <span>Facebook</span>
-            </a>
-            <a class="sbutton contrast b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
-                <i aria-hidden="true"></i>
-                <span>Google+</span>
-            </a>
-            <a class="sbutton contrast b-github" title="GitHub" href="https://github.com/silvercircle">
-                <i aria-hidden="true"></i>
-                <span>Google+</span>
-            </a>
-            <a class="sbutton contrast b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2010/04/21/visual-assist-visual-studio-on-steroids/ (Visual Assist = Visual Studio on steroids)">
-                <i></i>
-                <span>Email</span>
-            </a>
-            </div>
-      </div>
-    </header>
 
 
     <div class="menubar_wrapper">
@@ -109,13 +105,13 @@
       <nav>
           	     <div id = "main_menu">
            <ul id="menu_nav" class="dropmenu menu">
-               
-               <li id="button_backlink">
-                <a class="firstlevel backlink" href="https://silvercircle.github.io/blog/"></a>
-               </li>
-               
+           
+           <li id="button_backlink">
+            <a class="firstlevel symbolized backlink" href="https://silvercircle.github.io/blog/"></a>
+           </li>
+           
            <li id="button_home" class="">
-                <a class="firstlevel" href="/">Home</a>
+                <a class="firstlevel symbolized home" href="/"></a>
            </li>
            <li id="button_about" class="">
               <a class="firstlevel" href="/help/about.html">About</a>
@@ -230,11 +226,11 @@
   <span>21</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2010-04-21T19:57:08+0000">2010-04-21 19:57:08 +0000</time><br />1774 Words
+    Last modified: <time class="timeago" datetime="2010-04-21T19:57:08+0000">2010-04-21 19:57:08 +0000</time><br />1733 Words
 </div>
 <div class="author subheader">
     By Admin&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a> | Wed, 21. 04. 2010, 19:57<br />
-    Reading time: approx. 7 minute(s).
+    Reading time: approx. 6 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
@@ -247,7 +243,7 @@ will most likely contain broken links and/or missing images as it was automatica
 an old blog long gone.</p>
 </div>
 
-<p>A <a href="http://msdn.microsoft.com/en-us/ff625297.aspx">new version of Visual Studio</a> was 
+<p class="dc">A <a href="http://msdn.microsoft.com/en-us/ff625297.aspx">new version of Visual Studio</a> was 
 released recently, so it’s time to talk about it. The 2010 release of this most popular IDE for 
 Microsoft Windows adds a number of new features, a new language (F#), a overhauled WPF based user 
 interface that looks and performs better, multi-monitor support (it was about time) a new browser 
@@ -291,13 +287,16 @@ been adopted. I’m talking about <a href="http://www.wholetomato.com">Visual As
 that aims at developers who need to write large amounts of code and have a strong demand for an 
 improved code editor.</p>
 
-<p style="text-align: justify;">
-  Like any software product, Visual Studio has a few weak points and one of them is, at least in my book, the code editor. While it is not exactly a <em>bad</em> editor, it always feels a bit basic to me in comparison to other editors, like Eclipse CDT or SlickEdit. Visual Studio 2010 introduces a few improvements to the editor with better outlining (the MS term for code folding) and slightly enhanced intellisense functionality.
-</p>
+<p>Like any software product, Visual Studio has a few weak points and one of them is, at least in my 
+book, the code editor. While it is not exactly a <em>bad</em> editor, it always feels a bit basic to 
+me in comparison to other editors, like Eclipse CDT or SlickEdit. Visual Studio 2010 introduces a 
+few improvements to the editor with better outlining (the MS term for code folding) and slightly 
+enhanced intellisense functionality.</p>
 
-<p style="text-align: justify;">
-  Like I wrote in <a href="http://blog.miranda.or.at/development/eclipse-cdt-7-a-preview">this article</a>, I'm a Eclipse fan, simply because Eclipse, in combination with the C++ development tools (CDT), features one of the best code editors you can get. I really like it for its comprehensive code navigation, semantic code highlighting, real time syntax analysis and powerful code assistance.
-</p>
+<p>Like I wrote in <a href="/2010/04/08/eclipse-cdt-7-a-preview/">this article</a>, I’m a Eclipse 
+fan, simply because Eclipse, in combination with the C++ development tools (CDT), features one of 
+the best code editors you can get. I really like it for its comprehensive code navigation, semantic 
+code highlighting, real time syntax analysis and powerful code assistance.</p>
 
 <h2 id="features-the-visual-studio-editor-does-lack-in-my-opinion">Features, the Visual Studio editor does lack in my opinion:</h2>
 
@@ -357,14 +356,19 @@ helpers).</p>
   <strong><span style="color: #ff0000;"><span style="font-size: medium;">Visual Assist X</span></span></strong> adds all these nice features and much more to the editor and works seamlessly throughout Visual Studio. Currently, it supports C/C++, C#, ASP, Visual Basic, HTML, XML, JavaScript and VBScript. It also works in any version of Visual Studio, beginning with version 6 (aka Visual Studio 98) up to version 2008, <strong>except all Express editions </strong>(but this isn't their fault, it is because Express editions do not support this kind of extensions or add-ins).
 </p>
 
-<p>Support for Visual Studio 2010 was added recently and is currently in release candidate state. This is the version I tested on my Visual Studio 2010 installation.</p>
+<p>Support for Visual Studio 2010 was added recently and is currently in release candidate state. This 
+is the version I tested on my Visual Studio 2010 installation.</p>
 
 <p style="text-align: justify;">
   I'm writing this article from the view point of a C++ programmer and while there are competing solutions for C# and other .NET languages (examples: <a href="http://www.jetbrains.com/resharper/">JetBrains Resharper</a> or <a href="http://www.devexpress.com/Products/Visual_Studio_Add-in/Coding_Assistance/">CodeRush</a>), Visual Assist X is really the only major extension that does not ignore C and C++ developers.
 </p>
 
 <p style="text-align: justify;">
-  VA's main job is to improve default intellisense with clever suggestions while you type and this works impressively well. In most cases, you'll just have to type 2 or 3 characters of a variable or function name and hit the TAB key to complete it. This works for local and global variables or functions and instantly at your fingertips. You'll rarely experience delays as Visual Assist performs nicely, even with large projects.
+VA's main job is to improve default intellisense with clever suggestions while you type and this 
+works impressively well. In most cases, you'll just have to type 2 or 3 characters of a variable or 
+function name and hit the TAB key to complete it. This works for local and global variables or 
+functions and instantly at your fingertips. You'll rarely experience delays as Visual Assist 
+performs nicely, even with large projects.
 </p>
 
 <h2 id="clever-tooltips">Clever tooltips</h2>
@@ -393,20 +397,33 @@ helpers).</p>
 </div>
 
 <p style="text-align: justify;">
-  Tooltips are available for almost everything. They will appear when you hover a symbol or identifier and will pop up alongside the list of class/structure members when the auto-list members feature kicks in. The tool tips can be syntax colored, using the same colors as in the editor and may include comments that belong to the symbol or identifier. With syntax coloring, they are easier to read and the included comment(s) provide an additional level of help.
+Tooltips are available for almost everything. They will appear when you hover a symbol or identifier 
+and will pop up alongside the list of class/structure members when the auto-list members feature 
+kicks in. The tool tips can be syntax colored, using the same colors as in the editor and may 
+include comments that belong to the symbol or identifier. With syntax coloring, they are easier to 
+read and the included comment(s) provide an additional level of help.
 </p>
 
 <h2 id="syntax-analysis-on-the-fly-and-a-smarter-editor">Syntax analysis on the fly and a smarter editor</h2>
 
-<p style="text-align: justify;">
-  Visual Assist constantly watches what you type and can mark typing- or simple syntax errors with squiggly red underlines. Several <strong>auto-correct</strong> features are available as you type and their purpose is to correct simple typing errors or support your laziness :). For example, one auto-correct feature will replace a dot with the reference operator (<strong>-&gt;</strong>) when you (wrongly) use the object itself instead of a pointer (or vice versa). Another auto-correction will insert the underline character when you type a small <strong>m</strong> followed by pressing the SHIFT key (typical m_foo member variable).  Case correction is another auto-correct feature which allows you to type a camel case function- or identifier name in all lower case and let the editor correct it while you type.
-</p>
+<p class="dc">Visual Assist constantly watches what you type and can mark typing- or simple syntax errors with 
+squiggly red underlines. Several <strong>auto-correct</strong> features are available as you type 
+and their purpose is to correct simple typing errors or support your laziness :). For example, one 
+auto-correct feature will replace a dot with the reference operator (<strong>-&gt;</strong>) when you 
+(wrongly) use the object itself instead of a pointer (or vice versa). Another auto-correction will 
+insert the underline character when you type a small <strong>m</strong> followed by pressing the 
+SHIFT key (typical m_foo member variable).  Case correction is another auto-correct feature which 
+allows you to type a camel case function- or identifier name in all lower case and let the editor 
+correct it while you type.</p>
 
-<p style="text-align: justify;">
-  Visual Assist can automatically close all types of braces, properly indented of course and it will automatically reformat your code on paste. The latter one is quite handy when you paste larger pieces of code with different indentation levels. No more need to manually reformat the code after some copy/paste operations. By default, matching pairs of braces are highlighted whenever the cursor is between them (unlike in the default editor, which only highlights a matching brace when you position the cursor on its sibling).
-</p>
+<p>Visual Assist can automatically close all types of braces, properly indented of course and it will 
+automatically reformat your code on paste. The latter one is quite handy when you paste larger 
+pieces of code with different indentation levels. No more need to manually reformat the code after 
+some copy/paste operations. By default, matching pairs of braces are highlighted whenever the cursor 
+is between them (unlike in the default editor, which only highlights a matching brace when you 
+position the cursor on its sibling).</p>
 
-<h1 id="additional-views">Additional views</h1>
+<h2 id="additional-views">Additional views</h2>
 
 <div class="floatimage right " style="width:30%; max-width:30%;">
 
@@ -434,39 +451,51 @@ helpers).</p>
 
 </div>
 
-<p style="text-align: justify;">
-  A hover-sensitive class view and a structured outline view are available as additional dockable windows. The first one is somewhat similar to the default class view, but offers a bit more features, while the second one presents the current file in a structured tree view with all the symbols, declarations and methods.
-</p>
+<p class="dc">A hover-sensitive class view and a structured outline view are available as additional dockable 
+windows. The first one is somewhat similar to the default class view, but offers a bit more 
+features, while the second one presents the current file in a structured tree view with all the 
+symbols, declarations and methods.</p>
 
-<p style="text-align: justify;">
-  VA offers an improved navigation bar that can replace the default Visual Studio combo box bar at the top of the editor window. The VA version has more features, presents all content with syntax coloring and allows for easy search operations. It is the perfect companion for the new <em>"Navigate To..."</em> feature of Visual Studio 2010.
-</p>
+<p>VA offers an improved navigation bar that can replace the default Visual Studio combo box bar at the 
+top of the editor window. The VA version has more features, presents all content with syntax 
+coloring and allows for easy search operations. It is the perfect companion for the new 
+<em>“Navigate To…”</em> feature of Visual Studio 2010.</p>
 
 <h2 id="refactoring">Refactoring</h2>
 
-<p style="text-align: justify;">
-  No matter how good Visual Studio is in some areas, its code refactoring tools are poor and Visual Studio 2010 doesn't improve in that area. Not really a surprise that VA fixes most of these weaknesses as it offers <a href="http://www.wholetomato.com/products/featureRefactoring.asp">all basic refactoring functionality</a>. Doing some tests with a medium sized C++ project, I found no problems in the basic refactoring functionality.
-</p>
+<p class="dc">No matter how good Visual Studio is in some areas, its code refactoring tools are poor and Visual 
+Studio 2010 doesn’t improve in that area. Not really a surprise that VA fixes most of these 
+weaknesses as it offers <a href="http://www.wholetomato.com/products/featureRefactoring.asp">all 
+basic refactoring functionality</a>. Doing some tests with a medium sized C++ project, I found no 
+problems in the basic refactoring functionality.</p>
 
 <h2 id="much-more">Much more</h2>
 
-<p style="text-align: justify;">
-  Here is <a href="http://www.wholetomato.com/products/default.asp">the complete feature matrix</a> which looks quite impressive. Note that Visual Assist is also highly customizable. Most features can be enabled or disabled selectively, and some more complex features have options to make them work exactly the way you want.
-</p>
+<p class="dc">Here is <a href="http://www.wholetomato.com/products/default.asp">the complete feature matrix</a> 
+which looks quite impressive. Note that Visual Assist is also highly customizable. Most features can 
+be enabled or disabled selectively, and some more complex features have options to make them work 
+exactly the way you want.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p style="text-align: justify;">
-  For C++ developers using Visual Studio, this product is almost a must have. It brings the code editor of Visual Studio to a new level of usability and make it compare to or even surpass other excellent code editors like <a href="http://www.slickedit.com">SlickEdit</a> or Eclipse. Working with Visual Assist is almost always a pleasant experience - it doesn't stand in your way but simply works when you need it and you never get the feeling you have to fight the IDE to get some work done. Despite its vast amount of features, it performs nicely and I have not noticed significant performance penalties compared to a vanilla Visual Studio installation. In fact, some of its functions, like the "Find references" tool work faster than its default Visual Studio counterpart. Also, when using Visual Assist, you can disable some of Visual Studio's database functions to regain some speed, because VA maintains its own code database which appears to be much more efficiently designed than the intellisense database.
-</p>
+<p class="dc">For C++ developers using Visual Studio, this product is almost a must have. It brings the code 
+editor of Visual Studio to a new level of usability and make it compare to or even surpass other 
+excellent code editors like <a href="http://www.slickedit.com">SlickEdit</a> or Eclipse. Working 
+with Visual Assist is almost always a pleasant experience - it doesn’t stand in your way but simply 
+works when you need it and you never get the feeling you have to fight the IDE to get some work 
+done. Despite its vast amount of features, it performs nicely and I have not noticed significant 
+performance penalties compared to a vanilla Visual Studio installation. In fact, some of its 
+functions, like the “Find references” tool work faster than its default Visual Studio counterpart. 
+Also, when using Visual Assist, you can disable some of Visual Studio’s database functions to regain 
+some speed, because VA maintains its own code database which appears to be much more efficiently 
+designed than the intellisense database.</p>
 
-<p style="text-align: justify;">
-  If you are not convinced by this article, there is a 30 day trial offer which you can download from <a href="http://www.wholetomato.com/downloads/downloadTrial.asp">WholeTomato's website</a>. Be warned though, once you get used to it, you will develop a strong affinity to it and you will definitely miss it when the trial period is over.
-</p>
+<p>If you are not convinced by this article, there is a 30 day trial offer which you can download from 
+<a href="http://www.wholetomato.com/downloads/downloadTrial.asp">WholeTomato’s website</a>. Be 
+warned though, once you get used to it, you will develop a strong affinity to it and you will 
+definitely miss it when the trial period is over.</p>
 
-<p style="text-align: justify; padding-left: 30px;">
-  <span style="font-size: medium;"><strong><span style="color: #800000;"><span style="font-size: large;">+ Pros</span></span></strong></span>
-</p>
+<p><span style="font-size: medium;"><strong><span style="color: #800000;"><span style="font-size:  large;">+ Pros</span></span></strong></span></p>
 
 <ul>
   <li>
@@ -489,9 +518,7 @@ helpers).</p>
   </li>
 </ul>
 
-<p style="padding-left: 30px;">
-  <strong><span style="color: #800000;"><span style="font-size: large;">- Cons</span></span></strong>
-</p>
+<p><strong><span style="color: #800000;"><span style="font-size: large;">- Cons</span></span></strong></p>
 
 <ul>
   <li>Hard to find any in the implemented set of features, so I have to file the - in my opinion - 
@@ -505,7 +532,7 @@ logical.</li>
 
 <h2 id="price--availability">Price / Availability</h2>
 
-<p>The standard license goes for about $250 for a single seat which includes 1 year of support and free 
+<p class="dc">The standard license goes for about $250 for a single seat which includes 1 year of support and free 
 upgrades (with possible discounts when ordering for multiple seats). After that, you can 
 (optionally) renew the license for $99 per year which will give you support and upgrades. For 
 non-professional users, they offer a $99 personal license which includes 6 months of support and 
