@@ -1,6 +1,7 @@
 <header class="minimal">
   <dl>
-  <dt><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></dt>
+      <dt><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></dt>
+      <dd style="display:none"></dd>
   </dl>
     <div class="share_buttons header min sb-iconic">
     <a class="sbutton contrast min b-twitter" title="Twitter" href="{{site.data.social_profiles.twitter}}">
@@ -19,7 +20,7 @@
         <i aria-hidden="true"></i>
         <span>Google+</span>
     </a>
-    <a class="sbutton contrast min b-email" title="email" href="mailto:?to={{site.data.social_profiles.email}}&amp;subject=Site_Feedback {{page.url | absolute_url}} ({{page.title}})">
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to={{site.data.social_profiles.email}}&amp;subject=Site_Feedback:{{page.url | absolute_url}}">
         <i></i>
         <span>Email</span>
     </a>

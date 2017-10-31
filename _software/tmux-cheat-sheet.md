@@ -12,7 +12,7 @@ disqus: 1
 share: 1
 excerpt: >
     A quick and dirty compilation of keyboard shortcuts for tmux. Forked from a [public 
-    gist](MohamedAlaa/tmux-cheatsheet.markdown).
+    gist](https://gist.github.com/MohamedAlaa/2961058).
     <br>
     <br>
     Keep in mind that all keyboard commands are customizable, but in most cases, only the prefix is 
@@ -22,7 +22,9 @@ excerpt: >
 {% include post_header.html %}
 {% include defs.md %}
 
-**Keyboard shortcuts for tmux. Forked from a [public gist](MohamedAlaa/tmux-cheatsheet.markdown).**
+**Keyboard shortcuts for tmux. Forked from a [public 
+gist](https://gist.github.com/MohamedAlaa/2961058).**
+
 
 <script src="https://gist.github.com/silvercircle/3aa35971d43f67db6ef1f4cf036eec7c.js"></script>
 

@@ -1,5 +1,5 @@
 ---
-title: Visualize commit history of a project under version control
+title: Visualize the commit history of a project under version control
 date: 2017-10-26T14:10:00+02:00
 modified: 2017-10-26T14:10:00+02:00
 author: AlexVie
@@ -37,12 +37,12 @@ structure of a project, it creates a tree-like structure, presenting directories
 files as leaves. Activity in the project animates the tree - branches or leaves move when there is 
 activity and disappear after they had been inactive for a while. Developers (people who commit 
 changes to the project) can be seen moving along the branches of the tree, indicating which parts of 
-the project they modified.
+the project they modified during a commit.
 {:dc}
 
 Various eye candy like bloom and glow effects are used to further enhance the animation and indicate 
-activity in the project tree.
-
+activity in the project tree. The output can be controlled in many ways and you can choose the 
+branch to display and specify a time range in form of start and end dates.
 ## Produce videos
 
 By default, gource shows its animations in a desktop window (optionally, full screen) and cannot 
@@ -61,7 +61,7 @@ gource -1280x720 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec l
        ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource_out.mp4
 ```
 
-While playing around with it, I've made a video, showing approximately one months of activity in the 
+While playing around with it, I've made a video, showing approximately one month of activity in the 
 GitHub repository of this web page. The result is not as exciting as the demo videos on the 
 project's home page, but since there are quite some options to choose from, it's probably just 
 because I do not yet know how to take most advantage of all the parameters[^small].

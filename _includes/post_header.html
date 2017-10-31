@@ -1,6 +1,6 @@
 {% assign words = page.content | number_of_words %}
 <time style="margin-top:-30px;" datetime="{{page.date | date: '%Y-%m-%dT%H:%M:%S%z'}}" class="icon">
-    <em>{{page.date | date: '%B'}}</em>
+  <em>{{page.date | date: '%b'}}.&nbsp;&nbsp;{{page.date | date: '%Y'}}</em>
   <strong>{{page.date | date: '%A'}}</strong>
   <span>{{page.date | date: '%d'}}</span>
 </time>
@@ -8,7 +8,7 @@
     Last modified: <time class="timeago" datetime="{{page.modified | date: '%Y-%m-%dT%H:%M:%S%z'}}">{{page.modified}}</time><br>{{words}} Words
 </div>
 <div class="author subheader">
-    By {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %} | {{page.date | date: '%a, %d. %m. %Y, %H:%M'}}<br>
+    <!--<span class="year">{{page.date | date: '%Y'}}</span> at --><span class="time_symbol"></span><span class="time">{{page.date | date: '%H:%M'}}</span> | by {{page.author}}{% if page.categories %}{% for cat in page.categories %}{% if forloop.first %}&nbsp;in&nbsp;{% endif %}<a href="{{site.baseurl}}/category/{{cat | strip | strip_html | downcase}}/index.html">{{cat | strip | strip_html}}</a>{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}{% endif %}<br>
     Reading time: approx. {{words | divided_by: 250}} minute(s).
 </div>
 <div class="clearfix"></div>

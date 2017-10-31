@@ -24,8 +24,8 @@ excerpt: >
 {% include post_header.html %}
 {% include defs.md %}
 
-Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in 
-most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
+Under certain configurations, the *Home*, *End* and *Delete* keys will insert arbitrary characters 
+(in most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
 wrong or missing keyboard configuration and easy to fix by adding a few lines to the `.zshrc.`
 {:dc}
 

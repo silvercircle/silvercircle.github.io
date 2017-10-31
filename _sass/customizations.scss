@@ -184,6 +184,17 @@ div.author.subheader {
     color: $subheader_color !important;
 }
 
+div.author.subheader span.year {
+    font-weight: bold;
+    font-size: #{$author_font_size + 5}px !important;
+    color: black;
+}
+
+div.author.subheader span.time {
+    font-weight: bold;
+    color: green;
+}
+
 .img_overlay_indicator, .tt_closebutton {
     font: normal normal normal 24px/1 FontAwesome !important;
     text-rendering: auto;
@@ -199,6 +210,16 @@ div.author.subheader {
 }
 .img_overlay_indicator:before {
     content: "\f05a";
+}
+
+span.time_symbol {
+    font: normal normal normal 15px/1 FontAwesome !important;
+    color: black;
+    margin: 0 2px 0 0;
+}
+
+span.time_symbol:before {
+    content: "\f017";
 }
 
 .tt_closebutton {
@@ -492,7 +513,7 @@ time.icon em
   bottom: 0;
   color: black;
   font-size: 10pt;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 time.icon span

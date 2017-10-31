@@ -3,10 +3,11 @@
 {% else %}
     {% capture full_url %}{{site.url}}{{site.baseurl}}{{page.url}}{% endcapture %}
 {% endif %}
+{% assign this_title = page.title | uri_escape %}
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url={{full_url}}&amp;text={{page.title}}">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url={{full_url}}&amp;text={{this_title}}">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
@@ -18,23 +19,23 @@
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url={{full_url}}&amp;title={{page.title}}">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url={{full_url}}&amp;title={{this_title}}">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url={{full_url}}&amp;description={{page.title}}">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url={{full_url}}&amp;description={{this_title}}">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{full_url}}&amp;title={{page.title}}">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{full_url}}&amp;title={{this_title}}">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject={{page.title}}&amp;body={{full_url}}">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject={{this_title}}&amp;body={{full_url}}">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text={{page.title}}&nbsp;{{full_url}}">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text={{this_title}}&nbsp;{{full_url}}">
     <i></i>
     <span>WhatsApp</span>
 </a>
