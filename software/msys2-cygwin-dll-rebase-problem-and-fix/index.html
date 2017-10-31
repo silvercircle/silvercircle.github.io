@@ -24,9 +24,9 @@
 <meta property="og:url" content="https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-18T01:33:37+02:00" />
+<meta property="article:published_time" content="2017-10-18T00:33:37+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Sometimes, when launching new programs under Cygwin or MSYS2, you may encounter an error like this: 0 [main] zsh 8712 child_info_fork::abort: address space needed by ‘datetime.dll’ (0x3F0000) is already occupied This means, a by default non-rebaseable DLL cannot be loaded into the address space it wants to go.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/","publisher":null,"image":null,"headline":"Fix DLL rebasing problems in Cygwin and MSYS2","dateModified":"2017-10-18T01:33:37+02:00","datePublished":"2017-10-18T01:33:37+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Sometimes, when launching new programs under Cygwin or MSYS2, you may encounter an error like this: 0 [main] zsh 8712 child_info_fork::abort: address space needed by ‘datetime.dll’ (0x3F0000) is already occupied This means, a by default non-rebaseable DLL cannot be loaded into the address space it wants to go.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/","publisher":null,"image":null,"headline":"Fix DLL rebasing problems in Cygwin and MSYS2","dateModified":"2017-10-18T00:33:37+01:00","datePublished":"2017-10-18T00:33:37+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -56,7 +56,8 @@
     </div>
     <header class="minimal">
   <dl>
-  <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dd style="display:none"></dd>
   </dl>
     <div class="share_buttons header min sb-iconic">
     <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
@@ -75,7 +76,7 @@
         <i aria-hidden="true"></i>
         <span>Google+</span>
     </a>
-    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/ (Fix DLL rebasing problems in Cygwin and MSYS2)">
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
         <i></i>
         <span>Email</span>
     </a>
@@ -217,7 +218,7 @@
         <h1 id="fix-the-dll-rebasing-problem-in-cygwin--msys2">Fix the DLL (re)basing problem in Cygwin / MSYS2</h1>
 
 <time style="margin-top:-30px;" datetime="2017-10-18T01:33:37+0200" class="icon">
-    <em>October</em>
+  <em>Oct.&nbsp;&nbsp;2017</em>
   <strong>Wednesday</strong>
   <span>18</span>
 </time>
@@ -225,7 +226,7 @@
     Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />425 Words
 </div>
 <div class="author subheader">
-    By AlexVie | Wed, 18. 10. 2017, 01:33<br />
+    <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">01:33</span> | by AlexVie<br />
     Reading time: approx. 1 minute(s).
 </div>
 <div class="clearfix"></div>
@@ -292,10 +293,11 @@ will try to re-base every executable file that is marked as re-baseable.</p>
 
         
             
+
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;text=Fix DLL rebasing problems in Cygwin and MSYS2">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;text=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
@@ -307,23 +309,23 @@ will try to re-base every executable file that is marked as re-baseable.</p>
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix DLL rebasing problems in Cygwin and MSYS2">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;description=Fix DLL rebasing problems in Cygwin and MSYS2">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;description=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix DLL rebasing problems in Cygwin and MSYS2">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/&amp;title=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Fix DLL rebasing problems in Cygwin and MSYS2&amp;body=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2&amp;body=https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Fix DLL rebasing problems in Cygwin and MSYS2&nbsp;https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Fix%20DLL%20rebasing%20problems%20in%20Cygwin%20and%20MSYS2&nbsp;https://silvercircle.github.io/software/msys2-cygwin-dll-rebase-problem-and-fix/">
     <i></i>
     <span>WhatsApp</span>
 </a>

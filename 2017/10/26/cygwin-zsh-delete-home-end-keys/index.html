@@ -20,13 +20,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc." />
 <meta property="og:description" content="Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc." />
-<link rel="canonical" href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/" />
-<meta property="og:url" content="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/" />
+<link rel="canonical" href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" />
+<meta property="og:url" content="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-26T15:09:07+02:00" />
+<meta property="article:published_time" content="2017-10-26T14:09:07+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/","publisher":null,"image":null,"headline":"Cygwin and ZSH - Delete, Home and End keys","dateModified":"2017-10-26T15:09:07+02:00","datePublished":"2017-10-26T15:09:07+02:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/","publisher":null,"image":null,"headline":"Cygwin and ZSH - Delete, Home and End keys","dateModified":"2017-10-26T14:09:07+01:00","datePublished":"2017-10-26T14:09:07+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -56,7 +56,8 @@
     </div>
     <header class="minimal">
   <dl>
-  <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dd style="display:none"></dd>
   </dl>
     <div class="share_buttons header min sb-iconic">
     <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
@@ -75,7 +76,7 @@
         <i aria-hidden="true"></i>
         <span>Google+</span>
     </a>
-    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/ (Cygwin and ZSH - Delete, Home and End keys)">
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">
         <i></i>
         <span>Email</span>
     </a>
@@ -221,7 +222,7 @@
         <h1 id="cygwin-and-zsh---delete-home-and-end-keys">Cygwin and ZSH - Delete, Home and End keys</h1>
 
 <time style="margin-top:-30px;" datetime="2017-10-26T15:09:07+0200" class="icon">
-    <em>October</em>
+  <em>Oct.&nbsp;&nbsp;2017</em>
   <strong>Thursday</strong>
   <span>26</span>
 </time>
@@ -229,14 +230,14 @@
     Last modified: <time class="timeago" datetime="2017-10-26T15:09:18+0200">2017-10-26 15:09:18 +0200</time><br />150 Words
 </div>
 <div class="author subheader">
-    By AlexVie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a> | Thu, 26. 10. 2017, 15:09<br />
+    <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">15:09</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a><br />
     Reading time: approx. 0 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p class="dc">Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in 
-most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
+<p class="dc">Under certain configurations, the <em>Home</em>, <em>End</em> and <em>Delete</em> keys will insert arbitrary characters 
+(in most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
 wrong or missing keyboard configuration and easy to fix by adding a few lines to the <code class="highlighter-rouge">.zshrc.</code></p>
 
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># ctrl-left and ctrl-right</span>
@@ -272,42 +273,43 @@ configured sequences for deleting the next and previous words.</p>
 
         
             
+
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/&amp;text=Cygwin and ZSH - Delete, Home and End keys">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/&amp;text=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/">
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">
     <i aria-hidden="true"></i>
     <span>Facebook</span>
 </a>
-<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/">
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/&amp;title=Cygwin and ZSH - Delete, Home and End keys">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/&amp;title=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/&amp;description=Cygwin and ZSH - Delete, Home and End keys">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/&amp;description=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/&amp;title=Cygwin and ZSH - Delete, Home and End keys">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/&amp;title=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Cygwin and ZSH - Delete, Home and End keys&amp;body=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys&amp;body=https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Cygwin and ZSH - Delete, Home and End keys&nbsp;https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Cygwin%20and%20ZSH%20-%20Delete,%20Home%20and%20End%20keys&nbsp;https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">
     <i></i>
     <span>WhatsApp</span>
 </a>
-<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/" title="Copy link to clipboard">
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>
@@ -320,7 +322,7 @@ configured sequences for deleting the next and previous words.</p>
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-hom-end-keys/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = "https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/";  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = "ALEXVIE#@#2017-10-26 15:09:07 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
