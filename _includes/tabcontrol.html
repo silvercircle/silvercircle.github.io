@@ -1,0 +1,12 @@
+<div class="tabcontrol container">
+    <ul class="tabcontrol tabs">
+        {% for tab in include.tabs %}
+            <li class="tabcontrol tab {{tab[1].class}}" data-name="{{tab[1].name}}" data-target="tab_{{include.id}}" data-source="{{tab[1].source}}">
+                {{tab[1].title}}
+            </li>
+        {% endfor %}
+    </ul>
+    <div id="tab_{{include.id}}" class="tabcontrol body" data-defaultsource="{{include.default}}">
+    </div>
+</div>
+

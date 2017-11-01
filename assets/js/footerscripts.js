@@ -608,4 +608,14 @@ $(document).ready(function(){
             return true;
         }
     });
+
+    $('div.tabcontrol.body').each(function() {
+        $(this).html($('#' + $(this).data('defaultsource')).html());
+    });
+
+    $('li.tabcontrol.tab').click(function() {
+        $('#' + $(this).data('target')).html( $('#' + $(this).data('source')).html());
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
 });

@@ -1,6 +1,9 @@
 div.clear {
     clear: both;
 }
+.hidden {
+    display:none;
+}
 
 figure.highlight {
     margin: 0 5px 1em 0;
@@ -184,12 +187,6 @@ div.author.subheader {
     color: $subheader_color !important;
 }
 
-div.author.subheader span.year {
-    font-weight: bold;
-    font-size: #{$author_font_size + 5}px !important;
-    color: black;
-}
-
 div.author.subheader span.time {
     font-weight: bold;
     color: green;
@@ -215,7 +212,7 @@ div.author.subheader span.time {
 span.time_symbol {
     font: normal normal normal 15px/1 FontAwesome !important;
     color: black;
-    margin: 0 2px 0 0;
+    margin: 0 4px 0 0;
 }
 
 span.time_symbol:before {
@@ -533,5 +530,46 @@ div.listentry.header {
     margin-bottom: 10px;
     padding: 0 10px 5px 0;
     border-bottom: 3px solid #ccc;
+}
+
+ul.tabcontrol.tabs {
+    margin: 0;
+    height: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $lightgrey;
+}
+
+ul.tabcontrol.tabs li.tab {
+    float:left;
+    padding:3px 5px;
+    cursor: pointer;
+    list-style-type: none;
+    border: 1px solid $lightgrey;
+    border-bottom: none;
+    box-sizing: border-box;
+    height: 25px;
+    background: white;
+    margin-right: 2px;
+}
+
+ul.tabcontrol.tabs li.tabcontrol.tab.active {
+    height: 26px;
+}
+
+ul.tabcontrol.tabs li.tabcontrol.tab:first-child {
+    border-left: 1px solid $lightgrey;
+}
+
+div.tabcontrol.body {
+    border: 1px solid $lightgrey;
+    border-top: none;
+    padding: 4px;
+}
+
+div.tabcontrol.body p:last-child, div.tabcontrol.body ul:last-child {
+    margin-bottom: 0;
+}
+
+div.tabcontrol.container {
 }
 
