@@ -160,7 +160,7 @@ div.floatbox.ruled {
     padding: 3px;
 }
 
-div.floatbox p, div.floatbox li {
+div.floatbox.sans p, div.floatbox.sans li {
     font-family: $sans_font, sans-serif !important;
     font-size: $floatbox_fontsize !important;
     color: $floatbox_color !important;

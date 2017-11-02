@@ -534,7 +534,7 @@ div.listentry.header {
 
 ul.tabcontrol.tabs {
     margin: 0;
-    height: 26px;
+    height: 25px;
     box-sizing: border-box;
     border-bottom: 1px solid $lightgrey;
 }
@@ -547,13 +547,20 @@ ul.tabcontrol.tabs li.tab {
     border: 1px solid $lightgrey;
     border-bottom: none;
     box-sizing: border-box;
-    height: 25px;
+    height: 24px;
     background: white;
     margin-right: 2px;
+    font-family: $sans_font !important;
+    font-size: 10pt !important;
+    line-height: 100% !important;
+    border-radius: 2px 2px 0 0;
 }
 
 ul.tabcontrol.tabs li.tabcontrol.tab.active {
-    height: 26px;
+    height: 28px;
+    font-weight: bold !important;
+    margin-top: -3px;
+    border-top: 3px solid blue;
 }
 
 ul.tabcontrol.tabs li.tabcontrol.tab:first-child {
@@ -561,9 +568,13 @@ ul.tabcontrol.tabs li.tabcontrol.tab:first-child {
 }
 
 div.tabcontrol.body {
+    padding: 0;
+}
+
+div.tabcontrol.body.fullborder {
     border: 1px solid $lightgrey;
     border-top: none;
-    padding: 4px;
+    padding: 10px;
 }
 
 div.tabcontrol.body p:last-child, div.tabcontrol.body ul:last-child {
