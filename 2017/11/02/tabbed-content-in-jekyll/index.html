@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Creating a simple tab control in Jekyll | silvercircle/github/io</title>
+<meta property="og:title" content="Creating a simple tab control in Jekyll" />
+<meta name="author" content="Alex Vie" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll’s." />
+<meta property="og:description" content="A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll’s." />
+<link rel="canonical" href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" />
+<meta property="og:url" content="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" />
+<meta property="og:site_name" content="silvercircle/github/io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-11-02T16:38:51+01:00" />
+<script type="application/ld+json">
+{"name":null,"description":"A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll’s.","author":{"@type":"Person","name":"Alex Vie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/","publisher":null,"image":null,"headline":"Creating a simple tab control in Jekyll","dateModified":"2017-11-02T16:38:51+01:00","datePublished":"2017-11-02T16:38:51+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <style>
+        nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
+            margin-left: 72px !important;
+        }
+    </style>
+    
+  </head>
+  <body>
+    <script>
+          var _r_sidebar = false;
+    </script>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality.<br>
+        No cookie used by this website will contain personalized information or will be used to identify or contact you.<br>
+        <br>
+        By clicking <strong>Allow cookies</strong> you give your permission to this website to store small bits of unpersonalized data on your device.<br>
+        If you cannot agree with the above and do not want cookies to be stored in your browser, please leave this site now.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
+    <header class="minimal">
+  <dl>
+      <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dd style="display:none"></dd>
+  </dl>
+    <div class="share_buttons header min sb-iconic">
+    <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+        <i aria-hidden="true"></i>
+        <span>Twitter</span>
+    </a>
+    <a class="sbutton contrast min b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+        <i aria-hidden="true"></i>
+        <span>Facebook</span>
+    </a>
+    <a class="sbutton contrast min b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-github" title="GitHub" href="https://github.com/silvercircle">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">
+        <i></i>
+        <span>Email</span>
+    </a>
+    </div>
+</header>
+
+
+
+    <div class="menubar_wrapper">
+      <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
+      <nav>
+          	     <div id = "main_menu">
+           <ul id="menu_nav" class="dropmenu menu">
+           
+           <li id="button_backlink">
+            <a class="firstlevel symbolized backlink" href="https://silvercircle.github.io/blog/"></a>
+           </li>
+           
+           <li id="button_home" class="">
+                <a class="firstlevel symbolized home" href="/"></a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+              
+               <li><a href="/category/development/"><span>Development</span></a></li>
+              
+               <li><a href="/category/fun/"><span>Fun</span></a></li>
+              
+               <li><a href="/category/c++/"><span>C++</span></a></li>
+              
+               <li><a href="/category/entertainment/"><span>Entertainment</span></a></li>
+              
+               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
+              
+               <li><a href="/category/site/"><span>Site</span></a></li>
+              
+               <li><a href="/category/got/"><span>GoT</span></a></li>
+              
+               <li><a href="/category/fun/"><span>fun</span></a></li>
+              
+               <li><a href="/category/qt/"><span>Qt</span></a></li>
+              
+               <li><a href="/category/travel/"><span>Travel</span></a></li>
+              
+              </ul>
+              -->
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+                <li>
+                  <a href="/got-theories/"><span>Game of Thrones</span></a>
+                </li>
+              </ul>
+          </li>
+          
+        </ul>
+       </div>
+
+
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
+                </div>
+                <div title="Recently modified or added" class="vmenu_button star" data-target="/sys/sbar_recent/">
+                <label>RECENT</label> 
+                </div>
+                <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+                
+                
+                <div title="More in this category" class="vmenu_button category" data-target="/category/jekyll/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                
+                <div title="On-site and external Links" class="vmenu_button links" data-target="/sys/sbar_links/">
+                <label>LINKS</label> 
+                </div>
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg ">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <article id="main-content" class="dynlayout">
+        <div class="reduce big">
+        <h1 id="creating-a-simple-tab-control-in-jekyll">Creating a simple tab control in Jekyll</h1>
+
+<time style="margin-top:-30px;" datetime="2017-11-02T16:38:51+0100" class="icon">
+  <em>Nov.&nbsp;&nbsp;2017</em>
+  <strong>Thursday</strong>
+  <span>02</span>
+</time>
+<div class="author subheader" style="float:right;text-align:right;">
+    Last modified: <time class="timeago" datetime="2017-11-02T16:38:59+0100">2017-11-02 16:38:59 +0100</time><br />1309 Words
+</div>
+<div class="author subheader">
+    <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">16:38</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/jekyll/index.html">Jekyll</a><br />
+    Reading time: approx. 5 minute(s).
+</div>
+<div class="clearfix"></div>
+<hr style="margin-top:2px;" />
+
+<p class="dc">This is liquid template fragment that builds a tab control in a Jekyll page. It is supported by CSS 
+and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain an 
+arbitrary number of tabs. Multiple tab controls on a single page are possible.</p>
+
+<p>Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
+other static site generators or even plain old-school HTML.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabcontrol container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tabcontrol tabs"</span> <span class="na">style=</span><span class="s">"{{include.headerstyle}}"</span><span class="nt">&gt;</span>
+        {% for tab in include.tabs %}
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tabcontrol tab {% if {tab[1].active %}active{% endif %}"</span> <span class="na">data-name=</span><span class="s">"{{tab[1].name}}"</span> <span class="na">data-target=</span><span class="s">"tab_{{include.id}}"</span> <span class="na">data-source=</span><span class="s">"{{include.id}}__{{tab[1].source}}"</span><span class="nt">&gt;</span>
+                {{tab[1].title}}
+            <span class="nt">&lt;/li&gt;</span>
+            {% if tab[1].active %}
+                {% assign defaultsource = tab[1].source %}
+            {% endif %}
+            {% if tab[1].content %}
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"{{include.id}}__{{tab[1].source}}"</span> <span class="na">class=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>
+                {{tab[1].content | markdownify }}
+            <span class="nt">&lt;/div&gt;</span>
+            {% endif %}
+        {% endfor %}
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab_{{include.id}}"</span> <span class="na">class=</span><span class="s">"tabcontrol body {{include.bodyclass}}"</span> <span class="na">style=</span><span class="s">"{{include.bodystyle}}"</span> <span class="na">data-defaultsource=</span><span class="s">"{{include.id}}__{{defaultsource}}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="list-of-parameters-the-include-fragment-can-accept">List of parameters the include fragment can accept:</h2>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">id</code> - mandatory: A DOM id for the body container. Must be unique and will be used as prefix for 
+all source elements..</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">tabs</code> - mandatory: An array of data elements that defines the tabs. If it’s part of the page’s 
+front matter, it must be specified as <code class="highlighter-rouge">page.foo</code>.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">headerstyle</code> - optional: valid CSS attributes and values for the tab control header (the <code class="highlighter-rouge">ul</code> 
+item containing the tabs). This will directly be passed as <code class="highlighter-rouge">style</code> attribute and should be 
+formatted like the content for such an attribute.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">bodystyle</code> - optional: Same as above, but for the body element (the container for the content)..</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">bodyclass</code> - optional: Additional CSS class for the body element.</p>
+  </li>
+</ul>
+
+<h2 id="how-to-define-tabs">How to define tabs</h2>
+
+<p class="dc">Tabs are defined as an array of YAML data items. They can be part of the document’s front matter or 
+reside under Jekyll’s <code class="highlighter-rouge">_data</code> directory, accessible via the <code class="highlighter-rouge">site.data</code> name space. This method 
+allows to define tab controls as re-usable components with the content either defined in the data 
+file OR in your page. It’s flexible enough to even mix content from the data file with content 
+defined in the page.</p>
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">tabs</span><span class="pi">:</span>
+    <span class="s">tab1</span><span class="pi">:</span>
+        <span class="s">name</span><span class="pi">:</span> <span class="s">foo</span>
+        <span class="s">title</span><span class="pi">:</span> <span class="s">Page One</span>
+        <span class="s">source</span><span class="pi">:</span> <span class="s">source1</span>
+    <span class="s">tab2</span><span class="pi">:</span>
+        <span class="s">name</span><span class="pi">:</span> <span class="s">bar</span>
+        <span class="s">title</span><span class="pi">:</span> <span class="s">Page Two</span>
+        <span class="s">source</span><span class="pi">:</span> <span class="s">source2</span>
+        <span class="s">content</span><span class="pi">:</span> <span class="pi">&gt;</span>
+            <span class="no">## Headline</span>
+
+            <span class="no">This is the content of the second tab, it is defined in the frontmatter as **markdown**.</span>
+
+            <span class="no">A Link: [link](https://foo.bar.org)</span>
+    <span class="s">tab3</span><span class="pi">:</span>
+        <span class="s">name</span><span class="pi">:</span> <span class="s">baz</span>
+        <span class="s">title</span><span class="pi">:</span> <span class="s">Page Three</span>
+        <span class="s">active</span><span class="pi">:</span> <span class="s">1</span>
+        <span class="s">source</span><span class="pi">:</span> <span class="s">source3</span>
+</code></pre>
+</div>
+<p>The root element (<code class="highlighter-rouge">page.tabs</code> in our case) is then passed to the include fragment which will iterate 
+over the array generating the HTML code. The <code class="highlighter-rouge">title</code> is what will appear on the tabs and <code class="highlighter-rouge">source</code> 
+specifies the DOM element id that contains the HTML content for that tab. These elements should be 
+<code class="highlighter-rouge">DIVs</code> of class <code class="highlighter-rouge">hidden</code> (the <em>display</em> attribute must be set to <em>none</em>, because they are not 
+supposed to show up in the document).</p>
+
+<h2 id="the-default-page-that-should-be-visible-on-page-load">The default page that should be visible on page load</h2>
+
+<p class="dc">The default tab must be specified using the <code class="highlighter-rouge">active</code> attribute. The value does not matter and can be 
+anything as it is just checked for presence. If multiple tabs define the <code class="highlighter-rouge">active</code> attribute, the 
+last one will take precedence. In our example above, <code class="highlighter-rouge">tab3</code> will be the default.</p>
+<h2 id="how-to-set-the-content-for-a-tab-page">How to set the content for a tab page</h2>
+
+<p class="dc">You can either include the DOM element in your markdown page, OR use the <code class="highlighter-rouge">content</code> property in which 
+case, the DOM element will be created automatically with the given identifier. The <code class="highlighter-rouge">source</code> <strong>must 
+always be present</strong> and <strong>will automatically be prefixed with the ID followed by two underscores</strong>. 
+The <code class="highlighter-rouge">content</code> attribute can contain valid HTML and markdown and will be fed through <code class="highlighter-rouge">markdownify</code>.</p>
+
+<p>To support multiple tab controls from the same template on a single page, the DOM ids for source 
+elements are always prefixed with the id of the control (this is what is passed to the include in 
+the <code class="highlighter-rouge">id</code> parameter), followed by two underscores.</p>
+
+<h4 id="example">Example</h4>
+
+<p>Assume the YAML <code class="highlighter-rouge">source</code> property for a tab specifies <code class="highlighter-rouge">source1</code>, then the element ID you use in the 
+document <em>must</em> be <code class="highlighter-rouge">id__source1</code> where <code class="highlighter-rouge">id</code> is what you pass to to <code class="highlighter-rouge">tabcontrol.html</code> via the <code class="highlighter-rouge">id</code> 
+parameter. This is <strong>case sensitive</strong>.</p>
+
+<h4 class="dc" id="this-is-how-such-a-source-element-should-look-like">This is how such a source element should look like:</h4>
+
+<p>Assuming, the id of the tab control is <strong>foo</strong> and the tab definition defines <code class="highlighter-rouge">source</code> as 
+<strong>source3</strong>:</p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden"</span> <span class="na">id=</span><span class="s">"foo__source3"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+## This is source element #3
+
+The content for tab page 3.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="the-minimum-css">The (minimum) CSS</h2>
+
+<p class="dc">This is the bare bone CSS necessary for basic styling. Since the include allows you to pass 
+additional classes for the tab control and body elements, you can easily expand the styling. Also, 
+the include accepts <code class="highlighter-rouge">headerstyle</code> and <code class="highlighter-rouge">bodystyle</code> arguments, which must contain valid CSS and will 
+be used as content for the <code class="highlighter-rouge">style</code> attribute.</p>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">ul</span><span class="nc">.tabcontrol.tabs</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="err">$</span><span class="no">lightgrey</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.tabcontrol.tabs</span> <span class="nt">li</span><span class="nc">.tab</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span><span class="nb">left</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span><span class="m">3px</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+    <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="err">$</span><span class="no">lightgrey</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="err">$</span><span class="n">sans_font</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">10pt</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">100%</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">2px</span> <span class="m">2px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.tabcontrol.tabs</span> <span class="nt">li</span><span class="nc">.tabcontrol.tab.active</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">28px</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">-3px</span><span class="p">;</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span><span class="nc">.tabcontrol.tabs</span> <span class="nt">li</span><span class="nc">.tabcontrol.tab</span><span class="nd">:first-child</span> <span class="p">{</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="err">$</span><span class="no">lightgrey</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.tabcontrol.body</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.tabcontrol.body.fullborder</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="err">$</span><span class="no">lightgrey</span><span class="p">;</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.tabcontrol.body</span> <span class="nt">p</span><span class="nd">:last-child</span><span class="o">,</span> <span class="nt">div</span><span class="nc">.tabcontrol.body</span> <span class="nt">ul</span><span class="nd">:last-child</span> <span class="p">{</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h2 id="the-javascript-code">The JavaScript code</h2>
+
+<p>This code requires jQuery and must be part of the <code class="highlighter-rouge">$(document).ready()</code> function. Ideally, the 
+script to load the default content should execute early in the page’s <code class="highlighter-rouge">ready()</code> handler, but this 
+only matters if your page is heavy on scripts and does a lot in the <code class="highlighter-rouge">ready()</code> function.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre>    <span class="c1">// set the default content from data-defaultsource</span>
+    <span class="c1">// if your page is script-heavy, you may want to make this execute early</span>
+    <span class="c1">// in the $(document).ready() handler to avoid ugly delays.</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'div.tabcontrol.body'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'defaultsource'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
+    <span class="p">});</span>
+
+    <span class="c1">// handle click on tabs</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'li.tabcontrol.tab'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'target'</span><span class="p">)).</span><span class="nx">html</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'source'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'active'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'active'</span><span class="p">);</span>
+    <span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="demonstration">Demonstration</h2>
+
+<p>Here is a demontration. The include fragment is called with the following parameters:</p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">tabcontrol</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">bodyclass</span><span class="o">=</span><span class="s2">"fullborder"</span><span class="w"> </span><span class="na">tabs</span><span class="o">=</span><span class="nv">page</span><span class="p">.</span><span class="nv">tabs</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"foo"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre>
+</div>
+
+<p>The elements <code class="highlighter-rouge">foo__source1</code> and <code class="highlighter-rouge">foo__source3</code> are defined in the document as hidden <code class="highlighter-rouge">DIVs</code> while 
+<code class="highlighter-rouge">source2</code> gets its content from the document’s front matter (see <a href="#how-to-define-tabs">above</a>).</p>
+<div class="tabcontrol container">
+    <ul class="tabcontrol tabs" style="">
+        
+            <li class="tabcontrol tab " data-name="foo" data-target="tab_foo" data-source="foo__source1">
+                Page One
+            </li>
+            
+            
+        
+            <li class="tabcontrol tab " data-name="bar" data-target="tab_foo" data-source="foo__source2">
+                Page Two
+            </li>
+            
+            
+            <div id="foo__source2" class="hidden">
+                <h2 id="headline">Headline</h2>
+<p>This is the content of the second tab, it is defined in the frontmatter as <strong>markdown</strong>.</p>
+
+<p>A Link: <a href="https://foo.bar.org">link</a></p>
+
+            </div>
+            
+        
+            <li class="tabcontrol tab active" data-name="baz" data-target="tab_foo" data-source="foo__source3">
+                Page Three
+            </li>
+            
+            
+        
+    </ul>
+    <div id="tab_foo" class="tabcontrol body fullborder" style="" data-defaultsource="foo__source3">
+    </div>
+</div>
+
+<div class="hidden" id="foo__source1">
+  <h2 id="this-is-source-element-1">This is source element #1</h2>
+
+  <p class="dc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit 
+id, ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec 
+sapien id metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat 
+a ac massa. Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus 
+molestie. Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt 
+dui purus rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
+inceptos himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut 
+condimentum mi dui eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. 
+Aliquam erat volutpat. Praesent viverra euismod quam, a ultricies justo vehicula a.</p>
+</div>
+
+<div class="hidden" id="foo__source3">
+  <h2 id="this-is-source-element-3">This is source element #3</h2>
+
+  <p class="dc">Nam consectetur in velit ut venenatis. Aliquam eget ante ac lorem rhoncus dignissim eget eget leo. 
+Ut rhoncus eros nec erat maximus, in pretium leo dapibus. Nam ut blandit erat, in pretium metus. 
+Pellentesque vitae mauris libero. Suspendisse fringilla justo non sollicitudin varius. Vivamus 
+rhoncus lorem eu porttitor bibendum. Nullam risus turpis, imperdiet eget nisl in, tristique volutpat 
+mauris.</p>
+</div>
+
+
+        <div style="margin-top: 0.5em">
+
+    
+        
+    
+    <a class="tag" href="/tags/jekyll">jekyll</a>
+
+    
+    <a class="tag" href="/tags/css">css</a>
+
+<div class="clear"></div>
+</div>
+
+
+        
+            
+
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
+<span class="sb-label">Share:</span>
+
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/&amp;text=Creating%20a%20simple%20tab%20control%20in%20Jekyll">
+    <i aria-hidden="true"></i>
+    <span>Twitter</span>
+</a>
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">
+    <i aria-hidden="true"></i>
+    <span>Google+</span>
+</a>
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/&amp;title=Creating%20a%20simple%20tab%20control%20in%20Jekyll">
+    <i aria-hidden="true"></i>
+    <span>Reddit</span>
+</a>
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/&amp;description=Creating%20a%20simple%20tab%20control%20in%20Jekyll">
+    <i></i>
+    <span>Pinterest</span>
+</a>
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/&amp;title=Creating%20a%20simple%20tab%20control%20in%20Jekyll">
+    <i></i>
+    <span>Tumblr</span>
+</a>
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Creating%20a%20simple%20tab%20control%20in%20Jekyll&amp;body=https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">
+    <i></i>
+    <span>Email</span>
+</a>
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Creating%20a%20simple%20tab%20control%20in%20Jekyll&nbsp;https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" title="Copy link to clipboard">
+    <i></i>
+    <span>Link</span>
+</a>
+</div>
+
+
+        
+        
+            
+<div id="disqus_thread" style="margin-top:0.5em;"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEX VIE#@#2017-11-02 16:38:51 +0100"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                            
+
+
+        
+        </div>
+        </article>
+      </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+
+    
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15512457-3', 'auto');
+        ga('send', 'pageview');
+      </script>
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>

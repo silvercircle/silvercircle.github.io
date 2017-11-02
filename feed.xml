@@ -1,4 +1,299 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-11-02T04:45:40+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Cygwin and ZSH - Delete, Home and End keys</title><link href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" rel="alternate" type="text/html" title="Cygwin and ZSH - Delete, Home and End keys" /><published>2017-10-26T14:09:07+01:00</published><updated>2017-10-26T14:09:07+01:00</updated><id>https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">&lt;h1 id=&quot;cygwin-and-zsh---delete-home-and-end-keys&quot;&gt;Cygwin and ZSH - Delete, Home and End keys&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-11-02T19:22:31+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T16:38:51+0100&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
+  &lt;strong&gt;Thursday&lt;/strong&gt;
+  &lt;span&gt;02&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-02T16:38:59+0100&quot;&gt;2017-11-02 16:38:59 +0100&lt;/time&gt;&lt;br /&gt;1309 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 5 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc&quot;&gt;This is liquid template fragment that builds a tab control in a Jekyll page. It is supported by CSS 
+and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain an 
+arbitrary number of tabs. Multiple tab controls on a single page are possible.&lt;/p&gt;
+
+&lt;p&gt;Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
+other static site generators or even plain old-school HTML.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol tabs&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.headerstyle}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        {% for tab in include.tabs %}
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol tab {% if {tab[1].active %}active{% endif %}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{tab[1].name}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tab_{{include.id}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-source=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.id}}__{{tab[1].source}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                {{tab[1].title}}
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+            {% if tab[1].active %}
+                {% assign defaultsource = tab[1].source %}
+            {% endif %}
+            {% if tab[1].content %}
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.id}}__{{tab[1].source}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hidden&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                {{tab[1].content | markdownify }}
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+            {% endif %}
+        {% endfor %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tab_{{include.id}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol body {{include.bodyclass}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.bodystyle}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-defaultsource=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.id}}__{{defaultsource}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;list-of-parameters-the-include-fragment-can-accept&quot;&gt;List of parameters the include fragment can accept:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; - mandatory: A DOM id for the body container. Must be unique and will be used as prefix for 
+all source elements..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tabs&lt;/code&gt; - mandatory: An array of data elements that defines the tabs. If it’s part of the page’s 
+front matter, it must be specified as &lt;code class=&quot;highlighter-rouge&quot;&gt;page.foo&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;headerstyle&lt;/code&gt; - optional: valid CSS attributes and values for the tab control header (the &lt;code class=&quot;highlighter-rouge&quot;&gt;ul&lt;/code&gt; 
+item containing the tabs). This will directly be passed as &lt;code class=&quot;highlighter-rouge&quot;&gt;style&lt;/code&gt; attribute and should be 
+formatted like the content for such an attribute.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bodystyle&lt;/code&gt; - optional: Same as above, but for the body element (the container for the content)..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bodyclass&lt;/code&gt; - optional: Additional CSS class for the body element.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-define-tabs&quot;&gt;How to define tabs&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;Tabs are defined as an array of YAML data items. They can be part of the document’s front matter or 
+reside under Jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory, accessible via the &lt;code class=&quot;highlighter-rouge&quot;&gt;site.data&lt;/code&gt; name space. This method 
+allows to define tab controls as re-usable components with the content either defined in the data 
+file OR in your page. It’s flexible enough to even mix content from the data file with content 
+defined in the page.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;tab1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;foo&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page One&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source1&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;tab2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Two&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source2&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;no&quot;&gt;## Headline&lt;/span&gt;
+
+            &lt;span class=&quot;no&quot;&gt;This is the content of the second tab, it is defined in the frontmatter as **markdown**.&lt;/span&gt;
+
+            &lt;span class=&quot;no&quot;&gt;A Link: [link](https://foo.bar.org)&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;tab3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;baz&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Three&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;active&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The root element (&lt;code class=&quot;highlighter-rouge&quot;&gt;page.tabs&lt;/code&gt; in our case) is then passed to the include fragment which will iterate 
+over the array generating the HTML code. The &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; is what will appear on the tabs and &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; 
+specifies the DOM element id that contains the HTML content for that tab. These elements should be 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;DIVs&lt;/code&gt; of class &lt;code class=&quot;highlighter-rouge&quot;&gt;hidden&lt;/code&gt; (the &lt;em&gt;display&lt;/em&gt; attribute must be set to &lt;em&gt;none&lt;/em&gt;, because they are not 
+supposed to show up in the document).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-default-page-that-should-be-visible-on-page-load&quot;&gt;The default page that should be visible on page load&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;The default tab must be specified using the &lt;code class=&quot;highlighter-rouge&quot;&gt;active&lt;/code&gt; attribute. The value does not matter and can be 
+anything as it is just checked for presence. If multiple tabs define the &lt;code class=&quot;highlighter-rouge&quot;&gt;active&lt;/code&gt; attribute, the 
+last one will take precedence. In our example above, &lt;code class=&quot;highlighter-rouge&quot;&gt;tab3&lt;/code&gt; will be the default.&lt;/p&gt;
+&lt;h2 id=&quot;how-to-set-the-content-for-a-tab-page&quot;&gt;How to set the content for a tab page&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;You can either include the DOM element in your markdown page, OR use the &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; property in which 
+case, the DOM element will be created automatically with the given identifier. The &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; &lt;strong&gt;must 
+always be present&lt;/strong&gt; and &lt;strong&gt;will automatically be prefixed with the ID followed by two underscores&lt;/strong&gt;. 
+The &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; attribute can contain valid HTML and markdown and will be fed through &lt;code class=&quot;highlighter-rouge&quot;&gt;markdownify&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To support multiple tab controls from the same template on a single page, the DOM ids for source 
+elements are always prefixed with the id of the control (this is what is passed to the include in 
+the &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; parameter), followed by two underscores.&lt;/p&gt;
+
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+
+&lt;p&gt;Assume the YAML &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; property for a tab specifies &lt;code class=&quot;highlighter-rouge&quot;&gt;source1&lt;/code&gt;, then the element ID you use in the 
+document &lt;em&gt;must&lt;/em&gt; be &lt;code class=&quot;highlighter-rouge&quot;&gt;id__source1&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; is what you pass to to &lt;code class=&quot;highlighter-rouge&quot;&gt;tabcontrol.html&lt;/code&gt; via the &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; 
+parameter. This is &lt;strong&gt;case sensitive&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 class=&quot;dc&quot; id=&quot;this-is-how-such-a-source-element-should-look-like&quot;&gt;This is how such a source element should look like:&lt;/h4&gt;
+
+&lt;p&gt;Assuming, the id of the tab control is &lt;strong&gt;foo&lt;/strong&gt; and the tab definition defines &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; as 
+&lt;strong&gt;source3&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hidden&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;foo__source3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+## This is source element #3
+
+The content for tab page 3.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-minimum-css&quot;&gt;The (minimum) CSS&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;This is the bare bone CSS necessary for basic styling. Since the include allows you to pass 
+additional classes for the tab control and body elements, you can easily expand the styling. Also, 
+the include accepts &lt;code class=&quot;highlighter-rouge&quot;&gt;headerstyle&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bodystyle&lt;/code&gt; arguments, which must contain valid CSS and will 
+be used as content for the &lt;code class=&quot;highlighter-rouge&quot;&gt;style&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;border-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;lightgrey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tab&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;list-style-type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;lightgrey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;border-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;24px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sans_font&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10pt&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tab.active&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;28px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bold&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-3px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tab&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:first-child&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;lightgrey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body.fullborder&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;lightgrey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:last-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:last-child&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-javascript-code&quot;&gt;The JavaScript code&lt;/h2&gt;
+
+&lt;p&gt;This code requires jQuery and must be part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;$(document).ready()&lt;/code&gt; function. Ideally, the 
+script to load the default content should execute early in the page’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; handler, but this 
+only matters if your page is heavy on scripts and does a lot in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    &lt;span class=&quot;c1&quot;&gt;// set the default content from data-defaultsource&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// if your page is script-heavy, you may want to make this execute early&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// in the $(document).ready() handler to avoid ugly delays.&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'div.tabcontrol.body'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'defaultsource'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// handle click on tabs&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'li.tabcontrol.tab'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'target'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'source'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;siblings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;removeClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'active'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'active'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
+
+&lt;p&gt;Here is a demontration. The include fragment is called with the following parameters:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabcontrol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bodyclass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fullborder&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The elements &lt;code class=&quot;highlighter-rouge&quot;&gt;foo__source1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;foo__source3&lt;/code&gt; are defined in the document as hidden &lt;code class=&quot;highlighter-rouge&quot;&gt;DIVs&lt;/code&gt; while 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;source2&lt;/code&gt; gets its content from the document’s front matter (see &lt;a href=&quot;#how-to-define-tabs&quot;&gt;above&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&quot;tabcontrol container&quot;&gt;
+    &lt;ul class=&quot;tabcontrol tabs&quot; style=&quot;&quot;&gt;
+        
+            &lt;li class=&quot;tabcontrol tab &quot; data-name=&quot;foo&quot; data-target=&quot;tab_foo&quot; data-source=&quot;foo__source1&quot;&gt;
+                Page One
+            &lt;/li&gt;
+            
+            
+        
+            &lt;li class=&quot;tabcontrol tab &quot; data-name=&quot;bar&quot; data-target=&quot;tab_foo&quot; data-source=&quot;foo__source2&quot;&gt;
+                Page Two
+            &lt;/li&gt;
+            
+            
+            &lt;div id=&quot;foo__source2&quot; class=&quot;hidden&quot;&gt;
+                &lt;h2 id=&quot;headline&quot;&gt;Headline&lt;/h2&gt;
+&lt;p&gt;This is the content of the second tab, it is defined in the frontmatter as &lt;strong&gt;markdown&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A Link: &lt;a href=&quot;https://foo.bar.org&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+            &lt;/div&gt;
+            
+        
+            &lt;li class=&quot;tabcontrol tab active&quot; data-name=&quot;baz&quot; data-target=&quot;tab_foo&quot; data-source=&quot;foo__source3&quot;&gt;
+                Page Three
+            &lt;/li&gt;
+            
+            
+        
+    &lt;/ul&gt;
+    &lt;div id=&quot;tab_foo&quot; class=&quot;tabcontrol body fullborder&quot; style=&quot;&quot; data-defaultsource=&quot;foo__source3&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hidden&quot; id=&quot;foo__source1&quot;&gt;
+  &lt;h2 id=&quot;this-is-source-element-1&quot;&gt;This is source element #1&lt;/h2&gt;
+
+  &lt;p class=&quot;dc&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit 
+id, ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec 
+sapien id metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat 
+a ac massa. Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus 
+molestie. Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt 
+dui purus rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
+inceptos himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut 
+condimentum mi dui eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. 
+Aliquam erat volutpat. Praesent viverra euismod quam, a ultricies justo vehicula a.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hidden&quot; id=&quot;foo__source3&quot;&gt;
+  &lt;h2 id=&quot;this-is-source-element-3&quot;&gt;This is source element #3&lt;/h2&gt;
+
+  &lt;p class=&quot;dc&quot;&gt;Nam consectetur in velit ut venenatis. Aliquam eget ante ac lorem rhoncus dignissim eget eget leo. 
+Ut rhoncus eros nec erat maximus, in pretium leo dapibus. Nam ut blandit erat, in pretium metus. 
+Pellentesque vitae mauris libero. Suspendisse fringilla justo non sollicitudin varius. Vivamus 
+rhoncus lorem eu porttitor bibendum. Nullam risus turpis, imperdiet eget nisl in, tristique volutpat 
+mauris.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><summary type="html">A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Cygwin and ZSH - Delete, Home and End keys</title><link href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" rel="alternate" type="text/html" title="Cygwin and ZSH - Delete, Home and End keys" /><published>2017-10-26T14:09:07+01:00</published><updated>2017-10-26T14:09:07+01:00</updated><id>https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">&lt;h1 id=&quot;cygwin-and-zsh---delete-home-and-end-keys&quot;&gt;Cygwin and ZSH - Delete, Home and End keys&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-26T15:09:07+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -1925,52 +2220,4 @@ for which a couple of new entities (the Golden Company for example) will enter t
 &lt;a href=&quot;/got-theories/generic&quot;&gt;All others&lt;/a&gt;&lt;br /&gt;
 &lt;/p&gt;
   &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="got" /><summary type="html">Game of Thrones Season 7 has seen its final just ab it over two weeks ago, but fans are already talking a lot about season 8. The premiere of season 8 is still at least one year away, but a lot is already known about the final season that will bring everthing to an end.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22align%22=%3E%22right%22,%20%22width%22=%3E%2215%25%22%7D" /></entry><entry><title type="html">No love for vegetarian food</title><link href="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/" rel="alternate" type="text/html" title="No love for vegetarian food" /><published>2017-09-08T15:59:03+01:00</published><updated>2017-09-08T15:59:03+01:00</updated><id>https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/08/no-love-vegetarian-food/">&lt;h1 id=&quot;no-love-for-vegetarian--vegan-food&quot;&gt;No love for vegetarian / vegan food&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-09-08T16:59:03+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Sep.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Friday&lt;/strong&gt;
-  &lt;span&gt;08&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-08T16:59:07+0200&quot;&gt;2017-09-08 16:59:07 +0200&lt;/time&gt;&lt;br /&gt;75 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:59&lt;/span&gt; | by AlexVie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 0 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;p&gt;This picture was found on the net and was apparently taken in some super market in Texas after 
-Hurricane Harvey hit in late August 2017.&lt;/p&gt;
-
-&lt;p&gt;People apparently stocked up with lots of food, but showed little love for vegetarian and vegan food 
-products, despite the crisis and possible shortages that were to expect.&lt;/p&gt;
-
-&lt;div class=&quot;blockimage borderless&quot;&gt;
-
-
-
-
-&lt;a href=&quot;/assets/gfx/fun/tofu.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;No love for Tofu&quot;&gt;
-
-&lt;figure style=&quot;position:relative;&quot;&gt;
-        &lt;img src=&quot;/assets/gfx/fun/tofu.jpg&quot; alt=&quot;No love for Tofu&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
-        
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                No love for Tofu
-        &lt;/figcaption&gt;
-        
-&lt;/figure&gt;
-
-&lt;/a&gt;
-
-
-
-&lt;div class=&quot;floatimage_title&quot; style=&quot;padding: 3px 8px;&quot;&gt;
-    No love for Tofu
-&lt;/div&gt;
-
-&lt;/div&gt;</content><author><name>AlexVie</name></author><category term="first" /><summary type="html">Vegetarian food left over in a super market in Texas in the aftermath of Hurricane Harvey.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="got" /><summary type="html">Game of Thrones Season 7 has seen its final just ab it over two weeks ago, but fans are already talking a lot about season 8. The premiere of season 8 is still at least one year away, but a lot is already known about the final season that will bring everthing to an end.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22align%22=%3E%22right%22,%20%22width%22=%3E%2215%25%22%7D" /></entry></feed>
