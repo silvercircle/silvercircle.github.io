@@ -219,11 +219,11 @@
   <span>01</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-11-01T17:48:44+0100">2017-11-01 17:48:44 +0100</time><br />246 Words
+    Last modified: <time class="timeago" datetime="2017-11-01T17:48:44+0100">2017-11-01 17:48:44 +0100</time><br />263 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">17:48</span> | by Alex Vie<br />
-    Reading time: approx. 0 minute(s).
+    Reading time: approx. 1 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
@@ -250,16 +250,16 @@
 <div class="tabcontrol container">
     <ul class="tabcontrol tabs">
         
-            <li class="tabcontrol tab " data-name="foobar" data-target="tab_foo" data-source="source1">
-                haha
+            <li class="tabcontrol tab " data-name="foo" data-target="tab_foo" data-source="source1">
+                Page One
             </li>
         
-            <li class="tabcontrol tab " data-name="affen" data-target="tab_foo" data-source="source2">
-                affenscheisse
+            <li class="tabcontrol tab " data-name="bar" data-target="tab_foo" data-source="source2">
+                Page Two
             </li>
         
-            <li class="tabcontrol tab active" data-name="idioten" data-target="tab_foo" data-source="source3">
-                idioten
+            <li class="tabcontrol tab active" data-name="baz" data-target="tab_foo" data-source="source3">
+                Page Three
             </li>
         
     </ul>
@@ -268,6 +268,7 @@
 </div>
 
 <div class="hidden" id="source1">
+  <h2 id="this-is-source-element-1">This is source element #1</h2>
   <p class="dc">Well, right now it’s not much. It’s some sort of playground to test <a href="https://jekyllrb.com">Jekyll</a>,
 a static page generator that has enough flexibility to build a blog or documentation site,
 but leaves out all the bloat that makes modern content management systems slow and prone to
@@ -284,10 +285,11 @@ article again.</p>
 </div>
 
 <div class="hidden" id="source2">
-  <p>source2</p>
+  <h2 id="this-is-source-element-2">This is source element #2.</h2>
 </div>
 
 <div class="hidden" id="source3">
+  <h2 id="this-is-source-element-3">This is source element #3</h2>
   <p>Consider this entry is within <code class="highlighter-rouge">_data/images.yaml</code>, then the image record will be available in 
 templates as <code class="highlighter-rouge">site.data.images.testgallery.remoteimage</code>. Its attributes are accessible as 
 <code class="highlighter-rouge">site.data.images.testgallery.remoteimage.url</code> and so on.</p>
