@@ -5,6 +5,9 @@ exclude:
  - .gitignore
  - "*.sublime-project"
  - "*.sublime-workspace"
+ - "*.vtg"
+ - "*.vpw*"
+ - "*.vpj"
 permalink: /:year/:month/:day/:title/
 sass:
   style: compressed

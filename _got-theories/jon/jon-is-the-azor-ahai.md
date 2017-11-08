@@ -44,6 +44,7 @@ during the last *long night* that lasted for a full generation and can be unders
 >which states that the sun hid its face from the earth for a lifetime, ashamed at something none 
 >could discover, and that disaster was averted only by the deeds of a woman with a monkey's tail."
 {: .fancy .bordered}
+
 ## What speaks for the theory?
 
 * he does have Dragon blood (as seen in episode 5 of the seventh season)[^dragonblood].

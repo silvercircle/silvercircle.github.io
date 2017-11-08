@@ -12,6 +12,11 @@ pagination:
   collection: posts,all
 ---
 {% include paginator_header.html %}
+Jekyll is a static site generator written in Ruby. It is flexible, extensible, Open Source and easy to work with. 
+Its home on the web can be found <a href="https://jekyllrb.com/">here</a> and its <a href="https://github.com/jekyll/jekyll">source code</a>
+ist hosted on **GitHub**.
+<br>
+<br>
 <div class="blog-index">
     {% for post in paginator.posts %}
     {% include paginator_body.html %}

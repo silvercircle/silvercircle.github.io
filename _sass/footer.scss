@@ -8,20 +8,20 @@ div.site_footer_wrapper {
 }
 
 div.site_footer {
-	width: 100%;
-	margin:auto;
-	font-size: $footer_font_size;
-	display: table;
+    width: 100%;
+    margin:auto;
+    font-size: $footer_font_size;
+    display: table;
 }
 
 div.site_footer a, div.site_footer a:visited, div.menu a, div.menu a:visited {
-	color: orange;
+    color: orange;
 }
 
 div.site_footer div.column {
-	width: 33%;
-	padding:4px 10px;
-	box-sizing: border-box;
+    width: 33%;
+    padding:4px 10px;
+    box-sizing: border-box;
     display: table-cell;
     height:50px;
     vertical-align: bottom;

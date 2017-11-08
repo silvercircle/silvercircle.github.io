@@ -61,11 +61,11 @@ possible missing links.
 
 ## Jon will not survive
 
-GRMM [has stated](http://time.com/4101276/game-of-thrones-ending-george-r-r-martin/) the end of the 
-show will be *bittersweet*{:ul}. Whatever that means in detail, I think it is safe to assume that at 
-least one, possibly more of the favorite main characters will die in the final season. Some may die 
-under tragic circumstances, maybe by (self-)sacrifice. The article about the Azor Ahai (linked 
-above) theory discusses one such possible event.
+GRMM [has stated](http://time.com/4101276/game-of-thrones-ending-george-r-r-martin/), the end of 
+the show will be *bittersweet*{:ul}. Whatever that means in detail, I think it is safe to assume 
+that at least one, possibly more of the favorite main characters will die in the final season. Some 
+may die under tragic circumstances, maybe by (self-)sacrifice. The article about the Azor Ahai 
+(linked above) theory discusses one such possible event.
 
 ### Who may die?
 

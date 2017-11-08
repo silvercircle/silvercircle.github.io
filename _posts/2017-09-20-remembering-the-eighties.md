@@ -78,19 +78,19 @@ in Bavaria](https://en.wikipedia.org/wiki/Schweinfurt), Germany, where the 1988 
 Rock](https://en.wikipedia.org/wiki/Monsters_of_Rock) festival was going to take place. These 
 festivals, taking place in many large European and US cities were highly popular from the late 
 seventies into the early nineties, often attracting six digit numbers of heavy metal and rock music 
-fans. A *Monsters of Rock festival* usually featured a huge main stage where multiple bands 
-performed on a single day, forming a live gig that lasted 6-8 hours. Later, Monsters Of Rock 
-extended into South America while it gradually died off in Europe and the U.S only to get 
-resurrected about 25 years later.
+fans. A *Monsters of Rock festival* usually featured a huge main stage where multiple bands performed 
+on a single day, forming a live gig that lasted 6-8 hours. Later, Monsters Of Rock extended into South 
+America while it gradually died off in Europe and the U.S only to get resurrected about 25 years or so 
+later.
 {:dc}
 
-There was always a **main act** performing at the end of the show and it was typically one of the 
-big rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van 
-Halen, Guns'n Roses, Whitesnake and many more all have at least one appearance at a Monsters Of Rock 
-festival. My older brother was a big hard rock and heavy metal fan back these days and he had been 
-on huge festivals before, but for me it was the first such event. At 14, I was probably still too 
-young for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year 
-before and was already a big metalhead at that age. The influence of my brother was clearly showing.
+There was always a **main act** performing at the end of the show and it was typically one of the big 
+rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van Halen, 
+Guns'n Roses, Whitesnake and many more all have at least one appearance at a Monsters Of Rock 
+festival. My older brother was a big hard rock and heavy metal fan back these days and he had been on 
+huge festivals before, but for me it was the first such event. At 14, I was probably still too young 
+for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year before and 
+was already a big metalhead at that age. The influence of my brother was clearly showing. 
 
 I do not remember much of the drive, because I slept through most of it, but I know the 400 mile 
 drive took us about 7-8 hours and we arrived in Schweinfurt around noon. The situation was "chaotic" 
@@ -101,8 +101,8 @@ vandalizing fans, but later we thankfully learned, they were false alerts, proba
 press which has taken an ambivalent stance towards the festival. There was quite some opposition 
 among the people of the city and many politicians would have banned the festival from taking place 
 in *their city* if they had been among those with the power to decide. The reputation of metal and 
-hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that 
-poor image.
+hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that poor 
+image.
 
 To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
 long before the first band was scheduled to play. I was totally excited, because I was going to see 
@@ -155,9 +155,9 @@ going to sleep in the car for most of the upcoming drive.
 <div class="two_cols" markdown="1">
 The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
 least five, possibly more, because of *major* traffic jams around the Air Force base. Like the day 
-before, I had slept most of the time during the drive. My brother, who later told me, he didn't 
-sleep so well, occupied the front seat next to my dad, so I had all the backseats of our comfortable 
-series 5 BMW for myself - nice and spacey enough for a good sleep.
+before, I had slept most of the time during the drive. My brother, who later told me, he didn't sleep 
+so well, occupied the front seat next to my dad, so I had all the back seats of our comfortable series 
+5 BMW for myself - nice and spacey enough for a good sleep.
 {:dc}
 
 The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
@@ -212,8 +212,8 @@ What then happened, I do not fully remember. I do remember a strange, metallic s
 some kind of "thud". It was not a very loud sound, at least not the loud "bang" one might expect 
 from a mid-air crash of two aircraft at high speed. Others claim, the sound was in fact a loud bang, 
 but maybe they were closer[^position] or maybe it *was* loud and my memories are not working as they 
-should. I also *do* remember the yellow-orange fire ball and billowing black smoke and I *believe*, 
-I felt heated air and some kind of pressure wave that hurt my ears. I also *believe*, my father let 
+should. I also *do* remember the yellow-orange fire ball and billowing black smoke and I *believe*, I 
+felt heated air and some kind of pressure wave that hurt my ears. I also *believe*, my father let 
 loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
 wasn't able to remember. He, being a pilot (although not a military one), might have realized that 
 they were going to crash mid-air. Or maybe, it wasn't real and I fantasized. I really cannot tell.

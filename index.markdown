@@ -26,6 +26,8 @@ security problems. It also significantly lowers the requirements for hosting to 
 that can serve static files.
 {:dc}
 
+Here are some umlauts: ääöääf  ÜÄÄÖÖP
+
 Jekyll is also supported by [GitHub pages](https://pages.github.com/) who give you essentially 
 unlimited free web hosting, but won't allow you to run PHP, Python, Java or whatever else on their 
 servers. But you can use Jekyll either locally to build your static site or let GibHub run it 

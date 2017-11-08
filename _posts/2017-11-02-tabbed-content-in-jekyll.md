@@ -50,9 +50,9 @@ tabs:
 {% include post_header.html %}
 {% include defs.md %}
 
-This is liquid template fragment that builds a tab control in a Jekyll page. It is supported by CSS 
-and some jQuery Javascript that will follow below. It's supposed to be flexible and can contain an 
-arbitrary number of tabs. Multiple tab controls on a single page are possible.
+This is a liquid template fragment t hat builds a tab control in a Jekyll page. It is supported by 
+CSS and some jQuery Javascript that will follow below. It's supposed to be flexible and can contain 
+an arbitrary number of tabs. Multiple tab controls on a single page are possible.
 {:dc}
 
 Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
@@ -100,13 +100,13 @@ other static site generators or even plain old-school HTML.
 ## How to define tabs
 
 Tabs are defined as an array of YAML data items. They can be part of the document's front matter or 
-reside under Jekyll's `_data` directory, accessible via the `site.data` name space. This method 
-allows to define tab controls as re-usable components with the content either defined in the data 
-file OR in your page. It's flexible enough to even mix content from the data file with content 
-defined in the page.
+reside under Jekyll's `_data` directory, accessible via the `site.data` name space. This method allows 
+to define tab controls as re-usable components with the content either defined in the data file OR in 
+your page. It's flexible enough to even mix content from the data file with content defined in the 
+page.
 {:dc}
 ```yaml
-tabs:
+tabs: 
     tab1:
         name: foo
         title: Page One
@@ -230,9 +230,9 @@ div.tabcontrol.body p:last-child, div.tabcontrol.body ul:last-child {
 
 ## The JavaScript code
 
-This code requires jQuery and must be part of the `$(document).ready()` function. Ideally, the 
-script to load the default content should execute early in the page's `ready()` handler, but this 
-only matters if your page is heavy on scripts and does a lot in the `ready()` function.
+This code requires jQuery and must be part of the `$(document).ready()` function. Ideally, the script 
+to load the default content should execute early in the page's `ready()` handler, but this only 
+matters if your page is heavy on scripts and does a lot in the `ready()` function. 
 
 {% highlight javascript linenos %}
     // set the default content from data-defaultsource
@@ -252,8 +252,8 @@ only matters if your page is heavy on scripts and does a lot in the `ready()` fu
 
 ## Demonstration
 
-Here is a demontration. The include fragment is called with the following parameters:
-{% raw %}
+Here is a demonstration. The include fragment is called with the following parameters:
+{% raw %} 
 ```liquid
 {% include tabcontrol.html bodyclass="fullborder" tabs=page.tabs id="foo" %}
 ```
@@ -262,20 +262,24 @@ The elements `foo__source1` and `foo__source3` are defined in the document as hi
 `source2` gets its content from the document's front matter (see [above](#how-to-define-tabs)).
 {% include tabcontrol.html tabs=page.tabs id="foo" bodyclass="fullborder" %}
 
+## TODO
+
+Make it fully responsive without looking like *crap*.
+
 <div class="hidden" id="foo__source1" markdown="1">
 ## This is source element #1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit 
-id, ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec 
-sapien id metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat 
-a ac massa. Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus 
-molestie. Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt 
-dui purus rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
-inceptos himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut 
-condimentum mi dui eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. 
-Aliquam erat volutpat. Praesent viverra euismod quam, a ultricies justo vehicula a.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit id, 
+ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec sapien id 
+metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat a ac massa. 
+Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus molestie. 
+Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt dui purus 
+rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut condimentum mi dui 
+eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. Aliquam erat volutpat. 
+Praesent viverra euismod quam, a ultricies justo vehicula a.
 {:dc}
-</div>
+ </div> 
 
 <div class="hidden" id="foo__source3" markdown="1">
 ## This is source element #3
