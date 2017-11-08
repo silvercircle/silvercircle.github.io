@@ -227,7 +227,7 @@
   <span>02</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-11-02T16:38:59+0100">2017-11-02 16:38:59 +0100</time><br />1309 Words
+    Last modified: <time class="timeago" datetime="2017-11-02T16:38:59+0100">2017-11-02 16:38:59 +0100</time><br />1321 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">16:38</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/jekyll/index.html">Jekyll</a><br />
@@ -236,9 +236,9 @@
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p class="dc">This is liquid template fragment that builds a tab control in a Jekyll page. It is supported by CSS 
-and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain an 
-arbitrary number of tabs. Multiple tab controls on a single page are possible.</p>
+<p class="dc">This is a liquid template fragment t hat builds a tab control in a Jekyll page. It is supported by 
+CSS and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain 
+an arbitrary number of tabs. Multiple tab controls on a single page are possible.</p>
 
 <p>Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
 other static site generators or even plain old-school HTML.</p>
@@ -292,11 +292,11 @@ formatted like the content for such an attribute.</p>
 <h2 id="how-to-define-tabs">How to define tabs</h2>
 
 <p class="dc">Tabs are defined as an array of YAML data items. They can be part of the document’s front matter or 
-reside under Jekyll’s <code class="highlighter-rouge">_data</code> directory, accessible via the <code class="highlighter-rouge">site.data</code> name space. This method 
-allows to define tab controls as re-usable components with the content either defined in the data 
-file OR in your page. It’s flexible enough to even mix content from the data file with content 
-defined in the page.</p>
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">tabs</span><span class="pi">:</span>
+reside under Jekyll’s <code class="highlighter-rouge">_data</code> directory, accessible via the <code class="highlighter-rouge">site.data</code> name space. This method allows 
+to define tab controls as re-usable components with the content either defined in the data file OR in 
+your page. It’s flexible enough to even mix content from the data file with content defined in the 
+page.</p>
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">tabs</span><span class="pi">:</span> 
     <span class="s">tab1</span><span class="pi">:</span>
         <span class="s">name</span><span class="pi">:</span> <span class="s">foo</span>
         <span class="s">title</span><span class="pi">:</span> <span class="s">Page One</span>
@@ -417,9 +417,9 @@ be used as content for the <code class="highlighter-rouge">style</code> attribut
 
 <h2 id="the-javascript-code">The JavaScript code</h2>
 
-<p>This code requires jQuery and must be part of the <code class="highlighter-rouge">$(document).ready()</code> function. Ideally, the 
-script to load the default content should execute early in the page’s <code class="highlighter-rouge">ready()</code> handler, but this 
-only matters if your page is heavy on scripts and does a lot in the <code class="highlighter-rouge">ready()</code> function.</p>
+<p>This code requires jQuery and must be part of the <code class="highlighter-rouge">$(document).ready()</code> function. Ideally, the script 
+to load the default content should execute early in the page’s <code class="highlighter-rouge">ready()</code> handler, but this only 
+matters if your page is heavy on scripts and does a lot in the <code class="highlighter-rouge">ready()</code> function.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
@@ -450,7 +450,7 @@ only matters if your page is heavy on scripts and does a lot in the <code class=
 
 <h2 id="demonstration">Demonstration</h2>
 
-<p>Here is a demontration. The include fragment is called with the following parameters:</p>
+<p>Here is a demonstration. The include fragment is called with the following parameters:</p>
 
 <div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">tabcontrol</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">bodyclass</span><span class="o">=</span><span class="s2">"fullborder"</span><span class="w"> </span><span class="na">tabs</span><span class="o">=</span><span class="nv">page</span><span class="p">.</span><span class="nv">tabs</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"foo"</span><span class="w"> </span><span class="p">%}</span>
 </code></pre>
@@ -492,18 +492,22 @@ only matters if your page is heavy on scripts and does a lot in the <code class=
     </div>
 </div>
 
+<h2 id="todo">TODO</h2>
+
+<p>Make it fully responsive without looking like <em>crap</em>.</p>
+
 <div class="hidden" id="foo__source1">
   <h2 id="this-is-source-element-1">This is source element #1</h2>
 
-  <p class="dc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit 
-id, ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec 
-sapien id metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat 
-a ac massa. Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus 
-molestie. Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt 
-dui purus rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
-inceptos himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut 
-condimentum mi dui eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. 
-Aliquam erat volutpat. Praesent viverra euismod quam, a ultricies justo vehicula a.</p>
+  <p class="dc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit id, 
+ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec sapien id 
+metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat a ac massa. 
+Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus molestie. 
+Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt dui purus 
+rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut condimentum mi dui 
+eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. Aliquam erat volutpat. 
+Praesent viverra euismod quam, a ultricies justo vehicula a.</p>
 </div>
 
 <div class="hidden" id="foo__source3">

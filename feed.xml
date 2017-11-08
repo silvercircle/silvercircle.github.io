@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-11-02T19:22:31+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-11-08T04:44:07+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T16:38:51+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -6,7 +6,7 @@
   &lt;span&gt;02&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-02T16:38:59+0100&quot;&gt;2017-11-02 16:38:59 +0100&lt;/time&gt;&lt;br /&gt;1309 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-02T16:38:59+0100&quot;&gt;2017-11-02 16:38:59 +0100&lt;/time&gt;&lt;br /&gt;1321 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
@@ -15,9 +15,9 @@
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
-&lt;p class=&quot;dc&quot;&gt;This is liquid template fragment that builds a tab control in a Jekyll page. It is supported by CSS 
-and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain an 
-arbitrary number of tabs. Multiple tab controls on a single page are possible.&lt;/p&gt;
+&lt;p class=&quot;dc&quot;&gt;This is a liquid template fragment t hat builds a tab control in a Jekyll page. It is supported by 
+CSS and some jQuery Javascript that will follow below. It’s supposed to be flexible and can contain 
+an arbitrary number of tabs. Multiple tab controls on a single page are possible.&lt;/p&gt;
 
 &lt;p&gt;Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
 other static site generators or even plain old-school HTML.&lt;/p&gt;
@@ -71,11 +71,11 @@ formatted like the content for such an attribute.&lt;/p&gt;
 &lt;h2 id=&quot;how-to-define-tabs&quot;&gt;How to define tabs&lt;/h2&gt;
 
 &lt;p class=&quot;dc&quot;&gt;Tabs are defined as an array of YAML data items. They can be part of the document’s front matter or 
-reside under Jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory, accessible via the &lt;code class=&quot;highlighter-rouge&quot;&gt;site.data&lt;/code&gt; name space. This method 
-allows to define tab controls as re-usable components with the content either defined in the data 
-file OR in your page. It’s flexible enough to even mix content from the data file with content 
-defined in the page.&lt;/p&gt;
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+reside under Jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory, accessible via the &lt;code class=&quot;highlighter-rouge&quot;&gt;site.data&lt;/code&gt; name space. This method allows 
+to define tab controls as re-usable components with the content either defined in the data file OR in 
+your page. It’s flexible enough to even mix content from the data file with content defined in the 
+page.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
     &lt;span class=&quot;s&quot;&gt;tab1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;foo&lt;/span&gt;
         &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page One&lt;/span&gt;
@@ -196,9 +196,9 @@ be used as content for the &lt;code class=&quot;highlighter-rouge&quot;&gt;style
 
 &lt;h2 id=&quot;the-javascript-code&quot;&gt;The JavaScript code&lt;/h2&gt;
 
-&lt;p&gt;This code requires jQuery and must be part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;$(document).ready()&lt;/code&gt; function. Ideally, the 
-script to load the default content should execute early in the page’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; handler, but this 
-only matters if your page is heavy on scripts and does a lot in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;This code requires jQuery and must be part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;$(document).ready()&lt;/code&gt; function. Ideally, the script 
+to load the default content should execute early in the page’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; handler, but this only 
+matters if your page is heavy on scripts and does a lot in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; function.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -229,7 +229,7 @@ only matters if your page is heavy on scripts and does a lot in the &lt;code cla
 
 &lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
 
-&lt;p&gt;Here is a demontration. The include fragment is called with the following parameters:&lt;/p&gt;
+&lt;p&gt;Here is a demonstration. The include fragment is called with the following parameters:&lt;/p&gt;
 
 &lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabcontrol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bodyclass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fullborder&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -271,18 +271,22 @@ only matters if your page is heavy on scripts and does a lot in the &lt;code cla
     &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
+
+&lt;p&gt;Make it fully responsive without looking like &lt;em&gt;crap&lt;/em&gt;.&lt;/p&gt;
+
 &lt;div class=&quot;hidden&quot; id=&quot;foo__source1&quot;&gt;
   &lt;h2 id=&quot;this-is-source-element-1&quot;&gt;This is source element #1&lt;/h2&gt;
 
-  &lt;p class=&quot;dc&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit 
-id, ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec 
-sapien id metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat 
-a ac massa. Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus 
-molestie. Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt 
-dui purus rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
-inceptos himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut 
-condimentum mi dui eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. 
-Aliquam erat volutpat. Praesent viverra euismod quam, a ultricies justo vehicula a.&lt;/p&gt;
+  &lt;p class=&quot;dc&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mauris sapien, feugiat id elit id, 
+ultrices ultricies purus. Pellentesque nec elit enim. Cras vel pretium tellus. Maecenas nec sapien id 
+metus semper iaculis sit amet et enim. Pellentesque quis dolor nec elit hendrerit feugiat a ac massa. 
+Sed semper elementum magna, eu ornare odio. Curabitur gravida turpis nec lacus rhoncus molestie. 
+Curabitur iaculis, mi facilisis feugiat vehicula, augue dui facilisis lacus, et tincidunt dui purus 
+rutrum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+himenaeos. Cras congue, nisl nec condimentum sodales, dolor purus dapibus quam, ut condimentum mi dui 
+eget ante. Suspendisse dignissim felis risus, nec vehicula ante placerat ut. Aliquam erat volutpat. 
+Praesent viverra euismod quam, a ultricies justo vehicula a.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hidden&quot; id=&quot;foo__source3&quot;&gt;
@@ -1440,7 +1444,7 @@ mediterranean island, particularly in the southern part.&lt;/p&gt;
   &lt;span&gt;20&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3399 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3402 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;05:18&lt;/span&gt; | by Alex Vie&lt;br /&gt;
@@ -1485,18 +1489,18 @@ in Bavaria&lt;/a&gt;, Germany, where the 1988 &lt;a href=&quot;https://en.wikipe
 Rock&lt;/a&gt; festival was going to take place. These 
 festivals, taking place in many large European and US cities were highly popular from the late 
 seventies into the early nineties, often attracting six digit numbers of heavy metal and rock music 
-fans. A &lt;em&gt;Monsters of Rock festival&lt;/em&gt; usually featured a huge main stage where multiple bands 
-performed on a single day, forming a live gig that lasted 6-8 hours. Later, Monsters Of Rock 
-extended into South America while it gradually died off in Europe and the U.S only to get 
-resurrected about 25 years later.&lt;/p&gt;
+fans. A &lt;em&gt;Monsters of Rock festival&lt;/em&gt; usually featured a huge main stage where multiple bands performed 
+on a single day, forming a live gig that lasted 6-8 hours. Later, Monsters Of Rock extended into South 
+America while it gradually died off in Europe and the U.S only to get resurrected about 25 years or so 
+later.&lt;/p&gt;
 
-  &lt;p&gt;There was always a &lt;strong&gt;main act&lt;/strong&gt; performing at the end of the show and it was typically one of the 
-big rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van 
-Halen, Guns’n Roses, Whitesnake and many more all have at least one appearance at a Monsters Of Rock 
-festival. My older brother was a big hard rock and heavy metal fan back these days and he had been 
-on huge festivals before, but for me it was the first such event. At 14, I was probably still too 
-young for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year 
-before and was already a big metalhead at that age. The influence of my brother was clearly showing.&lt;/p&gt;
+  &lt;p&gt;There was always a &lt;strong&gt;main act&lt;/strong&gt; performing at the end of the show and it was typically one of the big 
+rock or metal bands of that era. Kiss, Iron Maiden, AC/DC, Deep Purple, David Lee Roth, Van Halen, 
+Guns’n Roses, Whitesnake and many more all have at least one appearance at a Monsters Of Rock 
+festival. My older brother was a big hard rock and heavy metal fan back these days and he had been on 
+huge festivals before, but for me it was the first such event. At 14, I was probably still too young 
+for rock concerts, but I had seen Deep Purple live on their Perfect Strangers tour a year before and 
+was already a big metalhead at that age. The influence of my brother was clearly showing.&lt;/p&gt;
 
   &lt;p&gt;I do not remember much of the drive, because I slept through most of it, but I know the 400 mile 
 drive took us about 7-8 hours and we arrived in Schweinfurt around noon. The situation was “chaotic” 
@@ -1507,8 +1511,8 @@ vandalizing fans, but later we thankfully learned, they were false alerts, proba
 press which has taken an ambivalent stance towards the festival. There was quite some opposition 
 among the people of the city and many politicians would have banned the festival from taking place 
 in &lt;em&gt;their city&lt;/em&gt; if they had been among those with the power to decide. The reputation of metal and 
-hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that 
-poor image.&lt;/p&gt;
+hard rock fans was mediocre at best, and sadly, some idiots again helped with consolidating that poor 
+image.&lt;/p&gt;
 
   &lt;p&gt;To us, it appeared peaceful, but a lot of people were already totally drunk and/or stoned at noon, 
 long before the first band was scheduled to play. I was totally excited, because I was going to see 
@@ -1583,9 +1587,9 @@ going to sleep in the car for most of the upcoming drive.&lt;/p&gt;
 &lt;div class=&quot;two_cols&quot;&gt;
   &lt;p class=&quot;dc&quot;&gt;The drive from Schweinfurt to Ramstein would normally take approximately 3 hours, but we needed at 
 least five, possibly more, because of &lt;em&gt;major&lt;/em&gt; traffic jams around the Air Force base. Like the day 
-before, I had slept most of the time during the drive. My brother, who later told me, he didn’t 
-sleep so well, occupied the front seat next to my dad, so I had all the backseats of our comfortable 
-series 5 BMW for myself - nice and spacey enough for a good sleep.&lt;/p&gt;
+before, I had slept most of the time during the drive. My brother, who later told me, he didn’t sleep 
+so well, occupied the front seat next to my dad, so I had all the back seats of our comfortable series 
+5 BMW for myself - nice and spacey enough for a good sleep.&lt;/p&gt;
 
   &lt;p&gt;The Flugtag was a huge event with more than 200.000 spectators expected and probably about 300.000 
 attending - quoted numbers varied greatly, some claim up to 350.000. I can only say, there were 
@@ -1689,8 +1693,8 @@ conditions and dozens of people dying instantly without ever knowing what hit th
 some kind of “thud”. It was not a very loud sound, at least not the loud “bang” one might expect 
 from a mid-air crash of two aircraft at high speed. Others claim, the sound was in fact a loud bang, 
 but maybe they were closer&lt;sup id=&quot;fnref:position&quot;&gt;&lt;a href=&quot;#fn:position&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or maybe it &lt;em&gt;was&lt;/em&gt; loud and my memories are not working as they 
-should. I also &lt;em&gt;do&lt;/em&gt; remember the yellow-orange fire ball and billowing black smoke and I &lt;em&gt;believe&lt;/em&gt;, 
-I felt heated air and some kind of pressure wave that hurt my ears. I also &lt;em&gt;believe&lt;/em&gt;, my father let 
+should. I also &lt;em&gt;do&lt;/em&gt; remember the yellow-orange fire ball and billowing black smoke and I &lt;em&gt;believe&lt;/em&gt;, I 
+felt heated air and some kind of pressure wave that hurt my ears. I also &lt;em&gt;believe&lt;/em&gt;, my father let 
 loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
 wasn’t able to remember. He, being a pilot (although not a military one), might have realized that 
 they were going to crash mid-air. Or maybe, it wasn’t real and I fantasized. I really cannot tell.&lt;/p&gt;
