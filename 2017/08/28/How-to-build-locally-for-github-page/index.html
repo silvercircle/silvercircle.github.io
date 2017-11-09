@@ -128,31 +128,6 @@
           </li>
           <li id="button_blog" class="active">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
-              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
-              <ul style="display:none;">
-              
-               <li><a href="/category/development/"><span>Development</span></a></li>
-              
-               <li><a href="/category/fun/"><span>Fun</span></a></li>
-              
-               <li><a href="/category/c++/"><span>C++</span></a></li>
-              
-               <li><a href="/category/entertainment/"><span>Entertainment</span></a></li>
-              
-               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
-              
-               <li><a href="/category/site/"><span>Site</span></a></li>
-              
-               <li><a href="/category/got/"><span>GoT</span></a></li>
-              
-               <li><a href="/category/fun/"><span>fun</span></a></li>
-              
-               <li><a href="/category/qt/"><span>Qt</span></a></li>
-              
-               <li><a href="/category/travel/"><span>Travel</span></a></li>
-              
-              </ul>
-              -->
            </li>
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
@@ -227,7 +202,7 @@
   <span>28</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time><br />470 Words
+    Last modified: <time class="timeago" datetime="2017-08-28T10:02:42+0200">2017-08-28 10:02:42 +0200</time><br />476 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">10:02</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/jekyll/index.html">Jekyll</a>,&nbsp;<a href="/category/site/index.html">Site</a><br />
@@ -236,26 +211,22 @@
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p>GitHub supports Jekyll as site generator and in most cases, this is good 
-enough. Some more advanced pages may require additional Jekyll plugins that 
-are not available on GitHub. In that case, the site must be built with a local 
-Jekyll installation and pushed to the GitHub repository.</p>
+<p class="dc">GitHub supports Jekyll as site generator and in most cases, this is good enough. Some more advanced 
+pages may require additional Jekyll plugins that are not available on GitHub. In that case, the site 
+must be built with a local Jekyll installation and pushed to the GitHub repository.</p>
 
-<p>A personal homepage can only be served from content in the master branch, 
-therefore the master branch must contain the output of Jekyll’s build command 
-which normally goes to <code class="highlighter-rouge">_site</code>. Everything else is considered source code and 
-has no business in the master branch. The separation into branches is 
-necessary, because some files will exist twice but with different contents. 
-The <code class="highlighter-rouge">index.html</code> in the source root is very likely different from the 
-<code class="highlighter-rouge">index.html</code> in the compiled site.</p>
+<p>A personal home page can only be served from content in the master branch, therefore the master branch 
+must contain the output of Jekyll’s build command which normally goes to <code class="highlighter-rouge">_site</code>. Everything else is 
+considered source code and has no business in the master branch. The separation into branches is 
+necessary, because some files will exist twice but with different contents. The <code class="highlighter-rouge">index.html</code> in the 
+source root is very likely different from the <code class="highlighter-rouge">index.html</code> in the compiled site.</p>
 
-<p>The following applies to personal and organization home pages hosted on 
-<em>github.io</em>. Project pages are a bit different and actually easier to setup, 
-because the content for a project page can be served from a configurable 
-branch.</p>
+<p>The following applies to personal and organization home pages hosted on <em>github.io</em>. Project pages are 
+a bit different and actually easier to setup, because the content for a project page can be served 
+from a configurable branch.</p>
 
-<p>We can leave intact the default directory structure with <code class="highlighter-rouge">_site</code> as our build 
-target and do the following:</p>
+<p>We can leave intact the default directory structure with <code class="highlighter-rouge">_site</code> as our build target and do the 
+following:</p>
 
 <ul>
   <li>create the project.</li>
@@ -276,9 +247,9 @@ must be on master, otherwise GitHub won’t serve the page.</li>
   <li><code class="highlighter-rouge">git checkout -b master</code> (switch to master, this step should be optional)</li>
 </ul>
 
-<p>Now, begin adding content to the root directory. Commit and push this to the 
-<code class="highlighter-rouge">source</code> branch. Do a <code class="highlighter-rouge">jekyll build</code> to build your site, thereafter go to the 
-<code class="highlighter-rouge">_site</code> directory, add, commit and push everything to master.</p>
+<p>Now, begin adding content to the root directory. Commit and push this to the <code class="highlighter-rouge">source</code> branch. Do a 
+<code class="highlighter-rouge">jekyll build</code> to build your site, thereafter go to the <code class="highlighter-rouge">_site</code> directory, add, commit and push 
+everything to master.</p>
 
 <p>Go to your GitHub repository and verify that everything is correct:</p>
 
@@ -292,8 +263,7 @@ must be in the root directory on GitHub. That’s why different branches are
 needed.</li>
 </ul>
 
-<p>That should do it. You can now build your site locally and use every Jekyll 
-plugin you want.</p>
+<p>That should do it. You can now build your site locally and use every Jekyll plugin you want.</p>
 
 
         <div style="margin-top: 0.5em">

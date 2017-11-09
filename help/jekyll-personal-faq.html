@@ -119,31 +119,6 @@
           </li>
           <li id="button_blog" class="">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
-              <!--<span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_blog" class="m_downarrow">&nbsp;</span>
-              <ul style="display:none;">
-              
-               <li><a href="/category/development/"><span>Development</span></a></li>
-              
-               <li><a href="/category/fun/"><span>Fun</span></a></li>
-              
-               <li><a href="/category/c++/"><span>C++</span></a></li>
-              
-               <li><a href="/category/entertainment/"><span>Entertainment</span></a></li>
-              
-               <li><a href="/category/jekyll/"><span>Jekyll</span></a></li>
-              
-               <li><a href="/category/site/"><span>Site</span></a></li>
-              
-               <li><a href="/category/got/"><span>GoT</span></a></li>
-              
-               <li><a href="/category/fun/"><span>fun</span></a></li>
-              
-               <li><a href="/category/qt/"><span>Qt</span></a></li>
-              
-               <li><a href="/category/travel/"><span>Travel</span></a></li>
-              
-              </ul>
-              -->
            </li>
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
@@ -193,7 +168,7 @@
   <span>22</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-10-02T15:35:52+0200">2017-10-02 15:35:52 +0200</time><br />1393 Words
+    Last modified: <time class="timeago" datetime="2017-10-02T15:35:52+0200">2017-10-02 15:35:52 +0200</time><br />1394 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">22:45</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/jekyll/index.html">Jekyll</a>,&nbsp;<a href="/category/site/index.html">Site</a><br />
@@ -202,20 +177,17 @@
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<p>This is a list of questions (and answers) I stumbled over while designing this 
-site. It is by no means a complete list and will most likely cover topics that 
-are already documented elsewhere. I found many answers on <a href="https://stackoverflow.com/questions/tagged/jekyll">stackoverflow 
-questions tagged with 
-Jekyll</a> and links are given 
-when still available. As almost always with such matter, stackoverflow is the 
-#1 resource for such questions.</p>
+<p>This is a list of questions (and answers) I stumbled over while designing this site. It is by no 
+means a complete list and will most likely cover topics that are already documented elsewhere. I 
+found many answers on <a href="https://stackoverflow.com/questions/tagged/jekyll">stackoverflow questions tagged with 
+Jekyll</a> and links are given when still 
+available. As almost always with such matter, stackoverflow is the #1 resource for such questions.</p>
 
 <h2 id="how-to-filter-posts-in-a-loop">How to filter posts in a loop</h2>
 
-<p>Suppose you want to iterate over the collection of posts in the paginator and 
-filter by a some criteria defined by the page’s FrontMatter. Here we are 
-looking for posts which have a variable <em>myvariable</em> defined and set to true 
-in their FrontMatter block.</p>
+<p>Suppose you want to iterate over the collection of posts in the paginator and filter by a some 
+criteria defined by the page’s FrontMatter. Here we are looking for posts which have a variable 
+<em>myvariable</em> defined and set to true in their FrontMatter block.</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
@@ -239,13 +211,12 @@ in their FrontMatter block.</p>
 
 <h2 id="parse-markdown-in-html-content">Parse markdown in HTML content</h2>
 <div class="two_cols">
-  <p>Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary 
-text within a single post or article. By default, markdown will not parse 
-inside HTML tags, which is usually the desired behavior, but sometimes you may 
-want the exact opposite and parse inside HTML tags. Consider, you want to use 
-a <code class="highlighter-rouge">&lt;div&gt;</code> section for highlighting a paragraph with a custom CSS class or 
-similar purpose like I did in this paragraph for which I assigned a 2-column 
-CSS layout by simply wrapping it in <code class="highlighter-rouge">&lt;div&gt;</code> tags.</p>
+  <p>Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary text within a single 
+post or article. By default, markdown will not parse inside HTML tags, which is usually the desired 
+behavior, but sometimes you may want the exact opposite and parse inside HTML tags. Consider, you 
+want to use a <code class="highlighter-rouge">&lt;div&gt;</code> section for highlighting a paragraph with a custom CSS class or similar 
+purpose like I did in this paragraph for which I assigned a 2-column CSS layout by simply wrapping 
+it in <code class="highlighter-rouge">&lt;div&gt;</code> tags.</p>
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
@@ -273,29 +244,28 @@ shouldn’t need to worry</p>
 
 <h2 id="escape-liquid-tags-when-highlighting-code">Escape liquid tags when highlighting code</h2>
 
-<p>If you need to highlight a code block containing liquid tags, you have to 
-“escape” it. By default, liquid tags are parsed in markdown content and this 
-includes a block defined for syntax highlighting. You have to enclose the 
-liquid code in [% raw %] … [% endraw %] tags (note, I have to use square 
-brackets here, otherwise the tags wouldn’t show up) to prevent it from being 
-parsed instead of just highlighted. The raw tag was a plugin in older versions 
-of Jekyll but is now included in Jekyll 3.</p>
+<p>If you need to highlight a code block containing liquid tags, you have to “escape” it. By default, 
+liquid tags are parsed in markdown content and this includes a block defined for syntax 
+highlighting. You have to enclose the liquid code in [% raw %] … [% endraw %] tags (note, I have 
+to use square brackets here, otherwise the tags wouldn’t show up) to prevent it from being parsed 
+instead of just highlighted. The raw tag was a plugin in older versions of Jekyll but is now 
+included in Jekyll 3.</p>
 
 <h2 id="accessing-front-matter-variables-in-the-post">Accessing front matter variables in the post</h2>
 
-<p>All variables defined in the FrontMatter are available as members of the 
-<em>page</em> object. If FrontMatter defines the title then you can access it via  <strong>{{ page.title }}</strong>  in the post. In a similar way you can 
-access these variables when iterating over post collections in a loop.</p>
+<p>All variables defined in the FrontMatter are available as members of the <em>page</em> object. If 
+FrontMatter defines the title then you can access it via  <strong>{{ page.title }}</strong>  in the post. In a similar way you can access these variables when iterating over post 
+collections in a loop.</p>
 
-<p>All configuration variables defined in the site configuration (<em>_config.yaml</em>) are available in the <code class="highlighter-rouge">site</code> namespace.</p>
+<p>All configuration variables defined in the site configuration (<em>_config.yaml</em>) are available in 
+the <code class="highlighter-rouge">site</code> namespace.</p>
 
 <h2 id="when-exactly-is-a-frontmatter-block-necessary">When exactly is a FrontMatter block necessary?</h2>
 
-<p>Basically, for all pages that become content pages. It doesn’t matter whether 
-the page is a markdown document or plain HTML - if it’s going to become its 
-own page, it needs a FrontMatter block. Layouts do not need any and neither do 
-fragments that are included, because technically, they become a part of the 
-page that includes them..</p>
+<p class="dc">Basically, for all pages that become content pages. It doesn’t matter whether the page is a 
+markdown document or plain HTML - if it’s going to become its own page, it needs a FrontMatter 
+block. Layouts do not need any and neither do fragments that are included, because technically, 
+they become a part of the page that includes them.</p>
 
 <h2 id="check-whether-the-current-item-is-the-last-in-an-iteration">Check whether the current item is the last in an iteration</h2>
 
@@ -330,7 +300,8 @@ include a hyperlink and some simple markup.</p>
 
 <h2 id="apply-multiple-style-attributes">Apply multiple style attributes</h2>
 
-<p>This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.</p>
+<p>This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they 
+must be separated by newlines.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>My paragraph text...[...]
 {:bold}
@@ -340,7 +311,7 @@ include a hyperlink and some simple markup.</p>
 
 <p>This applies both the predefined attribute <code class="highlighter-rouge">bold</code> and the CSS class <code class="highlighter-rouge">.indent</code> to the paragraph. 
 Similar constructs are possible for <span style="text-decoration: underline;" class="c_red">span</span> level elements. Here, two 
-classes were applied to the word span, one defining the <code class="highlighter-rouge">text-decoration: underline;</code>  and a second 
+classes were applied to the word span, one defining the <code class="highlighter-rouge">text-decoration: underline;</code> and a second 
 one setting the red color.</p>
 
 <p>It is also possible to <em>include</em> style definitions. Just create a <code class="highlighter-rouge">.markdown</code> file in <code class="highlighter-rouge">_includes</code>, 
