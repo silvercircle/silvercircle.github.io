@@ -310,7 +310,6 @@ can understand those who were harmed or lost loved ones and never got over it, b
 certainly can **not** understand it. I too have lost loved ones in my life and thus know how hard it 
 can be, even though these losses were natural events and did not happen unexpected (which I guess, 
 makes it a bit easier to bear with them) and were not the result of a terrible disaster.
-
 </div>
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or

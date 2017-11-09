@@ -26,20 +26,17 @@ share: 1
 # Jekyll personal FAQ
 {% include post_header.html %}
 {% include defs.md %}
-This is a list of questions (and answers) I stumbled over while designing this 
-site. It is by no means a complete list and will most likely cover topics that 
-are already documented elsewhere. I found many answers on [stackoverflow 
-questions tagged with 
-Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given 
-when still available. As almost always with such matter, stackoverflow is the 
-#1 resource for such questions.
+This is a list of questions (and answers) I stumbled over while designing this site. It is by no 
+means a complete list and will most likely cover topics that are already documented elsewhere. I 
+found many answers on [stackoverflow questions tagged with 
+Jekyll](https://stackoverflow.com/questions/tagged/jekyll) and links are given when still 
+available. As almost always with such matter, stackoverflow is the #1 resource for such questions. 
 
 ## How to filter posts in a loop
 
-Suppose you want to iterate over the collection of posts in the paginator and 
-filter by a some criteria defined by the page's FrontMatter. Here we are 
-looking for posts which have a variable *myvariable* defined and set to true 
-in their FrontMatter block. 
+Suppose you want to iterate over the collection of posts in the paginator and filter by a some 
+criteria defined by the page's FrontMatter. Here we are looking for posts which have a variable 
+*myvariable* defined and set to true in their FrontMatter block. 
 
 {% highlight liquid linenos %}
 {% raw %}
@@ -64,13 +61,12 @@ The fix is first assign the filtered collection to a new variable and then itera
 
 ## Parse markdown in HTML content
 <div class="two_cols" markdown="1">
-Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary 
-text within a single post or article. By default, markdown will not parse 
-inside HTML tags, which is usually the desired behavior, but sometimes you may 
-want the exact opposite and parse inside HTML tags. Consider, you want to use 
-a `<div>` section for highlighting a paragraph with a custom CSS class or 
-similar purpose like I did in this paragraph for which I assigned a 2-column 
-CSS layout by simply wrapping it in `<div>` tags.
+Markdown allows the usage of HTML tags and therefore to mix HTML and ordinary text within a single 
+post or article. By default, markdown will not parse inside HTML tags, which is usually the desired 
+behavior, but sometimes you may want the exact opposite and parse inside HTML tags. Consider, you 
+want to use a `<div>` section for highlighting a paragraph with a custom CSS class or similar 
+purpose like I did in this paragraph for which I assigned a 2-column CSS layout by simply wrapping 
+it in `<div>` tags. 
 </div>
 
 {% highlight html linenos %}
@@ -91,30 +87,30 @@ shouldn't need to worry
 
 ## Escape liquid tags when highlighting code
 
-If you need to highlight a code block containing liquid tags, you have to 
-"escape" it. By default, liquid tags are parsed in markdown content and this 
-includes a block defined for syntax highlighting. You have to enclose the 
-liquid code in [% raw %] ... [% endraw %] tags (note, I have to use square 
-brackets here, otherwise the tags wouldn't show up) to prevent it from being 
-parsed instead of just highlighted. The raw tag was a plugin in older versions 
-of Jekyll but is now included in Jekyll 3.
+If you need to highlight a code block containing liquid tags, you have to "escape" it. By default, 
+liquid tags are parsed in markdown content and this includes a block defined for syntax 
+highlighting. You have to enclose the liquid code in [% raw %] ... [% endraw %] tags (note, I have 
+to use square brackets here, otherwise the tags wouldn't show up) to prevent it from being parsed 
+instead of just highlighted. The raw tag was a plugin in older versions of Jekyll but is now 
+included in Jekyll 3. 
 
 ## Accessing front matter variables in the post
 
-All variables defined in the FrontMatter are available as members of the 
-*page* object. If FrontMatter defines the title then you can access it via {% 
-raw %} **{{ page.title }}** {% endraw %} in the post. In a similar way you can 
-access these variables when iterating over post collections in a loop.
+All variables defined in the FrontMatter are available as members of the *page* object. If 
+FrontMatter defines the title then you can access it via {% raw %} **{{ page.title }}** {% endraw 
+%} in the post. In a similar way you can access these variables when iterating over post 
+collections in a loop. 
 
-All configuration variables defined in the site configuration (*_config.yaml*) are available in the `site` namespace.
+All configuration variables defined in the site configuration (*_config.yaml*) are available in 
+the `site` namespace.
 
 ## When exactly is a FrontMatter block necessary?
 
-Basically, for all pages that become content pages. It doesn't matter whether 
-the page is a markdown document or plain HTML - if it's going to become its 
-own page, it needs a FrontMatter block. Layouts do not need any and neither do 
-fragments that are included, because technically, they become a part of the 
-page that includes them..
+Basically, for all pages that become content pages. It doesn't matter whether the page is a 
+markdown document or plain HTML - if it's going to become its own page, it needs a FrontMatter 
+block. Layouts do not need any and neither do fragments that are included, because technically, 
+they become a part of the page that includes them.
+{:dc} 
 
 ## Check whether the current item is the last in an iteration
 
@@ -154,7 +150,8 @@ include a hyperlink and some simple markup.
 
 ## Apply multiple style attributes
 
-This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they must be separated by newlines.
+This is possible by simply adding them one by one. For block level elements (e.g. paragraphs) they 
+must be separated by newlines.
 {% raw %}
 ```
 My paragraph text...[...]
@@ -164,7 +161,7 @@ My paragraph text...[...]
 {% endraw %}
 This applies both the predefined attribute `bold` and the CSS class `.indent` to the paragraph. 
 Similar constructs are possible for <span>span</span>{:un}{: .c_red} level elements. Here, two 
-classes were applied to the word span, one defining the `text-decoration: underline;`  and a second 
+classes were applied to the word span, one defining the `text-decoration: underline;` and a second 
 one setting the red color.
 
 It is also possible to *include* style definitions. Just create a `.markdown` file in `_includes`, 

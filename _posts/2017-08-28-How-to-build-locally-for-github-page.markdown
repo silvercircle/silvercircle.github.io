@@ -22,26 +22,25 @@ image:
 
 # Build your GitHub Jekyll page locally
 {% include post_header.html %}
-GitHub supports Jekyll as site generator and in most cases, this is good 
-enough. Some more advanced pages may require additional Jekyll plugins that 
-are not available on GitHub. In that case, the site must be built with a local 
-Jekyll installation and pushed to the GitHub repository.
+{% include defs.md %}
 
-A personal homepage can only be served from content in the master branch, 
-therefore the master branch must contain the output of Jekyll's build command 
-which normally goes to `_site`. Everything else is considered source code and 
-has no business in the master branch. The separation into branches is 
-necessary, because some files will exist twice but with different contents. 
-The `index.html` in the source root is very likely different from the 
-`index.html` in the compiled site.
+GitHub supports Jekyll as site generator and in most cases, this is good enough. Some more advanced 
+pages may require additional Jekyll plugins that are not available on GitHub. In that case, the site 
+must be built with a local Jekyll installation and pushed to the GitHub repository. 
+{:dc}
 
-The following applies to personal and organization home pages hosted on 
-*github.io*. Project pages are a bit different and actually easier to setup, 
-because the content for a project page can be served from a configurable 
-branch.
+A personal home page can only be served from content in the master branch, therefore the master branch 
+must contain the output of Jekyll's build command which normally goes to `_site`. Everything else is 
+considered source code and has no business in the master branch. The separation into branches is 
+necessary, because some files will exist twice but with different contents. The `index.html` in the 
+source root is very likely different from the `index.html` in the compiled site.
 
-We can leave intact the default directory structure with `_site` as our build 
-target and do the following:
+The following applies to personal and organization home pages hosted on *github.io*. Project pages are 
+a bit different and actually easier to setup, because the content for a project page can be served 
+from a configurable branch. 
+
+We can leave intact the default directory structure with `_site` as our build target and do the 
+following: 
 
 * create the project.
 * `git init`
@@ -60,9 +59,9 @@ target and do the following:
 * `git remote add origin git@github.com:username/username.github.io.git`
 * `git checkout -b master` (switch to master, this step should be optional)
 
-Now, begin adding content to the root directory. Commit and push this to the 
-`source` branch. Do a `jekyll build` to build your site, thereafter go to the 
-`_site` directory, add, commit and push everything to master.
+Now, begin adding content to the root directory. Commit and push this to the `source` branch. Do a 
+`jekyll build` to build your site, thereafter go to the `_site` directory, add, commit and push 
+everything to master. 
 
 Go to your GitHub repository and verify that everything is correct:
 
@@ -74,6 +73,5 @@ Go to your GitHub repository and verify that everything is correct:
   must be in the root directory on GitHub. That's why different branches are 
   needed.
 
-That should do it. You can now build your site locally and use every Jekyll 
-plugin you want.
+That should do it. You can now build your site locally and use every Jekyll plugin you want. 
 
