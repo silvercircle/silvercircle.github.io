@@ -1,4 +1,197 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2017-11-09T02:54:47+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-03-05T09:38:05+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T06:02:30+0100&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Mar.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
+  &lt;strong&gt;Monday&lt;/strong&gt;
+  &lt;span&gt;05&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-03-05T06:02:36+0100&quot;&gt;2018-03-05 06:02:36 +0100&lt;/time&gt;&lt;br /&gt;448 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;06:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc&quot;&gt;It’s Oscar Night and so far, it’s going pretty much straightforward and thus a bit disappointing. It’s 
+not the nominees or the movies themselves, in fact, there is a lot of great stuff this year, it’s just 
+that everything goes as expected and according to the plan. No big surprises up until now (I’m writing 
+this while the nominees for best original score are announced).&lt;/p&gt;
+
+&lt;p&gt;Speaking of original scores - here is one that deserved the Award more than any other in the last 10 
+years, but came out blank.&lt;/p&gt;
+
+&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
+
+&lt;div class=&quot;ytcontainer&quot;&gt;
+&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/UDVtMYqUAyw&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hans Zimmer, who wrote that magnificent piece of sound track for the movie 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Interstellar_%28film%29&quot;&gt;Interstellar&lt;/a&gt;, is among the nominees for the 
+2018 award today with his creation for 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29&quot;&gt;Dunkirk&lt;/a&gt;, but the award went to the sound 
+track for &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Shape_of_Water_%28film%29&quot;&gt;The Shape of Water&lt;/a&gt;. Again, no 
+surprise.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-big-winner&quot;&gt;The Big Winner&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The Shape of Water&lt;/strong&gt; won a total of four awards, including the two „big ones” (best picture and 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Guillermo_del_Toro&quot;&gt;best director&lt;/a&gt;), followed by Dunkirk with three. 
+Blade Runner 2049, Coco, Darkest Hour and Three Billboards Outside Ebbing, Missouri won two awards 
+each. One golden guy each was awarded to I, Tonya, Get Out, Call Me by Your Name, A Fantastic Woman, 
+Icarus, Phantom Thread, Heaven Is a Traffic Jam on the 405, The Silent Child, and Dear Basketball.&lt;/p&gt;
+
+&lt;p&gt;Clearly, there is no mega winner this year and overall, we have fifteen movies with at least one 
+award. That’s a lot more than last year’s nine awarded productions and a good sign for the high number 
+of quality productions among the nominees.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-and-that&quot;&gt;This and that&lt;/h2&gt;
+
+&lt;p&gt;The Ceremony went without any noteworthy event, host Jimmy Kimmel delivered a solid, but rather 
+un-exciting performance. At the beginning, he promised a price for the winner who would deliver the 
+shortest thanks speech. Later in the show, he came up with a big surprise for the visitors of a nearby 
+cinema just across the street of the famous Dolby Theatre. Kimmel and a number of celebrities, including 
+Gal Gadot, Emily Blunt, Armie Hammer and many others, headed over, gifted the movie-goers snacks and 
+candies, announcing „You’re live at the Oscars” in the process. Whether it was staged or not, nobody 
+knows.&lt;/p&gt;
+
+&lt;p&gt;Warren Beatty and Faye Dunaway got their second chance to announce the winner of the best movie price 
+and this time, they got it right (we still remember last year’s &lt;a href=&quot;https://www.youtube.com/watch?v=WSCuGj0pIww&quot;&gt;epic 
+mishap&lt;/a&gt;, don’t we?).&lt;/p&gt;
+
+&lt;p&gt;Frances McDormand, who won the Oscar for best actress for her stellar performance in Three 
+Billboards… delivered an emotional acceptance speech with a clear statement for gender equality and 
+more inclusion in Hollywood.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">The 90th Academy Awards are handed out today. Being a Cinenut ever since my dad took me to the local movie theatre for watching Star Wars: The Empire Strikes Back when I was a young boy, this is a must watch for me.</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
+  &lt;strong&gt;Tuesday&lt;/strong&gt;
+  &lt;span&gt;28&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot;&gt;2017-11-28 17:51:07 +0100&lt;/time&gt;&lt;br /&gt;525 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:51&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 2 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc&quot;&gt;When I first checked out D many years ago (in the days of D1), I found it an interesting concept, but 
+the language had little value for practical use. The reference compiler was a fast moving and - at 
+some times - fairly buggy and problematic piece of software. The same was true for the standard 
+library, or should I say, &lt;strong&gt;both&lt;/strong&gt; standard libraries, because there were in fact two and to make 
+things worse, they were not really compatible.&lt;/p&gt;
+
+&lt;p&gt;The project was lacking in quality and direction and the most common reasons were given as following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the project was very ambitious from the beginning, maybe over-ambitious to some extent. No less than 
+a successor for C++ was (and still is) the goal for D, set by its author, Walter Bright&lt;sup id=&quot;fnref:bright&quot;&gt;&lt;a href=&quot;#fn:bright&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;lack of manpower. For a long time, D was basically a one man project by Bright himself and 
+realistically, this isn’t doable by a single person, no matter how qualified and skilled that person 
+might be. It’s simply too much work to be finished by a single person in any reasonable time frame.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the issues are long solved and today D presents itself as a mature programming language with a 
+stable reference compiler and standard library (Phobos). Additionally, two more compilers are 
+available:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GDC, a GCC based compiler that runs on many Unix-like systems, Windows and OS X in both 32- and 
+64-bit versions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;LDC, a DMD command line compatible compiler based on the LLVM infrastructure that supports 32- and 
+64-bit targets on Linux, OS X, Windows and Android. Available for Linux, OS X and Windows. 
+Cross-compiling is possible.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While DMD remains the reference compiler, both GDC and LDC can produce significantly better optimized 
+and thus faster code, particularly for 64bit targets, simply because GCC and LLVM are two highly 
+tested and mature platforms.&lt;/p&gt;
+
+&lt;h2 id=&quot;template-programming&quot;&gt;Template programming&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;This &lt;a href=&quot;https://github.com/PhilippeSigaud/D-templates-tutorial/blob/master/D-templates-tutorial.md&quot;&gt;excellent 
+document&lt;/a&gt; 
+about template programming in D, which is a bit more complex (but also much more powerful) than 
+typical generics in other languages. The author of this long documents starts with the basic concepts 
+and gradually dives deeper into the matter before showing how D’s various features in the area can be 
+used for meta programming and practical use cases. This is an excellent read for people who already 
+understand the concepts of templates and generics and want to learn D’s implementation of these 
+concepts.&lt;/p&gt;
+
+&lt;p&gt;http://www.semitwist.com/articles/EfficientAndFlexible/SinglePage/&lt;/p&gt;
+
+&lt;h2 id=&quot;environments&quot;&gt;Environments&lt;/h2&gt;
+
+&lt;p&gt;Since D still lacks popularity, the number of high quality tools for programming in D is somewhat 
+limited. Many modern editors do support syntax highlighting for D, but more advanced support for 
+auto-completion and error checking is still rare. There is an 
+&lt;a href=&quot;https://marketplace.eclipse.org/content/ddt&quot;&gt;add-on&lt;/a&gt; for Eclipse and an 
+&lt;a href=&quot;http://rainers.github.io/visuald/visuald/StartPage.html&quot;&gt;extension&lt;/a&gt; for Visual Studio. Other possible&lt;/p&gt;
+
+&lt;div class=&quot;blockimage borderless&quot;&gt;
+
+
+
+
+&lt;a href=&quot;/assets/gfx//slickedit-d-mode.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;SlickEdit as IDE for the D language&quot;&gt;
+
+&lt;figure style=&quot;position:relative;&quot;&gt;
+        &lt;img src=&quot;/assets/gfx//slickedit-d-mode.png&quot; alt=&quot;SlickEdit as IDE for the D language&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
+        
+        &lt;div data-target=&quot;tt_&quot; class=&quot;img_overlay_indicator&quot; style=&quot;position:absolute;bottom:20px;right:20px;&quot;&gt;
+        &lt;/div&gt;
+        
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                SlickEdit as IDE for the D language
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+
+&lt;/a&gt;
+
+
+    &lt;div id=&quot;tt_&quot; class=&quot;img_tooltip&quot; style=&quot;display:none;&quot;&gt;
+        &lt;div class=&quot;tt_closebutton&quot; style=&quot;float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;&quot;&gt;
+        &lt;/div&gt;
+        &lt;p&gt;This screen shot shows SlickEdit, a multi-platform and multi-language text editor and IDE 
+for many languages, including D. It supports project management, intelligent code 
+completion (similar to Intellisense), sophisticated code navigation and much more.&lt;/p&gt;
+
+    &lt;/div&gt;
+
+
+&lt;div class=&quot;floatimage_title&quot; style=&quot;padding: 3px 8px;&quot;&gt;
+    SlickEdit as IDE for the D language
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:bright&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Walter_Bright&quot;&gt;Walter Bright&lt;/a&gt; is a renowned expert on
+programming languages, particularly compiler design with 3 decades of experience in the area. With 
+Zortech C++, Bright authored the first C++ compiler for the Windows operating system, at a time 
+when Microsoft’s own compiler only understood ANSI C.&amp;nbsp;&lt;a href=&quot;#fnref:bright&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T16:38:51+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -1444,7 +1637,7 @@ mediterranean island, particularly in the southern part.&lt;/p&gt;
   &lt;span&gt;20&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3402 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-20T19:18:23+0200&quot;&gt;2017-09-20 19:18:23 +0200&lt;/time&gt;&lt;br /&gt;3482 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;05:18&lt;/span&gt; | by Alex Vie&lt;br /&gt;
@@ -1616,8 +1809,9 @@ better to leave the densely packed crowd.&lt;/p&gt;
 
   &lt;p&gt;So we made our way out of the masses and settled down in a lesser crowded area. We sat down into the 
 grass and watched the still ongoing aircraft display teams. My dad took pictures with his Nikon and 
-I remember my brother was a bit annoyed, because his Sony Video-8 camcorder was out of battery power 
-and he had not listened to our dad telling him he might want to save a bit for the Italian team.&lt;/p&gt;
+I remember my brother was a bit annoyed, because his Video-8 camcorder was out of battery power and 
+he had not listened to our dad telling him he might want to save a bit of tape and battery for the 
+Italian team.&lt;/p&gt;
 
   &lt;p&gt;At around 3:30pm, the Italian display team Frecche Tricolori was announced as the highlight of the 
 show and the last flying display team for the day. My dad told us to pay extra attention, because 
@@ -1625,9 +1819,9 @@ they were awesome and the only team flying with 10 aircraft. The show was indeed
 promised and we watched for minutes from our position at least 200 meters away from the place, that 
 was soon going to turn into hell on earth. I later realized that it was &lt;strong&gt;pure luck&lt;/strong&gt; we were able 
 to leave the scene physically unharmed, because about an hour or so before, we &lt;em&gt;had&lt;/em&gt; been near the 
-ice cream truck that got fully hit by the cartwheeling aircraft and we &lt;em&gt;had&lt;/em&gt; been close to the place 
-where the white station wagon was parked near the perimeter road. That place took a direct hit and 
-people standing there had little chance to survive. We had seen all these places that got turned 
+ice cream truck that got fully hit by one of the crashing aircraft and we &lt;em&gt;had&lt;/em&gt; been close to the 
+place where the white station wagon was parked near the perimeter road. That place took a direct hit 
+and people standing there had little chance to survive. We had seen all these places that got turned 
 into a patch of scorched earth within seconds.&lt;/p&gt;
 &lt;/div&gt;
 
@@ -1687,17 +1881,21 @@ took this image, must have been standing.”&lt;/p&gt;
   &lt;p&gt;So we watched that big heart painted into the steel blue sky, the maneuver that was announced to 
 mean love and peace and was meant to be the final stunt in the show of the Italian display team. At 
 this time, still nobody even remotely thought that love and peace would soon turn into war-like 
-conditions and dozens of people dying instantly without ever knowing what hit them.&lt;/p&gt;
+conditions and dozens of people dying instantly without ever coming to know what hit them.&lt;/p&gt;
 
   &lt;p&gt;What then happened, I do not fully remember. I do remember a strange, metallic sound, followed by 
-some kind of “thud”. It was not a very loud sound, at least not the loud “bang” one might expect 
+some kind of “bump”. It was not a very loud sound, at least not the loud “bang” one might expect 
 from a mid-air crash of two aircraft at high speed. Others claim, the sound was in fact a loud bang, 
 but maybe they were closer&lt;sup id=&quot;fnref:position&quot;&gt;&lt;a href=&quot;#fn:position&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or maybe it &lt;em&gt;was&lt;/em&gt; loud and my memories are not working as they 
-should. I also &lt;em&gt;do&lt;/em&gt; remember the yellow-orange fire ball and billowing black smoke and I &lt;em&gt;believe&lt;/em&gt;, I 
-felt heated air and some kind of pressure wave that hurt my ears. I also &lt;em&gt;believe&lt;/em&gt;, my father let 
-loose a loud vulgar curse before everything started to turn into a nightmare, but he said later, he 
-wasn’t able to remember. He, being a pilot (although not a military one), might have realized that 
-they were going to crash mid-air. Or maybe, it wasn’t real and I fantasized. I really cannot tell.&lt;/p&gt;
+should. For me, the entire event was unnaturally quiet - looking at the images and videos of the 
+huge explosion and its fireball, one would expect a lot of noise from it, but that’s completely 
+absent from my memories. I also &lt;em&gt;do&lt;/em&gt; remember the yellow-orange fire ball and billowing black smoke 
+and I &lt;em&gt;believe&lt;/em&gt;, I felt heated air and some kind of pressure wave affecting my ears, comparable to 
+the pressure difference one can feel in an ascending or descending aircraft, but with a weaker 
+effect. I also &lt;em&gt;believe&lt;/em&gt;, my father let loose a loud vulgar curse before everything started to turn 
+into a nightmare, but he said later, he wasn’t able to remember. He, being a pilot (although not a 
+military one), might have realized that they were going to crash mid-air. Or maybe, it wasn’t real 
+and I fantasized. I really cannot tell.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
@@ -1755,17 +1953,17 @@ our drive home which took us many hours, probably 10 or more. I only know we arr
 early in the morning. Later I was told it could have been some kind of mild shock. Even I was only 
 fourteen years old, I very likely realized that a lot of people got hurt without seeing reports on 
 TV or in newspapers. The chaos, the screams, the smoke clouds, the smell of burned stuff, the lots 
-of uniformed guys, some armed, the many ambulances and helicopters, the overall noise level, it all 
-might have contributed.&lt;/p&gt;
+of uniformed guys, some armed, the many ambulances and helicopters, the overall noise level that 
+accomplished the aftermath of the disaster, it all might have contributed.&lt;/p&gt;
 
-  &lt;p&gt;What I &lt;em&gt;clearly&lt;/em&gt; remember is my mom when we finally arrived home - she was in tears and couldn’t 
+  &lt;p&gt;What I &lt;em&gt;clearly&lt;/em&gt; remember is my mum when we finally arrived home - she was in tears and couldn’t 
 stop crying for hours. Even though my dad called her on phone as soon as we found a working phone 
 box (there were no mobile phones back then) and told her we were all fine and heading home, she 
 probably didn’t realize that we didn’t get hurt until we finally arrived. She &lt;em&gt;had&lt;/em&gt; seen the reports 
 on TV &lt;strong&gt;before&lt;/strong&gt; my dad called her, because finding a phone on site was impossible and we had to 
 wait until we were able to leave the chaos and finally found a phone at a &lt;em&gt;Autobahn&lt;/em&gt; service 
-station. She knew we were there and she had seen the dreadful images on TV and heard that dozens 
-died and hundreds got injured - that was enough.&lt;/p&gt;
+station. She knew we were there and she had seen the dreadful images on TV and heard that many had 
+died and hundreds had been injured, some of them in a life threatening way - that was enough.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&quot;consequences&quot;&gt;Consequences?&lt;/h2&gt;
 &lt;div class=&quot;two_cols&quot;&gt;
@@ -1813,414 +2011,4 @@ aircraft.&amp;nbsp;&lt;a href=&quot;#fnref:vmc&quot; class=&quot;reversefootnote
 more from the actual mid-air crash.&amp;nbsp;&lt;a href=&quot;#fnref:position&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><summary type="html">In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become an exciting last summer vacations weekend as my dad took me and my older brother on a two days long journey with the intention to visit both these events.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mor%22,%20%22width%22=%3E%22100px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T04:18:14+01:00</published><updated>2017-09-20T04:18:14+01:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/">&lt;p&gt;text and more&lt;/p&gt;</content><author><name>Alex Vie</name></author><summary type="html">The second page of the eighties article.</summary></entry><entry><title type="html">Build simple galleries with Jekyll</title><link href="https://silvercircle.github.io/2017/09/18/building-galleries/" rel="alternate" type="text/html" title="Build simple galleries with Jekyll" /><published>2017-09-18T04:18:14+01:00</published><updated>2017-09-18T04:18:14+01:00</updated><id>https://silvercircle.github.io/2017/09/18/building-galleries</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/18/building-galleries/">&lt;h1 id=&quot;build-simple-galleries-with-jekyll&quot;&gt;Build simple galleries with Jekyll.&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-09-18T05:18:14+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Sep.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Monday&lt;/strong&gt;
-  &lt;span&gt;18&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-09-18T05:18:23+0200&quot;&gt;2017-09-18 05:18:23 +0200&lt;/time&gt;&lt;br /&gt;385 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;05:18&lt;/span&gt; | by Alex Vie&lt;br /&gt;
-    Reading time: approx. 1 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;p&gt;Data files are a fairly powerful feature in Jekyll. They can be used to store all kind of structured 
-data in as many different files and multiple formats. Currently supported are:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;CSV, YAML and JSON&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For example, I started using data files to store all information about images, both local uploads 
-and remote (linked) images, after I realized that passing a single handle is easier than remembering 
-the exact location of an image in the file system (and then screw up case sensitivity in the 
-process). Such an entry might look like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;testgallery&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;remoteimage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://path.to/image.png&quot;&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&quot;&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Telling&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;us&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;why&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;localimage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;logo.png&quot;&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# the presence of name indicates a local image&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;site/logos/&quot;&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;cool&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&quot;&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Telling&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;us...&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;well,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;it&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Consider this entry is within &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/images.yaml&lt;/code&gt;, then the image record will be available in 
-templates as &lt;code class=&quot;highlighter-rouge&quot;&gt;site.data.images.testgallery.remoteimage&lt;/code&gt;. Its attributes are accessible as 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;site.data.images.testgallery.remoteimage.url&lt;/code&gt; and so on.&lt;/p&gt;
-
-&lt;p&gt;Of course, it’s possible to omit the &lt;code class=&quot;highlighter-rouge&quot;&gt;testgallery&lt;/code&gt; part and organize images differently. One file 
-per gallery, or any combination is possible. It just needs to be somewhat hierarchical and following 
-the conventions you have defined.&lt;/p&gt;
-
-&lt;div class=&quot;gallery&quot;&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/vIlBboj5Ua9m1tduo8odmRjwdHpEiGVDjw0-MoqzzLxQR20bwTBtQoUGLndEdT4ypQYRTmiSA29JOJY89gTU-pA-SNWenXb3UukwT7245foGQ0xc5kt_zlmI5ZaTm0f_7kpp5dFUESxuT5SRv6etq9n_qwDpsvYIgOW2Xta9HlkXKJ0r-Z8MJRVyJMwKXDY2h-ngtARybEeNE_AnfuV4CW3vRGzETDaKztfyo7Dn99zf6eJJP1Df3AAnxqMAGvUcecIg60fJGTP_zZ4z0weNNPCtQtTDhCVmlRsYp8O8AVmnItxGeoGEd-BnWbbrKC1ydufAzvf5zzbaEYZWFwjcpKzhchRVFDnpFqjPwrFBKkb8j3BlPiyyyEpLhiu-f46FSl_yWyn0nTNXGW0RcJ-0zlr1hFYN5OMIuLnhMqRWsinFlRpdKswVfoLwRGvLx1ivjoP-iguyjHzXH7dYBAcRCfLCezwRRNAO5KdUXMi_XoQ9b9Qq4pKxDuL8bjGGqmArxClckANxmZNf7XK9kJmoxfTwnMNNIMbAjEHeT0JAv533yNpWBkVymg8qqiDciEMeJjluiscdIloYJgvVDY7enQFSCx4KApSPjSo3Pw3cfA=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/vIlBboj5Ua9m1tduo8odmRjwdHpEiGVDjw0-MoqzzLxQR20bwTBtQoUGLndEdT4ypQYRTmiSA29JOJY89gTU-pA-SNWenXb3UukwT7245foGQ0xc5kt_zlmI5ZaTm0f_7kpp5dFUESxuT5SRv6etq9n_qwDpsvYIgOW2Xta9HlkXKJ0r-Z8MJRVyJMwKXDY2h-ngtARybEeNE_AnfuV4CW3vRGzETDaKztfyo7Dn99zf6eJJP1Df3AAnxqMAGvUcecIg60fJGTP_zZ4z0weNNPCtQtTDhCVmlRsYp8O8AVmnItxGeoGEd-BnWbbrKC1ydufAzvf5zzbaEYZWFwjcpKzhchRVFDnpFqjPwrFBKkb8j3BlPiyyyEpLhiu-f46FSl_yWyn0nTNXGW0RcJ-0zlr1hFYN5OMIuLnhMqRWsinFlRpdKswVfoLwRGvLx1ivjoP-iguyjHzXH7dYBAcRCfLCezwRRNAO5KdUXMi_XoQ9b9Qq4pKxDuL8bjGGqmArxClckANxmZNf7XK9kJmoxfTwnMNNIMbAjEHeT0JAv533yNpWBkVymg8qqiDciEMeJjluiscdIloYJgvVDY7enQFSCx4KApSPjSo3Pw3cfA=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/x1YgTurhbnNNVCgB3BbHDJarfDVOL7KfvnlJPl5a255zQq2PD-vYmBkHOhqTKIyORU9poxYjfUMigugYqOfR9OIY9cEJX69J-EDr8acI-GfdR1EQv9MafHNOxKTlmm1dY0U2Es5jrMb3N7XZLXhgHrouL5LzpIpKLYCIPldL4l13iR8GmYR-3VkEkvR6uef0MMXqbfgAmdegABnUPuRR2hZDCh8erdnMlgC1zADyz_9_AxfqvvYOsgwhaIHCH74vkvJwSJzz_8NFeye3VeuCminMJhv35iZXmBrR2iI3nPGGP0a7WIlGC1yQqoywz2oSDBLEIcX1YFll1f6-NHI-xP0yfXR8O2RPRwEea-8islciQi-2BWSd3EtzY7ZZMOpSAYyM81OavlVVUfr4bXovQKQuH4eJLluwfSR3QPKtHaPRsqzzYWMFa2mlxX4AM02zlVo3g-jh73Ykoh6twiFXpCKABm3zZog4l4kbl7SnmGTy0qMHTJ9NPRYzWjtyADi6RopKHzTF_UixUFaw0eGEkPl-nuEU-ZII-CAiFzjjeMj3Yx4yUZtKiErhHnytx-pOwrX_vQP2ybCvE1Z3zDAWoP209QGSO1rvpZ70bpIjcQ=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/x1YgTurhbnNNVCgB3BbHDJarfDVOL7KfvnlJPl5a255zQq2PD-vYmBkHOhqTKIyORU9poxYjfUMigugYqOfR9OIY9cEJX69J-EDr8acI-GfdR1EQv9MafHNOxKTlmm1dY0U2Es5jrMb3N7XZLXhgHrouL5LzpIpKLYCIPldL4l13iR8GmYR-3VkEkvR6uef0MMXqbfgAmdegABnUPuRR2hZDCh8erdnMlgC1zADyz_9_AxfqvvYOsgwhaIHCH74vkvJwSJzz_8NFeye3VeuCminMJhv35iZXmBrR2iI3nPGGP0a7WIlGC1yQqoywz2oSDBLEIcX1YFll1f6-NHI-xP0yfXR8O2RPRwEea-8islciQi-2BWSd3EtzY7ZZMOpSAYyM81OavlVVUfr4bXovQKQuH4eJLluwfSR3QPKtHaPRsqzzYWMFa2mlxX4AM02zlVo3g-jh73Ykoh6twiFXpCKABm3zZog4l4kbl7SnmGTy0qMHTJ9NPRYzWjtyADi6RopKHzTF_UixUFaw0eGEkPl-nuEU-ZII-CAiFzjjeMj3Yx4yUZtKiErhHnytx-pOwrX_vQP2ybCvE1Z3zDAWoP209QGSO1rvpZ70bpIjcQ=w1356-h763-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/OPwBnIG10AnJC2jebry33dPWuiZnTL2UWrz3vZSd-FhUVtMfoAH8-IX4z98ysCcYRrgOInMeOjnmvMS4jZ0IW6IgrAA0wKOQVMoJ_LVlyP2faXTS2nHxfUDotGGK7XxQ2NcjUHoF1PPgm6-p3wIGLxgSDa9dSsZOpcAXrNqTWnxOsEsWyXpQm0BVad6rDeAx7Xu5pWIITU_86Xp6YNf7ywb9WGvMe5KWrE2r0DAmRgbeNNBZsr0egtHkJ2PeMAZy5YhEn2q8U0LE_WfPSMwEgbDUfVByZd4wXa5I_Kem8LOd56aYEHoufYljoeKBlyQz6Y_OOljZ9EEYmF_jo4cmeYuudQ5JUQY6GsC4HZByR95EZRlEvWdUWeBDH0U6CdnIsZ881cTWRaDpTqpnVBz-5liZML92etFSFVh_QFe5CxidARv8uqvBwNwfR4WYb4guGdGwxHlmNlpsyHcXm9F6v7oHwS48TttixQsGFhxt0riNmsPQbj_1-VamnJC0ChDhyVASWP15AT5wWaywf2qnnFdPRx3EpbL9amiWQF0-IOuD8An2wgLK9eaKA5NHBFU-EYMUBzmFjJ3n4YKkDea2eKa3EnXVL4h9AOvbxYMzbA=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Image 4&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/OPwBnIG10AnJC2jebry33dPWuiZnTL2UWrz3vZSd-FhUVtMfoAH8-IX4z98ysCcYRrgOInMeOjnmvMS4jZ0IW6IgrAA0wKOQVMoJ_LVlyP2faXTS2nHxfUDotGGK7XxQ2NcjUHoF1PPgm6-p3wIGLxgSDa9dSsZOpcAXrNqTWnxOsEsWyXpQm0BVad6rDeAx7Xu5pWIITU_86Xp6YNf7ywb9WGvMe5KWrE2r0DAmRgbeNNBZsr0egtHkJ2PeMAZy5YhEn2q8U0LE_WfPSMwEgbDUfVByZd4wXa5I_Kem8LOd56aYEHoufYljoeKBlyQz6Y_OOljZ9EEYmF_jo4cmeYuudQ5JUQY6GsC4HZByR95EZRlEvWdUWeBDH0U6CdnIsZ881cTWRaDpTqpnVBz-5liZML92etFSFVh_QFe5CxidARv8uqvBwNwfR4WYb4guGdGwxHlmNlpsyHcXm9F6v7oHwS48TttixQsGFhxt0riNmsPQbj_1-VamnJC0ChDhyVASWP15AT5wWaywf2qnnFdPRx3EpbL9amiWQF0-IOuD8An2wgLK9eaKA5NHBFU-EYMUBzmFjJ3n4YKkDea2eKa3EnXVL4h9AOvbxYMzbA=w1356-h763-no&quot; alt=&quot;Image 4&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Image 4
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/40qPmpVhflxi3Qn8v9npd0XBJziqSivbLIXHhRDNRtkw2GDB3Mq0z4n9VzjRdPegnhMutoC_9IvTryuHgU7hMYEHvbalsahEy636rX0C6U_9MXzZUqoQgVA_DTC4X_6uvq7K70bH5AI1-h2WEh7hmDGQQu17NsSLwtlNmn22P1iq4O8Qowyy_4fuQ81GpTybny-B2TlU1ydpQXqTGW0CpTtSZ4yGKlky5NiSZrdUX1kozCwnlSxtDMia69P3AnYU55yGy02nWIHehS4OsMourMdk1Xq5h7erFRLl8BzNj9u8WYtsHd0IhFVd2XsZhuQ-dRwtoDOvtAvxb_Ldt45VZWzes6gfQkYHutKLKRN1qOUBFvAIAiFdLzQCtkHT2sAzhMeGsqkvrkKksN6kiixD-erGJ_p1MPoopYEKhN77PflLMwxp-nWjSm8ibXQhIqwlas78WTitvrrpQlwQNX-TrwrMbjWrf_tYaO-xmrq6ot64ZBOySu5gLK2AfQbmQK3k0fdufcVIMIG3D5L__u5c0aP6Kuj6DXEVqAsZ1gjyXwsCnqiDJxMRFKcRI4TkadIFnBL463NxzkU1QSdBkLGQJ_T-Pn2FrNn1Y1WKDSoKdw=w1356-h763-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Image 5&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/40qPmpVhflxi3Qn8v9npd0XBJziqSivbLIXHhRDNRtkw2GDB3Mq0z4n9VzjRdPegnhMutoC_9IvTryuHgU7hMYEHvbalsahEy636rX0C6U_9MXzZUqoQgVA_DTC4X_6uvq7K70bH5AI1-h2WEh7hmDGQQu17NsSLwtlNmn22P1iq4O8Qowyy_4fuQ81GpTybny-B2TlU1ydpQXqTGW0CpTtSZ4yGKlky5NiSZrdUX1kozCwnlSxtDMia69P3AnYU55yGy02nWIHehS4OsMourMdk1Xq5h7erFRLl8BzNj9u8WYtsHd0IhFVd2XsZhuQ-dRwtoDOvtAvxb_Ldt45VZWzes6gfQkYHutKLKRN1qOUBFvAIAiFdLzQCtkHT2sAzhMeGsqkvrkKksN6kiixD-erGJ_p1MPoopYEKhN77PflLMwxp-nWjSm8ibXQhIqwlas78WTitvrrpQlwQNX-TrwrMbjWrf_tYaO-xmrq6ot64ZBOySu5gLK2AfQbmQK3k0fdufcVIMIG3D5L__u5c0aP6Kuj6DXEVqAsZ1gjyXwsCnqiDJxMRFKcRI4TkadIFnBL463NxzkU1QSdBkLGQJ_T-Pn2FrNn1Y1WKDSoKdw=w1356-h763-no&quot; alt=&quot;Image 5&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Image 5
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/NcQM3MdvqU-kIVIPvGl9ybBiB6oTSU4zWc2ZvrGpJocQh88BobK_CdYpYkKh34Zv_Qe_R5T3l1s4HgNCyz6SWTX08b4rWHK7UjW6xlyYYf8QP2GqGj_0IkFZODK_0y0dEK7jhlfvi4Dnt_4m38xMdpW2H9b0OkaPdtX9L-r4FWci4dvulVP65AUzk8B-eFxMCOZnnZ5WHKlGaCLfpw668FSDcMIjv6gCQsxaH46nWRXsBmNrXdWoPQ9AvSg4pxJbaiC_IAtNaeKybu2X08MAuiakL0dqLrdl56ZtOBzoH2IpIrfKLxdUEsWq3FLYmHNhN6Oy-l0MATzeb_2ltEK8XvUdBaEBsyUZFd3WUWQw9D_x9v_sCNs3_XZ4X6qyUBJ1Xi1gAwrD3hyKcqJpQxeU4hraWd-tughKMW0AnnS956Vezx71oZ-_dk-HZ6Gk95i-KMTYmEn9PcZiipMgw4jlqFa7X9BmHXZq3WhuRCQmY-Jti6k-utSe9G64kt78R0BZUiDiXZXun_SXAdo7YtfjFfNakIPvFR0GJKqkF9VkKLnPvnaEyGS7Hu7kXeFi6-weJ7YO70OKcDzMt4Byky1WXRpzXbRJALyJNrZjc1ZM5Q=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/NcQM3MdvqU-kIVIPvGl9ybBiB6oTSU4zWc2ZvrGpJocQh88BobK_CdYpYkKh34Zv_Qe_R5T3l1s4HgNCyz6SWTX08b4rWHK7UjW6xlyYYf8QP2GqGj_0IkFZODK_0y0dEK7jhlfvi4Dnt_4m38xMdpW2H9b0OkaPdtX9L-r4FWci4dvulVP65AUzk8B-eFxMCOZnnZ5WHKlGaCLfpw668FSDcMIjv6gCQsxaH46nWRXsBmNrXdWoPQ9AvSg4pxJbaiC_IAtNaeKybu2X08MAuiakL0dqLrdl56ZtOBzoH2IpIrfKLxdUEsWq3FLYmHNhN6Oy-l0MATzeb_2ltEK8XvUdBaEBsyUZFd3WUWQw9D_x9v_sCNs3_XZ4X6qyUBJ1Xi1gAwrD3hyKcqJpQxeU4hraWd-tughKMW0AnnS956Vezx71oZ-_dk-HZ6Gk95i-KMTYmEn9PcZiipMgw4jlqFa7X9BmHXZq3WhuRCQmY-Jti6k-utSe9G64kt78R0BZUiDiXZXun_SXAdo7YtfjFfNakIPvFR0GJKqkF9VkKLnPvnaEyGS7Hu7kXeFi6-weJ7YO70OKcDzMt4Byky1WXRpzXbRJALyJNrZjc1ZM5Q=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/fs72pkt5lPtrdYFlIjYsfL8ZwWVtdidWzmzkYbpXRC45njw6mcfZgxUdjm4h2fHJUmIoYV9Odl0FlcbVqa2WwZ2yxjs6Moj6HCNHQJFMO5KrMIvAYiJVFq5qkavfGqSbwiKhMD01BAF9cNN-1ukky7o7TBwicUlqdSfLbiTmuyknyR-ktCfPH2JXzQHo2UU0-4D3OZxZC2h5vSBPTLUS9Et3P79Ykrs7fFklJcYnQna6YxWOsrMpiZrsY7uLLI2foGShRl5OKD9VDY2gM7Tj5XBdfhFPm7jKBJR-zPfSkqD-OQr6YeRl38OHt9JXCnCBf-k8O-VqFxIDfF6tCBlaAS5EntYhiFyRLtCi_5j5TfNjwCCG1pXS11fgj9jVdCaQUDlWQTUCwyes-6x7zeniHHX1VJlDzYawWPq-Rio2xItKuRKM0G2GrF5wvOfnatG4v1xQCiKkMjUQ6wC2SPe9r7XBYB40OjJIExJ7BWLI_LE8B1zKNW_BFNKzGKy45T8CiISBqfRZfjNb9tZUdVd5vzDG5TNRPBW2Kf7gbBreMRa_lIOVWYs5ayukMcQuhwwnmG1eEMnU6jNdIVdPY_N9RlYssuRsElvVQdlJ0Em8Kg=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/fs72pkt5lPtrdYFlIjYsfL8ZwWVtdidWzmzkYbpXRC45njw6mcfZgxUdjm4h2fHJUmIoYV9Odl0FlcbVqa2WwZ2yxjs6Moj6HCNHQJFMO5KrMIvAYiJVFq5qkavfGqSbwiKhMD01BAF9cNN-1ukky7o7TBwicUlqdSfLbiTmuyknyR-ktCfPH2JXzQHo2UU0-4D3OZxZC2h5vSBPTLUS9Et3P79Ykrs7fFklJcYnQna6YxWOsrMpiZrsY7uLLI2foGShRl5OKD9VDY2gM7Tj5XBdfhFPm7jKBJR-zPfSkqD-OQr6YeRl38OHt9JXCnCBf-k8O-VqFxIDfF6tCBlaAS5EntYhiFyRLtCi_5j5TfNjwCCG1pXS11fgj9jVdCaQUDlWQTUCwyes-6x7zeniHHX1VJlDzYawWPq-Rio2xItKuRKM0G2GrF5wvOfnatG4v1xQCiKkMjUQ6wC2SPe9r7XBYB40OjJIExJ7BWLI_LE8B1zKNW_BFNKzGKy45T8CiISBqfRZfjNb9tZUdVd5vzDG5TNRPBW2Kf7gbBreMRa_lIOVWYs5ayukMcQuhwwnmG1eEMnU6jNdIVdPY_N9RlYssuRsElvVQdlJ0Em8Kg=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/Xot_Dn2UiO9Zq62gyVl_4ocW9Ll9_EwPokY8UMHgHMbqbxxfoACt5lz_LoMml05QayOq7wMlHzcRjC_A1nL-oTzCMQFqH0zF7CuSLVrxrnrKEVOOoaB-tPpCzpTZDP19xTgkkEKM1hbS3xVel1fyqPgjnyTTG7ECtTG9Wc9ja0fRBqysM2MpXadliVl0p2UYKboDz-_iLJ5CssxAPkyQ04ucutiH0lS8j0Dn0wOJx0wYgMJQFE49W1K5xYisB1TrEF_g9yEMh6XkSDcPjlEWRsG0YVxaTQ1UBmS3j2ZmKL385ud4pL7EQrIWI6efMyZyP-pYPQwKJqLG4-59hdzj9UPFeTzcp2SUn70vKTw_OWrSl8FuCNOqE6-vHN1ka_0ZufsxZkKr16BT87FwbssV5M916Vcp42k0NVyRyZLQCbRgZB69-oRi1gg_XRnD-nrbLBBuMcnSJUhhB5AbGDEdTv03M2UxCiOQxPVxNHi8gUS359PRTEjBO4yzh3i8_lWTLs_cq7LhHFGyMPDYhHy_Xqqj2teqHcKqCvTEA3PYi4_CVbMaWQT3_zyXOPz_7euctKpmMsSd3IgTh1fWAL5s1NSjDcLV6iemcqJT-GiwXA=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/Xot_Dn2UiO9Zq62gyVl_4ocW9Ll9_EwPokY8UMHgHMbqbxxfoACt5lz_LoMml05QayOq7wMlHzcRjC_A1nL-oTzCMQFqH0zF7CuSLVrxrnrKEVOOoaB-tPpCzpTZDP19xTgkkEKM1hbS3xVel1fyqPgjnyTTG7ECtTG9Wc9ja0fRBqysM2MpXadliVl0p2UYKboDz-_iLJ5CssxAPkyQ04ucutiH0lS8j0Dn0wOJx0wYgMJQFE49W1K5xYisB1TrEF_g9yEMh6XkSDcPjlEWRsG0YVxaTQ1UBmS3j2ZmKL385ud4pL7EQrIWI6efMyZyP-pYPQwKJqLG4-59hdzj9UPFeTzcp2SUn70vKTw_OWrSl8FuCNOqE6-vHN1ka_0ZufsxZkKr16BT87FwbssV5M916Vcp42k0NVyRyZLQCbRgZB69-oRi1gg_XRnD-nrbLBBuMcnSJUhhB5AbGDEdTv03M2UxCiOQxPVxNHi8gUS359PRTEjBO4yzh3i8_lWTLs_cq7LhHFGyMPDYhHy_Xqqj2teqHcKqCvTEA3PYi4_CVbMaWQT3_zyXOPz_7euctKpmMsSd3IgTh1fWAL5s1NSjDcLV6iemcqJT-GiwXA=w597-h1061-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/IDDW0oupvmuHisCAxBw8puWW7BOu7dIyNbe2bz2aySr0jbxJUHspaMc8Hm9JXuiXFoI-Hye12d8WxHrlhsLseL_G4xXj5f7lkdpDHOLMFgcco-L_xUbQLWKxnSNu75QjT23ddKyJ2m80iaVYRoQ4ra9iXBEHpkW-MaSCUthCEJKjRBwgEJ_4Iwl0g263WGb3gg9gWfHtS1N3L-kNfXpyBxLRjYeQcbHoDAL6Ehr312s3bgylQ6xUgSGUW7tgsHLFKTf_SblJwGixGo6VGnNzrrNOAkhqo60PU3xG9246BFMwbvrvH53iBoExLSp78feo-2M4n9Zi2yJJ3e7-J4P0jaMGFOX1OZibPTEadr9AeX9u8VzB5kFGvTXu0rKXj36uA6vsl2w-YcDCx5WjVoK_xvJb8lRo6B3GYrxqN8BNpGcVMe0PfQCtvAmuTmv78zrtK8VPfc_sl2_SfWXxbtuuJMJpyMURI79OibDV86DQmcDX2k4TVnsmTBFUTck5pxqLl0OMZq6_tqrIKy3-CMivR0t0S4uZ9WTh_sLHrzRis2tNoj4KALJXPCPmHgjsDoMQpqUFT2DEpGeK-2g2UCFqeFAfyRdPMe_b_Y9zlYBC7g=w1403-h790-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/IDDW0oupvmuHisCAxBw8puWW7BOu7dIyNbe2bz2aySr0jbxJUHspaMc8Hm9JXuiXFoI-Hye12d8WxHrlhsLseL_G4xXj5f7lkdpDHOLMFgcco-L_xUbQLWKxnSNu75QjT23ddKyJ2m80iaVYRoQ4ra9iXBEHpkW-MaSCUthCEJKjRBwgEJ_4Iwl0g263WGb3gg9gWfHtS1N3L-kNfXpyBxLRjYeQcbHoDAL6Ehr312s3bgylQ6xUgSGUW7tgsHLFKTf_SblJwGixGo6VGnNzrrNOAkhqo60PU3xG9246BFMwbvrvH53iBoExLSp78feo-2M4n9Zi2yJJ3e7-J4P0jaMGFOX1OZibPTEadr9AeX9u8VzB5kFGvTXu0rKXj36uA6vsl2w-YcDCx5WjVoK_xvJb8lRo6B3GYrxqN8BNpGcVMe0PfQCtvAmuTmv78zrtK8VPfc_sl2_SfWXxbtuuJMJpyMURI79OibDV86DQmcDX2k4TVnsmTBFUTck5pxqLl0OMZq6_tqrIKy3-CMivR0t0S4uZ9WTh_sLHrzRis2tNoj4KALJXPCPmHgjsDoMQpqUFT2DEpGeK-2g2UCFqeFAfyRdPMe_b_Y9zlYBC7g=w1403-h790-no&quot; alt=&quot;&quot; /&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/BEyicJ7ztuvHxVZ_QlTdICu6QSELoffp-6cWtq03gM738Io2Y6yIjapjO27fHHI7zoC5uUsMTb7QSo2R3bMpIUd_HsT3eWZf3IY4BqdaGl6d5bRMmDcWiG8BgLiZ3_QC_nOCoaXYk0O6dr1wvP7ora6Bkhi_sAQ31WCSgYABevZI-qrFAxOEB-bUe9e6WDyPDdvX7XUkcO8snoGXwD4eJDi3zua7AaKuakn7_-1BBXt81mUEHMftx_FtRC8HjT5onyx0ZG8msxjLT2aSMYguaKIZNIaU9W1sSOjoLGUx0jTtAX3vCS0xjNYeFkyrNVf4Bekgc65x3ZeeDQYCBwTR9To6ajTPQHapSJ5RyzL2gE7MSc84tMncWBlSgNjZi5eb5cB7hANf7VVoBmflkbeopuPdYLl-2fHspXJKwGNNPs1DzYCQpN8rOcxcP3hhkF58gtd8_gsEFrkTeBrxE0ItI0SNe9DCXkd8Ni_GiIJfhBKO2QXyvQhsaDRubiQ2-qqajarwT3R9uqYKUf2853_pgirnj-sAc8vHWZAbZru8v0-gjAyxeE1tqhyMJixI3AZJTJF4-aO9csDQF9qlUkdSFG_jQQg4685t70GGS7iK2A=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/BEyicJ7ztuvHxVZ_QlTdICu6QSELoffp-6cWtq03gM738Io2Y6yIjapjO27fHHI7zoC5uUsMTb7QSo2R3bMpIUd_HsT3eWZf3IY4BqdaGl6d5bRMmDcWiG8BgLiZ3_QC_nOCoaXYk0O6dr1wvP7ora6Bkhi_sAQ31WCSgYABevZI-qrFAxOEB-bUe9e6WDyPDdvX7XUkcO8snoGXwD4eJDi3zua7AaKuakn7_-1BBXt81mUEHMftx_FtRC8HjT5onyx0ZG8msxjLT2aSMYguaKIZNIaU9W1sSOjoLGUx0jTtAX3vCS0xjNYeFkyrNVf4Bekgc65x3ZeeDQYCBwTR9To6ajTPQHapSJ5RyzL2gE7MSc84tMncWBlSgNjZi5eb5cB7hANf7VVoBmflkbeopuPdYLl-2fHspXJKwGNNPs1DzYCQpN8rOcxcP3hhkF58gtd8_gsEFrkTeBrxE0ItI0SNe9DCXkd8Ni_GiIJfhBKO2QXyvQhsaDRubiQ2-qqajarwT3R9uqYKUf2853_pgirnj-sAc8vHWZAbZru8v0-gjAyxeE1tqhyMJixI3AZJTJF4-aO9csDQF9qlUkdSFG_jQQg4685t70GGS7iK2A=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Frecche Tricolori at Airpower 2011, Austria
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/EdKCFjpiQ9PqAHJ5pt44bqscLWrZcwCutooJPN8JDMbZVzDO1FtHb0dtUtz1FJBQCCkQe9x0KqQ65mfl2dmouButsOsE1_6sGyJfQI-1beM1CNJ8nfr4m3cE5AjeJhI4IzVwKpBjP3NKw5jY-CH5fdIWlL0214SnIchy_vwQzRwsfuxQwuHSkx7TToQ9V1m0J4ojSDHhn99Aj51bxMCgc-l0q6S2zIRzIlDF1pWldxFPKGiocbS1EtWrfrmm9xVZfKg0t4jqdwYHckyLfyosEjIa33eJ0hQwnYNHMu6dU7R05jfXhK7PAN8FQZwbcnKIzHS1h9p6GDk6tv-cHhtgAVLdUn-mD3bdUgHddgHRdy5f2VCzBCgSp0ifoluoufBeYmNzTfnHbWcKXajnPUUtfkpCTD-y4yJk0ShJ_iw5yOk-ryhX0_CdF_6352xlM1_c7QD6UcA0lM_s0bbDoFT6goYdMKXVjpr3cVkY2rL_BEzZeuzx4cYw1wyOrTbZRjzqX4vHOtIHTyYn_HjzFgp2NqO0scKaeTU52qrtDRcQQKW1IsbFpmcDv0nms3b-G5k8x9VZfK7s-H6w57M27hfi8A1hBZHJUnclUg1JXxi3Ng=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/EdKCFjpiQ9PqAHJ5pt44bqscLWrZcwCutooJPN8JDMbZVzDO1FtHb0dtUtz1FJBQCCkQe9x0KqQ65mfl2dmouButsOsE1_6sGyJfQI-1beM1CNJ8nfr4m3cE5AjeJhI4IzVwKpBjP3NKw5jY-CH5fdIWlL0214SnIchy_vwQzRwsfuxQwuHSkx7TToQ9V1m0J4ojSDHhn99Aj51bxMCgc-l0q6S2zIRzIlDF1pWldxFPKGiocbS1EtWrfrmm9xVZfKg0t4jqdwYHckyLfyosEjIa33eJ0hQwnYNHMu6dU7R05jfXhK7PAN8FQZwbcnKIzHS1h9p6GDk6tv-cHhtgAVLdUn-mD3bdUgHddgHRdy5f2VCzBCgSp0ifoluoufBeYmNzTfnHbWcKXajnPUUtfkpCTD-y4yJk0ShJ_iw5yOk-ryhX0_CdF_6352xlM1_c7QD6UcA0lM_s0bbDoFT6goYdMKXVjpr3cVkY2rL_BEzZeuzx4cYw1wyOrTbZRjzqX4vHOtIHTyYn_HjzFgp2NqO0scKaeTU52qrtDRcQQKW1IsbFpmcDv0nms3b-G5k8x9VZfK7s-H6w57M27hfi8A1hBZHJUnclUg1JXxi3Ng=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Frecche Tricolori at Airpower 2011, Austria
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/Mw0LNBiJi0JfEqmXAWVgVdwcgejx8GbkCuRYNq1hcz8_hT6kVzWuk-aYg_JE3AoG7Vb_2ti5V8a9chwJXmoJDEXHYyMO0fKiqRTtrlpihLkQKgzh8nEPz8CRRq5l1T7Zf4HQNYy4vVvo_Vs24rqH9c42RuO9NVel1-RPQWs37y9HMN_ac1AgfpzP780kJTG96dnbrH6OPUJNtxe-0lacx9R9PTF4Ui3TuOi0lwmHAKwxtowHR8EzxBjuHxa9fPEpNRnJuDMRju0EABiJjJ5zAk8tO7FUUKUDQSrDnpK-3K1kimXcgO6_rxUHOF3gsD4C-Y3P9nR7kc1Gkk0_dC0QHSyHDHRuVZ3AdtUIcu4pyL6HPs9yHBK4zZdzExqwxFqNLf9U5YzVXIXu2yGOg1VKjE44jBv4O2ba-6F5v6mKs0JkY5khHyXk4scFHY0yhd5_CNoVXiuXuMiHXhLJUnO9xuI4H6d_5DcRu1ZzXmuPy7otCdMCqjS37D6eDTRIPUjSCOwdEQaQG_UCPLuS9CRtcXz0o-f8Qw1wnfTgkiHv5g-9-5gyiLDR0F6Xd9gxcEJjMuRzUcJmAdXrsN3OzGfvM2rhjQgb-ezNsfC-V7f6Vw=w1415-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Frecche Tricolori at Airpower 2011, Austria&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/Mw0LNBiJi0JfEqmXAWVgVdwcgejx8GbkCuRYNq1hcz8_hT6kVzWuk-aYg_JE3AoG7Vb_2ti5V8a9chwJXmoJDEXHYyMO0fKiqRTtrlpihLkQKgzh8nEPz8CRRq5l1T7Zf4HQNYy4vVvo_Vs24rqH9c42RuO9NVel1-RPQWs37y9HMN_ac1AgfpzP780kJTG96dnbrH6OPUJNtxe-0lacx9R9PTF4Ui3TuOi0lwmHAKwxtowHR8EzxBjuHxa9fPEpNRnJuDMRju0EABiJjJ5zAk8tO7FUUKUDQSrDnpK-3K1kimXcgO6_rxUHOF3gsD4C-Y3P9nR7kc1Gkk0_dC0QHSyHDHRuVZ3AdtUIcu4pyL6HPs9yHBK4zZdzExqwxFqNLf9U5YzVXIXu2yGOg1VKjE44jBv4O2ba-6F5v6mKs0JkY5khHyXk4scFHY0yhd5_CNoVXiuXuMiHXhLJUnO9xuI4H6d_5DcRu1ZzXmuPy7otCdMCqjS37D6eDTRIPUjSCOwdEQaQG_UCPLuS9CRtcXz0o-f8Qw1wnfTgkiHv5g-9-5gyiLDR0F6Xd9gxcEJjMuRzUcJmAdXrsN3OzGfvM2rhjQgb-ezNsfC-V7f6Vw=w1415-h1061-no&quot; alt=&quot;Frecche Tricolori at Airpower 2011, Austria&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Frecche Tricolori at Airpower 2011, Austria
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
-
-&lt;p&gt;This assumes, the images are in &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/galleries/default.yaml&lt;/code&gt; organized as children of the main 
-node &lt;code class=&quot;highlighter-rouge&quot;&gt;testgallery&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;gallery&quot; markdown=&quot;1&quot;&amp;gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;image&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.data.galleries.default.testgallery&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this_image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gfx/GITEM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this_image&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;the-data-file&quot;&gt;The data file&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_data/galleries/default.yaml&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;testgallery&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;image1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;image2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;image3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;image4&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;4&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;image5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;....&quot;&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;5&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;The above is only an example of what is possible. Another method is to include image definitions in 
-a post’s front matter. This is useful when the images are private to the post and you want to avoid 
-excessive population of the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;Suppose you include the gallery definition above in the front matter of a post, you can then access 
-the items via &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;page.testgallery&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="jekyll" /><summary type="html">Building simple galleries using includes and Jekyll YAML data files.</summary></entry><entry><title type="html">What we currently know about season 8</title><link href="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017" rel="alternate" type="text/html" title="What we currently know about season 8" /><published>2017-09-13T18:40:54+01:00</published><updated>2017-09-13T18:40:54+01:00</updated><id>https://silvercircle.github.io/got/what-we-know-about-got-season-8</id><content type="html" xml:base="https://silvercircle.github.io/got/season-8-facts-known-in-september-2017">&lt;h1 id=&quot;got-season-8-facts-known-in-september-2017&quot;&gt;GoT season 8 facts known in September 2017&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-09-13T19:40:54+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Sep.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Wednesday&lt;/strong&gt;
-  &lt;span&gt;13&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-07T00:04:07+0200&quot;&gt;2017-10-07 00:04:07 +0200&lt;/time&gt;&lt;br /&gt;454 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;19:40&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/fun/index.html&quot;&gt;Fun&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 1 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;div class=&quot;note blue&quot;&gt;
-  &lt;h3 class=&quot;alert&quot;&gt;Update (October 7th, 2017)&lt;/h3&gt;
-
-  &lt;p&gt;It has now become fairly certain, that season 8 won’t premiere before 2019. Several sources, 
-including some actors and others close to the production team have confirmed that filming of the 
-final season will take longer than usual, possibly into late summer 2018, mainly quoting two 
-reasons:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;The episodes will be longer, rumors have it, all 6 episodes will be of feature film length, which 
-means at least 80 minutes each.&lt;/li&gt;
-    &lt;li&gt;Parallel shooting of multiple plot lines will be more difficult, thus less likely, simply because 
-the majority of the main cast will participate in the same events and splitting won’t be as easy 
-as before.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-&lt;p class=&quot;dc&quot;&gt;Season 7 has concluded just a bit over 2 weeks ago, but the community is already looking forward to 
-the last and final season that will bring an end to one of the most popular TV shows of all time. We 
-already see lots of speculation, some interesting and some rather stupid theories and enough 
-excitement to make you think the show might already be running.&lt;/p&gt;
-
-&lt;h2 id=&quot;so-here-are-some-things-we-currently-know-for-sure&quot;&gt;So here are some things we currently know for sure:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Season 8 will consist of only 6 episodes. However, it is currently not clear how much running time 
-each episode will have. It is &lt;em&gt;possible&lt;/em&gt; (but unconfirmed) that some or even all 6 episodes might 
-be of feature-film length, that would mean at least 80 minutes per episode. What &lt;em&gt;has&lt;/em&gt; been said 
-is that it is going to be a &lt;em&gt;big season&lt;/em&gt;, whatever that means.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The scripts are &lt;a href=&quot;https://www.vanityfair.com/hollywood/2017/07/deadwood-movie-true-detective-season-3-night-of-season-2-hbo&quot;&gt;already 
-done&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;filming may start in late 2017, possibly in October, in other words: &lt;em&gt;soon&lt;/em&gt;. More has not been 
-confirmed yet.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The air date is still unclear. We should not expect it to air before late 2018 though, possibly 
-early 2019.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The plot will be based on the two yet-to-be-finished novels &lt;em&gt;The Winds of Winter&lt;/em&gt; and &lt;em&gt;A Dream of 
-Spring&lt;/em&gt; that are currently in the works by master mind GRRM.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;what-we-can-expect&quot;&gt;What we can expect&lt;/h2&gt;
-
-&lt;p class=&quot;dc&quot;&gt;A lot. Seriously, there are still so many things to finish, so many open ends to collect, we should 
-really expect the pace at which events will happen in the final season to increase again, even when 
-compared to the already fast-moving season seven. Which is something, I personally do not always 
-like, but we need to realize that it’s a necessity as the plot will culminate in a series of events 
-for which a couple of new entities (the Golden Company for example) will enter the stage.&lt;/p&gt;
-
-&lt;div class=&quot;note blue got-theory-footer&quot;&gt;
-  &lt;div style=&quot;float:right&quot;&gt;
-&lt;h3&gt;&lt;a href=&quot;/category/got&quot;&gt;See all&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-  &lt;h3&gt;More Game of thrones theories and rumors&lt;/h3&gt;
-  &lt;p style=&quot;-moz-column-count:3;column-count: 3; text-align:center;&quot;&gt;
-&lt;a href=&quot;/got-theories/jon&quot;&gt;Theories on Jon&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;/got-theories/tyrion&quot;&gt;Theories on Tyrion&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;/got-theories/generic&quot;&gt;All others&lt;/a&gt;&lt;br /&gt;
-&lt;/p&gt;
-  &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="first" /><category term="got" /><summary type="html">Game of Thrones Season 7 has seen its final just ab it over two weeks ago, but fans are already talking a lot about season 8. The premiere of season 8 is still at least one year away, but a lot is already known about the final season that will bring everthing to an end.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22align%22=%3E%22right%22,%20%22width%22=%3E%2215%25%22%7D" /></entry></feed>
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><summary type="html">In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become an exciting last summer vacations weekend as my dad took me and my older brother on a two days long journey with the intention to visit both these events.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mor%22,%20%22width%22=%3E%22100px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T04:18:14+01:00</published><updated>2017-09-20T04:18:14+01:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/">&lt;p&gt;text and more&lt;/p&gt;</content><author><name>Alex Vie</name></author><summary type="html">The second page of the eighties article.</summary></entry></feed>
