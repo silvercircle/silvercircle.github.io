@@ -30,15 +30,17 @@ backlink: /got-theories
 
 > That's what I do, I drink and I know things
 
-This famous quote defines Tyrion pretty nicely. He drinks a lot and he is one of the most 
-knowledgeable folks in the show, except for the Maesters and maybe Varys.
+This famous quote defines Tyrion spot on. He drinks a lot (of red wine) and he is one of the most 
+knowledgeable folks in the show. Even though he is no Maester and no Varys, Tyrion's knowledge about 
+politics, history, warfare among other things is vast. 
+{:dc}
 
 {% include gfx/float_image.html image="got/tyrion-drink-know-things.jpg" align="right" width="35%" 
 title="He knows something" thumb=0 %}
 Tyrion is seen as selfish and not very loyal. In the first couple of seasons he more or less served 
-his family, particularly during the difficult times in season 2 when King's Landing came under 
-attack from Stannis Baratheon, it is accepted wisdom that Tyrion contributed a lot to the close call 
-victory for the besieged capital.
+his family, particularly during the difficult times in season 2 when King's Landing came under attack 
+from Stannis Baratheon, when he orchestrated the successful defense of the besieged capital and 
+won enough time until the Lannister army came to rescue. 
 
 Later on, he turned away from his family, driven by increasing hate for his abusing father, his evil 
 sister Cersei and her even more evil offspring King Joffrey[^joffrey_tyrion], who on its own never 
@@ -47,8 +49,8 @@ famous privy scene:
 
 > you are no son of mine
 
-... were the last words of the gravely wounded Tywin Lannister addressed to his son who just planted 
-multiple crossbow bolts into Tywin's chest.
+... were the last words of the gravely wounded Tywin Lannister, addressing his son who just planted 
+multiple crossbow bolts into his father's chest. 
 
 #### So does that mean anything, and if yes, what?
 

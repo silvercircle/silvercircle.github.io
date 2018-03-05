@@ -90,36 +90,37 @@ code highlighting, real time syntax analysis and powerful code assistance.
 
 {% include gfx/BD.html image=page.images.highlight borderclass="borderless" %}
 
-<p style="text-align: justify;">
-  <strong><span style="color: #ff0000;"><span style="font-size: medium;">Visual Assist X</span></span></strong> adds all these nice features and much more to the editor and works seamlessly throughout Visual Studio. Currently, it supports C/C++, C#, ASP, Visual Basic, HTML, XML, JavaScript and VBScript. It also works in any version of Visual Studio, beginning with version 6 (aka Visual Studio 98) up to version 2008, <strong>except all Express editions </strong>(but this isn't their fault, it is because Express editions do not support this kind of extensions or add-ins).
-</p>
+**Visual Assist X** adds all these nice features and much more to the editor and works seamlessly 
+throughout Visual Studio. Currently, it supports C/C++, C#, ASP, Visual Basic, HTML, XML, JavaScript 
+and VBScript. It also works in any version of Visual Studio, beginning with version 6 (aka Visual 
+Studio 98) up to version 2008, **except all Express editions** (but this isn't their 
+fault, it is because Express editions do not support this kind of extensions or add-ins). 
 
 Support for Visual Studio 2010 was added recently and is currently in release candidate state. This 
 is the version I tested on my Visual Studio 2010 installation.
 
-<p style="text-align: justify;">
-  I'm writing this article from the view point of a C++ programmer and while there are competing solutions for C# and other .NET languages (examples: <a href="http://www.jetbrains.com/resharper/">JetBrains Resharper</a> or <a href="http://www.devexpress.com/Products/Visual_Studio_Add-in/Coding_Assistance/">CodeRush</a>), Visual Assist X is really the only major extension that does not ignore C and C++ developers.
-</p>
+I'm writing this article from the view point of a C++ programmer and while there are competing 
+solutions for C# and other .NET languages (examples: [JetBrains 
+Resharper](href="http://www.jetbrains.com/resharper/) or 
+[CodeRush](http://www.devexpress.com/Products/Visual_Studio_Add-in/Coding_Assistance/)), 
+Visual Assist X is really the only major extension that does not ignore C and C++ developers. 
 
-<p style="text-align: justify;">
-VA's main job is to improve default intellisense with clever suggestions while you type and this 
-works impressively well. In most cases, you'll just have to type 2 or 3 characters of a variable or 
-function name and hit the TAB key to complete it. This works for local and global variables or 
-functions and instantly at your fingertips. You'll rarely experience delays as Visual Assist 
-performs nicely, even with large projects.
-</p>
+VA's main job is to improve default intellisense with clever suggestions while you type and this works 
+impressively well. In most cases, you'll just have to type 2 or 3 characters of a variable or function 
+name and hit the TAB key to complete it. This works for local and global variables or functions and 
+instantly at your fingertips. You'll rarely experience delays as Visual Assist performs nicely, even 
+with large projects. 
 
 ## Clever tooltips
 
 {% include gfx/BD.html image=page.images.tooltip borderclass="borderless" nolink=1 %}
 
-<p style="text-align: justify;">
 Tooltips are available for almost everything. They will appear when you hover a symbol or identifier 
 and will pop up alongside the list of class/structure members when the auto-list members feature 
 kicks in. The tool tips can be syntax colored, using the same colors as in the editor and may 
 include comments that belong to the symbol or identifier. With syntax coloring, they are easier to 
 read and the included comment(s) provide an additional level of help.
-</p>
+{:dc} 
 
 ## Syntax analysis on the fly and a smarter editor
 

@@ -8,74 +8,74 @@
 }
 
 div#search form {
-	background: none;
-	padding: 0;
+    background: none;
+    padding: 0;
 }
 
 #searchString {
-	width: 120px;
-	border: none;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-	padding: 0.2em 0.6em;
-	margin-right: 0;
+    width: 120px;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    padding: 0.2em 0.6em;
+    margin-right: 0;
 }
 
 #searchButton {
-	padding: 0.3em 0.6em;
-	background-color: #0B5485;
-	border: 1px solid #f6f5ea;
-	margin-left: 0;
-	color: white;
-	border-radius: 0;
+    padding: 0.3em 0.6em;
+    background-color: #0B5485;
+    border: 1px solid #f6f5ea;
+    margin-left: 0;
+    color: white;
+    border-radius: 0;
 }
 
 /* google custom search box */
 
 div.gsc-control-searchbox-only {
-	background: transparent;
+    background: transparent;
 }
 
 form.gsc-search-box, table.gsc-search-box {
-	margin: 0 !important;
-	background: transparent;
-	padding: 0;
-	margin-top: 1px !important;
+    margin: 0 !important;
+    background: transparent;
+    padding: 0;
+    margin-top: 1px !important;
 }
 
 input.gsc-input {
-	font-size: 12px !important;
+    font-size: 12px !important;
 }
 
 div.gsc-input-box {
-	padding: 0 !important;
-	height: auto !important;
-	margin-bottom: 3px !important;
-	border: 1px solid #aaa !important;
-	background: #444 !important;
+    padding: 0 !important;
+    height: auto !important;
+    margin-bottom: 1px !important;
+    border: 1px solid #aaa !important;
+    background: #444 !important;
 }
 
 input.gsc-search-button {
-	border: 1px solid #aaa !important;
-	border-radius: 0 !important;
-	margin-bottom: 1px !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+    margin-bottom: 1px !important;
 }
 
 td.gsib_a, td.gsc-input {
-	padding: 0 !important;
-	border: none;
-	height: 25px !important;
+    padding: 0 !important;
+    border: none;
+    height: 25px !important;
 }
 
 td.gsc-input {
-	padding-right: 0 !important;
+    padding-right: 0 !important;
 }
 
 form.gsc-search-box td, form.gsc-search-box table {
-	border: none !important;
+    border: none !important;
 }
 
 .gsc-wrapper {
-	font-family: Monda, Helvetica, Arial, serif !important;
+    font-family: Monda, Helvetica, Arial, serif !important;
 }
 
 .gsc-table-result, .gsc-table-result td {
@@ -108,20 +108,20 @@ form.gsc-search-box td, form.gsc-search-box table {
 }
 
 .gsst_a {
-	padding-top: 4px !important;
+    padding-top: 4px !important;
 }
 
 .gsst_b {
-	font-size: 11px !important;
-	line-height: 11px !important;
+    font-size: 11px !important;
+    line-height: 11px !important;
 }
 #___gcse_0 input[type="text"] {
-	height: 25px !important;
-	width: 170px !important;
-	padding: 0 6px !important;
-	background-color: #444 !important;
-	color: white;
-	margin: 0 !important;
-	box-sizing: border-box;
+    height: 25px !important;
+    width: 170px !important;
+    padding: 0 6px !important;
+    background-color: #444 !important;
+    color: white;
+    margin: 0 !important;
+    box-sizing: border-box;
 }
 

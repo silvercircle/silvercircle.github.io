@@ -76,18 +76,18 @@ article again.
 {: .listheading .smallindent}
 {:smallvmargin}
 <div class="cbox_body">
- {% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
- {% assign counter = 1 %}
- {% for page in docs %}
- {% if page.menucontext == 'blog' or page.blog == 1 or page.blog == true %}
-    {% continue %}
- {% endif %}
- {% include sidebar/document_entry.html %}
- {% assign counter = counter | plus: 1 %}
- {% if counter > 6 %}
- {% break %}
- {% endif %}
- {% endfor %}
+{% assign docs = site.documents | where: 'tags', 'first' | sort: 'modified' | reverse %}
+{% assign counter = 1 %}
+{% for page in docs %}
+{% if page.menucontext == 'blog' or page.blog == 1 or page.blog == true %}
+{% continue %}
+{% endif %}
+{% include sidebar/document_entry.html %}
+{% assign counter = counter | plus: 1 %}
+{% if counter > 6 %}
+{% break %}
+{% endif %}
+{% endfor %}
 </div>
 </div>
 </div>
@@ -105,12 +105,9 @@ article again.
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/fun">Fun and entertainmentt</a></h3>
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/jekyll">Jekyll static site generator</a></h3>   
    <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/got">Game of Thrones</a></h3>
-   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of 
-   Thrones theories</a></h3>
-   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++ 
-   programming.</a></h3>
-   
-   </div>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/got-theories">Game of Thrones theories</a></h3>
+   <h3 class="text-ellipsis sidebar_listheader"><a href="{{ site.baseurl }}/category/c++">C++  programming.</a></h3>
+</div>
 </div>
 </div>
 </div>

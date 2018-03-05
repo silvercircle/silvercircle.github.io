@@ -1,0 +1,70 @@
+---
+author: Alex Vie
+title: Oscar Night
+layout: default_dyn
+date: 2018-03-05T06:02:30+0100
+modified: 2018-03-05T06:02:36+0100
+menucontext: blog
+share: 1
+disqus: 1
+reduced: big
+tag: [first,music,video]
+category: [Entertainment]
+backlink: /blog
+excerpt: >
+    The 90th Academy Awards are handed out today. Being a Cinenut ever since my dad took me to the 
+    local movie theatre for watching Star Wars: The Empire Strikes Back when I was a young boy, this 
+    is a must watch for me. 
+---
+
+# Oscar Night!
+{% include defs.md %}
+{% include post_header.html %}
+
+It's Oscar Night and so far, it's going pretty much straightforward and thus a bit disappointing. It's 
+not the nominees or the movies themselves, in fact, there is a lot of great stuff this year, it's just 
+that everything goes as expected and according to the plan. No big surprises up until now (I'm writing 
+this while the nominees for best original score are announced).
+{:dc} 
+ 
+Speaking of original scores - here is one that deserved the Award more than any other in the last 10 
+years, but came out blank.
+ 
+{% include youtube.html id='UDVtMYqUAyw' %}
+
+Hans Zimmer, who wrote that magnificent piece of sound track for the movie 
+[Interstellar](https://en.wikipedia.org/wiki/Interstellar_%28film%29), is among the nominees for the 
+2018 award today with his creation for 
+[Dunkirk](https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29), but the award went to the sound 
+track for [The Shape of Water](https://en.wikipedia.org/wiki/The_Shape_of_Water_%28film%29). Again, no 
+surprise. 
+ 
+## The Big Winner
+
+**The Shape of Water** won a total of four awards, including the two „big ones” (best picture and 
+[best director](https://en.wikipedia.org/wiki/Guillermo_del_Toro)), followed by Dunkirk with three. 
+Blade Runner 2049, Coco, Darkest Hour and Three Billboards Outside Ebbing, Missouri won two awards 
+each. One golden guy each was awarded to I, Tonya, Get Out, Call Me by Your Name, A Fantastic Woman, 
+Icarus, Phantom Thread, Heaven Is a Traffic Jam on the 405, The Silent Child, and Dear Basketball.
+
+Clearly, there is no mega winner this year and overall, we have fifteen movies with at least one 
+award. That's a lot more than last year's nine awarded productions and a good sign for the high number 
+of quality productions among the nominees. 
+
+## This and that
+
+The Ceremony went without any noteworthy event, host Jimmy Kimmel delivered a solid, but rather 
+un-exciting performance. At the beginning, he promised a price for the winner who would deliver the 
+shortest thanks speech. Later in the show, he came up with a big surprise for the visitors of a nearby 
+cinema just across the street of the famous Dolby Theatre. Kimmel and a number of celebrities, including 
+Gal Gadot, Emily Blunt, Armie Hammer and many others, headed over, gifted the movie-goers snacks and 
+candies, announcing „You're live at the Oscars” in the process. Whether it was staged or not, nobody 
+knows. 
+
+Warren Beatty and Faye Dunaway got their second chance to announce the winner of the best movie price 
+and this time, they got it right (we still remember last year's [epic 
+mishap](https://www.youtube.com/watch?v=WSCuGj0pIww), don't we?). 
+ 
+Frances McDormand, who won the Oscar for best actress for her stellar performance in Three 
+Billboards... delivered an emotional acceptance speech with a clear statement for gender equality and 
+more inclusion in Hollywood. 

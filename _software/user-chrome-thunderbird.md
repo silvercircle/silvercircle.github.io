@@ -53,14 +53,14 @@ GitHub**.
 
 ## To install
 
-* find your TB profile folder
+* find your TB profile directory.
 
-* If it does not already exist, create a new folder and name it `chrome`.
+* If it does not already exist, create a new directory in your profile and name it `chrome` (all lower 
+case). 
 
 * Copy the `userChrome.css` that you'll find inside the .ZIP you downloaded from GitHub into that 
- 
-* folder. Under Linux, the case matters, the `C` must be capital, the extension lower case. The 
-folder `chrome` must be all lowercase.
+freshly created directory. Under Linux, the case matters, the `C` must be capital, the extension lower 
+case. The folder `chrome` must be all lowercase. 
 
 To activate it, you have to restart Thunderbird. If anything goes wrong and TB looks strange, you 
 can simply remove that file from its folder. It does not change anything outside itself. No special 

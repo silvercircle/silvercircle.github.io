@@ -8,7 +8,7 @@ she hit every note spot-on and smiled while doing it.
 
 Her voice back then was much more powerful than today. Sadly, it quickly deteriorated over the 
 years, even while she was still with Nightwish. Today, she's still good, but her voice is much 
-thinner and less powerful than 
+thinner and less powerful than in those early years.
 
 Sadly, there are not many videos from that time and the few that do exist have terrible sound 
 quality. There are no official recordings - I think, the first official live recording is from the 

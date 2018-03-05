@@ -106,7 +106,7 @@ h3.listheading {
     height: auto;
     padding: 10px 30px;
     background-color: yellowgreen;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 #allow_cookies {
@@ -142,7 +142,7 @@ div.hideable {
     display: none;
 }
 
-div.footnotes li, div.footnotes li > p { 
+div.footnotes li, div.footnotes li > p {
     font-size: $footnotes_fontsize !important;
 }
 
@@ -236,14 +236,14 @@ span.time_symbol:before {
 }
 
 div.img_tooltip {
-	display:none;
-	position:absolute;
-	border:1px solid #333;
-	background-color:#eEeEc2;
-	border-radius:0 0 3px 3px;
-	padding:10px;
-	border-top: 26px solid black;
-	z-index: 9999;
+    display:none;
+    position:absolute;
+    border:1px solid #333;
+    background-color:#eEeEc2;
+    border-radius:0 0 3px 3px;
+    padding:10px;
+    border-top: 26px solid black;
+    z-index: 9999;
 }
 div.img_tooltip p:last-child {
     margin-bottom: 0 !important;

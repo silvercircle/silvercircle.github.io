@@ -19,14 +19,14 @@ $title_color: #7c795d;
 $subheader_color: #bf994d;
 
 /* float text definitions (p, li, quotes in main content only) */
-$article_font: "Lora";
+$article_font: "PS Savoy";
 $text_color: #333;
-$text_size: 12pt;
-$text_line_height: 130%;
+$text_size: 14pt;
+$text_line_height: 125%;
 $text_weight: 400;
 $dropcaps_size: 34pt;
 $dropcaps_leading: 30pt;
-$dropcaps_top_padding: 0;
+$dropcaps_top_padding: 4px;
 
 $footnotes_fontsize: 11pt;
 $h3_listheader_size: 16pt;
@@ -46,7 +46,7 @@ $base: '{{site.baseurl}}';
 /*@import "font-signika";*/
 @import "font-roboto_condensed";
 @import "font-lato";
-/*@import "font-savoy";*/
+@import "font-savoy";
 /*@import "font-merriweather_sans";*/
 /*@import "font-oswald";*/
 /*@import "font-roboto_slab";*/
@@ -68,3 +68,4 @@ $base: '{{site.baseurl}}';
 @import "share";
 @import "customizations";
 @import "content";
+

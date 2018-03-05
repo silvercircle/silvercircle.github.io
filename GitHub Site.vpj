@@ -4,7 +4,7 @@
     VendorName="SlickEdit"
     TemplateName="(Other)"
     WorkingDir="."
-    TagFile="None">
+    TagFile="Workspace">
     <Config
         Name="Release"
         OutputFile=""
@@ -449,6 +449,8 @@
                 <F N="assets/js/jquery.fancybox.min.js"/>
                 <F N="assets/js/jquery.js"/>
             </Folder>
+            <F N="_posts/2018-03-05-oscar-night-2018.markdown"/>
+            <F N="_software/slickedit-universal-editor-and-ide.md"/>
         </Folder>
         <Folder
             Name="_Data"
