@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-03-05T09:38:05+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-03-07T14:28:39+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T06:02:30+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Mar.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -6,19 +6,29 @@
   &lt;span&gt;05&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-03-05T06:02:36+0100&quot;&gt;2018-03-05 06:02:36 +0100&lt;/time&gt;&lt;br /&gt;448 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-03-05T06:02:36+0100&quot;&gt;2018-03-05 06:02:36 +0100&lt;/time&gt;&lt;br /&gt;644 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;06:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 1 minute(s).
+    Reading time: approx. 2 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
+&lt;div class=&quot;note blue&quot;&gt;
+  &lt;h3 class=&quot;alert&quot;&gt;Update (March 6th, 2018)&lt;/h3&gt;
+
+  &lt;p&gt;The Oscar Night is now a event of the past.
+&lt;br /&gt;&lt;br /&gt;
+For the curious, &lt;a href=&quot;http://oscar.go.com/winners&quot;&gt;here&lt;/a&gt; are the full results with all nominees and winners.&lt;/p&gt;
+&lt;/div&gt;
+
 &lt;p class=&quot;dc&quot;&gt;It’s Oscar Night and so far, it’s going pretty much straightforward and thus a bit disappointing. It’s 
 not the nominees or the movies themselves, in fact, there is a lot of great stuff this year, it’s just 
-that everything goes as expected and according to the plan. No big surprises up until now (I’m writing 
-this while the nominees for best original score are announced).&lt;/p&gt;
+that everything goes as expected and according to the plan. Favorite wins and no big surprises up 
+until now (I’m writing this while the nominees for best original score are announced). Gary Oldman and 
+Frances McDormand already received their well deserved prices, both for absolutely brilliant acting 
+performances in their respective movies.&lt;/p&gt;
 
 &lt;p&gt;Speaking of original scores - here is one that deserved the Award more than any other in the last 10 
 years, but came out blank.&lt;/p&gt;
@@ -33,9 +43,9 @@ years, but came out blank.&lt;/p&gt;
 &lt;p&gt;Hans Zimmer, who wrote that magnificent piece of sound track for the movie 
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Interstellar_%28film%29&quot;&gt;Interstellar&lt;/a&gt;, is among the nominees for the 
 2018 award today with his creation for 
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29&quot;&gt;Dunkirk&lt;/a&gt;, but the award went to the sound 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29&quot;&gt;Dunkirk&lt;/a&gt;, but this year’s award went to the sound 
 track for &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Shape_of_Water_%28film%29&quot;&gt;The Shape of Water&lt;/a&gt;. Again, no 
-surprise.&lt;/p&gt;
+surprise and, to be honest, Zimmer has done much better work in the past.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-big-winner&quot;&gt;The Big Winner&lt;/h2&gt;
 
@@ -51,21 +61,36 @@ of quality productions among the nominees.&lt;/p&gt;
 
 &lt;h2 id=&quot;this-and-that&quot;&gt;This and that&lt;/h2&gt;
 
-&lt;p&gt;The Ceremony went without any noteworthy event, host Jimmy Kimmel delivered a solid, but rather 
-un-exciting performance. At the beginning, he promised a price for the winner who would deliver the 
-shortest thanks speech. Later in the show, he came up with a big surprise for the visitors of a nearby 
-cinema just across the street of the famous Dolby Theatre. Kimmel and a number of celebrities, including 
-Gal Gadot, Emily Blunt, Armie Hammer and many others, headed over, gifted the movie-goers snacks and 
-candies, announcing „You’re live at the Oscars” in the process. Whether it was staged or not, nobody 
-knows.&lt;/p&gt;
+&lt;p&gt;The Ceremony was straightforward and - as expected - professional. Host Jimmy Kimmel delivered a solid 
+but uninspiring performance. At the beginning, he promised a price for the award winner who would 
+deliver the shortest acceptance speech. Later in the show, he came up with a big surprise for the 
+visitors of a nearby movie theatre just across the street of the famous Dolby Theatre where the Oscar 
+ceremony traditionally takes place. Kimmel and a number of celebrities, including Gal Gadot, Emily 
+Blunt, Armie Hammer and many others, headed over, gifted the unsuspecting movie-goers snacks and 
+candies, announcing „&lt;em&gt;You’re live at the Oscars&lt;/em&gt;” in the process. Whether it was staged or not, nobody 
+knows. It did serve as a welcome break from the cyclic routine consisting of announcing nominees, 
+followed by announcing the winner, followed by a thanks speech. Throw in a commercial break, rinse and 
+repeat.&lt;/p&gt;
 
-&lt;p&gt;Warren Beatty and Faye Dunaway got their second chance to announce the winner of the best movie price 
-and this time, they got it right (we still remember last year’s &lt;a href=&quot;https://www.youtube.com/watch?v=WSCuGj0pIww&quot;&gt;epic 
-mishap&lt;/a&gt;, don’t we?).&lt;/p&gt;
+&lt;p&gt;Warren Beatty and Faye Dunaway got their second chance to announce the winner in the best movie 
+category, and this time, they got it right (we still remember last year’s &lt;a href=&quot;https://www.youtube.com/watch?v=WSCuGj0pIww&quot;&gt;epic 
+mishap&lt;/a&gt;, don’t we?). Not that it was their fault last 
+year, but still embarrassing for sure.&lt;/p&gt;
 
-&lt;p&gt;Frances McDormand, who won the Oscar for best actress for her stellar performance in Three 
-Billboards… delivered an emotional acceptance speech with a clear statement for gender equality and 
-more inclusion in Hollywood.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">The 90th Academy Awards are handed out today. Being a Cinenut ever since my dad took me to the local movie theatre for watching Star Wars: The Empire Strikes Back when I was a young boy, this is a must watch for me.</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
+&lt;p&gt;Frances McDormand, who won the award in the best actress category for her stellar performance in Three 
+Billboards Outside Ebbing, Missouri, delivered an emotional acceptance speech with a clear statement 
+for gender equality and more inclusion in Hollywood. In her closing words, she encouraged all present 
+female award nominees to make use of Inclusion Riders&lt;sup id=&quot;fnref:iride&quot;&gt;&lt;a href=&quot;#fn:iride&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:iride&quot;&gt;
+      &lt;p&gt;Basically, it’s an amendment to a contract which states that certain levels of diversity are
+to be met in a production. For example, such a clause could require a certain percentage of acting 
+and/or supporting personnel to be female or people of color.&amp;nbsp;&lt;a href=&quot;#fnref:iride&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
