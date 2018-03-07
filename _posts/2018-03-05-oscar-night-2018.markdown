@@ -12,19 +12,34 @@ tag: [first,music,video]
 category: [Entertainment]
 backlink: /blog
 excerpt: >
-    The 90th Academy Awards are handed out today. Being a Cinenut ever since my dad took me to the 
-    local movie theatre for watching Star Wars: The Empire Strikes Back when I was a young boy, this 
-    is a must watch for me. 
+    Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby 
+    Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star 
+    Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. 
+    <br><br> 
+    I have seen most of the nominated movies and for the first time, I don't really have clear 
+    favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're 
+    all exceptionally well made and the same is true for the other nominees. We'll see how the Academy 
+    members decide...
 ---
 
 # Oscar Night!
 {% include defs.md %}
 {% include post_header.html %}
 
+<div class="note blue" markdown="1">
+<h3 class="alert">Update (March 6th, 2018)</h3>
+
+The Oscar Night is now a event of the past.
+<br><br>
+For the curious, [here](http://oscar.go.com/winners) are the full results with all nominees and winners.
+</div>
+
 It's Oscar Night and so far, it's going pretty much straightforward and thus a bit disappointing. It's 
 not the nominees or the movies themselves, in fact, there is a lot of great stuff this year, it's just 
-that everything goes as expected and according to the plan. No big surprises up until now (I'm writing 
-this while the nominees for best original score are announced).
+that everything goes as expected and according to the plan. Favorite wins and no big surprises up 
+until now (I'm writing this while the nominees for best original score are announced). Gary Oldman and 
+Frances McDormand already received their well deserved prices, both for absolutely brilliant acting 
+performances in their respective movies.
 {:dc} 
  
 Speaking of original scores - here is one that deserved the Award more than any other in the last 10 
@@ -35,9 +50,9 @@ years, but came out blank.
 Hans Zimmer, who wrote that magnificent piece of sound track for the movie 
 [Interstellar](https://en.wikipedia.org/wiki/Interstellar_%28film%29), is among the nominees for the 
 2018 award today with his creation for 
-[Dunkirk](https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29), but the award went to the sound 
+[Dunkirk](https://en.wikipedia.org/wiki/Dunkirk_%282017_film%29), but this year's award went to the sound 
 track for [The Shape of Water](https://en.wikipedia.org/wiki/The_Shape_of_Water_%28film%29). Again, no 
-surprise. 
+surprise and, to be honest, Zimmer has done much better work in the past. 
  
 ## The Big Winner
 
@@ -53,18 +68,27 @@ of quality productions among the nominees.
 
 ## This and that
 
-The Ceremony went without any noteworthy event, host Jimmy Kimmel delivered a solid, but rather 
-un-exciting performance. At the beginning, he promised a price for the winner who would deliver the 
-shortest thanks speech. Later in the show, he came up with a big surprise for the visitors of a nearby 
-cinema just across the street of the famous Dolby Theatre. Kimmel and a number of celebrities, including 
-Gal Gadot, Emily Blunt, Armie Hammer and many others, headed over, gifted the movie-goers snacks and 
-candies, announcing „You're live at the Oscars” in the process. Whether it was staged or not, nobody 
-knows. 
+The Ceremony was straightforward and - as expected - professional. Host Jimmy Kimmel delivered a solid 
+but uninspiring performance. At the beginning, he promised a price for the award winner who would 
+deliver the shortest acceptance speech. Later in the show, he came up with a big surprise for the 
+visitors of a nearby movie theatre just across the street of the famous Dolby Theatre where the Oscar 
+ceremony traditionally takes place. Kimmel and a number of celebrities, including Gal Gadot, Emily 
+Blunt, Armie Hammer and many others, headed over, gifted the unsuspecting movie-goers snacks and 
+candies, announcing „*You're live at the Oscars*” in the process. Whether it was staged or not, nobody 
+knows. It did serve as a welcome break from the cyclic routine consisting of announcing nominees, 
+followed by announcing the winner, followed by a thanks speech. Throw in a commercial break, rinse and 
+repeat.
 
-Warren Beatty and Faye Dunaway got their second chance to announce the winner of the best movie price 
-and this time, they got it right (we still remember last year's [epic 
-mishap](https://www.youtube.com/watch?v=WSCuGj0pIww), don't we?). 
+Warren Beatty and Faye Dunaway got their second chance to announce the winner in the best movie 
+category, and this time, they got it right (we still remember last year's [epic 
+mishap](https://www.youtube.com/watch?v=WSCuGj0pIww), don't we?). Not that it was their fault last 
+year, but still embarrassing for sure.
  
-Frances McDormand, who won the Oscar for best actress for her stellar performance in Three 
-Billboards... delivered an emotional acceptance speech with a clear statement for gender equality and 
-more inclusion in Hollywood. 
+Frances McDormand, who won the award in the best actress category for her stellar performance in Three 
+Billboards Outside Ebbing, Missouri, delivered an emotional acceptance speech with a clear statement 
+for gender equality and more inclusion in Hollywood. In her closing words, she encouraged all present 
+female award nominees to make use of Inclusion Riders[^iride].
+ 
+[^iride]: Basically, it's an amendment to a contract which states that certain levels of diversity are
+    to be met in a production. For example, such a clause could require a certain percentage of acting 
+    and/or supporting personnel to be female or people of color.
