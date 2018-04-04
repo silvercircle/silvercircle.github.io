@@ -13,8 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Using AGG with buffered paint | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Using AGG with buffered paint" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
@@ -25,9 +26,9 @@
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:image" content="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2010-09-30T12:02:28+01:00" />
+<meta property="article:published_time" content="2010-09-30T13:02:28+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/","publisher":null,"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","headline":"Using AGG with buffered paint","dateModified":"2010-09-30T12:02:28+01:00","datePublished":"2010-09-30T12:02:28+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/"},"@context":"http://schema.org"}</script>
+{"url":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/","@type":"BlogPosting","headline":"Using AGG with buffered paint","dateModified":"2010-09-30T13:02:28+02:00","datePublished":"2010-09-30T13:02:28+02:00","author":{"@type":"Person","name":"AlexVie"},"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/"},"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -197,7 +198,7 @@
         <div class="reduce big">
         <h1 id="rendering-with-agg-and-buffered-paint">Rendering with AGG and buffered paint.</h1>
 
-<time style="margin-top:-30px;" datetime="2010-09-30T11:02:28+0000" class="icon">
+<time style="margin-top:-30px;" datetime="2010-09-30T13:02:28+0200" class="icon">
   <em>Sep.&nbsp;&nbsp;2010</em>
   <strong>Thursday</strong>
   <span>30</span>
@@ -206,7 +207,7 @@
     Last modified: <time class="timeago" datetime="2010-09-30T11:02:28+0000">2010-09-30 11:02:28 +0000</time><br />719 Words
 </div>
 <div class="author subheader">
-    <!--<span class="year">2010</span> at --><span class="time_symbol"></span><span class="time">11:02</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/c++/index.html">C++</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
+    <!--<span class="year">2010</span> at --><span class="time_symbol"></span><span class="time">13:02</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/c++/index.html">C++</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
     Reading time: approx. 2 minute(s).
 </div>
 <div class="clearfix"></div>
@@ -230,7 +231,7 @@
 
 </div>
 
-<p>In the <a href="/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">last article</a>, I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.</p>
+<p>In the <a href="/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">last article</a>, I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.</p>
 
 <p><a href="http://msdn.microsoft.com/en-us/library/bb773257%28v=VS.85%29.aspx&quot;&gt;">Buffered Paint</a> is a set of 
 new APIs allowing an application to perform flicker free painting without the overhead of creating 
@@ -327,7 +328,7 @@ you flush a buffered paint operation by calling <em>EndBufferedPaint()</em>.</p>
 <script>
 var disqus_config = function () {
 this.page.url = "https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2010-09-30 11:02:28 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = "ALEXVIE#@#2010-09-30 13:02:28 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

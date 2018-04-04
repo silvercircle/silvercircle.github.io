@@ -13,8 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Cygwin and ZSH - Delete, Home and End keys | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Cygwin and ZSH - Delete, Home and End keys" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
@@ -24,9 +25,9 @@
 <meta property="og:url" content="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-26T14:09:07+01:00" />
+<meta property="article:published_time" content="2017-10-26T15:09:07+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/","publisher":null,"image":null,"headline":"Cygwin and ZSH - Delete, Home and End keys","dateModified":"2017-10-26T14:09:07+01:00","datePublished":"2017-10-26T14:09:07+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/"},"@context":"http://schema.org"}</script>
+{"url":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/","@type":"BlogPosting","headline":"Cygwin and ZSH - Delete, Home and End keys","dateModified":"2017-10-26T15:09:07+02:00","datePublished":"2017-10-26T15:09:07+02:00","author":{"@type":"Person","name":"AlexVie"},"description":"Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the .zshrc.","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -215,12 +216,12 @@
 (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
 wrong or missing keyboard configuration and easy to fix by adding a few lines to the <code class="highlighter-rouge">.zshrc.</code></p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c"># ctrl-left and ctrl-right</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ctrl-left and ctrl-right</span>
 bindkey <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;5D"</span> backward-word
 bindkey <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;5C"</span> forward-word
 
 <span class="c"># ctrl-bs and ctrl-del</span>
-bindkey <span class="s2">"</span><span class="se">\e</span><span class="s2">[3;5~"</span> <span class="nb">kill</span>-word
+bindkey <span class="s2">"</span><span class="se">\e</span><span class="s2">[3;5~"</span> kill-word
 bindkey <span class="s2">"</span><span class="se">\C</span><span class="s2">-_"</span>    backward-kill-word
 
 <span class="c"># del, home and end</span>
@@ -230,8 +231,7 @@ bindkey <span class="s2">"</span><span class="se">\e</span><span class="s2">[F"<
 
 <span class="c"># alt-bs</span>
 bindkey <span class="s2">"</span><span class="se">\e\d</span><span class="s2">"</span>  undo
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The above section will add keyboard shortcuts for traversing through words as well as fix the 
 <code class="highlighter-rouge">Home</code>and <code class="highlighter-rouge">End</code> keys. It will also fix the backspace and delete key behavior by adding properly 

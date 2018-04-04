@@ -13,8 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Strange unwanted padding around images and how to fix | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Strange unwanted padding around images and how to fix" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
@@ -24,9 +25,9 @@
 <meta property="og:url" content="https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-09-04T11:19:58+01:00" />
+<meta property="article:published_time" content="2017-09-04T12:19:58+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Sometimes, images enclosed by divs or other block level elements show apparently strange and unwanted 2-3 pixels of padding on the bottom edge even though the containing element has no padding set at all.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/","publisher":null,"image":null,"headline":"Strange unwanted padding around images and how to fix","dateModified":"2017-09-04T11:19:58+01:00","datePublished":"2017-09-04T11:19:58+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/"},"@context":"http://schema.org"}</script>
+{"url":"https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/","@type":"BlogPosting","headline":"Strange unwanted padding around images and how to fix","dateModified":"2017-09-04T12:19:58+02:00","datePublished":"2017-09-04T12:19:58+02:00","author":{"@type":"Person","name":"AlexVie"},"description":"Sometimes, images enclosed by divs or other block level elements show apparently strange and unwanted 2-3 pixels of padding on the bottom edge even though the containing element has no padding set at all.","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/webdev/html/strange-unwanted-padding-around-images-and-how-to-fix/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -197,9 +198,8 @@ Inline elements will receive automatic vertical padding, that depends on their a
 placement. So what the browser does is correct and required by specifications.</p>
 
 <h3 id="the-fix-is-fairly-easy-just-make-the-image-a-block-element">The fix is fairly easy. Just make the image a <strong>block</strong> element.</h3>
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/gfx/thumb_vim.png"</span> <span class="na">alt=</span><span class="s">"image"</span> <span class="na">style=</span><span class="s">"display:block;"</span><span class="nt">&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/gfx/thumb_vim.png"</span> <span class="na">alt=</span><span class="s">"image"</span> <span class="na">style=</span><span class="s">"display:block;"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 <div style="margin:auto; border:1px solid red; padding: 4px;width:50%;">
 <img src="/assets/gfx/thumb_vim.png" alt="image" style="display:block;" />
 </div>

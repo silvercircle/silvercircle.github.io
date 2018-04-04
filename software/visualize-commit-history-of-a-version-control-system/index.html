@@ -13,8 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Visualize the commit history of a project under version control | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Visualize the commit history of a project under version control" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
@@ -24,9 +25,9 @@
 <meta property="og:url" content="https://silvercircle.github.io/software/visualize-commit-history-of-a-version-control-system/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-26T13:10:00+01:00" />
+<meta property="article:published_time" content="2017-10-26T14:10:00+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Every now and then, you stumble over something cool. This time it is a piece of software to visualize the history of source code repository.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/software/visualize-commit-history-of-a-version-control-system/","publisher":null,"image":null,"headline":"Visualize the commit history of a project under version control","dateModified":"2017-10-26T13:10:00+01:00","datePublished":"2017-10-26T13:10:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/visualize-commit-history-of-a-version-control-system/"},"@context":"http://schema.org"}</script>
+{"url":"https://silvercircle.github.io/software/visualize-commit-history-of-a-version-control-system/","@type":"BlogPosting","headline":"Visualize the commit history of a project under version control","dateModified":"2017-10-26T14:10:00+02:00","datePublished":"2017-10-26T14:10:00+02:00","author":{"@type":"Person","name":"AlexVie"},"description":"Every now and then, you stumble over something cool. This time it is a piece of software to visualize the history of source code repository.","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/visualize-commit-history-of-a-version-control-system/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -241,10 +242,9 @@ documentation is a must.</p>
 <p>Another method is to instruct gource to output a raw stream of images and pipe them into  <code class="highlighter-rouge">ffmpeg</code>, 
 producing a video in the process.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>gource -1280x720 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset <span class="se">\</span>
-       ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource_out.mp4
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gource <span class="nt">-1280x720</span> <span class="nt">-o</span> - | ffmpeg <span class="nt">-y</span> <span class="nt">-r</span> 60 <span class="nt">-f</span> image2pipe <span class="nt">-vcodec</span> ppm <span class="nt">-i</span> - <span class="nt">-vcodec</span> libx264 <span class="nt">-preset</span> <span class="se">\</span>
+       ultrafast <span class="nt">-pix_fmt</span> yuv420p <span class="nt">-crf</span> 1 <span class="nt">-threads</span> 0 <span class="nt">-bf</span> 0 gource_out.mp4
+</code></pre></div></div>
 
 <p>While playing around with it, I’ve made a video, showing approximately one month of activity in the 
 GitHub repository of this web page. The result is not as exciting as the demo videos on the 
@@ -263,7 +263,7 @@ because I do not yet know how to take most advantage of all the parameters<sup i
     <li id="fn:small">
       <p>and the fact that the project is relatively small and there is only one contributor
 (myself) working on it. More files, more contributors and more commits result in much more
-activity in the videos.&nbsp;<a href="#fnref:small" class="reversefootnote">&#8617;</a></p>
+activity in the videos. <a href="#fnref:small" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

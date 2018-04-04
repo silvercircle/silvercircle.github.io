@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-03-07T14:28:39+01:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-04-04T09:00:23+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Linux cheatsheet</title><link href="https://silvercircle.github.io/2018/03/26/linux-cheatsheet/" rel="alternate" type="text/html" title="Linux cheatsheet" /><published>2018-03-26T21:04:48+02:00</published><updated>2018-03-26T21:04:48+02:00</updated><id>https://silvercircle.github.io/2018/03/26/linux-cheatsheet</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/26/linux-cheatsheet/"></content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><summary type="html">A wild collection of stuff I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T06:02:30+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Mar.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -87,7 +87,7 @@ female award nominees to make use of Inclusion Riders&lt;sup id=&quot;fnref:irid
     &lt;li id=&quot;fn:iride&quot;&gt;
       &lt;p&gt;Basically, it’s an amendment to a contract which states that certain levels of diversity are
 to be met in a production. For example, such a clause could require a certain percentage of acting 
-and/or supporting personnel to be female or people of color.&amp;nbsp;&lt;a href=&quot;#fnref:iride&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+and/or supporting personnel to be female or people of color. &lt;a href=&quot;#fnref:iride&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
@@ -213,7 +213,7 @@ completion (similar to Intellisense), sophisticated code navigation and much mor
       &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Walter_Bright&quot;&gt;Walter Bright&lt;/a&gt; is a renowned expert on
 programming languages, particularly compiler design with 3 decades of experience in the area. With 
 Zortech C++, Bright authored the first C++ compiler for the Windows operating system, at a time 
-when Microsoft’s own compiler only understood ANSI C.&amp;nbsp;&lt;a href=&quot;#fnref:bright&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+when Microsoft’s own compiler only understood ANSI C. &lt;a href=&quot;#fnref:bright&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
@@ -240,7 +240,7 @@ an arbitrary number of tabs. Multiple tab controls on a single page are possible
 &lt;p&gt;Because this is plain HTML, CSS and some JavaScript (jQuery required), the concept can work for 
 other static site generators or even plain old-school HTML.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol tabs&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.headerstyle}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         {% for tab in include.tabs %}
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol tab {% if {tab[1].active %}active{% endif %}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{tab[1].name}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tab_{{include.id}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-source=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.id}}__{{tab[1].source}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -259,8 +259,7 @@ other static site generators or even plain old-school HTML.&lt;/p&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tab_{{include.id}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tabcontrol body {{include.bodyclass}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.bodystyle}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-defaultsource=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{include.id}}__{{defaultsource}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;list-of-parameters-the-include-fragment-can-accept&quot;&gt;List of parameters the include fragment can accept:&lt;/h2&gt;
 
@@ -293,28 +292,27 @@ reside under Jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt
 to define tab controls as re-usable components with the content either defined in the data file OR in 
 your page. It’s flexible enough to even mix content from the data file with content defined in the 
 page.&lt;/p&gt;
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
-    &lt;span class=&quot;s&quot;&gt;tab1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;foo&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page One&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source1&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;tab2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Two&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source2&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
+    &lt;span class=&quot;na&quot;&gt;tab1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;foo&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page One&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source1&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;tab2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Two&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source2&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;no&quot;&gt;## Headline&lt;/span&gt;
 
             &lt;span class=&quot;no&quot;&gt;This is the content of the second tab, it is defined in the frontmatter as **markdown**.&lt;/span&gt;
 
             &lt;span class=&quot;no&quot;&gt;A Link: [link](https://foo.bar.org)&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;tab3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;baz&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Three&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;active&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source3&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;na&quot;&gt;tab3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;baz&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Page Three&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;active&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;source3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;The root element (&lt;code class=&quot;highlighter-rouge&quot;&gt;page.tabs&lt;/code&gt; in our case) is then passed to the include fragment which will iterate 
 over the array generating the HTML code. The &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; is what will appear on the tabs and &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; 
 specifies the DOM element id that contains the HTML content for that tab. These elements should be 
@@ -347,13 +345,12 @@ parameter. This is &lt;strong&gt;case sensitive&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Assuming, the id of the tab control is &lt;strong&gt;foo&lt;/strong&gt; and the tab definition defines &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; as 
 &lt;strong&gt;source3&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hidden&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;foo__source3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hidden&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;foo__source3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 ## This is source element #3
 
 The content for tab page 3.
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;the-minimum-css&quot;&gt;The (minimum) CSS&lt;/h2&gt;
 
@@ -361,7 +358,7 @@ The content for tab page 3.
 additional classes for the tab control and body elements, you can easily expand the styling. Also, 
 the include accepts &lt;code class=&quot;highlighter-rouge&quot;&gt;headerstyle&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bodystyle&lt;/code&gt; arguments, which must contain valid CSS and will 
 be used as content for the &lt;code class=&quot;highlighter-rouge&quot;&gt;style&lt;/code&gt; attribute.&lt;/p&gt;
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.tabs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;border-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -409,8 +406,7 @@ be used as content for the &lt;code class=&quot;highlighter-rouge&quot;&gt;style
 &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:last-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tabcontrol.body&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:last-child&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;the-javascript-code&quot;&gt;The JavaScript code&lt;/h2&gt;
 
@@ -418,7 +414,7 @@ be used as content for the &lt;code class=&quot;highlighter-rouge&quot;&gt;style
 to load the default content should execute early in the page’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; handler, but this only 
 matters if your page is heavy on scripts and does a lot in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ready()&lt;/code&gt; function.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -430,7 +426,8 @@ matters if your page is heavy on scripts and does a lot in the &lt;code class=&q
 10
 11
 12
-13&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    &lt;span class=&quot;c1&quot;&gt;// set the default content from data-defaultsource&lt;/span&gt;
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    &lt;span class=&quot;c1&quot;&gt;// set the default content from data-defaultsource&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// if your page is script-heavy, you may want to make this execute early&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// in the $(document).ready() handler to avoid ugly delays.&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'div.tabcontrol.body'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -442,16 +439,14 @@ matters if your page is heavy on scripts and does a lot in the &lt;code class=&q
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'target'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'source'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;siblings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;removeClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'active'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'active'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
 
 &lt;p&gt;Here is a demonstration. The include fragment is called with the following parameters:&lt;/p&gt;
 
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabcontrol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bodyclass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fullborder&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabcontrol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bodyclass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fullborder&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The elements &lt;code class=&quot;highlighter-rouge&quot;&gt;foo__source1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;foo__source3&lt;/code&gt; are defined in the document as hidden &lt;code class=&quot;highlighter-rouge&quot;&gt;DIVs&lt;/code&gt; while 
 &lt;code class=&quot;highlighter-rouge&quot;&gt;source2&lt;/code&gt; gets its content from the document’s front matter (see &lt;a href=&quot;#how-to-define-tabs&quot;&gt;above&lt;/a&gt;).&lt;/p&gt;
@@ -515,7 +510,7 @@ Ut rhoncus eros nec erat maximus, in pretium leo dapibus. Nam ut blandit erat, i
 Pellentesque vitae mauris libero. Suspendisse fringilla justo non sollicitudin varius. Vivamus 
 rhoncus lorem eu porttitor bibendum. Nullam risus turpis, imperdiet eget nisl in, tristique volutpat 
 mauris.&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><summary type="html">A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Cygwin and ZSH - Delete, Home and End keys</title><link href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" rel="alternate" type="text/html" title="Cygwin and ZSH - Delete, Home and End keys" /><published>2017-10-26T14:09:07+01:00</published><updated>2017-10-26T14:09:07+01:00</updated><id>https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">&lt;h1 id=&quot;cygwin-and-zsh---delete-home-and-end-keys&quot;&gt;Cygwin and ZSH - Delete, Home and End keys&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><summary type="html">A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Cygwin and ZSH - Delete, Home and End keys</title><link href="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/" rel="alternate" type="text/html" title="Cygwin and ZSH - Delete, Home and End keys" /><published>2017-10-26T15:09:07+02:00</published><updated>2017-10-26T15:09:07+02:00</updated><id>https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/26/cygwin-zsh-delete-home-end-keys/">&lt;h1 id=&quot;cygwin-and-zsh---delete-home-and-end-keys&quot;&gt;Cygwin and ZSH - Delete, Home and End keys&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-26T15:09:07+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -536,12 +531,12 @@ mauris.&lt;/p&gt;
 (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. The issue is caused by a 
 wrong or missing keyboard configuration and easy to fix by adding a few lines to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.zshrc.&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# ctrl-left and ctrl-right&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# ctrl-left and ctrl-right&lt;/span&gt;
 bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[1;5D&quot;&lt;/span&gt; backward-word
 bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[1;5C&quot;&lt;/span&gt; forward-word
 
 &lt;span class=&quot;c&quot;&gt;# ctrl-bs and ctrl-del&lt;/span&gt;
-bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[3;5~&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;kill&lt;/span&gt;-word
+bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[3;5~&quot;&lt;/span&gt; kill-word
 bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\C&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;-_&quot;&lt;/span&gt;    backward-kill-word
 
 &lt;span class=&quot;c&quot;&gt;# del, home and end&lt;/span&gt;
@@ -551,12 +546,11 @@ bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot
 
 &lt;span class=&quot;c&quot;&gt;# alt-bs&lt;/span&gt;
 bindkey &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e\d&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;  undo
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The above section will add keyboard shortcuts for traversing through words as well as fix the 
 &lt;code class=&quot;highlighter-rouge&quot;&gt;Home&lt;/code&gt;and &lt;code class=&quot;highlighter-rouge&quot;&gt;End&lt;/code&gt; keys. It will also fix the backspace and delete key behavior by adding properly 
-configured sequences for deleting the next and previous words.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="Development" /><category term="first" /><summary type="html">Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the `.zshrc.`</summary></entry><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T18:41:31+01:00</published><updated>2017-10-10T18:41:31+01:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
+configured sequences for deleting the next and previous words.&lt;/p&gt;</content><author><name>AlexVie</name></author><category term="Development" /><category term="first" /><summary type="html">Under certain configurations, the Home, End and Delete keys will insert arbitrary characters (in most cases, the tilde symbol) when using the popular ZSH under Cygwin. This is caused by a wrong or missing keyboard configuration and easy to fix by adding a few lines to the `.zshrc.`</summary></entry><entry><title type="html">Embedding YouTube videos in Jekyll</title><link href="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/" rel="alternate" type="text/html" title="Embedding YouTube videos in Jekyll" /><published>2017-10-10T19:41:31+02:00</published><updated>2017-10-10T19:41:31+02:00</updated><id>https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/">&lt;h1 id=&quot;embedding-youtube-videos-in-jekyll&quot;&gt;Embedding YouTube videos in Jekyll&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-10T19:41:31+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -578,7 +572,7 @@ the video ID as a parameter. The &lt;code class=&quot;highlighter-rouge&quot;&gt
 responsible for setting the overall width of the element and the inner one containing the CSS 
 “magic” that let it maintain correct aspect ratio.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -586,7 +580,8 @@ responsible for setting the overall width of the element and the inner one conta
 6
 7
 8
-9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% if include.width != '' %}
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% if include.width != '' %}
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width: {{include.width}}; margin:0 auto;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 {% else %}
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
@@ -594,20 +589,17 @@ responsible for setting the overall width of the element and the inner one conta
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ytcontainer&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yt&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/{{include.id}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h6 id=&quot;use-it-with&quot;&gt;Use it with:&lt;/h6&gt;
 
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Specify an optional width for the outer container:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;80%&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;youtube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8lsvjdkQ&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;80%&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;the-required-css&quot;&gt;The required CSS&lt;/h2&gt;
@@ -620,7 +612,7 @@ passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code
 
 &lt;p&gt;The CSS and how it works is explained in more detail in &lt;a href=&quot;/webdev/css/embed-youtube-any-size-and-correct-aspect/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -633,7 +625,8 @@ passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code
 11
 12
 13
-14&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ytcontainer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+14
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ytcontainer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -646,8 +639,7 @@ passing it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code
     &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
 
@@ -659,7 +651,7 @@ ratio.&lt;/p&gt;
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/1ST9TZBb9v8&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-08T23:31:53+01:00</published><updated>2017-10-08T23:31:53+01:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-09T00:31:53+02:00</published><updated>2017-10-09T00:31:53+02:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-09T00:31:53+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -1058,10 +1050,10 @@ latter one being a longer walk.&lt;/p&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:climate&quot;&gt;
       &lt;p&gt;Menorca’s climate is defined as &lt;a href=&quot;https://en.wikipedia.org/wiki/Mediterranean_climate#Hot-summer_mediterranean_climate&quot;&gt;hot summer mediterranean climate&lt;/a&gt; (CSb
-sub-type).&amp;nbsp;&lt;a href=&quot;#fnref:climate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+sub-type). &lt;a href=&quot;#fnref:climate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">[Mahón](https://en.wikipedia.org/wiki/Mah%C3%B3n) is the capital city of the Menorca, the 2nd largest of the balearic islands, located in the mediterranean sea. It's a beautiful small town on the shore of one of the largest natural harbours in the world with a length of more than 3km.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mahon_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The Light of the Seven</title><link href="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/" rel="alternate" type="text/html" title="The Light of the Seven" /><published>2017-10-05T23:48:02+01:00</published><updated>2017-10-05T23:48:02+01:00</updated><id>https://silvercircle.github.io/2017/10/06/the-light-of-the-seven</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/">&lt;h1 id=&quot;light-of-the-seven&quot;&gt;Light of the Seven&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">[Mahón](https://en.wikipedia.org/wiki/Mah%C3%B3n) is the capital city of the Menorca, the 2nd largest of the balearic islands, located in the mediterranean sea. It's a beautiful small town on the shore of one of the largest natural harbours in the world with a length of more than 3km.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mahon_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The Light of the Seven</title><link href="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/" rel="alternate" type="text/html" title="The Light of the Seven" /><published>2017-10-06T00:48:02+02:00</published><updated>2017-10-06T00:48:02+02:00</updated><id>https://silvercircle.github.io/2017/10/06/the-light-of-the-seven</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/">&lt;h1 id=&quot;light-of-the-seven&quot;&gt;Light of the Seven&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-06T00:48:02+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -1125,7 +1117,7 @@ special touch.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;
-There are probably more awesome cover versions and I’ll update this article when I find some.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;, &quot;GoT&quot;]" /><category term="first" /><category term="music" /><category term="video" /><category term="got" /><summary type="html">Game of Thrones fans will instantly recognize this song. It is from the famous intro scene of the sixth season's final episode **The winds of Winter**. The song's name is *Light of the Seven* and its composer is [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi). It's popular among youtubers as material to cover and has been covered even by large orchestras. The song received much praise, even outside the Game Of Thrones continuum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22width%22=%3E%22110px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The beauty of Sardinia</title><link href="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/" rel="alternate" type="text/html" title="The beauty of Sardinia" /><published>2017-10-04T15:52:59+01:00</published><updated>2017-10-04T15:52:59+01:00</updated><id>https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/">&lt;h1 id=&quot;some-days-in-sardinia&quot;&gt;Some days in Sardinia&lt;/h1&gt;
+There are probably more awesome cover versions and I’ll update this article when I find some.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;, &quot;GoT&quot;]" /><category term="first" /><category term="music" /><category term="video" /><category term="got" /><summary type="html">Game of Thrones fans will instantly recognize this song. It is from the famous intro scene of the sixth season's final episode **The winds of Winter**. The song's name is *Light of the Seven* and its composer is [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi). It's popular among youtubers as material to cover and has been covered even by large orchestras. The song received much praise, even outside the Game Of Thrones continuum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22width%22=%3E%22110px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The beauty of Sardinia</title><link href="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/" rel="alternate" type="text/html" title="The beauty of Sardinia" /><published>2017-10-04T16:52:59+02:00</published><updated>2017-10-04T16:52:59+02:00</updated><id>https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/">&lt;h1 id=&quot;some-days-in-sardinia&quot;&gt;Some days in Sardinia&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-04T16:52:59+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -1654,7 +1646,7 @@ tourism and lots of opportunities in the close neighborhood. Hiking, biking, and
 activities like diving, surfing, boat trips are all possible here, so one would not get bored to 
 easily. I’m sure though, there are many more interesting and breathtakingly beautiful places on this 
 mediterranean island, particularly in the southern part.&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">I recently spent some time in the mediterranean, visiting places I've never been before in my life - the islands of Sardinia, which belongs to Italy, and the neighbouring French Corsica. Even though the two islands are close neighbours, separated by the only 11 kilometers (a little under 7 miles) wide [Strait of Bonifacio](https://en.wikipedia.org/wiki/Strait_of_Bonifacio), they are very different...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22sardinia_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T04:18:14+01:00</published><updated>2017-09-20T04:18:14+01:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/">&lt;h1 id=&quot;remembering-the-eighties&quot;&gt;Remembering the eighties&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">I recently spent some time in the mediterranean, visiting places I've never been before in my life - the islands of Sardinia, which belongs to Italy, and the neighbouring French Corsica. Even though the two islands are close neighbours, separated by the only 11 kilometers (a little under 7 miles) wide [Strait of Bonifacio](https://en.wikipedia.org/wiki/Strait_of_Bonifacio), they are very different...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22sardinia_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T05:18:14+02:00</published><updated>2017-09-20T05:18:14+02:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties/">&lt;h1 id=&quot;remembering-the-eighties&quot;&gt;Remembering the eighties&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-09-20T05:18:14+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Sep.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
@@ -2029,11 +2021,11 @@ makes it a bit easier to bear with them) and were not the result of a terrible d
       &lt;p&gt;In aviation, visual meteorological conditions (or VMC) is an aviation flight category in
 which visual flight rules (VFR) flight is permitted—that is, conditions in which pilots have
 sufficient visibility to fly the aircraft maintaining visual separation from terrain and other
-aircraft.&amp;nbsp;&lt;a href=&quot;#fnref:vmc&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+aircraft. &lt;a href=&quot;#fnref:vmc&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:position&quot;&gt;
       &lt;p&gt;Our position was about 200 meters from the point of impact, so probably 300 meters or
-more from the actual mid-air crash.&amp;nbsp;&lt;a href=&quot;#fnref:position&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+more from the actual mid-air crash. &lt;a href=&quot;#fnref:position&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><summary type="html">In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become an exciting last summer vacations weekend as my dad took me and my older brother on a two days long journey with the intention to visit both these events.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mor%22,%20%22width%22=%3E%22100px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Remembering the eighties</title><link href="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/" rel="alternate" type="text/html" title="Remembering the eighties" /><published>2017-09-20T04:18:14+01:00</published><updated>2017-09-20T04:18:14+01:00</updated><id>https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2</id><content type="html" xml:base="https://silvercircle.github.io/2017/09/20/remembering-the-eighties-2/">&lt;p&gt;text and more&lt;/p&gt;</content><author><name>Alex Vie</name></author><summary type="html">The second page of the eighties article.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><summary type="html">In 1998, the late August 27th and 28th weekend saw two major events in southern Germany and one of them turning into a capital disaster. I was a young teenage boy and this weekend was meant to become an exciting last summer vacations weekend as my dad took me and my older brother on a two days long journey with the intention to visit both these events.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mor%22,%20%22width%22=%3E%22100px%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>

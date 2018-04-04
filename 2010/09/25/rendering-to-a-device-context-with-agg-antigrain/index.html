@@ -13,21 +13,22 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Rendering to a device context with AGG (AntiGrain) | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Rendering to a device context with AGG (AntiGrain)" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL." />
 <meta property="og:description" content="AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL." />
-<link rel="canonical" href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" />
-<meta property="og:url" content="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" />
+<link rel="canonical" href="https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/" />
+<meta property="og:url" content="https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:image" content="https://silvercircle.github.io/archive/2010/09/agg_logo.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2010-09-24T23:36:38+01:00" />
+<meta property="article:published_time" content="2010-09-25T00:36:38+02:00" />
 <script type="application/ld+json">
-{"name":null,"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.","author":{"@type":"Person","name":"AlexVie"},"@type":"BlogPosting","url":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/","publisher":null,"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","headline":"Rendering to a device context with AGG (AntiGrain)","dateModified":"2010-09-24T23:36:38+01:00","datePublished":"2010-09-24T23:36:38+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/"},"@context":"http://schema.org"}</script>
+{"url":"https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/","@type":"BlogPosting","headline":"Rendering to a device context with AGG (AntiGrain)","dateModified":"2010-09-25T00:36:38+02:00","datePublished":"2010-09-25T00:36:38+02:00","author":{"@type":"Person","name":"AlexVie"},"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL.","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/"},"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -77,7 +78,7 @@
         <i aria-hidden="true"></i>
         <span>Google+</span>
     </a>
-    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">
         <i></i>
         <span>Email</span>
     </a>
@@ -197,16 +198,16 @@
         <div class="reduce big">
         <h1 id="rendering-with-agg-under-windows">Rendering with AGG under Windows</h1>
 
-<time style="margin-top:-30px;" datetime="2010-09-24T22:36:38+0000" class="icon">
+<time style="margin-top:-30px;" datetime="2010-09-25T00:36:38+0200" class="icon">
   <em>Sep.&nbsp;&nbsp;2010</em>
-  <strong>Friday</strong>
-  <span>24</span>
+  <strong>Saturday</strong>
+  <span>25</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
     Last modified: <time class="timeago" datetime="2010-09-24T22:36:38+0000">2010-09-24 22:36:38 +0000</time><br />1273 Words
 </div>
 <div class="author subheader">
-    <!--<span class="year">2010</span> at --><span class="time_symbol"></span><span class="time">22:36</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/c++/index.html">C++</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
+    <!--<span class="year">2010</span> at --><span class="time_symbol"></span><span class="time">00:36</span> | by AlexVie&nbsp;in&nbsp;<a href="/category/c++/index.html">C++</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
     Reading time: approx. 5 minute(s).
 </div>
 <div class="clearfix"></div>
@@ -271,8 +272,8 @@ window. Both are passed to this function as <code class="highlighter-rouge">cx</
 
   <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">BITMAPINFOHEADER</span><span class="p">);</span>
   <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biWidth</span> <span class="o">=</span> <span class="n">cx</span><span class="p">;</span>
-  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biHeight</span> <span class="o">=</span> <span class="o">-</span><span class="n">cy</span><span class="p">;</span>			<span class="c1">// use a "topdown" bitmap (0,0 = left, top corner)
-</span>  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biPlanes</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biHeight</span> <span class="o">=</span> <span class="o">-</span><span class="n">cy</span><span class="p">;</span>			<span class="c1">// use a "topdown" bitmap (0,0 = left, top corner)</span>
+  <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biPlanes</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biBitCount</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
   <span class="n">dib</span><span class="p">.</span><span class="n">bmiHeader</span><span class="p">.</span><span class="n">biCompression</span> <span class="o">=</span> <span class="n">BI_RGB</span><span class="p">;</span>
 
@@ -343,39 +344,39 @@ you to paint flicker-free without creating your own memory bitmaps and device co
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/&amp;text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">
     <i aria-hidden="true"></i>
     <span>Facebook</span>
 </a>
-<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;description=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/&amp;description=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/&amp;title=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&amp;body=https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&amp;body=https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&nbsp;https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Rendering%20to%20a%20device%20context%20with%20AGG%20(AntiGrain)&nbsp;https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">
     <i></i>
     <span>WhatsApp</span>
 </a>
-<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/" title="Copy link to clipboard">
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>
@@ -388,8 +389,8 @@ you to paint flicker-free without creating your own memory bitmaps and device co
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/2010/09/24/rendering-to-a-device-context-with-agg-antigrain/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2010-09-24 22:36:38 +0000"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://silvercircle.github.io/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEXVIE#@#2010-09-25 00:36:38 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
