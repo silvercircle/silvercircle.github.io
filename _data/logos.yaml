@@ -43,3 +43,7 @@ st_transylvania:
   thumb: 1
   desc: "Sublime Text 3 Theme"
 
+arc-dark-geany:
+  name: arc-dark-geany.png
+  thumb: 1
+  desc: "Arc-Dark color scheme for Geany"

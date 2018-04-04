@@ -10,8 +10,14 @@ vscode:
 
 st-transylvania:
   name: "st-transylvania.png"
+  thumb: 1
   desc: "Transylvania Theme for Sublime Text 3"
 
+arc-dark-geany:
+  name: "arc-dark-geany.png"
+  thumb: 1
+  desc: "Arc-Dark color scheme for the Geany IDE"
+  
 testgallery:
   image1:
     url: "https://lh3.googleusercontent.com/cfw8uvygoLytG-cj3Rh675iQw4kxLWhVFRjantmZm3KnSGsngm3QB2WFdf2Y7192JJf_NqMebu45cr9ZI18GsODKhUQyzVjQk5YOiHB7gaBnLcaipcaXkrtV0geAnYhmuVkk-47WNsf8KXHfEMtIqPAsgVTQyTtPqjmKsjuI5z3ASSG11SiKwe3p0nAzR5rC-oOoo4iEWG8lWOhqULNCky-_mCu73KyVgKarY7gZcrS8U3_NudZY6adiBqSvBE2Q1mtkVsKbgkj1HW9b8BWkt-gDbJnOd86lWfvpNgkj10ew_whYsuGDQr6IEpcJrFxC32c04oq21GgMI_yjLT17iwF1kwlk1GV0b4-sRJjaq-8tz7LHHa07QP0SDb4mYXjVg-o8so_BGTjOqxuVSaQ_y2M70SsOlmI-KkU1-bFKqSO3Noj4oJAU9wpxsS8JY3VA7B6PtMtStrIoklkDWbn7yTPa3hrI-1gw7EPCc9Yfptg33L_ez5LsedGyXvQUeDl_kjaGknhYvD_k2WNgWCnlvUs8kumWRNOf5vaO_jytnJvEc8EhKtpOKC-yzOfKmdkHJsvEQDf5a5qcG74lm9LxJfRdlxjrEy-yd5o3VIDACg=w1356-h763-no"
