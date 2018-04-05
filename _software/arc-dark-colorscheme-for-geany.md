@@ -31,7 +31,28 @@ image:
 {% include post_header.html %}
 {% include defs.md %}
 
-[text follows]
+This is a color scheme for the [Geany IDE](https://www.geany.org/) that 
+matches the popular Arc-Dark color scheme for Gtk. It is based on the 
+Monokai scheme from [Geany 
+Themes](https://github.com/codebrainz/geany-themes).
+{:dc}
+
+The theme is based on the popular Monokai scheme and only small changes 
+to match the background colors with the colors used in Arc were done. 
+
+## See how it looks
 
 {% include gfx/BD.html image=G.default.arc-dark-geany borderclass="borderless" %}
 
+## How to install
+
+* Download the theme from 
+[here]({{site.baseurl}}/assets/download/arcdark.conf) (note, you may 
+need to right click the link and choose `Save as...` in your browser).
+
+* Copy the file to `~/.config/geany/colorschemes`
+
+* Apply it from `View -> Change Color Scheme`
+
+It is also available as [a public 
+gist](https://gist.github.com/silvercircle/3dda8df94832ef2479e7787256d5524d)

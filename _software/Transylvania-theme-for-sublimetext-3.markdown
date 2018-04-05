@@ -28,10 +28,10 @@ image:
 # Transylvania Theme for Sublime Text 3.
 {% include post_header.html %}
 {% include defs.md %}
+
 This is a UI theme for Sublime Text 3 that harmonizes nicely with the popular [Dracula syntax 
 coloring scheme](https://draculatheme.com/). It is compatible with all Sublime Text 3 builds, 
 including the release version.
-{:dc It is compatible with all Sublime Text 3 builds, including the release version.
 {:dc}
 
 {% include gfx/BD.html image=G.default.st-transylvania borderclass="borderless" %}
