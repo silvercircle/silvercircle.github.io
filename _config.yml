@@ -40,7 +40,7 @@ collections:
     output: true
     permalink: /:collection/:path/
     label: sys
-    
+
 plugins:
  - jekyll-redirect-from
  - jekyll-seo-tag

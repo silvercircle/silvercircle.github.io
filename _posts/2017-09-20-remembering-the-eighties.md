@@ -307,14 +307,15 @@ take any influence on my decisions and overall path of life. A tragic event, tha
 injured hundreds more, many of them so severe that it took them decades to recover and some never 
 fully recovered.
 
-However, I also do realize how easy it is to talk about not being traumatized and being able to deal 
-with a terrible event when one was lucky enough to walk away unharmed, thus turning the event into a 
-not-so-terrible personal experience. I do, even 30 years later, realize - and that I have stated 
-before - that we were lucky and for that I'm thankful. I also do not want to make claims about how I 
-can understand those who were harmed or lost loved ones and never got over it, because I most 
-certainly can **not** understand it. I too have lost loved ones in my life and thus know how hard it 
-can be, even though these losses were natural events and did not happen unexpected (which I guess, 
-makes it a bit easier to bear with them) and were not the result of a terrible disaster.
+However, I also do realize how easy it is to talk about not being traumatized and being 
+able to deal with a terrible event when one was lucky enough to walk away unharmed, thus 
+turning the event into a not-so-terrible personal experience. I do, even 30 years later, 
+realize - and that I have stated before - that we were lucky and for that I'm thankful. I 
+also do not want to make claims about how I can understand those who were harmed or lost 
+loved ones and never got over it, because I most certainly can **not** understand it. I 
+too have lost loved ones in my life and thus know how hard it can be, even though these 
+losses were natural events and did not happen unexpected (which I guess, makes it a bit 
+easier to bear with them) and were not the result of a terrible disaster.
 </div>
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or
