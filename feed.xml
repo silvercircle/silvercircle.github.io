@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-04-06T14:05:19+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T07:02:30+02:00</published><updated>2018-03-05T07:02:30+02:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.0">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-04-30T23:43:54+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T07:02:30+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T06:02:30+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Mar.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
   &lt;strong&gt;Monday&lt;/strong&gt;
   &lt;span&gt;05&lt;/span&gt;
@@ -9,7 +9,7 @@
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-03-05T06:02:36+0100&quot;&gt;2018-03-05 06:02:36 +0100&lt;/time&gt;&lt;br /&gt;644 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;07:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;06:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 2 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -90,9 +90,9 @@ to be met in a production. For example, such a clause could require a certain pe
 and/or supporting personnel to be female or people of color. &lt;a href=&quot;#fnref:iride&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T18:51:07+02:00</published><updated>2017-11-28T18:51:07+02:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T18:51:07+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
   &lt;strong&gt;Tuesday&lt;/strong&gt;
   &lt;span&gt;28&lt;/span&gt;
@@ -101,7 +101,7 @@ and/or supporting personnel to be female or people of color. &lt;a href=&quot;#
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot;&gt;2017-11-28 17:51:07 +0100&lt;/time&gt;&lt;br /&gt;525 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;18:51&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:51&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 2 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -216,9 +216,9 @@ Zortech C++, Bright authored the first C++ compiler for the Windows operating sy
 when Microsoft’s own compiler only understood ANSI C. &lt;a href=&quot;#fnref:bright&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T17:38:51+02:00</published><updated>2017-11-02T17:38:51+02:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T17:38:51+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T16:38:51+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
   &lt;strong&gt;Thursday&lt;/strong&gt;
   &lt;span&gt;02&lt;/span&gt;
@@ -227,7 +227,7 @@ when Microsoft’s own compiler only understood ANSI C. &lt;a href=&quot;#fnref
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-02T16:38:59+0100&quot;&gt;2017-11-02 16:38:59 +0100&lt;/time&gt;&lt;br /&gt;1321 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 5 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -2005,14 +2005,15 @@ take any influence on my decisions and overall path of life. A tragic event, tha
 injured hundreds more, many of them so severe that it took them decades to recover and some never 
 fully recovered.&lt;/p&gt;
 
-  &lt;p&gt;However, I also do realize how easy it is to talk about not being traumatized and being able to deal 
-with a terrible event when one was lucky enough to walk away unharmed, thus turning the event into a 
-not-so-terrible personal experience. I do, even 30 years later, realize - and that I have stated 
-before - that we were lucky and for that I’m thankful. I also do not want to make claims about how I 
-can understand those who were harmed or lost loved ones and never got over it, because I most 
-certainly can &lt;strong&gt;not&lt;/strong&gt; understand it. I too have lost loved ones in my life and thus know how hard it 
-can be, even though these losses were natural events and did not happen unexpected (which I guess, 
-makes it a bit easier to bear with them) and were not the result of a terrible disaster.&lt;/p&gt;
+  &lt;p&gt;However, I also do realize how easy it is to talk about not being traumatized and being 
+able to deal with a terrible event when one was lucky enough to walk away unharmed, thus 
+turning the event into a not-so-terrible personal experience. I do, even 30 years later, 
+realize - and that I have stated before - that we were lucky and for that I’m thankful. I 
+also do not want to make claims about how I can understand those who were harmed or lost 
+loved ones and never got over it, because I most certainly can &lt;strong&gt;not&lt;/strong&gt; understand it. I 
+too have lost loved ones in my life and thus know how hard it can be, even though these 
+losses were natural events and did not happen unexpected (which I guess, makes it a bit 
+easier to bear with them) and were not the result of a terrible disaster.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;

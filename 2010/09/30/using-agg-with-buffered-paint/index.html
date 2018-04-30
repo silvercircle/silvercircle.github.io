@@ -15,7 +15,7 @@
     <![endif]-->
     <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Using AGG with buffered paint | silvercircle/github/io</title>
-<meta name="generator" content="Jekyll v3.7.3" />
+<meta name="generator" content="Jekyll v3.8.0" />
 <meta property="og:title" content="Using AGG with buffered paint" />
 <meta name="author" content="AlexVie" />
 <meta property="og:locale" content="en_US" />
@@ -28,7 +28,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2010-09-30T13:02:28+02:00" />
 <script type="application/ld+json">
-{"image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/"},"author":{"@type":"Person","name":"AlexVie"},"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.","@type":"BlogPosting","url":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/","headline":"Using AGG with buffered paint","dateModified":"2010-09-30T13:02:28+02:00","datePublished":"2010-09-30T13:02:28+02:00","@context":"http://schema.org"}</script>
+{"datePublished":"2010-09-30T13:02:28+02:00","dateModified":"2010-09-30T13:02:28+02:00","@type":"BlogPosting","image":"https://silvercircle.github.io/archive/2010/09/agg_logo.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/"},"url":"https://silvercircle.github.io/2010/09/30/using-agg-with-buffered-paint/","author":{"@type":"Person","name":"AlexVie"},"description":"AGG is a cross-platform, high performance and high-quality 2d vector graphics library. It is written in C++ and comes as a collection of template classes with no dependencies except STL. In this example, we look how we can use it with the buffered paint API in Windows.","headline":"Using AGG with buffered paint","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -230,8 +230,10 @@
 </div>
 
 </div>
-
-<p>In the <a href="/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">last article</a>, I explained how to render to a Windows device context, using the AGG 2d graphics library. As promised, I want to explain how to do it when using the Buffered Paint API, available on Windows Vista or later.</p>
+<p>In the <a href="/2010/09/25/rendering-to-a-device-context-with-agg-antigrain/">last article</a>, I explained how to render
+to a Windows device context, using the AGG 2d graphics library. As promised, I want to
+explain how to do it when using the Buffered Paint API, available on Windows Vista or
+later.</p>
 
 <p><a href="http://msdn.microsoft.com/en-us/library/bb773257%28v=VS.85%29.aspx&quot;&gt;">Buffered Paint</a> is a set of 
 new APIs allowing an application to perform flicker free painting without the overhead of creating 
@@ -247,7 +249,9 @@ you flush a buffered paint operation by calling <em>EndBufferedPaint()</em>.</p>
 
 <h3 id="how-to-obtain-the-bitmap-pixel-buffer">How to obtain the bitmap pixel buffer</h3>
 
-<p>As explained in the last article, we need the bitmap memory buffer so we can attach a AGG rendering buffer to it. Fortunately, this is a very easy thing to do, because there is a special API for it:</p>
+<p>As explained in the last article, we need the bitmap memory buffer so we can attach a AGG
+rendering buffer to it. Fortunately, this is a very easy thing to do, because there is a
+special API for it:</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="n">GetBufferedPaintBits</span><span class="p">(</span>
         <span class="n">HPAINTBUFFER</span> <span class="n">hBufferedPaint</span><span class="p">,</span>
@@ -255,17 +259,45 @@ you flush a buffered paint operation by calling <em>EndBufferedPaint()</em>.</p>
         <span class="n">__out</span>  <span class="kt">int</span> <span class="o">*</span><span class="n">pcxRow</span>
 <span class="p">);</span></code></pre></figure>
 
-<p>We simply pass our handle and two pointers to this function. The first parameter, <code class="highlighter-rouge">hBufferedPaint</code>, is the handle we got from <em>BeginBufferedPaint()</em>. The next parameter has to be a pointer to an array of <code class="highlighter-rouge">RGBQUAD</code>structures - nothing special here, the <code class="highlighter-rouge">RGBQUAD</code> is just a simplification for an array of 4 bytes, representing a single pixel in BGRa format. AGG doesn’t know about it and will access the buffer as a simple array of bytes, so we can just pass <code class="highlighter-rouge">ppbBuffer</code> to the <code class="highlighter-rouge">attach()</code> method of our AGG rendering buffer. The third parameter is the width of our buffered paint surface in pixels. From it we can calculate our <strong>stride</strong> as <code class="highlighter-rouge">4 * pxcRow</code> - it is that simple, because a buffered paint bitmap is always properly aligned, so our stride is always 4 times its width for a 32bit BGRa bitmap.</p>
+<p>We simply pass our handle and two pointers to this function. The first parameter,
+<code class="highlighter-rouge">hBufferedPaint</code>, is the handle we got from <em>BeginBufferedPaint()</em>. The next parameter
+has to be a pointer to an array of <code class="highlighter-rouge">RGBQUAD</code>structures - nothing special here, the
+<code class="highlighter-rouge">RGBQUAD</code> is just a simplification for an array of 4 bytes, representing a single
+pixel in BGRa format. AGG doesn’t know about it and will access the buffer as a simple
+array of bytes, so we can just pass <code class="highlighter-rouge">ppbBuffer</code> to the <code class="highlighter-rouge">attach()</code> method of our
+AGG rendering buffer. The third parameter is the width of our buffered paint surface in
+pixels. From it we can calculate our <strong>stride</strong> as <code class="highlighter-rouge">4 * pxcRow</code> - it is that simple,
+because a buffered paint bitmap is always properly aligned, so our stride is always 4
+times its width for a 32bit BGRa bitmap.</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++">  <span class="n">m_rbuf</span><span class="p">.</span><span class="n">attach</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">ppbBuffer</span><span class="p">,</span> <span class="n">pcxRow</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">pcxRow</span> <span class="o">*</span> <span class="mi">4</span><span class="p">);</span></code></pre></figure>
 
-<p>Will attach our AGG rendering buffer in <code class="highlighter-rouge">m_rbuf</code> to the buffered paint device context bitmap. Keep in mind the things I said in my first article about AGG about using the proper pixel format and colors. Buffered paint defaults to a 32bit BGRa format which makes rendering pretty simple.</p>
+<p>Will attach our AGG rendering buffer in <code class="highlighter-rouge">m_rbuf</code> to the buffered paint device context
+bitmap. Keep in mind the things I said in my first article about AGG about using the
+proper pixel format and colors. Buffered paint defaults to a 32bit BGRa format which makes
+rendering pretty simple.</p>
 
 <h3 id="a-note-about-buffered-paint-and-rtl">A note about buffered paint and RTL</h3>
 
-<p>There is one thing to note when using buffered paint in general. This isn’t exactly related to AGG, but nevertheless it is important when your application must be able to deal with RTL rendering and you are using the GDI <code class="highlighter-rouge">SetLayout()</code> API. According to MSDN, the real width of a buffered paint back buffer is usually greater than the width of the rendering area (for example, the client area of your window). When you use the <code class="highlighter-rouge">SetLayout()</code> function to mirror the device context you obtained from <code class="highlighter-rouge">BeginBufferedPaint()</code>, things will go awry, because of the difference in width. When doing left-to-right rendering, it doesn’t matter, because the POINT(0,0) will always be top left, but when mirroring the device context, the point(0,0) will now be <strong>outside</strong> of your client area.</p>
+<p>There is one thing to note when using buffered paint in general. This isn’t exactly
+related to AGG, but nevertheless it is important when your application must be able to
+deal with RTL rendering and you are using the GDI <code class="highlighter-rouge">SetLayout()</code> API. According to
+MSDN, the real width of a buffered paint back buffer is usually greater than the width of
+the rendering area (for example, the client area of your window). When you use the
+<code class="highlighter-rouge">SetLayout()</code> function to mirror the device context you obtained from
+<code class="highlighter-rouge">BeginBufferedPaint()</code>, things will go awry, because of the difference in width. When
+doing left-to-right rendering, it doesn’t matter, because the POINT(0,0) will always be
+top left, but when mirroring the device context, the point(0,0) will now be <strong>outside</strong> of
+your client area.</p>
 
-<p>I ran into this problem in one of my apps where RTL is a requirement and I didn’t want to give up using buffered paint because of the obvious performance advantages, so I had to find a solution. It’s actually pretty simple: From <code class="highlighter-rouge">GetBufferedPaintBits()</code> we know the real width of the back buffer and we can calculate the difference to the actual width of our rendering area. We can then use the difference as an offset value for all our coordinates while the rendering direction is mirrored due to <code class="highlighter-rouge">SetLayout(hdc, LAYOUT_RTL)</code>. Don’t forget to only add the offset when the mirroring is active, otherwise it will screw up left-to-right rendering.</p>
+<p>I ran into this problem in one of my apps where RTL is a requirement and I didn’t want to
+give up using buffered paint because of the obvious performance advantages, so I had to
+find a solution. It’s actually pretty simple: From <code class="highlighter-rouge">GetBufferedPaintBits()</code> we know
+the real width of the back buffer and we can calculate the difference to the actual width
+of our rendering area. We can then use the difference as an offset value for all our
+coordinates while the rendering direction is mirrored due to <code class="highlighter-rouge">SetLayout(hdc,
+LAYOUT_RTL)</code>. Don’t forget to only add the offset when the mirroring is active,
+otherwise it will screw up left-to-right rendering.</p>
 
 
         <div style="margin-top: 0.5em">
