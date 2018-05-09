@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <link rel="stylesheet" href="/assets/css/style.css?v=14" media="screen" type="text/css">
+    <script type="text/javascript" src="/assets/js/jquery.js?v=14"></script>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>FreeBSD Cheat Sheet | silvercircle/github/io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="FreeBSD Cheat Sheet" />
+<meta name="author" content="Alex Vie" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all" />
+<meta property="og:description" content="This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all" />
+<link rel="canonical" href="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" />
+<meta property="og:url" content="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" />
+<meta property="og:site_name" content="silvercircle/github/io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-09T03:02:30+02:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all","@type":"BlogPosting","url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","headline":"FreeBSD Cheat Sheet","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+  </head>
+  <body>
+    <script>
+          var _r_sidebar = false;
+    </script>
+    <div id="cookiewarning" style="display:none;">
+        This website may make use of cookies to enhance browsing experience and provide additional functionality.<br>
+        No cookie used by this website will contain personalized information or will be used to identify or contact you.<br>
+        <br>
+        By clicking <strong>Allow cookies</strong> you give your permission to this website to store small bits of unpersonalized data on your device.<br>
+        If you cannot agree with the above and do not want cookies to be stored in your browser, please leave this site now.
+        <div style="float:right;" id="allow_cookies">
+          <a href="#">Got It! (Allow cookies)</a>
+        </div>
+    </div>
+    <header class="minimal">
+  <dl>
+      <dt><a href="https://silvercircle.github.io/">silvercircle/github/io</a></dt>
+      <dd style="display:none"></dd>
+  </dl>
+    <div class="share_buttons header min sb-iconic">
+    <a class="sbutton contrast min b-twitter" title="Twitter" href="https://twitter.com/Alex_Vie">
+        <i aria-hidden="true"></i>
+        <span>Twitter</span>
+    </a>
+    <a class="sbutton contrast min b-facebook" title="Facebook" href="https://www.facebook.com/alexvie">
+        <i aria-hidden="true"></i>
+        <span>Facebook</span>
+    </a>
+    <a class="sbutton contrast min b-gplus" title="Google+" href="https://plus.google.com/u/0/100665686182578068177">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-github" title="GitHub" href="https://github.com/silvercircle">
+        <i aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">
+        <i></i>
+        <span>Email</span>
+    </a>
+    </div>
+</header>
+
+
+
+    <div class="menubar_wrapper">
+      <div class="inner clearfix">
+          <div id="google-custom-search" style="max-width: 250px;float:right;height: 26px;">
+              <script type="text/javascript">
+                (function() {
+                  var cx = '007859790308151113940:p-knqr4rpv0';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+              <script type="text/javascript">
+                document.write("<gcse:searchbox-only resultsUrl='/search.html'></gcse:searchbox-only>");
+              </script>
+              </div>
+      <nav>
+          	     <div id = "main_menu">
+           <ul id="menu_nav" class="dropmenu menu">
+           
+           <li id="button_backlink">
+            <a class="firstlevel symbolized backlink" href="https://silvercircle.github.io/blog/"></a>
+           </li>
+           
+           <li id="button_home" class="">
+                <a class="firstlevel symbolized home" href="/"></a>
+           </li>
+           <li id="button_about" class="">
+              <a class="firstlevel" href="/help/about.html">About</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_about" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/help/docs"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="/help/faq/"><span>Site FAQ</span></a>
+                </li>
+              </ul>
+          </li>
+          <li id="button_blog" class="active">
+              <a class="firstlevel" href="/blog/index.html">Blog</a>
+           </li>
+           <li id="button_contact" class="">
+              <a class="firstlevel" href="/help/contact.html">Contact</a>
+           </li>
+           <li id="button_topics" class="">
+              <a class="firstlevel" href="/topics.html">Topics</a>
+              <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
+              <ul style="display:none;">
+                <li>
+                  <a href="/software/"><span>Software</span></a>
+                </li>
+                <li>
+                  <a href="/webdev/"><span>Web development</span></a>
+                </li>
+                <li>
+                  <a href="/category/development/"><span>Development</span></a>
+                </li>
+                <li>
+                  <a href="/tabsrmm/"><span>TabSRMM / Miranda</span></a>
+                </li>
+                <li>
+                  <a href="/got-theories/"><span>Game of Thrones</span></a>
+                </li>
+              </ul>
+          </li>
+          
+        </ul>
+       </div>
+
+
+      </nav>
+      </div>
+     </div>
+    
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div id="inner-content-wrapper" style="margin:0 20px;">
+        
+        <article id="main-content">
+        
+        <h1 id="freebsd-cheat-sheet">FreeBSD Cheat Sheet</h1>
+
+<time style="margin-top:-30px;" datetime="2018-05-09T03:02:30+0200" class="icon">
+  <em>May.&nbsp;&nbsp;2018</em>
+  <strong>Wednesday</strong>
+  <span>09</span>
+</time>
+<div class="author subheader" style="float:right;text-align:right;">
+    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />414 Words
+</div>
+<div class="author subheader">
+    <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">03:02</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a><br />
+    Reading time: approx. 1 minute(s).
+</div>
+<div class="clearfix"></div>
+<hr style="margin-top:2px;" />
+
+<div class="floatimage right borderless" style="width:200px; max-width:200px;">
+
+
+
+<a href="/assets/gfx/logos/freebsd-logo-small.png" data-fancybox="gallery" data-caption="">
+
+<figure style="position:relative;">
+        <img src="/assets/gfx/logos/freebsd-logo-small.png" alt="" style="height:auto; margin:0; display:block;" />
+        
+        
+</figure>
+
+</a>
+
+
+
+</div>
+
+<p class="dc">This is a personal collection of items I took note of for later reference. It’s by no
+means complete and probably totally useless for anyone except myself.</p>
+<p>Anyway, most of these tips were collected on the net</p>
+<h2 id="fetch-source-code-archive-for-running-version">Fetch source code archive for running version</h2>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch <span class="nt">-o</span> ~ ftp://ftp.freebsd.org/pub/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-s</span><span class="sb">`</span>/releases/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-m</span><span class="sb">`</span>/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-r</span> | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">'-'</span> <span class="nt">-f1</span>,2<span class="sb">`</span>/relsrc.txz
+</code></pre></div></div>
+<p>This will download a complete source archive and save it as <code class="highlighter-rouge">relsrc.tgz</code> in your
+$HOME. Un-tar this to / to get a fully populated <code class="highlighter-rouge">/usr/src</code>.
+<br />
+<br /></p>
+<h2 id="install-papirus-icons-there-is-no-pkg-or-port-yet">Install papirus icons (there is no pkg or port yet)</h2>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-qO-</span> https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">"/usr/local/share/icons"</span> sh
+</code></pre></div></div>
+
+<h2 id="mount-vmware-share">Mount VMware share:</h2>
+
+<p>VMWare shared folders are supported via the <code class="highlighter-rouge">fuse</code> filesystem, particularly the <code class="highlighter-rouge">vmhgfs-fuse</code>
+utility, which is part of the <code class="highlighter-rouge">open-vm-tools</code> port/package. The old method via the <code class="highlighter-rouge">vmhgfs</code>
+kernel module (<code class="highlighter-rouge">mount -t vmhgfs ...</code>) is no longer supported.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   kldload fuse  <span class="o">(</span>or <span class="nv">load_fuse</span><span class="o">=</span><span class="s2">"YES"</span> <span class="k">in</span> /boot/loader.conf<span class="o">)</span>
+   /usr/local/bin/vmhgfs-fuse .host:/NET_DATA/mnt/darkstar <span class="nt">-o</span> allow_other
+   
+   Warning: the share <span class="o">(</span>NET_DATA <span class="k">in </span>this example<span class="o">)</span> name is CASE SENSITIVE and must 
+   match the name as defined <span class="k">in </span>VMware
+</code></pre></div></div>
+<p><br /></p>
+<h2 id="upgrading-strategy">Upgrading strategy</h2>
+
+<ul>
+  <li>
+    <p>Leave the GENERIC kernel in <code class="highlighter-rouge">/boot/kernel</code> alone. The freebsd-update script easily gets
+confused with a custom kernel in default location(s)</p>
+  </li>
+  <li>
+    <p>If you really need a custom kernel, install it in <code class="highlighter-rouge">/boot/MYKERNEL</code> or any directory of
+your choice (e.g. /boot/kernel.$HOSTNAME) and tell the boot loader to load it as default kernel:</p>
+  </li>
+  <li>modify /boot/loader.conf:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># kernel options</span>
+ <span class="nv">kernels</span><span class="o">=</span><span class="s2">"kernel kernel.old kernel.NEXUS"</span>
+ <span class="nv">kernel</span><span class="o">=</span><span class="s2">"kernel.NEXUS"</span>
+   
+ <span class="c"># other options...</span>
+ <span class="nv">fuse_load</span><span class="o">=</span><span class="s2">"YES"</span>
+ vmxnet <span class="o">=</span><span class="s2">"YES"</span>
+ <span class="o">[</span>...]
+</code></pre></div>    </div>
+  </li>
+  <li>This instructs the loader to load <code class="highlighter-rouge">kernel.NEXUS</code> from <code class="highlighter-rouge">/boot/kernel.NEXUS</code> by default.</li>
+  <li>Make sure <code class="highlighter-rouge">/boot/loader.rc</code> contains the following 2 lines:</li>
+</ul>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   include /boot/loader.4th
+   start
+</code></pre></div></div>
+<p>Otherwise, <code class="highlighter-rouge">/boot/loader.conf</code> will not be used.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   freebsd-update fetch
+   freebsd-update <span class="nb">install</span>
+</code></pre></div></div>
+<p>Then reboot, rebuild your custom kernel (if needed) and install it to
+<code class="highlighter-rouge">/boot/YOURKERNEL</code>. Reboot again, done. The output of freebsd-update fetch will tell,
+whether kernel source under <code class="highlighter-rouge">/usr/src/sys</code> was changed.</p>
+
+<h2 id="install-kernel-to-custom-directory">Install kernel to custom directory</h2>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   make buildkernel   <span class="nv">KERNCONF</span><span class="o">=</span>NEXUS <span class="nv">INSTKERNNAME</span><span class="o">=</span>kernel.NEXUS
+   make installkernel <span class="nv">KERNCONF</span><span class="o">=</span>NEXUS <span class="nv">INSTKERNNAME</span><span class="o">=</span>kernel.NEXUS
+</code></pre></div></div>
+<p>Builds and installs a custom kernel to <code class="highlighter-rouge">/boot/kernel.NEXUS</code> - the <em>INSTKERNNAME</em> is an
+undocumented make option. This is preferable and simplifies updating. Just keep the GENERIC kernel
+in <code class="highlighter-rouge">/boot/kernel</code> and adjust <code class="highlighter-rouge">/boot/loader.conf</code> accordingly (see above) to boot the custom kernel from
+its own directory. If anything goes wrong, a GENERIC kernel will always be available as
+backup.</p>
+
+        <div style="margin-top: 0.5em">
+
+    
+        
+    
+    <a class="tag" href="/tags/freebsd">freebsd</a>
+
+<div class="clear"></div>
+</div>
+
+
+        
+            
+
+<div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
+<span class="sb-label">Share:</span>
+
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/&amp;text=FreeBSD%20Cheat%20Sheet">
+    <i aria-hidden="true"></i>
+    <span>Twitter</span>
+</a>
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">
+    <i aria-hidden="true"></i>
+    <span>Facebook</span>
+</a>
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">
+    <i aria-hidden="true"></i>
+    <span>Google+</span>
+</a>
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/&amp;title=FreeBSD%20Cheat%20Sheet">
+    <i aria-hidden="true"></i>
+    <span>Reddit</span>
+</a>
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/&amp;description=FreeBSD%20Cheat%20Sheet">
+    <i></i>
+    <span>Pinterest</span>
+</a>
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/&amp;title=FreeBSD%20Cheat%20Sheet">
+    <i></i>
+    <span>Tumblr</span>
+</a>
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=FreeBSD%20Cheat%20Sheet&amp;body=https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">
+    <i></i>
+    <span>Email</span>
+</a>
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=FreeBSD%20Cheat%20Sheet&nbsp;https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">
+    <i></i>
+    <span>WhatsApp</span>
+</a>
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" title="Copy link to clipboard">
+    <i></i>
+    <span>Link</span>
+</a>
+</div>
+
+
+        
+        
+            
+<div id="disqus_thread" style="margin-top:0.5em;"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEX VIE#@#2018-05-09 03:02:30 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://silvercircle-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                            
+
+
+        
+        </article>
+        <aside id="sidebar" class="sidebar">
+            <script>
+                var _r_sidebar = true;
+                
+                var _r_sidebarcontent = "/sys/sbar_default/";
+                
+            </script>
+            <noscript>
+                some features require javaScript, particularly navigation menus and the side bar
+            </noscript>
+        </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+<div class="site_footer_wrapper">
+	<div class="inner clearfix">
+	<div class="site_footer">
+		<div class="column left">
+		  <a href="/help/about.html">About</a><br>
+          <a href="/help/contact.html">Contact</a>
+		</div>
+		<div class="column center">
+          All times are in UTC+0200 (CET DST)<br>
+		  <a href="/help/faq">Site FAQ</a>
+		</div>
+		<div class="column right">
+		  <a href="https://jekyllrb.com">Built with Jekyll</a><br>
+          <a href="https://github.com/pages-themes/architect">Theme based on Architect</a>
+		</div>
+	</div>
+	</div>
+</div>
+</footer>
+
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-15512457-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/assets/js/footerscripts.js"></script>
+<link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/assets/css/bottom.css" media="screen" type="text/css">
+
+  </body>
+</html>
+
