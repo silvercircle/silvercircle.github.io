@@ -19,14 +19,14 @@ $title_color: #7c795d;
 $subheader_color: #bf994d;
 
 /* float text definitions (p, li, quotes in main content only) */
-$article_font: "Lora";
-$text_color: #333;
-$text_size: 12pt;
+$article_font: "Vollkorn";
+$text_color: #555;
+$text_size: 13pt;
 $text_line_height: 125%;
-$text_weight: 400;
+$text_weight: 500;
 $dropcaps_size: 34pt;
 $dropcaps_leading: 30pt;
-$dropcaps_top_padding: 0;
+$dropcaps_top_padding: 2px;
 
 $footnotes_fontsize: 11pt;
 $h3_listheader_size: 16pt;
@@ -50,13 +50,13 @@ $base: '{{site.baseurl}}';
 /*@import "font-merriweather_sans";*/
 /*@import "font-oswald";*/
 /*@import "font-roboto_slab";*/
-/*@import "font-vollkorn";*/
+@import "font-vollkorn";
 /*@import "font-cormorant_sc";*/
 /*@import "font-cormorant";*/
 /*@import "font-cormorant_infant";*/
 /*@import "font-merriweather_serif";*/
 /*@import "font-cormorant_regular";*/
-@import "font-lora";
+/*@import "font-lora";*/
 /*@import "font-pt_serif";*/
 /*@import "font-source-serif";*/
 @import "theme";
