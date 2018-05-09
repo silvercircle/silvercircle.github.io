@@ -315,7 +315,16 @@ also do not want to make claims about how I can understand those who were harmed
 loved ones and never got over it, because I most certainly can **not** understand it. I 
 too have lost loved ones in my life and thus know how hard it can be, even though these 
 losses were natural events and did not happen unexpected (which I guess, makes it a bit 
-easier to bear with them) and were not the result of a terrible disaster.
+easier to bear with them) and were not the result of a terrible disaster.</div>
+## So, what's left, if there is something left?
+<div class="two_cols" markdown="1"> 
+
+This event has taught me one thing, that life is a gift and we should treat it with utmost
+respect, not only our own life, but also the lives of others, humans and all living
+creatures in our world. It has taught me to be thankful about every new day I'm allowed to
+live in good health, it has taught me that life can be over within an eyeblink, without
+even realizing the circumstances that lead to its end.
+
 </div>
 
 [^position]: Our position was about 200 meters from the point of impact, so probably 300 meters or
