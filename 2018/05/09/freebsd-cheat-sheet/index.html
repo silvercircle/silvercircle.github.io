@@ -19,17 +19,26 @@
 <meta property="og:title" content="FreeBSD Cheat Sheet" />
 <meta name="author" content="Alex Vie" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all" />
-<meta property="og:description" content="This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all" />
+<meta name="description" content="This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly." />
+<meta property="og:description" content="This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly." />
 <link rel="canonical" href="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" />
 <meta property="og:url" content="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-05-09T03:02:30+02:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference. It’s by no means complete and probably totally useless for anyone except myself. May not be useful at all","@type":"BlogPosting","url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","headline":"FreeBSD Cheat Sheet","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.","@type":"BlogPosting","url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","headline":"FreeBSD Cheat Sheet","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    
+    <style>
+        nav {
+            /* shift right the horizontal pulldown menu a bit to align it
+             * with the vertical button bar
+             */
+            margin-left: 72px !important;
+        }
+    </style>
     
   </head>
   <body>
@@ -155,12 +164,37 @@
      </div>
     
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <div id="inner-content-wrapper" style="margin:0 20px;">
-        
-        <article id="main-content">
-        
+    <div id="vertical_menu_container" style="position:sticky; z-index:1000;top: 30px;">
+        <div class="inner dynvmenu_wrapper">
+            <div id="vmenu">
+                <div title="More blog..." class="vmenu_button hamburger" data-target="/sys/sbar_default/">
+                <label>BLOG</label> 
+                </div>
+                <div title="Recently modified or added" class="vmenu_button star" data-target="/sys/sbar_recent/">
+                <label>RECENT</label> 
+                </div>
+                <div title="Tags" class="vmenu_button tags" data-target="/sys/sbar_tags/">
+                <label>TAGS</label> 
+                </div>
+                
+                
+                <div title="More in this category" class="vmenu_button category" data-target="/category/development/sbar/">
+                <label>CATEGORY</label> 
+                </div>
+                
+                <div title="On-site and external Links" class="vmenu_button links" data-target="/sys/sbar_links/">
+                <label>LINKS</label> 
+                </div>
+            </div>
+        </div>
+        <aside id="sidebar" class="sliderbar">
+            <!-- content will be dynamically added via ajax request -->
+        </aside>
+    </div>
+    <div id="content-wrapper" class="dynbg ">
+      <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
+        <article id="main-content" class="dynlayout">
+        <div class="reduce big">
         <h1 id="freebsd-cheat-sheet">FreeBSD Cheat Sheet</h1>
 
 <time style="margin-top:-30px;" datetime="2018-05-09T03:02:30+0200" class="icon">
@@ -169,61 +203,123 @@
   <span>09</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />414 Words
+    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />911 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">03:02</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a><br />
-    Reading time: approx. 1 minute(s).
+    Reading time: approx. 3 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<div class="floatimage right borderless" style="width:200px; max-width:200px;">
+<div class="floatimage right borderless" style="width:; max-width:;">
 
 
 
-<a href="/assets/gfx/logos/freebsd-logo-small.png" data-fancybox="gallery" data-caption="">
+<a href="/assets/gfx/freebsd.screen.png" data-fancybox="gallery" data-caption="Fresh installed and a bit customized.">
 
 <figure style="position:relative;">
-        <img src="/assets/gfx/logos/freebsd-logo-small.png" alt="" style="height:auto; margin:0; display:block;" />
+        <img src="/assets/gfx//thumb_freebsd.screen.png" alt="Fresh installed and a bit customized." style="height:auto; margin:0; display:block;" />
         
+        <div data-target="tt_" class="img_overlay_indicator" style="position:absolute;bottom:20px;right:20px;">
+        </div>
+        
+        
+        <figcaption style="display:none;">
+                Fresh installed and a bit customized.
+        </figcaption>
         
 </figure>
 
 </a>
 
 
+    <div id="tt_" class="img_tooltip" style="display:none;">
+        <div class="tt_closebutton" style="float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;">
+        </div>
+        <p>FreeBSD 11.1-RELEASE, running inside a VMware Workstation VM. MATE desktop and
+some custom applications are running.
+<br />
+Note the low memory consumption via the sytem monitor in the panel (green bar
+shows memory load). This VM has just <em>512 MB</em> (yes, that’s half a Gig)
+of RAM and 2 CPU cores. Pretty impressive.</p>
+
+    </div>
+
+
+<div class="floatimage_title">
+    Fresh installed and a bit customized.
+</div>
 
 </div>
 
-<p class="dc">This is a personal collection of items I took note of for later reference. It’s by no
+<p class="dc">I recently came back to FreeBSD after many years (the last version I used was 6.1 a decade
+or so ago) and found a lot of things have changed, but it still feels very familiar and
+somewhat „home”, even after so many years. Kudos to the devs for keeping the traditional
+BSD-ish feeling alive and rocking. Installation (in a VMWare virtual machine to begin
+with) went smooth and everything felt like I had left it only recently. Except that it now
+has binary packages, similar to most Linux distributions, switched from GCC to clang<sup id="fnref:clang"><a href="#fn:clang" class="footnote">1</a></sup> and
+got the most impressive and powerful <a href="https://en.wikipedia.org/wiki/ZFS">filesystem</a> ever
+designed for an OS.</p>
+<p>This is a personal collection of items I took note of for later reference. It’s by no
 means complete and probably totally useless for anyone except myself.</p>
-<p>Anyway, most of these tips were collected on the net</p>
+
 <h2 id="fetch-source-code-archive-for-running-version">Fetch source code archive for running version</h2>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch <span class="nt">-o</span> ~ ftp://ftp.freebsd.org/pub/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-s</span><span class="sb">`</span>/releases/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-m</span><span class="sb">`</span>/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-r</span> | <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">'-'</span> <span class="nt">-f1</span>,2<span class="sb">`</span>/relsrc.txz
+<p class="dc">Normally, the source code can be installed during system installation from the
+installation media and <code class="highlighter-rouge">freebsd-update</code> will keep it up-to-date with patches. Source
+installation is optional though and can be performed later. When doing so, it is important
+to fetch the source code that matches the current <em>release</em>. The following command will do
+this:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch <span class="nt">-o</span> ~ ftp://ftp.freebsd.org/pub/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-s</span><span class="sb">`</span>/releases/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-m</span><span class="sb">`</span>/<span class="sb">`</span><span class="nb">uname</span> <span class="nt">-r</span> | 
+    <span class="nb">cut</span> <span class="nt">-d</span><span class="s1">'-'</span> <span class="nt">-f1</span>,2<span class="sb">`</span>/src.txz
 </code></pre></div></div>
-<p>This will download a complete source archive and save it as <code class="highlighter-rouge">relsrc.tgz</code> in your
+<p>This will download a complete source archive and save it as <code class="highlighter-rouge">src.tgz</code> in your
 $HOME. Un-tar this to / to get a fully populated <code class="highlighter-rouge">/usr/src</code>.
-<br />
 <br /></p>
+
 <h2 id="install-papirus-icons-there-is-no-pkg-or-port-yet">Install papirus icons (there is no pkg or port yet)</h2>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-qO-</span> https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">"/usr/local/share/icons"</span> sh
+
+<p class="dc">Papirus is a popular and modern - looking icon theme for desktop environments. It works
+with GNOME, MATE, Xfce, KDE and others and contains an impressive number of icons for all
+kind of purposes. Papirus icons come in different color variations so its sub-themes can
+be used with either light or dark backgrounds. These icons looks particularly nice on flat
+and minimalistic themes, like Arc or Deepin.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-qO-</span>
+https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh
+    | <span class="nv">DESTDIR</span><span class="o">=</span><span class="s2">"/usr/local/share/icons"</span> sh
 </code></pre></div></div>
 
 <h2 id="mount-vmware-share">Mount VMware share:</h2>
 
-<p>VMWare shared folders are supported via the <code class="highlighter-rouge">fuse</code> filesystem, particularly the <code class="highlighter-rouge">vmhgfs-fuse</code>
+<p class="dc">VMWare shared folders are supported via the <code class="highlighter-rouge">fuse</code> filesystem, particularly the <code class="highlighter-rouge">vmhgfs-fuse</code>
 utility, which is part of the <code class="highlighter-rouge">open-vm-tools</code> port/package. The old method via the <code class="highlighter-rouge">vmhgfs</code>
 kernel module (<code class="highlighter-rouge">mount -t vmhgfs ...</code>) is no longer supported.</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   kldload fuse  <span class="o">(</span>or <span class="nv">load_fuse</span><span class="o">=</span><span class="s2">"YES"</span> <span class="k">in</span> /boot/loader.conf<span class="o">)</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   kldload fuse  <span class="o">(</span>or <span class="nv">fuse_load</span><span class="o">=</span><span class="s2">"YES"</span> <span class="k">in</span> /boot/loader.conf<span class="o">)</span>
    /usr/local/bin/vmhgfs-fuse .host:/NET_DATA/mnt/darkstar <span class="nt">-o</span> allow_other
    
    Warning: the share <span class="o">(</span>NET_DATA <span class="k">in </span>this example<span class="o">)</span> name is CASE SENSITIVE and must 
    match the name as defined <span class="k">in </span>VMware
 </code></pre></div></div>
-<p><br /></p>
+
 <h2 id="upgrading-strategy">Upgrading strategy</h2>
+
+<p class="dc">Upgrading FreeBSD has become surprisingly easy. The exhaustive <code class="highlighter-rouge">freebsd-update</code> script
+will take care of most things, including minor (e.g. 11.1 -&gt; 11.2) and major (e.g. 11.x -&gt;
+12.0) upgrades. It will also keep the security patch level (that’s the -pX part behind the
+version number) current within a given release.</p>
+
+<p>The script does have some caveats when you need (or just want) to run a custom
+kernel. Normally, <code class="highlighter-rouge">make installkernel</code> installs a custom built kernel in <code class="highlighter-rouge">/boot/kernel</code>,
+which is the default location. The old kernel will be backed up to <code class="highlighter-rouge">/boot/kernel.old</code>.</p>
+
+<p>In order to identify the patch level of the running system, freebsd-update needs a GENERIC
+kernel in <code class="highlighter-rouge">/boot/kernel</code>. This is the kernel that ships with binary releases and which can
+be built by doing a <code class="highlighter-rouge">make buildkernel KERNCONF=GENERIC</code>. It’s configuration is 
+<code class="highlighter-rouge">/usr/src/sys/&lt;arch&gt;/conf/GENERIC</code>.</p>
+
+<p>I’ve found the following strategy works well enough with a custom kernel. It totally
+ignores the default directories in <code class="highlighter-rouge">/boot</code> so freebsd-update can do its work and will never
+ever see the custom kernel.</p>
 
 <ul>
   <li>
@@ -256,9 +352,12 @@ your choice (e.g. /boot/kernel.$HOSTNAME) and tell the boot loader to load it as
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   freebsd-update fetch
    freebsd-update <span class="nb">install</span>
 </code></pre></div></div>
-<p>Then reboot, rebuild your custom kernel (if needed) and install it to
-<code class="highlighter-rouge">/boot/YOURKERNEL</code>. Reboot again, done. The output of freebsd-update fetch will tell,
-whether kernel source under <code class="highlighter-rouge">/usr/src/sys</code> was changed.</p>
+
+<p>The output of freebsd-update will tell you whether the kernel needs to be recompiled. If
+patches were applied to <code class="highlighter-rouge">/usr/src/sys</code> then you should rebuild your custom kernel.</p>
+
+<p>Additionally, the daily 3:00am housekeeping cron job will check whether kernel and
+userland are in sync.</p>
 
 <h2 id="install-kernel-to-custom-directory">Install kernel to custom directory</h2>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   make buildkernel   <span class="nv">KERNCONF</span><span class="o">=</span>NEXUS <span class="nv">INSTKERNNAME</span><span class="o">=</span>kernel.NEXUS
@@ -269,6 +368,24 @@ undocumented make option. This is preferable and simplifies updating. Just keep 
 in <code class="highlighter-rouge">/boot/kernel</code> and adjust <code class="highlighter-rouge">/boot/loader.conf</code> accordingly (see above) to boot the custom kernel from
 its own directory. If anything goes wrong, a GENERIC kernel will always be available as
 backup.</p>
+
+<h2 id="check-the-identity-of-the-running-kernel">Check the identity of the running kernel</h2>
+
+<p class="dc">The following command can be used to check the IDENT string of the running kernel. This is
+the same string that appears in the kernel configuration file and is set to GENERIC by
+default. A custom kernel should have its own identity string to distinguish it from the
+generic kernel that ships with the OS.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    sysctl kern.conftxt | <span class="nb">grep </span>ident
+</code></pre></div></div>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:clang">
+      <p>This is something you won’t even notice unless you know it. Clang behaves
+almost exactly like GCC, mimics its options and even most of the error messages. <a href="#fnref:clang" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
         <div style="margin-top: 0.5em">
 
@@ -347,20 +464,9 @@ s.setAttribute('data-timestamp', +new Date());
 
 
         
+        </div>
         </article>
-        <aside id="sidebar" class="sidebar">
-            <script>
-                var _r_sidebar = true;
-                
-                var _r_sidebarcontent = "/sys/sbar_default/";
-                
-            </script>
-            <noscript>
-                some features require javaScript, particularly navigation menus and the side bar
-            </noscript>
-        </aside>
       </div>
-     </div>
     </div>
     <footer>
 <div class="site_footer_wrapper">
@@ -384,15 +490,14 @@ s.setAttribute('data-timestamp', +new Date());
 </footer>
 
     
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-15512457-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15512457-3', 'auto');
+        ga('send', 'pageview');
+      </script>
     
     <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/assets/js/footerscripts.js"></script>
@@ -401,4 +506,3 @@ s.setAttribute('data-timestamp', +new Date());
 
   </body>
 </html>
-
