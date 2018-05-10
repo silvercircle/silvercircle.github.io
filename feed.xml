@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-05-09T17:49:56+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">FreeBSD Cheat Sheet</title><link href="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" rel="alternate" type="text/html" title="FreeBSD Cheat Sheet" /><published>2018-05-09T03:02:30+02:00</published><updated>2018-05-09T03:02:30+02:00</updated><id>https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">&lt;h1 id=&quot;freebsd-cheat-sheet&quot;&gt;FreeBSD Cheat Sheet&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-05-10T22:52:46+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">FreeBSD Cheat Sheet</title><link href="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/" rel="alternate" type="text/html" title="FreeBSD Cheat Sheet" /><published>2018-05-09T03:02:30+02:00</published><updated>2018-05-09T03:02:30+02:00</updated><id>https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/">&lt;h1 id=&quot;freebsd-cheat-sheet&quot;&gt;FreeBSD Cheat Sheet&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-05-09T03:02:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;May.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -6,11 +6,11 @@
   &lt;span&gt;09&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-05-09T02:02:36+0100&quot;&gt;2018-05-09 02:02:36 +0100&lt;/time&gt;&lt;br /&gt;911 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-05-09T02:02:36+0100&quot;&gt;2018-05-09 02:02:36 +0100&lt;/time&gt;&lt;br /&gt;1125 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;03:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 3 minute(s).
+    Reading time: approx. 4 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
@@ -180,6 +180,57 @@ default. A custom kernel should have its own identity string to distinguish it f
 generic kernel that ships with the OS.&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    sysctl kern.conftxt | &lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;ident
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;switch-to-latest-package-repository&quot;&gt;Switch to latest package repository.&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;By default, stable releases use the &lt;code class=&quot;highlighter-rouge&quot;&gt;quarterly&lt;/code&gt; repository within the package
+infrastructure. Quarterly can be seen as some kind of &lt;strong&gt;stable&lt;/strong&gt; branch. It’s updated
+less frequently and does not always contain the latest version of a given software
+available. The &lt;code class=&quot;highlighter-rouge&quot;&gt;latest&lt;/code&gt; branch is less conservative and will offer you more recent
+applications. One example: At the time of writing this (May 2018), KDE5 is still not in
+quarterly even though it has been in latest for months.&lt;/p&gt;
+
+&lt;p&gt;The configuration for the pkg utility can be found in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/pkg/FreeBSD.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# $FreeBSD: releng/11.1/etc/pkg/FreeBSD.conf 320745 2017-07-06 17:22:33Z gjb $&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# To disable this repository, instead of modifying or removing this file,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# create a /usr/local/etc/pkg/repos/FreeBSD.conf file:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   mkdir -p /usr/local/etc/pkg/repos&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   echo &quot;FreeBSD: { enabled: no }&quot; &amp;gt; /usr/local/etc/pkg/repos/FreeBSD.conf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+
+FreeBSD: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# url: &quot;pkg+http://pkg.FreeBSD.org/${ABI}/quarterly&quot;,&lt;/span&gt;
+  url: &lt;span class=&quot;s2&quot;&gt;&quot;pkg+http://pkg.FreeBSD.org/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ABI&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/latest&quot;&lt;/span&gt;,
+  mirror_type: &lt;span class=&quot;s2&quot;&gt;&quot;srv&quot;&lt;/span&gt;,
+  signature_type: &lt;span class=&quot;s2&quot;&gt;&quot;fingerprints&quot;&lt;/span&gt;,
+  fingerprints: &lt;span class=&quot;s2&quot;&gt;&quot;/usr/share/keys/pkg&quot;&lt;/span&gt;,
+  enabled: &lt;span class=&quot;nb&quot;&gt;yes&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Simply change the first line of the FreeBSD block from &lt;code class=&quot;highlighter-rouge&quot;&gt;quarterly&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;latest&lt;/code&gt;. To reflect
+the changes you must then do a &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo pkg update&lt;/code&gt; to re-load the repository. If you were on
+&lt;code class=&quot;highlighter-rouge&quot;&gt;quarterly&lt;/code&gt; for a prolonged time, be prepared for a lot of package upgrades when you next
+do a &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo pkg upgrade&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

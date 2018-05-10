@@ -203,11 +203,11 @@
   <span>09</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />911 Words
+    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />1125 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">03:02</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a><br />
-    Reading time: approx. 3 minute(s).
+    Reading time: approx. 4 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
@@ -377,6 +377,57 @@ default. A custom kernel should have its own identity string to distinguish it f
 generic kernel that ships with the OS.</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    sysctl kern.conftxt | <span class="nb">grep </span>ident
 </code></pre></div></div>
+
+<h2 id="switch-to-latest-package-repository">Switch to latest package repository.</h2>
+
+<p class="dc">By default, stable releases use the <code class="highlighter-rouge">quarterly</code> repository within the package
+infrastructure. Quarterly can be seen as some kind of <strong>stable</strong> branch. It’s updated
+less frequently and does not always contain the latest version of a given software
+available. The <code class="highlighter-rouge">latest</code> branch is less conservative and will offer you more recent
+applications. One example: At the time of writing this (May 2018), KDE5 is still not in
+quarterly even though it has been in latest for months.</p>
+
+<p>The configuration for the pkg utility can be found in <code class="highlighter-rouge">/etc/pkg/FreeBSD.conf</code>:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="c"># $FreeBSD: releng/11.1/etc/pkg/FreeBSD.conf 320745 2017-07-06 17:22:33Z gjb $</span>
+<span class="c">#</span>
+<span class="c"># To disable this repository, instead of modifying or removing this file,</span>
+<span class="c"># create a /usr/local/etc/pkg/repos/FreeBSD.conf file:</span>
+<span class="c">#</span>
+<span class="c">#   mkdir -p /usr/local/etc/pkg/repos</span>
+<span class="c">#   echo "FreeBSD: { enabled: no }" &gt; /usr/local/etc/pkg/repos/FreeBSD.conf</span>
+<span class="c">#</span>
+
+FreeBSD: <span class="o">{</span>
+  <span class="c"># url: "pkg+http://pkg.FreeBSD.org/${ABI}/quarterly",</span>
+  url: <span class="s2">"pkg+http://pkg.FreeBSD.org/</span><span class="k">${</span><span class="nv">ABI</span><span class="k">}</span><span class="s2">/latest"</span>,
+  mirror_type: <span class="s2">"srv"</span>,
+  signature_type: <span class="s2">"fingerprints"</span>,
+  fingerprints: <span class="s2">"/usr/share/keys/pkg"</span>,
+  enabled: <span class="nb">yes</span>
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Simply change the first line of the FreeBSD block from <code class="highlighter-rouge">quarterly</code> to <code class="highlighter-rouge">latest</code>. To reflect
+the changes you must then do a <code class="highlighter-rouge">sudo pkg update</code> to re-load the repository. If you were on
+<code class="highlighter-rouge">quarterly</code> for a prolonged time, be prepared for a lot of package upgrades when you next
+do a <code class="highlighter-rouge">sudo pkg upgrade</code>.</p>
 
 <div class="footnotes">
   <ol>
