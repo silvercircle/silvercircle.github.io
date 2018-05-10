@@ -180,5 +180,42 @@ generic kernel that ships with the OS.
     sysctl kern.conftxt | grep ident
 ```
 
+## Switch to latest package repository.
+
+By default, stable releases use the `quarterly` repository within the package
+infrastructure. Quarterly can be seen as some kind of **stable** branch. It's updated
+less frequently and does not always contain the latest version of a given software
+available. The `latest` branch is less conservative and will offer you more recent
+applications. One example: At the time of writing this (May 2018), KDE5 is still not in
+quarterly even though it has been in latest for months.
+{:dc}
+
+The configuration for the pkg utility can be found in `/etc/pkg/FreeBSD.conf`:
+
+{% highlight shell linenos %}
+# $FreeBSD: releng/11.1/etc/pkg/FreeBSD.conf 320745 2017-07-06 17:22:33Z gjb $
+#
+# To disable this repository, instead of modifying or removing this file,
+# create a /usr/local/etc/pkg/repos/FreeBSD.conf file:
+#
+#   mkdir -p /usr/local/etc/pkg/repos
+#   echo "FreeBSD: { enabled: no }" > /usr/local/etc/pkg/repos/FreeBSD.conf
+#
+
+FreeBSD: {
+  # url: "pkg+http://pkg.FreeBSD.org/${ABI}/quarterly",
+  url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
+  mirror_type: "srv",
+  signature_type: "fingerprints",
+  fingerprints: "/usr/share/keys/pkg",
+  enabled: yes
+}
+{% endhighlight %}
+
+Simply change the first line of the FreeBSD block from `quarterly` to `latest`. To reflect
+the changes you must then do a `sudo pkg update` to re-load the repository. If you were on
+`quarterly` for a prolonged time, be prepared for a lot of package upgrades when you next
+do a `sudo pkg upgrade`.
+
 [^clang]: This is something you won't even notice unless you know it. Clang behaves
     almost exactly like GCC, mimics its options and even most of the error messages.
