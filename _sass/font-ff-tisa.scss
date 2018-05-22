@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'FF Tisa';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/FF Tisa OT Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FF Tisa';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Cormorant Light Italic'), local('Cormorant-LightItalic'),
+       url('../fonts/FF Tisa OT Light Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FF Tisa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/FF Tisa OT.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FF Tisa';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/FF Tisa OT Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FF Tisa';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/FF Tisa OT Medium.otf') format('opentype');}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/FF Tisa OT Medium Italic.otf') format('opentype');
+}
+
+/* cormorant-700 - latin */
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/FF Tisa OT Bold.otf') format('opentype');
+}
+
+/* cormorant-700italic - latin */
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/FF Tisa OT Bold Italic.otf') format('opentype');
+}
+

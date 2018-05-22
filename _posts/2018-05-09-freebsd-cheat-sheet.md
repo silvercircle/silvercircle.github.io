@@ -52,7 +52,7 @@ BSD-ish feeling alive and rocking. Installation (in a VMWare virtual machine to 
 with) went smooth and everything felt like I had left it only recently. Except that it now
 has binary packages, similar to most Linux distributions, switched from GCC to clang[^clang] and
 got the most impressive and powerful [filesystem](https://en.wikipedia.org/wiki/ZFS) ever
-designed for an OS.
+designed for an OS fully working as a first-class citizen.
 {:dc}
 This is a personal collection of items I took note of for later reference. It's by no
 means complete and probably totally useless for anyone except myself.
@@ -115,7 +115,9 @@ which is the default location. The old kernel will be backed up to `/boot/kernel
 In order to identify the patch level of the running system, freebsd-update needs a GENERIC
 kernel in `/boot/kernel`. This is the kernel that ships with binary releases and which can
 be built by doing a `make buildkernel KERNCONF=GENERIC`. It's configuration is 
-`/usr/src/sys/<arch>/conf/GENERIC`.
+`/usr/src/sys/<arch>/conf/GENERIC` **and should not be changed in any way**. Don't change
+GENERIC as it may confuse and complicate things. Leave it alone and build your own custom
+kernel with its own configuration.
 
 I've found the following strategy works well enough with a custom kernel. It totally
 ignores the default directories in `/boot` so freebsd-update can do its work and will never
@@ -186,8 +188,8 @@ By default, stable releases use the `quarterly` repository within the package
 infrastructure. Quarterly can be seen as some kind of **stable** branch. It's updated
 less frequently and does not always contain the latest version of a given software
 available. The `latest` branch is less conservative and will offer you more recent
-applications. One example: At the time of writing this (May 2018), KDE5 is still not in
-quarterly even though it has been in latest for months.
+applications. *One example*: At the time of writing this (May 2018), KDE5 is still not in
+*quarterly* even though it has been in *latest* for months.
 {:dc}
 
 The configuration for the pkg utility can be found in `/etc/pkg/FreeBSD.conf`:

@@ -19,14 +19,14 @@ $title_color: #7c795d;
 $subheader_color: #bf994d;
 
 /* float text definitions (p, li, quotes in main content only) */
-$article_font: "Vollkorn";
-$text_color: #555;
+$article_font: "FF Tisa";
+$text_color: #666;
 $text_size: 13pt;
-$text_line_height: 125%;
+$text_line_height: 135%;
 $text_weight: 400;
 $dropcaps_size: 34pt;
 $dropcaps_leading: 30pt;
-$dropcaps_top_padding: 2px;
+$dropcaps_top_padding: 6px;
 
 $footnotes_fontsize: 11pt;
 $h3_listheader_size: 16pt;
@@ -50,7 +50,9 @@ $base: '{{site.baseurl}}';
 /*@import "font-merriweather_sans";*/
 /*@import "font-oswald";*/
 /*@import "font-roboto_slab";*/
-@import "font-vollkorn";
+/*@import "font-vollkorn";*/
+/*@import "font-proxima-nova";*/
+@import "font-ff-tisa";
 /*@import "font-cormorant_sc";*/
 /*@import "font-cormorant";*/
 /*@import "font-cormorant_infant";*/
