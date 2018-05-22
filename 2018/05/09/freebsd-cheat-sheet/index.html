@@ -203,7 +203,7 @@
   <span>09</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />1125 Words
+    Last modified: <time class="timeago" datetime="2018-05-09T02:02:36+0100">2018-05-09 02:02:36 +0100</time><br />1162 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">03:02</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/development/index.html">Development</a><br />
@@ -260,7 +260,7 @@ BSD-ish feeling alive and rocking. Installation (in a VMWare virtual machine to 
 with) went smooth and everything felt like I had left it only recently. Except that it now
 has binary packages, similar to most Linux distributions, switched from GCC to clang<sup id="fnref:clang"><a href="#fn:clang" class="footnote">1</a></sup> and
 got the most impressive and powerful <a href="https://en.wikipedia.org/wiki/ZFS">filesystem</a> ever
-designed for an OS.</p>
+designed for an OS fully working as a first-class citizen.</p>
 <p>This is a personal collection of items I took note of for later reference. It’s by no
 means complete and probably totally useless for anyone except myself.</p>
 
@@ -315,7 +315,9 @@ which is the default location. The old kernel will be backed up to <code class="
 <p>In order to identify the patch level of the running system, freebsd-update needs a GENERIC
 kernel in <code class="highlighter-rouge">/boot/kernel</code>. This is the kernel that ships with binary releases and which can
 be built by doing a <code class="highlighter-rouge">make buildkernel KERNCONF=GENERIC</code>. It’s configuration is 
-<code class="highlighter-rouge">/usr/src/sys/&lt;arch&gt;/conf/GENERIC</code>.</p>
+<code class="highlighter-rouge">/usr/src/sys/&lt;arch&gt;/conf/GENERIC</code> <strong>and should not be changed in any way</strong>. Don’t change
+GENERIC as it may confuse and complicate things. Leave it alone and build your own custom
+kernel with its own configuration.</p>
 
 <p>I’ve found the following strategy works well enough with a custom kernel. It totally
 ignores the default directories in <code class="highlighter-rouge">/boot</code> so freebsd-update can do its work and will never
@@ -384,8 +386,8 @@ generic kernel that ships with the OS.</p>
 infrastructure. Quarterly can be seen as some kind of <strong>stable</strong> branch. It’s updated
 less frequently and does not always contain the latest version of a given software
 available. The <code class="highlighter-rouge">latest</code> branch is less conservative and will offer you more recent
-applications. One example: At the time of writing this (May 2018), KDE5 is still not in
-quarterly even though it has been in latest for months.</p>
+applications. <em>One example</em>: At the time of writing this (May 2018), KDE5 is still not in
+<em>quarterly</em> even though it has been in <em>latest</em> for months.</p>
 
 <p>The configuration for the pkg utility can be found in <code class="highlighter-rouge">/etc/pkg/FreeBSD.conf</code>:</p>
 
