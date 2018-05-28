@@ -52,3 +52,8 @@ freebsd:
   path: logos/
   name: freebsd-logo-small.png
   desc: "FreeBSD small daemon logo"
+
+texaslogo:
+  path: logos/
+  name: texaslogo.jpg
+  desc: "Texas Logo"
