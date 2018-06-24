@@ -24,11 +24,11 @@ image:
     link: 1
 media:
     tb60:
-        name: tb60.png
+        name: tb60_customized.png
         desc: "Thunderbird 60 screenshot"
         link: 1
     tb60_default:
-        name: tb60_default.png
+        name: tb60_default_theme.png
         desc: "Thunderbird 60 default without any customisation"
         link: 1
 ---
