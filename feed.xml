@@ -1,4 +1,246 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-05-28T15:10:40+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">The Foreigner’s travel guide to Texas</title><link href="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/" rel="alternate" type="text/html" title="The Foreigner's travel guide to Texas" /><published>2018-05-28T07:00:30+02:00</published><updated>2018-05-28T07:00:30+02:00</updated><id>https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/">&lt;h1 id=&quot;the-foreigners-travel-guide-to-texas&quot;&gt;The foreigner’s travel guide to Texas&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-06-24T19:54:15+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-06-24T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Jun.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
+  &lt;strong&gt;Sunday&lt;/strong&gt;
+  &lt;span&gt;24&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-06-24T17:00:36+0200&quot;&gt;2018-06-24 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1290 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 5 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;Mozilla Thunderbird has been my e-mail client and PIM of choice for many years on various operating
+systems, including Windows, Linux and FreeBSD. It has been a reliable piece of software, generally
+doing what it’s supposed to do and causing little problems. Once, many years ago, Thunderbird was a
+first class citizen for the &lt;em&gt;Mozilla Foundation&lt;/em&gt; and got the same amount of attention as the
+Foundation’s flagship product, Firefox. In recent years however, the development pace has slowed
+down considerably due to lack of manpower and maybe lack of direction, resulting in a piece of
+software that only got minor refinements instead of major new features and overhauls. Since
+Thunderbird has always been fairly feature-rich, this is not really a problem. Apart from maybe MS
+Outlook, it can still be considered the most flexible and feature-complete e-mail client for desktop
+operating systems.&lt;/p&gt;
+
+&lt;h2 id=&quot;extension-woes&quot;&gt;Extension woes&lt;/h2&gt;
+
+&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;Like its big brother, the web browser Firefox with which it shares a large part of its code base,
+Thunderbird supports extensions, a feature that allows the user to tailor the application to one’s
+personal needs by adding new features or changing existing ones. At the same time, the ability to
+use extensions has been the source for many issues and frustration in the history of Firefox and
+Thunderbird. With every major upgrade, extension compatibility became a problem, because the
+extension API was never stable across major versions. As a result, extensions needed to be
+maintained and updated for new major releases, often sacrificing backwards compatibility, while
+unmaintained extensions frequently stopped working with a new Thunderbird release.&lt;/p&gt;
+
+&lt;h2 id=&quot;version-60-new-things&quot;&gt;Version 60 new things&lt;/h2&gt;
+
+&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;Version 60 will be the next major release with long term support, which means it will be the direct
+successor of version 52, the current one which was released over a year ago. The versions 53-59 were
+basically development versions not meant to be used by end users. AS of writing this article, the
+8th (and presumably last) beta version of Thunderbird 60 is the most recent one and from what I’ve
+heard, the final will be out soon, likely unchanged from this beta.&lt;/p&gt;
+
+&lt;div class=&quot;floatimage right borderless&quot; style=&quot;width:45%; max-width:45%;&quot;&gt;
+
+
+
+&lt;a href=&quot;/assets/gfx/tbird_custom.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Thunderbird 52.x with my userChrome modifications&quot;&gt;
+
+&lt;figure style=&quot;position:relative;&quot;&gt;
+        &lt;img src=&quot;/assets/gfx/tbird_custom.png&quot; alt=&quot;Thunderbird 52.x with my userChrome modifications&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+        
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Thunderbird 52.x with my userChrome modifications
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+
+&lt;/a&gt;
+
+
+
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    Thunderbird 52.x with my userChrome modifications
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;floatimage left borderless&quot; style=&quot;width:45%; max-width:45%;&quot;&gt;
+
+
+
+&lt;a href=&quot;/assets/gfx/tb60.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Thunderbird 60 screenshot&quot;&gt;
+
+&lt;figure style=&quot;position:relative;&quot;&gt;
+        &lt;img src=&quot;/assets/gfx/tb60.png&quot; alt=&quot;Thunderbird 60 screenshot&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+        
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Thunderbird 60 screenshot
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+
+&lt;/a&gt;
+
+
+
+&lt;div class=&quot;floatimage_title&quot;&gt;
+    Thunderbird 60 screenshot
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;clear&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p class=&quot;dc&quot;&gt;The screenshots above show Thunderbird 60 (left) and the older version
+52 (right) side-by-side. Both are &lt;a href=&quot;/software/user-chrome-thunderbird/&quot;&gt;using the same &lt;code class=&quot;highlighter-rouge&quot;&gt;userChrome.css&lt;/code&gt; modifications&lt;/a&gt; with the default theme. As you can see, the
+differences are marginal at best, the major new thing is the new icon set that provides a better
+contrast and a slightly modified theme that blends well with the trend of minimalist and &lt;em&gt;flat&lt;/em&gt;
+operating system themes.&lt;/p&gt;
+
+  &lt;p&gt;The following screen shot below shows Thunderbird 60 without any UI customization at all. The new
+theme, taken from Firefox &lt;em&gt;„Quantum”&lt;/em&gt; with square tabs and completely flat tool bars is clearly
+visible and gone are the curved tabs that were introduced with the Australis UI redesign a couple of
+years ago.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;blockimage borderless&quot;&gt;
+
+
+
+
+&lt;a href=&quot;/assets/gfx/tb60_default.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Thunderbird 60 default without any customisation&quot;&gt;
+
+&lt;figure style=&quot;position:relative;&quot;&gt;
+        &lt;img src=&quot;/assets/gfx/tb60_default.png&quot; alt=&quot;Thunderbird 60 default without any customisation&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
+        
+        
+        &lt;figcaption style=&quot;display:none;&quot;&gt;
+                Thunderbird 60 default without any customisation
+        &lt;/figcaption&gt;
+        
+&lt;/figure&gt;
+
+&lt;/a&gt;
+
+
+
+&lt;div class=&quot;floatimage_title&quot; style=&quot;padding: 3px 8px;&quot;&gt;
+    Thunderbird 60 default without any customisation
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;extension-compatibility&quot;&gt;Extension compatibility&lt;/h2&gt;
+
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p class=&quot;dc&quot;&gt;Like Firefox Quantum, Thunderbird supports the new &lt;a href=&quot;https://developer.mozilla.org/en-US/Add-ons/WebExtensions&quot;&gt;web
+extensions&lt;/a&gt; API. This basically means
+that all old (so-called &lt;em&gt;legacy extensions&lt;/em&gt;) extensions that were written for the old API would stop
+working in Thunderbird 60 with a complete rewrite of the extension as the only solution to the
+problem. Since the Thunderbird extension ecosystem suffers from very little active development and
+therefore contains many unmaintained projects, this compatibility problem could have a potentially
+catastrophic impact on Thunderbird, because many users would probably stop using TB should essential
+add-ons no longer be available.&lt;/p&gt;
+
+  &lt;p&gt;Fortunately, there is a solution to the problem. Thunderbird 60 supports old extensions, but this
+feature must be enabled. So the first thing after upgrading you should do is to open the
+configuration editor and change the following setting to &lt;strong&gt;false&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    extensions.strictCompatibility
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;You can find the configuration editor on the &lt;strong&gt;Advanced&lt;/strong&gt; page of the options dialog. Click on the
+&lt;strong&gt;Config editor&lt;/strong&gt; button and use the search box in the dialog to find the setting. After changing
+the setting, Thunderbird must be restarted. With that setting active, most extensions that were
+compatible with Thunderbird 52 should work with version 60. A few (one example would be the Google
+Calendar connector) still require an update.&lt;/p&gt;
+
+  &lt;p&gt;I’am not an extension nut, so the number of add-ons I use is fairly limited, but here is the list of
+my extensions and all of them are, in fact, working on TB 60.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Dorando keyconfig&lt;/li&gt;
+    &lt;li&gt;Provider for Google Calendar (required an update)&lt;/li&gt;
+    &lt;li&gt;Quick Filter Watched Threads (simply adds a toolbar button on the filter bar)&lt;/li&gt;
+    &lt;li&gt;Signature switch&lt;/li&gt;
+    &lt;li&gt;Smart Template4&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Like mentioned above, only the Calendar Provider needed some attention to obtain and install the
+manual update which has not yet been released. I assume, this extension update will be available when
+Thunderbird 60 reaches final release status, which should be by the end of June.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;other-observations&quot;&gt;Other observations&lt;/h2&gt;
+
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;p class=&quot;dc&quot;&gt;First, before updating &lt;strong&gt;backup your profile&lt;/strong&gt;. This is mandatory, because backwards compatibility
+is not always guaranteed. Essentially this means, there is a possibility that after upgrading to
+Thunderbird 60 your profile might become incompatible with older versions, so you would not be able
+to go back to TB 52, should the upgrade cause too many issues for you. Best practice is to follow
+&lt;a href=&quot;https://support.mozilla.org/en-US/kb/profiles-where-thunderbird-stores-user-data&quot;&gt;this guide&lt;/a&gt; which
+explains how to find and backup your Thunderbird profile.&lt;/p&gt;
+
+  &lt;p&gt;With my relatively short list of extensions (see above), I did not run into troubles at all. The
+upgrade went smooth, with one exception: I had to obtain a beta version of the &lt;a href=&quot;https://addons.mozilla.org/en-US/thunderbird/addon/provider-for-google-calendar/&quot;&gt;Google Calendar
+Provider&lt;/a&gt; to make
+Lightning work again with my Google Calendar. If you have troubles finding it, &lt;a href=&quot;http://ftp.mozilla.org/pub/calendar/lightning/candidates/6.2b6-candidates/build1/win32/gdata-provider-4.1b6.en-US.win32.xpi&quot;&gt;here is a
+link&lt;/a&gt;
+to the XPI.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;noteworthy-improvements&quot;&gt;Noteworthy improvements&lt;/h2&gt;
+
+&lt;div class=&quot;two_cols&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p&gt;When composing a message, it’s now easy to toggle the attachment bar by using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Alt-M&lt;/code&gt; keyboard
+shortcut at any time.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;It is now possible to compact IMAP folders while the account is connected.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Existing accounts / folders can be converted from MBOX to Maildir format (and presumably vice
+versa even though that does not make much sense). The Maildir format stores messages in one file
+per message and is more robust than MBOX which stores all messages in a single large file. Be
+warned though, the conversion from MBOX to Maildir can take a lot of time and my Thunderbird was
+consuming insane amounts of memory (up to 2.5gig) while doing the conversion of my INBOX.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;The Calendar add-on (Lightning) was improved considerably with new features to handle invitations
+and notifications for collaborative events better.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;A dark theme is available.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;The EFAIL problem, what affected practically all ways to send encrypted mail, has been fixed
+completely&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;On top of this, many smaller issues have been fixed. Overall, TB 60 also feels faster, more
+responsive and seemingly uses less memory than TB 52. It also appears to be stable, none of the 3
+beta versions I’ve been testing over the last couple of weeks, crashed even once.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;so-is-an-upgrade-advisable&quot;&gt;So, is an upgrade advisable?&lt;/h2&gt;
+
+&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;I would say, yes, absolutely. The EFAIL fix alone is worth the upgrade, particularly for users who
+do need encryption or digital signatures. The extension apocalypse can be mitigated by using the
+method described above, so most extensions should continue to work. Overall, the few improvements
+and new features might appear meager, but they do add some value to Thunderbird. A modernized and
+arguably more attractive user interface is something that is always welcome among users&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;]" /><category term="first" /><summary type="html">Thunderbird has been my e-mail client of choice for many years on various operating systems and has been doing well so far. The next major version (60) is just lurking around the corner and will bring quite a number of new things, particularly under the hood.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22tb_screenshot%22,%20%22width%22=%3E%2220%25%22,%20%22align%22=%3E%22right%22,%20%22link%22=%3E1%7D" /></entry><entry><title type="html">The Foreigner’s travel guide to Texas</title><link href="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/" rel="alternate" type="text/html" title="The Foreigner's travel guide to Texas" /><published>2018-05-28T07:00:30+02:00</published><updated>2018-05-28T07:00:30+02:00</updated><id>https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/">&lt;h1 id=&quot;the-foreigners-travel-guide-to-texas&quot;&gt;The foreigner’s travel guide to Texas&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-05-28T07:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;May.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -1486,533 +1728,4 @@ special touch.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;
-There are probably more awesome cover versions and I’ll update this article when I find some.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;, &quot;GoT&quot;]" /><category term="first" /><category term="music" /><category term="video" /><category term="got" /><summary type="html">Game of Thrones fans will instantly recognize this song. It is from the famous intro scene of the sixth season's final episode **The winds of Winter**. The song's name is *Light of the Seven* and its composer is [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi). It's popular among youtubers as material to cover and has been covered even by large orchestras. The song received much praise, even outside the Game Of Thrones continuum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22width%22=%3E%22110px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The beauty of Sardinia</title><link href="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/" rel="alternate" type="text/html" title="The beauty of Sardinia" /><published>2017-10-04T16:52:59+02:00</published><updated>2017-10-04T16:52:59+02:00</updated><id>https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/04/the-beauty-of-sardinia/">&lt;h1 id=&quot;some-days-in-sardinia&quot;&gt;Some days in Sardinia&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-04T16:52:59+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Wednesday&lt;/strong&gt;
-  &lt;span&gt;04&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-04T16:53:08+0200&quot;&gt;2017-10-04 16:53:08 +0200&lt;/time&gt;&lt;br /&gt;1667 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:52&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/travel/index.html&quot;&gt;Travel&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 6 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;Recently, we did a nice journey on a &lt;a href=&quot;https://en.wikipedia.org/wiki/AIDAaura&quot;&gt;smaller cruise ship&lt;/a&gt; 
-during which we had the chance to visit two of the most scenic places in the mediterranean sea. One 
-of the benefits of a cruise travel is that it allows one to find targets which may be worth a longer 
-stay at some future point in time. During the cruise, you will rarely stay longer than one day in a 
-single location, which is of course totally insufficient, but even a single day can give you a good 
-idea about the place.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-strait-of-bonifacio&quot;&gt;The strait of Bonifacio&lt;/h2&gt;
-
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p&gt;We crossed &lt;a href=&quot;https://en.wikipedia.org/wiki/Strait_of_Bonifacio&quot;&gt;this&lt;/a&gt; narrow water strait (about 
-11km, 7 miles) between Corsica and Sardinia twice on our journey. The first time in darkness between 
-our stops in Corsica’s capital Ajaccio and Olbia scheduled for the next day, and the second time on 
-our way back from Rome (Civitavecchia) to the Balearic Islands. This was during daylight and all the 
-pictures were taken on that day.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;gallery&quot;&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/0A0ULNw-GKwxAR56qNJrv01fzqobeUNUhujPjcHXPMAeWdzreFalHycA1CQ1ulRVr9Cs52pF5kpgNT4PkXRZCq6X6ZMR8kMpk0J6vqNlNZAPB4Gxah2e0O7QKWmBVDMKfJut47l_4lhtD3fKNoKtwNjLKuA0Qy9eA80DnOPbdW5_L8WriFaAmoLE7LoczQD4NpUqpi-FmAp1qGXU-yXofPnyFs1RmernPePdHpjCxoXIHL2G6Ymuj8MtCBgFZlOeb1AiuMuItq_OO4vDpIwwwS6cK-d4ZmDWV3lbPfs03ELEYh5azqVpg-nbcXe-bLmH6W4cuSr85ab-gQObjaNl4Mc68BAwmoHhxjzDlevduR8Nhg-K2jHML3Gf-x7eWUhu2mTuy1MMou4eSnjGn815uYbVvPKQpbo2fhHKsHhss6_Gs95LkNakddFgXsCwuS-nJCUcio03bTrhknEdlxG3j3-k31rXYTEXa-d-9KeVQDpRYJMPAWHPy4u_A1rF0KMUJeOXJVzGvbWcbIUuxrOJURIUvizWcrA6p-7Q60k5J-h_9g95Q245UWmgRRipkd45tGNGND7LmPn0M8CsJ1A-sf6tNW1M4_FTj1BGTfxsjg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Strait of Bonifacio, looking north at Corsica.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/0A0ULNw-GKwxAR56qNJrv01fzqobeUNUhujPjcHXPMAeWdzreFalHycA1CQ1ulRVr9Cs52pF5kpgNT4PkXRZCq6X6ZMR8kMpk0J6vqNlNZAPB4Gxah2e0O7QKWmBVDMKfJut47l_4lhtD3fKNoKtwNjLKuA0Qy9eA80DnOPbdW5_L8WriFaAmoLE7LoczQD4NpUqpi-FmAp1qGXU-yXofPnyFs1RmernPePdHpjCxoXIHL2G6Ymuj8MtCBgFZlOeb1AiuMuItq_OO4vDpIwwwS6cK-d4ZmDWV3lbPfs03ELEYh5azqVpg-nbcXe-bLmH6W4cuSr85ab-gQObjaNl4Mc68BAwmoHhxjzDlevduR8Nhg-K2jHML3Gf-x7eWUhu2mTuy1MMou4eSnjGn815uYbVvPKQpbo2fhHKsHhss6_Gs95LkNakddFgXsCwuS-nJCUcio03bTrhknEdlxG3j3-k31rXYTEXa-d-9KeVQDpRYJMPAWHPy4u_A1rF0KMUJeOXJVzGvbWcbIUuxrOJURIUvizWcrA6p-7Q60k5J-h_9g95Q245UWmgRRipkd45tGNGND7LmPn0M8CsJ1A-sf6tNW1M4_FTj1BGTfxsjg=w1920-h1080-no&quot; alt=&quot;Strait of Bonifacio, looking north at Corsica.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Strait of Bonifacio, looking north at Corsica.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/lQCdwqOIMUoutnwQa_E87i7WrfjZ8boiyR7G3lZHr0Yj6JTd7JzSPljaY317twyxB1K5okZcSDPXCtHZKuSB77bt_YNtu7USm_fk_I4LZzZrDXQkCb75o2nTTEalfhTngzBDlHwy_qO1D-6zhwaeKadctaU5qhMIZBdFbBdq2WmeuE3v0wFihFCzjABn3nFWBAHnPr0dfSNqJR7HvoyB-EvfuEmHaCgwhtJjj8A46tI8ahSPIHc9wr7pVSEd3LfU9R1d3ZgKu2wt8GoKEOLOxoXrBCW4Y7VBQMD0273IsXJMy82nKJ4UVWtetDqvxBR3OOHjDeaT_KmOvZTlpbAUFurKxTBSimaEvuXLi3uxZ2UR8-P8LB481VcOMiMxes5QAymayFFv8-I1VeL6c3I0K4zc5n7aYb-OgXHJkVHKigWLE2OvOlTojQ4nPr4zKGed-ik2_iGW3PVjECIDGxYC6J5v2dezrtebkl4kRurQT3zQYE70qi6TbyZE7QrlCkzeo4ghTgoJ6Q1JrjpOkL2UvsPAtQr0BWrBtHoaOERalOEraLDUTpoiqj1cnEsf9OdSrgWyVjbg8Jwz3BeKykXbBJENSgX2dWUu6Izucxn8-w=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The same strait, but this time looking south, Sardinia in reach.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/lQCdwqOIMUoutnwQa_E87i7WrfjZ8boiyR7G3lZHr0Yj6JTd7JzSPljaY317twyxB1K5okZcSDPXCtHZKuSB77bt_YNtu7USm_fk_I4LZzZrDXQkCb75o2nTTEalfhTngzBDlHwy_qO1D-6zhwaeKadctaU5qhMIZBdFbBdq2WmeuE3v0wFihFCzjABn3nFWBAHnPr0dfSNqJR7HvoyB-EvfuEmHaCgwhtJjj8A46tI8ahSPIHc9wr7pVSEd3LfU9R1d3ZgKu2wt8GoKEOLOxoXrBCW4Y7VBQMD0273IsXJMy82nKJ4UVWtetDqvxBR3OOHjDeaT_KmOvZTlpbAUFurKxTBSimaEvuXLi3uxZ2UR8-P8LB481VcOMiMxes5QAymayFFv8-I1VeL6c3I0K4zc5n7aYb-OgXHJkVHKigWLE2OvOlTojQ4nPr4zKGed-ik2_iGW3PVjECIDGxYC6J5v2dezrtebkl4kRurQT3zQYE70qi6TbyZE7QrlCkzeo4ghTgoJ6Q1JrjpOkL2UvsPAtQr0BWrBtHoaOERalOEraLDUTpoiqj1cnEsf9OdSrgWyVjbg8Jwz3BeKykXbBJENSgX2dWUu6Izucxn8-w=w1920-h1080-no&quot; alt=&quot;The same strait, but this time looking south, Sardinia in reach.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The same strait, but this time looking south, Sardinia in reach.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/qcRKCjoP13JMSDPVVbqKLNl-qXwipLSzS-wGRz0--BGAf3bfmTCg31BQPcWTIRIZ6lu89hkAqJnTCy_O5DScFpdIkIMvnSmCfJarXeoPBl5oYhdMYVRZKG28wdl1SdUnjdBNEgfXK_tbmKq9FL0cbRzjaHDk7XPzk-t2sWk-XEq4ipvcXT9TzTKn6f1uUgswMF_nXQ8LIaOF3QcO7mSexXhuZH5Ql9COgnEYOb4IUWMK2CjCrYH9IpyQShS_NuHIuFoT7doNouJRkkzjtzQG4MO2OcLd3NX9SnGaFXzvBZXybnF5qBPnxGJyjAVfTy6yCKUDCGQ-yBUVecv1wm5JqfXyRlPhtnCKDswmiVTKHwJqhy6Oh_UFvmfL1L3tZhmDcK_aPUiz6imCZNqPngxX5_BTdaWOUEqdkMdRk_4HJI6Tx5YtoI2YKxqtdXJcazHHesDNr9UkwYJgQ2shlW05sYEMyCSl8kzr-FG1sceOBPdRvH3X6KUtWFntwrU19uUlSq9EX4UcnbjaZiPVwVaQeeJxBvJFHx6ZBPdKUthKtzbgdWEp0DqL2d5vQmc0I4PNyQ-QGa7dESsfg6UPd52ZlJ6Zdzno_YsM52zCWA2Q1g=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Strait of Bonifacio, looking west. Corsica on starboard, Sardinia on port&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/qcRKCjoP13JMSDPVVbqKLNl-qXwipLSzS-wGRz0--BGAf3bfmTCg31BQPcWTIRIZ6lu89hkAqJnTCy_O5DScFpdIkIMvnSmCfJarXeoPBl5oYhdMYVRZKG28wdl1SdUnjdBNEgfXK_tbmKq9FL0cbRzjaHDk7XPzk-t2sWk-XEq4ipvcXT9TzTKn6f1uUgswMF_nXQ8LIaOF3QcO7mSexXhuZH5Ql9COgnEYOb4IUWMK2CjCrYH9IpyQShS_NuHIuFoT7doNouJRkkzjtzQG4MO2OcLd3NX9SnGaFXzvBZXybnF5qBPnxGJyjAVfTy6yCKUDCGQ-yBUVecv1wm5JqfXyRlPhtnCKDswmiVTKHwJqhy6Oh_UFvmfL1L3tZhmDcK_aPUiz6imCZNqPngxX5_BTdaWOUEqdkMdRk_4HJI6Tx5YtoI2YKxqtdXJcazHHesDNr9UkwYJgQ2shlW05sYEMyCSl8kzr-FG1sceOBPdRvH3X6KUtWFntwrU19uUlSq9EX4UcnbjaZiPVwVaQeeJxBvJFHx6ZBPdKUthKtzbgdWEp0DqL2d5vQmc0I4PNyQ-QGa7dESsfg6UPd52ZlJ6Zdzno_YsM52zCWA2Q1g=w1920-h1080-no&quot; alt=&quot;Strait of Bonifacio, looking west. Corsica on starboard, Sardinia on port&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Strait of Bonifacio, looking west. Corsica on starboard, Sardinia on port
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;sardinia-facts&quot;&gt;Sardinia facts&lt;/h2&gt;
-
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;Sardinia is the second largest island in the Mediterranean Sea (after Sicily, before Cyprus) with an 
-area of slightly more than 24.000km² (about 9.300 square miles). That’s a bit smaller than Albania 
-or about the same size as the U.S state of Vermont. It is located south of Corsica from which it is 
-divided by the Strait of Bonifacio (see &lt;a href=&quot;#the-strait-of-bonifacio&quot;&gt;above&lt;/a&gt;). Its northernmost 
-latitude is just a bit south of Rome and together with Corsica, it defines the western border of the 
-Tyrrhenian Sea, which is in itself a part of the Mediterranean Sea. Sardinia has a population of 
-about 1.6 millions, so it’s rather sparsely populated with only 70 inhabitants per square kilometer 
-(180 per sq mi). Approximately 1/4 of the population lives in the metropolitan area of 
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Cagliari&quot;&gt;Cagliari&lt;/a&gt;, which also serves as the capital city and is
-the hub for all administrative matters of the autonomous region Sardinia.&lt;/p&gt;
-
-  &lt;p&gt;On the contrary, more than 4 million sheep are living on the island, resulting in a sheep density 
-similar to some regions in New Zealand. Breeding of sheep is an important cornerstone of the 
-agricultural sector as Sardinia lacks high-performance soils for efficient growing of agricultural 
-products and despite all the struggle and progress that has been made in water management, it is 
-still a relatively dry island. Consequently, the growing sector is highly specialized nowadays and 
-produces mainly some vegetables, wine, olives and cork, which is one of the most important export 
-products on the island as Sardinia contributes more than 3/4 of the overall Italian cork production.&lt;/p&gt;
-
-  &lt;p&gt;Sardinia’s &lt;strong&gt;topography&lt;/strong&gt; is flatter than Corsica’s and while the north is generally more rugged and 
-higher elevated, the highest peak of Sardinia is located just a bit southeasterly of the 
-geographical center. The Punta La Marmora is slightly over 1800 meters high and on a clear day, it 
-offers a generous panoramic view of the entire island.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;The climate&lt;/strong&gt; of Sardinia is varied and can be seen as quite complex for the relatively small 
-area, depending on the region. Overall, a typical mediterranean climate with long and hot summers 
-and mild winters predominates. Major rainfalls occur in autumn and winter, while the summers are dry 
-and many weeks without a single drop of rain are not uncommon, particularly from June to August. 
-Temperatures can frequently reach 35℃ (95℉) during the summer season and even 40℃ 
-(104℉) are not so rare. Winters are mild and temperatures below the freezing point are 
-extremely rare in the coastal areas, but higher elevated regions get some snow every year.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;Politically&lt;/strong&gt;, Sardinia has the status of an autonomous region with its own statute (can be 
-understood as some form of constitutional law) and the right to create local laws governing many 
-different domains.&lt;/p&gt;
-
-  &lt;p&gt;While the &lt;strong&gt;official language&lt;/strong&gt; is Italian, most people in Sardinia also speak a local language, 
-known as Sardinian (or Sardu). Sardu is &lt;em&gt;not&lt;/em&gt; an Italian dialect, but its own language that is a 
-direct descendant of the Latin language and thus a member of the Romance language family. It is 
-closer to Latin than the modern Italian language.&lt;/p&gt;
-
-  &lt;div class=&quot;floatbox right ruled&quot; style=&quot;width: 35%;margin-top:0;margin-bottom:0;padding:5px 3px;&quot;&gt;
-    &lt;p&gt;A total of 8 different languages are spoken on the island, but Italian is the common denominator and 
-is understood by everyone. On the opposite, almost no one outside Sardinia understands their 
-indigenous languages.&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;p&gt;To make that even more complex, some regions do have their own language variant. 
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Gallurese_dialect&quot;&gt;Gallurese&lt;/a&gt; is widely spoken in the northern part 
-of Sardinia and is a close relative of the Corsican language. In the westernmost regions, a Catalan 
-dialect is common in some smaller areas. Finally, Ligurian, another branch of the Romance family of 
-languages, is spoken on some smaller island in the far southwest.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;Sardinia’s Economy&lt;/strong&gt; is actually doing quite well, better than all other regions in southern 
-Italy. It is hindered a bit by high prices for resources, which are a result of high transportation 
-costs. Everything that isn’t naturally available on the island must be ferried in by ship or 
-airplane.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&quot;porto-cervo--costa-smeralda&quot;&gt;Porto Cervo / Costa Smeralda&lt;/h3&gt;
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;This is an interesting place. It was founded and built artificially during the the 50’s and 60’s of 
-the 20th Century after the then &lt;a href=&quot;https://en.wikipedia.org/wiki/Aga_Khan_IV&quot;&gt;richest man on earth&lt;/a&gt; 
-fell in love with the Costa Smeralda region in the northeast of Sardinia - which is perfectly 
-understandable given the wild beauty of the region. He invested millions into the region to fulfill 
-his dream of creating a holiday resort and a yacht club.&lt;/p&gt;
-
-  &lt;p&gt;Today, Porto Cervo is a small village with only about 400 residents, but it’s said to be the most 
-expensive area in Europe. Billions worth of luxury yachts can often be seen in the marina which is 
-larger than the village itself. About 1/3 of the 15 most expensive hotels in the world are located 
-in or near Porto Cervo in the Costa Smeralda region. A night in one of the most expensive suites can 
-cost up to US$35.000.&lt;/p&gt;
-
-  &lt;p&gt;The region has preserved its beauty, because there is little to no mass tourism - it’s simply too 
-expensive. Every now and then, tourist groups, mostly from cruise ships visiting nearby Olbia, come 
-to the village for a short visit, but otherwise, there is little activity, except for the jet-set 
-people who party on their yachts and in the many clubs that are often well hidden and inaccessible 
-for us normal people.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;gallery&quot;&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/bsdpmPzv_t8I71gj3qNn6ZMY54Y0t3S3FbDRYSPCa6SWTWwE96aQqGyCWvcKZWGRS0pz9E3paTfIELcLG2DfgBpIOsY7Nra54JBqvjbZm4Jh6MeH3MsmelBeneQfpAZqMBlKrHdyxCwGRkxcC-5GojjYk-QMbvtrtZ89nwcn7bK15oFMm6XBoRt6grcf0pH79xzz_iq7ndJZCJqGr1aV3T9_kSBHxid9pVCF6MAVhgwAQ2H4JAhiv3RwgdymPWnG3BaILw2dyLWpuTqbXv-6YSwdl2CvDAiJkrdcxWA6yn1av0GjLzNbyheGIOq2-j7BJU9wQFTw582yHxH_BdxwRvars_oynTJkawCsfTo-lLCvK5AAHI5DBU1ylKqAiVtQzS1xtpYV1EXe_IyH-MUOqCxM7PfZLl6S75gy3TFgqwyE29nm6OnyNp1DmAbm6ZJ9LBptz83wIzusC29-j_fXJfD257KZjQNWGn15bGoo6VR614_LAM3ChsZH3zvY8jEqFZVBwG05o8IxUq-F4toihBPbZdHRCRFPeGM0x22S-EfUvmPbrypuNakK0xY9NT64LGMBuCSo461pAaT8KSGAowxTfoenavk6q1zKsE6G7g=w993-h559-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The main shopping 'mile' in Porto Cervo. Louis Vutton and Cartier are not the only stores, you'll find many of the world's most popular luxury brands.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/bsdpmPzv_t8I71gj3qNn6ZMY54Y0t3S3FbDRYSPCa6SWTWwE96aQqGyCWvcKZWGRS0pz9E3paTfIELcLG2DfgBpIOsY7Nra54JBqvjbZm4Jh6MeH3MsmelBeneQfpAZqMBlKrHdyxCwGRkxcC-5GojjYk-QMbvtrtZ89nwcn7bK15oFMm6XBoRt6grcf0pH79xzz_iq7ndJZCJqGr1aV3T9_kSBHxid9pVCF6MAVhgwAQ2H4JAhiv3RwgdymPWnG3BaILw2dyLWpuTqbXv-6YSwdl2CvDAiJkrdcxWA6yn1av0GjLzNbyheGIOq2-j7BJU9wQFTw582yHxH_BdxwRvars_oynTJkawCsfTo-lLCvK5AAHI5DBU1ylKqAiVtQzS1xtpYV1EXe_IyH-MUOqCxM7PfZLl6S75gy3TFgqwyE29nm6OnyNp1DmAbm6ZJ9LBptz83wIzusC29-j_fXJfD257KZjQNWGn15bGoo6VR614_LAM3ChsZH3zvY8jEqFZVBwG05o8IxUq-F4toihBPbZdHRCRFPeGM0x22S-EfUvmPbrypuNakK0xY9NT64LGMBuCSo461pAaT8KSGAowxTfoenavk6q1zKsE6G7g=w993-h559-no&quot; alt=&quot;The main shopping 'mile' in Porto Cervo. Louis Vutton and Cartier are not the only stores, you'll find many of the world's most popular luxury brands.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The main shopping 'mile' in Porto Cervo. Louis Vutton and Cartier are not the only stores, you'll find many of the world's most popular luxury brands.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/ulEROlWWNcssqEgNMeOtFnzUtqvxXxS3syz-UrgUeMhyClZqZxA0i_49FF-tygKr2TSAIDGnPI3GrOxelnelLc35mu52UoOU_QzAe6fFIEdQCjDxIIn1Fx2ktXBmWWoern1oSAnQf4P_sZd2C01iX5xLRbfJrXs_afQ8Pjd252HHeB_61Hb5nmdl16ZWmnM1Zmss_kWIk8BnyNFxHA76CEkPGFE8XcbvjKbqH9kjF3WKdXf0AnkD50Rr0KvJkw-P57fva99PeTESUWqTlnRrLs3RvkEzgSM9IgjjogKJHgur4XT6hjeG0HxYg19nOE552MxwaZlO5ugC9kHsfF6zpVXIQsFtzfRPIvWRNAg6bU8qZVElILEO7-0XFxC-k6FRK2OMaKxrkbpUXdB1OiDkp18NdSQLgAwLAYJbXFTiHjykoaAY3JD_jeU25Z0F0Pyg81wvVdGR5EEafKNuOKOPCYyQYCIXEjqluli-zcNfEb9NvGkS-p7uMAWYpv1TGkF-VI8FQKn6igg2c-18Ao-C6V9XKN4Cr2EUCqaQZu2FHWJi5LUIA2iQvXFVNjqmgmkVQNoWEnthpdvrvMTE6tQYJsoPGeTSuvXQuk1rEaKTeQ=w597-h1061-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Looking down from the main street towards the (old) marina.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/ulEROlWWNcssqEgNMeOtFnzUtqvxXxS3syz-UrgUeMhyClZqZxA0i_49FF-tygKr2TSAIDGnPI3GrOxelnelLc35mu52UoOU_QzAe6fFIEdQCjDxIIn1Fx2ktXBmWWoern1oSAnQf4P_sZd2C01iX5xLRbfJrXs_afQ8Pjd252HHeB_61Hb5nmdl16ZWmnM1Zmss_kWIk8BnyNFxHA76CEkPGFE8XcbvjKbqH9kjF3WKdXf0AnkD50Rr0KvJkw-P57fva99PeTESUWqTlnRrLs3RvkEzgSM9IgjjogKJHgur4XT6hjeG0HxYg19nOE552MxwaZlO5ugC9kHsfF6zpVXIQsFtzfRPIvWRNAg6bU8qZVElILEO7-0XFxC-k6FRK2OMaKxrkbpUXdB1OiDkp18NdSQLgAwLAYJbXFTiHjykoaAY3JD_jeU25Z0F0Pyg81wvVdGR5EEafKNuOKOPCYyQYCIXEjqluli-zcNfEb9NvGkS-p7uMAWYpv1TGkF-VI8FQKn6igg2c-18Ao-C6V9XKN4Cr2EUCqaQZu2FHWJi5LUIA2iQvXFVNjqmgmkVQNoWEnthpdvrvMTE6tQYJsoPGeTSuvXQuk1rEaKTeQ=w597-h1061-no&quot; alt=&quot;Looking down from the main street towards the (old) marina.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Looking down from the main street towards the (old) marina.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/4ngjw7hR33UPefqt-YLOp7bzRTdJuCfWqw4tpr8SweRROXETRWlAJ8bWKc9DbFxCSxtqsI6uhQzGb1YIY1S6Tm3cuJTxEjss6AMJmMKIlfTdcui7rxhXHqdoR71OAUTRp_SGnzicE5YDeX9JZx8TKgNEjrpY7_Xtgo1oMz0hM8NI2Bh1NdjDfPL_Lbyn4VkxCh_orHKF0x1JNL5MwqeWaJJybTp2xHg26S_cHfgcZFQBq2vXqSZnigOZH8Kmy1hooffCjHZ_QA7SD81vfFqxVCmlF55LRwr0yg-OtDHYQBQQ4yW6wUp0SVMTqPDczlGNyrdlfkhLSB7pllajBag1IJ776GIYsqDMcT9kmxxjaZ9vN5lbtWddJEeLvZKxizXo0kFNGjcpOzTli9gyPlBnHT4F_UdvEHoOMHDhUfrFbHNX6fALWj-eafkuHN9ayFdPaAZXEwBiFj8HJMObWNrvNK6WjAvoEmsEe4Sa3zU2ZV6VgWTi6kKC4qn7qH6t721W7-Wqyxk8aVJO1uiQo4acKV2p4G_RQvU9a0Jdbo3to-Jz9-xCIEdZewEx6gKQOM0PrEnVWl4iHq__wIhABuxefNoFn835Ne4-bEnQT2bzqg=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The old marina of Porto Cervo, one larger yacht is visible in the center of the image.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/4ngjw7hR33UPefqt-YLOp7bzRTdJuCfWqw4tpr8SweRROXETRWlAJ8bWKc9DbFxCSxtqsI6uhQzGb1YIY1S6Tm3cuJTxEjss6AMJmMKIlfTdcui7rxhXHqdoR71OAUTRp_SGnzicE5YDeX9JZx8TKgNEjrpY7_Xtgo1oMz0hM8NI2Bh1NdjDfPL_Lbyn4VkxCh_orHKF0x1JNL5MwqeWaJJybTp2xHg26S_cHfgcZFQBq2vXqSZnigOZH8Kmy1hooffCjHZ_QA7SD81vfFqxVCmlF55LRwr0yg-OtDHYQBQQ4yW6wUp0SVMTqPDczlGNyrdlfkhLSB7pllajBag1IJ776GIYsqDMcT9kmxxjaZ9vN5lbtWddJEeLvZKxizXo0kFNGjcpOzTli9gyPlBnHT4F_UdvEHoOMHDhUfrFbHNX6fALWj-eafkuHN9ayFdPaAZXEwBiFj8HJMObWNrvNK6WjAvoEmsEe4Sa3zU2ZV6VgWTi6kKC4qn7qH6t721W7-Wqyxk8aVJO1uiQo4acKV2p4G_RQvU9a0Jdbo3to-Jz9-xCIEdZewEx6gKQOM0PrEnVWl4iHq__wIhABuxefNoFn835Ne4-bEnQT2bzqg=w1353-h762-no&quot; alt=&quot;The old marina of Porto Cervo, one larger yacht is visible in the center of the image.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The old marina of Porto Cervo, one larger yacht is visible in the center of the image.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/wUQCoZl2Hr8Ah9ETmXGmgKrbCVk0lN5QWaqSW3QiNfIDM0CC0UZasch30Veb_iog07jTuMrSQl4p9DgCHXa4vX6k8ol3KoRdNg1lIQyqDHtHNZfL_hqkKojKcoXi7nxzMw1WJ4U410FApAz6YbPlhEd6j03CKGoHYFO5aAdQK-uQXdTLxmavDNH9Xb6urTfPw4kPf-jMQAlt0L-GB8OILVY2PeVKKFku3DE2zWHThNQx1go4PifYTC1J9cEyFz4TkUIKD2H5Vb0_frHw-e4ikW6poUVC-Kem4QySx08CvCsSukgS4UtwDFgritnCxKvSlvu9oISMFYppEmz4pbOoCcrlB-5yy3YsR4_uFaSD4JSQSrkIsu1HP2ElmQfOP7EueviQEBUNFJ8GAL43OE2qDMJyQ31c9DQmCr9jf9E27QQTHClncodp-i_OZdfQDWYlFQ53TCInsFPre0mpVynzmQ5sGSMHcqgWgZ5khxRpDmbvQxWdarZKsu8Sa63pJkUfSweUOy8mAG2XxnSwBucSqz1H9Ux-X3zPgIJdxH5F__FeRRPYdaAgLk8D70pipguEbCjpDTEd2LCAoCeMtjMODASuxCZzIHoB71EHo5todA=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The main square of Porto Cervo&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/wUQCoZl2Hr8Ah9ETmXGmgKrbCVk0lN5QWaqSW3QiNfIDM0CC0UZasch30Veb_iog07jTuMrSQl4p9DgCHXa4vX6k8ol3KoRdNg1lIQyqDHtHNZfL_hqkKojKcoXi7nxzMw1WJ4U410FApAz6YbPlhEd6j03CKGoHYFO5aAdQK-uQXdTLxmavDNH9Xb6urTfPw4kPf-jMQAlt0L-GB8OILVY2PeVKKFku3DE2zWHThNQx1go4PifYTC1J9cEyFz4TkUIKD2H5Vb0_frHw-e4ikW6poUVC-Kem4QySx08CvCsSukgS4UtwDFgritnCxKvSlvu9oISMFYppEmz4pbOoCcrlB-5yy3YsR4_uFaSD4JSQSrkIsu1HP2ElmQfOP7EueviQEBUNFJ8GAL43OE2qDMJyQ31c9DQmCr9jf9E27QQTHClncodp-i_OZdfQDWYlFQ53TCInsFPre0mpVynzmQ5sGSMHcqgWgZ5khxRpDmbvQxWdarZKsu8Sa63pJkUfSweUOy8mAG2XxnSwBucSqz1H9Ux-X3zPgIJdxH5F__FeRRPYdaAgLk8D70pipguEbCjpDTEd2LCAoCeMtjMODASuxCZzIHoB71EHo5todA=w1353-h762-no&quot; alt=&quot;The main square of Porto Cervo&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The main square of Porto Cervo
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/EdsoViBk7qTQ1nHzyazftmFiKnpbJjJ1MzSdaLW1cSwRoTcEZcBZUdgN2GaMQjUmhRWM0YaOKLBeQDgeHhOpxUSkMCh7b8mPb2dn-JIfb1vviMjG8--K8LmUF6jGcBafi6U9B3kkMno6PABuN1ypgFrB38UJD_cLb9XctfatXYji6L2XT15e5Rb5YKnTp6Dmm8rhJ8d_h8CUEpmiveXTTGvCyQzj_BCuZAswfL0xS0_ySBf_g25QsQRXVKt_6l6WIS5wHRdHR0wYcMSQBDq6KhPjGtvsVVi2V7uCeCMPUSCWG5qf9eWnehYHCiexX_-jNyM05ySKIv7TEfxNdamHZTWMEPFAaDjtAUtv3kHaaKvpCqAeR6z9X7ZhTlwn7lSZgAfMZD2JJCZtmLlCZQTQee5iSEYaayyRLVJyhmVYVWzLCxh10UdS5wDK0P8Pp5GnUoZ_a6Iodh71lbDEWBjRyWSEpR_SU97KJMGZdBUqJx4VVUOuL594nTs9a-kHO00chFbSwpkT-jnvcfctzswUq0ZhcmFTmuTw2QoGrNopgfj_cvDCIFJ3rsuR_E_ipj89r6MSpsiEBs974Kd0ElOUBS_BjmNrYuAsuhU0QHeOXw=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Another view of the old marina&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/EdsoViBk7qTQ1nHzyazftmFiKnpbJjJ1MzSdaLW1cSwRoTcEZcBZUdgN2GaMQjUmhRWM0YaOKLBeQDgeHhOpxUSkMCh7b8mPb2dn-JIfb1vviMjG8--K8LmUF6jGcBafi6U9B3kkMno6PABuN1ypgFrB38UJD_cLb9XctfatXYji6L2XT15e5Rb5YKnTp6Dmm8rhJ8d_h8CUEpmiveXTTGvCyQzj_BCuZAswfL0xS0_ySBf_g25QsQRXVKt_6l6WIS5wHRdHR0wYcMSQBDq6KhPjGtvsVVi2V7uCeCMPUSCWG5qf9eWnehYHCiexX_-jNyM05ySKIv7TEfxNdamHZTWMEPFAaDjtAUtv3kHaaKvpCqAeR6z9X7ZhTlwn7lSZgAfMZD2JJCZtmLlCZQTQee5iSEYaayyRLVJyhmVYVWzLCxh10UdS5wDK0P8Pp5GnUoZ_a6Iodh71lbDEWBjRyWSEpR_SU97KJMGZdBUqJx4VVUOuL594nTs9a-kHO00chFbSwpkT-jnvcfctzswUq0ZhcmFTmuTw2QoGrNopgfj_cvDCIFJ3rsuR_E_ipj89r6MSpsiEBs974Kd0ElOUBS_BjmNrYuAsuhU0QHeOXw=w1353-h762-no&quot; alt=&quot;Another view of the old marina&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Another view of the old marina
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/H-37VDth_rZJw4M5hCeHnokYA5MxrVkePOi5xPecDSE65zOnvkCvL1w5SeuHCp6vO4nghQEs9tzThoEcyt1SgqEuxzzJPNXUDHk2wbk5HanQJdnTNs6tV5_OWqwpG3pNmbCVXmkcRT6F12V6-Ozi1F-clspoHEWk6Zdq0NJss8ge3lLgN9W5MpEXVxmWB0qMLiUvpMaa07L_iy3iNVxODYRa16vqYz9apb-ovEnE3T8Nt5vfvg4H_2Fn_JwMcEK3x1avRWG_9qixCJUkX_xCmV7SgLxJTKfU-XyrvJIgRRrRQUN1-md4Rb6RwuWG2dZRwSzQzAMh_12Rl_hAdNr_6Vc1Q9n0OQzqQYnxx69Tv3-bXovCcix8TDxNI2f4exIEftwObtTTDnD_L45Q3cMQ2ye37tNCfhZjnXMuLDvQX80MJi69nWfCDfL8XfXIXBLHGbSQJnUoEmv4L2fStgQPahxuXbpfFuXkhaCm7zzyPLKW00gvkICRe1c_HgW3T8XQ2s1QuYkvBYSX9jDxyzs2FTCQalpBZJBYXZ8NWxynqS0zFTxNlEx40PxM4Ocbb06bdeD1vCvW8IuW6zY8-Di0OS_fM3kGhLj4JDIxJOw6eQ=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The main square from a different angle, the marina in the background&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/H-37VDth_rZJw4M5hCeHnokYA5MxrVkePOi5xPecDSE65zOnvkCvL1w5SeuHCp6vO4nghQEs9tzThoEcyt1SgqEuxzzJPNXUDHk2wbk5HanQJdnTNs6tV5_OWqwpG3pNmbCVXmkcRT6F12V6-Ozi1F-clspoHEWk6Zdq0NJss8ge3lLgN9W5MpEXVxmWB0qMLiUvpMaa07L_iy3iNVxODYRa16vqYz9apb-ovEnE3T8Nt5vfvg4H_2Fn_JwMcEK3x1avRWG_9qixCJUkX_xCmV7SgLxJTKfU-XyrvJIgRRrRQUN1-md4Rb6RwuWG2dZRwSzQzAMh_12Rl_hAdNr_6Vc1Q9n0OQzqQYnxx69Tv3-bXovCcix8TDxNI2f4exIEftwObtTTDnD_L45Q3cMQ2ye37tNCfhZjnXMuLDvQX80MJi69nWfCDfL8XfXIXBLHGbSQJnUoEmv4L2fStgQPahxuXbpfFuXkhaCm7zzyPLKW00gvkICRe1c_HgW3T8XQ2s1QuYkvBYSX9jDxyzs2FTCQalpBZJBYXZ8NWxynqS0zFTxNlEx40PxM4Ocbb06bdeD1vCvW8IuW6zY8-Di0OS_fM3kGhLj4JDIxJOw6eQ=w1353-h762-no&quot; alt=&quot;The main square from a different angle, the marina in the background&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The main square from a different angle, the marina in the background
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/GrsloMckeOWIe-cNHCHoAPkJHn-sKo4uisvJ5pDsRt-c2hR3gRhFCQc1JmlyZ4BFTzLGWXgHogv2FwLGa7quT76ObpU_bSNLwbDQdyoCPtBg2T2Q2v9juX8hML5bA--FwIaTLoKCioe95sPAV2G_fDKmAfUTxLC98pLSrOaZgYZUnITitffPKqik7zRNUomURNF19s05YqWOvtZKd4_gzECcF812MXdIX9zzMiRi-4ndVkelW38fTsK71ck_wG8f2IUSbQLzp-poWTh8-MeTQCe6FahQX4fPCBwVIR1wVw7r7z_x-k3HJTe4m9AI_8OA8xkB7HpZaaTM_hNLkDlj1E1gagptSHXnfGdorw2qrZoG6q3TixigUnNPO8tNkaDGTHRwvEKGJThhf2ho35FQLkRmMyipPeE7BKjT1yULenTpFQmjgraKn9nqRzB42i9-Ur6IcaYGLIBgv4CkQqr3mfSMBXQBhBKuvIUVoPfmNAL4VlokfSV_rPi0CJUomJcY_61-l1unDTHS9jfkcxutP_cja-H9KLKVynlracrJ0eYWAB-ULYkjn67jc1BOLj29pJZL6W0x5qzkIFnjKq9X96gEyAh_hPEq5K2pRTamqA=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;On the way from the village center down to the marina with the large square.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/GrsloMckeOWIe-cNHCHoAPkJHn-sKo4uisvJ5pDsRt-c2hR3gRhFCQc1JmlyZ4BFTzLGWXgHogv2FwLGa7quT76ObpU_bSNLwbDQdyoCPtBg2T2Q2v9juX8hML5bA--FwIaTLoKCioe95sPAV2G_fDKmAfUTxLC98pLSrOaZgYZUnITitffPKqik7zRNUomURNF19s05YqWOvtZKd4_gzECcF812MXdIX9zzMiRi-4ndVkelW38fTsK71ck_wG8f2IUSbQLzp-poWTh8-MeTQCe6FahQX4fPCBwVIR1wVw7r7z_x-k3HJTe4m9AI_8OA8xkB7HpZaaTM_hNLkDlj1E1gagptSHXnfGdorw2qrZoG6q3TixigUnNPO8tNkaDGTHRwvEKGJThhf2ho35FQLkRmMyipPeE7BKjT1yULenTpFQmjgraKn9nqRzB42i9-Ur6IcaYGLIBgv4CkQqr3mfSMBXQBhBKuvIUVoPfmNAL4VlokfSV_rPi0CJUomJcY_61-l1unDTHS9jfkcxutP_cja-H9KLKVynlracrJ0eYWAB-ULYkjn67jc1BOLj29pJZL6W0x5qzkIFnjKq9X96gEyAh_hPEq5K2pRTamqA=w1353-h762-no&quot; alt=&quot;On the way from the village center down to the marina with the large square.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                On the way from the village center down to the marina with the large square.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/-wdpmEeFFxJ0fHMMouzueTpdx1_0IVMIWsaemzKpL0eldLqnjFGbperer2eVXINQWVpFefKpM4fVr6nyYdOF7zDMejQwniHzcVQN_nE392tU679kx0IJRuY-PMgEfBBHWTJhcFQIz3NOrO7feEWyPYJ-s6wy-J4ujy_ggQrhViSqU6Qo65p_UiTM_5GxR9IJedEqYkfvT9h4A5rtJ5ebuPNcu1JkctQB57WisYauhjHA0jpHv_SaSDOzl_q87niX5cBYoIB2RNDLk4sGS0l7LzTcR3vxrepQjuDE5mYMlvQ78io_RvwfyjMWHS3aLVJCiBiji2TWZr0J-jnPe_bygdYR2plhZ96pXknAkjvvLkm_ke0SBUIJSGPY6gLODk36KDCuduS6j5SrY1ORnZXpGyDoAKOO1TnjlAJ4pjJMuN9jNBUD6VUYi-X184tDj4HCBma-5-UysRrIkTlVsOj9aKdhStgIkCMq4EaUIxp-oDaYwzCrBJcD1k5DpZzHDZxMx3uytfvmm0ENW9lIdZItRrj4_bsCe62zXFqu8xplU8L1Ms0-601sfxNIX2i_IfHUxdYNgtH5VulVj7jKPkYR7yJz2hYOa9VsEuPCwzPQsw=w1353-h762-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Looking back towards the village center with many cafes and the luxury shopping mile&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/-wdpmEeFFxJ0fHMMouzueTpdx1_0IVMIWsaemzKpL0eldLqnjFGbperer2eVXINQWVpFefKpM4fVr6nyYdOF7zDMejQwniHzcVQN_nE392tU679kx0IJRuY-PMgEfBBHWTJhcFQIz3NOrO7feEWyPYJ-s6wy-J4ujy_ggQrhViSqU6Qo65p_UiTM_5GxR9IJedEqYkfvT9h4A5rtJ5ebuPNcu1JkctQB57WisYauhjHA0jpHv_SaSDOzl_q87niX5cBYoIB2RNDLk4sGS0l7LzTcR3vxrepQjuDE5mYMlvQ78io_RvwfyjMWHS3aLVJCiBiji2TWZr0J-jnPe_bygdYR2plhZ96pXknAkjvvLkm_ke0SBUIJSGPY6gLODk36KDCuduS6j5SrY1ORnZXpGyDoAKOO1TnjlAJ4pjJMuN9jNBUD6VUYi-X184tDj4HCBma-5-UysRrIkTlVsOj9aKdhStgIkCMq4EaUIxp-oDaYwzCrBJcD1k5DpZzHDZxMx3uytfvmm0ENW9lIdZItRrj4_bsCe62zXFqu8xplU8L1Ms0-601sfxNIX2i_IfHUxdYNgtH5VulVj7jKPkYR7yJz2hYOa9VsEuPCwzPQsw=w1353-h762-no&quot; alt=&quot;Looking back towards the village center with many cafes and the luxury shopping mile&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Looking back towards the village center with many cafes and the luxury shopping mile
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/WyforFXQtHPl3hVsaeumMuGlSRcl4TZWxr4nV7I_L6jwY-C9lK8jNsenRRxAe-S2b0NqFo6gPiUdMRWi2mPmI83pZRwe7VjLsM8NF4NuUwT1QKehZ0trw3hgIL5JpEfd8QcGH5KKoF-MPJSVEfW66FJlLVWbCxlQY3s3BKyMy3v9DXXbsgrWvqwhtTtA_AVI_xbr_-OFgx4hgdicSmaqpCwRv6SmyUfSVwzz1jIK66qmJMy69aBOAOmQ4_kVWdcj0Wq4f4SjN-mZYaWW5ZSvbnMBJM37EROBzcKdOwJ2zYPKTcUHWpAx_2jy_H-kk82etQ8y27EOsf_BgyoiBRQri6G5ncynfyGpAt6437XrEC1NohGhSzFN2CFBwvO8lAfuF_nqBhzevYm6RLXTqwEeg-eSz5kh64HKG9O7KlOPKewTTme952XYuKKT-2Hsv1D_xWQRFlyYc3ukG-Dk0hjkC9VMgy5Pjij-Ss84vMaPNZo5PnrvC8wkGzf7WFoSD9EMUea-Ckrs1PrzJupFbJINEYU4fKlYoRftYQwa6-4xRwokoUrwEZ5gUTxB8n-olplkzvnYXMGfEkqsISOu9sJqWcNwjo0a14GlbkaklCYQ7w=w993-h559-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Looking from the main square up to the restaurants and cafes.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/WyforFXQtHPl3hVsaeumMuGlSRcl4TZWxr4nV7I_L6jwY-C9lK8jNsenRRxAe-S2b0NqFo6gPiUdMRWi2mPmI83pZRwe7VjLsM8NF4NuUwT1QKehZ0trw3hgIL5JpEfd8QcGH5KKoF-MPJSVEfW66FJlLVWbCxlQY3s3BKyMy3v9DXXbsgrWvqwhtTtA_AVI_xbr_-OFgx4hgdicSmaqpCwRv6SmyUfSVwzz1jIK66qmJMy69aBOAOmQ4_kVWdcj0Wq4f4SjN-mZYaWW5ZSvbnMBJM37EROBzcKdOwJ2zYPKTcUHWpAx_2jy_H-kk82etQ8y27EOsf_BgyoiBRQri6G5ncynfyGpAt6437XrEC1NohGhSzFN2CFBwvO8lAfuF_nqBhzevYm6RLXTqwEeg-eSz5kh64HKG9O7KlOPKewTTme952XYuKKT-2Hsv1D_xWQRFlyYc3ukG-Dk0hjkC9VMgy5Pjij-Ss84vMaPNZo5PnrvC8wkGzf7WFoSD9EMUea-Ckrs1PrzJupFbJINEYU4fKlYoRftYQwa6-4xRwokoUrwEZ5gUTxB8n-olplkzvnYXMGfEkqsISOu9sJqWcNwjo0a14GlbkaklCYQ7w=w993-h559-no&quot; alt=&quot;Looking from the main square up to the restaurants and cafes.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Looking from the main square up to the restaurants and cafes.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;baja-sardinia&quot;&gt;Baja Sardinia&lt;/h3&gt;
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;This little village is located a couple of miles to the northwest of Porto Cervo - a 10 to 15 
-minutes drive and yet it appears to be a completely different world. While the scenic beauty of the 
-surrounding landscape is stunning as usual - as it is in most coastal areas of Sardinia - the 
-village is completely different. It is a destination for us &lt;em&gt;“ordinary gals and guys”&lt;/em&gt; at an 
-affordable price level, yet it does not attract mass tourism, because this is something which 
-thankfully has not yet found its way onto this beautiful island. There are no huge hotels or 
-apartment complexes in Baja and everything, including the cafes, restaurants and bars, do not look 
-as being built for huge crowds.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;gallery&quot;&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/jvBeuzcOxRQMXkl3Q1A8wucbHFZBuS4VpD_uR66ZdGwSixFRHwGVrOOrKVcX9xbhAUbmIyI_w8oSPZ19bgHib1gBXSZYEGNSKHoUUVJR5b_RJvkcyoJluXM7mK83foQAWrsl-AkAjLt06eh44OL6g3hGmf1GUXlNIgOGrgSQFvFUcBtikinVD9te5y70pdxNw5y8kx0nbvEs0NrZtJ5ldY-pMZ8O6M6pI9NVGBHVk9_o6dTeA3tx9K9zz7PzJdNELmUP2QZXyGSywZ0w95nlPyd2hIs80IuRi_6dd_JNGFmWF0ZjXq6k09DfHiqCu5YCaiEgYbT4YWYH0f5dx8ANGALeQafIoZ9XrGmyMxbaV3agkSesi_8MgwxmuK2e49ehVnH4RhZi8CedUH0EQwaZiemerYx1viHDqbIybal28g7vZh6ZX82R9b3LL6RsEEfb4usmHJpc1O5H8LjFBiMUJ8uCIqJehGOGghKwcoIvzMehGHW7L5B4lvsfLJd8biCLAiXGMkpZIJ4kEL8NfdpLirkrGglpQiKK3H3OXDnajchF1tlN8xVHk5yblHALpUhhZVB9rHIn1bih3ZalmWS-4PRmH2bwAuPl0OXtt8gpEg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The village seen from a nearby path. As you can see, everything is small and there a no signs of mass tourism visible. It simply does not exist.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/jvBeuzcOxRQMXkl3Q1A8wucbHFZBuS4VpD_uR66ZdGwSixFRHwGVrOOrKVcX9xbhAUbmIyI_w8oSPZ19bgHib1gBXSZYEGNSKHoUUVJR5b_RJvkcyoJluXM7mK83foQAWrsl-AkAjLt06eh44OL6g3hGmf1GUXlNIgOGrgSQFvFUcBtikinVD9te5y70pdxNw5y8kx0nbvEs0NrZtJ5ldY-pMZ8O6M6pI9NVGBHVk9_o6dTeA3tx9K9zz7PzJdNELmUP2QZXyGSywZ0w95nlPyd2hIs80IuRi_6dd_JNGFmWF0ZjXq6k09DfHiqCu5YCaiEgYbT4YWYH0f5dx8ANGALeQafIoZ9XrGmyMxbaV3agkSesi_8MgwxmuK2e49ehVnH4RhZi8CedUH0EQwaZiemerYx1viHDqbIybal28g7vZh6ZX82R9b3LL6RsEEfb4usmHJpc1O5H8LjFBiMUJ8uCIqJehGOGghKwcoIvzMehGHW7L5B4lvsfLJd8biCLAiXGMkpZIJ4kEL8NfdpLirkrGglpQiKK3H3OXDnajchF1tlN8xVHk5yblHALpUhhZVB9rHIn1bih3ZalmWS-4PRmH2bwAuPl0OXtt8gpEg=w1920-h1080-no&quot; alt=&quot;The village seen from a nearby path. As you can see, everything is small and there a no signs of mass tourism visible. It simply does not exist.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The village seen from a nearby path. As you can see, everything is small and there a no signs of mass tourism visible. It simply does not exist.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/hsEzk_0Zm2ZmY2mxvJ5ERa5L01CBR_B7hTm_RI_j0DHRA3sqq5iBpEbWMnNnXeBgKIUX7YehhEHzYUNAjGEnTmp6r0UfBcbqboi4SXWw9o33SQt3ksWJ6MdlIR0J1bMXk5SNRtgp9avSwBkvbqZGL6uAO5Y05sQrskBMNFzytnMR0qyNLdNRfEGpy9BlJuAbu_axqw1HHrq4bewMASqegtx1uP7GkFy3JCKrR1494sYQ9Ey3C31__tYTjkfm9QRaHJoIzTAVqQusq2lu-3lWkciy_KyxLryj73vQj2ID4n1y-UJog5LIiLAhJ9Ym5jKlH4PmfRzwmwdz83C36yVUDq2N8_ctgJzJF2ojemXcN0jFSWbDjfikNxZDps2Taq6ykQ5bx4d4rUeNNvtq_RyvFRs8VOWyeV9Mg6g1aaniTfdXk-J1QkWmIRtM3WHt6K2QSpsLDKka4FU3UqfH-OXYyP9ZVO3FEQKOQ2a3nXYpwL69k7Oa64LMJLqamh6r8vnanBvU2Fx_-VQZPKVdtfQrw02jAOEpWRy43dhLj0cWaMdRjI8krY-N631NEY49kXRcwiFqn9iWBOaxcBunDyQKjjKL8KYwvLsIZfEA3CRimg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;A coastal area near Baja Sardinia. There are not many sandy beaches in the close vicinity, which might be disappoint some, but the wild and rocky coast has its very own appeal.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/hsEzk_0Zm2ZmY2mxvJ5ERa5L01CBR_B7hTm_RI_j0DHRA3sqq5iBpEbWMnNnXeBgKIUX7YehhEHzYUNAjGEnTmp6r0UfBcbqboi4SXWw9o33SQt3ksWJ6MdlIR0J1bMXk5SNRtgp9avSwBkvbqZGL6uAO5Y05sQrskBMNFzytnMR0qyNLdNRfEGpy9BlJuAbu_axqw1HHrq4bewMASqegtx1uP7GkFy3JCKrR1494sYQ9Ey3C31__tYTjkfm9QRaHJoIzTAVqQusq2lu-3lWkciy_KyxLryj73vQj2ID4n1y-UJog5LIiLAhJ9Ym5jKlH4PmfRzwmwdz83C36yVUDq2N8_ctgJzJF2ojemXcN0jFSWbDjfikNxZDps2Taq6ykQ5bx4d4rUeNNvtq_RyvFRs8VOWyeV9Mg6g1aaniTfdXk-J1QkWmIRtM3WHt6K2QSpsLDKka4FU3UqfH-OXYyP9ZVO3FEQKOQ2a3nXYpwL69k7Oa64LMJLqamh6r8vnanBvU2Fx_-VQZPKVdtfQrw02jAOEpWRy43dhLj0cWaMdRjI8krY-N631NEY49kXRcwiFqn9iWBOaxcBunDyQKjjKL8KYwvLsIZfEA3CRimg=w1920-h1080-no&quot; alt=&quot;A coastal area near Baja Sardinia. There are not many sandy beaches in the close vicinity, which might be disappoint some, but the wild and rocky coast has its very own appeal.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                A coastal area near Baja Sardinia. There are not many sandy beaches in the close vicinity, which might be disappoint some, but the wild and rocky coast has its very own appeal.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/UajEQ-mqWC4RurGbB3yGDOzVNw4g1tbRc5IC3gqR9Y6h9Edf3OCloA0c3RWpVKZTbv2aWQVmwnadqNqZmO-BnY_WNz5ioYZ28LZK1UbBZ1thbseM8jeJSOYX0M3GrhzJQi-B7S7ErFMcZvZoAYTHpOn5X2k0PKW0ukzm3zNn_zJGkL6les9DgsGUuQTYYguXF11dWoB8iIPUZEd6Q2vv7qZgcaf79_rm0E-kwTkgxIHWBpTH1la5jLVX1VeCfCyrjSbk0Wauo9E7nDoN7JpDuHmiBi5U7uqIRkT8G_iwnSPFeMJylTb2mb-WzALPr_SbIepjCmt4JKudxTZO0Mf2Bkezv-1QNLJq10Ea_2f5qbiimVCMGZDe5pCuxgfe3Q1IJhg9iKlcZIQOxQSKOKMO8V5bjhIS-He54v5ydscKdiiNQTIoRFADDqQaNMuVXT4AikFOTDm10qXbnuicDgOutRF3Q6GXvu4H0oUlog5WgAZccEPb2nM8PsUVEjX-OtB82McV4a0pEnTSS6c3WWPlCumJrAyWF4tDGRmjbYAO5E4dNRykzC2HAlCoT1L1IAPqx12wTSmZMVqvAAmOPoAj0fl-WibnP2ZnrLznkkviOw=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The village again as seen from the nearby coastal path. In the right part, the club hotel Baja Sardinia is visible. It's the biggest hotel in the area.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/UajEQ-mqWC4RurGbB3yGDOzVNw4g1tbRc5IC3gqR9Y6h9Edf3OCloA0c3RWpVKZTbv2aWQVmwnadqNqZmO-BnY_WNz5ioYZ28LZK1UbBZ1thbseM8jeJSOYX0M3GrhzJQi-B7S7ErFMcZvZoAYTHpOn5X2k0PKW0ukzm3zNn_zJGkL6les9DgsGUuQTYYguXF11dWoB8iIPUZEd6Q2vv7qZgcaf79_rm0E-kwTkgxIHWBpTH1la5jLVX1VeCfCyrjSbk0Wauo9E7nDoN7JpDuHmiBi5U7uqIRkT8G_iwnSPFeMJylTb2mb-WzALPr_SbIepjCmt4JKudxTZO0Mf2Bkezv-1QNLJq10Ea_2f5qbiimVCMGZDe5pCuxgfe3Q1IJhg9iKlcZIQOxQSKOKMO8V5bjhIS-He54v5ydscKdiiNQTIoRFADDqQaNMuVXT4AikFOTDm10qXbnuicDgOutRF3Q6GXvu4H0oUlog5WgAZccEPb2nM8PsUVEjX-OtB82McV4a0pEnTSS6c3WWPlCumJrAyWF4tDGRmjbYAO5E4dNRykzC2HAlCoT1L1IAPqx12wTSmZMVqvAAmOPoAj0fl-WibnP2ZnrLznkkviOw=w1920-h1080-no&quot; alt=&quot;The village again as seen from the nearby coastal path. In the right part, the club hotel Baja Sardinia is visible. It's the biggest hotel in the area.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The village again as seen from the nearby coastal path. In the right part, the club hotel Baja Sardinia is visible. It's the biggest hotel in the area.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;
-If you ever come there, I suggest you try the ice cream. There are multiple opportunities in the 
-village and you might get an opportunity to try Corbezzolo flavor, made from fruits of the 
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Arbutus_unedo&quot;&gt;Strawberry tree&lt;/a&gt;. It’s something you won’t find very 
-often elsewhere and it’s delicious.&lt;/p&gt;
-
-&lt;h3 id=&quot;beaches&quot;&gt;Beaches&lt;/h3&gt;
-
-&lt;p&gt;There are lots of nice beaches all around the island. The one pictured below is called &lt;a href=&quot;https://goo.gl/maps/y7Rp293vUnT2&quot;&gt;Spiaggia La 
-Cinta&lt;/a&gt; and is located about half an hour drive from the city of 
-Olbia in the northeastern part of Sardinia, south of the famous Costa Smeralda.&lt;/p&gt;
-
-&lt;div class=&quot;blockimage borderless&quot;&gt;
-
-
-
-
-&lt;a href=&quot;/assets/gfx/sardinia/beach.jpg&quot; data-fancybox=&quot;&quot; data-caption=&quot;Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.&quot;&gt;
-
-&lt;figure style=&quot;position:relative;&quot;&gt;
-        &lt;img src=&quot;/assets/gfx/sardinia/beach.jpg&quot; alt=&quot;Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
-        
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.
-        &lt;/figcaption&gt;
-        
-&lt;/figure&gt;
-
-&lt;/a&gt;
-
-
-
-&lt;div class=&quot;floatimage_title&quot; style=&quot;padding: 3px 8px;&quot;&gt;
-    Beautiful beaches with almost white sand, crystal clear water shimmering in brilliant blue and cyan colors.
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion?&lt;/h2&gt;
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;We had only one day, but that convinced us we want to see more of that wonderful island that has not 
-yet been exploited by mass tourism. Our guide told us, the Sards do not want this - they certainly 
-could earn billions with tourism like they do in mainland Italy, but so far, they preferred to stay 
-off the radar of big-scale touristic activities. They do have the jet-set destination in the north 
-east (the &lt;a href=&quot;https://en.wikipedia.org/wiki/Costa_Smeralda&quot;&gt;Costa Smeralda&lt;/a&gt;) which co-exists nicely and 
-more or less friction-free with the locals and certainly does bring in some good cash, but for the 
-rest of the island, tourism does not play a major role in Sardinia’s economy.&lt;/p&gt;
-
-  &lt;p&gt;With Porto Cervo, we have seen a place that looks interesting at the first glance, but is definitely 
-not the place where I would want to spend a vacation - even if I had the money (which I do not), I 
-wouldn’t be sure whether it would be the right place. It looks artificially (that’s exactly what it 
-is) and a bit cold.&lt;/p&gt;
-
-  &lt;p&gt;Baja Sardinia, I liked a lot better. It feels just right - a small village on the coast with &lt;em&gt;some&lt;/em&gt; 
-tourism and lots of opportunities in the close neighborhood. Hiking, biking, and sea-related 
-activities like diving, surfing, boat trips are all possible here, so one would not get bored to 
-easily. I’m sure though, there are many more interesting and breathtakingly beautiful places on this 
-mediterranean island, particularly in the southern part.&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">I recently spent some time in the mediterranean, visiting places I've never been before in my life - the islands of Sardinia, which belongs to Italy, and the neighbouring French Corsica. Even though the two islands are close neighbours, separated by the only 11 kilometers (a little under 7 miles) wide [Strait of Bonifacio](https://en.wikipedia.org/wiki/Strait_of_Bonifacio), they are very different...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22sardinia_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
+There are probably more awesome cover versions and I’ll update this article when I find some.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;, &quot;GoT&quot;]" /><category term="first" /><category term="music" /><category term="video" /><category term="got" /><summary type="html">Game of Thrones fans will instantly recognize this song. It is from the famous intro scene of the sixth season's final episode **The winds of Winter**. The song's name is *Light of the Seven* and its composer is [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi). It's popular among youtubers as material to cover and has been covered even by large orchestras. The song received much praise, even outside the Game Of Thrones continuum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22width%22=%3E%22110px%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
