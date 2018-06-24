@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-06-24T20:02:00+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-06-24T20:10:46+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-06-24T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jun.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -75,10 +75,10 @@ heard, the final will be out soon, likely unchanged from this beta.&lt;/p&gt;
 
 
 
-&lt;a href=&quot;/assets/gfx/tb60.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Thunderbird 60 screenshot&quot;&gt;
+&lt;a href=&quot;/assets/gfx/tb60_customized.png&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Thunderbird 60 screenshot&quot;&gt;
 
 &lt;figure style=&quot;position:relative;&quot;&gt;
-        &lt;img src=&quot;/assets/gfx/tb60.png&quot; alt=&quot;Thunderbird 60 screenshot&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/tb60_customized.png&quot; alt=&quot;Thunderbird 60 screenshot&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
         
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
@@ -116,10 +116,10 @@ years ago.&lt;/p&gt;
 
 
 
-&lt;a href=&quot;/assets/gfx/tb60_default.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Thunderbird 60 default without any customisation&quot;&gt;
+&lt;a href=&quot;/assets/gfx/tb60_default_theme.png&quot; data-fancybox=&quot;&quot; data-caption=&quot;Thunderbird 60 default without any customisation&quot;&gt;
 
 &lt;figure style=&quot;position:relative;&quot;&gt;
-        &lt;img src=&quot;/assets/gfx/tb60_default.png&quot; alt=&quot;Thunderbird 60 default without any customisation&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
+        &lt;img src=&quot;/assets/gfx/tb60_default_theme.png&quot; alt=&quot;Thunderbird 60 default without any customisation&quot; style=&quot;width:auto; max-width:100%; height:auto; margin:0 auto;display:block;&quot; /&gt;
         
         
         &lt;figcaption style=&quot;display:none;&quot;&gt;
