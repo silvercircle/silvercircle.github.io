@@ -1,4 +1,241 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-06-24T20:10:46+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-07-11T07:31:43+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">uWSGI configuration example for a Django/Wagtail app</title><link href="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/" rel="alternate" type="text/html" title="uWSGI configuration example for a Django/Wagtail app" /><published>2018-07-06T17:00:30+02:00</published><updated>2018-07-06T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/">&lt;h1 id=&quot;uwsgi-configuration-example-for-a-djangowagtail-app&quot;&gt;uWSGI configuration example for a Django/Wagtail app&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-07-06T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Jul.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
+  &lt;strong&gt;Friday&lt;/strong&gt;
+  &lt;span&gt;06&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-06T17:00:36+0200&quot;&gt;2018-07-06 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1386 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 5 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;p class=&quot;dc&quot;&gt;The following assumes that uWSGI is running in emperor - vassal configuration. In this mode, the
+emperor should be seen as a master process that controls an arbitrary number of child instances.
+Each instance consists of multiple processes and/or threads and deploys a single web application.
+While the emperor runs as root in order to set up environments and enforce full control over all
+child instances, the children usually run unprivileged. Communication between the front end web
+server and the uWSGI application service happens via sockets, either TCP/UDP or (preferable, because
+of superior performance and little overhead) Unix domain sockets.&lt;/p&gt;
+
+&lt;p&gt;The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires 
+administrator privileges to control. Under normal circumstances the emperor will run and monitor its 
+child instances. Adding and removing child instances is possible at runtime, though a restart of the 
+emperor is necessary to recognize such configuration changes.&lt;/p&gt;
+
+&lt;p&gt;The main configuration file is &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/uwsgi.ini&lt;/code&gt; and the child instances have one configuration
+file per instance in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/vassals&lt;/code&gt;. Note that these paths are for OpenSUSE distributions and
+can be different, depending on the distro you use. Check the man page(s).&lt;/p&gt;
+
+&lt;p&gt;While uWSGI can be seen as a universal solution, it is most popular in the Python ecosystem to
+deploy web applications written in Python, using one of the popular frameworks like Django or
+Flask. uWSGI supports &lt;em&gt;per instance&lt;/em&gt; Python virtualenvs, which makes it particularly useful for
+deploying multiple web applications with different requirements as each application will run within
+its own virtual Python environment. This way, it is very easy to run multiple web applications that
+require different versions of the Django framework for example. A single uWSGI installation can also
+host Python 2 and Python 3 applications at the same time, because all configuration is local to a
+&lt;strong&gt;single instance&lt;/strong&gt; and uWSGI uses a sophisticated plugin system to support a wide range of client
+configurations.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-following-languages--ecosystems-are-supported&quot;&gt;The following languages / ecosystems are supported&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Lua&lt;/li&gt;
+  &lt;li&gt;Perl&lt;/li&gt;
+  &lt;li&gt;Simple CGI scripts (for example, written in bash)&lt;/li&gt;
+  &lt;li&gt;Golang (aka Google Go)&lt;/li&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+  &lt;li&gt;Java virtual machine&lt;/li&gt;
+  &lt;li&gt;V8 JavaScript&lt;/li&gt;
+  &lt;li&gt;Mono .NET&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;commented-configuration-file-for-a-django-application&quot;&gt;Commented configuration file for a Django application&lt;/h2&gt;
+
+&lt;p&gt;This is a heavily commented sample configuration, demonstrating a single vassal instance running a
+Django application (the &lt;a href=&quot;https://wagtail.io&quot;&gt;Wagtail&lt;/a&gt; CMS framework).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nn&quot;&gt;[uwsgi]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;plugin&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;python3                ; this instance uses python 3. There are plugins for many &lt;/span&gt;
+                                &lt;span class=&quot;c&quot;&gt;; different systems.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;alex                      ; user id under which the instance should run.&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;gid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;users                     ; group id under which the instance should run&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;socket&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/alex/uwsgi.sock  ; the socket for communicating with the front end web server&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;chown-socket&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nginx:nginx      ; only the web server process may access the socket&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;chmod-socket&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;700              ; see above&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;threads&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;20&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;master&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;processes&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;autoload&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; the settings to use. In this case, mysite/settings/dev.py contains the application
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; configuration. there is also a production.py in the same directory, don't forget to
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; switch for production operation as dev.py enables debugging which is NOT recommended
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; for a live production site (it slows down stuff and may reveal things about your 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; application, a visitor is not supposed to see, because full debug messages will be sent
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; to the client browser in case of any error)
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;DJANGO_SETTINGS_MODULE=mysite.settings.dev&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; the module is the object that handles all requests. It's always the WSGIHandler() for
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; django applications.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;django.core.handlers.wsgi:WSGIHandler()&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; the base directory for the web application. For a django application, this is the 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; same directory that contains the manage.py script.
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; the uWSGI instance will chroot to this directoy and cannot access its parent for
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; security reasons.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;chdir&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/alex/srv/djangoapp/mysite&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; set a virtual environment for this instance. The base directory of the environment
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; (which contains the bin/ and lib/ sub directories) must be specified here. If none
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; is given, the default Python environment will be used.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;virtualenv&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/alex/srv/djangoapp/testproject&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; where to mount the application. The wsgi.py sets up the main application and hands
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; off control to the WSGI handler.
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; in this case, the app is mounted to the root of the domain. Multiple applications 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; can be mounted to different URL paths, if needed. Note that your webserver config
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; must contain appropriate location sections..
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;mount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/=mysite/wsgi.py&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; vacuum, if true, instructs the emperor to clean up sockets upon shutdown of a child 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; instance. Recommended.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;vacuum&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;; this instructs the instance to monitor all source directories for code changes and 
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; reload when needed. This should *NOT* be enabled for a production site as it comes
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; with a performance penalty. It is very useful for a development environment though,
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; because without it, a service restart would be required after changes to the app
+&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;; code.
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;py-autoreload&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;web-server-configuration&quot;&gt;Web server configuration&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;&lt;a href=&quot;https://nginx.com&quot;&gt;Nginx&lt;/a&gt; is a popular choice for a front end web server, because of its high
+flexibility and excellent performance. Nginx supports uWSGI out-of-the-box with mechanisms that are
+very similar to its fastcgi support. Anyone familiar with configuring Nginx with php-fpm for
+example, should not run into many problems when setting up Nginx as an uWSGI front end. The basic
+idea is that Nginx handles all requests and passes them to the backend web application when
+necessary. Static resources (style sheets, script files etc.) can be served directly for best
+performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;define-an-upstream&quot;&gt;Define an upstream&lt;/h3&gt;
+
+&lt;p&gt;In order to make our configuration tidy and easy to maintain, I prefer defining named upstreams
+instead of doing it inline. Both methods are equally viable and basically, it’s a matter of personal
+preference which one to use.&lt;/p&gt;
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;err&quot;&gt;upstream&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;err&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;unix:/home/alex/uwsgi.sock&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This defines an upstream using the Unix domain socket defined in the uWSGI configuration (see
+above). The socket’s permissions must allow Nginx read and write access, so either use
+&lt;code class=&quot;highlighter-rouge&quot;&gt;chown-socket&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod-socket&lt;/code&gt; in the uWSGI configuration (or both if you want really strict
+socket security). Remember that your web application can run under any user account and will likely
+use your own user id, while Nginx will typically run under its own unprivileged uid and thus cannot
+write to files it does not own. It’s tempting to set the socket’s permissions to 0777, but this is
+not the best idea. As a rule of thumb, permissions should always be set using a minimalist
+approach - not more than absolutely needed. It’s better to set the permissions to 0600 and the owner
+to the uid used by Nginx for its worker processes.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-server-section&quot;&gt;The server section&lt;/h3&gt;
+
+&lt;p&gt;The following two elements are the bare minimum you need to have in your &lt;code class=&quot;highlighter-rouge&quot;&gt;server&lt;/code&gt; section. The first
+one defines the path for the static content. It is &lt;strong&gt;important&lt;/strong&gt; to have this section in the
+beginning so that the web server can serve static content without passing the requests to the web
+application. This will help your server’s overall performance, particularly when using Nginx,
+because Nginx is very efficient with serving static resources. Note that static content gets a generous
+cache life time of 7 days and requests won’t be logged which further improves performance. Content
+also gets gzipped on the fly, which only makes sense if you do not minify or otherwise compress your
+style sheets and scripts.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget to perform a &lt;code class=&quot;highlighter-rouge&quot;&gt;./manage.py collectstatic&lt;/code&gt; whenever static content changes in order to
+populate the static directory with all script, CSS and other files. This directory will always
+be located below the root directory of your application, the folder that holds the &lt;code class=&quot;highlighter-rouge&quot;&gt;manage.py&lt;/code&gt; 
+script.&lt;/p&gt;
+
+&lt;p&gt;The second &lt;em&gt;location&lt;/em&gt; section uses the upstream to pass all other requests (except for /static) to
+the web application, using the named upstream defined above. Make sure you do not omit the &lt;code class=&quot;highlighter-rouge&quot;&gt;include
+/etc/nginx/uwsgi_params&lt;/code&gt; line, because this is important for setting up the environment and passing
+crucial parameters to the web application. Without this line, your web app will very likely not work
+at all or behave erratically.&lt;/p&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;err&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/static&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/home/alex/srv/djangoapp/mysite/static&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;expires&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;7d&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;gzip&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;err&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/etc/nginx/uwsgi_params&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;uwsgi_pass&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;mysite&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.</summary></entry><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-06-24T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jun.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -6,7 +243,7 @@
   &lt;span&gt;24&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-06-24T17:00:36+0200&quot;&gt;2018-06-24 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1290 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-06-24T17:00:36+0200&quot;&gt;2018-06-24 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1347 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;&lt;br /&gt;
@@ -41,7 +278,7 @@ unmaintained extensions frequently stopped working with a new Thunderbird releas
 
 &lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;Version 60 will be the next major release with long term support, which means it will be the direct
 successor of version 52, the current one which was released over a year ago. The versions 53-59 were
-basically development versions not meant to be used by end users. AS of writing this article, the
+development versions not meant to be used by end users. As of writing this article, the
 8th (and presumably last) beta version of Thunderbird 60 is the most recent one and from what I’ve
 heard, the final will be out soon, likely unchanged from this beta.&lt;/p&gt;
 
@@ -183,12 +420,13 @@ Thunderbird 60 reaches final release status, which should be by the end of June.
 &lt;h2 id=&quot;other-observations&quot;&gt;Other observations&lt;/h2&gt;
 
 &lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;First, before updating &lt;strong&gt;backup your profile&lt;/strong&gt;. This is mandatory, because backwards compatibility
-is not always guaranteed. Essentially this means, there is a possibility that after upgrading to
-Thunderbird 60 your profile might become incompatible with older versions, so you would not be able
-to go back to TB 52, should the upgrade cause too many issues for you. Best practice is to follow
-&lt;a href=&quot;https://support.mozilla.org/en-US/kb/profiles-where-thunderbird-stores-user-data&quot;&gt;this guide&lt;/a&gt; which
-explains how to find and backup your Thunderbird profile.&lt;/p&gt;
+  &lt;p class=&quot;dc&quot;&gt;First, before updating &lt;strong&gt;backup your profile&lt;/strong&gt;. This is
+mandatory, because backwards compatibility is not always guaranteed. Essentially this means, there
+is a possibility that after upgrading to Thunderbird 60 your profile might become incompatible with
+older versions, so you would not be able to go back to TB 52, should you feel the need for such a
+step in case of too many problems or other issues. Best practice is to follow &lt;a href=&quot;https://support.mozilla.org/en-US/kb/profiles-where-thunderbird-stores-user-data&quot;&gt;this
+guide&lt;/a&gt; which
+explains how to find and backup your Thunderbird profile on Windows.&lt;/p&gt;
 
   &lt;p&gt;With my relatively short list of extensions (see above), I did not run into troubles at all. The
 upgrade went smooth, with one exception: I had to obtain a beta version of the &lt;a href=&quot;https://addons.mozilla.org/en-US/thunderbird/addon/provider-for-google-calendar/&quot;&gt;Google Calendar
@@ -236,11 +474,15 @@ beta versions I’ve been testing over the last couple of weeks, crashed even on
 
 &lt;h2 id=&quot;so-is-an-upgrade-advisable&quot;&gt;So, is an upgrade advisable?&lt;/h2&gt;
 
-&lt;p class=&quot;dc two_cols&quot; markdown=&quot;1&quot;&gt;I would say, yes, absolutely. The EFAIL fix alone is worth the upgrade, particularly for users who
+&lt;p&gt;I would say, yes, absolutely. The EFAIL fix alone is worth the upgrade, particularly for users who
 do need encryption or digital signatures. The extension apocalypse can be mitigated by using the
-method described above, so most extensions should continue to work. Overall, the few improvements
-and new features might appear meager, but they do add some value to Thunderbird. A modernized and
-arguably more attractive user interface is something that is always welcome among users&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;]" /><category term="first" /><summary type="html">Thunderbird has been my e-mail client of choice for many years on various operating systems and has been doing well so far. The next major version (60) is just lurking around the corner and will bring quite a number of new things, particularly under the hood.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22tb_screenshot%22,%20%22width%22=%3E%2220%25%22,%20%22align%22=%3E%22right%22,%20%22link%22=%3E1%7D" /></entry><entry><title type="html">The Foreigner’s travel guide to Texas</title><link href="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/" rel="alternate" type="text/html" title="The Foreigner's travel guide to Texas" /><published>2018-05-28T07:00:30+02:00</published><updated>2018-05-28T07:00:30+02:00</updated><id>https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/">&lt;h1 id=&quot;the-foreigners-travel-guide-to-texas&quot;&gt;The foreigner’s travel guide to Texas&lt;/h1&gt;
+method described above, so most extensions should continue to work, but as it always has been with
+Thunderbird, there is no guarantee. Some add-on may simply refuse to work and if you’re unlucky,
+it’s one of the many unmaintained ones. Overall, the relatively new features might appear meager,
+but they do add some value to Thunderbird and some of the improvements to existing features round
+out the package. A modernized and arguably more attractive user interface is something that is
+always welcome among users and gives Thunderbird a fresh new look.
+{:dc} {:cols}&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;]" /><category term="first" /><summary type="html">Thunderbird has been my e-mail client of choice for many years on various operating systems and has been doing well so far. The next major version (60) is just lurking around the corner and will bring quite a number of new things, particularly under the hood.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22tb_screenshot%22,%20%22width%22=%3E%2220%25%22,%20%22align%22=%3E%22right%22,%20%22link%22=%3E1%7D" /></entry><entry><title type="html">The Foreigner’s travel guide to Texas</title><link href="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/" rel="alternate" type="text/html" title="The Foreigner's travel guide to Texas" /><published>2018-05-28T07:00:30+02:00</published><updated>2018-05-28T07:00:30+02:00</updated><id>https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas</id><content type="html" xml:base="https://silvercircle.github.io/2018/05/28/foreigners-travelguide-to-texas/">&lt;h1 id=&quot;the-foreigners-travel-guide-to-texas&quot;&gt;The foreigner’s travel guide to Texas&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-05-28T07:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;May.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -609,9 +851,9 @@ do a &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo pkg upgrade&lt;/code&g
 almost exactly like GCC, mimics its options and even most of the error messages. &lt;a href=&quot;#fnref:clang&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Development&quot;]" /><category term="first" /><category term="freebsd" /><summary type="html">This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22freebsd%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T07:02:30+02:00</published><updated>2018-03-05T07:02:30+02:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Development&quot;]" /><category term="first" /><category term="freebsd" /><summary type="html">This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22freebsd%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Oscar Night</title><link href="https://silvercircle.github.io/2018/03/05/oscar-night-2018/" rel="alternate" type="text/html" title="Oscar Night" /><published>2018-03-05T06:02:30+01:00</published><updated>2018-03-05T06:02:30+01:00</updated><id>https://silvercircle.github.io/2018/03/05/oscar-night-2018</id><content type="html" xml:base="https://silvercircle.github.io/2018/03/05/oscar-night-2018/">&lt;h1 id=&quot;oscar-night&quot;&gt;Oscar Night!&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T07:02:30+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-03-05T06:02:30+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Mar.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
   &lt;strong&gt;Monday&lt;/strong&gt;
   &lt;span&gt;05&lt;/span&gt;
@@ -620,7 +862,7 @@ almost exactly like GCC, mimics its options and even most of the error messages.
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-03-05T06:02:36+0100&quot;&gt;2018-03-05 06:02:36 +0100&lt;/time&gt;&lt;br /&gt;646 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;07:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;06:02&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 2 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -701,9 +943,9 @@ to be met in a production. For example, such a clause could require a certain pe
 and/or supporting personnel to be female or people of color. &lt;a href=&quot;#fnref:iride&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T18:51:07+02:00</published><updated>2017-11-28T18:51:07+02:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;]" /><category term="first" /><category term="music" /><category term="video" /><summary type="html">Today, it's Oscar Night. The 90th Academy Awards ceremony takes place in the honorable Dolby Theatre. Being a Cinenut ever since my dad took me to the local movie theatre for watching *Star Wars: The Empire Strikes Back* when I was a young boy, this is a must watch for me. I have seen most of the nominated movies and for the first time, I don't really have clear favorites. Be it Dunkirk, The Shape Of Water, The Darkest Hour or Three Billboards... - they're all exceptionally well made and the same is true for the other nominees. We'll see how the Academy members decide...</summary></entry><entry><title type="html">Diving into the D language</title><link href="https://silvercircle.github.io/2017/11/28/diving-into-d/" rel="alternate" type="text/html" title="Diving into the D language" /><published>2017-11-28T17:51:07+01:00</published><updated>2017-11-28T17:51:07+01:00</updated><id>https://silvercircle.github.io/2017/11/28/diving-into-d</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/28/diving-into-d/">&lt;h1 id=&quot;diving-into-the-d-language&quot;&gt;Diving into the D language&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T18:51:07+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
   &lt;strong&gt;Tuesday&lt;/strong&gt;
   &lt;span&gt;28&lt;/span&gt;
@@ -712,7 +954,7 @@ and/or supporting personnel to be female or people of color. &lt;a href=&quot;#
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-28T17:51:07+0100&quot;&gt;2017-11-28 17:51:07 +0100&lt;/time&gt;&lt;br /&gt;525 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;18:51&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:51&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 2 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -827,9 +1069,9 @@ Zortech C++, Bright authored the first C++ compiler for the Windows operating sy
 when Microsoft’s own compiler only understood ANSI C. &lt;a href=&quot;#fnref:bright&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T17:38:51+02:00</published><updated>2017-11-02T17:38:51+02:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Development" /><category term="first" /><summary type="html">I'm currently in curious mode, trying out some new things. After learning the basics of Rust a couple of months ago, I'm now back to a language I had first contact with many years ago - D. Lots of progress has apparently been made in recent years and D presents itself as a complete language with high productivity value. At least, that's what D apologets claim.</summary></entry><entry><title type="html">Creating a simple tab control in Jekyll</title><link href="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/" rel="alternate" type="text/html" title="Creating a simple tab control in Jekyll" /><published>2017-11-02T16:38:51+01:00</published><updated>2017-11-02T16:38:51+01:00</updated><id>https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll</id><content type="html" xml:base="https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/">&lt;h1 id=&quot;creating-a-simple-tab-control-in-jekyll&quot;&gt;Creating a simple tab control in Jekyll&lt;/h1&gt;
 
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T17:38:51+0200&quot; class=&quot;icon&quot;&gt;
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-11-02T16:38:51+0100&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Nov.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
   &lt;strong&gt;Thursday&lt;/strong&gt;
   &lt;span&gt;02&lt;/span&gt;
@@ -838,7 +1080,7 @@ when Microsoft’s own compiler only understood ANSI C. &lt;a href=&quot;#fnref
     Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-11-02T16:38:59+0100&quot;&gt;2017-11-02 16:38:59 +0100&lt;/time&gt;&lt;br /&gt;1321 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;16:38&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/jekyll/index.html&quot;&gt;Jekyll&lt;/a&gt;&lt;br /&gt;
     Reading time: approx. 5 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
@@ -1664,68 +1906,4 @@ latter one being a longer walk.&lt;/p&gt;
 sub-type). &lt;a href=&quot;#fnref:climate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">[Mahón](https://en.wikipedia.org/wiki/Mah%C3%B3n) is the capital city of the Menorca, the 2nd largest of the balearic islands, located in the mediterranean sea. It's a beautiful small town on the shore of one of the largest natural harbours in the world with a length of more than 3km.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mahon_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">The Light of the Seven</title><link href="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/" rel="alternate" type="text/html" title="The Light of the Seven" /><published>2017-10-06T00:48:02+02:00</published><updated>2017-10-06T00:48:02+02:00</updated><id>https://silvercircle.github.io/2017/10/06/the-light-of-the-seven</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/06/the-light-of-the-seven/">&lt;h1 id=&quot;light-of-the-seven&quot;&gt;Light of the Seven&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-06T00:48:02+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Friday&lt;/strong&gt;
-  &lt;span&gt;06&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-06T00:48:08+0200&quot;&gt;2017-10-06 00:48:08 +0200&lt;/time&gt;&lt;br /&gt;223 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;00:48&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/entertainment/index.html&quot;&gt;Entertainment&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/got/index.html&quot;&gt;GoT&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 0 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;p class=&quot;dc&quot;&gt;I consider &lt;a href=&quot;https://en.wikipedia.org/wiki/Light_of_the_Seven&quot;&gt;this song&lt;/a&gt; of the best soundtracks 
-ever made. It’s just perfect in how it captures the dark mood of this more than 10 minutes long 
-sequence of unfolding events. The composition with piano, strings, the organ and some sparse vocal 
-action at certain, important stages, can hardly be made better.&lt;/p&gt;
-
-&lt;p&gt;The score was composed by &lt;a href=&quot;https://en.wikipedia.org/wiki/Ramin_Djawadi&quot;&gt;Ramin Djawadi&lt;/a&gt; and recorded 
-in multiple split sessions for the show. Djawadi played the organ and the piano himself.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-original-version&quot;&gt;The original version&lt;/h2&gt;
-
-&lt;p&gt;This is how it appeared on the show. Performed by session musicians and the composer playing piano 
-and the organ himself.&lt;/p&gt;
-
-&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
-
-&lt;div class=&quot;ytcontainer&quot;&gt;
-&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/jSCbTIaLbrg&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-more-rockier-version&quot;&gt;A more rockier version&lt;/h2&gt;
-
-&lt;p&gt;This is a Panamese-German co-production. The piano has been replaced by electric guitar and gives it 
-a more rocky note. The vocal part has been contributed by &lt;a href=&quot;https://www.youtube.com/user/AlinaLesnik1990/videos&quot;&gt;Alina 
-Lesnik&lt;/a&gt;, a young and talented German rock and 
-metal vocalist with a beautiful soprano voice.&lt;/p&gt;
-
-&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
-
-&lt;div class=&quot;ytcontainer&quot;&gt;
-&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/u5uAy8oSsDU&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-more-classic-version-recorded-by-an-orchestra&quot;&gt;A more classic version recorded by an orchestra&lt;/h2&gt;
-
-&lt;p&gt;The City of Prague Philharmonic Orchestra recorded this version and it certainly does give it a very 
-special touch.&lt;/p&gt;
-
-&lt;div style=&quot;width: ; margin:0 auto 20px auto;&quot;&gt;
-
-&lt;div class=&quot;ytcontainer&quot;&gt;
-&lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/lNroNErjdo0&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-There are probably more awesome cover versions and I’ll update this article when I find some.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Entertainment&quot;, &quot;GoT&quot;]" /><category term="first" /><category term="music" /><category term="video" /><category term="got" /><summary type="html">Game of Thrones fans will instantly recognize this song. It is from the famous intro scene of the sixth season's final episode **The winds of Winter**. The song's name is *Light of the Seven* and its composer is [Ramin Djawadi](https://en.wikipedia.org/wiki/Ramin_Djawadi). It's popular among youtubers as material to cover and has been covered even by large orchestras. The song received much praise, even outside the Game Of Thrones continuum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22got%22,%20%22width%22=%3E%22110px%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">[Mahón](https://en.wikipedia.org/wiki/Mah%C3%B3n) is the capital city of the Menorca, the 2nd largest of the balearic islands, located in the mediterranean sea. It's a beautiful small town on the shore of one of the largest natural harbours in the world with a length of more than 3km.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mahon_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
