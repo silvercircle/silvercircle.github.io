@@ -1,0 +1,65 @@
+theme: jekyll-theme-architect
+url: https://silvercircle.ddns.net
+exclude:
+ - README.md
+ - .gitignore
+ - "*.sublime-project"
+ - "*.sublime-workspace"
+ - "*.vtg"
+ - "*.vpw*"
+ - "*.vpj"
+permalink: /:year/:month/:day/:title/
+sass:
+  style: compressed
+pagination:
+  enabled: true
+  debug: false
+  per_page: 10
+  collection: 'posts' 
+  trail: 
+    before: 3
+    after: 3
+collections:
+  webdev:
+    output: true
+    permalink: /:collection/:path/
+    label: webdev
+  software:
+    output: true
+    permalink: /:collection/:path/
+    label: software
+  tabsrmm:
+    output: true
+    permalink: /:collection/:path/
+    label: tabsrmm
+  got-theories:
+    output: true
+    permalink: /:collection/:path/
+    label: got
+  sys:
+    output: true
+    permalink: /:collection/:path/
+    label: sys
+
+plugins:
+ - jekyll-redirect-from
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-include-cache
+ - jekyll-paginate-v2
+ - jekyll-feed
+ - jemoji
+   # - jekyll-mentions
+   # - jekyll-avatar
+excerpt_separator: <!--more-->
+title: silvercircle/github/io
+description: A Jekyll test site with no particular purpose.
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+site-verification: Qp9s9U1eHyRhqIfBrcEZ69Hbn4qRy4pBjsYzcpJCc0Y
+timezone: Europe/Berlin
+have_disqus: true
+disqus_registered_baseurl: https://silvercircle.github.io
+google_analytics: UA-15512457-3

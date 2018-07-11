@@ -67,7 +67,7 @@ unmaintained extensions frequently stopped working with a new Thunderbird releas
 
 Version 60 will be the next major release with long term support, which means it will be the direct
 successor of version 52, the current one which was released over a year ago. The versions 53-59 were
-basically development versions not meant to be used by end users. AS of writing this article, the
+development versions not meant to be used by end users. As of writing this article, the
 8th (and presumably last) beta version of Thunderbird 60 is the most recent one and from what I've
 heard, the final will be out soon, likely unchanged from this beta.
 {:dc}
@@ -138,13 +138,13 @@ Thunderbird 60 reaches final release status, which should be by the end of June.
 
 ## Other observations
 
-<div class="two_cols" markdown="1">
-First, before updating **backup your profile**. This is mandatory, because backwards compatibility
-is not always guaranteed. Essentially this means, there is a possibility that after upgrading to
-Thunderbird 60 your profile might become incompatible with older versions, so you would not be able
-to go back to TB 52, should the upgrade cause too many issues for you. Best practice is to follow
-[this guide](https://support.mozilla.org/en-US/kb/profiles-where-thunderbird-stores-user-data) which
-explains how to find and backup your Thunderbird profile.
+<div class="two_cols" markdown="1"> First, before updating **backup your profile**. This is
+mandatory, because backwards compatibility is not always guaranteed. Essentially this means, there
+is a possibility that after upgrading to Thunderbird 60 your profile might become incompatible with
+older versions, so you would not be able to go back to TB 52, should you feel the need for such a
+step in case of too many problems or other issues. Best practice is to follow [this
+guide](https://support.mozilla.org/en-US/kb/profiles-where-thunderbird-stores-user-data) which
+explains how to find and backup your Thunderbird profile on Windows.
 {:dc}
 
 With my relatively short list of extensions (see above), I did not run into troubles at all. The
@@ -186,8 +186,10 @@ beta versions I've been testing over the last couple of weeks, crashed even once
 
 I would say, yes, absolutely. The EFAIL fix alone is worth the upgrade, particularly for users who
 do need encryption or digital signatures. The extension apocalypse can be mitigated by using the
-method described above, so most extensions should continue to work. Overall, the few improvements
-and new features might appear meager, but they do add some value to Thunderbird. A modernized and
-arguably more attractive user interface is something that is always welcome among users
-{:dc}
-{:cols}
+method described above, so most extensions should continue to work, but as it always has been with
+Thunderbird, there is no guarantee. Some add-on may simply refuse to work and if you're unlucky,
+it's one of the many unmaintained ones. Overall, the relatively new features might appear meager,
+but they do add some value to Thunderbird and some of the improvements to existing features round
+out the package. A modernized and arguably more attractive user interface is something that is
+always welcome among users and gives Thunderbird a fresh new look.
+{:dc} {:cols}
