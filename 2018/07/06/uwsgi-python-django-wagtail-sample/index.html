@@ -203,7 +203,7 @@
   <span>06</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2018-07-06T17:00:36+0200">2018-07-06 17:00:36 +0200</time><br />1386 Words
+    Last modified: <time class="timeago" datetime="2018-07-06T17:00:36+0200">2018-07-06 17:00:36 +0200</time><br />1419 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">17:00</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/site/index.html">Site</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
@@ -226,18 +226,18 @@ child instances. Adding and removing child instances is possible at runtime, tho
 emperor is necessary to recognize such configuration changes.</p>
 
 <p>The main configuration file is <code class="highlighter-rouge">/etc/uwsgi/uwsgi.ini</code> and the child instances have one configuration
-file per instance in <code class="highlighter-rouge">/etc/uwsgi/vassals</code>. Note that these paths are for OpenSUSE distributions and
-can be different, depending on the distro you use. Check the man page(s).</p>
+file per instance in <code class="highlighter-rouge">/etc/uwsgi/vassals</code>. Note that these paths are valid for OpenSUSE
+distributions and can be different on your system. Check the man page(s).</p>
 
 <p>While uWSGI can be seen as a universal solution, it is most popular in the Python ecosystem to
 deploy web applications written in Python, using one of the popular frameworks like Django or
-Flask. uWSGI supports <em>per instance</em> Python virtualenvs, which makes it particularly useful for
-deploying multiple web applications with different requirements as each application will run within
-its own virtual Python environment. This way, it is very easy to run multiple web applications that
-require different versions of the Django framework for example. A single uWSGI installation can also
-host Python 2 and Python 3 applications at the same time, because all configuration is local to a
-<strong>single instance</strong> and uWSGI uses a sophisticated plugin system to support a wide range of client
-configurations.</p>
+Flask. uWSGI supports <em>per instance</em> Python virtual environments, which makes it particularly useful
+for deploying multiple web applications with different software requirements, as each application
+will run within its own virtual Python environment. This method makes it relatively easy to run
+multiple web applications that require different versions of the Django framework for example. A
+single uWSGI installation can also host Python 2 and Python 3 applications at the same time, because
+all configuration is local to a <strong>single instance</strong> and uWSGI uses a sophisticated plugin system to
+support a wide range of client configurations.</p>
 
 <h4 id="the-following-languages--ecosystems-are-supported">The following languages / ecosystems are supported</h4>
 
@@ -370,7 +370,7 @@ Django application (the <a href="https://wagtail.io">Wagtail</a> CMS framework).
 
 <h2 id="web-server-configuration">Web server configuration</h2>
 
-<p class="dc"><a href="https://nginx.com">Nginx</a> is a popular choice for a front end web server, because of its high
+<p class="dc">Nginx (<a href="https://nginx.com">https://nginx.com</a>) is a popular choice for a front end web server, because of its high
 flexibility and excellent performance. Nginx supports uWSGI out-of-the-box with mechanisms that are
 very similar to its fastcgi support. Anyone familiar with configuring Nginx with php-fpm for
 example, should not run into many problems when setting up Nginx as an uWSGI front end. The basic
@@ -380,29 +380,29 @@ performance.</p>
 
 <h3 id="define-an-upstream">Define an upstream</h3>
 
-<p>In order to make our configuration tidy and easy to maintain, I prefer defining named upstreams
-instead of doing it inline. Both methods are equally viable and basically, it’s a matter of personal
-preference which one to use.</p>
+<p>In order to keep the configuration tidy and easy to read/maintain, I prefer using named upstreams
+instead of defining them inline. Both methods are equally viable and basically, it’s a matter of personal
+preference which one to use. Named upstreams are easier to</p>
 <div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="err">upstream</span> <span class="err">myapp</span> <span class="err">{</span>
         <span class="err">server</span> <span class="err">unix:/home/alex/uwsgi.sock</span><span class="c">;
 </span>    <span class="err">}</span>
 </code></pre></div></div>
 
-<p>This defines an upstream using the Unix domain socket defined in the uWSGI configuration (see
-above). The socket’s permissions must allow Nginx read and write access, so either use
-<code class="highlighter-rouge">chown-socket</code> or <code class="highlighter-rouge">chmod-socket</code> in the uWSGI configuration (or both if you want really strict
-socket security). Remember that your web application can run under any user account and will likely
-use your own user id, while Nginx will typically run under its own unprivileged uid and thus cannot
-write to files it does not own. It’s tempting to set the socket’s permissions to 0777, but this is
-not the best idea. As a rule of thumb, permissions should always be set using a minimalist
-approach - not more than absolutely needed. It’s better to set the permissions to 0600 and the owner
-to the uid used by Nginx for its worker processes.</p>
+<p>This defines an upstream using a Unix domain socket which has been defined in the uWSGI
+configuration (see above). The socket’s permissions must allow Nginx read and write access, so
+either use <code class="highlighter-rouge">chown-socket</code> or <code class="highlighter-rouge">chmod-socket</code> in the uWSGI configuration (or both if you want really
+strict socket security). Remember that your web application can run under any user account and will
+likely use your own user id, while Nginx will typically run under its own unprivileged uid and thus
+cannot write to files it does not own. It’s tempting to set the socket’s permissions to 0777, making
+it world read- and writable, but this is not the best idea. As a rule of thumb, permissions should
+always be set using a minimalist approach - not more than absolutely needed. It’s better to set the
+permissions to 0600 and the owner to the uid used by Nginx for its worker processes.</p>
 
 <h3 id="the-server-section">The server section</h3>
 
 <p>The following two elements are the bare minimum you need to have in your <code class="highlighter-rouge">server</code> section. The first
 one defines the path for the static content. It is <strong>important</strong> to have this section in the
-beginning so that the web server can serve static content without passing the requests to the web
+beginning so that the web server can serve static resources without passing the requests to the web
 application. This will help your server’s overall performance, particularly when using Nginx,
 because Nginx is very efficient with serving static resources. Note that static content gets a generous
 cache life time of 7 days and requests won’t be logged which further improves performance. Content
@@ -429,10 +429,12 @@ at all or behave erratically.</p>
 
    <span class="err">location</span> <span class="err">/</span> <span class="err">{</span>
     <span class="err">include</span> <span class="err">/etc/nginx/uwsgi_params</span><span class="c">;
-</span>    <span class="err">uwsgi_pass</span> <span class="err">mysite</span><span class="c">;
+</span>    <span class="err">uwsgi_pass</span> <span class="err">myapp</span><span class="c">;
 </span>    <span class="err">break</span><span class="c">;
 </span>   <span class="err">}</span>
 </code></pre></div></div>
+<p>As already said, the above is the absolute minimum for configuring a virtual host for an uWSGI
+application.</p>
 
         <div style="margin-top: 0.5em">
 

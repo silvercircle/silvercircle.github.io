@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-07-11T07:31:43+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">uWSGI configuration example for a Django/Wagtail app</title><link href="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/" rel="alternate" type="text/html" title="uWSGI configuration example for a Django/Wagtail app" /><published>2018-07-06T17:00:30+02:00</published><updated>2018-07-06T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/">&lt;h1 id=&quot;uwsgi-configuration-example-for-a-djangowagtail-app&quot;&gt;uWSGI configuration example for a Django/Wagtail app&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-07-16T04:09:44+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Go cheat sheet and tips</title><link href="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" rel="alternate" type="text/html" title="Go cheat sheet and tips" /><published>2018-07-15T22:00:30+02:00</published><updated>2018-07-15T22:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">&lt;h1 id=&quot;golang-cheat-sheet-and-various-tips&quot;&gt;Golang cheat sheet and various tips&lt;/h1&gt;
+
+&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-07-15T22:00:30+0200&quot; class=&quot;icon&quot;&gt;
+  &lt;em&gt;Jul.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
+  &lt;strong&gt;Sunday&lt;/strong&gt;
+  &lt;span&gt;15&lt;/span&gt;
+&lt;/time&gt;
+&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-15T22:00:30+0200&quot;&gt;2018-07-15 22:00:30 +0200&lt;/time&gt;&lt;br /&gt;324 Words
+&lt;/div&gt;
+&lt;div class=&quot;author subheader&quot;&gt;
+    &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;22:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
+    Reading time: approx. 1 minute(s).
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
+
+&lt;h2 id=&quot;gcc-go-linker-errors&quot;&gt;GCC-GO linker errors&lt;/h2&gt;
+
+&lt;p&gt;Sometimes, when using Gcc-go instead of the default Go compiler, an error message like the following
+may appear during the build command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[...] $WORK/b001/_pkg1_.a(_x009.o): undefined reference to symbol 'pthread_mutexattr_settype@@GLIBC_2.1'
+      /lib/libpthread.so.0: error adding symbols: DSO missing from command line
+      collect2: error: ld returned 1 exit status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This indicates a missing LDFLAG, in our case, the instruction to link against &lt;code class=&quot;highlighter-rouge&quot;&gt;libpthread&lt;/code&gt; is
+missing from the linker command line. It’s easy to fix, just pass the missing &lt;code class=&quot;highlighter-rouge&quot;&gt;-pthread&lt;/code&gt; via
+&lt;code class=&quot;highlighter-rouge&quot;&gt;-gccgoflags&lt;/code&gt; to the build command. The -pthread option not only instructs the linker to link
+against libpthreads, it also defines all macros that are needed to ensure re-entrant code is
+produced during compilation.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[alex@warpcore:/home/alex/go/src/testgo]$&amp;gt; go-8 build -gccgoflags=-pthread dbtest.go
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;getting-gocode-and-go-mode-in-emacs-to-work&quot;&gt;Getting gocode and go-mode in Emacs to work&lt;/h2&gt;
+
+&lt;p&gt;This is for Go version 1.10. First, install the mdempsky fork of gocode as the old gocode might be
+incompatible with Go 1.10 due to changes in the binary package format.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mdempsky/gocode&quot;&gt;https://github.com/mdempsky/gocode&lt;/a&gt; - do a &lt;code class=&quot;highlighter-rouge&quot;&gt;go get
+github.com/mdempsky/gocode&lt;/code&gt; to install.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The resulting binary will be in &lt;code class=&quot;highlighter-rouge&quot;&gt;$GOPATH/bin&lt;/code&gt; (usually &lt;code class=&quot;highlighter-rouge&quot;&gt;~/go/bin&lt;/code&gt; on *iX systems), so you can either
+add this directory to your &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH&lt;/code&gt; or copy &lt;strong&gt;gocode&lt;/strong&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;~/bin&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin&lt;/code&gt; if you have permissions.&lt;/p&gt;
+
+&lt;p&gt;In Emacs, it’s just a matter of installing &lt;code class=&quot;highlighter-rouge&quot;&gt;go-mode&lt;/code&gt;. Assuming, you have a working MELPA setup,
+simply do a &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-install &amp;lt;RET&amp;gt; go-mode &amp;lt;RET&amp;gt;&lt;/code&gt;. For auto-complete, I prefer &lt;code class=&quot;highlighter-rouge&quot;&gt;company-mode&lt;/code&gt;, in
+which case, the Go backend &lt;code class=&quot;highlighter-rouge&quot;&gt;company-go&lt;/code&gt; is required. Install it like &lt;code class=&quot;highlighter-rouge&quot;&gt;go-mode&lt;/code&gt; before. Go-mode itself
+requires minimal configuration - if &lt;code class=&quot;highlighter-rouge&quot;&gt;gocode&lt;/code&gt; is in your $PATH it will be found and used
+automatically.&lt;/p&gt;
+
+&lt;p&gt;It’s important to have &lt;code class=&quot;highlighter-rouge&quot;&gt;$GOPATH&lt;/code&gt; set properly, otherwise &lt;em&gt;gocode&lt;/em&gt; won’t work at all. Also, &lt;em&gt;gocode&lt;/em&gt; only
+recognizes packages built and installed with the default go compiler. Personally, I use gccgo only
+for release builds and usually install all packages with both compilers.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.</summary></entry><entry><title type="html">uWSGI configuration example for a Django/Wagtail app</title><link href="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/" rel="alternate" type="text/html" title="uWSGI configuration example for a Django/Wagtail app" /><published>2018-07-06T17:00:30+02:00</published><updated>2018-07-06T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/">&lt;h1 id=&quot;uwsgi-configuration-example-for-a-djangowagtail-app&quot;&gt;uWSGI configuration example for a Django/Wagtail app&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-07-06T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jul.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -6,7 +62,7 @@
   &lt;span&gt;06&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-06T17:00:36+0200&quot;&gt;2018-07-06 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1386 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-06T17:00:36+0200&quot;&gt;2018-07-06 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1419 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
@@ -29,18 +85,18 @@ child instances. Adding and removing child instances is possible at runtime, tho
 emperor is necessary to recognize such configuration changes.&lt;/p&gt;
 
 &lt;p&gt;The main configuration file is &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/uwsgi.ini&lt;/code&gt; and the child instances have one configuration
-file per instance in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/vassals&lt;/code&gt;. Note that these paths are for OpenSUSE distributions and
-can be different, depending on the distro you use. Check the man page(s).&lt;/p&gt;
+file per instance in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/vassals&lt;/code&gt;. Note that these paths are valid for OpenSUSE
+distributions and can be different on your system. Check the man page(s).&lt;/p&gt;
 
 &lt;p&gt;While uWSGI can be seen as a universal solution, it is most popular in the Python ecosystem to
 deploy web applications written in Python, using one of the popular frameworks like Django or
-Flask. uWSGI supports &lt;em&gt;per instance&lt;/em&gt; Python virtualenvs, which makes it particularly useful for
-deploying multiple web applications with different requirements as each application will run within
-its own virtual Python environment. This way, it is very easy to run multiple web applications that
-require different versions of the Django framework for example. A single uWSGI installation can also
-host Python 2 and Python 3 applications at the same time, because all configuration is local to a
-&lt;strong&gt;single instance&lt;/strong&gt; and uWSGI uses a sophisticated plugin system to support a wide range of client
-configurations.&lt;/p&gt;
+Flask. uWSGI supports &lt;em&gt;per instance&lt;/em&gt; Python virtual environments, which makes it particularly useful
+for deploying multiple web applications with different software requirements, as each application
+will run within its own virtual Python environment. This method makes it relatively easy to run
+multiple web applications that require different versions of the Django framework for example. A
+single uWSGI installation can also host Python 2 and Python 3 applications at the same time, because
+all configuration is local to a &lt;strong&gt;single instance&lt;/strong&gt; and uWSGI uses a sophisticated plugin system to
+support a wide range of client configurations.&lt;/p&gt;
 
 &lt;h4 id=&quot;the-following-languages--ecosystems-are-supported&quot;&gt;The following languages / ecosystems are supported&lt;/h4&gt;
 
@@ -173,7 +229,7 @@ Django application (the &lt;a href=&quot;https://wagtail.io&quot;&gt;Wagtail&lt;
 
 &lt;h2 id=&quot;web-server-configuration&quot;&gt;Web server configuration&lt;/h2&gt;
 
-&lt;p class=&quot;dc&quot;&gt;&lt;a href=&quot;https://nginx.com&quot;&gt;Nginx&lt;/a&gt; is a popular choice for a front end web server, because of its high
+&lt;p class=&quot;dc&quot;&gt;Nginx (&lt;a href=&quot;https://nginx.com&quot;&gt;https://nginx.com&lt;/a&gt;) is a popular choice for a front end web server, because of its high
 flexibility and excellent performance. Nginx supports uWSGI out-of-the-box with mechanisms that are
 very similar to its fastcgi support. Anyone familiar with configuring Nginx with php-fpm for
 example, should not run into many problems when setting up Nginx as an uWSGI front end. The basic
@@ -183,29 +239,29 @@ performance.&lt;/p&gt;
 
 &lt;h3 id=&quot;define-an-upstream&quot;&gt;Define an upstream&lt;/h3&gt;
 
-&lt;p&gt;In order to make our configuration tidy and easy to maintain, I prefer defining named upstreams
-instead of doing it inline. Both methods are equally viable and basically, it’s a matter of personal
-preference which one to use.&lt;/p&gt;
+&lt;p&gt;In order to keep the configuration tidy and easy to read/maintain, I prefer using named upstreams
+instead of defining them inline. Both methods are equally viable and basically, it’s a matter of personal
+preference which one to use. Named upstreams are easier to&lt;/p&gt;
 &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;err&quot;&gt;upstream&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;err&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;unix:/home/alex/uwsgi.sock&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
 &lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This defines an upstream using the Unix domain socket defined in the uWSGI configuration (see
-above). The socket’s permissions must allow Nginx read and write access, so either use
-&lt;code class=&quot;highlighter-rouge&quot;&gt;chown-socket&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod-socket&lt;/code&gt; in the uWSGI configuration (or both if you want really strict
-socket security). Remember that your web application can run under any user account and will likely
-use your own user id, while Nginx will typically run under its own unprivileged uid and thus cannot
-write to files it does not own. It’s tempting to set the socket’s permissions to 0777, but this is
-not the best idea. As a rule of thumb, permissions should always be set using a minimalist
-approach - not more than absolutely needed. It’s better to set the permissions to 0600 and the owner
-to the uid used by Nginx for its worker processes.&lt;/p&gt;
+&lt;p&gt;This defines an upstream using a Unix domain socket which has been defined in the uWSGI
+configuration (see above). The socket’s permissions must allow Nginx read and write access, so
+either use &lt;code class=&quot;highlighter-rouge&quot;&gt;chown-socket&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod-socket&lt;/code&gt; in the uWSGI configuration (or both if you want really
+strict socket security). Remember that your web application can run under any user account and will
+likely use your own user id, while Nginx will typically run under its own unprivileged uid and thus
+cannot write to files it does not own. It’s tempting to set the socket’s permissions to 0777, making
+it world read- and writable, but this is not the best idea. As a rule of thumb, permissions should
+always be set using a minimalist approach - not more than absolutely needed. It’s better to set the
+permissions to 0600 and the owner to the uid used by Nginx for its worker processes.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-server-section&quot;&gt;The server section&lt;/h3&gt;
 
 &lt;p&gt;The following two elements are the bare minimum you need to have in your &lt;code class=&quot;highlighter-rouge&quot;&gt;server&lt;/code&gt; section. The first
 one defines the path for the static content. It is &lt;strong&gt;important&lt;/strong&gt; to have this section in the
-beginning so that the web server can serve static content without passing the requests to the web
+beginning so that the web server can serve static resources without passing the requests to the web
 application. This will help your server’s overall performance, particularly when using Nginx,
 because Nginx is very efficient with serving static resources. Note that static content gets a generous
 cache life time of 7 days and requests won’t be logged which further improves performance. Content
@@ -232,10 +288,12 @@ at all or behave erratically.&lt;/p&gt;
 
    &lt;span class=&quot;err&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;err&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/etc/nginx/uwsgi_params&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
-&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;uwsgi_pass&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;mysite&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;uwsgi_pass&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
 &lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;;
 &lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.</summary></entry><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;As already said, the above is the absolute minimum for configuring a virtual host for an uWSGI
+application.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.</summary></entry><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-06-24T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jun.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -1504,406 +1562,4 @@ ratio.&lt;/p&gt;
 &lt;div class=&quot;ytcontainer&quot;&gt;
 &lt;iframe class=&quot;yt&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/1ST9TZBb9v8&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry><entry><title type="html">Visiting Mahon</title><link href="https://silvercircle.github.io/2017/10/09/visiting-mahon/" rel="alternate" type="text/html" title="Visiting Mahon" /><published>2017-10-09T00:31:53+02:00</published><updated>2017-10-09T00:31:53+02:00</updated><id>https://silvercircle.github.io/2017/10/09/visiting-mahon</id><content type="html" xml:base="https://silvercircle.github.io/2017/10/09/visiting-mahon/">&lt;h1 id=&quot;visiting-mahon-in-early-autumn&quot;&gt;Visiting Mahon in early autumn&lt;/h1&gt;
-
-&lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2017-10-09T00:31:53+0200&quot; class=&quot;icon&quot;&gt;
-  &lt;em&gt;Oct.&amp;nbsp;&amp;nbsp;2017&lt;/em&gt;
-  &lt;strong&gt;Monday&lt;/strong&gt;
-  &lt;span&gt;09&lt;/span&gt;
-&lt;/time&gt;
-&lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2017-10-09T00:31:59+0200&quot;&gt;2017-10-09 00:31:59 +0200&lt;/time&gt;&lt;br /&gt;829 Words
-&lt;/div&gt;
-&lt;div class=&quot;author subheader&quot;&gt;
-    &lt;!--&lt;span class=&quot;year&quot;&gt;2017&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;00:31&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/travel/index.html&quot;&gt;Travel&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 3 minute(s).
-&lt;/div&gt;
-&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-&lt;hr style=&quot;margin-top:2px;&quot; /&gt;
-
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;The city of &lt;a href=&quot;https://en.wikipedia.org/wiki/Mah%C3%B3n&quot;&gt;Mahón&lt;/a&gt; is the capital of 
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Menorca&quot;&gt;Menorca&lt;/a&gt;, the 2&lt;sup&gt;nd&lt;/sup&gt; largest of the Balearic 
-Islands, &lt;a href=&quot;https://goo.gl/maps/6nTks4Ays6n&quot;&gt;located in the mediterranean&lt;/a&gt; sea about 200 miles off the coast of 
-Spain. It’s a beautiful small town on the shore of one of the largest natural harbors in the world 
-with a length of more than 3km. Even though it is fairly close to one of Europa’s most prominent 
-centers of mass tourism (Majorca), the island has a reputation of being relatively quiet with only 
-moderate touristic activities.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
-
-&lt;div class=&quot;floatimage right borderless&quot; style=&quot;width:49%; max-width:49%;&quot;&gt;
-
-
-
-&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;The storehouse and former wharf of the Royal Naval base near Mahon.&quot;&gt;
-
-&lt;figure style=&quot;position:relative;&quot;&gt;
-        &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/3/32/S%27Arsenal%2C_illa_des_Gegants_o_d%27en_Pintot_%28Ma%C3%B3%29.JPG&quot; alt=&quot;The storehouse and former wharf of the Royal Naval base near Mahon.&quot; style=&quot;height:auto; margin:0; display:block;&quot; /&gt;
-        
-        &lt;div data-target=&quot;tt_mahon_naval&quot; class=&quot;img_overlay_indicator&quot; style=&quot;position:absolute;bottom:20px;right:20px;&quot;&gt;
-        &lt;/div&gt;
-        
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                The storehouse and former wharf of the Royal Naval base near Mahon.
-        &lt;/figcaption&gt;
-        
-&lt;/figure&gt;
-
-&lt;/a&gt;
-
-
-    &lt;div id=&quot;tt_mahon_naval&quot; class=&quot;img_tooltip&quot; style=&quot;display:none;&quot;&gt;
-        &lt;div class=&quot;tt_closebutton&quot; style=&quot;float:right;margin-top:-10px;margin-right:-10px;margin-left:5px;&quot;&gt;
-        &lt;/div&gt;
-        &lt;p&gt;This is part of the former &lt;a href=&quot;https://en.wikipedia.org/wiki/Royal_Navy_Dockyard&quot;&gt;Royal Navy Dockyard&lt;/a&gt;, that was built in the early
-18&lt;sup&gt;th&lt;/sup&gt; century by the British Royal Navy in Mahon’s natural harbor. The base is still in use today as a Spanish Naval Station
-and can be seen from the city looking across the harbor. 
-&lt;br /&gt;&lt;/p&gt;
-&lt;h6 id=&quot;license&quot;&gt;License:&lt;/h6&gt;
-&lt;p&gt;©&lt;a href=&quot;https://commons.wikimedia.org/wiki/User:Enric&quot;&gt;Enric&lt;/a&gt;, own work, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;&lt;/p&gt;
-
-    &lt;/div&gt;
-
-
-&lt;div class=&quot;floatimage_title&quot;&gt;
-    The storehouse and former wharf of the Royal Naval base near Mahon.
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p class=&quot;dc&quot;&gt;Mahon has a long history with known accounts dating back into the age of Hannibal of Carthage around 
-200 BC. Since then, it has been captured and occupied by almost every relevant European and oriental 
-power of the last 2000 years, including the Romans, the Arabs and the Vikings. After being part of 
-the &lt;a href=&quot;https://en.wikipedia.org/wiki/Caliphate_of_C%C3%B3rdoba&quot;&gt;Caliphate of Córdoba&lt;/a&gt; it was conquered 
-by Christians in the 13&lt;sup&gt;th&lt;/sup&gt; century and became a strategically important part of the 
-Kingdom of Majorca. After it was sacked by the Ottomans in the 16&lt;sup&gt;th&lt;/sup&gt; century, it finally 
-fell to the British empire during the Spanish Succession War in the early 18&lt;sup&gt;th&lt;/sup&gt; century. 
-Only 50 years later, the British Empire lost the island to the French, who had to return it into 
-British custody after losing the Seven Years War only 10 years later.&lt;/p&gt;
-
-&lt;p&gt;But again, the Brits were not able to keep it for long and had to hand it over to Spain only to 
-recapture it a couple years later. Finally, in 1802, Menorca was again transferred to Spain with 
-whom it remained until today.&lt;/p&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-&lt;h2 id=&quot;modern-times&quot;&gt;Modern times&lt;/h2&gt;
-
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p class=&quot;dc&quot;&gt;In the 20&lt;sup&gt;th&lt;/sup&gt; century, Mahon was again heavily disputed during the &lt;a href=&quot;https://en.wikipedia.org/wiki/Spanish_Civil_War&quot;&gt;Spanish Civil 
-War&lt;/a&gt; in which the island first tried to stay loyal 
-with the Republic, but was subsequently attacked and captured by the nationalists under General 
-Franco. During attempts to recapture it, the city was bombed and heavily damaged by Spanish and 
-Italian (who sided with dictator Franco) air forces in 1939.&lt;/p&gt;
-
-  &lt;p&gt;The island and its capital city spent most of the 20&lt;sup&gt;th&lt;/sup&gt; century relatively isolated and 
-the city was only renovated after the end of General Franco’s regime in the last couple of decades. 
-It was then, when a moderate tourism started to blossom and brought in the necessary financial 
-stability to allow the costly renovations. Today, the city is in a well maintained state with most 
-of the historic buildings preserved to high standards and a couple of modern additions like the 
-Cruise Terminal or the football stadium.&lt;/p&gt;
-
-  &lt;p&gt;The &lt;strong&gt;climate&lt;/strong&gt; is typical for the mediterranean region&lt;sup id=&quot;fnref:climate&quot;&gt;&lt;a href=&quot;#fn:climate&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Summers are long and warm, 
-winters are mild with freezing temperatures being extremely rare. Late spring and early autumn are 
-best for visiting if you plan some activities other than relaxing, because it can get really hot in 
-the summer months July and August, with temperatures exceeding 35℃ (95℉) frequently. 
-Overall precipitation is low with most of it occurring during autumn and winter months.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;things-to-see-do-do-not&quot;&gt;Things to see, do, do not..&lt;/h2&gt;
-&lt;div class=&quot;two_cols&quot;&gt;
-  &lt;p&gt;Even though the town is relatively small, there are quite a lot of things to see. Whether you arrive 
-by ship or by airplane doesn’t really matter a lot. The airport is small and located a couple miles 
-outside Mahon with low air traffic and direct connections available to and from some major European 
-cities and most bigger cities on Spanish main land. A Taxi to the city costs about 10€ and there are 
-plenty available. Same goes for rental cars available at moderate rates.&lt;/p&gt;
-
-  &lt;p&gt;Arriving via ship is more interesting and much more scenic. The natural harbor of Mahon is 
-fjord-like, about 3km long and only a few hundred feet wide. The water is deep enough to allow 
-medium size cruise ships and ferries, but the really big and ugly ones have to stay outside, because 
-the water is not deep enough and they wouldn’t be able to turn around 180 degrees inside the narrow 
-channel. We arrived on a 200m long 42.000GRT ship, a small one when compared to the massive 
-behemoths of more than 300m length and three times the mass, and yet, the turn before reaching our 
-final position was a fairly difficult maneuver according to the captain’s speech.&lt;/p&gt;
-
-  &lt;p&gt;From the port’s land side exit, the city’s center is just a couple minutes walk away. Since the city 
-is elevated by about 30 meters from water level, you can either take some stairs or the road, the 
-latter one being a longer walk.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;gallery&quot;&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/8mEuD_NkuLIRUx9RvcXR5AOyyJ5wgj0It7Pc6Em03B5WtptuVS8fgS1uNerxdaTNvhvew-KH13SuUgYeuANX5QyJ_0kwMEMBewRwfOuHAQ-0jh4sZlUmnz0dcEXztDpmKCpZL6jF0hQxs-Nqi9L4bTKjKbFGZ50KT0JEM0MVFwey8BdLhvAtCx7boP9V2OprpFCLqvNcVTBa8tHHPoWq6g1qlI-pbMyYGuJ8p-n0kZ3-34KRIDcj7yK67nRs0K3vGnh_KCUVFZI1pOhjfPmAjKTIqDr1xWnpku5TMffnXGm2FQGdODZU0wmirDnq4QPW_cOVpkOcO1BLJdKJ5aJ7om-XltyqsFCN9mRM3Ow1RTuxARgOBq0Ke6o53XiJaE9GIQtanAs0ACRzcc9y9y4bxkqGXzJpuDRBRcfQ6COFpjB495eqBrxs-JEFIUgxo7EOnnTDxtmhxDwmVwixxvDj2BQSpQmNuh0O6HZgV3g75QpvMj0GfM9-6Yd02iwm4vWOgVpkRfc1l9JW5B-5bXYB7S4ZuFANV4xVGTmkoidItw3rVLYbXSGu841HX4zeeYeKl_VlDap7LbWR5AEf2rRwislUY2trQ1EI7h9nT7oliw=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Our ship anchored in Mahon.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/8mEuD_NkuLIRUx9RvcXR5AOyyJ5wgj0It7Pc6Em03B5WtptuVS8fgS1uNerxdaTNvhvew-KH13SuUgYeuANX5QyJ_0kwMEMBewRwfOuHAQ-0jh4sZlUmnz0dcEXztDpmKCpZL6jF0hQxs-Nqi9L4bTKjKbFGZ50KT0JEM0MVFwey8BdLhvAtCx7boP9V2OprpFCLqvNcVTBa8tHHPoWq6g1qlI-pbMyYGuJ8p-n0kZ3-34KRIDcj7yK67nRs0K3vGnh_KCUVFZI1pOhjfPmAjKTIqDr1xWnpku5TMffnXGm2FQGdODZU0wmirDnq4QPW_cOVpkOcO1BLJdKJ5aJ7om-XltyqsFCN9mRM3Ow1RTuxARgOBq0Ke6o53XiJaE9GIQtanAs0ACRzcc9y9y4bxkqGXzJpuDRBRcfQ6COFpjB495eqBrxs-JEFIUgxo7EOnnTDxtmhxDwmVwixxvDj2BQSpQmNuh0O6HZgV3g75QpvMj0GfM9-6Yd02iwm4vWOgVpkRfc1l9JW5B-5bXYB7S4ZuFANV4xVGTmkoidItw3rVLYbXSGu841HX4zeeYeKl_VlDap7LbWR5AEf2rRwislUY2trQ1EI7h9nT7oliw=w1920-h1080-no&quot; alt=&quot;Our ship anchored in Mahon.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Our ship anchored in Mahon.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/XVe6OwfjmIjB3MBWWAPPHhd-AAxNjuMGgZusLvyzsAqPl_IgibfA2xWqA0Q_5Ep29XsUHLSMKWsn47bQcxxf02f1zJbIlW09YBewOifj6mZ9WSIp9mBcnVvHk8j2W5-qFx07f0KEKGNE6fBwWrgZ8kG9Pyg-zP6BSiGorKHL_sF3VjcplG5Khrjn0uwPk7QW5uTwXTziXoiNwe0ayViEQMWk_iMguGHxS-x5JOmAIrPyUIE6wWpSzoMi0ThWeFZxgw5tjGf5aj9IAqscez73D_SN1EQxIYYM36WKZKzQEVg0R7emAff8wd8f5PXVUgJq0P1Gb7aC5y3zgLxs5TcNE6VVwY136imJVoCPq_R0QBrfTt6-TqOKyYrQOVRfEYZyFFhxEAatJM6ZXauurCy7__Q6PONNe6i97kH9LdWQ8tkLcHfEgbanOskYko5Qx1RLUYljOxZATKFtRZxsa1TSh1xh5bPdBYAB8rEzsjQNKsZ_06do1D6xidy0Wz3iyXoG7FB4BCBz4JfPFa-UnQk6VK7_rp8TUL-njpGWbtu2kbiFRUAFSAcRRKtocWZUNzSKULlCf-dLJ6LEV8Z3BK-A8xHl_GcWdZEkW4YGEB6wkA=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;View from the terrace of a well hidden cafe, looking towards the harbour.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/XVe6OwfjmIjB3MBWWAPPHhd-AAxNjuMGgZusLvyzsAqPl_IgibfA2xWqA0Q_5Ep29XsUHLSMKWsn47bQcxxf02f1zJbIlW09YBewOifj6mZ9WSIp9mBcnVvHk8j2W5-qFx07f0KEKGNE6fBwWrgZ8kG9Pyg-zP6BSiGorKHL_sF3VjcplG5Khrjn0uwPk7QW5uTwXTziXoiNwe0ayViEQMWk_iMguGHxS-x5JOmAIrPyUIE6wWpSzoMi0ThWeFZxgw5tjGf5aj9IAqscez73D_SN1EQxIYYM36WKZKzQEVg0R7emAff8wd8f5PXVUgJq0P1Gb7aC5y3zgLxs5TcNE6VVwY136imJVoCPq_R0QBrfTt6-TqOKyYrQOVRfEYZyFFhxEAatJM6ZXauurCy7__Q6PONNe6i97kH9LdWQ8tkLcHfEgbanOskYko5Qx1RLUYljOxZATKFtRZxsa1TSh1xh5bPdBYAB8rEzsjQNKsZ_06do1D6xidy0Wz3iyXoG7FB4BCBz4JfPFa-UnQk6VK7_rp8TUL-njpGWbtu2kbiFRUAFSAcRRKtocWZUNzSKULlCf-dLJ6LEV8Z3BK-A8xHl_GcWdZEkW4YGEB6wkA=w1920-h1080-no&quot; alt=&quot;View from the terrace of a well hidden cafe, looking towards the harbour.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                View from the terrace of a well hidden cafe, looking towards the harbour.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/14lnyCQYuEjnAVL2oQiDpjlH16HrDmNQqdJYowKljfijBmWlWCceY9448v54eiFClWaap71h1HlKjFBR0fE_ODZ3PsMKn27Bx_ICH473ucMvwStvP9Gqv2ztsMDkYhQXGhJcYg9t2LlOD9ziXLfQb6fj8LKHVhMW1Yib59jzJgftWMoD69sFgayDEht9uvNnY_hv_ZXOCrmWnS4M6dgjYJw5GiUETEYt-rKTbpVKtMB2yojL6uF193pnRQhk6Ym_hfakVaebnIMS1UKvBj4vc6OWrpJmCu16GrDuocTaKHc9ggTgbNpaAQVPSPkpCfsGQRNOOUSSkU3Sy_mrOHbwhMt0BvFzKZxwj73ZUqrPkmLlXFOhpDmaghb_zvdJQ7clNRmqBWB1JjnDmVnuWVUwDonxdejg_QL79nYMPgLFTTxjWs0xeNvhHWC7Kh9YSnwpVWNBGafq6qxwXKMmwzzRbA7LejrG26iqLvRJ3CmfyGHlsO4UlFiLXDGtNFaEQ-bZ_FVPnlKmON253ZkcybWRrLDwEKXHr0KfjgEcn6I9xqzOwVevEeROlVYpIS0aQdhW7OQrvCUp-2otbIvDaUT3nz4n2h8IcKjwSVu5xkPP4Q=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;From the same terrace, overlooking city center with Església de Santa Maria&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/14lnyCQYuEjnAVL2oQiDpjlH16HrDmNQqdJYowKljfijBmWlWCceY9448v54eiFClWaap71h1HlKjFBR0fE_ODZ3PsMKn27Bx_ICH473ucMvwStvP9Gqv2ztsMDkYhQXGhJcYg9t2LlOD9ziXLfQb6fj8LKHVhMW1Yib59jzJgftWMoD69sFgayDEht9uvNnY_hv_ZXOCrmWnS4M6dgjYJw5GiUETEYt-rKTbpVKtMB2yojL6uF193pnRQhk6Ym_hfakVaebnIMS1UKvBj4vc6OWrpJmCu16GrDuocTaKHc9ggTgbNpaAQVPSPkpCfsGQRNOOUSSkU3Sy_mrOHbwhMt0BvFzKZxwj73ZUqrPkmLlXFOhpDmaghb_zvdJQ7clNRmqBWB1JjnDmVnuWVUwDonxdejg_QL79nYMPgLFTTxjWs0xeNvhHWC7Kh9YSnwpVWNBGafq6qxwXKMmwzzRbA7LejrG26iqLvRJ3CmfyGHlsO4UlFiLXDGtNFaEQ-bZ_FVPnlKmON253ZkcybWRrLDwEKXHr0KfjgEcn6I9xqzOwVevEeROlVYpIS0aQdhW7OQrvCUp-2otbIvDaUT3nz4n2h8IcKjwSVu5xkPP4Q=w1920-h1080-no&quot; alt=&quot;From the same terrace, overlooking city center with Església de Santa Maria&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                From the same terrace, overlooking city center with Església de Santa Maria
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/JqWXuwmJ8eaXj6PtuqKqcP5kNrIHzz7QFqc35k_QaZy0Irk5gpANvILvCxtJ7ezzeRrXJm33p4bp3zlPlgvdwxhNlclyM8ItpthPbCENG7l8FepfOKWA_4u25v4DFVHb54J4K9gjuGBrvhW61f-_KZLnGz9FGVbTXJ4f09JvnlLBaQHb8UKoGYToBNjYeFVZnWSjbp6UgrdB5AUwVY-lZbfRdF_CF-4af2fUF8SSN9sEkB64kxlaK8FklYIBlXIYzkAQIR2tsIpvbXpGLAOwG1b4-ww5jieKLshMra_poM_xLb8E_WULlbVFEll4-xcGVbn7Wy0iUiK8_0MvLLbzRqHfx4azdHY4h-_DzwFBAbHOY8ZtoIKn1gzxm1HGAjr-Z_PswhrYJMJQ0U-noHHgfBrjOXVAZ6CO93Z1RJkOUX42TahcfcmJJHjmdqe3R7AVsWbPt3QyZNMApizB4IOS4ZOI_u6BIpILM852BCpxnwBkjGIoZmvhRBRpGeAP7cWqpqKjVo-JPUYztOyEmPWYDKjwVcUGlEQhO3_6Drh-A8O_y1c6j42l4nAn_bv5--O2tL8USHsiriJQvoOkPJUNLyGsUodx3yDiTB7nxJa-0A=w609-h1081-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;One of the many small shopping streets in Mahon. Even though it's a small town, there are lots of shopping opportunities.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/JqWXuwmJ8eaXj6PtuqKqcP5kNrIHzz7QFqc35k_QaZy0Irk5gpANvILvCxtJ7ezzeRrXJm33p4bp3zlPlgvdwxhNlclyM8ItpthPbCENG7l8FepfOKWA_4u25v4DFVHb54J4K9gjuGBrvhW61f-_KZLnGz9FGVbTXJ4f09JvnlLBaQHb8UKoGYToBNjYeFVZnWSjbp6UgrdB5AUwVY-lZbfRdF_CF-4af2fUF8SSN9sEkB64kxlaK8FklYIBlXIYzkAQIR2tsIpvbXpGLAOwG1b4-ww5jieKLshMra_poM_xLb8E_WULlbVFEll4-xcGVbn7Wy0iUiK8_0MvLLbzRqHfx4azdHY4h-_DzwFBAbHOY8ZtoIKn1gzxm1HGAjr-Z_PswhrYJMJQ0U-noHHgfBrjOXVAZ6CO93Z1RJkOUX42TahcfcmJJHjmdqe3R7AVsWbPt3QyZNMApizB4IOS4ZOI_u6BIpILM852BCpxnwBkjGIoZmvhRBRpGeAP7cWqpqKjVo-JPUYztOyEmPWYDKjwVcUGlEQhO3_6Drh-A8O_y1c6j42l4nAn_bv5--O2tL8USHsiriJQvoOkPJUNLyGsUodx3yDiTB7nxJa-0A=w609-h1081-no&quot; alt=&quot;One of the many small shopping streets in Mahon. Even though it's a small town, there are lots of shopping opportunities.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                One of the many small shopping streets in Mahon. Even though it's a small town, there are lots of shopping opportunities.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/wUjHV7j2WynOLvwhsRBrB2rgYfZosazHi-7aBH__3g7dHOXpFXjbCMbwQFfeIem1qrcq4KqhyuJnofQ4d3lbxul1ofJ7T1PMigZrct-oNYD98ppqWolXSGG4KwWbCBxVqRHso5YiIg_sGOklqF2E2hgok8rfRSCkbHReiZwwhUDCsi-AJmNuvOpjdNt--bz4vn5z6WaGgsHP0anjskNptsb4qLskzLWDQcQ0Nfr-9w1frgLZyeoTSNEtoI62MhyabqlyHmbRq_JByZjt3Y7bN4TQGYLxnyUzeNJuXEJC68Mw2OB6Qbdm8sXnDH2CirmcRDKDN6RfYyFLDd5ShUXE87yhxz8GAeNndfsRK4VyDd7x8A3o-aI7wOlFt_fpUufUMuj1MhR-Ww1Gvbd0A8nl-DpQf4OIk6p0StCIqRi4HyBmK-9EQyaW-6BOjVGZzHSJBg1Og6Ja7sqGBiZKFyysfF08Bc03C7b7QAhPe4HQEpx6Nz4Hgsax35PMpEQ_0M3_eRigWOJ2bKiETH-IEBntqaSenJSQ-o-SdYFI1YFAQml3iJEtRsxfj3bh_1PFRruSbzbVJS9Ez-g1JL_V0kPVd3CeTbNS9xJwFDZHNUH3Cg=w609-h1081-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Another shopping street in the central area of Mahon&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/wUjHV7j2WynOLvwhsRBrB2rgYfZosazHi-7aBH__3g7dHOXpFXjbCMbwQFfeIem1qrcq4KqhyuJnofQ4d3lbxul1ofJ7T1PMigZrct-oNYD98ppqWolXSGG4KwWbCBxVqRHso5YiIg_sGOklqF2E2hgok8rfRSCkbHReiZwwhUDCsi-AJmNuvOpjdNt--bz4vn5z6WaGgsHP0anjskNptsb4qLskzLWDQcQ0Nfr-9w1frgLZyeoTSNEtoI62MhyabqlyHmbRq_JByZjt3Y7bN4TQGYLxnyUzeNJuXEJC68Mw2OB6Qbdm8sXnDH2CirmcRDKDN6RfYyFLDd5ShUXE87yhxz8GAeNndfsRK4VyDd7x8A3o-aI7wOlFt_fpUufUMuj1MhR-Ww1Gvbd0A8nl-DpQf4OIk6p0StCIqRi4HyBmK-9EQyaW-6BOjVGZzHSJBg1Og6Ja7sqGBiZKFyysfF08Bc03C7b7QAhPe4HQEpx6Nz4Hgsax35PMpEQ_0M3_eRigWOJ2bKiETH-IEBntqaSenJSQ-o-SdYFI1YFAQml3iJEtRsxfj3bh_1PFRruSbzbVJS9Ez-g1JL_V0kPVd3CeTbNS9xJwFDZHNUH3Cg=w609-h1081-no&quot; alt=&quot;Another shopping street in the central area of Mahon&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Another shopping street in the central area of Mahon
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/tIbYtmX2c5IfWTNiPynFdjFfYdP-0Jt9uY43Wg00VqbdztmhJefYXf9xq7xHYyu9eO4a5ztQRVMhtd7OtEXRRhFF3BX1KMwElhU7L57Gy-zpPUNwWhPEP-WdT0liCGQTBSeyuwro0TCskQivkHwhWnSl-kZTA1HisHILhVQr412ixnXWqjjjgGZG8nYHF4Y4xfMY3hA4rpsv7lDoMbe5IGQ0s0ko4Azr1U7PfiN8w3GayLiv6iKUh5PAtT5rTOgXLziwx-VPiI2KpVIrhbQolXj59hTwHmXhJx3oIYDU_S2BXzF1-BtzCUEeQXRcXBx5xfqd4Yl5V4yFn_OZmU6HcSEm4tDuxgCSVj38Q1xhUFT_EwRq7QqDb66w-DOifrqVfRy-BiJfHqQw4u0F5MnLjgchRUVo1yksMcLy6MhbIKHqezTMCWZZu6dJhunMbDVd237xQcIX6nG644F50cBiMy3JsnCwH5NYNXiDCs5s55qLuYEYSzObZ7zPn02u0PEZIR5N2RuML6nQJ3WHH3-wycgHVaR5dDJo_I-DXtcPhDsVYOEdL1eWVyKxQ3sAx0BQp5bpRvXi1W-Zi_VrEutw3rL8QblepBxbTaXKVG4wzA=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Goodbye Mahon&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/tIbYtmX2c5IfWTNiPynFdjFfYdP-0Jt9uY43Wg00VqbdztmhJefYXf9xq7xHYyu9eO4a5ztQRVMhtd7OtEXRRhFF3BX1KMwElhU7L57Gy-zpPUNwWhPEP-WdT0liCGQTBSeyuwro0TCskQivkHwhWnSl-kZTA1HisHILhVQr412ixnXWqjjjgGZG8nYHF4Y4xfMY3hA4rpsv7lDoMbe5IGQ0s0ko4Azr1U7PfiN8w3GayLiv6iKUh5PAtT5rTOgXLziwx-VPiI2KpVIrhbQolXj59hTwHmXhJx3oIYDU_S2BXzF1-BtzCUEeQXRcXBx5xfqd4Yl5V4yFn_OZmU6HcSEm4tDuxgCSVj38Q1xhUFT_EwRq7QqDb66w-DOifrqVfRy-BiJfHqQw4u0F5MnLjgchRUVo1yksMcLy6MhbIKHqezTMCWZZu6dJhunMbDVd237xQcIX6nG644F50cBiMy3JsnCwH5NYNXiDCs5s55qLuYEYSzObZ7zPn02u0PEZIR5N2RuML6nQJ3WHH3-wycgHVaR5dDJo_I-DXtcPhDsVYOEdL1eWVyKxQ3sAx0BQp5bpRvXi1W-Zi_VrEutw3rL8QblepBxbTaXKVG4wzA=w1920-h1080-no&quot; alt=&quot;Goodbye Mahon&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Goodbye Mahon
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/A_WAUif5iynROeZoFOWv9pyccKltlqroh-f3c6CIOCutr_lgzyUCYRK4Ip_0mWbyzpIPWTkrXQiH3ehpopmRpj8w1Ej3TGm9lPWtRmnVuhy-kb5lWU-gABvJpF2vb1C0U17RLZklD6shGARbaINe50Zxvd_OZLNIep91eVeqrxGZTJZ9s__DyjgwJxtts2hyp27h8qkrtGcb6HSi42jvl93cezK8IvCvUa_VQYw9OuNRPLOcyPv4GyfDWfDAiS7r10fwbRoGaMEgc17Eub4irCk5vPlHWthfVaugEIMQzYb-dC1uVVcz551iYFYhjBqso4BhD5mXRKU7tPqvIhlJZO69MHLHhsa9fCulZCjzndqwLsDzK4QqzRd_j_XYaobswd4DDqE3N0VYLTXiLTsgWfCMvsnDFRVTnexUP_14qcTS5HpFrzF3BdZwL8AM0Iy67rW55LGWtEjdJwJCFoqFQaFNza1rmSbSq18H9TE0EOsngM5UtnaqDiIgd18nLI7BsahZx4gubRp7XYFzaQmC8hcI4fyNCbWpayVCgkRNwOUhiXOKWXYPGPianS2J79Hr9-Tio9SGEAg0zksrV-MrXGDGBdcj1Ei75A-nFShapQ=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Beautiful homes on the shore of Mahon's natural harbour&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/A_WAUif5iynROeZoFOWv9pyccKltlqroh-f3c6CIOCutr_lgzyUCYRK4Ip_0mWbyzpIPWTkrXQiH3ehpopmRpj8w1Ej3TGm9lPWtRmnVuhy-kb5lWU-gABvJpF2vb1C0U17RLZklD6shGARbaINe50Zxvd_OZLNIep91eVeqrxGZTJZ9s__DyjgwJxtts2hyp27h8qkrtGcb6HSi42jvl93cezK8IvCvUa_VQYw9OuNRPLOcyPv4GyfDWfDAiS7r10fwbRoGaMEgc17Eub4irCk5vPlHWthfVaugEIMQzYb-dC1uVVcz551iYFYhjBqso4BhD5mXRKU7tPqvIhlJZO69MHLHhsa9fCulZCjzndqwLsDzK4QqzRd_j_XYaobswd4DDqE3N0VYLTXiLTsgWfCMvsnDFRVTnexUP_14qcTS5HpFrzF3BdZwL8AM0Iy67rW55LGWtEjdJwJCFoqFQaFNza1rmSbSq18H9TE0EOsngM5UtnaqDiIgd18nLI7BsahZx4gubRp7XYFzaQmC8hcI4fyNCbWpayVCgkRNwOUhiXOKWXYPGPianS2J79Hr9-Tio9SGEAg0zksrV-MrXGDGBdcj1Ei75A-nFShapQ=w1920-h1080-no&quot; alt=&quot;Beautiful homes on the shore of Mahon's natural harbour&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Beautiful homes on the shore of Mahon's natural harbour
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/u1MiJugP9wl4OICXBT4sA1R-RzVqiaE8mDHA6hypv3DaE7URzDbHyvtL83N3Jh8zNCGvBo0JCbzkqfW4m6uaR_XHwgnyBnAFYXTDAGWNDysVrjbr385Mt6AAZAdJbl1e8C1zb9rSuNG7fvc0auOvF4eCGJHF0uF8me8TfNuhc0XZXDg4PN48Ry_ZeuB_vv5b3HvCE0G6fE0-h4QSIiQgxH5hTPem_mUdLodd0cjn9JLZgDydCCZazWF50QI2CrCf2ut2tODlRRazdXaG_oReiggJ5z5rVRRA22coQiGWPnj01WUSa0FKwK-tX2zaCOUreojIWndZeCmBwhANMIc6U7cXWTpDh3GMtMLnry46P0jvkQasMRil69HANT9R7rgr16LTmDNtu8-ZfsfIIkYIbJ02UO3f0rPtglhBOSbKBN3rNCtkUiNU-VfRM_-afR9ubnj_AUjMB5lcMD_Qrd35on30OXtz-r0zj-Gk2QRFTsF6GTxR4-Fqz4O9P5k67Cl6Bq0vIg1SOkZDwac_1Jmzp4ukZ1UFZju6B9WAhe9Ev0HUl5gW2WKxqiuJSclrI_LZq9lIaWslPUkJSPkSt83R19NWKc4P2dFXVNS_wQQddg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Part of the city as seen from the ship&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/u1MiJugP9wl4OICXBT4sA1R-RzVqiaE8mDHA6hypv3DaE7URzDbHyvtL83N3Jh8zNCGvBo0JCbzkqfW4m6uaR_XHwgnyBnAFYXTDAGWNDysVrjbr385Mt6AAZAdJbl1e8C1zb9rSuNG7fvc0auOvF4eCGJHF0uF8me8TfNuhc0XZXDg4PN48Ry_ZeuB_vv5b3HvCE0G6fE0-h4QSIiQgxH5hTPem_mUdLodd0cjn9JLZgDydCCZazWF50QI2CrCf2ut2tODlRRazdXaG_oReiggJ5z5rVRRA22coQiGWPnj01WUSa0FKwK-tX2zaCOUreojIWndZeCmBwhANMIc6U7cXWTpDh3GMtMLnry46P0jvkQasMRil69HANT9R7rgr16LTmDNtu8-ZfsfIIkYIbJ02UO3f0rPtglhBOSbKBN3rNCtkUiNU-VfRM_-afR9ubnj_AUjMB5lcMD_Qrd35on30OXtz-r0zj-Gk2QRFTsF6GTxR4-Fqz4O9P5k67Cl6Bq0vIg1SOkZDwac_1Jmzp4ukZ1UFZju6B9WAhe9Ev0HUl5gW2WKxqiuJSclrI_LZq9lIaWslPUkJSPkSt83R19NWKc4P2dFXVNS_wQQddg=w1920-h1080-no&quot; alt=&quot;Part of the city as seen from the ship&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Part of the city as seen from the ship
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/iXuImKN0lk5Eb9VKewH664gF5nuMLI2i4PNd6P_PfTdHhfaTlFvEJhVIKEe-U9PX3zGS6afjpbnPDGyBBszzKTeqrezLeUHAIz3g0UiWi6MQt_gOAVLHt1G54XQXp4tLpOCorrnFBVvwbuHTybcwMPmqn4Uu9JUkfxSam8sIQy8Yrg5_YfxyY4vRxU4xeawzlByrda1Cy-Lzkl65UPWTG5X_FAkryrfQuJGxCabbhq4KiIm-rh5rE192F40S2NNSqmGE_U_P4WNAuyiPF6dlymLJNMHm-tRr18NJC5j-XvwH8KjTYT9NOmIetWqgHg4kB5w-2AoQHU75ox8miMGYx5kOOF9JUd6_PiMDf5E6AwBWh6xFIKtsur-gSKiUe0jnL9orMXga8y_gylt7iUlTHgtuyt9EmalZ8p5HpbRmEVKU-Ln3Q8ONIUS3imHE49HJzlZCiSrxodhMaWaFs1YkSVFXIv3P8dug5RiD37r_d5TlfwFm9_QNG1bUyg6ePSE8aEtbD2306HwI2WexyMIBFOzJK7dUCueQdzzCVcZkxTjETVTYgf5q3ckLY3TxB_IrmtSNVuQwovq05qo84zkRh5BoNZI2_XQDDyNPuBEpUw=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Our ship waiting for us, still plenty of time left.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/iXuImKN0lk5Eb9VKewH664gF5nuMLI2i4PNd6P_PfTdHhfaTlFvEJhVIKEe-U9PX3zGS6afjpbnPDGyBBszzKTeqrezLeUHAIz3g0UiWi6MQt_gOAVLHt1G54XQXp4tLpOCorrnFBVvwbuHTybcwMPmqn4Uu9JUkfxSam8sIQy8Yrg5_YfxyY4vRxU4xeawzlByrda1Cy-Lzkl65UPWTG5X_FAkryrfQuJGxCabbhq4KiIm-rh5rE192F40S2NNSqmGE_U_P4WNAuyiPF6dlymLJNMHm-tRr18NJC5j-XvwH8KjTYT9NOmIetWqgHg4kB5w-2AoQHU75ox8miMGYx5kOOF9JUd6_PiMDf5E6AwBWh6xFIKtsur-gSKiUe0jnL9orMXga8y_gylt7iUlTHgtuyt9EmalZ8p5HpbRmEVKU-Ln3Q8ONIUS3imHE49HJzlZCiSrxodhMaWaFs1YkSVFXIv3P8dug5RiD37r_d5TlfwFm9_QNG1bUyg6ePSE8aEtbD2306HwI2WexyMIBFOzJK7dUCueQdzzCVcZkxTjETVTYgf5q3ckLY3TxB_IrmtSNVuQwovq05qo84zkRh5BoNZI2_XQDDyNPuBEpUw=w1920-h1080-no&quot; alt=&quot;Our ship waiting for us, still plenty of time left.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Our ship waiting for us, still plenty of time left.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/mAEKMCF4wAWapM3CX5RvzQxckzx9rqMSRX425umLQadd9iviRj4LzhWYIT9E5iC7B8f5QYkWxWugEjXoSXuuHh5GrAppdZxqEO9A6vgN7TIb-E4GAzjy7tsak-FtG9Cnefxx2lUW6K7aby_ySOKwZOhb2V8AIv_bW5pnTecXCRIXCV5uqJCjxfnw7Ap-i4LqzlD4Pf2cLJ1e_qrz2Ow-lEME8rMsUQU-18UA5UgwRCfnA8B88tJ40bFEEIZwGAvKYthDU5KAaAo96mZ3zcp3wCZFgvBq_CEMYx3aPDz7DKlpEMH-mF4P8t4yvlx0QFAPDguFMxZRmSyCa4JlE2X0U2fktEC1etvjJqcyRp_EBNU_v-7FNE9By__ZaodkkWw3F-nTlWPQOxgsyUmEIOHJa36Q-IZanm-zbQYPibft34m3aPhnCzIYmcDzZrgJ_MLoLedR7LyBNW0MrpP8gMvkDEd4qlt6AocLkJgDhaLez_S3cZMfv1SGSdxCagOg7iBVJ_pUcjIKn0OZU2Lmy9N8ZZwsG2xPsy_TcwnyhjcbiwiL8wP7DG7VshmRZoxGIcFUBZR8UB5Y8nHu7hhyg5jo-d2EZDGxtRNAQxyB4LGufg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;View from the City over the harbour.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/mAEKMCF4wAWapM3CX5RvzQxckzx9rqMSRX425umLQadd9iviRj4LzhWYIT9E5iC7B8f5QYkWxWugEjXoSXuuHh5GrAppdZxqEO9A6vgN7TIb-E4GAzjy7tsak-FtG9Cnefxx2lUW6K7aby_ySOKwZOhb2V8AIv_bW5pnTecXCRIXCV5uqJCjxfnw7Ap-i4LqzlD4Pf2cLJ1e_qrz2Ow-lEME8rMsUQU-18UA5UgwRCfnA8B88tJ40bFEEIZwGAvKYthDU5KAaAo96mZ3zcp3wCZFgvBq_CEMYx3aPDz7DKlpEMH-mF4P8t4yvlx0QFAPDguFMxZRmSyCa4JlE2X0U2fktEC1etvjJqcyRp_EBNU_v-7FNE9By__ZaodkkWw3F-nTlWPQOxgsyUmEIOHJa36Q-IZanm-zbQYPibft34m3aPhnCzIYmcDzZrgJ_MLoLedR7LyBNW0MrpP8gMvkDEd4qlt6AocLkJgDhaLez_S3cZMfv1SGSdxCagOg7iBVJ_pUcjIKn0OZU2Lmy9N8ZZwsG2xPsy_TcwnyhjcbiwiL8wP7DG7VshmRZoxGIcFUBZR8UB5Y8nHu7hhyg5jo-d2EZDGxtRNAQxyB4LGufg=w1920-h1080-no&quot; alt=&quot;View from the City over the harbour.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                View from the City over the harbour.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/WJLuvBcRw9l-R2KbMsb2cAqHnnrsOxK5D8G9zzU9ZqT_rB_wrKDZMJqd-EzWZ-HPWpGE6MRxpYfRaAEIWVNkxoYfZGdFym7RhIv92NeuDw0cEXUAttHbT2eLuU7MtSI1elHZgfsT41A0IcHts7oPHr8K5jDzfLFxf4yzR9qRZBu4Nen0U_uIyNTRwpm4JEXXD24m1DZKrw1wUekPsdhQUD_ep8lQWTLXn_rjIfMUZjrdB0L4uy51bHMpOJIG1pTIFGHcJXG6d7GURVSnwiDPqix38fmwEN5XWshg-dOnvtQgRlbUsqPuw4e5pMJKgYT-FhYIRMpym1XIs6nbe4oagqdkXiTMR_l3xN8ZzadKixD3e5iK0TGFGYUQI343XRd3hQPewWUHqxmemG9T8ZyRsZfor5pAA_EDXWd14Yo4EQTi_N6yhKN9G7JXfARj_9m1AdTvjWIqnElyZdM5GF2KE1qhvYidNEdRoE6peE5dc1qJ5SKwzROI80GTrueU62UHK-zK2qBngSLZD_RUAFVoPePy-l8NlLeBqRDphbU8w9EdHVVmf-VvWG-RG1wkdrsN_635scGeUilcXue9fO7BI156byTqnoRg2LfbrdUxkA=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Església de Santa Maria, Mahon's main church. Picture taken near the market hall looking northwest.&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/WJLuvBcRw9l-R2KbMsb2cAqHnnrsOxK5D8G9zzU9ZqT_rB_wrKDZMJqd-EzWZ-HPWpGE6MRxpYfRaAEIWVNkxoYfZGdFym7RhIv92NeuDw0cEXUAttHbT2eLuU7MtSI1elHZgfsT41A0IcHts7oPHr8K5jDzfLFxf4yzR9qRZBu4Nen0U_uIyNTRwpm4JEXXD24m1DZKrw1wUekPsdhQUD_ep8lQWTLXn_rjIfMUZjrdB0L4uy51bHMpOJIG1pTIFGHcJXG6d7GURVSnwiDPqix38fmwEN5XWshg-dOnvtQgRlbUsqPuw4e5pMJKgYT-FhYIRMpym1XIs6nbe4oagqdkXiTMR_l3xN8ZzadKixD3e5iK0TGFGYUQI343XRd3hQPewWUHqxmemG9T8ZyRsZfor5pAA_EDXWd14Yo4EQTi_N6yhKN9G7JXfARj_9m1AdTvjWIqnElyZdM5GF2KE1qhvYidNEdRoE6peE5dc1qJ5SKwzROI80GTrueU62UHK-zK2qBngSLZD_RUAFVoPePy-l8NlLeBqRDphbU8w9EdHVVmf-VvWG-RG1wkdrsN_635scGeUilcXue9fO7BI156byTqnoRg2LfbrdUxkA=w1920-h1080-no&quot; alt=&quot;Església de Santa Maria, Mahon's main church. Picture taken near the market hall looking northwest.&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Església de Santa Maria, Mahon's main church. Picture taken near the market hall looking northwest.
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&quot;galleryitem &quot;&gt;
-&lt;div class=&quot;gallery_imgwrapper&quot;&gt;
-
-
-&lt;a href=&quot;https://lh3.googleusercontent.com/4Rx2uOIECgmM4vk1wuJaco5b-YGD4YjCzZMQQyhnuDgdYZZmPGTDGjn5bBKpmVHnrNqbclNFNjf0AJyxgkxtrsRaNsKmWs0KxKU4Oki6-QsJaKO3F7X6A61MK5qYOaggAtQsfkHudoKgMbYc5emARqSUk7wdNt4RBZBd3EMjBfKEwaquh3MSEe-xGy8gfmRkVPmZy5j-fOohI5-6KD6xJYibN88Nz7t8KDvv2nMNbcZBSbEzCpXbD3T17pTlNBEs2QaS2EzC__46-GJsdgXnHyRo0MOlrRgVHo08r9Zr3bdE2U9ZYQXTRS_yC5TX9pYC1Ip681CjKSWb1LGi8mM5RjwwM9ym-QR7KPPHHyYCTuzsHBgj9JqyS3quxOHoTaRGip762S1ySOWv3N74Y5ybElpOF87QDCKjFTD7GG1lu9ToX3uOjFa5SAIbSNRGXryBBVwPBgj_ItwgucrswSBpgC1rJ4R78mV7TcQId-WxqOJPh3unUk_EhbU1d0bYaRwYM2g4Xoy4WiXs95V1IIaRixL5B8b2Hr-OxvxcBa5gKsRBZKmlxyT2Ei0y4z720bLyGAHDpqrKuS0ovznbcyShZg5jydF7AzRppVogWTO2Rg=w1920-h1080-no&quot; data-fancybox=&quot;gallery&quot; data-caption=&quot;Església del Carme, picture taken near Placa del Princep, looking northwest&quot;&gt;
-
-&lt;div style=&quot;margin: 0 auto;display:block;width:100%;height:100%;position: absolute;left: 0;top: 0;overflow:hidden;&quot;&gt;
-    &lt;figure&gt;
-    &lt;img src=&quot;https://lh3.googleusercontent.com/4Rx2uOIECgmM4vk1wuJaco5b-YGD4YjCzZMQQyhnuDgdYZZmPGTDGjn5bBKpmVHnrNqbclNFNjf0AJyxgkxtrsRaNsKmWs0KxKU4Oki6-QsJaKO3F7X6A61MK5qYOaggAtQsfkHudoKgMbYc5emARqSUk7wdNt4RBZBd3EMjBfKEwaquh3MSEe-xGy8gfmRkVPmZy5j-fOohI5-6KD6xJYibN88Nz7t8KDvv2nMNbcZBSbEzCpXbD3T17pTlNBEs2QaS2EzC__46-GJsdgXnHyRo0MOlrRgVHo08r9Zr3bdE2U9ZYQXTRS_yC5TX9pYC1Ip681CjKSWb1LGi8mM5RjwwM9ym-QR7KPPHHyYCTuzsHBgj9JqyS3quxOHoTaRGip762S1ySOWv3N74Y5ybElpOF87QDCKjFTD7GG1lu9ToX3uOjFa5SAIbSNRGXryBBVwPBgj_ItwgucrswSBpgC1rJ4R78mV7TcQId-WxqOJPh3unUk_EhbU1d0bYaRwYM2g4Xoy4WiXs95V1IIaRixL5B8b2Hr-OxvxcBa5gKsRBZKmlxyT2Ei0y4z720bLyGAHDpqrKuS0ovznbcyShZg5jydF7AzRppVogWTO2Rg=w1920-h1080-no&quot; alt=&quot;Església del Carme, picture taken near Placa del Princep, looking northwest&quot; /&gt;
-        
-        &lt;figcaption style=&quot;display:none;&quot;&gt;
-                Església del Carme, picture taken near Placa del Princep, looking northwest
-        &lt;/figcaption&gt;
-        
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:climate&quot;&gt;
-      &lt;p&gt;Menorca’s climate is defined as &lt;a href=&quot;https://en.wikipedia.org/wiki/Mediterranean_climate#Hot-summer_mediterranean_climate&quot;&gt;hot summer mediterranean climate&lt;/a&gt; (CSb
-sub-type). &lt;a href=&quot;#fnref:climate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Travel" /><category term="first" /><category term="travel" /><summary type="html">[Mahón](https://en.wikipedia.org/wiki/Mah%C3%B3n) is the capital city of the Menorca, the 2nd largest of the balearic islands, located in the mediterranean sea. It's a beautiful small town on the shore of one of the largest natural harbours in the world with a length of more than 3km.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22mahon_cover%22,%20%22width%22=%3E%2240%25%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="Jekyll" /><category term="first" /><category term="jekyll" /><category term="css" /><category term="video" /><summary type="html">A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll's.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://silvercircle.github.io/%7B%22source%22=%3E%22jekyll%22,%20%22width%22=%3E%22130px%22,%20%22align%22=%3E%22right%22%7D" /></entry></feed>

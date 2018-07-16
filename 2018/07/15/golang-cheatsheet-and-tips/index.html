@@ -14,20 +14,20 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>My thunderbird userChrome modifications | silvercircle/github/io</title>
+<title>Go cheat sheet and tips | silvercircle/github/io</title>
 <meta name="generator" content="Jekyll v3.8.1" />
-<meta property="og:title" content="My thunderbird userChrome modifications" />
-<meta name="author" content="AlexVie" />
+<meta property="og:title" content="Go cheat sheet and tips" />
+<meta name="author" content="Alex Vie" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A small userChrome.css File to change some visual aspects of Mozilla Thunderbird. Works with TB version 52 or later (tested, may also work with older versions) Available as public gist on GitHub." />
-<meta property="og:description" content="A small userChrome.css File to change some visual aspects of Mozilla Thunderbird. Works with TB version 52 or later (tested, may also work with older versions) Available as public gist on GitHub." />
-<link rel="canonical" href="https://silvercircle.github.io/software/user-chrome-thunderbird/" />
-<meta property="og:url" content="https://silvercircle.github.io/software/user-chrome-thunderbird/" />
+<meta name="description" content="A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy." />
+<meta property="og:description" content="A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy." />
+<link rel="canonical" href="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" />
+<meta property="og:url" content="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" />
 <meta property="og:site_name" content="silvercircle/github/io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-10-18T01:33:37+02:00" />
+<meta property="article:published_time" content="2018-07-15T22:00:30+02:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://silvercircle.github.io/software/user-chrome-thunderbird/","author":{"@type":"Person","name":"AlexVie"},"headline":"My thunderbird userChrome modifications","dateModified":"2017-10-18T01:33:37+02:00","description":"A small userChrome.css File to change some visual aspects of Mozilla Thunderbird. Works with TB version 52 or later (tested, may also work with older versions) Available as public gist on GitHub.","datePublished":"2017-10-18T01:33:37+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/user-chrome-thunderbird/"},"@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/","author":{"@type":"Person","name":"Alex Vie"},"headline":"Go cheat sheet and tips","dateModified":"2018-07-15T22:00:30+02:00","description":"A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.","datePublished":"2018-07-15T22:00:30+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -77,7 +77,7 @@
         <i aria-hidden="true"></i>
         <span>Google+</span>
     </a>
-    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/software/user-chrome-thunderbird/">
+    <a class="sbutton contrast min b-email" title="email" href="mailto:?to=entropy@live.at&amp;subject=Site_Feedback:https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">
         <i></i>
         <span>Email</span>
     </a>
@@ -108,6 +108,10 @@
           	     <div id = "main_menu">
            <ul id="menu_nav" class="dropmenu menu">
            
+           <li id="button_backlink">
+            <a class="firstlevel symbolized backlink" href="https://silvercircle.github.io/blog/"></a>
+           </li>
+           
            <li id="button_home" class="">
                 <a class="firstlevel symbolized home" href="/"></a>
            </li>
@@ -123,13 +127,13 @@
                 </li>
               </ul>
           </li>
-          <li id="button_blog" class="">
+          <li id="button_blog" class="active">
               <a class="firstlevel" href="/blog/index.html">Blog</a>
            </li>
            <li id="button_contact" class="">
               <a class="firstlevel" href="/help/contact.html">Contact</a>
            </li>
-           <li id="button_topics" class="active">
+           <li id="button_topics" class="">
               <a class="firstlevel" href="/topics.html">Topics</a>
               <span onclick="onMenuArrowClick($(this));" style="display:inline-block;" id="_topics" class="m_downarrow">&nbsp;</span>
               <ul style="display:none;">
@@ -173,10 +177,10 @@
                 <label>TAGS</label> 
                 </div>
                 
-                <div title="More in this topic" class="vmenu_button topic" data-target="/software/sbar/">
-                <label>TOPIC</label> 
-                </div>
                 
+                <div title="More in this category" class="vmenu_button category" data-target="/category/site/sbar/">
+                <label>CATEGORY</label> 
+                </div>
                 
                 <div title="On-site and external Links" class="vmenu_button links" data-target="/sys/sbar_links/">
                 <label>LINKS</label> 
@@ -191,109 +195,63 @@
       <div class="inner clearfix dynlayout" style="margin: 0 0 0 0;padding:20px;">
         <article id="main-content" class="dynlayout">
         <div class="reduce big">
-        <h1 id="my-userchromecss-for-thunderbird">My userChrome.css for Thunderbird</h1>
+        <h1 id="golang-cheat-sheet-and-various-tips">Golang cheat sheet and various tips</h1>
 
-<time style="margin-top:-30px;" datetime="2017-10-18T01:33:37+0200" class="icon">
-  <em>Oct.&nbsp;&nbsp;2017</em>
-  <strong>Wednesday</strong>
-  <span>18</span>
+<time style="margin-top:-30px;" datetime="2018-07-15T22:00:30+0200" class="icon">
+  <em>Jul.&nbsp;&nbsp;2018</em>
+  <strong>Sunday</strong>
+  <span>15</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />363 Words
+    Last modified: <time class="timeago" datetime="2018-07-15T22:00:30+0200">2018-07-15 22:00:30 +0200</time><br />324 Words
 </div>
 <div class="author subheader">
-    <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">01:33</span> | by AlexVie<br />
+    <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">22:00</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/site/index.html">Site</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
     Reading time: approx. 1 minute(s).
 </div>
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<div class="note red">
-<h3 class="alert">Warning</h3>
-<p>
-This is probably outdated by now. It’s been written for Thunderbird 52 which is no longer the most
-recent version. Thunderbird 60, the successor which is currently in Beta, requires minor changes to
-the <strong>userChrome</strong> stuff listed here. It will be updated when it goes final.
-</p>
-<p>
-I have written an article about Thunderbird 60 <a href="/2018/06/24/upgrading-thunderbird-60/">here</a>
-</p>
-</div>
+<h2 id="gcc-go-linker-errors">GCC-GO linker errors</h2>
 
-<p class="dc">Even though there are many alternatives today, I still use Thunderbird as my personal e-mail client 
-of choice. While it does have its own set of problems, it’s still one of the best remaining desktop 
-e-email applications in terms of flexibility, security and user experience. It is also free and Open 
-Source and enjoys a huge community.</p>
-<div class="floatimage right " style="width:50%; max-width:50%;">
+<p>Sometimes, when using Gcc-go instead of the default Go compiler, an error message like the following
+may appear during the build command.</p>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[...] $WORK/b001/_pkg1_.a(_x009.o): undefined reference to symbol 'pthread_mutexattr_settype@@GLIBC_2.1'
+      /lib/libpthread.so.0: error adding symbols: DSO missing from command line
+      collect2: error: ld returned 1 exit status
+</code></pre></div></div>
 
+<p>This indicates a missing LDFLAG, in our case, the instruction to link against <code class="highlighter-rouge">libpthread</code> is
+missing from the linker command line. It’s easy to fix, just pass the missing <code class="highlighter-rouge">-pthread</code> via
+<code class="highlighter-rouge">-gccgoflags</code> to the build command. The -pthread option not only instructs the linker to link
+against libpthreads, it also defines all macros that are needed to ensure re-entrant code is
+produced during compilation.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[alex@warpcore:/home/alex/go/src/testgo]$&gt; go-8 build -gccgoflags=-pthread dbtest.go
+</code></pre></div></div>
 
-<a href="/assets/gfx/tbird_custom.png" data-fancybox="gallery" data-caption="Thunderbird 52.x with my userChrome modifications">
+<h2 id="getting-gocode-and-go-mode-in-emacs-to-work">Getting gocode and go-mode in Emacs to work</h2>
 
-<figure style="position:relative;">
-        <img src="/assets/gfx/tbird_custom.png" alt="Thunderbird 52.x with my userChrome modifications" style="height:auto; margin:0; display:block;" />
-        
-        
-        <figcaption style="display:none;">
-                Thunderbird 52.x with my userChrome modifications
-        </figcaption>
-        
-</figure>
-
-</a>
-
-
-
-<div class="floatimage_title">
-    Thunderbird 52.x with my userChrome modifications
-</div>
-
-</div>
-
-<p>Since I’m quite picky when it comes to UI design, I’ve made a few changes that improve the look of 
-Thunderbird. Nothing spectacular, just a couple of minor changes:</p>
+<p>This is for Go version 1.10. First, install the mdempsky fork of gocode as the old gocode might be
+incompatible with Go 1.10 due to changes in the binary package format.</p>
 
 <ul>
-  <li>
-    <p>alternating colors for the folder- and message tree control</p>
-  </li>
-  <li>
-    <p>rectangular tabs, less padding, less waste of space</p>
-  </li>
-  <li>
-    <p>minor changes to the message preview- and header area.</p>
-  </li>
-  <li>
-    <p>includes some minor styling changes for the Thunderbird-Conversations add-on.</p>
-  </li>
+  <li><a href="https://github.com/mdempsky/gocode">https://github.com/mdempsky/gocode</a> - do a <code class="highlighter-rouge">go get
+github.com/mdempsky/gocode</code> to install.</li>
 </ul>
 
-<p><strong>Here is the code (embedded gist, if that does not show up for some reason, the <a href="https://gist.github.com/silvercircle/023bded0da891872f956b02b55a581ee">public 
-gist</a> is available on 
-GitHub</strong>.
-<script src="https://gist.github.com/silvercircle/023bded0da891872f956b02b55a581ee.js"></script></p>
+<p>The resulting binary will be in <code class="highlighter-rouge">$GOPATH/bin</code> (usually <code class="highlighter-rouge">~/go/bin</code> on *iX systems), so you can either
+add this directory to your <code class="highlighter-rouge">$PATH</code> or copy <strong>gocode</strong> to <code class="highlighter-rouge">~/bin</code> or <code class="highlighter-rouge">/usr/bin</code> if you have permissions.</p>
 
-<h2 id="to-install">To install</h2>
+<p>In Emacs, it’s just a matter of installing <code class="highlighter-rouge">go-mode</code>. Assuming, you have a working MELPA setup,
+simply do a <code class="highlighter-rouge">M-x package-install &lt;RET&gt; go-mode &lt;RET&gt;</code>. For auto-complete, I prefer <code class="highlighter-rouge">company-mode</code>, in
+which case, the Go backend <code class="highlighter-rouge">company-go</code> is required. Install it like <code class="highlighter-rouge">go-mode</code> before. Go-mode itself
+requires minimal configuration - if <code class="highlighter-rouge">gocode</code> is in your $PATH it will be found and used
+automatically.</p>
 
-<ul>
-  <li>
-    <p>find your TB profile directory.</p>
-  </li>
-  <li>
-    <p>If it does not already exist, create a new directory in your profile and name it <code class="highlighter-rouge">chrome</code> (all lower 
-case).</p>
-  </li>
-  <li>
-    <p>Copy the <code class="highlighter-rouge">userChrome.css</code> that you’ll find inside the .ZIP you downloaded from GitHub into that 
-freshly created directory. Under Linux, the case matters, the <code class="highlighter-rouge">C</code> must be capital, the extension lower 
-case. The folder <code class="highlighter-rouge">chrome</code> must be all lowercase.</p>
-  </li>
-</ul>
-
-<p>To activate it, you have to restart Thunderbird. If anything goes wrong and TB looks strange, you 
-can simply remove that file from its folder. It does not change anything outside itself. No special 
-settings are required and the modification is only tested on Thunderbird 52 or newer under Windows.</p>
-
+<p>It’s important to have <code class="highlighter-rouge">$GOPATH</code> set properly, otherwise <em>gocode</em> won’t work at all. Also, <em>gocode</em> only
+recognizes packages built and installed with the default go compiler. Personally, I use gccgo only
+for release builds and usually install all packages with both compilers.</p>
 
         <div style="margin-top: 0.5em">
 
@@ -309,39 +267,39 @@ settings are required and the modification is only tested on Thunderbird 52 or n
 <div class="share_buttons sb-iconic" style="margin-top: 0.5em;">
 <span class="sb-label">Share:</span>
 
-<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/software/user-chrome-thunderbird/&amp;text=My%20thunderbird%20userChrome%20modifications">
+<a class="sbutton clickable b-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/&amp;text=Go%20cheat%20sheet%20and%20tips">
     <i aria-hidden="true"></i>
     <span>Twitter</span>
 </a>
-<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/software/user-chrome-thunderbird/">
+<a class="sbutton clickable b-facebook" title="Share on Facebook" href="https://www.facebook.com/sharer.php?u=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">
     <i aria-hidden="true"></i>
     <span>Facebook</span>
 </a>
-<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/software/user-chrome-thunderbird/">
+<a class="sbutton clickable b-gplus" title="Share on Google+" href="https://plus.google.com/share?url=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">
     <i aria-hidden="true"></i>
     <span>Google+</span>
 </a>
-<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/software/user-chrome-thunderbird/&amp;title=My%20thunderbird%20userChrome%20modifications">
+<a class="sbutton clickable b-reddit" title="Share on reddit" href="https://reddit.com/submit?url=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/&amp;title=Go%20cheat%20sheet%20and%20tips">
     <i aria-hidden="true"></i>
     <span>Reddit</span>
 </a>
-<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/software/user-chrome-thunderbird/&amp;description=My%20thunderbird%20userChrome%20modifications">
+<a class="sbutton clickable b-pinterest" title="Share on Pinterest" href="https://pinterest.com/pin/create/bookmarklet/?url=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/&amp;description=Go%20cheat%20sheet%20and%20tips">
     <i></i>
     <span>Pinterest</span>
 </a>
-<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/software/user-chrome-thunderbird/&amp;title=My%20thunderbird%20userChrome%20modifications">
+<a class="sbutton clickable b-tumblr" title="Share on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/&amp;title=Go%20cheat%20sheet%20and%20tips">
     <i></i>
     <span>Tumblr</span>
 </a>
-<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=My%20thunderbird%20userChrome%20modifications&amp;body=https://silvercircle.github.io/software/user-chrome-thunderbird/">
+<a class="sbutton clickable b-email" title="Share by e-mail" href="mailto:?subject=Go%20cheat%20sheet%20and%20tips&amp;body=https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">
     <i></i>
     <span>Email</span>
 </a>
-<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=My%20thunderbird%20userChrome%20modifications&nbsp;https://silvercircle.github.io/software/user-chrome-thunderbird/">
+<a class="sbutton clickable b-whatsApp" title="Share on Whatsapp" href="https://api.whatsapp.com/send?text=Go%20cheat%20sheet%20and%20tips&nbsp;https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">
     <i></i>
     <span>WhatsApp</span>
 </a>
-<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/software/user-chrome-thunderbird/" title="Copy link to clipboard">
+<a class="sbutton clickable b-link" data-href="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" title="Copy link to clipboard">
     <i></i>
     <span>Link</span>
 </a>
@@ -354,8 +312,8 @@ settings are required and the modification is only tested on Thunderbird 52 or n
 <div id="disqus_thread" style="margin-top:0.5em;"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "https://silvercircle.github.io/software/user-chrome-thunderbird/";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "ALEXVIE#@#2017-10-18 01:33:37 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ALEX VIE#@#2018-07-15 22:00:30 +0200"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
