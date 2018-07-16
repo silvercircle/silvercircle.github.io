@@ -7,7 +7,9 @@ sidebarcontent: sbar_default
 date: 2017-09-12T11:42:19+0200
 modified: 2017-09-12T11:42:29+0200
 menucontext: about
-permalink: /help/docs
+permalink: /help/docs/
+share: 1
+disqus: 1
 ---
 
 # Site documentation

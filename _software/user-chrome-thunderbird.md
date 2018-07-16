@@ -28,6 +28,19 @@ image:
 {% include post_header.html %}
 {% include defs.md %}
 
+<div class="note red" >
+<h3 class="alert">Warning</h3>
+<p markdown="1">
+This is probably outdated by now. It's been written for Thunderbird 52 which is no longer the most
+recent version. Thunderbird 60, the successor which is currently in Beta, requires minor changes to
+the **userChrome** stuff listed here. It will be updated when it goes final.
+</p>
+<p markdown="1">
+I have written an article about Thunderbird 60 [here]({{ site.baseurl }}{% link
+_posts/2018-06-24-upgrading-thunderbird-60.md %})
+</p>
+</div>
+
 Even though there are many alternatives today, I still use Thunderbird as my personal e-mail client 
 of choice. While it does have its own set of problems, it's still one of the best remaining desktop 
 e-email applications in terms of flexibility, security and user experience. It is also free and Open 
