@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-07-16T04:09:44+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Go cheat sheet and tips</title><link href="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" rel="alternate" type="text/html" title="Go cheat sheet and tips" /><published>2018-07-15T22:00:30+02:00</published><updated>2018-07-15T22:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">&lt;h1 id=&quot;golang-cheat-sheet-and-various-tips&quot;&gt;Golang cheat sheet and various tips&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://silvercircle.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://silvercircle.github.io/" rel="alternate" type="text/html" /><updated>2018-07-25T06:58:22+02:00</updated><id>https://silvercircle.github.io/</id><title type="html">silvercircle/github/io</title><subtitle>A Jekyll test site with no particular purpose.</subtitle><entry><title type="html">Go cheat sheet and tips</title><link href="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/" rel="alternate" type="text/html" title="Go cheat sheet and tips" /><published>2018-07-15T22:00:30+02:00</published><updated>2018-07-15T22:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/">&lt;h1 id=&quot;golang-cheat-sheet-and-various-tips&quot;&gt;Golang cheat sheet and various tips&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-07-15T22:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jul.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -6,7 +6,7 @@
   &lt;span&gt;15&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-15T22:00:30+0200&quot;&gt;2018-07-15 22:00:30 +0200&lt;/time&gt;&lt;br /&gt;324 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-15T22:00:30+0200&quot;&gt;2018-07-15 22:00:30 +0200&lt;/time&gt;&lt;br /&gt;384 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;22:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
@@ -33,6 +33,10 @@ produced during compilation.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[alex@warpcore:/home/alex/go/src/testgo]$&amp;gt; go-8 build -gccgoflags=-pthread dbtest.go
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;go-8&lt;/code&gt; is the wrapper to &lt;code class=&quot;highlighter-rouge&quot;&gt;gccgo&lt;/code&gt;, using GCC8 on Suse Linux distributions. This might be
+different for your distribution and depends on the gccgo version. GCC8 based gccgo compiler is
+compatible with Go version 1.10.&lt;/p&gt;
+
 &lt;h2 id=&quot;getting-gocode-and-go-mode-in-emacs-to-work&quot;&gt;Getting gocode and go-mode in Emacs to work&lt;/h2&gt;
 
 &lt;p&gt;This is for Go version 1.10. First, install the mdempsky fork of gocode as the old gocode might be
@@ -52,9 +56,11 @@ which case, the Go backend &lt;code class=&quot;highlighter-rouge&quot;&gt;compa
 requires minimal configuration - if &lt;code class=&quot;highlighter-rouge&quot;&gt;gocode&lt;/code&gt; is in your $PATH it will be found and used
 automatically.&lt;/p&gt;
 
-&lt;p&gt;It’s important to have &lt;code class=&quot;highlighter-rouge&quot;&gt;$GOPATH&lt;/code&gt; set properly, otherwise &lt;em&gt;gocode&lt;/em&gt; won’t work at all. Also, &lt;em&gt;gocode&lt;/em&gt; only
-recognizes packages built and installed with the default go compiler. Personally, I use gccgo only
-for release builds and usually install all packages with both compilers.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.</summary></entry><entry><title type="html">uWSGI configuration example for a Django/Wagtail app</title><link href="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/" rel="alternate" type="text/html" title="uWSGI configuration example for a Django/Wagtail app" /><published>2018-07-06T17:00:30+02:00</published><updated>2018-07-06T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/">&lt;h1 id=&quot;uwsgi-configuration-example-for-a-djangowagtail-app&quot;&gt;uWSGI configuration example for a Django/Wagtail app&lt;/h1&gt;
+&lt;p&gt;Note that gocode depends on a properly configured &lt;code class=&quot;highlighter-rouge&quot;&gt;$GOPATH&lt;/code&gt; environment variable and may not work at
+all without it, particularly if you do not use the default go directory, which is normally set to
+&lt;code class=&quot;highlighter-rouge&quot;&gt;~/go&lt;/code&gt; by default. Also, &lt;em&gt;gocode&lt;/em&gt; only recognizes packages built and installed with the default go
+compiler. Personally, I use gccgo only for release builds and usually install all packages with both
+compilers.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.</summary></entry><entry><title type="html">uWSGI configuration example for a Django/Wagtail app</title><link href="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/" rel="alternate" type="text/html" title="uWSGI configuration example for a Django/Wagtail app" /><published>2018-07-06T17:00:30+02:00</published><updated>2018-07-06T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample</id><content type="html" xml:base="https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/">&lt;h1 id=&quot;uwsgi-configuration-example-for-a-djangowagtail-app&quot;&gt;uWSGI configuration example for a Django/Wagtail app&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-07-06T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jul.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
@@ -62,31 +68,92 @@ for release builds and usually install all packages with both compilers.&lt;/p&g
   &lt;span&gt;06&lt;/span&gt;
 &lt;/time&gt;
 &lt;div class=&quot;author subheader&quot; style=&quot;float:right;text-align:right;&quot;&gt;
-    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-06T17:00:36+0200&quot;&gt;2018-07-06 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;1419 Words
+    Last modified: &lt;time class=&quot;timeago&quot; datetime=&quot;2018-07-25T17:00:36+0200&quot;&gt;2018-07-25 17:00:36 +0200&lt;/time&gt;&lt;br /&gt;2027 Words
 &lt;/div&gt;
 &lt;div class=&quot;author subheader&quot;&gt;
     &lt;!--&lt;span class=&quot;year&quot;&gt;2018&lt;/span&gt; at --&gt;&lt;span class=&quot;time_symbol&quot;&gt;&lt;/span&gt;&lt;span class=&quot;time&quot;&gt;17:00&lt;/span&gt; | by Alex Vie&amp;nbsp;in&amp;nbsp;&lt;a href=&quot;/category/site/index.html&quot;&gt;Site&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;/category/development/index.html&quot;&gt;Development&lt;/a&gt;&lt;br /&gt;
-    Reading time: approx. 5 minute(s).
+    Reading time: approx. 8 minute(s).
 &lt;/div&gt;
 &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
 &lt;hr style=&quot;margin-top:2px;&quot; /&gt;
 
-&lt;p class=&quot;dc&quot;&gt;The following assumes that uWSGI is running in emperor - vassal configuration. In this mode, the
-emperor should be seen as a master process that controls an arbitrary number of child instances.
-Each instance consists of multiple processes and/or threads and deploys a single web application.
-While the emperor runs as root in order to set up environments and enforce full control over all
-child instances, the children usually run unprivileged. Communication between the front end web
-server and the uWSGI application service happens via sockets, either TCP/UDP or (preferable, because
-of superior performance and little overhead) Unix domain sockets.&lt;/p&gt;
+&lt;p class=&quot;dc&quot;&gt;uWSGI is an application stack for hosting web services written in different languages, using
+different technologies, all under a common hood. It originated from the WSGI project, which
+basically was Python-only into a much more flexible framework that nowadays can host Python, Java,
+Go, .NET (via Mono) applications, either as backend service behind a web server like Apache or
+Nginx, or by using the platform specific server components.&lt;/p&gt;
 
-&lt;p&gt;The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires 
-administrator privileges to control. Under normal circumstances the emperor will run and monitor its 
-child instances. Adding and removing child instances is possible at runtime, though a restart of the 
-emperor is necessary to recognize such configuration changes.&lt;/p&gt;
+&lt;p&gt;The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires
+root privileges to be controlled. The emperor can itself run either as root or as an unprivileged user,
+depending on which features and security level the administrator wants to enforce. In my opinion,
+the recommended way is &lt;strong&gt;tyrant-mode&lt;/strong&gt; in combination with POSIX Capabilities, as this will give you
+best of both worlds: High security level and a reasonably flexible and not overly restrictive multi
+user environment. Ideal for hosters who cannot always fully trust the hosted applications. For a
+more restricted environment (i.e. a server fully under control of a single person or organization),
+the emperor running as root without &lt;em&gt;tyrant-mode&lt;/em&gt; is probably the best way.&lt;/p&gt;
 
-&lt;p&gt;The main configuration file is &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/uwsgi.ini&lt;/code&gt; and the child instances have one configuration
-file per instance in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi/vassals&lt;/code&gt;. Note that these paths are valid for OpenSUSE
-distributions and can be different on your system. Check the man page(s).&lt;/p&gt;
+&lt;h2 id=&quot;methods-of-operation&quot;&gt;Methods of operation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Emperor runs as root (no &lt;strong&gt;uid&lt;/strong&gt; and &lt;strong&gt;gid&lt;/strong&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;emperor.ini&lt;/code&gt;). In this case, the emperor will not
+drop root privileges and gets full control over the vassals. That means, each vassal can run under
+its own uid and can fully specify socket permissions and ownership. While this is arguably the
+most flexible way of running uWSGI, it also requires that users with the ability to set up their
+own vassal configuration can be trusted, which is not always the case. Since the UID and GID of
+the vassal process can freely be given in the vassal configuration file, a user could, for
+example, run a vassal under a UID different of his own which is obviously a possible security
+risk.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To solve this problem, welcome &lt;strong&gt;tyrant-mode&lt;/strong&gt;. In this mode, the emperor still runs as
+root&lt;sup id=&quot;fnref:tyrant-noroot&quot;&gt;&lt;a href=&quot;#fn:tyrant-noroot&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, but it is no longer possible to freely specify UID and GID for a vassal
+process. The UID and GID are taken &lt;strong&gt;from the vassal configuration file’s own ownership&lt;/strong&gt;. So
+let’s say, user &lt;strong&gt;foo&lt;/strong&gt; creates a &lt;code class=&quot;highlighter-rouge&quot;&gt;vassal.ini&lt;/code&gt; in his own $HOME, the file will be owned by
+&lt;strong&gt;foo&lt;/strong&gt;. When used by the emperor for a vassal (by symlinking it into the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi-emperor/vassals&lt;/code&gt; directory), the vassal will always run as user &lt;strong&gt;foo&lt;/strong&gt; with no way to
+change it. Note that, in &lt;em&gt;tyrant-mode&lt;/em&gt;, a vassal cannot run as root, so a vassal configuration
+file must always be owned by an unprivileged user, otherwise the emperor will refuse to accept it.&lt;/p&gt;
+
+    &lt;p&gt;To use &lt;em&gt;tyrant-mode&lt;/em&gt; with a &lt;strong&gt;non-privileged&lt;/strong&gt; emperor process, it is necessary to have POSIX
+Capabilities support compiled into uWSGI. On most modern Linux distributions, this should be the
+case, if unsure, check whether your &lt;code class=&quot;highlighter-rouge&quot;&gt;uwsgi&lt;/code&gt; binary is linked against &lt;code class=&quot;highlighter-rouge&quot;&gt;libcap&lt;/code&gt;:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    [alex@subspace:/home/alex]$&amp;gt;ldd /usr/bin/uwsgi
+        [...]
+    libcap.so.2 =&amp;gt; /lib/x86_64-linux-gnu/libcap.so.2
+        [...]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;To enable this, your emperor.ini should look somewhat like this:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nn&quot;&gt;[uwsgi]&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nobody&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;gid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nogroup&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;emperor-tyrant&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;cap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;setgid,setuid&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;emperor&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/tmp&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This instructs the emperor process to run as user nobody and enables it to control the UID and
+GID of the processes it spawns. It is arguably the most paranoid mode of operation offering the
+highest level of security while still allowing a sufficiently high level of freedom in a multi
+user hosting environment.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Emperor runs under a specific user- and group ID. The &lt;strong&gt;uid&lt;/strong&gt; and &lt;strong&gt;gid&lt;/strong&gt; must be specified in the
+emperor.ini file. In this mode, the vassals cannot run under different user IDs as the emperor has
+no way of changing the UID or GID of a process it spawns.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main configuration file is &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi-emperor/emperor.ini&lt;/code&gt; and the child instances (vassals in
+uWSGI terminology) have one configuration file per instance in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/uwsgi-emperor/vassals&lt;/code&gt;. Note
+that these paths are valid for Ubuntu Linux (and most probably most of its derivative distributions)
+and can be different on your system.&lt;/p&gt;
 
 &lt;p&gt;While uWSGI can be seen as a universal solution, it is most popular in the Python ecosystem to
 deploy web applications written in Python, using one of the popular frameworks like Django or
@@ -114,6 +181,14 @@ support a wide range of client configurations.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;commented-configuration-file-for-a-django-application&quot;&gt;Commented configuration file for a Django application&lt;/h2&gt;
+
+&lt;p class=&quot;dc&quot;&gt;The following assumes that uWSGI is running in emperor - vassal configuration. In this mode, the
+emperor should be seen as a master process that controls an arbitrary number of child instances.
+Each instance consists of multiple processes and/or threads and deploys a single web application.
+While the emperor runs as root in order to set up environments and enforce full control over all
+child instances, the children usually run unprivileged. Communication between the front end web
+server and the uWSGI application service happens via sockets, either TCP/UDP or (preferable, because
+of superior performance and little overhead) Unix domain sockets.&lt;/p&gt;
 
 &lt;p&gt;This is a heavily commented sample configuration, demonstrating a single vassal instance running a
 Django application (the &lt;a href=&quot;https://wagtail.io&quot;&gt;Wagtail&lt;/a&gt; CMS framework).&lt;/p&gt;
@@ -293,7 +368,18 @@ at all or behave erratically.&lt;/p&gt;
 &lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;As already said, the above is the absolute minimum for configuring a virtual host for an uWSGI
-application.&lt;/p&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.</summary></entry><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
+application.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:tyrant-noroot&quot;&gt;
+      &lt;p&gt;It is possible to use &lt;strong&gt;tyrant-mode&lt;/strong&gt; while running the emperor as unprivileged
+user. This requires that uWSGI has been built with &lt;a href=&quot;http://uwsgi-docs.readthedocs.io/en/latest/Capabilities.html&quot;&gt;POSIX
+Capabilities&lt;/a&gt;, which should be the
+case on most modern Linux distributions. &lt;a href=&quot;#fnref:tyrant-noroot&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alex Vie</name></author><category term="[&quot;Site&quot;, &quot;Development&quot;]" /><category term="first" /><summary type="html">uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.</summary></entry><entry><title type="html">Upgrading to Thunderbird 60</title><link href="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/" rel="alternate" type="text/html" title="Upgrading to Thunderbird 60" /><published>2018-06-24T17:00:30+02:00</published><updated>2018-06-24T17:00:30+02:00</updated><id>https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60</id><content type="html" xml:base="https://silvercircle.github.io/2018/06/24/upgrading-thunderbird-60/">&lt;h1 id=&quot;upgrading-to-thunderbird-version-60&quot;&gt;Upgrading to Thunderbird version 60&lt;/h1&gt;
 
 &lt;time style=&quot;margin-top:-30px;&quot; datetime=&quot;2018-06-24T17:00:30+0200&quot; class=&quot;icon&quot;&gt;
   &lt;em&gt;Jun.&amp;nbsp;&amp;nbsp;2018&lt;/em&gt;
