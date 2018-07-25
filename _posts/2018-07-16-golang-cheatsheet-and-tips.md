@@ -43,6 +43,10 @@ produced during compilation.
 [alex@warpcore:/home/alex/go/src/testgo]$> go-8 build -gccgoflags=-pthread dbtest.go
 ```
 
+**Note:** `go-8` is the wrapper to `gccgo`, using GCC8 on Suse Linux distributions. This might be
+different for your distribution and depends on the gccgo version. GCC8 based gccgo compiler is
+compatible with Go version 1.10.
+
 ## Getting gocode and go-mode in Emacs to work
 
 This is for Go version 1.10. First, install the mdempsky fork of gocode as the old gocode might be
@@ -60,6 +64,8 @@ which case, the Go backend `company-go` is required. Install it like `go-mode` b
 requires minimal configuration - if `gocode` is in your $PATH it will be found and used
 automatically.
 
-It's important to have `$GOPATH` set properly, otherwise *gocode* won't work at all. Also, *gocode* only
-recognizes packages built and installed with the default go compiler. Personally, I use gccgo only
-for release builds and usually install all packages with both compilers.
+Note that gocode depends on a properly configured `$GOPATH` environment variable and may not work at
+all without it, particularly if you do not use the default go directory, which is normally set to
+`~/go` by default. Also, *gocode* only recognizes packages built and installed with the default go
+compiler. Personally, I use gccgo only for release builds and usually install all packages with both
+compilers.

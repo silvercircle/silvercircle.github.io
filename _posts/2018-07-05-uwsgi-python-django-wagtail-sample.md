@@ -2,7 +2,7 @@
 author: Alex Vie
 title: uWSGI configuration example for a Django/Wagtail app
 date: 2018-07-06T17:00:30+0200
-modified: 2018-07-06T17:00:36+0200
+modified: 2018-07-25T17:00:36+0200
 layout: no_sidebar
 menucontext: blog
 share: 1
@@ -24,23 +24,77 @@ excerpt: >
 {% include defs.md %}
 {% include post_header.html %}
 
-The following assumes that uWSGI is running in emperor - vassal configuration. In this mode, the
-emperor should be seen as a master process that controls an arbitrary number of child instances.
-Each instance consists of multiple processes and/or threads and deploys a single web application.
-While the emperor runs as root in order to set up environments and enforce full control over all
-child instances, the children usually run unprivileged. Communication between the front end web
-server and the uWSGI application service happens via sockets, either TCP/UDP or (preferable, because
-of superior performance and little overhead) Unix domain sockets.
+uWSGI is an application stack for hosting web services written in different languages, using
+different technologies, all under a common hood. It originated from the WSGI project, which
+basically was Python-only into a much more flexible framework that nowadays can host Python, Java,
+Go, .NET (via Mono) applications, either as backend service behind a web server like Apache or
+Nginx, or by using the platform specific server components.
 {:dc}
 
-The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires 
-administrator privileges to control. Under normal circumstances the emperor will run and monitor its 
-child instances. Adding and removing child instances is possible at runtime, though a restart of the 
-emperor is necessary to recognize such configuration changes.
+The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires
+root privileges to be controlled. The emperor can itself run either as root or as an unprivileged user,
+depending on which features and security level the administrator wants to enforce. In my opinion,
+the recommended way is **tyrant-mode** in combination with POSIX Capabilities, as this will give you
+best of both worlds: High security level and a reasonably flexible and not overly restrictive multi
+user environment. Ideal for hosters who cannot always fully trust the hosted applications. For a
+more restricted environment (i.e. a server fully under control of a single person or organization),
+the emperor running as root without *tyrant-mode* is probably the best way.
 
-The main configuration file is `/etc/uwsgi/uwsgi.ini` and the child instances have one configuration
-file per instance in `/etc/uwsgi/vassals`. Note that these paths are valid for OpenSUSE
-distributions and can be different on your system. Check the man page(s).
+## Methods of operation
+
+* Emperor runs as root (no **uid** and **gid** in `emperor.ini`). In this case, the emperor will not
+  drop root privileges and gets full control over the vassals. That means, each vassal can run under
+  its own uid and can fully specify socket permissions and ownership. While this is arguably the
+  most flexible way of running uWSGI, it also requires that users with the ability to set up their
+  own vassal configuration can be trusted, which is not always the case. Since the UID and GID of
+  the vassal process can freely be given in the vassal configuration file, a user could, for
+  example, run a vassal under a UID different of his own which is obviously a possible security
+  risk.
+   
+* To solve this problem, welcome **tyrant-mode**. In this mode, the emperor still runs as
+  root[^tyrant-noroot], but it is no longer possible to freely specify UID and GID for a vassal
+  process. The UID and GID are taken **from the vassal configuration file's own ownership**. So
+  let's say, user **foo** creates a `vassal.ini` in his own $HOME, the file will be owned by
+  **foo**. When used by the emperor for a vassal (by symlinking it into the
+  `/etc/uwsgi-emperor/vassals` directory), the vassal will always run as user **foo** with no way to
+  change it. Note that, in *tyrant-mode*, a vassal cannot run as root, so a vassal configuration
+  file must always be owned by an unprivileged user, otherwise the emperor will refuse to accept it.
+  
+  To use *tyrant-mode* with a **non-privileged** emperor process, it is necessary to have POSIX
+  Capabilities support compiled into uWSGI. On most modern Linux distributions, this should be the
+  case, if unsure, check whether your `uwsgi` binary is linked against `libcap`:
+  
+```
+    [alex@subspace:/home/alex]$>ldd /usr/bin/uwsgi
+        [...]
+    libcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2
+        [...]
+```
+
+    To enable this, your emperor.ini should look somewhat like this:
+
+```ini
+    [uwsgi]
+    uid = nobody
+    gid = nogroup
+    emperor-tyrant = true
+    cap = setgid,setuid
+    emperor = /tmp
+```
+
+    This instructs the emperor process to run as user nobody and enables it to control the UID and
+    GID of the processes it spawns. It is arguably the most paranoid mode of operation offering the
+    highest level of security while still allowing a sufficiently high level of freedom in a multi
+    user hosting environment.
+    
+* Emperor runs under a specific user- and group ID. The **uid** and **gid** must be specified in the
+  emperor.ini file. In this mode, the vassals cannot run under different user IDs as the emperor has
+  no way of changing the UID or GID of a process it spawns.
+
+The main configuration file is `/etc/uwsgi-emperor/emperor.ini` and the child instances (vassals in
+uWSGI terminology) have one configuration file per instance in `/etc/uwsgi-emperor/vassals`. Note
+that these paths are valid for Ubuntu Linux (and most probably most of its derivative distributions)
+and can be different on your system.
 
 While uWSGI can be seen as a universal solution, it is most popular in the Python ecosystem to
 deploy web applications written in Python, using one of the popular frameworks like Django or
@@ -66,6 +120,15 @@ support a wide range of client configurations.
 * Mono .NET
 
 ## Commented configuration file for a Django application
+
+The following assumes that uWSGI is running in emperor - vassal configuration. In this mode, the
+emperor should be seen as a master process that controls an arbitrary number of child instances.
+Each instance consists of multiple processes and/or threads and deploys a single web application.
+While the emperor runs as root in order to set up environments and enforce full control over all
+child instances, the children usually run unprivileged. Communication between the front end web
+server and the uWSGI application service happens via sockets, either TCP/UDP or (preferable, because
+of superior performance and little overhead) Unix domain sockets.
+{:dc}
 
 This is a heavily commented sample configuration, demonstrating a single vassal instance running a
 Django application (the [Wagtail](https://wagtail.io) CMS framework). 
@@ -196,4 +259,9 @@ at all or behave erratically.
    }
 ```
 As already said, the above is the absolute minimum for configuring a virtual host for an uWSGI
-application. 
+application.
+
+[^tyrant-noroot]: It is possible to use **tyrant-mode** while running the emperor as unprivileged
+    user. This requires that uWSGI has been built with [POSIX
+    Capabilities](http://uwsgi-docs.readthedocs.io/en/latest/Capabilities.html), which should be the
+    case on most modern Linux distributions. 

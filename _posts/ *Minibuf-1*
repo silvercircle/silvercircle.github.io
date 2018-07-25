@@ -1,0 +1,10 @@
+264  Swiper: 
+67           [...]
+68       libcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2
+69           [...]
+70   ```
+71   
+72     This indicates, your uWSGI installation is capable of running the emperor as non-root while still
+73   allowing to set specific uids for the vassals.
+74   
+75   To enable this, your `emperor.ini` should look somewhat like this:
