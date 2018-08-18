@@ -27,14 +27,21 @@ excerpt: >
 uWSGI is an application stack for hosting web services written in different languages, using
 different technologies, all under a common hood. It originated from the WSGI project, which
 basically was Python-only into a much more flexible framework that nowadays can host Python, Java,
-Go, .NET (via Mono) applications, either as backend service behind a web server like Apache or
-Nginx, or by using the platform specific server components.
+Go, .NET (via Mono) and more applications, either as backend service behind a web server like Apache
+or Nginx, or by using the platform specific server components.
 {:dc}
+
+The preferred mode of operation for production hosting environments is the so-called **emperor
+mode**. In this mode, a master process controls an arbitrary number of child processes, each of them
+hosting a single group of web applications. In uWSGI terminology, the master process is called
+emperor and the children are called vassals. For development environments, a simpler mode of
+operation without the controlling master process is possible, but it's not recommended for
+production sites where availability is a key factor.
 
 The uWSGI emperor process is typically managed by systemd on modern Linux distributions and requires
 root privileges to be controlled. The emperor can itself run either as root or as an unprivileged user,
 depending on which features and security level the administrator wants to enforce. In my opinion,
-the recommended way is **tyrant-mode** in combination with POSIX Capabilities, as this will give you
+the recommended way is **tyrat-mode** in combination with POSIX Capabilities, as this will give you
 best of both worlds: High security level and a reasonably flexible and not overly restrictive multi
 user environment. Ideal for hosters who cannot always fully trust the hosted applications. For a
 more restricted environment (i.e. a server fully under control of a single person or organization),
@@ -49,7 +56,9 @@ the emperor running as root without *tyrant-mode* is probably the best way.
   own vassal configuration can be trusted, which is not always the case. Since the UID and GID of
   the vassal process can freely be given in the vassal configuration file, a user could, for
   example, run a vassal under a UID different of his own which is obviously a possible security
-  risk.
+  risk. The only way to prevent this is to restrict the user's control over his configuration
+  files. While possible, this usually means more work for administrators and support staff, because
+  users must request assistance for certain tasks.
    
 * To solve this problem, welcome **tyrant-mode**. In this mode, the emperor still runs as
   root[^tyrant-noroot], but it is no longer possible to freely specify UID and GID for a vassal
@@ -57,7 +66,7 @@ the emperor running as root without *tyrant-mode* is probably the best way.
   let's say, user **foo** creates a `vassal.ini` in his own $HOME, the file will be owned by
   **foo**. When used by the emperor for a vassal (by symlinking it into the
   `/etc/uwsgi-emperor/vassals` directory), the vassal will always run as user **foo** with no way to
-  change it. Note that, in *tyrant-mode*, a vassal cannot run as root, so a vassal configuration
+  change it. Note that, in *tyrant-mode*, a vassal cannot run as root[^vassal-root], so a vassal configuration
   file must always be owned by an unprivileged user, otherwise the emperor will refuse to accept it.
   
   To use *tyrant-mode* with a **non-privileged** emperor process, it is necessary to have POSIX
@@ -86,10 +95,12 @@ the emperor running as root without *tyrant-mode* is probably the best way.
     GID of the processes it spawns. It is arguably the most paranoid mode of operation offering the
     highest level of security while still allowing a sufficiently high level of freedom in a multi
     user hosting environment.
-    
+
 * Emperor runs under a specific user- and group ID. The **uid** and **gid** must be specified in the
   emperor.ini file. In this mode, the vassals cannot run under different user IDs as the emperor has
-  no way of changing the UID or GID of a process it spawns.
+  no way of changing the UID or GID of a process it spawns. This is a reasonable compromise between
+  security and features, though flexibility is limited in this mode of operation as all applications
+  must run under the same user ID.
 
 The main configuration file is `/etc/uwsgi-emperor/emperor.ini` and the child instances (vassals in
 uWSGI terminology) have one configuration file per instance in `/etc/uwsgi-emperor/vassals`. Note
@@ -265,3 +276,7 @@ application.
     user. This requires that uWSGI has been built with [POSIX
     Capabilities](http://uwsgi-docs.readthedocs.io/en/latest/Capabilities.html), which should be the
     case on most modern Linux distributions. 
+
+[^vassal-root]: This really should never happen. Running a web application with root privilges opens
+    up so many problems and has potential for catastrophic security failures. So, a vassal should
+    never ever run as root.

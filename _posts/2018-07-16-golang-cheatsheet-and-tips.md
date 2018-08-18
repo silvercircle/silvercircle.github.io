@@ -69,3 +69,8 @@ all without it, particularly if you do not use the default go directory, which i
 `~/go` by default. Also, *gocode* only recognizes packages built and installed with the default go
 compiler. Personally, I use gccgo only for release builds and usually install all packages with both
 compilers.
+
+Sometimes (rarely though), gocode will get stuck and subsequently refuse to offer more completions
+for reasons unknown. I've not yet found a pattern or way to reproduce it. If that happens, simply do a
+`$PATH/to/gocode close` (or simply `gocode close` if it is in your $PATH). This will terminate
+gocode and emacs will happily re-launch it at the next attempt.
