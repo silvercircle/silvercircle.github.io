@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-10-18T01:33:37+02:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://silvercircle.github.io/software/user-chrome-thunderbird/","headline":"My thunderbird userChrome modifications","dateModified":"2017-10-18T01:33:37+02:00","datePublished":"2017-10-18T01:33:37+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/user-chrome-thunderbird/"},"author":{"@type":"Person","name":"AlexVie"},"description":"A small userChrome.css File to change some visual aspects of Mozilla Thunderbird. Works with TB version 52 or later (tested, may also work with older versions) Available as public gist on GitHub.","@context":"http://schema.org"}</script>
+{"headline":"My thunderbird userChrome modifications","dateModified":"2017-10-18T01:33:37+02:00","datePublished":"2017-10-18T01:33:37+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/software/user-chrome-thunderbird/"},"url":"https://silvercircle.github.io/software/user-chrome-thunderbird/","author":{"@type":"Person","name":"AlexVie"},"description":"A small userChrome.css File to change some visual aspects of Mozilla Thunderbird. Works with TB version 52 or later (tested, may also work with older versions) Available as public gist on GitHub.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -199,7 +199,7 @@
   <span>18</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2017-10-18T01:33:53+0200">2017-10-18 01:33:53 +0200</time><br />363 Words
+    Last modified: <time class="timeago" datetime="2018-08-18T21:30:00+0200">2018-08-18 21:30:00 +0200</time><br />397 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2017</span> at --><span class="time_symbol"></span><span class="time">01:33</span> | by AlexVie<br />
@@ -208,15 +208,11 @@
 <div class="clearfix"></div>
 <hr style="margin-top:2px;" />
 
-<div class="note red">
+<div class="note blue">
 <h3 class="alert">Warning</h3>
 <p>
-This is probably outdated by now. It’s been written for Thunderbird 52 which is no longer the most
-recent version. Thunderbird 60, the successor which is currently in Beta, requires minor changes to
-the <strong>userChrome</strong> stuff listed here. It will be updated when it goes final.
-</p>
-<p>
-I have written an article about Thunderbird 60 <a href="/2018/06/24/upgrading-thunderbird-60/">here</a>
+This has been updated for Thunderbird 60 which has been released recently. Do <strong>not</strong> use it for
+older versions of TB, it may break your layout.
 </p>
 </div>
 
@@ -224,18 +220,18 @@ I have written an article about Thunderbird 60 <a href="/2018/06/24/upgrading-th
 of choice. While it does have its own set of problems, it’s still one of the best remaining desktop 
 e-email applications in terms of flexibility, security and user experience. It is also free and Open 
 Source and enjoys a huge community.</p>
-<div class="floatimage right " style="width:50%; max-width:50%;">
+<div class="floatimage right borderless" style="width:50%; max-width:50%;">
 
 
 
-<a href="/assets/gfx/tbird_custom.png" data-fancybox="gallery" data-caption="Thunderbird 52.x with my userChrome modifications">
+<a href="/assets/gfx/tb60_customized.png" data-fancybox="gallery" data-caption="Thunderbird 60 screenshot">
 
 <figure style="position:relative;">
-        <img src="/assets/gfx/tbird_custom.png" alt="Thunderbird 52.x with my userChrome modifications" style="height:auto; margin:0; display:block;" />
+        <img src="/assets/gfx/tb60_customized.png" alt="Thunderbird 60 screenshot" style="height:auto; margin:0; display:block;" />
         
         
         <figcaption style="display:none;">
-                Thunderbird 52.x with my userChrome modifications
+                Thunderbird 60 screenshot
         </figcaption>
         
 </figure>
@@ -245,7 +241,7 @@ Source and enjoys a huge community.</p>
 
 
 <div class="floatimage_title">
-    Thunderbird 52.x with my userChrome modifications
+    Thunderbird 60 screenshot
 </div>
 
 </div>
@@ -254,21 +250,15 @@ Source and enjoys a huge community.</p>
 Thunderbird. Nothing spectacular, just a couple of minor changes:</p>
 
 <ul>
-  <li>
-    <p>alternating colors for the folder- and message tree control</p>
-  </li>
-  <li>
-    <p>rectangular tabs, less padding, less waste of space</p>
-  </li>
-  <li>
-    <p>minor changes to the message preview- and header area.</p>
-  </li>
-  <li>
-    <p>includes some minor styling changes for the Thunderbird-Conversations add-on.</p>
-  </li>
+  <li>alternating colors for the folder- and message tree control</li>
+  <li>rectangular tabs, less padding, less waste of space</li>
+  <li>minor changes to the message preview- and header area.</li>
+  <li>includes some minor styling changes for the Thunderbird-Conversations add-on.</li>
 </ul>
 
-<p><strong>Here is the code (embedded gist, if that does not show up for some reason, the <a href="https://gist.github.com/silvercircle/023bded0da891872f956b02b55a581ee">public 
+<p><br />
+<br />
+<strong>Here is the code (embedded gist, if that does not show up for some reason, the <a href="https://gist.github.com/silvercircle/023bded0da891872f956b02b55a581ee">public 
 gist</a> is available on 
 GitHub</strong>.
 <script src="https://gist.github.com/silvercircle/023bded0da891872f956b02b55a581ee.js"></script></p>
@@ -294,6 +284,14 @@ case. The folder <code class="highlighter-rouge">chrome</code> must be all lower
 can simply remove that file from its folder. It does not change anything outside itself. No special 
 settings are required and the modification is only tested on Thunderbird 52 or newer under Windows.</p>
 
+<h2 id="compatibility-notes">Compatibility notes</h2>
+
+<p>This was initially written for Thunderbird on Windows, but it should work on Linux or OS X. You may
+want to change the fonts, unless you have Verdana installed on Linux, which is entirely possible but
+beyond the scope of this document.</p>
+
+<p>If unsure, use <code class="highlighter-rouge">sans</code> for the font, this will usually be a shortcut for your default UI desktop font
+on most Linux distributions.</p>
 
         <div style="margin-top: 0.5em">
 

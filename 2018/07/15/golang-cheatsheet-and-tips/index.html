@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-15T22:00:30+02:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/","headline":"Go cheat sheet and tips","dateModified":"2018-07-15T22:00:30+02:00","datePublished":"2018-07-15T22:00:30+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.","@context":"http://schema.org"}</script>
+{"headline":"Go cheat sheet and tips","dateModified":"2018-07-15T22:00:30+02:00","datePublished":"2018-07-15T22:00:30+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/"},"url":"https://silvercircle.github.io/2018/07/15/golang-cheatsheet-and-tips/","author":{"@type":"Person","name":"Alex Vie"},"description":"A curated list of things I encountered when using the Go language. Most of this stuff is probably mentioned elsewhere, so this should be seen as some kind of personal reference. You may or may not find anything useful here. This will be updated frequently or occasionally, depending on what I may find noteworthy.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -203,7 +203,7 @@
   <span>15</span>
 </time>
 <div class="author subheader" style="float:right;text-align:right;">
-    Last modified: <time class="timeago" datetime="2018-07-15T22:00:30+0200">2018-07-15 22:00:30 +0200</time><br />384 Words
+    Last modified: <time class="timeago" datetime="2018-07-15T22:00:30+0200">2018-07-15 22:00:30 +0200</time><br />444 Words
 </div>
 <div class="author subheader">
     <!--<span class="year">2018</span> at --><span class="time_symbol"></span><span class="time">22:00</span> | by Alex Vie&nbsp;in&nbsp;<a href="/category/site/index.html">Site</a>,&nbsp;<a href="/category/development/index.html">Development</a><br />
@@ -258,6 +258,11 @@ all without it, particularly if you do not use the default go directory, which i
 <code class="highlighter-rouge">~/go</code> by default. Also, <em>gocode</em> only recognizes packages built and installed with the default go
 compiler. Personally, I use gccgo only for release builds and usually install all packages with both
 compilers.</p>
+
+<p>Sometimes (rarely though), gocode will get stuck and subsequently refuse to offer more completions
+for reasons unknown. I’ve not yet found a pattern or way to reproduce it. If that happens, simply do a
+<code class="highlighter-rouge">$PATH/to/gocode close</code> (or simply <code class="highlighter-rouge">gocode close</code> if it is in your $PATH). This will terminate
+gocode and emacs will happily re-launch it at the next attempt.</p>
 
         <div style="margin-top: 0.5em">
 
