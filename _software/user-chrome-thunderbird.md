@@ -2,7 +2,7 @@
 title: My thunderbird userChrome modifications
 author: AlexVie
 date: 2017-10-18T01:33:37+0200
-modified: 2017-10-18T01:33:53+0200
+modified: 2018-08-18T21:30:00+0200
 collection: software
 layout: no_sidebar
 reduced: big
