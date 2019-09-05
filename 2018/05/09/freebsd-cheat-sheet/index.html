@@ -13,9 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>FreeBSD Cheat Sheet | silvercircle/github/io</title>
-<meta name="generator" content="Jekyll v3.8.4" />
+<meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="FreeBSD Cheat Sheet" />
 <meta name="author" content="Alex Vie" />
 <meta property="og:locale" content="en_US" />
@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-05-09T03:02:30+02:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","headline":"FreeBSD Cheat Sheet","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.","@context":"http://schema.org"}</script>
+{"headline":"FreeBSD Cheat Sheet","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -424,7 +424,8 @@ FreeBSD: <span class="o">{</span>
   signature_type: <span class="s2">"fingerprints"</span>,
   fingerprints: <span class="s2">"/usr/share/keys/pkg"</span>,
   enabled: <span class="nb">yes</span>
-<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Simply change the first line of the FreeBSD block from <code class="highlighter-rouge">quarterly</code> to <code class="highlighter-rouge">latest</code>. To reflect
 the changes you must then do a <code class="highlighter-rouge">sudo pkg update</code> to re-load the repository. If you were on

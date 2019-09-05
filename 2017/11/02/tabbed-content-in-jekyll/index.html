@@ -13,9 +13,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Creating a simple tab control in Jekyll | silvercircle/github/io</title>
-<meta name="generator" content="Jekyll v3.8.4" />
+<meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Creating a simple tab control in Jekyll" />
 <meta name="author" content="Alex Vie" />
 <meta property="og:locale" content="en_US" />
@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-11-02T16:38:51+01:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/","dateModified":"2017-11-02T16:38:51+01:00","datePublished":"2017-11-02T16:38:51+01:00","headline":"Creating a simple tab control in Jekyll","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll’s.","@context":"http://schema.org"}</script>
+{"headline":"Creating a simple tab control in Jekyll","dateModified":"2017-11-02T16:38:51+01:00","datePublished":"2017-11-02T16:38:51+01:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/"},"url":"https://silvercircle.github.io/2017/11/02/tabbed-content-in-jekyll/","author":{"@type":"Person","name":"Alex Vie"},"description":"A include-able fragment to build a simple tab control in a Jekyll page. Simple and flexible, can be adopted easily to other static page generators. This is HTML/CSS/Javascript only, and should work for any static site generator with an include feature similar to Jekyll’s.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -281,15 +281,15 @@ page.</p>
         <span class="na">title</span><span class="pi">:</span> <span class="s">Page Two</span>
         <span class="na">source</span><span class="pi">:</span> <span class="s">source2</span>
         <span class="na">content</span><span class="pi">:</span> <span class="pi">&gt;</span>
-            <span class="no">## Headline</span>
+            <span class="s">## Headline</span>
 
-            <span class="no">This is the content of the second tab, it is defined in the frontmatter as **markdown**.</span>
+            <span class="s">This is the content of the second tab, it is defined in the frontmatter as **markdown**.</span>
 
-            <span class="no">A Link: [link](https://foo.bar.org)</span>
+            <span class="s">A Link: [link](https://foo.bar.org)</span>
     <span class="na">tab3</span><span class="pi">:</span>
         <span class="na">name</span><span class="pi">:</span> <span class="s">baz</span>
         <span class="na">title</span><span class="pi">:</span> <span class="s">Page Three</span>
-        <span class="na">active</span><span class="pi">:</span> <span class="s">1</span>
+        <span class="na">active</span><span class="pi">:</span> <span class="m">1</span>
         <span class="na">source</span><span class="pi">:</span> <span class="s">source3</span>
 </code></pre></div></div>
 <p>The root element (<code class="highlighter-rouge">page.tabs</code> in our case) is then passed to the include fragment which will iterate 
@@ -409,16 +409,17 @@ matters if your page is heavy on scripts and does a lot in the <code class="high
 </pre></td><td class="code"><pre>    <span class="c1">// set the default content from data-defaultsource</span>
     <span class="c1">// if your page is script-heavy, you may want to make this execute early</span>
     <span class="c1">// in the $(document).ready() handler to avoid ugly delays.</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'div.tabcontrol.body'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'defaultsource'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">div.tabcontrol.body</span><span class="dl">'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="dl">'</span><span class="s1">defaultsource</span><span class="dl">'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
     <span class="p">});</span>
 
     <span class="c1">// handle click on tabs</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'li.tabcontrol.tab'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'target'</span><span class="p">)).</span><span class="nx">html</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'source'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
-        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'active'</span><span class="p">);</span>
-        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'active'</span><span class="p">);</span>
-    <span class="p">});</span></pre></td></tr></tbody></table></code></pre></figure>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">li.tabcontrol.tab</span><span class="dl">'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)).</span><span class="nx">html</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="dl">'</span><span class="s1">source</span><span class="dl">'</span><span class="p">)).</span><span class="nx">html</span><span class="p">());</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">active</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">active</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="demonstration">Demonstration</h2>
 
