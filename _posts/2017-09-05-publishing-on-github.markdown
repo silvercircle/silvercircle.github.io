@@ -7,7 +7,7 @@ layout: no_sidebar
 reduced: big
 categories: [Site]
 menucontext: blog
-permalink: /articles/publishing-on-github
+permalink: /articles/publishing-on-github.html
 tag: [first, Jekyll, GitHub]
 disqus: 1
 share: 1
@@ -16,10 +16,10 @@ excerpt: >
     [GitHub](https://github.com) is not only the largest developer community on the net, they also offer lots of free services. Code repositories for free Open Source project are one thing, web hosting for simple static web sites another one. People might be curious whether such simple hosting without PHP, Java, Python or even a database really works.
     <br>
     It really depends on your needs, but I think, for the majority of simple blogs and/or personal homepages that are nowadays using Wordpress, it should work well.
-image: logos/github-mark.png
-image_width: 100px
-image_align: right
-image_title: GitHub Logo
+image:
+  source: jekyll
+  width: 100px
+  align: right
 ---
 {% include defs.md %}
 # Publishing on GitHub
