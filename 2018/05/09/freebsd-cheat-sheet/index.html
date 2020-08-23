@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-05-09T03:02:30+02:00" />
 <script type="application/ld+json">
-{"headline":"FreeBSD Cheat Sheet","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/","dateModified":"2018-05-09T03:02:30+02:00","datePublished":"2018-05-09T03:02:30+02:00","headline":"FreeBSD Cheat Sheet","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/05/09/freebsd-cheat-sheet/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"This is a personal collection of items I took note of for later reference, after I recently picked up FreeBSD again. May not be useful at all for anyone except myself and is kept here for personal reference mainly.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -258,7 +258,7 @@ or so ago) and found a lot of things have changed, but it still feels very famil
 somewhat „home”, even after so many years. Kudos to the devs for keeping the traditional
 BSD-ish feeling alive and rocking. Installation (in a VMWare virtual machine to begin
 with) went smooth and everything felt like I had left it only recently. Except that it now
-has binary packages, similar to most Linux distributions, switched from GCC to clang<sup id="fnref:clang"><a href="#fn:clang" class="footnote">1</a></sup> and
+has binary packages, similar to most Linux distributions, switched from GCC to clang<sup id="fnref:clang" role="doc-noteref"><a href="#fn:clang" class="footnote">1</a></sup> and
 got the most impressive and powerful <a href="https://en.wikipedia.org/wiki/ZFS">filesystem</a> ever
 designed for an OS fully working as a first-class citizen.</p>
 <p>This is a personal collection of items I took note of for later reference. It’s by no
@@ -432,11 +432,11 @@ the changes you must then do a <code class="highlighter-rouge">sudo pkg update</
 <code class="highlighter-rouge">quarterly</code> for a prolonged time, be prepared for a lot of package upgrades when you next
 do a <code class="highlighter-rouge">sudo pkg upgrade</code>.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:clang">
+    <li id="fn:clang" role="doc-endnote">
       <p>This is something you won’t even notice unless you know it. Clang behaves
-almost exactly like GCC, mimics its options and even most of the error messages. <a href="#fnref:clang" class="reversefootnote">&#8617;</a></p>
+almost exactly like GCC, mimics its options and even most of the error messages. <a href="#fnref:clang" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

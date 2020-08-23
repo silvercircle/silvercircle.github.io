@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-10-10T19:41:31+02:00" />
 <script type="application/ld+json">
-{"headline":"Embedding YouTube videos in Jekyll","dateModified":"2017-10-10T19:41:31+02:00","datePublished":"2017-10-10T19:41:31+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/"},"url":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/","author":{"@type":"Person","name":"Alex Vie"},"description":"A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll’s.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/","dateModified":"2017-10-10T19:41:31+02:00","datePublished":"2017-10-10T19:41:31+02:00","headline":"Embedding YouTube videos in Jekyll","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2017/10/10/embed-youtube-jekyll/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"A include-able fragment that allows to embed youtube videos by video ID. The video will be sized properly to the available width using CSS only. No Javascript or other dependencies needed. This is HTML/CSS only, should work for any static site generator with an include feature similar to Jekyll’s.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -205,12 +205,12 @@ responsible for setting the overall width of the element and the inner one conta
 
 <h6 id="use-it-with">Use it with:</h6>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">youtube</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>youtube.html<span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="p">%}</span>
 </code></pre></div></div>
 
 <p><strong>Specify an optional width for the outer container:</strong></p>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">youtube</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"80%"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>youtube.html<span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s2">"8lsvjdkQ"</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="s2">"80%"</span><span class="w"> </span><span class="p">%}</span>
 </code></pre></div></div>
 
 <p><br /></p>

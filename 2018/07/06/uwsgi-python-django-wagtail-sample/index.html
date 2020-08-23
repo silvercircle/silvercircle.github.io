@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-06T17:00:30+02:00" />
 <script type="application/ld+json">
-{"headline":"uWSGI configuration example for a Django/Wagtail app","dateModified":"2018-07-06T17:00:30+02:00","datePublished":"2018-07-06T17:00:30+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/"},"url":"https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/","author":{"@type":"Person","name":"Alex Vie"},"description":"uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/","dateModified":"2018-07-06T17:00:30+02:00","datePublished":"2018-07-06T17:00:30+02:00","headline":"uWSGI configuration example for a Django/Wagtail app","mainEntityOfPage":{"@type":"WebPage","@id":"https://silvercircle.github.io/2018/07/06/uwsgi-python-django-wagtail-sample/"},"author":{"@type":"Person","name":"Alex Vie"},"description":"uWSGI is a widely accepted standard for deploying web applications in many different frameworks and languages, though it is particularly popular in the Python and to some lesser extent, the Ruby ecosystems. This example shows a typical configuration for a Django web application in Python 3, using uWSGI in emperor mode.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -251,12 +251,12 @@ users must request assistance for certain tasks.</p>
   </li>
   <li>
     <p>To solve this problem, welcome <strong>tyrant-mode</strong>. In this mode, the emperor still runs as
-root<sup id="fnref:tyrant-noroot"><a href="#fn:tyrant-noroot" class="footnote">1</a></sup>, but it is no longer possible to freely specify UID and GID for a vassal
+root<sup id="fnref:tyrant-noroot" role="doc-noteref"><a href="#fn:tyrant-noroot" class="footnote">1</a></sup>, but it is no longer possible to freely specify UID and GID for a vassal
 process. The UID and GID are taken <strong>from the vassal configuration file’s own ownership</strong>. So
 let’s say, user <strong>foo</strong> creates a <code class="highlighter-rouge">vassal.ini</code> in his own $HOME, the file will be owned by
 <strong>foo</strong>. When used by the emperor for a vassal (by symlinking it into the
 <code class="highlighter-rouge">/etc/uwsgi-emperor/vassals</code> directory), the vassal will always run as user <strong>foo</strong> with no way to
-change it. Note that, in <em>tyrant-mode</em>, a vassal cannot run as root<sup id="fnref:vassal-root"><a href="#fn:vassal-root" class="footnote">2</a></sup>, so a vassal configuration
+change it. Note that, in <em>tyrant-mode</em>, a vassal cannot run as root<sup id="fnref:vassal-root" role="doc-noteref"><a href="#fn:vassal-root" class="footnote">2</a></sup>, so a vassal configuration
 file must always be owned by an unprivileged user, otherwise the emperor will refuse to accept it.</p>
 
     <p>To use <em>tyrant-mode</em> with a <strong>non-privileged</strong> emperor process, it is necessary to have POSIX
@@ -517,18 +517,18 @@ at all or behave erratically.</p>
 <p>As already said, the above is the absolute minimum for configuring a virtual host for an uWSGI
 application.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:tyrant-noroot">
+    <li id="fn:tyrant-noroot" role="doc-endnote">
       <p>It is possible to use <strong>tyrant-mode</strong> while running the emperor as unprivileged
 user. This requires that uWSGI has been built with <a href="http://uwsgi-docs.readthedocs.io/en/latest/Capabilities.html">POSIX
 Capabilities</a>, which should be the
-case on most modern Linux distributions. <a href="#fnref:tyrant-noroot" class="reversefootnote">&#8617;</a></p>
+case on most modern Linux distributions. <a href="#fnref:tyrant-noroot" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:vassal-root">
+    <li id="fn:vassal-root" role="doc-endnote">
       <p>This really should never happen. Running a web application with root privilges opens
 up so many problems and has potential for catastrophic security failures. So, a vassal should
-never ever run as root. <a href="#fnref:vassal-root" class="reversefootnote">&#8617;</a></p>
+never ever run as root. <a href="#fnref:vassal-root" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

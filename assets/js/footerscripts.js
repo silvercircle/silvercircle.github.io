@@ -449,8 +449,8 @@ function onMenuArrowClick(el)
 
 function PopupCenter(url, title, w, h) {
     // Fixes dual-screen position                         Most browsers      Firefox
-    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
-    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+    var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
+    var dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
 
     var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
     var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
@@ -491,7 +491,7 @@ $(document).ready(function(){
       }
     });
 
-    if (Cookies.get("cookieconsent") != 'accepted') {
+    if (Cookies.get("cookieconsent") !== 'accepted') {
       $('div#cookiewarning').css('visibility', 'visible');
       $('div#cookiewarning').fadeIn();
     }
@@ -507,7 +507,7 @@ $(document).ready(function(){
     $('div.spoiler_header').on('click', function(event) {
       $(this).hide();
         $('div#' +  $(this).attr('data-target')).fadeIn();
-        if($(this).attr('data-saveable') != undefined) {
+        if($(this).attr('data-saveable') !== undefined) {
             Cookies.set($(this).attr('data-target'), 'saved', { path: '/', expires: 350});
         }
     });
