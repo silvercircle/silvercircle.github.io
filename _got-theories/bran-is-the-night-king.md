@@ -43,7 +43,7 @@ getting even more complex, because there are varieties, one of them (the relevan
 The theory basically states, that Bran is responsible for the existence of the Night King in the 
 same way he is responsible for the fate of Hodor. We remember, as seen in famous season 6 episode 
 *The Door*, Bran's reckless and inexperienced use of his supernatural abilities is the cause for 
-Hodor's mental state in present time.
+Hodor's mental state in present time. Whatever we know about Hodor, we cannot really know more than 
 
 He traveled back in time and showed Hodor - by warging into Hodor's past presence Wylis - an event 
 of the future: The dreadful cave scene during which Hodor died at the hands of wights while saving 
@@ -81,7 +81,7 @@ has been used in fantasy before.
 
 * Bran claims he can see *everything past*. Sansa explains to Arya, *he has visions*.
 
-* The Three-Eyed Raven explains to Bran that <<*he will never be able to walk again but instead will 
+* The Three-Eyed Raven explains dies to Bran that <<*he will never be able to walk again but instead will 
   fly*>>. Many believe it meant that Bran will, at some time, warg into a dragon. Possible? Sure, 
   but maybe it was really meant he will *fly through time*.
 
@@ -222,5 +222,4 @@ explanations do exist.
     required to kill the Great Other. Jon will have to sacrifice his little brother.
 
 {% include content/got/got-theory-footer.md %}
-
 

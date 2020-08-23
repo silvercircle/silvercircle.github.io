@@ -15,8 +15,8 @@ pagination:
   enabled: true
   debug: false
   per_page: 10
-  collection: 'posts' 
-  trail: 
+  collection: 'posts'
+  trail:
     before: 3
     after: 3
 collections:

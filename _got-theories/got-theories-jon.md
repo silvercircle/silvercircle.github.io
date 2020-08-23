@@ -51,7 +51,8 @@ true Targaryen.
 We also know, that his real name is *Aegon Targaryen*, but for historical reasons and because this 
 fact is still unbeknownst to him, I'll continue to use the name Jon, which was given to him by Ned 
 Stark as part of the protection scheme against the wrath of Robert Baratheon, whose intention was to 
-wipe out all Targaryens left in the world.
+wipe out all Targaryens left in the world, bastard or not would not have mattered to him in any imaginable way. Now
+, this is something 
 
 ## First, Jon is the Azor Ahai
 

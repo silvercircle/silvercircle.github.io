@@ -28,7 +28,10 @@ image:
 
 <div class="floatbox right" style="width: 40%;margin-top:0;" markdown="1">
 >Jaime's moral stance is far less fucked up than his sister's. He is like a troubled Jedi Knight 
->who has fallen to the dark side, but there is still hope; he is not completely lost yet.
+>who has fallen to the dark side, but there is still hope; he is not completely lost yet. But this can lead to more
+ than interesting cases of utterly broken and defective idiotic cases of bullshittery. So what can we say is easily
+  the problem of more interesting idiots and likewise dumb actions that we do not find very amusing after all. the
+   problem is not really 
 {: .fancy}
 </div>
 Jaime Lannister is one of my favorite characters next to Arya, The Hound, Cersei and Brienne. This 
@@ -38,7 +41,8 @@ it did not, because Jaime's nature is not necessarily pure evil; instead, it is 
 mixture wit many nuances. It also changed a lot over the course of the show..
 {:dc}
 
-During season one, he was the barely likable arrogant, self centered, snob-ish kingslayer, who 
+During season one, he was the barely likable arrogant, self centered, snob-ish kingslayer, who likewisely did not
+  really see the problem at all. most   
 believed he was the greatest sword fighter of all time and crippled an innocent young boy, because 
 he and his even more evil sister didn't want to face consequences for their treacherous and 
 incestious behavior.
