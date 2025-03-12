@@ -1,0 +1,1075 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://subspace.cc/nvim/keymap/">
+      
+      
+        <link rel="prev" href="../configuration/">
+      
+      
+        <link rel="next" href="../lsp/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Custom key mappings - Subspace Neovim Config</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/fonts/breve-sans.css">
+    
+      <link rel="stylesheet" href="../css/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#custom-key-mappings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Subspace Neovim Config" class="md-header__button md-logo" aria-label="Subspace Neovim Config" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Subspace Neovim Config
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Custom key mappings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Content Index
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../commandpalette/" class="md-tabs__link">
+        
+  
+    
+  
+  The Command Palette
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../configuration/" class="md-tabs__link">
+        
+  
+    
+  
+  Configuring and options
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Custom key mappings
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../lsp/" class="md-tabs__link">
+        
+  
+    
+  
+  How to configure LSP
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../theme/" class="md-tabs__link">
+        
+  
+    
+  
+  Theme documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tweaks/" class="md-tabs__link">
+        
+  
+    
+  
+  How the Tweaks file works:
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../plugins/fzf/" class="md-tabs__link">
+          
+  
+    
+  
+  Plugins
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Subspace Neovim Config" class="md-nav__button md-logo" aria-label="Subspace Neovim Config" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Subspace Neovim Config
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Content Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commandpalette/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Command Palette
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring and options
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Custom key mappings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Custom key mappings
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-pickers-telescope" class="md-nav__link">
+    <span class="md-ellipsis">
+      File pickers (Telescope)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys-related-to-nvim-tree-or-neotree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keys related to Nvim-Tree or Neotree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys-related-to-the-terminal-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      keys related to the terminal frame
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-main-areas-aka-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the main areas (aka split)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-navigation-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Various navigation helpers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quickfix-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickfix mapping
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Various keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-paragraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format paragraph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cmp-completion-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMP (completion) mapping.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to configure LSP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Theme documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tweaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How the Tweaks file works:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plugins
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/fzf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fzf-Lua Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/oil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oil (file manager)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="custom-key-mappings">Custom key mappings<a class="headerlink" href="#custom-key-mappings" title="Permanent link">&para;</a></h1>
+<p>There are many custom keymappings in this config. The majority is defined in <code>plugins/command_center.lua</code> 
+forming a command palette which can be activated by <code>A-p</code>. This is similar to the command palette known 
+in other editors. It shows keymappings and command descriptions, is divided into categories and 
+searchable like any other Telescope picker.</p>
+<p>Some essential commands are defined in <code>keymap.lua</code>, particularly those that should always be available 
+even when the command palette is not (yet) loaded.</p>
+<p><code>Alt-Cursorkey</code> is used to navigate windows, so <code>A-Left</code> goes to the left window, <code>A-Down</code> to the split 
+below the current and so on.</p>
+<p>Key notation is in the Vim format without angle brackets. So <code>leader n</code> means to hit the leader key 
+followed by <code>n</code>, <code>C-n</code> means <code>Ctrl-n</code> and so on.</p>
+<p>Some keymaps use the notation of a <code>root directory</code>. This is defined as the project root directory for 
+the active buffer. To find it, various utility functions are used for a <em>best guess</em> approach. If the 
+file is under <strong>GIT</strong> version control, then the <code>GIT root</code> will be used. If it is not, a pattern approach 
+similar to LSP config will be used to find typical project root patterns. Note that this might fail and 
+return <code>nil</code> in which case the directory of the active buffer will be used.</p>
+<h2 id="file-pickers-telescope">File pickers (Telescope)<a class="headerlink" href="#file-pickers-telescope" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-p</td>
+<td style="text-align: center;">n</td>
+<td>Select recent file (Telescope oldfiles)</td>
+</tr>
+<tr>
+<td>C-e</td>
+<td style="text-align: center;">n,i</td>
+<td>Select buffer (loaded or unloaded, Telescope buffers)</td>
+</tr>
+<tr>
+<td>F8</td>
+<td style="text-align: center;">n</td>
+<td>Find files in the <code>root</code> directory of the active buffer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="keys-related-to-nvim-tree-or-neotree">Keys related to Nvim-Tree or Neotree<a class="headerlink" href="#keys-related-to-nvim-tree-or-neotree" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leader ,</td>
+<td style="text-align: center;">n</td>
+<td>Toggle the tree on the left side</td>
+</tr>
+<tr>
+<td>leader r</td>
+<td style="text-align: center;">n</td>
+<td>Find the current file in the tree</td>
+</tr>
+<tr>
+<td>leader R</td>
+<td style="text-align: center;">n</td>
+<td>Sync the tree with the project root directory of the current  file</td>
+</tr>
+<tr>
+<td>leader nr</td>
+<td style="text-align: center;">n</td>
+<td>sync tree with the parent folder of the current file</td>
+</tr>
+</tbody>
+</table>
+<h2 id="keys-related-to-the-terminal-frame">keys related to the terminal frame<a class="headerlink" href="#keys-related-to-the-terminal-frame" title="Permanent link">&para;</a></h2>
+<p>The terminal split is always opened below the current one. This works as toggle, if it's open, it will be 
+closed. See the <a href="../configuration/">docs</a> of how to avoid opening a terminal on startup.</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F11</td>
+<td style="text-align: center;">n</td>
+<td>Toggle the terminal frame at the bottom</td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigating-the-main-areas-aka-split">Navigating the main areas (aka split)<a class="headerlink" href="#navigating-the-main-areas-aka-split" title="Permanent link">&para;</a></h2>
+<p>The main window is basically divided into four areas. The file tree on the left side, the main editor 
+window in the center, a terminal split right below it and an optional outline view on the right side of 
+the main editor area. There are quick navigation keys to focus these frames as follows:</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-1</td>
+<td style="text-align: center;">n,i,t,v</td>
+<td>Focus the left frame (file tree)</td>
+</tr>
+<tr>
+<td>A-2</td>
+<td style="text-align: center;">n,i,t,v</td>
+<td>Focus the main text area</td>
+</tr>
+<tr>
+<td>A-3</td>
+<td style="text-align: center;">n,i,t,v</td>
+<td>Open or Focus the symbol outline tree (when available)</td>
+</tr>
+<tr>
+<td>A-4</td>
+<td style="text-align: center;">n,i,t,v</td>
+<td>Open or focus the terminal</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this also works when the editor was started in plain mode without an active file tree and 
+terminal split.</p>
+<h2 id="various-navigation-helpers">Various navigation helpers<a class="headerlink" href="#various-navigation-helpers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-Backspace</td>
+<td style="text-align: center;">n,i</td>
+<td>Activate the jumplist (recent edit locations)</td>
+</tr>
+<tr>
+<td>A-S-Left</td>
+<td style="text-align: center;">n,i</td>
+<td>Go back to previous edit location (like C-o)</td>
+</tr>
+<tr>
+<td>A-S-Right</td>
+<td style="text-align: center;">n,i</td>
+<td>Go to next edit location (like C-i)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quickfix-mapping">Quickfix mapping<a class="headerlink" href="#quickfix-mapping" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-S-Down</td>
+<td style="text-align: center;">n,i</td>
+<td>Next quickfix location</td>
+</tr>
+<tr>
+<td>A-S-Up</td>
+<td style="text-align: center;">n,i</td>
+<td>Previous quickfix location</td>
+</tr>
+<tr>
+<td>C-f c</td>
+<td style="text-align: center;">n,i</td>
+<td>Close quickfix split</td>
+</tr>
+</tbody>
+</table>
+<h2 id="various-keys">Various keys<a class="headerlink" href="#various-keys" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1</td>
+<td style="text-align: center;">i</td>
+<td>LSP Symbol hover information</td>
+</tr>
+<tr>
+<td>S-F1</td>
+<td style="text-align: center;">i</td>
+<td>LSP parameter (signature) help</td>
+</tr>
+<tr>
+<td>F4</td>
+<td style="text-align: center;">n,i</td>
+<td>Save a view of the current file (persistent folds)</td>
+</tr>
+<tr>
+<td>F5</td>
+<td style="text-align: center;">n,i</td>
+<td>clear search highlights (also those from hlslens</td>
+</tr>
+</tbody>
+</table>
+<h2 id="format-paragraph">Format paragraph<a class="headerlink" href="#format-paragraph" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align: center;">modes</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-C-w</td>
+<td style="text-align: center;">i,n</td>
+<td>Format paragraph to current text width. Use soft line breaks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cmp-completion-mapping">CMP (completion) mapping.<a class="headerlink" href="#cmp-completion-mapping" title="Permanent link">&para;</a></h2>
+<p>These mappings are defined in <code>lua/plugins/cmp.lua</code> which contains all cmp-related configuration. 
+Standard keybindings are used to activate manual completion (<code>C-Space</code>) and select completion suggestions 
+(<code>Tab</code>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.select", "content.code.annotate", "content.code.copy", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "navigation.path", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../scripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
