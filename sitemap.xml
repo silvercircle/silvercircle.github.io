@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://subspace.cc/nvim/</loc>
+         <loc>https://silvercircle.github.io/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/commandpalette/</loc>
+         <loc>https://silvercircle.github.io/commandpalette/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/configuration/</loc>
+         <loc>https://silvercircle.github.io/configuration/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/keymap/</loc>
+         <loc>https://silvercircle.github.io/keymap/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/lsp/</loc>
+         <loc>https://silvercircle.github.io/lsp/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/theme/</loc>
+         <loc>https://silvercircle.github.io/theme/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/tweaks/</loc>
+         <loc>https://silvercircle.github.io/tweaks/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/plugins/fzf/</loc>
+         <loc>https://silvercircle.github.io/plugins/fzf/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
     <url>
-         <loc>https://subspace.cc/nvim/plugins/oil/</loc>
+         <loc>https://silvercircle.github.io/plugins/oil/</loc>
          <lastmod>2025-03-12</lastmod>
     </url>
 </urlset>
