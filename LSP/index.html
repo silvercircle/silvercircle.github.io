@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://silvercircle.github.io/tweaks/">
+        <link rel="canonical" href="https://silvercircle.github.io/LSP/">
       
       
-        <link rel="prev" href="../theme/">
+        <link rel="prev" href="../Keymaps/">
       
       
-        <link rel="next" href="../plugins/fzf/">
+        <link rel="next" href="completion/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>How the Tweaks file works: - Subspace Neovim Config</title>
+        <title>LSP and auto-completion - Subspace Neovim Config</title>
       
     
     
@@ -49,6 +49,8 @@
     
     
       <link rel="stylesheet" href="../css/fonts/breve-sans.css">
+    
+      <link rel="stylesheet" href="../css/fonts/iosevka.css">
     
       <link rel="stylesheet" href="../css/style.css">
     
@@ -87,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-the-tweaks-file-works" class="md-skip">
+        <a href="#lsp-and-auto-completion" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How the Tweaks file works:
+              LSP and auto-completion
             
           </span>
         </div>
@@ -192,6 +194,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/silvercircle/nvim" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
   
     
@@ -221,103 +235,19 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../commandpalette/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Install/" class="md-tabs__link">
+          
   
     
   
-  The Command Palette
+  Install
 
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../configuration/" class="md-tabs__link">
-        
-  
+        </a>
+      </li>
     
-  
-  Configuring and options
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../keymap/" class="md-tabs__link">
-        
-  
-    
-  
-  Custom key mappings
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../lsp/" class="md-tabs__link">
-        
-  
-    
-  
-  How to configure LSP
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../theme/" class="md-tabs__link">
-        
-  
-    
-  
-  Theme documentation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  How the Tweaks file works:
-
-      </a>
-    </li>
   
 
       
@@ -328,12 +258,94 @@
     
     
       <li class="md-tabs__item">
-        <a href="../plugins/fzf/" class="md-tabs__link">
+        <a href="../Keymaps/" class="md-tabs__link">
+          
+  
+    
+  
+  Keymaps
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  LSP
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Plugins/" class="md-tabs__link">
           
   
     
   
   Plugins
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Theme/" class="md-tabs__link">
+          
+  
+    
+  
+  Theme
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Tweaking/" class="md-tabs__link">
+          
+  
+    
+  
+  Tweaking
 
         </a>
       </li>
@@ -367,9 +379,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Subspace Neovim Config" class="md-nav__button md-logo" aria-label="Subspace Neovim Config" data-md-component="logo">
       
@@ -379,6 +389,18 @@
     </a>
     Subspace Neovim Config
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silvercircle/nvim" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -409,17 +431,57 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../commandpalette/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Install/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
-    The Command Palette
+    Install
     
   </span>
   
 
-      </a>
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -430,17 +492,57 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Keymaps/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
-    Configuring and options
+    Keymaps
     
   </span>
   
 
-      </a>
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Keymaps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -449,14 +551,80 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    LSP
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            LSP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../keymap/" class="md-nav__link">
+      <a href="completion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Custom key mappings
+    Auto-completion
     
   </span>
   
@@ -465,15 +633,16 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="../lsp/" class="md-nav__link">
+      <a href="lsp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,54 +655,10 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../theme/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Theme documentation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    How the Tweaks file works:
-    
-  </span>
-  
-
-      </a>
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -547,6 +672,14 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
       
         
       
@@ -566,11 +699,13 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Plugins/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Plugins
@@ -578,15 +713,23 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Plugins
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -595,7 +738,29 @@
   
   
     <li class="md-nav__item">
-      <a href="../plugins/fzf/" class="md-nav__link">
+      <a href="../Plugins/commandpalette/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Command Palette
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/fzf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,11 +782,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../plugins/oil/" class="md-nav__link">
+      <a href="../Plugins/oil/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Oil (file manager)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/snacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snacks
     
   </span>
   
@@ -639,12 +826,152 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Theme/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Theme
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Theme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Tweaking/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tweaking
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tweaking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
             
           
           
@@ -654,51 +981,12 @@
                   
 
 
+  
+  
 
-<h1 id="how-the-tweaks-file-works">How the Tweaks file works:<a class="headerlink" href="#how-the-tweaks-file-works" title="Permanent link">&para;</a></h1>
-<p>The <code>lua/tweaks-dist.lua</code> contains a lot of user-tweakable settings. Most of which are somewhat explained 
-and commented. However, this file would be overwritten when updating the repo via <code>git pull</code>, so there is 
-a simple system to prevent this:</p>
-<ul>
-<li>
-<p>Create a copy of <code>tweaks-dist.lua</code> and name it <code>mytweaks.lua</code>. <strong>Name is important</strong>, all lower case and it 
-  must be in the <code>lua</code> folder. Just place it next to <code>tweaks-dist.lua</code> in the same folder.</p>
-</li>
-<li>
-<p>You can now modify settings in <code>mytweaks</code> and they will override corresponding settings in 
-  <code>tweaks-dist.lua</code>. You can also delete everything you do not want to touch from <code>mytweaks.lua</code> but 
-  leave the <code>-dist</code> alone. The <code>mytweaks.lua</code> is merged with the <code>tweaks-dist</code> at startup</p>
-</li>
-</ul>
-<p>It is important to maintain the file structure. Here is a sample for a valid <code>mytweaks.lua</code> file. It 
-redefines exactly two settings. First, it activates <code>DEV mode</code> which currently does nothing. Second, it 
-sets <code>Tweaks.completion.version</code> to "nvim-cmp". By default, this is set to "blink".</p>
-<p class="annotate"><div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">Tweaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nv">Tweaks</span><span class="p">.</span><span class="py">DEV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nv">Tweaks</span><span class="p">.</span><span class="py">completion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;nvim-cmp&quot;</span><span class="w"> </span><span class="c1">-- # (1)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="kr">return</span><span class="w"> </span><span class="nv">Tweaks</span>
-</span></code></pre></div></td></tr></table></div></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note line 1 and 8. Do not change them. When changing values, always use <code>tweaks-dist.lua</code> as a 
-reference. Do not change to many values at once, it will make it more difficult to find settings 
-responsible for problems.</p>
-</div>
-<p class="annotate">The <strong>most important</strong> setting to edit in the tweaks is the <code>lsp</code> table, because this contains all the 
-paths for the supported LSP server binaries. If you install them with Mason, you should not need to edit 
-most of them, but remember, the config is only supported on Linux and if you are on Windows (native, not 
-WSL) or macOS, you'll likely have to fix a lot.</p>
+
+<h1 id="lsp-and-auto-completion">LSP and auto-completion<a class="headerlink" href="#lsp-and-auto-completion" title="Permanent link">&para;</a></h1>
+<p>This is probably the biggest chunk in the configuration and </p>
 
 
 
@@ -752,8 +1040,10 @@ WSL) or macOS, you'll likely have to fix a lot.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.select", "content.code.annotate", "content.code.copy", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "navigation.path", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.select", "content.code.annotate", "content.code.copy", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "navigation.path", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
