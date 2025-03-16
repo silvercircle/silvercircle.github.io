@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://silvercircle.github.io/Plugins/oil/">
       
       
-        <link rel="prev" href="../fzf/">
+        <link rel="prev" href="../nvimtree/">
       
       
         <link rel="next" href="../snacks/">
@@ -562,8 +562,6 @@
       
         
       
-        
-      
     
     
       
@@ -632,28 +630,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../LSP/lsp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to configure LSP
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -674,6 +650,8 @@
       
         
           
+        
+      
         
       
         
@@ -779,6 +757,28 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../nvimtree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NvimTree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -842,6 +842,15 @@
   <a href="#leaving-oil" class="md-nav__link">
     <span class="md-ellipsis">
       Leaving Oil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-oil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Oil
     </span>
   </a>
   
@@ -1051,6 +1060,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuring-oil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Oil
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1072,10 +1090,12 @@
 
 <h1 id="oil-file-manager">Oil (file manager)<a class="headerlink" href="#oil-file-manager" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/stevearc/oil.nvim">Oil</a> is one of the most popular Neovim plugins. It's a file 
-manager that works different from others, provided by plugins like <a href="nvimtree.md">NvimTree</a> or similar.</p>
-<p>Oil allows to manipulate directories like ordinary vim buffers. To delete a file, simply delete the line, 
-to add one insert a new line and so on. Oil does not commit your changes to the file system until you <em>save</em> 
-the buffer representing the directory and it will ask you whether you really want to do the changes.</p>
+manager that works different from others, provided by plugins like <a href="../nvimtree/">NvimTree</a> or similar.</p>
+<p>Oil handles directories like ordinary vim buffers. To delete a file, simply delete the line, to add one 
+insert a new line, to rename just edit the file name. Oil does not commit your changes to the file system 
+until you <em>save</em> the buffer representing the directory and it will ask you whether you really want to do 
+the changes. So, as long as you do not save the Oil buffer and confirm the changes, nothing is changed on 
+your file system.</p>
 <h2 id="using-oil-in-this-config">Using Oil in this config<a class="headerlink" href="#using-oil-in-this-config" title="Permanent link">&para;</a></h2>
 <p>The keyboard mapping <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f8">F8</kbd></span> can be used in any buffer to open Oil with the directory of the file 
 you're editing set as its base.</p>
@@ -1083,8 +1103,11 @@ you're editing set as its base.</p>
 open a directory with Oil.</p>
 <h2 id="leaving-oil">Leaving Oil<a class="headerlink" href="#leaving-oil" title="Permanent link">&para;</a></h2>
 <p>Since oil is an ordinary buffer (just an unlisted one), you don't really have to <em>close</em> it. You can, for 
-example, use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-e">E</kbd></span> to select another buffer. Or go back in the history by using +<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> or 
-<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-arrow-left">Left</kbd></span>.</p>
+example, use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-e">E</kbd></span> to select another buffer. Or just open another file by any means. Or go back in 
+the history by using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-arrow-left">Left</kbd></span>.</p>
+<h2 id="configuring-oil">Configuring Oil<a class="headerlink" href="#configuring-oil" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://github.com/silvercircle/nvim/blob/main/lua/plugins/oil.lua">configuration file</a> is in 
+<code>lua/plugins/oil.lua</code>. Please refer to the plugin documentation fore more information.</p>
 
 
 

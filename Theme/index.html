@@ -562,8 +562,6 @@
       
         
       
-        
-      
     
     
       
@@ -632,28 +630,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LSP/lsp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to configure LSP
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -672,6 +648,8 @@
       
         
           
+        
+      
         
       
         
@@ -762,6 +740,28 @@
   
   <span class="md-ellipsis">
     Fzf-Lua Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/nvimtree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NvimTree
     
   </span>
   
@@ -975,6 +975,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#welcome-to-darkmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to Darkmatter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Welcome to Darkmatter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saturation-brightness-contrast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saturation / brightness / contrast
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Configuration
@@ -1003,21 +1036,31 @@
 
 
 <h1 id="theme-documentation">Theme documentation<a class="headerlink" href="#theme-documentation" title="Permanent link">&para;</a></h1>
-<p>This Neovim config comes with its own advanced theme that offers some special features. At the moment, 
-other themes may or may not work, but the goal is to improve this situation.</p>
+<p>This Neovim configuration comes with its own advanced theme engine that offers some special features and 
+multiple color schemes based on well-known themes. At the moment, other themes may or may not work, but 
+the goal is to improve this situation. It is possible to completely disable the integrated theme engine 
+and install theme plugins like on any other Neovim installation.</p>
+<h2 id="welcome-to-darkmatter">Welcome to Darkmatter<a class="headerlink" href="#welcome-to-darkmatter" title="Permanent link">&para;</a></h2>
 <p>The theme is called <strong>Darkmatter</strong> and provides the following features:</p>
+<p>The theme engine supports multiple schemes and can switch between them on-the-fly. Each scheme is a 
+collection of color palette(s) background colors and style rules. Four schemes are included in 
+<code>lua/darkmatter/schemes</code>, but more can be added.</p>
 <ul>
-<li>
-<p>Three different background tones. <em>Cold</em> (a cool medium gray with a slight blue-ish hue), <em>Warm</em> (lower 
-  color temperature, slightly redd-ish tint) and <em>Deepdark</em> (very dark, almost black background)..</p>
-</li>
-<li>
-<p>Three levels of color saturation. <em>Vivid</em> with high color intensity and contrast and two levels of 
-  desaturated colors.</p>
-</li>
-<li>
-<p>Two selections for string coloring. Green or Yellow.</p>
-</li>
+<li>Frankengruv - a gruvbox inspired theme</li>
+<li>Transylvania - Inspired by the famous Dracula color scheme.</li>
+<li>One Darker - A revival of the One Dark scheme.</li>
+<li>Dark - a Sonokai inspired dark theme</li>
+</ul>
+<h4 id="background-modes">Background modes<a class="headerlink" href="#background-modes" title="Permanent link">&para;</a></h4>
+<p>The theme supports different background color tones, independent of the color palette. <em>Cold</em> (a cool 
+medium gray with a slight blue-ish hue), <em>Warm</em> (lower color temperature, slightly red-ish tint), 
+<em>Deepdark</em> (very dark, almost black background) and <em>OLED</em>, a pitch black background designed to save 
+battery on modern OLED displays.</p>
+<h4 id="saturation-brightness-contrast">Saturation / brightness / contrast<a class="headerlink" href="#saturation-brightness-contrast" title="Permanent link">&para;</a></h4>
+<p>Three levels of color saturation. <em>Vivid</em>, <em>Medium</em> and <em>Pastel</em>. Vivid normally uses the natural colors 
+as defined by the color scheme with high contrast and brightness. Medium and Pastel use de-saturated 
+colors with lower contrast and brightness. Switching between them</p>
+<ul>
 <li>
 <p>Fully transparent or opaque background - can be changed while Neovim is running.</p>
 </li>

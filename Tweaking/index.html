@@ -560,8 +560,6 @@
       
         
       
-        
-      
     
     
       
@@ -630,28 +628,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LSP/lsp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to configure LSP
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -670,6 +646,8 @@
       
         
           
+        
+      
         
       
         
@@ -760,6 +738,28 @@
   
   <span class="md-ellipsis">
     Fzf-Lua Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/nvimtree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NvimTree
     
   </span>
   
@@ -1013,7 +1013,8 @@
 <p>Like any Neovim configuration, you can modify this to match your own needs. You can basically edit all 
 files below the <code>lua</code> directory. The problem with this approach is that you would run into problems when 
 updating the configuration by pulling changes from the repository. This would either merge them with 
-changes you have made, overwrite your changes or result in merge conflicts. This is sub-optimal and </p>
+changes you have made, overwrite your changes or result in merge conflicts. This is sub-optimal and there 
+should be a way to tweak the configuration.</p>
 <h2 id="how-the-tweaks-distlua-mechanism-works">How the tweaks-dist.lua mechanism works<a class="headerlink" href="#how-the-tweaks-distlua-mechanism-works" title="Permanent link">&para;</a></h2>
 <p>The <code>lua/tweaks-dist.lua</code> contains a lot of user-tweakable settings. Most of which are somewhat explained 
 and commented. However, this file would be overwritten when updating the repo via <code>git pull</code>, so there is 
@@ -1026,21 +1027,21 @@ a simple system to prevent this:</p>
 <li>
 <p>You can now modify settings in <code>mytweaks</code> and they will override corresponding settings in 
   <code>tweaks-dist.lua</code>. You can also delete everything you do not want to touch from <code>mytweaks.lua</code> but 
-  leave the <code>-dist</code> alone. The <code>mytweaks.lua</code> is merged with the <code>tweaks-dist</code> at startup</p>
+  leave the <code>-dist</code> alone. The <code>mytweaks.lua</code> is merged with the <code>tweaks-dist</code> at startup and all 
+  settings in <code>mytweaks.lua</code> will overwrite the defaults.</p>
 </li>
 </ul>
 <p>It is important to maintain the file structure. Here is a sample for a valid <code>mytweaks.lua</code> file. It 
 redefines exactly two settings. First, it activates <code>DEV mode</code> which currently does nothing. Second, it 
 sets <code>Tweaks.completion.version</code> to "nvim-cmp". By default, this is set to "blink".</p>
-<p class="annotate"><div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">local</span><span class="w"> </span><span class="nv">Tweaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">local</span><span class="w"> </span><span class="nv">Tweaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos="3 "></span></a><span class="nv">Tweaks</span><span class="p">.</span><span class="py">DEV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos="4 "></span></a><span class="nv">Tweaks</span><span class="p">.</span><span class="py">completion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><a href="#__codelineno-0-5"><span class="linenos" data-linenos="5 "></span></a><span class="w">  </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;nvim-cmp&quot;</span><span class="w"> </span><span class="c1">-- # (1)</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos="6 "></span></a><span class="p">}</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos="7 "></span></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><a href="#__codelineno-0-8"><span class="linenos" data-linenos="8 "></span></a><span class="kr">return</span><span class="w"> </span><span class="nv">Tweaks</span>
-</span></code></pre></div></p>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos="7 "></span></a><span class="kr">return</span><span class="w"> </span><span class="nv">Tweaks</span>
+</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please note line 1 and 8. Do not change them. When changing values, always use <code>tweaks-dist.lua</code> as a 
@@ -1062,17 +1063,18 @@ WSL) or macOS, you'll likely have to fix a lot.</p>
   which also supports keyboard mapping.</p>
 </li>
 <li>
-<p>you can always put additional lua files in <code>lua/keymaps</code> and they will be executed after 
-  <code>defaults.lua</code>, so you can override any default mapping.</p>
+<p>Additionally, <code>lua/keymaps/user.lua</code> will be loaded when it exists. This uses the <code>pcall</code> mechanism and 
+  allows you to override existing or define your own keyboard mappings. Below is an example of how such 
+  a <code>user.lua</code> file would look like.</p>
 </li>
 </ul>
-<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;subspace.lib&#39;</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><a href="#__codelineno-1-2"><span class="linenos" data-linenos="2 "></span></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><a href="#__codelineno-1-3"><span class="linenos" data-linenos="3 "></span></a><span class="nv">vim</span><span class="p">.</span><span class="py">g</span><span class="p">.</span><span class="nf">setkey</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&lt;f5&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;oil&quot;</span><span class="p">).</span><span class="nf">open</span><span class="p">(</span><span class="nv">Utils</span><span class="p">.</span><span class="nf">getroot_current</span><span class="p">())</span><span class="w"> </span><span class="kr">end</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Open Oil file manager&quot;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;subspace.lib&#39;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><a href="#__codelineno-1-2"><span class="linenos" data-linenos="2 "></span></a><span class="nv">vim</span><span class="p">.</span><span class="py">g</span><span class="p">.</span><span class="nf">setkey</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&lt;f5&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;oil&quot;</span><span class="p">).</span><span class="nf">open</span><span class="p">(</span><span class="nv">Utils</span><span class="p">.</span><span class="nf">getroot_current</span><span class="p">())</span><span class="w"> </span><span class="kr">end</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Open Oil file manager&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-This would redefine the mapping that opens the <a href="../Plugins/oil/">Oil</a> file manager. <code>vim.g.setkey</code> is 
+<p>This would redefine the mapping that opens the <a href="../Plugins/oil/">Oil</a> file manager. <code>vim.g.setkey</code> is 
 just a shortcut for <code>vim.keymap.set</code> and <code>Utils.getroot_current()</code> attempts to find the root directory 
-for the current project.</p>
+for the current project. It is part of the <code>subspace.lib</code> collection of utility functions which is part 
+of this configuration.</p>
 
 
 

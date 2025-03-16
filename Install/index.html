@@ -565,8 +565,6 @@
       
         
       
-        
-      
     
     
       
@@ -635,28 +633,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LSP/lsp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to configure LSP
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -675,6 +651,8 @@
       
         
           
+        
+      
         
       
         
@@ -765,6 +743,28 @@
   
   <span class="md-ellipsis">
     Fzf-Lua Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/nvimtree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NvimTree
     
   </span>
   
@@ -1052,11 +1052,11 @@
 Many Plugins are optional and not loaded on startup for quick startup time. This happens all under 
 control of the <a href="https://github.com/folke/lazy.nvim">lazy plugin manager</a> and should not require additional configuration.</p>
 <h2 id="first-start">First start<a class="headerlink" href="#first-start" title="Permanent link">&para;</a></h2>
-<p>After cloning the repo to <code>~/.config/nvim</code> (or the equivalent on Windows or macOS), you should start nvim 
+<p>After cloning the repo to <code>~/.config/nvim</code> (or the equivalent on Windows or macOS), you should start Neovim 
 for the first time with the command:
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>nvim --headless -c &#39;Lazy! sync&#39; +qa
 </span></code></pre></div>
-This will start Neovim without an UI (<code>--headless</code>) install all the plugins using the plugin manager and 
+This will start Neovim without the UI (<code>--headless</code>), install all the plugins using the plugin manager and 
 then quit. Usually, this should complete without errors unless your system lacks prerequisites like a 
 working GIT installation.</p>
 <div class="admonition note">

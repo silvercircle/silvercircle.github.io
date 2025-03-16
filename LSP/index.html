@@ -22,7 +22,7 @@
     
     
       
-        <title>LSP and auto-completion - Subspace Neovim Config</title>
+        <title>How to configure LSP - Subspace Neovim Config</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lsp-and-auto-completion" class="md-skip">
+        <a href="#how-to-configure-lsp" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LSP and auto-completion
+              How to configure LSP
             
           </span>
         </div>
@@ -564,8 +564,6 @@
       
         
       
-        
-      
     
     
       
@@ -635,28 +633,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="lsp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to configure LSP
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -675,6 +651,8 @@
       
         
           
+        
+      
         
       
         
@@ -765,6 +743,28 @@
   
   <span class="md-ellipsis">
     Fzf-Lua Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugins/nvimtree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NvimTree
     
   </span>
   
@@ -968,6 +968,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-language-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to install language servers?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-configure-language-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to configure language servers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to configure language servers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customizing-lspdeflua" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing lspdef.lua
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-languages-and-language-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported languages and language servers:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -985,8 +1035,120 @@
   
 
 
-<h1 id="lsp-and-auto-completion">LSP and auto-completion<a class="headerlink" href="#lsp-and-auto-completion" title="Permanent link">&para;</a></h1>
-<p>This is probably the biggest chunk in the configuration and </p>
+<h1 id="how-to-configure-lsp">How to configure LSP<a class="headerlink" href="#how-to-configure-lsp" title="Permanent link">&para;</a></h1>
+<p>First of all, this configuration is not meant to work <strong>out-of-the-box</strong> as a full-featured <em>IDE</em> or 
+something like that. It can, but this needs some additional work.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following applies to standard LSP server configurations only. It does not cover <strong>Java</strong>,
+<strong>Scala</strong> or <strong>C</strong> which are handled by dedicated plugins. The language servers for Java, Scala and 
+C# can also be installed with Mason though.</p>
+</div>
+<h2 id="how-to-install-language-servers">How to install language servers?<a class="headerlink" href="#how-to-install-language-servers" title="Permanent link">&para;</a></h2>
+<p>In most cases, the <code>Mason</code> plugin will do it as long as you have the prerequisites installed on your 
+system. Generally, you need a working <em>Python</em> and <em>Node.js</em> with its package manager <em>npm</em>, because many 
+language servers are written in Javascript and use the Node.js infrastructure. For the Java and Scala 
+language servers, you'll need fully working environments. At least JDK 17 is required for Java and Scala 
+language servers. Some language servers must be built from source and will thus require the necessary 
+tools. One example for such a server is <code>gopls</code>, the language server for the Go programming language. 
+Installing it requires a working Go installation.</p>
+<p>To interact with Mason simply issue the command</p>
+<blockquote>
+<p>Mason</p>
+</blockquote>
+<p>on the command line.</p>
+<h2 id="how-to-configure-language-servers">How to configure language servers<a class="headerlink" href="#how-to-configure-language-servers" title="Permanent link">&para;</a></h2>
+<p>The file <a href="https://github.com/silvercircle/nvim/blob/main/lua/lspdef.lua">lua/lspdef.lua</a> is the main 
+source of configuration data. It is processed in <code>lua/lsp/defaults.lua</code> and consists of a large table 
+defining a list of supported server configurations and a corresponding list of server binary locations. 
+Additionally, it contains data to configure the locations of the Java and C# language servers. This way 
+ensures a most flexible system that can use language servers installed in many different ways. You could 
+install all of them manually without the help of Mason and tell Neovim where to find them.</p>
+<h3 id="customizing-lspdeflua">Customizing lspdef.lua<a class="headerlink" href="#customizing-lspdeflua" title="Permanent link">&para;</a></h3>
+<p>You can either edit this file directly or make a copy of it. The latter method will prevent your 
+configuration from being overwritten when you update these dotfiles from the repository. The copy must be named 
+<code>lspdef_user.lua</code> and reside in the same directory, next to <code>lspdef.lua</code>. If such a file exists, it will 
+be loaded <strong>instead</strong> of <code>lspdef.lua</code>.</p>
+<p>Each entry in the <code>serverconfigs</code> table is defined as follows:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="w">  </span><span class="c1">-- this entry has a custom configuration in lsp/serverconfig/lua_ls.lua</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a><span class="w">  </span><span class="p">[</span><span class="s2">&quot;lua_ls&quot;</span><span class="p">]</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lsp.serverconfig.lua_ls&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">active</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">    </span><span class="nv">bin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">jp</span><span class="p">(</span><span class="nv">M</span><span class="p">.</span><span class="py">masonbinpath</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lua-language-server&#39;</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos="4 "></span></a><span class="w">  </span><span class="p">},</span>
+</span></code></pre></div></p>
+<p>Each entry is a key-value pair where the key is a string corresponding to the server name as defined by 
+the <code>nvim-lspconfig</code> plugin. The value is a table with the following fields:</p>
+<div class="language-text highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>@field  cfg     string|boolean
+<span class="linenos" data-linenos="2 "></span>@field  active  boolean
+<span class="linenos" data-linenos="3 "></span>@field  cmd     string
+</code></pre></div>
+<p>The <code>cfg</code> field can be either a string or false. When it is false, the default configuration provided by 
+the <code>nvim-lspconfig</code> plugin from <code>lspconfig.configs.servername</code> will be used. When it is a string, it must 
+contain a valid Lua module which must return the configuration. See the examples in 
+<code>lua/lsp/serverconfig</code>.</p>
+<p>The <code>cmd</code> field has the same format as the <code>cmd</code> field in a server configuration. It must be a list of strings with 
+a minimum of one entry. The first value (<code>cmd[1]</code>) is the executable of the language server. Unless it 
+can be found in your <code>$PATH</code>, it must be specified with a full, absolute path and file name. The remaining 
+entries contain parameters which are passed to the language server executable.</p>
+<p>A valid entry would look like the following:</p>
+<div class="language-text highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>cmd = { &quot;/usr/bin/lua-language-server&quot;, &#39;--logpath=&#39; .. vim.fn.stdpath(&quot;state&quot;) }
+</code></pre></div>
+<p>This has two entries, the executable and one command line argument (--logpath).</p>
+<div class="admonition notes">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>
+<p>Even when using a default config (<code>cfg</code> == false), the definitions in the <code>cmd</code> field will 
+  still be used. You can use this to override start commands for any language server, useful when 
+  your servers are installed in non-standard locations, for example.</p>
+</li>
+<li>
+<p>When not using a default config (<code>cfg</code> specifies a module), it depends whether this 
+  configuration has a <code>cmd</code> field. If it does, this will be used, otherwise, the 
+  <code>serverconfigs["server].cmd</code> will be used</p>
+</li>
+</ul>
+</div>
+<h2 id="supported-languages-and-language-servers">Supported languages and language servers:<a class="headerlink" href="#supported-languages-and-language-servers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>C and C++ using Clangd. It is recommended to install Clangd with your operating system tools like 
+  <em>apt-get</em> or <em>dnf</em> on Linux distributions. Usually, this gives you a working Clang version in your 
+  <strong>$PATH</strong>.</p>
+</li>
+<li>
+<p>Java via <em>jdtls</em>. This is a very powerful and full-featured language server for the Java language that 
+  supports major build systems like <em>Gradle</em> and <em>Maven</em>. It uses the 
+  <a href="https://github.com/mfussenegger/nvim-jdtls">nvim-jdtls</a> plugin, so please read the documentation 
+  there. This is not implemented as an ordinary LSP server, instead it uses a file type plugin in 
+  <code>ftplugin/java.lua</code> that does all the setup.</p>
+</li>
+<li>
+<p>C# via <a href="https://github.com/seblyng/roslyn.nvim">nvim-roslyn</a>. This is an alternative to the well-known 
+  OmniSharp, using the new C# devkit language server developed by Microsoft. This is the same language 
+  server that also powers the Visual Studio Code C# toolset and is based on the Roslyn compiler infrastructure. 
+  You can learn more about it. It has limited support for Razor and Blazor pages using the <strong>rzls</strong> 
+  language server and requires a working <code>dotnet</code> installation on your system.</p>
+</li>
+<li>
+<p>Markdown via <em>marksman</em>. Install it from mason, make sure the path is correct in <code>config.lua</code>.</p>
+</li>
+<li>
+<p>LaTeX via <em>texlab</em>. You can install it manually or via mason.</p>
+</li>
+<li>
+<p>Scala via <em>metals</em>. This uses the <a href="https://github.com/scalameta/nvim-metals">nvim-metals</a> plugin. 
+  You have to install <em>Scala</em>, <em>Metals</em>, <em>Coursier</em> and <em>sbt</em> and verify that everything works. Adjust 
+  the path for the <em>metals</em> binary in <code>config.lua</code>. This is probably one of the harder things to setup, 
+  but that's just how it is.</p>
+</li>
+<li>
+<p>Ada via <em>als</em> (Ada language server). This is mostly untested, because I do not use this language. It 
+  requires a working <em>GNAT</em> installation.</p>
+</li>
+<li>
+<p>Python via <em>Basedpyright</em>. This requires <em>npm</em>. Installs via <code>Mason</code>.</p>
+</li>
+</ul>
 
 
 
