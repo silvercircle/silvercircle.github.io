@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://silvercircle.github.io/Plugins/commandpalette/">
+        <link rel="canonical" href="https://silvercircle.github.io/LSP/mason/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../completion/">
       
       
-        <link rel="next" href="../fzf/">
+        <link rel="next" href="../roslyn/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>The Command Palette - Subspace Neovim Config</title>
+        <title>Mason (plugin) - Subspace Neovim Config</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-command-palette" class="md-skip">
+        <a href="#mason-plugin" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Command Palette
+              Mason (plugin)
             
           </span>
         </div>
@@ -325,11 +325,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LSP/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -347,13 +349,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Plugins/" class="md-tabs__link">
           
   
   
@@ -736,6 +736,8 @@
       
   
   
+    
+  
   
   
     
@@ -755,22 +757,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../LSP/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -783,13 +786,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             LSP
@@ -805,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LSP/completion/" class="md-nav__link">
+      <a href="../completion/" class="md-nav__link">
         
   
   
@@ -825,10 +828,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LSP/mason/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -839,6 +851,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -851,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LSP/roslyn/" class="md-nav__link">
+      <a href="../roslyn/" class="md-nav__link">
         
   
   
@@ -878,8 +891,6 @@
       
   
   
-    
-  
   
   
     
@@ -903,23 +914,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../Plugins/" class="md-nav__link ">
               
   
   
@@ -932,13 +942,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Plugins
@@ -951,32 +961,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    The Command Palette
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Plugins/commandpalette/" class="md-nav__link">
         
   
   
@@ -987,35 +975,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#here-is-how-it-looks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Here is how it looks
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1028,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fzf/" class="md-nav__link">
+      <a href="../../Plugins/fzf/" class="md-nav__link">
         
   
   
@@ -1051,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nvimtree/" class="md-nav__link">
+      <a href="../../Plugins/nvimtree/" class="md-nav__link">
         
   
   
@@ -1074,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../oil/" class="md-nav__link">
+      <a href="../../Plugins/oil/" class="md-nav__link">
         
   
   
@@ -1097,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../snacks/" class="md-nav__link">
+      <a href="../../Plugins/snacks/" class="md-nav__link">
         
   
   
@@ -1264,23 +1223,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#here-is-how-it-looks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Here is how it looks
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1298,21 +1240,22 @@
   
 
 
-<h1 id="the-command-palette">The Command Palette<a class="headerlink" href="#the-command-palette" title="Permanent link">&para;</a></h1>
-<p>The command palette is some sort of list that will allow you to select from a wide range of commands. 
-Each command has a description, belongs to a category and has one or more keyboard shortcuts assigned.</p>
-<p>Commands do not need to be mapped to keyboard shortcuts, which allows you to free keyboard mappings for 
-more frequently used commands.</p>
-<p>The commandpicker plugin </p>
-<h2 id="here-is-how-it-looks">Here is how it looks<a class="headerlink" href="#here-is-how-it-looks" title="Permanent link">&para;</a></h2>
-<figure>
-  <a class="glightbox" href="../../images/cpalette.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Command palette" src="../../images/cpalette.png" /></a>
-  <figcaption><center>The command palette</center></figcaption>
-</figure>
-<p>The command palette is always available via the keyboard shortcut <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-p">P</kbd></span>.</p>
+<h1 id="mason-plugin">Mason (plugin)<a class="headerlink" href="#mason-plugin" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/williamboman/mason.nvim">Mason</a> is a Neovim plugin that downloads, installs and 
+upgrades LSP servers, DAP Adapters, linters and formatters for many different languages. While it is not 
+a requirement to use it, it's strongly recommended.</p>
+<p>Mason is invoked from within Neovim with the command <code>Mason</code>. By default it will install plugins to 
+<code>stdpath("data")/mason</code>. On Linux, that would be <code>$HOME/.local/share/nvim/mason</code>. Within this directory, 
+Mason will create various subdirectories of which the <code>bin</code> directory is of particular interest. This is 
+where the executables of all installed language servers can be found. You can add this to your <code>$PATH</code> or 
+simply configure it via <a href="../#customizing-lspdeflua">Lspdef</a>. Mason, by default, uses a registry for 
+installable packages and can be configured to use 3<sup>rd</sup> party registries for packages that are not 
+available in the default registry.</p>
 <mark class="critic block">
-<p>The command palette will be populated once the first file was loaded. Because of the large number of 
-commands to process, it would add significant startup time, that's why activation is delayed.</p>
+<p>Using unchecked registries can pose a security hazard. Please understand, that downloading and installing 
+from sites you cannot fully trust can always result in security breaches. While the default Mason 
+registry should be relatively safe — the author does watch it and all language servers are downloaded and 
+installed from official repositories — third party registries might be not so well audited.</p>
 </mark>
 
 

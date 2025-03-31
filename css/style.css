@@ -5,12 +5,20 @@ header.md-header, nav.md-tabs {
   margin-bottom: 0;
   margin-top: 20px;
   line-height: 1em;
+  font-weight: 400 !important;
+  color: #a07020 !important;
+  margin-left: 20px !important;
 }
 
 .md-typeset h1 ~ p, .md-typeset h2 ~ p, .md-typeset h3 ~ p, .md-typeset h4 ~ p {
   margin-block-start: 10px !important;
   hyphens: auto;
   text-align: justify !important;
+}
+
+mark > p {
+  text-align: justify !important;
+  padding: 0 5px;
 }
 
 .md-grid {

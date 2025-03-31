@@ -2,54 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://silvercircle.github.io/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://silvercircle.github.io/DAP/</loc>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://silvercircle.github.io/FAQ/</loc>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Install/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Keymaps/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/LSP/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/LSP/completion/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://silvercircle.github.io/LSP/mason/</loc>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://silvercircle.github.io/LSP/roslyn/</loc>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/commandpalette/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/fzf/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/nvimtree/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/oil/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Plugins/snacks/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Theme/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://silvercircle.github.io/Tweaking/</loc>
-         <lastmod>2025-03-16</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
 </urlset>
