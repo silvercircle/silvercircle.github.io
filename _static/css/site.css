@@ -11,8 +11,7 @@ div.twocol p {
 div.centered {
   margin: 2em auto;
   text-align: center;
-  width: auto !important;
-  display: inline-block;
+  width: 50% !important;
 }
 
 .bordered {

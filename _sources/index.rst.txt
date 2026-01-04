@@ -2,10 +2,24 @@
 
   Content
 
+.. toctree::
+  :caption: Contents
+  :hidden:
+
+  test/scratchpad
+  internal/rules
+  internal/myst-test
+  geolib/index
+
 ======================
 SILVERCIRCLE.GITHUB.IO
 ======================
 On this page, you'll find two things:
+
+:doc:`Geographic-Lib Ada <geolib/index>`
+----------------------------------------
+A port of the `Geographic Lib <https://geographiclib.sourceforge.io/index.html>`_, written by Charles 
+Karney as part of a larger research project.
 
 
 

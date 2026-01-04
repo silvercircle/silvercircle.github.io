@@ -8,9 +8,6 @@ GeographicLib-Ada documentation
 
    api/geomath
    api/geodesic
-   internal/rules
-   test/scratchpad
-   internal/myst-test
 
 This is a software port of the `Geographic Lib <https://geographiclib.sourceforge.io/index.html>`_ to the 
 *Ada programming language*. It is work in progress and as of now not a complete product. Basic 
