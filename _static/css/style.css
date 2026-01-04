@@ -2,11 +2,11 @@
 section h1, section h2, section h3, section h4, section h5 {
   margin-bottom: 2px;
   font-family: "Allegra Sans SC";
-  margin-top: 1em !important;
+  margin-top: 1em;
   line-height: 1.0em;
   font-weight: 600 !important;
   color: #a07020 !important;
-  margin-left: 20px !important;
+  margin-left: 20px;
 }
 
 section h5 {

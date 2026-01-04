@@ -1,6 +1,8 @@
 .. container:: centered bordered
 
-  Content
+  .. raw:: html
+
+    <section><h1 style="margin: 10px !important;">SILVERCIRCLE.GITHUB.IO</h1></section>
 
 .. toctree::
   :caption: Contents
@@ -11,9 +13,6 @@
   internal/myst-test
   geolib/index
 
-======================
-SILVERCIRCLE.GITHUB.IO
-======================
 On this page, you'll find two things:
 
 :doc:`Geographic-Lib Ada <geolib/index>`
