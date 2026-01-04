@@ -51,8 +51,10 @@
 	src: url('/_static/fonts/IosevkaSlab-BoldItalic.ttf') format('truetype');
 }
 
+
 div.highlight pre, code, dl.ada, dt.ada {
   font-family: "Iosevka Term Web" !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   font-size: 13pt !important;
+  padding: 0 10px;
 }

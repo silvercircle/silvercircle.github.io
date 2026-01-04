@@ -1,0 +1,21 @@
+# Neovim Index
+
+```{toctree}
+  :maxdepth: 3
+  :caption: Contents
+  :class: toctreeinline
+
+Installation <Install/index>
+Keymaps/index
+Theme/index
+Plugins/commandpalette
+Plugins/fzf
+Plugins/index
+Plugins/nvimtree
+Plugins/oil
+Plugins/snacks
+DAP Configuration <DAP/index>
+User Tweaks <Tweaking/index>
+```
+
+

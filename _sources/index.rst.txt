@@ -12,6 +12,7 @@
   internal/rules
   internal/myst-test
   geolib/index
+  neovim/index
 
 On this page, you'll find two things:
 
@@ -20,5 +21,8 @@ On this page, you'll find two things:
 A port of the `Geographic Lib <https://geographiclib.sourceforge.io/index.html>`_, written by Charles 
 Karney as part of a larger research project.
 
-
+:doc:`Neovim <neovim/index>`
+----------------------------
+My Neovim configuration. A very extensive configuration to convert Neovim into an IDE-like tool for 
+editing many different formats.
 
