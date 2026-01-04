@@ -1,0 +1,70 @@
+@font-face {
+  font-family:"Faunces";
+  font-style: normal;
+  font-weight:400;
+  src: url("assets/Fraunces/Fraunces_72pt-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Faunces";
+  font-style:  italic;
+  font-weight: 400;
+  src: url("assets/Fraunces/Fraunces_72pt-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Faunces";
+  font-style:  normal;
+  font-weight: 800;
+  src: url("assets/Fraunces/Fraunces_72pt-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Faunces";
+  font-style:  italic;
+  font-weight: 800;
+  src: url("assets/Fraunces/Fraunces_72pt-SemiBoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:normal;
+  font-weight:400;
+  src: url("assets/AlegreyaSansSC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:700;
+  src: url("assets/AlegreyaSansSC-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:600;
+  src: url("assets/AlegreyaSansSC-Medium.ttf") format('truetype');
+}
+
+body, input {
+  font-family: "Faunces" !important
+}
+
+kbd {
+  line-height:1.3em;
+}
+
+article.md-typeset {
+  font-size: 2.2em !important;
+  font-family: "Faunces";
+  line-height: 1.4em;
+  font-weight: 400;
+  color: white !important;
+}
+
+div.admonition > p:last-child, .md-typeset details > p:last-child, div.admonition li {
+  font-size: 1.4em !important;
+  line-height: 1.3em;
+  font-weight: 300;
+}

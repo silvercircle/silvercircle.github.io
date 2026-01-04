@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/IosevkaSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/IosevkaSlab-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/IosevkaSlab-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/IosevkaSlab-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/IosevkaSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Term Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/IosevkaSlab-BoldItalic.ttf') format('truetype');
+}
+
+div.highlight pre, code, dl.ada, dt.ada {
+  font-family: "Iosevka Term Web" !important;
+  font-weight: 600 !important;
+  font-size: 13pt !important;
+}

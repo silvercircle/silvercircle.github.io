@@ -1,0 +1,18 @@
+Geomath Package
+===============
+Provides mathematical support functions, written in a portable way so that only basic standard functions, 
+that are part of most math libraries, are required.
+
+All functions expect double precision 64bit floating point values as input (``Long_Float`` in Ada).
+
+Atan2d
+******
+.. ada:function:: function atan2d(x, y : Long_Float) return Long_Float
+
+   :parameter: X The sine of the angle
+
+   :parameter: Y The cosine of the angle
+
+   :return: The angle in degrees.
+
+    The function re-arranges the input values to minimize rounding errors..

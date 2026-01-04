@@ -1,0 +1,27 @@
+Rules
+=====
+The following conventions have been set to enforce a consistent look across the documentation pages.
+
+Outline (header levels)
+-----------------------
+
+I use the following markup for defining heading levels:
+
+* equal sign (=) for page titles. This is a <h1>
+* minus sign (-) for sections in pages. This translates to <h2>
+* Dot (.) for subsections. This translates to <h3>
+* Asterisk (*) for sub-subsections. Translates to <h4>
+
+Here is the full hierarchy
+==========================
+
+Section
+-------
+
+Subsection
+..........
+
+Sub-sub section
+***************
+
+

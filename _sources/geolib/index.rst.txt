@@ -1,0 +1,60 @@
+GeographicLib-Ada documentation
+===============================
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+   :hidden:
+
+   api/geomath
+   api/geodesic
+   internal/rules
+   test/scratchpad
+   internal/myst-test
+
+This is a software port of the `Geographic Lib <https://geographiclib.sourceforge.io/index.html>`_ to the 
+*Ada programming language*. It is work in progress and as of now not a complete product. Basic 
+functionality is working, but many features provided by the original implementation are missing.
+
+The original C++ library, on which this port is partially based on (some parts are ported from the Java 
+implementation) was written and is copyrighted by `Charles Karney <mailto:karney@alum.mit.edu>`_. The 
+work was released under the free `MIT/X11 License`_.
+
+.. _MIT/X11 License: https://geographiclib.sourceforge.io/LICENSE.txt
+
+Motivation
+----------
+
+This is mainly an exercise to refresh my knowledge in the Ada programming language. I've chosen this 
+library, because I've been using the Java version elsewhere and found it to be an excellent piece of 
+software.
+
+Current Status
+--------------
+
+As of now (January 2026) the following parts are done.
+
+* The basic mathematics support functions in the :doc:`Geomath package <api/geomath>`.
+* Most of the :doc:`Geodesic package <api/geodesic>`
+
+:ref:`scratchpad`
+
+Math test:
+
+Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
+
+:math:`\frac{ \sum_{t=0}^{N}f(t,k) }{N}`
+
+Documents the ``Make`` procedure.
+
+This describes a function.
+
+.. ada:procedure:: procedure Make (i, l : Integer) return FooClass
+
+   This creates an record of :ada:type:`GeoMath.FooClass`
+
+.. ada:type:: type Mask_Type
+
+   Documentation for Mask_Type
+
+

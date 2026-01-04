@@ -1,0 +1,74 @@
+@font-face {
+  font-family:"SpaceGrotesk";
+  font-style:normal;
+  font-weight:400;
+  src: url("assets/SpaceGrotesk-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  font-style:  italic;
+  font-weight: 400;
+  src: url("assets/DMSans-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  font-style:  normal;
+  font-weight: 800;
+  src: url("assets/SpaceGrotesk-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  font-style:  italic;
+  font-weight: 800;
+  src: url("assets/DMSans-SemiBoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:normal;
+  font-weight:400;
+  src: url("assets/AlegreyaSansSC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:700;
+  src: url("assets/AlegreyaSansSC-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:600;
+  src: url("assets/AlegreyaSansSC-Medium.ttf") format('truetype');
+}
+
+body, input {
+  font-family: "SpaceGrotesk" !important
+}
+
+section p {
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
+kbd {
+  line-height:1.3em;
+}
+
+article.md-typeset {
+  font-size: 1.8em !important;
+  font-family: "SpaceGrotesk";
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+div.admonition > p:last-child, .md-typeset details > p:last-child, div.admonition li {
+  font-size: 1.4em !important;
+  line-height: 1.3em;
+  font-weight: 300;
+}
