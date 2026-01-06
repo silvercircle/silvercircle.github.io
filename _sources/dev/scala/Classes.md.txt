@@ -1,0 +1,138 @@
+---
+id: Classes
+aliases: []
+tags:
+  - scala
+  - classes
+date: 2025-09-02T17:13:37
+title: Classes in Scala
+---
+# Classes in Scala
+Scala basically implements everything also known from Java. There are classes, nested classes, public and
+private classes (and members) and Traits, which resemble Java interfaces, just with more options.
+
+What Scala does not have are static members, static inner classes and static class methods. For that,
+Scala uses so-called companion objects (see below). Also, Scala does not limit the number of classes or
+traits you can have in a single file. Multiple classes or traits (even public ones) are entirely possible
+and not uncommon in Scala source code. It is still good practice to put important classes into their own
+files. Also, all `sealed` classes or traits can only be extended from another class or trait in the same
+file.
+
+## Objects
+An object implements a singleton class. Only one instance can exist of such a class and it's
+automatically constructed on first access. Objects are ideal to define static methods or typical
+singleton objects like application contexts, configuration objects or similar thing. Object
+initialization is thread-safe by default, so there is no need to care about synchronizing stuff. The
+first thread that accesses the object will initialize it while others have to wait.
+
+## Companion Objects
+A companion object can be used to implement static content for a given class. Static constants, methods
+and members are typically moved to the companion object. Usually, the companion object is defined in the
+same file, because Scala allows multiple public classes or objects in a single file. Several design
+patterns like the Builder can make use of companion objects to simulate Java features like static inner
+classes to implement a builder class.
+
+A companion object must have the same name as the class for which it serves as companion. See the example
+below.
+
+## Constructors
+In Scala, there is no need to define an explicit constructor. The class body itself including the class
+definition works as the primary constructor.
+
+```scala
+class Employee(var m_name: String = "John", val m_age: Int = 20,
+  val m_gender: Employee.Gender = Employee.Gender.MALE, val m_position: String = "none"):
+
+  private val salary: Float = 0
+  /** constructor code ends here */
+  def Greet(): String =
+    s"I am a $m_gender Person. My name is $m_name and I am $m_age years old. My position within the company is $m_position."
+  end Greet
+end Employee
+
+/** the companion object defines static stuff */
+object Employee:
+  enum Gender:
+    case MALE, FEMALE, NONBINARY
+  end Gender
+end Employee
+```
+
+A typical class definition. The constructor defines all member variables with default values and gives
+them public access. For private member variables, one would simply omit the `val` or `var` keyword. The
+`val` keyword makes them immutable, such members cannot be changed for an existing instance. The variable
+`salary` is declared and also part of the constructor, in fact the entire class body is seen as the
+primary constructor in a Scala class. Since Scala allows named arguments with default values,
+constructing an object could be as easy as:
+```scala
+val e = Employee(m_name = "Kevin", m_age = 28) // note you can omit the new keyword in most cases
+```
+All other values would take their defaults. That's why Scala makes the builder pattern essentially
+obsolete, because configuring a class at construction is very easy with named arguments.
+
+## Private constructors
+Adding the keyword `private` to the class constructor makes it private. Such a class can only be
+constructed from companion objects. This is often used in Scala to implement certain patterns like the
+Builder or Factory when direct construction is not wanted.
+```scala
+class private Employee(var m_name: String = "John", val m_age: Int = 20,
+  val m_gender: Employee.Gender = Employee.Gender.MALE, val m_position: String = "none"):
+```
+
+## Alternate constructors
+Like Java, Scala allows to have multiple constructors. While the primary constructor is part of the class
+definition, alternate constructors are defined as simple methods with the name `this`.
+```scala
+class Employee(var m_name: String = "John", val m_age: Int = 20,
+  val m_gender: Employee.Gender = Employee.Gender.MALE, val m_position: String = "none"):
+
+  def this(...)
+```
+
+## Getters and setters
+```scala
+class Person(...)
+  private var m_age: Int = 1
+
+  def age = m_age
+  def age_= (n_age: Int) = m_age = n_age
+```
+
+This defines a getter and setter for the private member `m_age`. The important convention for the setter
+is that there is NO WHITESPACE allowed after the `_`. The = sign must follow immediately. More on that
+rather strange conventions below, it all makes sense once you understand it.
+
+A more verbose definition is seen in the following fragment. The `inline` keyword is optional, because
+the compiler will always inline such simple methods. Types for the getter (`Int`) and the setter (`Unit`)
+can be inferred, but it does not hurt to specify them explicitly. It can lead to better readability in
+your code. The `return` keyword in the getter is also optional as we know. Scala automatically returns
+the value of the last expression in a method. The same applies to the curly braces around the method body
+in the setter method. They can be omitted when a method body contains only a single expression or
+statement.
+
+```scala
+  /** simple getter and setter for m_age */
+  inline def age: Int = return m_age
+  inline def age_= (m_age: Int): Unit = { this.m_age = m_age }
+```
+
+```scala
+// using getters and setters
+val p = Person(...)
+p.age_ = (25)
+p.age  = 25   // same (see below)
+```
+
+The getter is quite obvious and simple to understand. It returns the member `m_age` as `Int`. The setter
+is a bit more obscure. The underscore in `age_` is basically a placeholder for a space character and the
+compiler interprets the complete name for the setter as `age_=` making the `=` sign part of the name.
+That's why you cannot place a space between the `_` and the `=`. Method name definitions are not allowed
+to contain spaces. That's also why you have to call it as `age_= (25)`. You DO NOT assign 25 to the
+member, you call the method `age_=` with 25 as its argument. Since Scala allows you to replace
+underscores with spaces and leave out parenthesis around method parameters, you can also write `age =
+25`. So, for short, `p.age = 25` is absolutely the same as `p.age_=(25)`. The difference is just syntax
+sugar provided by the Scala compiler.
+
+Finally, you can get rid of the `inline` because the compiler will do it for you. Getters and setters are
+a good example for Scala's syntax flexibility, but you need to understand it, otherwise it can lead to
+some confusion.

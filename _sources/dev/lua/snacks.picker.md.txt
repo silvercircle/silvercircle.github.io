@@ -1,0 +1,44 @@
+---
+title: Snacks picker notes
+tags: neovim lua snacks picker
+date: 2025-02-07T00:18:35
+---
+
+# Remove an item from the picker
+  There is no distinct function for removing an item. It simply done by removing it from the entries 
+  table and then calling `find()` again.
+
+Consider the following code fragment. The table `entries` holds the items and is used by the `finder()` 
+function. Each entry has a field `id` which we pass to the function below. The id is unique and so we can 
+iterate over the table and 
+
+```lua
+  --- terminate the client given by id
+  --- @param id number client id
+  --- @oaram nrbufs number the number of attached buffers
+  local function do_terminate(id, picker)
+    if id ~= nil and id > 0 then
+      if #vim.lsp.get_buffers_by_client_id(id) > 0 then
+        vim.notify("The LSP server with id " .. id .. " has attached buffers and cannot be terminated.")
+      else
+        vim.lsp.stop_client(id, true)
+        for i, v in ipairs(entries) do
+          if v.id == id then
+            vim.notify("Deleting entry " .. i)
+            entries[i] = nil
+            break
+          end
+        end
+        picker:find()
+      end
+    end
+  end
+
+  -- alternative variant
+  entries = vim.iter(entries):filter(function(k, _)
+    if k.id == id then return nil else return k end
+    end):totable()
+  picker:find()
+```
+
+# 

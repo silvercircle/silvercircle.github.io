@@ -1,0 +1,62 @@
+---
+id: index
+aliases: []
+tags:
+  - dev
+  - postgres
+  - sql
+date: 2025-07-21T06:26:07
+---
+# PostgreSQL
+Collection of useful things, commands and more.
+
+## Users, roles, permissions
+#### Change a password
+`ALTER USER name WITH PASSWORD password`
+
+## Date and Time
+PostgreSQL has a very vast set of functions to deal with dates, times and full timestamps. While it's 
+possible to simply use a LONG populated with Unix Epoch time, this is often insufficient. Epoch has a 
+resolution of a second and cannot represent dates before 1970, so it's precision and overall usefulness 
+is limited.
+
+#### Query Timestamps
+```sql
+-- compare only the date part of a full timestamp
+SELECT * FROM table WHERE ts::date = date '2025-07-30'
+
+-- use only the time
+SELECT * FROM alerts WHERE ts::time > time '08:00' AND ts::time < time '20:00'
+```
+## Administration
+#### Install and configure pg_stat_statements
+This extension will record query statistics and can be used to analyze possible performance problems. 
+Normally, it is part of the `contrib` package, so when installing from the official PostgreSQL 
+repository, you need to do `dnf install postgresql17-contrib` to install the package on Fedora systems. 
+You then have to activate the extension module in `$PGDATA/postgresql.conf`. Find the line 
+`shared_preload_libraries` which contains a comma-separated list of extensions to load, so the line:
+```
+shared_preload_librries = 'pg_stat_statements'
+```
+is enough to enable the extension. This does, however, not enable it globally for all databases in the 
+cluster since extensions in PostgreSQL are „per database“. In order to use it for a specific database, an 
+extension must be created:
+```SQL
+CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
+```
+##### Reset the stats
+```SQL
+SELECT pg_stat_statements_reset()
+```
+You can then query the table `pg_stat_statements` to obtain the collected data.
+
+#### Complete Backup
+```sql
+> sudo -u postgres pg_dumpall | gzip >pgdump.gz
+```
+This will backup everyhing, including the system tables. Restore it with `pg_restore`
+#### Backup the Schema of a Database
+```sql
+> pg_dump --schema-only weather >schema.sql
+```
+This will backup the schema for the database `weather` and save it to **schema.sql**.

@@ -1,0 +1,12 @@
+Java Topics
+===========
+
+.. toctree::
+  :maxdepth: 3
+  :caption: Contents:
+  :hidden:
+  :glob:
+
+  *
+
+This has multiple topics about the Java language.

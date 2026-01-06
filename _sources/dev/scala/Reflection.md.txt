@@ -1,0 +1,30 @@
+---
+id: Reflection
+aliases: []
+tags:
+  - scala
+  - reflection
+date: 2025-10-01T16:18:59
+title: Reflection in Scala
+---
+# Reflection in Scala
+
+```scala
+ class Student {
+  var id: Long = _
+  var name: String = _
+}
+
+implicit def reflector(ref: AnyRef) = new {
+  def getV(name: String): Any = ref.getClass.getMethods.find(_.getName == name).get.invoke(ref)
+  def setV(name: String, value: Any): Unit = ref.getClass.getMethods.find(_.getName == name + "_$eq").get.invoke(ref, value.asInstanceOf[AnyRef])
+}
+
+val s = new Student
+s.setV("name", "Walter")
+println(s.getV("name"))  // prints "Walter"
+s.setV("id", 1234)
+println(s.getV("id"))    // prints "1234"
+```
+
+

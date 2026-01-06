@@ -1,0 +1,21 @@
+Ada Topics
+==========
+
+.. toctree::
+  :maxdepth: 4
+  :caption: Contents:
+  :hidden:
+  :glob:
+
+  *
+
+:doc:`The Scratchpad (just notes while learning Ada) <scratchpad>`
+------------------------------------------------------------------
+
+:doc:`Containers - notes on the Ada Container library <Containers>`
+-------------------------------------------------------------------
+
+:doc:`Access Types <access_types>`
+----------------------------------
+
+

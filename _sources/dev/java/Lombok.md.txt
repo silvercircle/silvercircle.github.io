@@ -1,0 +1,49 @@
+---
+id: Lombok
+aliases: []
+tags:
+  - java
+  - lombok
+  - dev
+date: 2025-10-19T22:27:35
+title: Lombok
+---
+# Lombok
+[Project Lombok](https://projectlombok.org) is a java library that extends editors and IDEs with useful 
+features and can also improve the language itself.
+
+## Extension Methods
+Consider the following class:
+```java
+  public final class DoubleExtensions {
+    /**
+     * round the double n to d decimals
+     * @param n input number
+     * @param d number of decimal places to consider
+     * @return 
+     */
+    public static double roundAt(double n, int d) {
+      final var s = Math.pow(10, d);
+      return Math.round(n * s) / s;
+    }
+ 
+    /**
+     * truncate the double n at d decimals<br>
+     * like roundAt() but does not mathematically round
+     * @param n
+     * @param d
+     * @return 
+     */
+    public static double truncateAt(double n, int d) {
+      final var s = Math.pow (10, d);
+      return Math.floor(n * s) / s;    
+    }
+  }
+```
+It can be used to extend the Java class `Double` with methods `roundAt(x)` and `truncateAt(x)` to round 
+or truncate decimal places to `x`.
+
+To use this, you must annotate your consumer class with `@ExtensionMethod(DoubleExtensions.class)` and 
+import `lombok.experimental.ExtensionMethod`. The feature is considered experimental and may contain 
+issues, but normally works well enough to be used in production code.
+

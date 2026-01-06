@@ -39,7 +39,7 @@
 	font-weight: 800;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('/_static/fonts/IosevkaSlab-Bold.ttf') format('truetype');
+	src: url('/_static/fonts/IosevkaSlab-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -48,13 +48,42 @@
 	font-weight: 800;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('/_static/fonts/IosevkaSlab-BoldItalic.ttf') format('truetype');
+	src: url('/_static/fonts/IosevkaSlab-MediumItalic.ttf') format('truetype');
 }
 
-
-div.highlight pre, code, dl.ada, dt.ada {
+/* use Iosevka font for div.highlight pre only. */
+/* for all else, use the standard monospaced font */
+div.highlight pre {
   font-family: "Iosevka Term Web" !important;
   font-weight: 400 !important;
   font-size: 13pt !important;
+  line-height: 110% !important;
   padding: 0 10px;
+  overflow-y: hidden !important;
+  padding-right: 5px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+code {
+	font-size: 13pt !important;
+	font-weight: 400 !important;
+	color: white !important;
+	padding: 1px 3px !important;
+}
+
+/* sytax highlight customization */
+div.highlight pre span.p, div.highlight pre span.o {
+	color: orange !important;
+}
+div.highlight pre span.kt {
+	color: #772088 !important;
+}
+div.highlight pre span.nc {
+	text-decoration: none !important;
+}
+div.highlight pre span.nf {
+	color: #206688 !important;
+	text-decoration: none !important;
+}
+

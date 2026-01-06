@@ -7,12 +7,14 @@
 .. toctree::
   :caption: Contents
   :hidden:
+  :maxdepth: 8
 
   test/scratchpad
   internal/rules
   internal/myst-test
   geolib/index
   neovim/index
+  dev/index
 
 On this page, you'll find two things:
 
@@ -26,3 +28,4 @@ Karney as part of a larger research project.
 My Neovim configuration. A very extensive configuration to convert Neovim into an IDE-like tool for 
 editing many different formats.
 
+:doc:``

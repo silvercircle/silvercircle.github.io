@@ -1,0 +1,65 @@
+---
+id: Named Arguments
+aliases: []
+tags:
+  - ts
+  - js
+  - arguments
+  - name
+date: 2025-05-13T22:31:03
+title: Typescript Named Arguments
+---
+
+# Typescript Named Arguments
+
+Neither JavaScript nor TypeScript have named arguments with default values (unlike Python or C#). 
+This is a common pattern to call functions with named arguments and possibly default values. It uses 
+anonymous or declared interfaces with mandatory and optional members.
+
+## Using Anonymous Interfaces
+```ts
+/*
+  * named arguments with default values using the form:
+  * foo( { defaults }: {interface_object} ): return_type {}
+  * the interface object can be anonymous or be declared as interface. All
+  * members that allow default values must be specified as optional using a ?
+  */
+function Test( { name = "Default", age = 10 }: { id: number, name?: string, age?: number }): void {
+   console.log(`My name is ${name} and I am ${age} years old.`);
+}
+
+// call it with:
+Test({ id = 1000 })
+```
+This allows to specify default values for any of the arguments that are declared as optional (using the 
+`?` in the argument interface). The argument interface itself can be anonymous or a declared type.
+
+When calling such a function, **ALL** arguments that are not optional must be specified in the call. In 
+the above case, this is only the member `id`. All arguments that *are* optional (name and age in our 
+case) must have default values, but you can override them, so:
+
+```ts
+Test({ id = 1000, name = "My Name" })
+```
+is fine.
+
+## Using a declared Interface
+
+```ts
+interface TestParams {
+   id: number,
+   name?: string,
+   age?: number
+}
+
+function Test1( { name = "Default", age = 1 }: TestParams): void {
+   console.log(`My name is ${name} and I am ${age} years old.`);
+}
+
+Test1({ id = 1010 })
+```
+
+The principle is exactly the same. The Interface type must declare which parameters are optional. The 
+function declaration must provide defaults for those. All optional parameters can be omitted when calling 
+the function while for all non-optional parameters, values must be provided. The order is not relevant, 
+but the type naturally is.

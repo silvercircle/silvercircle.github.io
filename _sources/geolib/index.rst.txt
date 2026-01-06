@@ -22,6 +22,30 @@ work was released under the free `MIT/X11 License`_.
 Motivation
 ----------
 
+.. code-block:: ada
+   :linenos:
+   :caption: Sample Code
+   :name: sample_ada
+
+   procedure Add_Edge (Self : in out PolygonAreaClass; azi, s : Long_Float)
+   is
+   begin
+    --- Do nothing if num is zero
+      if Self.num > 0 then
+      declare
+        gd : constant GeodesicResult := Self.gd.Direct (Self.lat1, Self.lon1, azi, s, Self.imask);
+      begin
+        Self.perimetersum.Add (gd.s12);
+        if not Self.polyline then
+          Self.areasum.Add (gd.area12);
+          Self.crossings := Self.crossings + Transit_Direct (Self.lon1, gd.lon2);
+        end if;
+        Self.lat1 := gd.lat2;Self.lon1 := gd.lon2;
+        Self.num  := Self.num + 1;
+      end;
+    end if;
+   end Add_Edge;
+
 This is mainly an exercise to refresh my knowledge in the Ada programming language. I've chosen this 
 library, because I've been using the Java version elsewhere and found it to be an excellent piece of 
 software.

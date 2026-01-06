@@ -13,8 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/iosevka.css?v=8a7de32f" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=b2f17687" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/iosevka.css?v=1cc1da7f" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=a6a43828" />
     <link rel="stylesheet" type="text/css" href="../_static/css/merriweather.css?v=d437fe22" />
     <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=ff894bac" />
     
@@ -226,6 +226,32 @@
 <li class="toctree-l2"><a class="reference internal" href="../neovim/Tweaking/index.html">User Tweaks</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">DEV Index</a><input aria-label="Toggle navigation of DEV Index" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/scala/index.html">Scala Topics</a><input aria-label="Toggle navigation of Scala Topics" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/Classes.html">Classes in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/Reflection.html">Reflection in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/scratchpad.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/java/index.html">Java Topics</a><input aria-label="Toggle navigation of Java Topics" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Classes.html">Anonymous classes with instance variables and initializer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Classes.html#using-local-classes-to-simulate-nested-functions">Using local classes to simulate nested functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Lombok.html">Lombok</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/Ada/index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/Containers.html">Containers in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/access_types.html">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/scratchpad.html">The Ada language - personal scratchpad</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/typescript/index.html">Typescript Topics</a><input aria-label="Toggle navigation of Typescript Topics" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/typescript/Named%20Arguments.html">Typescript Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/typescript/scratchpad.html">Typescript Stuff</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -276,6 +302,29 @@ implementation) was written and is copyrighted by <a class="reference external" 
 work was released under the free <a class="reference external" href="https://geographiclib.sourceforge.io/LICENSE.txt">MIT/X11 License</a>.</p>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">¶</a></h2>
+<div class="literal-block-wrapper docutils container" id="sample-ada">
+<div class="code-block-caption"><span class="caption-text">Sample Code</span><a class="headerlink" href="#sample-ada" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kd">procedure</span> <span class="nf">Add_Edge</span> <span class="p">(</span><span class="nv">Self</span> <span class="p">: </span><span class="nv">in</span> <span class="nv">out</span> <span class="nv">PolygonAreaClass</span><span class="p">;</span> <span class="nv">azi</span><span class="p">,</span> <span class="nv">s</span> <span class="p">: </span><span class="nv">Long_Float</span><span class="p">)</span>
+<span class="linenos"> 2</span><span class="kr">is</span>
+<span class="linenos"> 3</span><span class="kr">begin</span>
+<span class="linenos"> 4</span> <span class="c1">--- Do nothing if num is zero</span>
+<span class="linenos"> 5</span>   <span class="kr">if</span> <span class="n">Self</span><span class="p">.</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="kr">then</span>
+<span class="linenos"> 6</span>   <span class="kr">declare</span>
+<span class="linenos"> 7</span>     <span class="no">gd</span> <span class="p">:</span> <span class="kr">constant</span> <span class="n">GeodesicResult</span> <span class="p">:=</span> <span class="n">Self</span><span class="p">.</span><span class="n">gd</span><span class="p">.</span><span class="n">Direct</span> <span class="p">(</span><span class="n">Self</span><span class="p">.</span><span class="n">lat1</span><span class="p">,</span> <span class="n">Self</span><span class="p">.</span><span class="n">lon1</span><span class="p">,</span> <span class="n">azi</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">Self</span><span class="p">.</span><span class="n">imask</span><span class="p">);</span>
+<span class="linenos"> 8</span>   <span class="kr">begin</span>
+<span class="linenos"> 9</span>     <span class="n">Self</span><span class="p">.</span><span class="n">perimetersum</span><span class="p">.</span><span class="n">Add</span> <span class="p">(</span><span class="n">gd</span><span class="p">.</span><span class="n">s12</span><span class="p">);</span>
+<span class="linenos">10</span>     <span class="kr">if</span> <span class="ow">not</span> <span class="n">Self</span><span class="p">.</span><span class="n">polyline</span> <span class="kr">then</span>
+<span class="linenos">11</span>       <span class="n">Self</span><span class="p">.</span><span class="n">areasum</span><span class="p">.</span><span class="n">Add</span> <span class="p">(</span><span class="n">gd</span><span class="p">.</span><span class="n">area12</span><span class="p">);</span>
+<span class="linenos">12</span>       <span class="n">Self</span><span class="p">.</span><span class="n">crossings</span> <span class="p">:=</span> <span class="n">Self</span><span class="p">.</span><span class="n">crossings</span> <span class="o">+</span> <span class="n">Transit_Direct</span> <span class="p">(</span><span class="n">Self</span><span class="p">.</span><span class="n">lon1</span><span class="p">,</span> <span class="n">gd</span><span class="p">.</span><span class="n">lon2</span><span class="p">);</span>
+<span class="linenos">13</span>     <span class="kr">end</span> <span class="kr">if</span><span class="p">;</span>
+<span class="linenos">14</span>     <span class="n">Self</span><span class="p">.</span><span class="n">lat1</span> <span class="p">:=</span> <span class="n">gd</span><span class="p">.</span><span class="n">lat2</span><span class="p">;</span><span class="n">Self</span><span class="p">.</span><span class="n">lon1</span> <span class="p">:=</span> <span class="n">gd</span><span class="p">.</span><span class="n">lon2</span><span class="p">;</span>
+<span class="linenos">15</span>     <span class="n">Self</span><span class="p">.</span><span class="n">num</span>  <span class="p">:=</span> <span class="n">Self</span><span class="p">.</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="linenos">16</span>   <span class="kr">end</span><span class="p">;</span>
+<span class="linenos">17</span> <span class="kr">end</span> <span class="kr">if</span><span class="p">;</span>
+<span class="linenos">18</span><span class="kr">end</span> <span class="nf">Add_Edge</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
 <p>This is mainly an exercise to refresh my knowledge in the Ada programming language. I’ve chosen this
 library, because I’ve been using the Java version elsewhere and found it to be an excellent piece of
 software.</p>

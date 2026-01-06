@@ -1,0 +1,53 @@
+---
+id: Classes
+aliases: []
+tags:
+  - java
+  - classes
+  - dev
+date: 2025-10-16T21:24:48
+title: Tricks with Classes in Java
+---
+
+
+## Anonymous classes with instance variables and initializer
+```java
+int myVariable = 1;
+
+myButton.addActionListener(new ActionListener() {
+    private int anonVar;
+    public void actionPerformed(ActionEvent e) {
+        // How would one access myVariable here?        i
+        // It's now here:
+        System.out.println("Initialized with value: " + anonVar);
+    }
+    private ActionListener init(int var){
+        anonVar = var;
+        return this;
+    }
+}.init(myVariable)  );
+```
+Here, we instantiate a anonymous `ActionListener` that implements a method (`actionPerformed`) and also
+allows to pass parameters to the class. This is done via the `init` method that is called immediately
+after creating the class and returning a reference to itself.
+
+## Using local classes to simulate nested functions
+Local classes are a feature that is rarely used, but nonetheless can be useful. Any method can contain
+local classes and the scope of this class is the method. Local classes cannot be public or private, but 
+can contain static content, including static methods.
+```java
+  public void writeConfig() {
+    class Foo {
+      static void bar() {
+        IO.println("Local class bar method");
+      }
+    }
+    [...]
+    Foo.bar();
+  }
+```
+Here the `class Foo` is local to the method `writeConfig()` and it's static method `bar()` can be used 
+in the method only. You could also use non-static methods and use them by instantiating a `Foo` object 
+like `new Foo().bar();`. An instantiated local class has access to the members of the enclosing class and 
+also to any **final** variable in the enclosing method. Local classes are often used to create helper 
+methods that are not needed elsewhere.

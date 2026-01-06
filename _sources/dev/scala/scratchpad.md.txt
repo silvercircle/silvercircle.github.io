@@ -1,0 +1,101 @@
+---
+id: index
+aliases: []
+tags:
+  - dev
+  - scala
+  - java
+date: 2025-06-06T19:04:31
+---
+# Scala
+A collection of useful tips for Scala in combination with [Metals](https://scalameta.org/metals/) and 
+[the official Neovim plugin](https://github.com/scalameta/nvim-metals). This can convert Neovim into a 
+decent Scala editor that benefits from Metals' rich feature set.
+
+## Create FAT jars
+So called fat jars are self-contained jars that include all the Scala runtime stuff. They can run without 
+a Scala installation using only a java VM. `java -jar foo.jar` where foo jar is a fat JAR generated with 
+the `sbt-assembly` plugin.
+
+- https://www.baeldung.com/scala/sbt-fat-jar
+
+## Using Scala-CLI
+Scala-CLI can be used to build and manage projects. It is not as powerful as sbt, but can be faster in 
+some cases. It works well with `metals` for small single-module projects. Scala-CLI is still under heavy 
+development and will see improvements in future releases. For large projects, particularly such with 
+multiple modules, `sbt` might still be the better option.
+
+##### Power mode
+Power-mode is the synonym for the experimental mode in Scala-CLI. Power-mode offers more features, but 
+some of them should be considered unstable and experimental. You can enable Power-mode with the `--power` 
+command line argument or globally by running:
+```
+# enable power-mode globally (for the current user)
+$ scala-cli config power true
+```
+
+##### Create a FAT Jar (aka assembly)
+A fat JAR works exactly like in `sbt`. It creates a JAR that contains all dependencies including the 
+Scala default library. It will run on any compatible JVM.
+```
+# build a fat JAR (aka assembly)
+$ scala-cli package --force --assembly .
+```
+Note the `--force` parameter. It is generally needed by all Scala-CLI commands in order to overwrite 
+existing builds.
+
+#### Create a standalone Jar
+This is basically the same as a FAT Jar, but there are some minor differences in the internal format. 
+Like the FAT Jar, this is fully self-contained and will run on any compatible JVM using the `-jar` 
+command line argument.
+```
+# build a standalone JAR
+$ scala-cli package --force --standalone .
+```
+
+##### Using Scala-CLI to build native apps
+Scala-CLI fully supports building native executables with `scala-native`. While this is still considered 
+experimental software, it's fairly complete and works fine for many smaller applications. Note that 
+native does not always mean faster execution. In fact, some code could run faster when executed by the 
+JVM, but native will almost always result in much faster startup times.
+```bash
+# build the application in the current directoy, using a scala-native optimized release build
+$scala-cli package --force --native --native-mode release-full .
+```
+
+#### Using Scala-CLI to build native apps via Graal VM
+This is a different way to produce standalone executables. It requires a compatible version of Graal 
+which will be downloaded via coursier on-demand during the build process. This process cares about some 
+issues related to Scala. It allows you to use Java libraries using reflection (a common problem when 
+building native binaries) and also Scala's LazyVal semantics. Scala-CLI will automatically generate the 
+necessary manifest and configuration files for Graal's native image generator.
+```
+scala-cli package --native-image --graalvm-version "21.0.2" --graalvm-java-version 21 .
+```
+Remember, use `--force` to overwrite an existing build. Use `--graalvm-args` to pass arguments to the 
+Graal VM native image generator.
+
+## Language topics
+#### Catching multiple exceptions with the same variable
+This is possible via pattern alternatives, a detail of the very powerful pattern matching features in 
+Scala.
+```scala
+try {
+  ...
+} catch {
+  case e @ (_: IOException | _: RuntimeException) = { println(e.getMessage()) }
+}
+```
+This will catch both exception types into e.
+
+#### Time and Date stuff
+```scala
+// create a ZonedDateTime with a time zone information
+val ts = ZonedDateTime.of(2000, 1, 6, 18, 14, 0, 0, ZoneId.of("UTC"))
+// > 2000-01-06T18:14Z[UTC]
+// translate into a different time zone
+val translated = ts.withZoneSameInstant(ZoneId.of("Europe/Vienna"))
+// 2000-01-06T19:14+01:00[Europe/Vienna]
+val translated.toLocalDateTime()
+// 2000-01-06T19:14:10
+```

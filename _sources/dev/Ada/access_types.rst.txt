@@ -1,0 +1,42 @@
+.. role:: ada(code)
+  :language: ada
+
+Ada Access Types
+================
+This document contains a loose number of notes about access types in Ada. This is a complex topic with 
+quite some pitfalls 
+
+Implicit Dereference
+--------------------
+
+Consider the type:
+""""""""""""""""""
+
+.. code-block:: ada
+  :linenos:
+
+  type LF_Ref (Element : not null access Real) is null record with
+    Implicit_Dereference => Element;
+
+This defines an access type ``LF_Ref`` to access variables of type ``Real`` (just another name for a 
+``Long_Float``) which implicitly dereferences ``Element``. Now, this is really a record type with 
+``Element`` as its single member and discriminant and whenever you use a variable of this type to access 
+a ``Real`` value, it will automatically dereference and allows read/write access to its target.
+
+
+Consider
+""""""""
+
+.. code-block:: ada
+  :linenos:
+
+  type AuxAngleClass is tagged record
+    xx : aliased Real := 1.0;
+    yy : aliased Real := 0.0;
+  end record;
+
+  AA : AuxAngleClass := (xx => 0.0, yy => 0.0);
+  R  : LF_Ref := Aux_Angle.xx;
+
+This will give you an access type to ``AA.xx`` but you do not have to use ``.all`` in order to access the 
+target value. You can do something like :ada:`R := 12.3;` and 
