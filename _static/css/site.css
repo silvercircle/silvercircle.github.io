@@ -17,3 +17,10 @@ div.centered {
 .bordered {
   border: 2px solid #444;
 }
+
+div.headline p {
+  font-size: 120%;
+  font-weight: 600;
+  margin-left: 1em;
+  color: #8080ff;
+}

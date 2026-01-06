@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/zed/zed-mono-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/zed/zed-mono-italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/zed/zed-mono-medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/zed/zed-mono-mediumitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/zed/zed-mono-semibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/zed/zed-mono-semibolditalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono Extended';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/zed/zed-mono-extendedmedium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono Extended';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/zed/zed-mono-extendedmediumitalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Zed Mono Extended';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/_static/fonts/zed/zed-mono-extendedsemibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Zed Mono Extended';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('/_static/fonts/zed/zed-mono-extendedsemibolditalic.ttf') format('truetype');
+}
+/* use Iosevka font for div.highlight pre only. */
+/* for all else, use the standard monospaced font */
+div.highlight pre {
+  font-family: "Zed Mono" !important;
+  font-weight: 400 !important;
+  font-size: 12pt !important;
+  line-height: 115% !important;
+  padding: 0 10px;
+  overflow-y: hidden !important;
+  padding-right: 5px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+code {
+	font-family: "Zed Mono Extended" !important;
+	font-size: 11pt !important;
+	font-weight: 400 !important;
+	color: white !important;
+	padding: 1px 3px !important;
+}
+
+/* sytax highlight customization */
+pre span.p, pre span.o, code span.p, code span.o {
+	color: orange !important;
+}
+pre span.kt, code span.kt {
+	color: #772088 !important;
+}
+pre span.nc, code span.nc {
+	text-decoration: none !important;
+}
+pre span.nf, code span.nf {
+	color: #206688 !important;
+	text-decoration: none !important;
+}
+pre span.s, code span.s {
+	color: #88872a !important;
+}
+pre span.kd, pre span.k, code span.kd, code span.k {
+	color: #b16286 !important;
+}
+pre span.mi, pre span.mf, code span.mi, code span.mf {
+	color: #40804f !important;
+}
+pre span.kr, pre span.kc, pre span.kn, code span.kr, code span.kc, code span.kn {
+	color: #903060 !important;
+}
+pre span.n, code span.n {
+	color: #999 !important;
+}
+
+code span.pre {
+	color: #ccc;
+}
+div.code-block-caption {
+	padding: 4px 10px;
+}
+
+div.code-block-caption span.caption-text {
+	font-family: var(--font-stack--monospace);
+	color: #206688;
+	font-size: 13pt;
+	font-weight: 600;
+}

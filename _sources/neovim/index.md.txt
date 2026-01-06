@@ -16,6 +16,7 @@ Plugins/oil
 Plugins/snacks
 DAP Configuration <DAP/index>
 User Tweaks <Tweaking/index>
+LSP/*
 ```
 
 

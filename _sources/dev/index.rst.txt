@@ -5,8 +5,6 @@ Scala Topics
 ------------
 .. toctree::
   :maxdepth: 4
-  :caption: Contents
-  :glob:
   :class: toctreeinline
 
   scala/index
@@ -16,8 +14,6 @@ Java Topics
 
 .. toctree::
   :maxdepth: 4
-  :caption: Contents
-  :glob:
   :class: toctreeinline
 
   java/index
@@ -26,8 +22,6 @@ Ada Topics
 ----------
 .. toctree::
   :maxdepth: 4
-  :caption: Contents
-  :glob:
   :class: toctreeinline
 
   Ada/index
@@ -36,8 +30,6 @@ Typescript Topics
 -----------------
 .. toctree::
   :maxdepth: 4
-  :caption: Contents
-  :glob:
   :class: toctreeinline
 
   typescript/index

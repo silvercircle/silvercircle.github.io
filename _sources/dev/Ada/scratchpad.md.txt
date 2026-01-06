@@ -7,6 +7,9 @@ date: 2025-11-27T16:54:41
 title: Ada Language
 ---
 # The Ada language - personal scratchpad
+This is a mostly un-organized collection of notes I took while learning the language. Or rather, 
+re-learning, because I've learned Ada many years ago, but the knowledge faded away over many years of not 
+using it.
 
 ## Case insensitive language
 Everything, identifiers, package names, keywords is case-insensitive in Ada. This leads to a common 

@@ -1,5 +1,4 @@
-.. role:: ada(code)
-  :language: ada
+.. include:: ../../roles.rst
 
 Ada Access Types
 ================
@@ -8,12 +7,14 @@ quite some pitfalls
 
 Implicit Dereference
 --------------------
-
-Consider the type:
-""""""""""""""""""
+This is a feature that was introduced in Ada 2012 and is described `In this document <https://www.adacore.com/blog/gem-123-implicit-dereferencing-in-ada-2012>`_
+It allows to define reference types which can be passed around and used to access the underlying target. 
+Normally, when using an access type, you need to use the ``.all`` attribute to de-reference it [#f1]_ but 
+implicit de-reference allows you to use references without using ``.all``.
 
 .. code-block:: ada
   :linenos:
+  :caption: Consider the type declaration:
 
   type LF_Ref (Element : not null access Real) is null record with
     Implicit_Dereference => Element;
@@ -24,14 +25,12 @@ This defines an access type ``LF_Ref`` to access variables of type ``Real`` (jus
 a ``Real`` value, it will automatically dereference and allows read/write access to its target.
 
 
-Consider
-""""""""
-
 .. code-block:: ada
   :linenos:
+  :caption: Example of using such a type:
 
   type AuxAngleClass is tagged record
-    xx : aliased Real := 1.0;
+    xx : aliased Real := 0.0;
     yy : aliased Real := 0.0;
   end record;
 
@@ -40,3 +39,8 @@ Consider
 
 This will give you an access type to ``AA.xx`` but you do not have to use ``.all`` in order to access the 
 target value. You can do something like :ada:`R := 12.3;` and 
+
+.. rubric::
+---
+
+.. [#f1] This is like using the dereference operator (*) in C/C++.

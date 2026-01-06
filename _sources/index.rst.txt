@@ -7,7 +7,7 @@
 .. toctree::
   :caption: Contents
   :hidden:
-  :maxdepth: 8
+  :maxdepth: 10
 
   test/scratchpad
   internal/rules

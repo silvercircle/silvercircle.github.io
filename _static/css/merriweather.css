@@ -34,15 +34,16 @@
 }
 
 body, input {
-  font-family: "Merriweather" !important
+  font-family: "Merriweather" !important;
 }
 
 section p, div.admonition p {
-  font-size: 12pt !important;
-  line-height: 1.4em !important;
+  font-size: 12pt;
+  line-height: 1.4em;
   text-align: justify !important;
   hyphens: auto !important;
   text-wrap: pretty !important;
+  color: #cabbbb !important;
 }
 
 kbd {

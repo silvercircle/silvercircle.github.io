@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosevka.css?v=3ed703f5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/zedmono.css?v=636aef8b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=a6a43828" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=d437fe22" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=ff894bac" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=b25b29fb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=3239cf76" />
     
     
 
@@ -296,21 +296,25 @@
 quite some pitfalls</p>
 <section id="implicit-dereference">
 <h2>Implicit Dereference<a class="headerlink" href="#implicit-dereference" title="Link to this heading">¶</a></h2>
-<section id="consider-the-type">
-<h3>Consider the type:<a class="headerlink" href="#consider-the-type" title="Link to this heading">¶</a></h3>
+<p>This is a feature that was introduced in Ada 2012 and is described <a class="reference external" href="https://www.adacore.com/blog/gem-123-implicit-dereferencing-in-ada-2012">In this document</a>
+It allows to define reference types which can be passed around and used to access the underlying target.
+Normally, when using an access type, you need to use the <code class="docutils literal notranslate"><span class="pre">.all</span></code> attribute to de-reference it <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> but
+implicit de-reference allows you to use references without using <code class="docutils literal notranslate"><span class="pre">.all</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Consider the type declaration:</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
 <div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">type</span> <span class="kt">LF_Ref</span> <span class="p">(</span><span class="nv">Element</span> <span class="p">: </span><span class="nv">not</span> <span class="nv">null</span> <span class="nv">access</span> <span class="nv">Real</span><span class="p">)</span> <span class="kr">is</span> <span class="kc">null</span> <span class="kr">record</span> <span class="kn">with</span>
 <span class="linenos">2</span>  <span class="n">Implicit_Dereference</span> <span class="p">=&gt;</span> <span class="n">Element</span><span class="p">;</span>
 </pre></div>
+</div>
 </div>
 <p>This defines an access type <code class="docutils literal notranslate"><span class="pre">LF_Ref</span></code> to access variables of type <code class="docutils literal notranslate"><span class="pre">Real</span></code> (just another name for a
 <code class="docutils literal notranslate"><span class="pre">Long_Float</span></code>) which implicitly dereferences <code class="docutils literal notranslate"><span class="pre">Element</span></code>. Now, this is really a record type with
 <code class="docutils literal notranslate"><span class="pre">Element</span></code> as its single member and discriminant and whenever you use a variable of this type to access
 a <code class="docutils literal notranslate"><span class="pre">Real</span></code> value, it will automatically dereference and allows read/write access to its target.</p>
-</section>
-<section id="consider">
-<h3>Consider<a class="headerlink" href="#consider" title="Link to this heading">¶</a></h3>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Example of using such a type:</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
 <div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">type</span> <span class="kt">AuxAngleClass</span> <span class="kr">is</span> <span class="kr">tagged</span> <span class="kr">record</span>
-<span class="linenos">2</span>  <span class="n">xx</span> <span class="p">:</span> <span class="kr">aliased</span> <span class="n">Real</span> <span class="p">:=</span> <span class="mf">1.0</span><span class="p">;</span>
+<span class="linenos">2</span>  <span class="n">xx</span> <span class="p">:</span> <span class="kr">aliased</span> <span class="n">Real</span> <span class="p">:=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="linenos">3</span>  <span class="n">yy</span> <span class="p">:</span> <span class="kr">aliased</span> <span class="n">Real</span> <span class="p">:=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="linenos">4</span><span class="kr">end record</span><span class="p">;</span>
 <span class="linenos">5</span>
@@ -318,9 +322,16 @@ a <code class="docutils literal notranslate"><span class="pre">Real</span></code
 <span class="linenos">7</span><span class="n">R</span>  <span class="p">:</span> <span class="n">LF_Ref</span> <span class="p">:=</span> <span class="n">Aux_Angle</span><span class="p">.</span><span class="n">xx</span><span class="p">;</span>
 </pre></div>
 </div>
+</div>
 <p>This will give you an access type to <code class="docutils literal notranslate"><span class="pre">AA.xx</span></code> but you do not have to use <code class="docutils literal notranslate"><span class="pre">.all</span></code> in order to access the
 target value. You can do something like <code class="code highlight ada docutils literal highlight-ada"><span class="n">R</span> <span class="p">:=</span> <span class="mf">12.3</span><span class="p">;</span></code> and</p>
-</section>
+<p>—</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>This is like using the dereference operator (*) in C/C++.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -380,11 +391,7 @@ target value. You can do something like <code class="code highlight ada docutils
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Ada Access Types</a><ul>
-<li><a class="reference internal" href="#implicit-dereference">Implicit Dereference</a><ul>
-<li><a class="reference internal" href="#consider-the-type">Consider the type:</a></li>
-<li><a class="reference internal" href="#consider">Consider</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#implicit-dereference">Implicit Dereference</a></li>
 </ul>
 </li>
 </ul>
