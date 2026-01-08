@@ -1,0 +1,110 @@
+.. include:: ../../roles.rst
+
+Generics in Ada
+===============
+Like most other modern languages, Ada does have mechanisms for `Generic programming <https://en.wikipedia.org/wiki/Generic_programming>`_. A solid
+introduction can be found in this `AdaCore Article <https://learn.adacore.com/courses/intro-to-ada/chapters/generics.html>`_. 
+
+.. rubric:: Types of generics in Ada
+
+Ada basically supports two types of Generics. In Ada terminology, we speak about generic units. A unit is 
+either a package or a single subprogram, so the following cases do exist but are d
+
+* Generic subprograms (single procedures or functions taking and/or returning generic parameters)
+* Package-level generics. Entire packages that operate on generic parameters.
+
+Subprogram-level Generics
+-------------------------
+A generic subprogram is a function or a procedure that takes one or more formal type parameters. A 
+function may also return a formal type value. Like any other Ada unit, it is specified in an ``.ads`` 
+file and implemented in an ``.adb`` file. Such subprograms are not part of a package and thus are part of 
+the global name space. Naming conventions dictate that the name of the subprogram is also the file 
+name. Since our example procedure is named ``Swap`` we must also name the files ``swap.[adb|ads]`` [#f2]_.
+
+.. tab-set::
+
+  .. tab-item:: swap.ads
+
+    .. code-block:: ada
+      :caption: A generic procedure - spec file
+      :linenos:
+
+      -- specs in the swap.ads
+      generic
+        type Element_T is private;  -- generic type parameter (placeholder)
+      -- a procedure using such a type.
+      procedure Swap (X, Y : in out Element_T);
+
+  .. tab-item:: swap.adb
+
+    .. code-block:: ada
+      :linenos:
+      :caption: A generic procedure - body implementation
+
+      -- implementation in swap.adb
+      procedure Swap (X, Y : in out Element_T) is
+        Temporary : constant Element_T := X;
+      begin
+        X := Y;
+        Y := Temporary;
+      end Swap;
+
+To instantiate this generic procedure we would use it like :ada:`procedure Swap_Integers is new Swap (Integer);`. 
+after making the generic procedure availble with a :ada:`With Swap;` statement. Afterwards, you can use 
+the procedure like so: :ada:`Swap_Integers(foo, bar)` (given that ``foo`` and ``bar`` are two Integer 
+variables).
+
+.. note::
+
+  For more clarity (and verbosity |:smile:|), we could also use named parameter notation and write :ada:`(Element_T => 
+  Integer);`, but this is often omitted, particularly when there is only one formal type parameter.
+
+.. hint::
+
+   In C++, Java and other languages with heavy generics content, it is often idiomatic to name type 
+   parameters with a single capital letter like ``T``, ``V`` or ``W``. In Ada, which is case-insensitive, 
+   more descriptive names, often with ``Element_`` as a prefix are common.
+
+The formal type parameter is declared in line 3 as a private type.
+
+Package-level generics
+----------------------
+This is the much more common variant of using generics in Ada. Formal type parameters apply to an entire 
+package and can be used in all subprograms and other declarations throughout this package.
+
+.. tab-set::
+
+  .. tab-item:: generic_stack.ads
+
+    .. code-block:: ada
+      :linenos:
+      :caption: Package spec
+
+      generic
+        Max: Positive; 
+        type Element_T is private;
+      package Generic_Stack is
+        procedure Push (E: Element_T);
+        function Pop return Element_T;
+      end Generic_Stack;
+
+  .. tab-item:: generic_stack.adb
+
+    .. code-block:: ada
+      :linenos:
+      :caption: Package implementation
+
+      package body Generic_Stack is
+      Stack: array (1 .. Max) of Element_T;
+      Top  : Integer range 0 .. Max := 0;  -- initialise to empty
+      -- ...
+      end Generic_Stack;
+
+Generic packages must be instantiated before you can make such a package available with a ``With`` 
+Statement. To do so you simple define a new package :ada:`package Float_Stack is new Generic_Stack(Float);`
+
+------------
+
+.. [#f2] These naming conventions are not defined by the language, but by the compiler. Since we (and 
+  most others nowadays) use the GNAT compiler suite, we usually conform to its naming specifications.
+

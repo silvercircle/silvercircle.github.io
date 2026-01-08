@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Ada Access Types" href="access_types.html"><link rel="prev" title="Ada Topics" href="index.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="The Ada language - personal scratchpad" href="scratchpad.html"><link rel="prev" title="Ada Access Types" href="access_types.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
-        <title>Containers in Ada - Silvercircle</title>
+        <title>Generics in Ada - Silvercircle</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -183,7 +183,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -244,9 +244,9 @@
 </ul>
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Containers in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="access_types.html">Ada Access Types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generics.html">Generics in Ada</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Generics in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scratchpad.html">The Ada language - personal scratchpad</a></li>
 </ul>
 </li>
@@ -277,7 +277,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/dev/Ada/Containers.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/dev/Ada/generics.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -290,16 +290,125 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="containers-in-ada">
-<h1>Containers in Ada<a class="headerlink" href="#containers-in-ada" title="Link to this heading">¶</a></h1>
-<p>Most containers are implemented as generic packages which must be instantiated with actual types. In it
-simplest form, a generic package has one or more formal types, which are placeholders for real data
-types. A nice introduction into generics can be found <a class="reference external" href="https://learn.adacore.com/courses/intro-to-ada/chapters/generics.html">here</a></p>
+          <section id="generics-in-ada">
+<h1>Generics in Ada<a class="headerlink" href="#generics-in-ada" title="Link to this heading">¶</a></h1>
+<p>Like most other modern languages, Ada does have mechanisms for <a class="reference external" href="https://en.wikipedia.org/wiki/Generic_programming">Generic programming</a>. A solid
+introduction can be found in this <a class="reference external" href="https://learn.adacore.com/courses/intro-to-ada/chapters/generics.html">AdaCore Article</a>.</p>
+<p class="rubric">Types of generics in Ada</p>
+<p>Ada basically supports two types of Generics. In Ada terminology, we speak about generic units. A unit is
+either a package or a single subprogram, so the following cases do exist but are d</p>
+<ul class="simple">
+<li><p>Generic subprograms (single procedures or functions taking and/or returning generic parameters)</p></li>
+<li><p>Package-level generics. Entire packages that operate on generic parameters.</p></li>
+</ul>
+<section id="subprogram-level-generics">
+<h2>Subprogram-level Generics<a class="headerlink" href="#subprogram-level-generics" title="Link to this heading">¶</a></h2>
+<p>A generic subprogram is a function or a procedure that takes one or more formal type parameters. A
+function may also return a formal type value. Like any other Ada unit, it is specified in an <code class="docutils literal notranslate"><span class="pre">.ads</span></code>
+file and implemented in an <code class="docutils literal notranslate"><span class="pre">.adb</span></code> file. Such subprograms are not part of a package and thus are part of
+the global name space. Naming conventions dictate that the name of the subprogram is also the file
+name. Since our example procedure is named <code class="docutils literal notranslate"><span class="pre">Swap</span></code> we must also name the files <code class="docutils literal notranslate"><span class="pre">swap.[adb|ads]</span></code> <a class="footnote-reference brackets" href="#f2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+swap.ads</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">A generic procedure - spec file</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">-- specs in the swap.ads</span>
+<span class="linenos">2</span><span class="kd">generic</span>
+<span class="linenos">3</span>  <span class="kd">type</span> <span class="kt">Element_T</span> <span class="kr">is</span> <span class="kd">private</span><span class="p">;</span>  <span class="c1">-- generic type parameter (placeholder)</span>
+<span class="linenos">4</span><span class="c1">-- a procedure using such a type.</span>
+<span class="linenos">5</span><span class="kd">procedure</span> <span class="nf">Swap</span> <span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span> <span class="p">: </span><span class="nv">in</span> <span class="nv">out</span> <span class="nv">Element_T</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+swap.adb</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">A generic procedure - body implementation</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">-- implementation in swap.adb</span>
+<span class="linenos">2</span><span class="kd">procedure</span> <span class="nf">Swap</span> <span class="p">(</span><span class="nv">X</span><span class="p">,</span> <span class="nv">Y</span> <span class="p">: </span><span class="nv">in</span> <span class="nv">out</span> <span class="nv">Element_T</span><span class="p">)</span> <span class="kr">is</span>
+<span class="linenos">3</span>  <span class="no">Temporary</span> <span class="p">:</span> <span class="kr">constant</span> <span class="n">Element_T</span> <span class="p">:=</span> <span class="n">X</span><span class="p">;</span>
+<span class="linenos">4</span><span class="kr">begin</span>
+<span class="linenos">5</span>  <span class="n">X</span> <span class="p">:=</span> <span class="n">Y</span><span class="p">;</span>
+<span class="linenos">6</span>  <span class="n">Y</span> <span class="p">:=</span> <span class="n">Temporary</span><span class="p">;</span>
+<span class="linenos">7</span><span class="kr">end</span> <span class="nf">Swap</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>To instantiate this generic procedure we would use it like <code class="code highlight ada docutils literal highlight-ada"><span class="kd">procedure</span> <span class="nf">Swap_Integers</span> <span class="kr">is</span> <span class="kr">new</span> <span class="n">Swap</span> <span class="p">(</span><span class="kt">Integer</span><span class="p">);</span></code>.
+after making the generic procedure availble with a <code class="code highlight ada docutils literal highlight-ada"><span class="kn">With</span> <span class="n">Swap</span><span class="p">;</span></code> statement. Afterwards, you can use
+the procedure like so: <code class="code highlight ada docutils literal highlight-ada"><span class="n">Swap_Integers</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">)</span></code> (given that <code class="docutils literal notranslate"><span class="pre">foo</span></code> and <code class="docutils literal notranslate"><span class="pre">bar</span></code> are two Integer
+variables).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more clarity (and verbosity 😄), we could also use named parameter notation and write <code class="code highlight ada docutils literal highlight-ada"><span class="p">(</span><span class="n">Element_T</span> <span class="p">=&gt;</span>
+<span class="kt">Integer</span><span class="p">);</span></code>, but this is often omitted, particularly when there is only one formal type parameter.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In C++, Java and other languages with heavy generics content, it is often idiomatic to name type
+parameters with a single capital letter like <code class="docutils literal notranslate"><span class="pre">T</span></code>, <code class="docutils literal notranslate"><span class="pre">V</span></code> or <code class="docutils literal notranslate"><span class="pre">W</span></code>. In Ada, which is case-insensitive,
+more descriptive names, often with <code class="docutils literal notranslate"><span class="pre">Element_</span></code> as a prefix are common.</p>
+</div>
+<p>The formal type parameter is declared in line 3 as a private type.</p>
+</section>
+<section id="package-level-generics">
+<h2>Package-level generics<a class="headerlink" href="#package-level-generics" title="Link to this heading">¶</a></h2>
+<p>This is the much more common variant of using generics in Ada. Formal type parameters apply to an entire
+package and can be used in all subprograms and other declarations throughout this package.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+generic_stack.ads</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Package spec</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">generic</span>
+<span class="linenos">2</span>  <span class="n">Max</span><span class="p">:</span> <span class="kt">Positive</span><span class="p">;</span>
+<span class="linenos">3</span>  <span class="kd">type</span> <span class="kt">Element_T</span> <span class="kr">is</span> <span class="kd">private</span><span class="p">;</span>
+<span class="linenos">4</span><span class="kd">package</span> <span class="nc">Generic_Stack</span> <span class="kr">is</span>
+<span class="linenos">5</span>  <span class="kd">procedure</span> <span class="nf">Push</span> <span class="p">(</span><span class="nv">E</span><span class="p">: </span><span class="nv">Element_T</span><span class="p">);</span>
+<span class="linenos">6</span>  <span class="kd">function</span> <span class="nf">Pop</span> <span class="nf">return</span> <span class="nf">Element_T</span><span class="p">;</span>
+<span class="linenos">7</span><span class="kr">end</span> <span class="nf">Generic_Stack</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+generic_stack.adb</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Package implementation</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">package</span> <span class="kd">body</span> <span class="nc">Generic_Stack</span> <span class="kr">is</span>
+<span class="linenos">2</span><span class="n">Stack</span><span class="p">:</span> <span class="kr">array</span> <span class="p">(</span><span class="mi">1</span> <span class="p">..</span> <span class="n">Max</span><span class="p">)</span> <span class="kr">of</span> <span class="n">Element_T</span><span class="p">;</span>
+<span class="linenos">3</span><span class="n">Top</span>  <span class="p">:</span> <span class="kt">Integer</span> <span class="kr">range</span> <span class="mi">0</span> <span class="p">..</span> <span class="n">Max</span> <span class="p">:=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">-- initialise to empty</span>
+<span class="linenos">4</span><span class="c1">-- ...</span>
+<span class="linenos">5</span><span class="kr">end</span> <span class="nf">Generic_Stack</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>Generic packages must be instantiated before you can make such a package available with a <code class="docutils literal notranslate"><span class="pre">With</span></code>
+Statement. To do so you simple define a new package <code class="code highlight ada docutils literal highlight-ada"><span class="kd">package</span> <span class="nc">Float_Stack</span> <span class="kr">is new</span> <span class="nc">Generic_Stack</span><span class="p">(</span>Float<span class="p">);</span></code></p>
+<hr class="docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>These naming conventions are not defined by the language, but by the compiler. Since we (and
+most others nowadays) use the GNAT compiler suite, we usually conform to its naming specifications.</p>
+</aside>
+</aside>
+</section>
 </section>
 
         </article>
@@ -307,23 +416,23 @@ types. A nice introduction into generics can be found <a class="reference extern
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="access_types.html">
+          <a class="next-page" href="scratchpad.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Ada Access Types</div>
+                <div class="title">The Ada language - personal scratchpad</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
+          <a class="prev-page" href="access_types.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Ada Topics</div>
+                <div class="title">Ada Access Types</div>
                 
               </div>
             </a>
@@ -345,8 +454,28 @@ types. A nice introduction into generics can be found <a class="reference extern
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Generics in Ada</a><ul>
+<li><a class="reference internal" href="#subprogram-level-generics">Subprogram-level Generics</a></li>
+<li><a class="reference internal" href="#package-level-generics">Package-level generics</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

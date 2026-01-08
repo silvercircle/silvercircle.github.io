@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="The Ada language - personal scratchpad" href="scratchpad.html"><link rel="prev" title="Containers in Ada" href="Containers.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Generics in Ada" href="generics.html"><link rel="prev" title="Containers in Ada" href="Containers.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>Ada Access Types - Silvercircle</title>
@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=546062e5" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=a6a43828" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=b25b29fb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=ad9cd7b8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=1d86c35c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=84c2f903" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=3239cf76" />
     
     
@@ -31,12 +31,16 @@
     body[data-theme="dark"] {
       --color-code-background: #202020;
   --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #202020;
   --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
   
       }
     }
@@ -242,6 +246,7 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generics.html">Generics in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scratchpad.html">The Ada language - personal scratchpad</a></li>
 </ul>
 </li>
@@ -340,12 +345,12 @@ target value. You can do something like <code class="code highlight ada docutils
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="scratchpad.html">
+          <a class="next-page" href="generics.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">The Ada language - personal scratchpad</div>
+                <div class="title">Generics in Ada</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

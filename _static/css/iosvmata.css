@@ -58,9 +58,11 @@ code {
 /* sytax highlight customization */
 pre span.p, pre span.o, code span.p, code span.o {
 	color: orange !important;
+	font-weight: 700 !important;
 }
 pre span.kt, code span.kt {
 	color: #772088 !important;
+	font-weight: 400 !important;
 }
 pre span.nc, code span.nc {
 	text-decoration: none !important;
@@ -92,9 +94,14 @@ div.code-block-caption {
 	padding: 4px 10px;
 }
 
-div.code-block-caption span.caption-text {
+div.code-block-caption span.caption-text, div.admonition p.admonition-title {
 	font-family: var(--font-stack--monospace);
 	color: #206688;
 	font-size: 13pt;
 	font-weight: 600;
+}
+
+p.admonition-title {
+	padding-top: 10px !important;
+	padding-bottom: 5px !important;
 }
