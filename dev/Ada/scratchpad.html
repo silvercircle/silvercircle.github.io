@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=ad9cd7b8" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=1d86c35c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=57a900db" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=d2aa7d16" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=84c2f903" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=3239cf76" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=212891eb" />
     
     
 
@@ -255,6 +255,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../typescript/scratchpad.html">Typescript Stuff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../regexp.html">Regular Expressions notepad</a></li>
 </ul>
 </li>
 </ul>
@@ -331,8 +332,8 @@ Ada) and methods working on instances of such records. The syntax is, however, d
 langauges like C++ or Java. Ada does not know the concept of member functions, but it does know the
 concept of dynamic dispatching, inheritance and interfaces. Member functions (method) are, however,
 defined in a different way and are not part of the class (record) itself.</p>
-<div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Example</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Example</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
 <div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">type</span> <span class="kt">Point</span> <span class="kr">is</span> <span class="kr">tagged</span> <span class="kr">record</span>
 <span class="linenos">2</span>  <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="p">:</span> <span class="n">Coord</span><span class="p">;</span>
 <span class="linenos">3</span><span class="kr">end</span> <span class="nf">Point</span><span class="p">;</span>
@@ -359,6 +360,26 @@ implicit <code class="docutils literal notranslate"><span class="pre">this</span
 <p>Note also that <code class="docutils literal notranslate"><span class="pre">Self</span></code> is not a mandatory name, it’s just convention to use names like <code class="docutils literal notranslate"><span class="pre">Self</span></code> or
 <code class="docutils literal notranslate"><span class="pre">This</span></code> but you can use whatever you want. In Ada, this is called the dispatching parameter and you can use dot
 notation ONLY if the dispatching parameter is the first in the list of arguments.</p>
+</section>
+<section id="floating-point-arithmetics">
+<h2>Floating point arithmetics<a class="headerlink" href="#floating-point-arithmetics" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>How to express NaN (not a number)?</dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Invalid_Value</span></code> where <code class="docutils literal notranslate"><span class="pre">T</span></code> is any floating point data type.</p>
+</dd>
+<dt>How to check for NaN / infinity?</dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">x</span> <span class="o">/=</span> <span class="n">x</span></code> where <code class="docutils literal notranslate"><span class="pre">x</span></code> is any floating point data type.</p>
+</dd>
+<dt>How to express <code class="code highlight java docutils literal highlight-java"><span class="n">Double</span><span class="p">.</span><span class="na">MIN_NORMAL</span></code>? <a class="footnote-reference brackets" href="#fe1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Model_Small</span></code> for any floating point type <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
+</dd>
+<dt>How to find <a class="reference external" href="https://www.w3schools.com/java/ref_math_ulp.asp#:~:text=The%20ulp()%20method%20returns,data%20type%20is%2050000004.0f%20.">ULP</a>?</dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Model_Epsilon</span></code> to find the number with the minimum precision for any floating point type <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
+</dd>
+</dl>
+<hr class="docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="fe1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Smallest possible positive normal number as defined in the IEEE 754 specifications.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -421,6 +442,7 @@ notation ONLY if the dispatching parameter is the first in the list of arguments
 <li><a class="reference internal" href="#case-insensitive-language">Case insensitive language</a></li>
 <li><a class="reference internal" href="#difference-with-vs-use">Difference WITH vs USE</a></li>
 <li><a class="reference internal" href="#classes-methods-functions">Classes, methods, functions</a></li>
+<li><a class="reference internal" href="#floating-point-arithmetics">Floating point arithmetics</a></li>
 </ul>
 </li>
 </ul>

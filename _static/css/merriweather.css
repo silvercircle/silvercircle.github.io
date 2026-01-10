@@ -6,11 +6,40 @@
 }
 
 @font-face {
-  font-family: "Merriweather";
-  font-style:  normal;
-  font-weight: 800;
+  font-family:"Merriweather";
+  font-style:normal;
+  font-weight:600;
   src: url("/_static/fonts/Merriweather.ttf") format('truetype');
 }
+
+@font-face {
+  font-family:"Merriweather";
+  font-style: normal;
+  font-weight:800;
+  src: url("/_static/fonts/Merriweather.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Merriweather";
+  font-style:italic;
+  font-weight:400;
+  src: url("/_static/fonts/Merriweather-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Merriweather";
+  font-style:italic;
+  font-weight:600;
+  src: url("/_static/fonts/Merriweather-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Merriweather";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/_static/fonts/Merriweather-Italic.ttf") format('truetype');
+}
+
 
 @font-face {
   font-family:"Allegra Sans SC";
@@ -38,7 +67,8 @@ body, input {
 }
 
 section p, div.admonition p {
-  font-size: 12pt;
+  font-size: 12.5pt;
+  font-weight: 400;
   line-height: 1.4em;
   text-align: justify !important;
   hyphens: auto !important;

@@ -67,3 +67,22 @@ implicit ``this``.
 Note also that ``Self`` is not a mandatory name, it's just convention to use names like ``Self`` or 
 ``This`` but you can use whatever you want. In Ada, this is called the dispatching parameter and you can use dot 
 notation ONLY if the dispatching parameter is the first in the list of arguments.
+
+Floating point arithmetics
+--------------------------
+How to express NaN (not a number)?
+  Use :ada:`T'Invalid_Value` where ``T`` is any floating point data type.
+
+How to check for NaN / infinity?
+  Use :ada:`x /= x` where ``x`` is any floating point data type.
+
+How to express :java:`Double.MIN_NORMAL`? [#fe1]_
+  Use :ada:`T'Model_Small` for any floating point type ``T``.
+
+How to find `ULP <https://www.w3schools.com/java/ref_math_ulp.asp#:~:text=The%20ulp()%20method%20returns,data%20type%20is%2050000004.0f%20.>`_?
+  Use :ada:`T'Model_Epsilon` to find the number with the minimum precision for any floating point type ``T``.
+
+--------------------------
+
+.. [#fe1] Smallest possible positive normal number as defined in the IEEE 754 specifications.
+

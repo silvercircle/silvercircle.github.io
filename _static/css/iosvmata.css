@@ -51,13 +51,14 @@ code {
 	font-family: "Iosvmata";
 	font-size: 12pt !important;
 	font-weight: 400 !important;
-	color: white !important;
+	/* color: white !important; */
 	padding: 1px 3px !important;
 }
 
 /* sytax highlight customization */
 pre span.p, pre span.o, code span.p, code span.o {
-	color: orange !important;
+	/*color: orange !important; */
+	color: #805010 !important;
 	font-weight: 700 !important;
 }
 pre span.kt, code span.kt {
@@ -87,21 +88,29 @@ pre span.n, code span.n {
 	color: #999 !important;
 }
 
-code span.pre {
-	color: #ccc;
-}
 div.code-block-caption {
 	padding: 4px 10px;
 }
 
-div.code-block-caption span.caption-text, div.admonition p.admonition-title {
+div.code-block-caption span.caption-text {
 	font-family: var(--font-stack--monospace);
 	color: #206688;
 	font-size: 13pt;
 	font-weight: 600;
 }
 
+div.admonition p.admonition-title {
+	font-family: var(--font-stack--monospace);
+	font-size: 13pt;
+	font-weight: 600;
+}
 p.admonition-title {
 	padding-top: 10px !important;
 	padding-bottom: 5px !important;
+}
+
+label.sd-tab-label {
+	font-family: var(--font-stack--monospace);
+	font-size: 12pt;
+	font-weight: 600;
 }

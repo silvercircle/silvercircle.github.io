@@ -24,3 +24,14 @@ div.headline p {
   margin-left: 1em;
   color: #8080ff;
 }
+
+div.left-aligned {
+  text-align: left !important;
+}
+
+dl.simple dt {
+  font-size: 13.5pt;
+  font-weight: 600;
+  color: var(--color-foreground-muted);
+  font-style: italic;
+}

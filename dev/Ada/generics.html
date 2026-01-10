@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=ad9cd7b8" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=1d86c35c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=57a900db" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=d2aa7d16" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=84c2f903" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=3239cf76" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=212891eb" />
     
     
 
@@ -255,6 +255,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../typescript/scratchpad.html">Typescript Stuff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../regexp.html">Regular Expressions notepad</a></li>
 </ul>
 </li>
 </ul>
@@ -307,7 +308,7 @@ either a package or a single subprogram, so the following cases do exist but are
 <li><p>Package-level generics. Entire packages that operate on generic parameters.</p></li>
 </ul>
 <section id="subprogram-level-generics">
-<h2>Subprogram-level Generics<a class="headerlink" href="#subprogram-level-generics" title="Link to this heading">¶</a></h2>
+<span id="ada-gen-subprograms"></span><h2>Subprogram-level Generics<a class="headerlink" href="#subprogram-level-generics" title="Link to this heading">¶</a></h2>
 <p>A generic subprogram is a function or a procedure that takes one or more formal type parameters. A
 function may also return a formal type value. Like any other Ada unit, it is specified in an <code class="docutils literal notranslate"><span class="pre">.ads</span></code>
 file and implemented in an <code class="docutils literal notranslate"><span class="pre">.adb</span></code> file. Such subprograms are not part of a package and thus are part of
@@ -363,7 +364,7 @@ more descriptive names, often with <code class="docutils literal notranslate"><s
 <p>The formal type parameter is declared in line 3 as a private type.</p>
 </section>
 <section id="package-level-generics">
-<h2>Package-level generics<a class="headerlink" href="#package-level-generics" title="Link to this heading">¶</a></h2>
+<span id="ada-gen-packages"></span><h2>Package-level generics<a class="headerlink" href="#package-level-generics" title="Link to this heading">¶</a></h2>
 <p>This is the much more common variant of using generics in Ada. Formal type parameters apply to an entire
 package and can be used in all subprograms and other declarations throughout this package.</p>
 <div class="sd-tab-set docutils">
@@ -400,6 +401,12 @@ generic_stack.adb</label><div class="sd-tab-content docutils">
 </div>
 <p>Generic packages must be instantiated before you can make such a package available with a <code class="docutils literal notranslate"><span class="pre">With</span></code>
 Statement. To do so you simple define a new package <code class="code highlight ada docutils literal highlight-ada"><span class="kd">package</span> <span class="nc">Float_Stack</span> <span class="kr">is new</span> <span class="nc">Generic_Stack</span><span class="p">(</span>Float<span class="p">);</span></code></p>
+</section>
+<section id="differences-to-c-or-java">
+<h2>Differences to C++ or Java<a class="headerlink" href="#differences-to-c-or-java" title="Link to this heading">¶</a></h2>
+<p>In C++ or Java (and other languages) you instantiate a generic class or method by using it. In Ada, you
+need to instantiate either a generic subprogram or a generic class, essentially creating a usable version
+of the subprogram or the package.</p>
 <hr class="docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f2" role="doc-footnote">
@@ -469,6 +476,7 @@ most others nowadays) use the GNAT compiler suite, we usually conform to its nam
 <li><a class="reference internal" href="#">Generics in Ada</a><ul>
 <li><a class="reference internal" href="#subprogram-level-generics">Subprogram-level Generics</a></li>
 <li><a class="reference internal" href="#package-level-generics">Package-level generics</a></li>
+<li><a class="reference internal" href="#differences-to-c-or-java">Differences to C++ or Java</a></li>
 </ul>
 </li>
 </ul>

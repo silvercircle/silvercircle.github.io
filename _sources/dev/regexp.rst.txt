@@ -1,0 +1,13 @@
+.. include:: ../roles.rst
+
+Regular Expressions notepad
+===========================
+
+Vim / Neovim regular expressions
+--------------------------------
+
+Match any https URL and surround it with <>
+  ``:%s /http[s]\?:\/\/[[:alnum:]%\/_#.-]*/<\0>/g``
+
+Strip parenthesis from URL
+  ``%s /(\(https[^{]*\))/\1``

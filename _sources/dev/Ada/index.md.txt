@@ -1,0 +1,24 @@
+# Ada Topics
+
+```{toctree}
+---
+maxdepth: 4
+caption: Contents:
+glob:
+hidden:
+---
+*
+```
+
+##### {doc}`The Scratchpad (just notes while learning Ada) <scratchpad>`
+This is just a small collection of notes and items I took while learning the language.
+
+##### {doc}`Containers - notes on the Ada Container library <Containers>`
+The standard library has a comprehensive set of default container implementations.
+
+##### {doc}`Access Types <access_types>`
+Interesting things about access types – a very important concept in Ada.
+
+##### {doc}`Generics in Ada <generics>`
+Ada does have them, but somewhat different.
+

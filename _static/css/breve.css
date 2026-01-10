@@ -1,0 +1,171 @@
+@font-face {
+  font-family:"Breve";
+  font-style:normal;
+  font-weight:300;
+  src: url("/_static/fonts/breve/Breve Text Light.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:italic;
+  font-weight:300;
+  src: url("/_static/fonts/breve/Breve Text Light Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/breve/Breve Text Book.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:normal;
+  font-weight:700;
+  src: url("/_static/fonts/breve/Breve Text Bold.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:italic;
+  font-weight:400;
+  src: url("/_static/fonts/breve/Breve Text Book Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:italic;
+  font-weight:700;
+  src: url("/_static/fonts/breve/Breve Text Bold Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:normal;
+  font-weight:600;
+  src: url("/_static/fonts/breve/Breve Text Semi Bold.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:italic;
+  font-weight:600;
+  src: url("/_static/fonts/breve/Breve Text Semi Bold Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:normal;
+  font-weight:500;
+  src: url("/_static/fonts/breve/Breve Text Medium.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve";
+  font-style:italic;
+  font-weight:500;
+  src: url("/_static/fonts/breve/Breve Text Medium Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/breve/Breve Title Book.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:normal;
+  font-weight:700;
+  src: url("/_static/fonts/breve/Breve Title Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:italic;
+  font-weight:400;
+  src: url("/_static/fonts/breve/Breve Title Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:italic;
+  font-weight:700;
+  src: url("/_static/fonts/breve/Breve Title Bold Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:normal;
+  font-weight:500;
+  src: url("/_static/fonts/breve/Breve Title Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:italic;
+  font-weight:500;
+  src: url("/_static/fonts/breve/Breve Title Medium Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:normal;
+  font-weight:600;
+  src: url("/_static/fonts/breve/Breve Title Semi Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Breve Title";
+  font-style:italic;
+  font-weight:600;
+  src: url("/_static/fonts/breve/Breve Title Semi Bold Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/AlegreyaSansSC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:700;
+  src: url("/_static/fonts/AlegreyaSansSC-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:600;
+  src: url("/_static/fonts/AlegreyaSansSC-Medium.ttf") format('truetype');
+}
+
+body, input {
+  font-family: "Breve" !important;
+}
+
+section p, div.admonition p {
+  font-size: 13.5pt;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: justify;
+  hyphens: auto;
+  text-wrap: pretty !important;
+}
+
+kbd {
+  line-height:1.3em;
+}
+
+article.md-typeset {
+  font-size: 1.8em !important;
+  font-family: "Breve";
+  line-height: 1.3em;
+  font-weight: 400;
+}
+

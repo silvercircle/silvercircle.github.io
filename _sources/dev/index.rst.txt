@@ -33,3 +33,13 @@ Typescript Topics
   :class: toctreeinline
 
   typescript/index
+
+Other Topics
+------------
+
+.. toctree::
+  :maxdepth: 4
+  :class: toctreeinline
+
+  regexp
+

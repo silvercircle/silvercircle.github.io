@@ -13,6 +13,8 @@ either a package or a single subprogram, so the following cases do exist but are
 * Generic subprograms (single procedures or functions taking and/or returning generic parameters)
 * Package-level generics. Entire packages that operate on generic parameters.
 
+.. _ada_gen_subprograms:
+
 Subprogram-level Generics
 -------------------------
 A generic subprogram is a function or a procedure that takes one or more formal type parameters. A 
@@ -67,6 +69,8 @@ variables).
 
 The formal type parameter is declared in line 3 as a private type.
 
+.. _ada_gen_packages:
+
 Package-level generics
 ----------------------
 This is the much more common variant of using generics in Ada. Formal type parameters apply to an entire 
@@ -102,6 +106,12 @@ package and can be used in all subprograms and other declarations throughout thi
 
 Generic packages must be instantiated before you can make such a package available with a ``With`` 
 Statement. To do so you simple define a new package :ada:`package Float_Stack is new Generic_Stack(Float);`
+
+Differences to C++ or Java
+--------------------------
+In C++ or Java (and other languages) you instantiate a generic class or method by using it. In Ada, you 
+need to instantiate either a generic subprogram or a generic class, essentially creating a usable version 
+of the subprogram or the package.
 
 ------------
 

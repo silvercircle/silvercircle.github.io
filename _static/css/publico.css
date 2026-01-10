@@ -1,0 +1,88 @@
+@font-face {
+  font-family:"Publico";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/publico/Publico-Roman.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Publico";
+  font-style:  normal;
+  font-weight: 600;
+  src: url("/_static/fonts/publico/Publico-Medium.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Publico";
+  font-style:  normal;
+  font-weight: 800;
+  src: url("/_static/fonts/publico/Publico-Bold.otf") format('opentype');
+}
+
+
+@font-face {
+  font-family:"Publico";
+  font-style:italic;
+  font-weight:400;
+  src: url("/_static/fonts/publico/Publico-Italic.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Publico";
+  font-style:  italic;
+  font-weight: 600;
+  src: url("/_static/fonts/publico/Publico-MediumItalic.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Publico";
+  font-style:  italic;
+  font-weight: 800;
+  src: url("/_static/fonts/publico/Publico-BoldItalic.otf") format('opentype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/AlegreyaSansSC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:700;
+  src: url("/_static/fonts/AlegreyaSansSC-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:600;
+  src: url("/_static/fonts/AlegreyaSansSC-Medium.ttf") format('truetype');
+}
+
+body, input {
+  font-family: "Publico" !important;
+}
+
+section p, div.admonition p {
+  font-size: 13pt;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-align: justify;
+  hyphens: auto;
+  text-wrap: pretty !important;
+}
+
+kbd {
+  line-height:1.3em;
+}
+
+article.md-typeset {
+  font-size: 1.8em !important;
+  font-family: "Merriweather";
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
