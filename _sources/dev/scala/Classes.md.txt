@@ -136,3 +136,7 @@ sugar provided by the Scala compiler.
 Finally, you can get rid of the `inline` because the compiler will do it for you. Getters and setters are
 a good example for Scala's syntax flexibility, but you need to understand it, otherwise it can lead to
 some confusion.
+
+```{tags} scala
+
+```

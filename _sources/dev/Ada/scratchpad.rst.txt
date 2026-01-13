@@ -22,7 +22,7 @@ therefore optional and should not always be used, particularly to avoid name con
 Suppose, you have a package `Lib` that defines a method `Foo`. To use it you need to do `WITH Lib` and 
 you can then use the method in your code by specifying the fully qualified name `Lib.Foo`. If you, 
 however, `USE Lib` you can use `Foo` without prefixing it with its package name. An often seen construct 
-in Ada are therefore statements like: :ada:`WITH Ada.Text_IO; USE Ada.Text_IO`.
+in Ada are therefore statements like: :ada:`WITH Ada.Text_IO; USE Ada.Text_IO;`.
 
 * When you WITH and/or USE a package in the spec (.ads file), you do not need to do the same in the 
   implementation (.adb) file of your module.

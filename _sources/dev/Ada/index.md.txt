@@ -22,3 +22,5 @@ Interesting things about access types – a very important concept in Ada.
 ##### {doc}`Generics in Ada <generics>`
 Ada does have them, but somewhat different.
 
+##### {doc}`Returning compound types <returning_records>`
+How to return larger types (like records) from functions.

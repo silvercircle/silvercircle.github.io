@@ -1,0 +1,6 @@
+Site Theme
+==========
+This site uses the `Furo theme <https://github.com/pradyunsg/furo/tree/main/src/furo/theme/furo>`_ with 
+some customization. 
+
+.. tags:: site

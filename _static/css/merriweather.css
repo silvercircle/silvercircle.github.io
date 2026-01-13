@@ -67,16 +67,21 @@ body, input {
 }
 
 section p, div.admonition p {
-  font-size: 12.5pt;
+  font-size: 12.2pt;
   font-weight: 400;
   line-height: 1.4em;
-  text-align: justify !important;
+  text-align: justify;
   hyphens: auto !important;
   text-wrap: pretty !important;
 }
 
 kbd {
   line-height:1.3em;
+}
+
+.footnote p {
+  font-size: 11pt;
+  text-align: left;
 }
 
 article.md-typeset {

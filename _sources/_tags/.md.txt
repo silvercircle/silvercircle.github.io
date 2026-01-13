@@ -1,0 +1,10 @@
+(sphx_tag_)=
+# My tags: ------------
+
+```{toctree}
+---
+maxdepth: 1
+caption: With this tag
+---
+../dev/Ada/generics.rst
+```

@@ -1,0 +1,75 @@
+Returning compound types from subprograms
+=========================================
+Returning a larger data type like a record is different from returning a simple value which usually fits 
+int a CPU register. By default, and unless explicitly enforced by using dynamically allocated records and 
+access types, Ada always uses **value semantics** to return compound types. This means, the caller always 
+gets data that survives the termination of the generating subprogram. Either, the data is copied or it is 
+directly created in the memory space of the caller. The user normally does not need to care about such 
+semantics.
+
+For the following observations, we assume a compound type in the following form:
+
+.. code-block:: ada
+  :linenos:
+  :caption: Record definition
+
+  type Point is tagged record 
+    X, Y, Z : Long_Float := 0.0;
+  end record;
+
+Aggregate notation
+------------------
+In aggregate notation, the subprogram implicitly constructs a record of the required type in its return 
+statement.
+
+.. code-block:: ada
+  :linenos:
+  :caption: Aggregate return statement
+
+  -- construct a new Point from a given Point and an offset
+  function Move_Point(p : Point; xdelta : Long_Float) return Point is
+  begin
+    -- return an intialized Point record. This follows the same
+    -- syntax as p : Point := (...) declarations.
+    return (X => p.X + xdelta, Y => p.Y, Z => p.Z);
+  end Move_Point;
+
+Extended return statement
+-------------------------
+
+Using an out parameter
+----------------------
+This is another option and especially useful for procedures that do not allow a return value. The caller 
+initializes a matching data type and passes it as ``out`` parameter to the subprogram. The subprogram 
+then populates the record and optionally can return another value (for example, a success or failure 
+code). This method also does not require any copy operations, because the caller must set up the record 
+receiving the result.
+
+Avoiding excessive copying operations
+-------------------------------------
+Copying around larger compound types can be time consuming and it is therefore desireable to minimize or 
+even avoid such operations. Modern compilers (particularly C++, Rust, but also Ada) use strategies and 
+methods commonly known as **Return Value Optimization (RVO)** or **Copy Elision** [#rf1]_ . Such optimizations 
+usually depend on the level of compiler optimization and may not be used for unoptimized debug builds.
+
+The problem
+^^^^^^^^^^^
+Consider a subprogram returning a large record. The record is first allocated on the stack and 
+constructed during the subprogram executes. It then needs to be returned to the calling entity and since 
+the subprogram's stack is no longer valid after it returns, a copy operation is needed to give the 
+calling entity access to the data. To solve this issue with **RVO** the compiler may allocate enough space on 
+the stack of the *calling entity* and the subprogram will then construct the compound type not on its 
+own, but on the caller's stack. The calling entity can then use the *„returned“* data structure (which, 
+in reality, wasn't returned, but built in-place of the calling entity) without performiny a copy 
+operation. In C++, the standard requires or even guarantees that Copy Elision is performed, the Ada 
+compiler prioritizes code correctness and **may** not use such techniques in case they would violate 
+correct behavior. [#rf2]_. 
+
+------------
+
+.. [#rf1] See `here for an introduction 
+   <https://www.pass4sure.com/blog/introduction-to-copy-elision-and-return-value-optimization-in-c/>`_. 
+   While it describes the technology from a C++ point of view, the concepts apply to other languages.
+
+.. [#rf2] This is more or less a theoretical construct. In most cases, any form of RVO should not 
+   endanger correct code behavior.

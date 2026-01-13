@@ -1,0 +1,15 @@
+:orphan:
+
+.. _tagoverview:
+
+Tags overview
+#############
+
+.. toctree::
+    :caption: Tags
+    :maxdepth: 1
+
+    ------------ (1) <.rst>
+    ada (3) <ada.rst>
+    site (1) <site.rst>
+    sphinx (1) <sphinx.rst>

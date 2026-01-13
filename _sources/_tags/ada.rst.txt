@@ -1,0 +1,12 @@
+.. _sphx_tag_ada:
+
+My tags: ada
+############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../dev/Ada/Containers.rst
+    ../dev/Ada/access_types.rst
+    ../dev/Ada/generics.rst

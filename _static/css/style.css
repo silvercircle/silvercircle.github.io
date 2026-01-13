@@ -43,7 +43,7 @@ div.toc-tree a.reference, div.sidebar-tree a.reference {
   text-decoration: none;
 }
 
-div.toctree-wrapper.toctreeinline a.reference {
+div.toctree-wrapper.compound a.reference {
   font-family: "Allegra Sans SC" !important;
   font-size: 16pt !important;
   color: #a07020 !important;
@@ -57,7 +57,7 @@ div.sidebar-tree p.caption, span.toc-title {
   color: white !important;
 }
 
-div.toctree-wrapper.toctreeinline p.caption {
+div.toctree-wrapper.compound p.caption {
   font-size: 16pt !important;
   font-weight: 400 !important;
   color: white !important;
@@ -112,3 +112,6 @@ img.align-right {
   margin-bottom: 0;
 }
 
+div.content-icon-container {
+  margin-bottom: 0;
+}

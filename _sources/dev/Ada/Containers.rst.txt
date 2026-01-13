@@ -4,3 +4,5 @@ Most containers are implemented as generic packages which must be instantiated w
 simplest form, a generic package has one or more formal types, which are placeholders for real data 
 types. A nice introduction into generics can be found `here <https://learn.adacore.com/courses/intro-to-ada/chapters/generics.html>`_
 
+.. tags:: ada
+

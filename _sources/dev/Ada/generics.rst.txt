@@ -113,6 +113,7 @@ In C++ or Java (and other languages) you instantiate a generic class or method b
 need to instantiate either a generic subprogram or a generic class, essentially creating a usable version 
 of the subprogram or the package.
 
+.. tags:: ada
 ------------
 
 .. [#f2] These naming conventions are not defined by the language, but by the compiler. Since we (and 

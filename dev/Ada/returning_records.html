@@ -1,0 +1,500 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="The Ada language - personal scratchpad" href="scratchpad.html"><link rel="prev" title="Generics in Ada" href="generics.html">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+        <title>Returning compound types from subprograms - Silvercircle</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=7606b759" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=990ec324" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=6add6086" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=997544a4" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #15151a;
+  --color-code-foreground: white;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #15151a;
+  --color-code-foreground: white;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Silvercircle</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  <span class="sidebar-brand-text">Silvercircle</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../test/scratchpad.html">Scratchpad</a><input aria-label="Toggle navigation of Scratchpad" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../internal/rules.html">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../internal/rules.html#here-is-the-full-hierarchy">Here is the full hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../internal/rules.html">Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../internal/rules.html#here-is-the-full-hierarchy">Here is the full hierarchy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../internal/myst-test.html">This is Myst</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../geolib/index.html">GeographicLib-Ada documentation</a><input aria-label="Toggle navigation of GeographicLib-Ada documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../geolib/api/geomath.html">Geomath Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geolib/api/geodesic.html">Geodesic Package documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../neovim/index.html">Neovim Index</a><input aria-label="Toggle navigation of Neovim Index" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Install/index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Keymaps/index.html">Custom key mappings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Theme/index.html">Theme documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/commandpalette.html">The Command Palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/fzf.html">Fzf-Lua Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/index.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/nvimtree.html">NvimTree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/oil.html">Oil (file manager)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Plugins/snacks.html">Snacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/DAP/index.html">DAP Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../neovim/Tweaking/index.html">User Tweaks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">DEV Index</a><input aria-label="Toggle navigation of DEV Index" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../scala/index.html">Scala Topics</a><input aria-label="Toggle navigation of Scala Topics" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scala/Classes.html">Classes in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scala/Reflection.html">Reflection in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scala/scratchpad.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../java/index.html">Java Topics</a><input aria-label="Toggle navigation of Java Topics" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../java/Classes.html">Anonymous classes with instance variables and initializer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../java/Classes.html#using-local-classes-to-simulate-nested-functions">Using local classes to simulate nested functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../java/Lombok.html">Lombok</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="access_types.html">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generics.html">Generics in Ada</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Returning compound types from subprograms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratchpad.html">The Ada language - personal scratchpad</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../typescript/index.html">Typescript Topics</a><input aria-label="Toggle navigation of Typescript Topics" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../typescript/Named%20Arguments.html">Typescript Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../typescript/scratchpad.html">Typescript Stuff</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../regexp.html">Regular Expressions notepad</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../site/index.html">Site Topics</a><input aria-label="Toggle navigation of Site Topics" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../site/pygments.html">The Pygments Style Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../site/theme.html">Site Theme</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/dev/Ada/returning_records.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="returning-compound-types-from-subprograms">
+<h1>Returning compound types from subprograms<a class="headerlink" href="#returning-compound-types-from-subprograms" title="Link to this heading">¶</a></h1>
+<p>Returning a larger data type like a record is different from returning a simple value which usually fits
+into a CPU register. By default – and unless explicitly enforced by using dynamically allocated records and
+access types – Ada always uses <strong>value semantics</strong> to return compound types. This means, the caller <em>always
+gets data that is valid after the subprogram returns and everything the subprogram has allocated on its
+stack becomes invalid</em>. Such data must either be copied to the caller or
+must not be allocated on the subprogram’s private stack at all. An option is to create the data in-place,
+that is, in a memory space available to both the caller and the called subprogram. Either way, as a user you
+normally do not need to care about such semantics. The compiler does this transparently for you and you
+can assume that a subprogram returning a <code class="docutils literal notranslate"><span class="pre">record</span></code> type will return a <strong>valid</strong> instance of that type
+and not some dangling reference or pointer to a memory location which may (or may not) hold valid data.</p>
+<p>Enforcing this is not always simple and may involve additional copy operations between caller and callee,
+and some optimizations can be performed to eliminate such costly operations. Particularly for larger
+record types.</p>
+<p>For the following observations, we assume a compound type in the following form:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Record definition</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">type</span> <span class="kt">Point</span> <span class="kr">is</span> <span class="kr">tagged</span> <span class="kr">record</span> 
+<span class="linenos">2</span>  <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span> <span class="p">:</span> <span class="kt">Long_Float</span> <span class="p">:=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="linenos">3</span><span class="kr">end record</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<section id="aggregate-notation">
+<h2>Aggregate notation<a class="headerlink" href="#aggregate-notation" title="Link to this heading">¶</a></h2>
+<p>In aggregate notation, the subprogram implicitly constructs a record of the required type in its return
+statement.</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Aggregate return statement</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">-- construct a new Point from a given Point and an offset</span>
+<span class="linenos">2</span><span class="kd">function</span> <span class="nf">Move_Point</span><span class="p">(</span><span class="nv">p</span> <span class="p">: </span><span class="nv">Point</span><span class="p">;</span> <span class="nv">xdelta</span> <span class="p">: </span><span class="nv">Long_Float</span><span class="p">)</span> <span class="kr">return</span> <span class="n">Point</span> <span class="kr">is</span>
+<span class="linenos">3</span><span class="kr">begin</span>
+<span class="linenos">4</span>  <span class="c1">-- return an intialized Point record. This follows the same</span>
+<span class="linenos">5</span>  <span class="c1">-- syntax as p : Point := (...) declarations.</span>
+<span class="linenos">6</span>  <span class="kr">return</span> <span class="p">(</span><span class="n">X</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">X</span> <span class="o">+</span> <span class="n">xdelta</span><span class="p">,</span> <span class="n">Y</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">Z</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">Z</span><span class="p">);</span>
+<span class="linenos">7</span><span class="kr">end</span> <span class="nf">Move_Point</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="extended-return-statement">
+<h2>Extended return statement<a class="headerlink" href="#extended-return-statement" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://www.adacore.com/blog/ada-gem-10">This</a> is a feature that was introduced in Ada 2005. It allows
+to declare and populate a return value in a loop or other block construct.</p>
+</section>
+<section id="using-an-out-parameter">
+<h2>Using an out parameter<a class="headerlink" href="#using-an-out-parameter" title="Link to this heading">¶</a></h2>
+<p>Another option and especially useful for procedures that do not allow a return value or for subprograms
+that must return multiple results are <code class="docutils literal notranslate"><span class="pre">out</span></code> parameters. The caller initializes a matching data type and
+passes it as <code class="docutils literal notranslate"><span class="pre">out</span></code> parameter to the subprogram. The subprogram then populates the record and optionally
+can return another value (for example, a success or failure code indicating the validity of the returned
+data). This method also does not require any copy operations, because the caller must set up the record
+receiving the result. An <code class="docutils literal notranslate"><span class="pre">out</span></code> parameter (and likewise <code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">out</span></code> parameters) is passed as a reference,
+so no copy operation is involved here either. The subprogram can directly write to the provided memory
+location holding the target record structure.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Using out parameter</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">-- construct a new Point from a given Point and an offset</span>
+<span class="linenos"> 2</span><span class="kd">function</span> <span class="nf">Move_Point</span><span class="p">(</span><span class="nv">p</span> <span class="p">: </span><span class="nv">Point</span><span class="p">;</span> <span class="nv">rslt</span> <span class="p">: </span><span class="nv">out</span> <span class="nv">Point</span><span class="p">;</span> <span class="nv">xdelta</span> <span class="p">: </span><span class="nv">Long_Float</span><span class="p">)</span> <span class="kr">return</span> <span class="kt">Boolean</span> <span class="kr">is</span>
+<span class="linenos"> 3</span>  <span class="n">success</span> <span class="p">:</span> <span class="kt">Boolean</span> <span class="p">:=</span> <span class="kc">False</span><span class="p">;</span>
+<span class="linenos"> 4</span><span class="kr">begin</span>
+<span class="linenos"> 5</span>  <span class="n">rslt</span><span class="p">.</span><span class="n">X</span> <span class="p">:=</span> <span class="n">p</span><span class="p">.</span><span class="n">X</span> <span class="o">+</span> <span class="n">xdelta</span><span class="p">;</span>
+<span class="linenos"> 6</span>  <span class="n">rslt</span><span class="p">.</span><span class="n">Y</span> <span class="p">:=</span> <span class="n">p</span><span class="p">.</span><span class="n">Y</span><span class="p">;</span>
+<span class="linenos"> 7</span>  <span class="n">rslt</span><span class="p">.</span><span class="n">Z</span> <span class="p">:=</span> <span class="n">p</span><span class="p">.</span><span class="n">Z</span><span class="p">;</span>
+<span class="linenos"> 8</span>  <span class="n">success</span> <span class="p">:=</span> <span class="kc">True</span><span class="p">;</span>
+<span class="linenos"> 9</span>  <span class="kr">return</span> <span class="p">(</span><span class="n">success</span><span class="p">);</span>
+<span class="linenos">10</span><span class="kr">end</span> <span class="nf">Move_Point</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="avoiding-excessive-copying-operations">
+<h2>Avoiding excessive copying operations<a class="headerlink" href="#avoiding-excessive-copying-operations" title="Link to this heading">¶</a></h2>
+<p>Copying around larger compound types can be time consuming and it is therefore desirable to minimize or
+even completely avoid such operations. Modern compilers (particularly C++, Rust, but also Ada) use
+strategies and methods commonly known as <strong>Return Value Optimization (RVO)</strong> or <strong>Copy Elision</strong> <a class="footnote-reference brackets" href="#rf1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.
+Such optimizations usually depend on the level of compiler optimization and may not be used for
+non-optimized debug builds. For GCC compilers, they will be active beginning at <code class="docutils literal notranslate"><span class="pre">–O1</span></code> optimization
+level and will be used more aggressively at <code class="docutils literal notranslate"><span class="pre">—O2</span></code> or <code class="docutils literal notranslate"><span class="pre">–O3</span></code>.</p>
+<section id="the-problem">
+<h3>The problem<a class="headerlink" href="#the-problem" title="Link to this heading">¶</a></h3>
+<p>Consider a subprogram returning a large record. The record is first allocated on the stack and
+constructed during the subprogram executes. It then needs to be returned to the calling entity and since
+the subprogram’s stack is no longer valid after it returns, a copy operation is needed to give the
+calling entity access to a valid copy of the data. To solve this issue with <strong>RVO</strong> the compiler may
+allocate enough space on the stack of the <em>calling entity</em> and the subprogram will then construct the
+compound type not on its own, but on the caller’s stack. The calling entity can then use the <em>„returned“</em>
+data structure (which, in reality, wasn’t returned, but built in-place of the calling entity) without
+performiny a copy operation. In C++, the standard requires or even guarantees that Copy Elision is
+performed, the Ada compiler prioritizes code correctness and <strong>may</strong> not use such techniques in case they
+would violate correct behavior. <a class="footnote-reference brackets" href="#rf2" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+</section>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="rf1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>See <a class="reference external" href="https://www.pass4sure.com/blog/introduction-to-copy-elision-and-return-value-optimization-in-c/">here for an introduction</a>.
+While it describes the technology from a C++ point of view, the concepts apply to other languages. The
+GNAT compiler is based on the GCC backend and can thus use similar techniques, but the Ada frontend
+may overrule in order to maintain code correctness.</p>
+</aside>
+<aside class="footnote brackets" id="rf2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>This is more or less a theoretical construct. In most cases, any form of RVO should not
+endanger correct code behavior.</p>
+</aside>
+</aside>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="scratchpad.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">The Ada language - personal scratchpad</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="generics.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Generics in Ada</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, A. Shorner
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Returning compound types from subprograms</a><ul>
+<li><a class="reference internal" href="#aggregate-notation">Aggregate notation</a></li>
+<li><a class="reference internal" href="#extended-return-statement">Extended return statement</a></li>
+<li><a class="reference internal" href="#using-an-out-parameter">Using an out parameter</a></li>
+<li><a class="reference internal" href="#avoiding-excessive-copying-operations">Avoiding excessive copying operations</a><ul>
+<li><a class="reference internal" href="#the-problem">The problem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=f0ca4bb6"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    </body>
+</html>

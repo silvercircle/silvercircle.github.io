@@ -40,6 +40,8 @@ a ``Real`` value, it will automatically dereference and allows read/write access
 This will give you an access type to ``AA.xx`` but you do not have to use ``.all`` in order to access the 
 target value. You can do something like :ada:`R := 12.3;` and 
 
+.. tags:: ada
+
 ---
 
 .. [#f1] This is like using the dereference operator (*) in C/C++.

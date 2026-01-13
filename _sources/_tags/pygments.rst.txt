@@ -1,0 +1,10 @@
+.. _sphx_tag_pygments:
+
+My tags: pygments
+#################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../site/pygments.rst

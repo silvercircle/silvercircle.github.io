@@ -1,0 +1,129 @@
+.. include:: ../roles.rst
+
+The Pygments Style Class
+========================
+This is what I am using for this site to highlight source code via pygments. This custom class is active 
+when using the dark theme (via ``pygments_dark_style`` in the ``conf.py``). Sphinx allows to customize 
+the style depending on the CSS media query, so you can have different syntax highlighters based on 
+whether the dark or light theme is active. For the light theme, I use the default highlight definitions, 
+but it's quite easy to customize them as well (see below)
+
+How to use such a custom style?
+-------------------------------
+* Your style class must inherit from ``pygments.style.Style``.
+* Copy this file to your sphinx site's source directory (this is the directory that contains ``conf.py``.)
+* Modify whatever color attribute you want.
+* In your ``conf.py`` make the path available for import like so:
+
+.. code-block:: python
+  :linenos:
+
+  import os
+  import sys
+  sys.path.append(os.path.dirname(__file__))
+
+* In your ``conf.py`` use it with :py:`pygments_dark_style = "pyg_dark.Pyg_Dark"`. For a light theme use 
+  ``pygments_style`` instead.
+
+Here is the full class defining the style:
+------------------------------------------
+.. code-block:: python
+  :linenos:
+  :caption: Sphinx syntax hl class (`reference <https://github.com/ansible-community/sphinx_ansible_theme/blob/a69836f/sphinx_ansible_theme/_pygments/style.py>`_)
+
+  from pygments.style import Style
+  from pygments.token import (
+      Keyword,
+      Name,
+      Comment,
+      Error,
+      Number,
+      Operator,
+      Generic,
+      Whitespace,
+      Punctuation,
+      Literal,
+      )
+
+
+  class Pyg_Dark(Style):
+      background_color = "#15151a"  # class: '.highlight'
+      line_number_color = "#707090"
+      default_style = ""
+
+      styles = {
+          Error: "#a61717 bg:#e3d2d2 border:#FF0000",  # class: 'err'
+          # Error:                     "#a61717 bg:#e3d2d2 border:1px solid #FF0000", # class: 'err'
+          Comment: "italic #6a737d",  # class: 'c'
+          Comment.Preproc: "noitalic #007020",  # class: 'cp'
+          Comment.PreprocFile: "italic #6a737d",  # class: 'cpf'
+          Comment.Hashbang: "italic #6a737d",  # class: 'ch'
+          Comment.Multiline: "italic #6a737d",  # class: 'cm'
+          Comment.Single: "italic #6a737d",  # class: 'c1'
+          Comment.Special: "bold italic #999999 bg:#fff0f0",  # class: 'cs'
+          Keyword: "bold #b16286",  # class: 'k'
+          Keyword.Constant: "bold #b16286",  # class: 'kc'
+          Keyword.Declaration: "bold #b16286",  # class: 'kd'
+          Keyword.Namespace: "bold #007020",  # class: 'kn'
+          Keyword.Pseudo: "#007020",  # class: 'kp'
+          Keyword.Reserved: "bold #772050",  # class: 'kr'
+          Keyword.Type: "#772088",  # class: 'kt'
+          Operator: "bold #805010",  # class: 'o'
+          Operator.Word: "bold #805010",  # class: 'ow'
+          Punctuation: "bold #4040aa",  # class: 'p'
+          Name: "#999999",  # class: 'n'
+          Name.Attribute: "#008080",  # class: 'na'
+          Name.Builtin: "#0086b3",  # class: 'nb'
+          Name.Class: "#445588",  # class: 'nc'
+          Name.Constant: "#008080",  # class: 'no'
+          Name.Decorator: "bold #555555",  # class: 'nd'
+          Name.Entity: "bold #800080",  # class: 'ni'
+          Name.Exception: "bold #990000",  # class: 'ne'
+          Name.Function: "#206688",  # class: 'nf'
+          Name.Label: "bold #002070",  # class: 'nl'
+          Name.Namespace: "bold #708422",  # class: 'nn'
+          Name.Tag: "bold #22863a",  # class: 'nt'
+          Name.Variable: "#999999",  # class: 'nv'
+          Name.Builtin.Pseudo: "#999999",  # class: 'bp'
+          Name.Function.Magic: "#06287e",  # class: 'fm'
+          Name.Variable.Class: "#008080",  # class: 'vc'
+          Name.Variable.Global: "#008080",  # class: 'vg'
+          Name.Variable.Instance: "#008080",  # class: 'vi'
+          Name.Variable.Magic: "#bb60d5",  # class: 'vm'
+          Number: "#208050",  # class: 'm'
+          Literal: "#032f62",  # class: 'l'
+          Literal.String: "#88872a",  # class: 's'
+          Literal.Number.Bin: "#40804f",  # class: 'mb'
+          Literal.Number.Float: "#40804f",  # class: 'mf'
+          Literal.Number.Hex: "#40804f",  # class: 'mh'
+          Literal.Number.Integer: "#40804f",  # class: 'mi'
+          Literal.Number.Oct: "#40804f",  # class: 'mo'
+          Literal.String.Affix: "#88872a",  # class: 'sa'
+          Literal.String.Backtick: "#88872a",  # class: 'sb'
+          Literal.String.Char: "#88872a",  # class: 'sc'
+          Literal.String.Delimiter: "#88872a",  # class: 'dl'
+          Literal.String.Doc: "italic #88872a",  # class: 'sd'
+          Literal.String.Double: "#88872a",  # class: 's2'
+          Literal.String.Escape: "bold #88872a",  # class: 'se'
+          Literal.String.Heredoc: "#88872a",  # class: 'sh'
+          Literal.String.Interpol: "italic #88872a",  # class: 'si'
+          Literal.String.Other: "#88872a",  # class: 'sx'
+          Literal.String.Regex: "#009926",  # class: 'sr'
+          Literal.String.Single: "#88872a",  # class: 's1'
+          Literal.String.Symbol: "#990073",  # class: 'ss'
+          Literal.Number.Integer.Long: "#009999",  # class: 'il'
+          Generic.Deleted: "#A00000 bg:#ffdddd",  # class: 'gd'
+          Generic.Emph: "italic",  # class: 'ge'
+          Generic.Error: "#aa0000",  # class: 'gr'
+          Generic.Heading: "bold #000080",  # class: 'gh'
+          Generic.Inserted: "#00A000 bg:#ddffdd",  # class: 'gi'
+          Generic.Output: "#333333",  # class: 'go'
+          Generic.Prompt: "bold #c65d09",  # class: 'gp'
+          Generic.Strong: "bold",  # class: 'gs'
+          Generic.Subheading: "bold #800080",  # class: 'gu'
+          Generic.Traceback: "#0040D0",  # class: 'gt'
+          Whitespace: "#bbbbbb",  # class: 'w'
+      }
+
+.. tags:: site, sphinx
+

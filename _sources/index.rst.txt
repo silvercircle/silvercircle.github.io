@@ -15,6 +15,7 @@
   geolib/index
   neovim/index
   dev/index
+  site/index
 
 On this page, you'll find two things:
 

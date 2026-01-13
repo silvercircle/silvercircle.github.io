@@ -1,0 +1,10 @@
+(sphx_tag_scala)=
+# My tags: scala
+
+```{toctree}
+---
+maxdepth: 1
+caption: With this tag
+---
+../dev/scala/Classes.md
+```

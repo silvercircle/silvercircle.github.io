@@ -1,0 +1,15 @@
+(tagoverview)=
+
+# Tags overview
+
+```{toctree}
+---
+caption: Tags
+maxdepth: 1
+---
+------------ (1) <>
+ada (3) <ada>
+scala (1) <scala>
+site (2) <site>
+sphinx (1) <sphinx>
+```

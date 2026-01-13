@@ -1,0 +1,17 @@
+# Site Topics
+
+```{toctree}
+---
+maxdepth: 4
+caption: Contents:
+glob:
+hidden:
+---
+*
+```
+
+##### {doc}`The pygments style class for the dark theme variant <pygments>`
+A custom pygments highlight style for this site that is only active for the dark theme. This is somewhat 
+inspired by gruvbox colors and my personal Neovim Theme.
+
+##### {doc}`The site's theme <theme>`

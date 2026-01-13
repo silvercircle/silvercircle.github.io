@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="The Ada language - personal scratchpad" href="scratchpad.html"><link rel="prev" title="Ada Access Types" href="access_types.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Returning compound types from subprograms" href="returning_records.html"><link rel="prev" title="Ada Access Types" href="access_types.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>Generics in Ada - Silvercircle</title>
@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=57a900db" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=d2aa7d16" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=84c2f903" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=212891eb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=7606b759" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=990ec324" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=6add6086" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=997544a4" />
     
     
 
@@ -29,18 +29,20 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #15151a;
+  --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #15151a;
+  --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
   
       }
     }
@@ -247,6 +249,7 @@
 <li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="access_types.html">Ada Access Types</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Generics in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="returning_records.html">Returning compound types from subprograms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scratchpad.html">The Ada language - personal scratchpad</a></li>
 </ul>
 </li>
@@ -256,6 +259,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../regexp.html">Regular Expressions notepad</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../site/index.html">Site Topics</a><input aria-label="Toggle navigation of Site Topics" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../site/pygments.html">The Pygments Style Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../site/theme.html">Site Theme</a></li>
 </ul>
 </li>
 </ul>
@@ -407,6 +415,7 @@ Statement. To do so you simple define a new package <code class="code highlight 
 <p>In C++ or Java (and other languages) you instantiate a generic class or method by using it. In Ada, you
 need to instantiate either a generic subprogram or a generic class, essentially creating a usable version
 of the subprogram or the package.</p>
+<p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info reference internal" href="../../_tags/ada.html"><span class="doc">ada</span></a></p>
 <hr class="docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f2" role="doc-footnote">
@@ -423,12 +432,12 @@ most others nowadays) use the GNAT compiler suite, we usually conform to its nam
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="scratchpad.html">
+          <a class="next-page" href="returning_records.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">The Ada language - personal scratchpad</div>
+                <div class="title">Returning compound types from subprograms</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

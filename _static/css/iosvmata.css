@@ -37,8 +37,8 @@
 /* for all else, use the standard monospaced font */
 div.highlight pre {
   font-family: "Iosvmata" !important;
-  font-weight: 400 !important;
-  font-size: 12pt !important;
+  font-weight: 400;
+  font-size: 12pt;
   line-height: 110% !important;
   padding: 0 10px;
   overflow-y: hidden !important;
@@ -53,39 +53,6 @@ code {
 	font-weight: 400 !important;
 	/* color: white !important; */
 	padding: 1px 3px !important;
-}
-
-/* sytax highlight customization */
-pre span.p, pre span.o, code span.p, code span.o {
-	/*color: orange !important; */
-	color: #805010 !important;
-	font-weight: 700 !important;
-}
-pre span.kt, code span.kt {
-	color: #772088 !important;
-	font-weight: 400 !important;
-}
-pre span.nc, code span.nc {
-	text-decoration: none !important;
-}
-pre span.nf, code span.nf {
-	color: #206688 !important;
-	text-decoration: none !important;
-}
-pre span.s, code span.s {
-	color: #88872a !important;
-}
-pre span.kd, pre span.k, code span.kd, code span.k {
-	color: #b16286 !important;
-}
-pre span.mi, pre span.mf, code span.mi, code span.mf {
-	color: #40804f !important;
-}
-pre span.kr, pre span.kc, pre span.kn, code span.kr, code span.kc, code span.kn {
-	color: #903060 !important;
-}
-pre span.n, code span.n {
-	color: #999 !important;
 }
 
 div.code-block-caption {

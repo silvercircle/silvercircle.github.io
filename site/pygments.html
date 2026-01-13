@@ -1,0 +1,513 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Site Theme" href="theme.html"><link rel="prev" title="Site Topics" href="index.html">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+        <title>The Pygments Style Class - Silvercircle</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/iosvmata.css?v=7606b759" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=990ec324" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/merriweather.css?v=6add6086" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=997544a4" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #15151a;
+  --color-code-foreground: white;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #15151a;
+  --color-code-foreground: white;
+  --color-content-foreground: #cabbbb;
+  --color-foreground-primary: #cabbbb;
+  --color-code-background: #19191f;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Silvercircle</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">Silvercircle</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../test/scratchpad.html">Scratchpad</a><input aria-label="Toggle navigation of Scratchpad" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../internal/rules.html">Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../internal/rules.html#here-is-the-full-hierarchy">Here is the full hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../internal/rules.html">Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internal/rules.html#here-is-the-full-hierarchy">Here is the full hierarchy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internal/myst-test.html">This is Myst</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../geolib/index.html">GeographicLib-Ada documentation</a><input aria-label="Toggle navigation of GeographicLib-Ada documentation" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../geolib/api/geomath.html">Geomath Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geolib/api/geodesic.html">Geodesic Package documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../neovim/index.html">Neovim Index</a><input aria-label="Toggle navigation of Neovim Index" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Install/index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Keymaps/index.html">Custom key mappings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Theme/index.html">Theme documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/commandpalette.html">The Command Palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/fzf.html">Fzf-Lua Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/index.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/nvimtree.html">NvimTree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/oil.html">Oil (file manager)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Plugins/snacks.html">Snacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/DAP/index.html">DAP Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neovim/Tweaking/index.html">User Tweaks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">DEV Index</a><input aria-label="Toggle navigation of DEV Index" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/scala/index.html">Scala Topics</a><input aria-label="Toggle navigation of Scala Topics" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/Classes.html">Classes in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/Reflection.html">Reflection in Scala</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/scala/scratchpad.html">Scala</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/java/index.html">Java Topics</a><input aria-label="Toggle navigation of Java Topics" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Classes.html">Anonymous classes with instance variables and initializer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Classes.html#using-local-classes-to-simulate-nested-functions">Using local classes to simulate nested functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/java/Lombok.html">Lombok</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/Ada/index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/Containers.html">Containers in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/access_types.html">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/generics.html">Generics in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/returning_records.html">Returning compound types from subprograms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/Ada/scratchpad.html">The Ada language - personal scratchpad</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../dev/typescript/index.html">Typescript Topics</a><input aria-label="Toggle navigation of Typescript Topics" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev/typescript/Named%20Arguments.html">Typescript Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev/typescript/scratchpad.html">Typescript Stuff</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/regexp.html">Regular Expressions notepad</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Site Topics</a><input aria-label="Toggle navigation of Site Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">The Pygments Style Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">Site Theme</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/site/pygments.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="the-pygments-style-class">
+<h1>The Pygments Style Class<a class="headerlink" href="#the-pygments-style-class" title="Link to this heading">¶</a></h1>
+<p>This is what I am using for this site to highlight source code via pygments. This custom class is active
+when using the dark theme (via <code class="docutils literal notranslate"><span class="pre">pygments_dark_style</span></code> in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>). Sphinx allows to customize
+the style depending on the CSS media query, so you can have different syntax highlighters based on
+whether the dark or light theme is active. For the light theme, I use the default highlight definitions,
+but it’s quite easy to customize them as well (see below)</p>
+<section id="how-to-use-such-a-custom-style">
+<h2>How to use such a custom style?<a class="headerlink" href="#how-to-use-such-a-custom-style" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Your style class must inherit from <code class="docutils literal notranslate"><span class="pre">pygments.style.Style</span></code>.</p></li>
+<li><p>Copy this file to your sphinx site’s source directory (this is the directory that contains <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.)</p></li>
+<li><p>Modify whatever color attribute you want.</p></li>
+<li><p>In your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> make the path available for import like so:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="linenos">2</span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="linenos">3</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> use it with <code class="code highlight py python docutils literal highlight-python"><span class="n">pygments_dark_style</span> <span class="o">=</span> <span class="s2">&quot;pyg_dark.Pyg_Dark&quot;</span></code>. For a light theme use
+<code class="docutils literal notranslate"><span class="pre">pygments_style</span></code> instead.</p></li>
+</ul>
+</section>
+<section id="here-is-the-full-class-defining-the-style">
+<h2>Here is the full class defining the style:<a class="headerlink" href="#here-is-the-full-class-defining-the-style" title="Link to this heading">¶</a></h2>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Sphinx syntax hl class (<a class="reference external" href="https://github.com/ansible-community/sphinx_ansible_theme/blob/a69836f/sphinx_ansible_theme/_pygments/style.py">reference</a>)</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Style</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.token</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="linenos"> 3</span>    <span class="n">Keyword</span><span class="p">,</span>
+<span class="linenos"> 4</span>    <span class="n">Name</span><span class="p">,</span>
+<span class="linenos"> 5</span>    <span class="n">Comment</span><span class="p">,</span>
+<span class="linenos"> 6</span>    <span class="n">Error</span><span class="p">,</span>
+<span class="linenos"> 7</span>    <span class="n">Number</span><span class="p">,</span>
+<span class="linenos"> 8</span>    <span class="n">Operator</span><span class="p">,</span>
+<span class="linenos"> 9</span>    <span class="n">Generic</span><span class="p">,</span>
+<span class="linenos">10</span>    <span class="n">Whitespace</span><span class="p">,</span>
+<span class="linenos">11</span>    <span class="n">Punctuation</span><span class="p">,</span>
+<span class="linenos">12</span>    <span class="n">Literal</span><span class="p">,</span>
+<span class="linenos">13</span>    <span class="p">)</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="k">class</span><span class="w"> </span><span class="nc">Pyg_Dark</span><span class="p">(</span><span class="n">Style</span><span class="p">):</span>
+<span class="linenos">17</span>    <span class="n">background_color</span> <span class="o">=</span> <span class="s2">&quot;#15151a&quot;</span>  <span class="c1"># class: &#39;.highlight&#39;</span>
+<span class="linenos">18</span>    <span class="n">line_number_color</span> <span class="o">=</span> <span class="s2">&quot;#707090&quot;</span>
+<span class="linenos">19</span>    <span class="n">default_style</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span>    <span class="n">styles</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos">22</span>        <span class="n">Error</span><span class="p">:</span> <span class="s2">&quot;#a61717 bg:#e3d2d2 border:#FF0000&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;err&#39;</span>
+<span class="linenos">23</span>        <span class="c1"># Error:                     &quot;#a61717 bg:#e3d2d2 border:1px solid #FF0000&quot;, # class: &#39;err&#39;</span>
+<span class="linenos">24</span>        <span class="n">Comment</span><span class="p">:</span> <span class="s2">&quot;italic #6a737d&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;c&#39;</span>
+<span class="linenos">25</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">Preproc</span><span class="p">:</span> <span class="s2">&quot;noitalic #007020&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;cp&#39;</span>
+<span class="linenos">26</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">PreprocFile</span><span class="p">:</span> <span class="s2">&quot;italic #6a737d&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;cpf&#39;</span>
+<span class="linenos">27</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">Hashbang</span><span class="p">:</span> <span class="s2">&quot;italic #6a737d&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ch&#39;</span>
+<span class="linenos">28</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">Multiline</span><span class="p">:</span> <span class="s2">&quot;italic #6a737d&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;cm&#39;</span>
+<span class="linenos">29</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">Single</span><span class="p">:</span> <span class="s2">&quot;italic #6a737d&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;c1&#39;</span>
+<span class="linenos">30</span>        <span class="n">Comment</span><span class="o">.</span><span class="n">Special</span><span class="p">:</span> <span class="s2">&quot;bold italic #999999 bg:#fff0f0&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;cs&#39;</span>
+<span class="linenos">31</span>        <span class="n">Keyword</span><span class="p">:</span> <span class="s2">&quot;bold #b16286&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;k&#39;</span>
+<span class="linenos">32</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Constant</span><span class="p">:</span> <span class="s2">&quot;bold #b16286&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kc&#39;</span>
+<span class="linenos">33</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Declaration</span><span class="p">:</span> <span class="s2">&quot;bold #b16286&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kd&#39;</span>
+<span class="linenos">34</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Namespace</span><span class="p">:</span> <span class="s2">&quot;bold #007020&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kn&#39;</span>
+<span class="linenos">35</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Pseudo</span><span class="p">:</span> <span class="s2">&quot;#007020&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kp&#39;</span>
+<span class="linenos">36</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Reserved</span><span class="p">:</span> <span class="s2">&quot;bold #772050&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kr&#39;</span>
+<span class="linenos">37</span>        <span class="n">Keyword</span><span class="o">.</span><span class="n">Type</span><span class="p">:</span> <span class="s2">&quot;#772088&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;kt&#39;</span>
+<span class="linenos">38</span>        <span class="n">Operator</span><span class="p">:</span> <span class="s2">&quot;bold #805010&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;o&#39;</span>
+<span class="linenos">39</span>        <span class="n">Operator</span><span class="o">.</span><span class="n">Word</span><span class="p">:</span> <span class="s2">&quot;bold #805010&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ow&#39;</span>
+<span class="linenos">40</span>        <span class="n">Punctuation</span><span class="p">:</span> <span class="s2">&quot;bold #4040aa&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;p&#39;</span>
+<span class="linenos">41</span>        <span class="n">Name</span><span class="p">:</span> <span class="s2">&quot;#999999&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;n&#39;</span>
+<span class="linenos">42</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Attribute</span><span class="p">:</span> <span class="s2">&quot;#008080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;na&#39;</span>
+<span class="linenos">43</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Builtin</span><span class="p">:</span> <span class="s2">&quot;#0086b3&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nb&#39;</span>
+<span class="linenos">44</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Class</span><span class="p">:</span> <span class="s2">&quot;#445588&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nc&#39;</span>
+<span class="linenos">45</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Constant</span><span class="p">:</span> <span class="s2">&quot;#008080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;no&#39;</span>
+<span class="linenos">46</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Decorator</span><span class="p">:</span> <span class="s2">&quot;bold #555555&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nd&#39;</span>
+<span class="linenos">47</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Entity</span><span class="p">:</span> <span class="s2">&quot;bold #800080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ni&#39;</span>
+<span class="linenos">48</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Exception</span><span class="p">:</span> <span class="s2">&quot;bold #990000&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ne&#39;</span>
+<span class="linenos">49</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Function</span><span class="p">:</span> <span class="s2">&quot;#206688&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nf&#39;</span>
+<span class="linenos">50</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Label</span><span class="p">:</span> <span class="s2">&quot;bold #002070&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nl&#39;</span>
+<span class="linenos">51</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Namespace</span><span class="p">:</span> <span class="s2">&quot;bold #708422&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nn&#39;</span>
+<span class="linenos">52</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Tag</span><span class="p">:</span> <span class="s2">&quot;bold #22863a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nt&#39;</span>
+<span class="linenos">53</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Variable</span><span class="p">:</span> <span class="s2">&quot;#999999&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;nv&#39;</span>
+<span class="linenos">54</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Builtin</span><span class="o">.</span><span class="n">Pseudo</span><span class="p">:</span> <span class="s2">&quot;#999999&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;bp&#39;</span>
+<span class="linenos">55</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Function</span><span class="o">.</span><span class="n">Magic</span><span class="p">:</span> <span class="s2">&quot;#06287e&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;fm&#39;</span>
+<span class="linenos">56</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Variable</span><span class="o">.</span><span class="n">Class</span><span class="p">:</span> <span class="s2">&quot;#008080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;vc&#39;</span>
+<span class="linenos">57</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Variable</span><span class="o">.</span><span class="n">Global</span><span class="p">:</span> <span class="s2">&quot;#008080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;vg&#39;</span>
+<span class="linenos">58</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Variable</span><span class="o">.</span><span class="n">Instance</span><span class="p">:</span> <span class="s2">&quot;#008080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;vi&#39;</span>
+<span class="linenos">59</span>        <span class="n">Name</span><span class="o">.</span><span class="n">Variable</span><span class="o">.</span><span class="n">Magic</span><span class="p">:</span> <span class="s2">&quot;#bb60d5&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;vm&#39;</span>
+<span class="linenos">60</span>        <span class="n">Number</span><span class="p">:</span> <span class="s2">&quot;#208050&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;m&#39;</span>
+<span class="linenos">61</span>        <span class="n">Literal</span><span class="p">:</span> <span class="s2">&quot;#032f62&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;l&#39;</span>
+<span class="linenos">62</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;s&#39;</span>
+<span class="linenos">63</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Bin</span><span class="p">:</span> <span class="s2">&quot;#40804f&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;mb&#39;</span>
+<span class="linenos">64</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Float</span><span class="p">:</span> <span class="s2">&quot;#40804f&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;mf&#39;</span>
+<span class="linenos">65</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Hex</span><span class="p">:</span> <span class="s2">&quot;#40804f&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;mh&#39;</span>
+<span class="linenos">66</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Integer</span><span class="p">:</span> <span class="s2">&quot;#40804f&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;mi&#39;</span>
+<span class="linenos">67</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Oct</span><span class="p">:</span> <span class="s2">&quot;#40804f&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;mo&#39;</span>
+<span class="linenos">68</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Affix</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sa&#39;</span>
+<span class="linenos">69</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Backtick</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sb&#39;</span>
+<span class="linenos">70</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Char</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sc&#39;</span>
+<span class="linenos">71</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Delimiter</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;dl&#39;</span>
+<span class="linenos">72</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Doc</span><span class="p">:</span> <span class="s2">&quot;italic #88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sd&#39;</span>
+<span class="linenos">73</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Double</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;s2&#39;</span>
+<span class="linenos">74</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Escape</span><span class="p">:</span> <span class="s2">&quot;bold #88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;se&#39;</span>
+<span class="linenos">75</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Heredoc</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sh&#39;</span>
+<span class="linenos">76</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Interpol</span><span class="p">:</span> <span class="s2">&quot;italic #88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;si&#39;</span>
+<span class="linenos">77</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Other</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sx&#39;</span>
+<span class="linenos">78</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Regex</span><span class="p">:</span> <span class="s2">&quot;#009926&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;sr&#39;</span>
+<span class="linenos">79</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Single</span><span class="p">:</span> <span class="s2">&quot;#88872a&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;s1&#39;</span>
+<span class="linenos">80</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">String</span><span class="o">.</span><span class="n">Symbol</span><span class="p">:</span> <span class="s2">&quot;#990073&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ss&#39;</span>
+<span class="linenos">81</span>        <span class="n">Literal</span><span class="o">.</span><span class="n">Number</span><span class="o">.</span><span class="n">Integer</span><span class="o">.</span><span class="n">Long</span><span class="p">:</span> <span class="s2">&quot;#009999&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;il&#39;</span>
+<span class="linenos">82</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Deleted</span><span class="p">:</span> <span class="s2">&quot;#A00000 bg:#ffdddd&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gd&#39;</span>
+<span class="linenos">83</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Emph</span><span class="p">:</span> <span class="s2">&quot;italic&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;ge&#39;</span>
+<span class="linenos">84</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Error</span><span class="p">:</span> <span class="s2">&quot;#aa0000&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gr&#39;</span>
+<span class="linenos">85</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Heading</span><span class="p">:</span> <span class="s2">&quot;bold #000080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gh&#39;</span>
+<span class="linenos">86</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Inserted</span><span class="p">:</span> <span class="s2">&quot;#00A000 bg:#ddffdd&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gi&#39;</span>
+<span class="linenos">87</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Output</span><span class="p">:</span> <span class="s2">&quot;#333333&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;go&#39;</span>
+<span class="linenos">88</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Prompt</span><span class="p">:</span> <span class="s2">&quot;bold #c65d09&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gp&#39;</span>
+<span class="linenos">89</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Strong</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gs&#39;</span>
+<span class="linenos">90</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Subheading</span><span class="p">:</span> <span class="s2">&quot;bold #800080&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gu&#39;</span>
+<span class="linenos">91</span>        <span class="n">Generic</span><span class="o">.</span><span class="n">Traceback</span><span class="p">:</span> <span class="s2">&quot;#0040D0&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;gt&#39;</span>
+<span class="linenos">92</span>        <span class="n">Whitespace</span><span class="p">:</span> <span class="s2">&quot;#bbbbbb&quot;</span><span class="p">,</span>  <span class="c1"># class: &#39;w&#39;</span>
+<span class="linenos">93</span>    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../_tags/site.html"><span class="doc">site</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../_tags/sphinx.html"><span class="doc">sphinx</span></a></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="theme.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Site Theme</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Site Topics</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, A. Shorner
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The Pygments Style Class</a><ul>
+<li><a class="reference internal" href="#how-to-use-such-a-custom-style">How to use such a custom style?</a></li>
+<li><a class="reference internal" href="#here-is-the-full-class-defining-the-style">Here is the full class defining the style:</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=f0ca4bb6"></script>
+    <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    </body>
+</html>
