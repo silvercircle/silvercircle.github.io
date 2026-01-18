@@ -94,6 +94,8 @@ performiny a copy operation. In C++, the standard requires or even guarantees th
 performed, the Ada compiler prioritizes code correctness and **may** not use such techniques in case they 
 would violate correct behavior. [^rf2].
 
+```{tags} ada
+```
 [^rf1]: See [here for an introduction](https://www.pass4sure.com/blog/introduction-to-copy-elision-and-return-value-optimization-in-c/). 
    While it describes the technology from a C++ point of view, the concepts apply to other languages. The 
    GNAT compiler is based on the GCC backend and can thus use similar techniques, but the Ada frontend 

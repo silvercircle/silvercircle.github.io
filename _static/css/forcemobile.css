@@ -1,0 +1,90 @@
+/* Collapse "navigation".*/
+.nav-overlay-icon {
+    display: flex;
+}
+.sidebar-drawer {
+    position: fixed;
+    height: 100vh;
+    width: 15em;
+
+    top: 0;
+    left: -15em;
+}
+/* Swap which icon is visible. */
+.toc-header-icon, .theme-toggle-header {
+  display: flex;
+}
+.toc-content-icon, .theme-toggle-content {
+  display: none;
+}
+/* Show the header. */
+.mobile-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-left, .header-right {
+    display: flex;
+    height: var(--header-height);
+    padding: 0 var(--header-padding);
+    label {
+      height: 100%;
+      width: 100%;
+      user-select: none;
+    }
+  }
+}
+.nav-overlay-icon .icon, .theme-toggle svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Add a scroll margin for the content */
+:target {
+  scroll-margin-top: calc(var(--header-height) + 2.5rem);
+}
+/* Show back-to-top below the header */
+.back-to-top {
+  top: calc(var(--header-height) + 0.5rem);
+}
+
+/* Accommodate for the header. */
+.page {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toc-content-icon {
+  display: flex;
+}
+.toc-drawer {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: -15em;
+  border-left: 1px solid var(--color-background-muted);
+}
+.toc-tree {
+  border-left: none;
+}
+
+.content-icon-container {
+  display: none;
+}
+
+@media (min-width:1025px) {
+  div.content {
+    width: 70% !important;
+    max-width: 70% !important;
+    min-width: 70% !important;
+    padding: 0 1em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  div.main {
+    max-width: 100%;
+    width: 100%;
+    min-width: 70%;
+  }
+}

@@ -1,0 +1,21 @@
+.page .sidebar-drawer, .page-sidebar-container {
+  display: none;
+  background-color: var(--color-background-primary);
+}
+
+@media (min-width:1025px) {
+  .page .sidebar-drawer {
+    width: 10em !important;
+    min-width: 10em !important;
+    display: flex !important;
+  }
+  .page .sidebar-container {
+    width: 10em !important;
+    display: flex !important;
+  }
+}
+
+aside.sidebar-drawer {
+  border-right: none !important;
+}
+

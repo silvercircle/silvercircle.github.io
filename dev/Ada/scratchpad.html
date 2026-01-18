@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/desktop_layout.css?v=ef272f75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=7606b759" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=990ec324" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=6add6086" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=997544a4" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=10f73ec2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=269c5395" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=7b4cbac8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=6d82278c" />
     
     
 
@@ -29,7 +30,7 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #15151a;
+      --color-code-background: #19191f;
   --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
@@ -38,7 +39,7 @@
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #15151a;
+        --color-code-background: #19191f;
   --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
@@ -248,7 +249,9 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="access_types.html">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classes.html">Classes and OOP in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generics.html">Generics in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glossary.html">Glossary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="returning_records.html">Returning compound types from subprograms</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">The Ada language - personal scratchpad</a></li>
 </ul>
@@ -266,6 +269,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../site/theme.html">Site Theme</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../isolated_sample.html">Sample page to test per-page configuration in sphinx</a></li>
 </ul>
 
 </div>
@@ -311,10 +315,48 @@ re-learning, because I’ve learned Ada many years ago, but the knowledge faded 
 using it.</p>
 <section id="case-insensitive-language">
 <h2>Case insensitive language<a class="headerlink" href="#case-insensitive-language" title="Link to this heading">¶</a></h2>
-<p>Everything, identifiers, package names, keywords is case-insensitive in Ada. This leads to a common
-practice of using rather long and often descriptive names for identifiers. While this makes the language
-often seen as verbose, it also means that Ada code is usually well readable and avoids cryptic names for
+<p>Everything, identifiers, package names, keywords is case-<strong>insensitive</strong> in Ada. This leads to a common
+practice of using long and often descriptive names for identifiers. While this makes the language
+often appear as verbose, it also means that Ada code is usually well readable and avoids cryptic names for
 identifiers or functions.</p>
+</section>
+<section id="mixed-snake-case">
+<h2>Mixed snake case<a class="headerlink" href="#mixed-snake-case" title="Link to this heading">¶</a></h2>
+<p>Most style guides encourage to use mixed <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake case</a> for
+identifiers. Instead of <code class="docutils literal notranslate"><span class="pre">move_point</span></code> or <code class="docutils literal notranslate"><span class="pre">movePoint</span></code> (camel case) in Ada you’ll very often see
+<code class="docutils literal notranslate"><span class="pre">Move_Point</span></code> for the same identifier. Since the language is case insensitive, the capitalized parts are
+purely for aesthetics.</p>
+<p>It is also good practice to avoid single character identifiers like <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">f</span></code>, except for very
+short-lived identifiers (e.g. in loops). Identifiers starting or ending with an underscore are not
+allowed in Ada.</p>
+</section>
+<section id="variable-shadowing">
+<h2>Variable shadowing<a class="headerlink" href="#variable-shadowing" title="Link to this heading">¶</a></h2>
+<p>Ada allows variable shadowing in most cases. Local variables shadow variables of the same name declared
+in higher level blocks. However, the compiler organizes variables in name spaces and it is possible to
+access variables using fully qualified names when blocks are labeled. The name of the current subprogram
+is always an implicit namespace.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Shadowing of variable names</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kd">procedure</span> <span class="nf">Shadow_Test</span> <span class="kr">is</span>
+<span class="linenos"> 2</span>  <span class="n">var</span> <span class="p">:</span> <span class="kt">Integer</span> <span class="p">:=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="linenos"> 3</span><span class="kr">begin</span>
+<span class="linenos"> 4</span>  <span class="n">Ada</span><span class="p">.</span><span class="n">Text_IO</span><span class="p">.</span><span class="n">Put_Line</span><span class="p">(</span><span class="s">&quot;The var is: &quot;</span> <span class="o">&amp;</span> <span class="n">Shadow_Test</span><span class="p">.</span><span class="n">var</span><span class="p">&#39;</span><span class="na">Image</span><span class="p">);</span>
+<span class="linenos"> 5</span>  <span class="nl">inner</span><span class="p">:</span> <span class="kr">declare</span>
+<span class="linenos"> 6</span>    <span class="c1">-- this shadows the variable declared in line 2</span>
+<span class="linenos"> 7</span>    <span class="n">var</span> <span class="p">:</span> <span class="kt">Float</span> <span class="p">:=</span> <span class="mf">10.0</span><span class="p">;</span>
+<span class="linenos"> 8</span>  <span class="kr">begin</span>
+<span class="linenos"> 9</span>    <span class="c1">-- but you can still access the outer variable by using its fully qualified name</span>
+<span class="linenos">10</span>    <span class="n">Ada</span><span class="p">.</span><span class="n">Text_IO</span><span class="p">.</span><span class="n">Put_Line</span><span class="p">(</span><span class="s">&quot;The outer var is: &quot;</span> <span class="o">&amp;</span> <span class="n">Shadow_Test</span><span class="p">.</span><span class="n">var</span><span class="p">&#39;</span><span class="na">Image</span><span class="p">);</span>
+<span class="linenos">11</span>    <span class="n">Ada</span><span class="p">.</span><span class="n">Text_IO</span><span class="p">.</span><span class="n">Put_Line</span><span class="p">(</span><span class="s">&quot;The inner var is: &quot;</span> <span class="o">&amp;</span> <span class="n">var</span><span class="p">&#39;</span><span class="na">Image</span><span class="p">);</span>
+<span class="linenos">12</span>    <span class="n">Shadow_Test</span><span class="p">.</span><span class="n">var</span> <span class="p">:=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="linenos">13</span>  <span class="kr">end</span> <span class="nf">inner</span><span class="p">;</span>
+<span class="linenos">14</span>  <span class="n">Ada</span><span class="p">.</span><span class="n">Text_IO</span><span class="p">.</span><span class="n">Put_Line</span><span class="p">(</span><span class="s">&quot;The outer var is: &quot;</span> <span class="o">&amp;</span> <span class="n">Shadow_Test</span><span class="p">.</span><span class="n">var</span><span class="p">&#39;</span><span class="na">Image</span><span class="p">);</span>
+<span class="linenos">15</span><span class="kr">end</span> <span class="nf">Shadow_Test</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<p>By default, the GNAT compiler will warn you when a variable gets shadowed by a local declaration.</p>
 </section>
 <section id="difference-with-vs-use">
 <h2>Difference WITH vs USE<a class="headerlink" href="#difference-with-vs-use" title="Link to this heading">¶</a></h2>
@@ -340,8 +382,8 @@ Ada) and methods working on instances of such records. The syntax is, however, d
 langauges like C++ or Java. Ada does not know the concept of member functions, but it does know the
 concept of dynamic dispatching, inheritance and interfaces. Member functions (method) are, however,
 defined in a different way and are not part of the class (record) itself.</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Example</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Example</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
 <div class="highlight-ada notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">type</span> <span class="kt">Point</span> <span class="kr">is</span> <span class="kr">tagged</span> <span class="kr">record</span>
 <span class="linenos">2</span>  <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="p">:</span> <span class="n">Coord</span><span class="p">;</span>
 <span class="linenos">3</span><span class="kr">end</span> <span class="nf">Point</span><span class="p">;</span>
@@ -378,7 +420,47 @@ notation ONLY if the dispatching parameter is the first in the list of arguments
 </dd>
 <dt>How to express <code class="code highlight java docutils literal highlight-java"><span class="n">Double</span><span class="p">.</span><span class="na">MIN_NORMAL</span></code>? <a class="footnote-reference brackets" href="#fe1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Model_Small</span></code> for any floating point type <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
 </dd>
-<dt>How to find <a class="reference external" href="https://www.w3schools.com/java/ref_math_ulp.asp#:~:text=The%20ulp()%20method%20returns,data%20type%20is%2050000004.0f%20.">ULP</a>?</dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Model_Epsilon</span></code> to find the number with the minimum precision for any floating point type <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
+<dt>How to find <a class="reference external" href="https://www.w3schools.com/java/ref_math_ulp.asp">ULP</a>?</dt><dd><p>Use <code class="code highlight ada docutils literal highlight-ada"><span class="n">T</span><span class="p">&#39;</span><span class="na">Model_Epsilon</span></code> to find the number with the minimum precision for any floating point type <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
+</dd>
+</dl>
+</section>
+<section id="what-aliased-means">
+<span id="aliased"></span><h2>What aliased means<a class="headerlink" href="#what-aliased-means" title="Link to this heading">¶</a></h2>
+<p>You may have seen a compiler error stating</p>
+<p><code class="docutils literal notranslate"><span class="pre">main.adb:52:20:</span> <span class="pre">error:</span> <span class="pre">prefix</span> <span class="pre">of</span> <span class="pre">&quot;Access&quot;</span> <span class="pre">attribute</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">aliased</span></code></p>
+<p>so what does this mean? It means you must tell the compiler explicitly by using the <code class="code highlight ada docutils literal highlight-ada"><span class="kr">aliased</span></code>
+keyword that a variable must have a memory location. The Ada compiler is free to decide whether a
+variable is stored at a memory address (like on the stack or the heap) or just kept in a CPU register.
+The latter is often better and more performant for short-lived variables, but has a significant
+limitation: Such a variable cannot be accessed with an <a class="reference internal" href="access_types.html"><span class="doc">access type</span></a>, because an
+access type needs a memory address. Internally, access types are pointers and there is no way to have a
+pointer addressing a CPU register.</p>
+<p>So, declare your variable like so: <code class="code highlight ada docutils literal highlight-ada"><span class="n">foo</span> <span class="p">:</span> <span class="kr">aliased</span> <span class="kt">Long_Float</span> <span class="p">:=</span> <span class="mf">0.0</span><span class="p">;</span></code></p>
+</section>
+<section id="terminology-in-ada">
+<h2>Terminology in Ada<a class="headerlink" href="#terminology-in-ada" title="Link to this heading">¶</a></h2>
+<p>When learning Ada, it’s easy to get confused by terminology which can be quite a bit different from other
+languages.</p>
+<dl>
+<dt>Methods or functions vs subprograms</dt><dd><p>In Ada, the term <em>method</em> is rarely, if ever, used. We use the term <em>subprogram</em> which is either a
+procedure or a function. The difference is that a function <strong>must</strong> return a value and a procedure can not. A
+procedure is basically what a <strong>void</strong> function is in C++ or Java.</p>
+</dd>
+<dt>Primitives</dt><dd><p>Primitives is the term that is used for class methods, i.E. methods that work on objects
+instantiated from tagged records. Ada does not know the concept of implicit <code class="docutils literal notranslate"><span class="pre">this</span></code> and primitives
+must always specify the controlling parameter in explicit form.</p>
+<p>A typical declaration of a primitive would look like:</p>
+<p><code class="code highlight ada docutils literal highlight-ada"><span class="kd">procedure</span> <span class="nf">Foo</span><span class="p">(</span><span class="nv">Self</span> <span class="p">: </span><span class="nv">in</span> <span class="nv">out</span> <span class="nv">T</span><span class="p">;</span> <span class="nv">v</span> <span class="p">: </span><span class="nv">Integer</span><span class="p">);</span></code></p>
+<p>It declares a subprogram that takes 2 parameters. The first (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) is of type <code class="docutils literal notranslate"><span class="pre">T</span></code> which must be a
+tagged record. It’s the controlling parameter and its presence in the first place of the formal
+arguments enables you to use the dot notation with primitives. Assume <code class="docutils literal notranslate"><span class="pre">Bar</span></code> is of type <code class="docutils literal notranslate"><span class="pre">T</span></code> then you
+can call either <code class="code highlight ada docutils literal highlight-ada"><span class="n">Bar</span><span class="p">.</span><span class="n">Foo</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span></code> or <code class="code highlight ada docutils literal highlight-ada"><span class="n">Foo</span><span class="p">(</span><span class="n">Bar</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></code>. Either way, the 10 is passed to the formal
+argument <code class="docutils literal notranslate"><span class="pre">v</span></code>, the dot-notation automatically passes <code class="docutils literal notranslate"><span class="pre">Bar</span></code> to <code class="docutils literal notranslate"><span class="pre">T</span></code>.</p>
+</dd>
+<dt>Access Types</dt><dd><p>This is the term we use for pointers which are really pointer-like data types in Ada. An access type
+can be used to access anything – a simple scalar type like <code class="code highlight ada docutils literal highlight-ada"><span class="kt">Integer</span></code>, a variable holding a
+<code class="docutils literal notranslate"><span class="pre">record</span></code>, an <code class="docutils literal notranslate"><span class="pre">array</span></code> or even allows access to a function. Internally, access types are
+implemented as pointers and that’s why the target object needs to be declared as <a class="reference internal" href="#aliased"><span class="std std-ref">aliased</span></a>.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -448,9 +530,13 @@ notation ONLY if the dispatching parameter is the first in the list of arguments
             <ul>
 <li><a class="reference internal" href="#">The Ada language - personal scratchpad</a><ul>
 <li><a class="reference internal" href="#case-insensitive-language">Case insensitive language</a></li>
+<li><a class="reference internal" href="#mixed-snake-case">Mixed snake case</a></li>
+<li><a class="reference internal" href="#variable-shadowing">Variable shadowing</a></li>
 <li><a class="reference internal" href="#difference-with-vs-use">Difference WITH vs USE</a></li>
 <li><a class="reference internal" href="#classes-methods-functions">Classes, methods, functions</a></li>
 <li><a class="reference internal" href="#floating-point-arithmetics">Floating point arithmetics</a></li>
+<li><a class="reference internal" href="#what-aliased-means">What aliased means</a></li>
+<li><a class="reference internal" href="#terminology-in-ada">Terminology in Ada</a></li>
 </ul>
 </li>
 </ul>

@@ -24,3 +24,9 @@ Ada does have them, but somewhat different.
 
 ##### {doc}`Returning compound types <returning_records>`
 How to return larger types (like records) from functions.
+
+##### {doc}`Classes and OOP in Ada from a C++ or Java viewpoint <classes>`
+Ada's OOP is different from well known other languages, but no less powerful.
+
+##### {doc}`The glossary <glossary>`
+Explains some terms often used in Ada topics.

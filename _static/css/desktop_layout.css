@@ -1,0 +1,19 @@
+@media (min-width:1025px) {
+  .page .sidebar-drawer { width: 20em; min-width: 20em; }
+  .page .sidebar-container { width: 20em; }
+  div.content {
+    width: calc(100% - 20em - 20px); /* !important; */
+    max-width: calc(100% - 20em - 20px); /* !important; */
+    min-width: calc(100% - 20em - 20px); /* !important; */
+    padding: 0 1em;}
+  div.main {
+    max-width: 100%;
+    width: 100%;
+    min-width: calc(100% - 17em);
+  }
+  .toc-drawer {
+    box-sizing: border-box;
+    width: 15em;
+  }
+}
+

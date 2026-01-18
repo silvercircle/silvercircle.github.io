@@ -29,7 +29,7 @@ div.left-aligned {
   text-align: left !important;
 }
 
-dl.simple dt {
+dl.simple dt, section dl dt {
   font-size: 13.5pt;
   font-weight: 600;
   color: var(--color-foreground-muted);

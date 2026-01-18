@@ -1,0 +1,45 @@
+# Glossary
+```{note}
+Work in Progress!
+```
+(gloss_dispatching)=
+## Dynamic Dispatching
+Dynamic Dispatching is the mechanism that determines which primitive needs to be called for an object instance 
+when this object is part of a class hierarchy. This always happens when the compiler cannot figure this 
+out during compile time. In such cases, dynamic dispatching must do it at runtime, because the actual 
+type of an object can differ from the declared type. This is a key feature that allows runtime 
+polymorphism.
+
+(gloss_controlling_parameter)=
+## Controlling Parameter
+The parameter that links a primitive subprogram to a tagged record. is the parameter of a tagged type 
+that determines which version of a dispatching operation gets called at runtime.
+
+```{code-block} ada
+---
+linenos: 1
+caption: Controlling Parameter
+---
+type Person is tagged record
+  name : String;
+  age :  Integer;
+end record;
+type Person_Access is access all Person;
+
+-- Greet1 and Greet2 are dispatchable primitives. Both have a tagged record as
+-- its first argument. So if foo is of Type Person, you can call foo.Greet1;
+-- or Greet1(foo);
+procedure Greet1(Self : in out Person);
+procedure Greet2(Self : access Person);
+
+-- Greet3 is not dispatchable, because Person_Access is its own type and is not
+-- a tagged type. It only accesses a tagged type, which in Ada's strict type system
+-- is a different thing. 
+procedure Greet3(Self : Person_Access);
+
+```
+(gloss_primitive)=
+## Primitive
+
+```{tags} ada
+```

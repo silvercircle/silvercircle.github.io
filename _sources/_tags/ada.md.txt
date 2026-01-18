@@ -8,5 +8,8 @@ caption: With this tag
 ---
 ../dev/Ada/Containers.rst
 ../dev/Ada/access_types.rst
+../dev/Ada/classes.md
 ../dev/Ada/generics.rst
+../dev/Ada/glossary.md
+../dev/Ada/returning_records.md
 ```

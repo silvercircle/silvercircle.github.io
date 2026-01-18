@@ -45,6 +45,7 @@ div.highlight pre {
   padding-right: 5px !important;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: var(--color-content-foreground);
 }
 
 code {

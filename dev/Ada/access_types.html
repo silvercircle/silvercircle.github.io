@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Generics in Ada" href="generics.html"><link rel="prev" title="Containers in Ada" href="Containers.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Classes and OOP in Ada" href="classes.html"><link rel="prev" title="Containers in Ada" href="Containers.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>Ada Access Types - Silvercircle</title>
@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/desktop_layout.css?v=ef272f75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=7606b759" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=990ec324" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=6add6086" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=997544a4" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=10f73ec2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=269c5395" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/merriweather.css?v=7b4cbac8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=6d82278c" />
     
     
 
@@ -29,7 +30,7 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #15151a;
+      --color-code-background: #19191f;
   --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
@@ -38,7 +39,7 @@
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #15151a;
+        --color-code-background: #19191f;
   --color-code-foreground: white;
   --color-content-foreground: #cabbbb;
   --color-foreground-primary: #cabbbb;
@@ -248,7 +249,9 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Containers.html">Containers in Ada</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Ada Access Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classes.html">Classes and OOP in Ada</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generics.html">Generics in Ada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glossary.html">Glossary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="returning_records.html">Returning compound types from subprograms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scratchpad.html">The Ada language - personal scratchpad</a></li>
 </ul>
@@ -266,6 +269,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../site/theme.html">Site Theme</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../isolated_sample.html">Sample page to test per-page configuration in sphinx</a></li>
 </ul>
 
 </div>
@@ -355,12 +359,12 @@ target value. You can do something like <code class="code highlight ada docutils
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="generics.html">
+          <a class="next-page" href="classes.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Generics in Ada</div>
+                <div class="title">Classes and OOP in Ada</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

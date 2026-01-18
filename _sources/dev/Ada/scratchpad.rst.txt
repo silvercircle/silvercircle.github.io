@@ -8,10 +8,50 @@ using it.
 
 Case insensitive language
 -------------------------
-Everything, identifiers, package names, keywords is case-insensitive in Ada. This leads to a common 
-practice of using rather long and often descriptive names for identifiers. While this makes the language 
-often seen as verbose, it also means that Ada code is usually well readable and avoids cryptic names for 
+Everything, identifiers, package names, keywords is case-**insensitive** in Ada. This leads to a common 
+practice of using long and often descriptive names for identifiers. While this makes the language 
+often appear as verbose, it also means that Ada code is usually well readable and avoids cryptic names for 
 identifiers or functions.
+
+Mixed snake case
+----------------
+Most style guides encourage to use mixed `snake case <https://en.wikipedia.org/wiki/Snake_case>`_ for 
+identifiers. Instead of ``move_point`` or ``movePoint`` (camel case) in Ada you'll very often see 
+``Move_Point`` for the same identifier. Since the language is case insensitive, the capitalized parts are 
+purely for aesthetics.
+
+It is also good practice to avoid single character identifiers like ``i`` or ``f``, except for very 
+short-lived identifiers (e.g. in loops). Identifiers starting or ending with an underscore are not 
+allowed in Ada.
+
+Variable shadowing
+------------------
+Ada allows variable shadowing in most cases. Local variables shadow variables of the same name declared 
+in higher level blocks. However, the compiler organizes variables in name spaces and it is possible to 
+access variables using fully qualified names when blocks are labeled. The name of the current subprogram 
+is always an implicit namespace.
+
+.. code-block:: ada
+  :linenos:
+  :caption: Shadowing of variable names
+
+  procedure Shadow_Test is
+    var : Integer := 0;
+  begin
+    Ada.Text_IO.Put_Line("The var is: " & Shadow_Test.var'Image);
+    inner: declare
+      -- this shadows the variable declared in line 2
+      var : Float := 10.0;
+    begin
+      -- but you can still access the outer variable by using its fully qualified name
+      Ada.Text_IO.Put_Line("The outer var is: " & Shadow_Test.var'Image);
+      Ada.Text_IO.Put_Line("The inner var is: " & var'Image);
+      Shadow_Test.var := 20;
+    end inner;
+    Ada.Text_IO.Put_Line("The outer var is: " & Shadow_Test.var'Image);
+  end Shadow_Test;
+
+By default, the GNAT compiler will warn you when a variable gets shadowed by a local declaration.
 
 Difference WITH vs USE
 ----------------------
@@ -79,8 +119,57 @@ How to check for NaN / infinity?
 How to express :java:`Double.MIN_NORMAL`? [#fe1]_
   Use :ada:`T'Model_Small` for any floating point type ``T``.
 
-How to find `ULP <https://www.w3schools.com/java/ref_math_ulp.asp#:~:text=The%20ulp()%20method%20returns,data%20type%20is%2050000004.0f%20.>`_?
+How to find `ULP <https://www.w3schools.com/java/ref_math_ulp.asp>`_?
   Use :ada:`T'Model_Epsilon` to find the number with the minimum precision for any floating point type ``T``.
+
+.. _aliased:
+
+What aliased means
+------------------
+You may have seen a compiler error stating
+
+``main.adb:52:20: error: prefix of "Access" attribute must be aliased``
+
+so what does this mean? It means you must tell the compiler explicitly by using the :ada:`aliased` 
+keyword that a variable must have a memory location. The Ada compiler is free to decide whether a 
+variable is stored at a memory address (like on the stack or the heap) or just kept in a CPU register. 
+The latter is often better and more performant for short-lived variables, but has a significant 
+limitation: Such a variable cannot be accessed with an :doc:`access type <access_types>`, because an 
+access type needs a memory address. Internally, access types are pointers and there is no way to have a 
+pointer addressing a CPU register.
+
+So, declare your variable like so: :ada:`foo : aliased Long_Float := 0.0;`
+
+Terminology in Ada
+------------------
+When learning Ada, it's easy to get confused by terminology which can be quite a bit different from other 
+languages.
+
+Methods or functions vs subprograms
+  In Ada, the term *method* is rarely, if ever, used. We use the term *subprogram* which is either a 
+  procedure or a function. The difference is that a function **must** return a value and a procedure can not. A 
+  procedure is basically what a **void** function is in C++ or Java.
+
+Primitives
+  Primitives is the term that is used for class methods, i.E. methods that work on objects 
+  instantiated from tagged records. Ada does not know the concept of implicit ``this`` and primitives 
+  must always specify the controlling parameter in explicit form.
+
+  A typical declaration of a primitive would look like:
+
+  :ada:`procedure Foo(Self : in out T; v : Integer);`
+
+  It declares a subprogram that takes 2 parameters. The first (``Self``) is of type ``T`` which must be a 
+  tagged record. It's the controlling parameter and its presence in the first place of the formal 
+  arguments enables you to use the dot notation with primitives. Assume ``Bar`` is of type ``T`` then you 
+  can call either :ada:`Bar.Foo(10);` or :ada:`Foo(Bar, 10);`. Either way, the 10 is passed to the formal 
+  argument ``v``, the dot-notation automatically passes ``Bar`` to ``T``.
+
+Access Types
+  This is the term we use for pointers which are really pointer-like data types in Ada. An access type 
+  can be used to access anything – a simple scalar type like :ada:`Integer`, a variable holding a 
+  ``record``, an ``array`` or even allows access to a function. Internally, access types are 
+  implemented as pointers and that's why the target object needs to be declared as :ref:`aliased <aliased>`.
 
 --------------------------
 

@@ -1,0 +1,18 @@
+# Classes and OOP in Ada
+Ada provides a common feature set for OOP. It allows you to define classes, interfaces, supports 
+polymorphism, abstract types, interfaces and methods, which are called primitives in Ada, but serve the 
+same purpose. The idiomatic ways are different from other, popular OOP languages like C++ or Java, but 
+that's just natural. After all, Ada's syntax differs in many ways.
+
+## Classes
+Ada does not formally know classes. It knows *tagged records* and a record is the basic Ada compound 
+type. A *tagged record* is just a record with additional meta data (a *„Tag“*) that allows the compiler 
+to perform some magic like {ref}`gloss_dispatching`.
+
+#### The controlling parameter
+The {ref}`controlling parameter <gloss_controlling_parameter>` is a formal parameter in a {ref}`primitive 
+<gloss_primitive>`.
+
+---
+```{tags} ada
+```

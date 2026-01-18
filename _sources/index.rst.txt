@@ -16,6 +16,7 @@
   neovim/index
   dev/index
   site/index
+  isolated_sample
 
 On this page, you'll find two things:
 
@@ -29,4 +30,6 @@ Karney as part of a larger research project.
 My Neovim configuration. A very extensive configuration to convert Neovim into an IDE-like tool for 
 editing many different formats.
 
-:doc:``
+:doc:`Site notes <site/index>`
+------------------------------
+Some notes about this site, the software behind it and configuration choices.

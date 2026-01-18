@@ -1,0 +1,6 @@
+:layout: mobile
+:nonav: True
+Sample page to test per-page configuration in sphinx
+====================================================
+This page should appear without the left sidebar and without the footer prev/next navigation buttons.
+

@@ -1,0 +1,28 @@
+.page .sidebar-drawer, .page-sidebar-container {
+  display: none;
+  background-color: var(--color-background-primary);
+}
+
+aside.toc-drawer {
+  /* display: none !important; */
+}
+
+@media (min-width:1025px) {
+  div.content {
+    width: 60% !important;
+    max-width: 60% !important;
+    min-width: 60% !important;
+    padding: 0 1em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  div.main {
+    max-width: 100%;
+    width: 100%;
+    min-width: 60%;
+  }
+}
+
+aside.sidebar-drawer {
+  border-right: none !important;
+}
