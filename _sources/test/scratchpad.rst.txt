@@ -1,13 +1,6 @@
 Scratchpad
 ==========
 
-.. toctree::
-   :hidden:
-   :maxdepth: 0
-   :caption: Contents
-
-   ../internal/rules
-
 *„A very nice thing“*
 
 See :ref:`test-label`.

@@ -14,7 +14,7 @@
 .toc-header-icon, .theme-toggle-header {
   display: flex;
 }
-.toc-content-icon, .theme-toggle-content {
+.theme-toggle-content {
   display: none;
 }
 /* Show the header. */
@@ -58,6 +58,7 @@
 .toc-content-icon {
   display: flex;
 }
+
 .toc-drawer {
   position: fixed;
   height: 100vh;
@@ -65,6 +66,7 @@
   right: -15em;
   border-left: 1px solid var(--color-background-muted);
 }
+
 .toc-tree {
   border-left: none;
 }

@@ -13,7 +13,7 @@ I use the following markup for defining heading levels:
 * Asterisk (*) for sub-subsections. Translates to <h4>
 
 Here is the full hierarchy
-==========================
+--------------------------
 
 Section
 -------
@@ -24,4 +24,6 @@ Subsection
 Sub-sub section
 ***************
 
+Another main section
+====================
 

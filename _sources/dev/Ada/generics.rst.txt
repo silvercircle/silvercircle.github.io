@@ -1,5 +1,5 @@
 .. include:: ../../roles.rst
-:layout: solopage
+:layout: mobile
 
 Generics in Ada
 ===============

@@ -1,5 +1,6 @@
 ---
-title: Foobar
+layout: mobile
+nonav: True
 ---
 # This is Myst
 This is a test playground for the MyST markup language used by sphinx. MyST combines the normal Markup 

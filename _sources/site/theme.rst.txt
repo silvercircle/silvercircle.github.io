@@ -1,6 +1,50 @@
+:layout: mobile
 Site Theme
 ==========
 This site uses the `Furo theme <https://github.com/pradyunsg/furo/tree/main/src/furo/theme/furo>`_ with 
-some customization. 
+some customization.
+
+Supported page variables
+------------------------
+Page variables take the form ``variable: value`` in reStructuredText documents (note the space, it's 
+important). In MyST documents, they can be defined in the page's frontmatter.
+
+lang
+  define the language for a single document page. By default, the site is using ``en`` for all pages, but 
+  this can be changed for single pages, should it be necessary.
+  A `valid lang attribute <https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang>`_ 
+  in form of a ISO 639 language code is the only allowable value. It will result in ``<html lang="xx">`` 
+  where xx is the supplied language code.
+
+layout
+  Allows to supply additional style sheets to change the value. Right now, the following values are 
+  allowed:
+
+  * ``mobile``: This will hide the static left and right sidebars and add small display navigation 
+    elements. There will be *hamburger* buttons to open the sidebars on demand.
+  * ``solopage``: Will completely remove all navigation elements and display the page alone.
+
+  Both ``mobile`` and ``solopage`` can be used for a distraction-free layout which is normally used on 
+  mobile devices. These options enables this layout on all screen resolutions.
+
+nonav
+  When present and set to ``True``, the bottom navigation buttons for the previous and next page(s) are 
+  hidden.
+
+Implementation
+--------------
+In ``conf.py``, a ``html-page-context`` event handler is registered. The function ``handle_metadata`` 
+analyzes the page context and uses ``app.add_css_file`` to add the css style sheets required for the layout 
+modifications.
+
+The function uses a dictionary to map the value of ``layout`` to stylesheet names and adds them. It also 
+rewrites the ``language`` attribute in the page's context. Future additions may be implemented to 
+dynamically modify sidebar content.
+
+Pygments Configuration
+----------------------
+:doc:`This document <pygments>` describes how to use a python class to define a custom syntax highlighting scheme.
+
+----------
 
 .. tags:: site
