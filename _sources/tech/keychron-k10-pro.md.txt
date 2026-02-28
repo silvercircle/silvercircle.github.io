@@ -1,0 +1,101 @@
+---
+layout: mobile
+nonav: true
+---
+:::{include} ../roles.md
+:::
+
+# Keychron K10 Pro
+I always preferred mechanical keyboards over other types like rubberdome or membrane builds. They're 
+simply better for fast typing and also for gaming. Over the years, I have accumulated a number of 
+keyboards, particularly an authentic [IBM Model M](https://en.wikipedia.org/wiki/Model_M_keyboard), a Sun 
+Type 5 clone keyboard, manufactured in the early 90's by Integrix and some authentic Cherry keyboards.
+
+In recent years, keyboard technology has evolved and a significant market for keyboard enthusiasts 
+emerged. Mechanical keyboards utilizing real switches instead of wonky membrane constructions became the 
+quasi-standard for high quality keyboards, custom builds and modifications give the user many options and 
+today, we have a wide range of available layouts from compact low-profile boards the size of a notebook 
+keyboard up to full-size devices. The number of different brands and products has never been that high 
+and there are many quality products, with cases made of aluminum and highly sophisticated builds with 
+lots of sound dampening and other measurements to make typing not only a satisfying but also a quiet 
+experience. One of the driving instances of the keyboard hype is a Chinese manufacturer of a broad 
+product line of mechanical keyboards named [Keychron](https://www.keychron.com). They have a very diverse 
+line of products with keyboards of all sizes, from very compact and low profile up to full-size models 
+like the K10 series.
+
+For me, a keyboard has to be *„full-size“*, which means at least 104 keys, including function keys, a 
+cursor block and an extra numeric block. This is the classic PC-AT layout, introduced in the mid 80's of 
+the last century when personal computers became the big deal.
+
+The **Keychron K10 Pro** is a full-size mechanical keyboard with many interesting features. It was 
+released around 2023 and is considered obsolete, because it already has successors like [the K10 
+Max](https://www.keychron.com/products/keychron-k10-max-qmk-wireless-mechanical-keyboard) and others. But 
+it is still sold, sometimes with big discounts and prices for new K10 Pro range between 100 and 140 USD.
+
+Recently, I purchased a used K10 Pro from a working colleague who is also a keyboard enthusiast and owns 
+around two dozen different mechanical keyboards, some of them modded and customized. The K10 Pro, I 
+purchased from him, was about one year old at the time of purchase and in very good condition. The former 
+owner thoroughly cleaned it before offering it for sale and it basically looks like it was purchased 
+yesterday. He even kept the original package and all the additional items that came with the board.
+
+## Unboxing
+The K10 Pro comes in a nice box. There is a small plastic bag with extra key caps and another small 
+plastic bag with some tools. There is a small manual in both English and Chinese language, a quick 
+reference card which explains the default function-key mapping and a small instruction card showing how 
+to hot-swap switches. By default, Apple-compatible key caps are installed, but you can exchange them 
+easily against Windows keys. The key cap puller tool makes this a breeze and should work on all 
+mechanical keyboards using Cherry MX-type switches and caps.
+
+## Features
+* full-size keyboard with 109 keys (ISO variant).
+* wired and wireless operation
+* double-shot PBT keycaps in OSA profile.
+* high quality build with solid case and many noise dampening elements
+* hot-swappable MX switches. I chose the tactile brown switches, it can also be ordered with red or 
+  banana switches.
+* A 4000mAh rechargeable Lithium battery
+* QMK/VIA open source firmware, flashable. Compatible with Keychron's web-based setup utility.
+* South-facing RGB background lights
+* Programmable macro keys
+
+### Connectivity
+The K10 Pro can be used either wired to any USB port (a USB-A to USB-C cable is included) or wireless via 
+Bluetooth 5.1. The BT interface allows up to 3 simultaneous connections and should be compatible 
+with most devices, including Windows PCs, many smart TVs, Android and iOS devices. Unlike the more recent 
+V and Q models or the K10 Max, the K10 Pro does not come with the 2.4GHz wireless dongle. Only Bluetooth 
+is included.
+
+## Build Quality
+While unboxing, I was surprised how heavy it was. While I'm used to heavy keyboards[^1], the almost 1.5kg 
+of the K10 Pro was a nice surprise. The case is made of solid ABS plastic and feels were robust. Nothing 
+bends or makes noise when you grab it, the surface is a slightly textured dark gray and overall, it feels 
+very nice. There are extendable feet at the backside to adjust the slope of the keyboard in two levels.
+
+## Typing
+The brown switches are mildly tactile, a bit more than my beloved Cherry MX2A brown, but less bumpy than 
+the typical and widely popular Banana switch. They are also quite smooth and show no *mushy* feeling 
+whatsoever. The key caps feel nice and premium on this keyboard, they have a very slightly textured surface. 
+The background LEDs do not illuminate the symbols, because the key caps are not shine-through. The 
+background LED lights give the keyboard a nice overall appearance in dark environments, but do not help 
+with typing. Personally, I do not care about this since I usually type blindly, not looking at the 
+keyboard at all.
+
+## Sound
+Is it thocky, clacky, creamy? Difficult to tell, check the sound test. It's neither of these and it's 
+relatively quiet. Probably more leaning towards thocky with nicely damped clicks.
+
+## Key caps
+Key caps are made of [PBT](https://en.wikipedia.org/wiki/Polybutylene_terephthalate) in a double shot 
+process which means that the letters and symbols are not printed or edged onto the caps but actually 
+moulded as separate part. So each key cap is made of two parts – the cap body and the symbol which are 
+then assembled into the final key cap. Traditionally, 
+[ABS](https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene) was the best material for a 
+double shot production process, but recently, advances in the process technology allow to use **PBT** for 
+double shot processes. The big advantage of **PBT** is that it is more robust, will last longer and 
+withstand the tendency to show a *polish* effect after some usage. **ABS** is prone to this polish 
+effect, which can appear after a few months of daily typing, particularly on high-frequency keys like the 
+space bar or common letters. **PBT** is not completely resistant against the polish effect, but it will 
+take significantly longer until it shows that kind of wear. Also, **PBT** is more oil-resistant, so all 
+the grease from the skin of your fingers won't make the 
+
+[^1]: Classics like the IBM Model M or Northgate Omnikey keyboards can weigh well over 2 kilograms.

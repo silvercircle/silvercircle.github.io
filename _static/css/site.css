@@ -35,3 +35,10 @@ dl.simple dt, section dl dt {
   color: var(--color-foreground-muted);
   font-style: italic;
 }
+
+@media (min-width:1025px) {
+  div.narrow {
+    width: 50em;
+    margin: 0 auto;
+  }
+}

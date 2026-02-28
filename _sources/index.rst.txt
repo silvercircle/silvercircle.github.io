@@ -17,6 +17,7 @@
   dev/index
   site/index
   isolated_sample
+  tech/index
 
 On this page, you'll find two things:
 
@@ -33,3 +34,8 @@ editing many different formats.
 :doc:`Site notes <site/index>`
 ------------------------------
 Some notes about this site, the software behind it and configuration choices.
+
+:doc:`Tech topics <tech/index>`
+-------------------------------
+Some general topics about hardware and tech
+
