@@ -66,17 +66,22 @@ body, input {
   font-weight: 300;
 }
 
+footer {
+  font-size: 13pt;
+}
+
 section p, div.admonition p {
   font-size: 15pt;
   font-weight: 300;
-  line-height: 1.1em;
+  line-height: 1.2em;
   text-align: justify;
   hyphens: auto !important;
   text-wrap: pretty !important;
 }
 
-.footnote p {
-  text-align: left;
+div.line-block {
+  font-size: 14.5pt;
+  line-height: 1.2em;
 }
 
 strong {
@@ -97,6 +102,19 @@ article.md-typeset {
   font-family: "Emirates";
   line-height: 1.3em;
   font-weight: 500;
+}
+
+.footnote p, .citation-list p {
+  text-align: left;
+  font-size: 14pt !important;
+  line-height: 1.2em !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--color-foreground-secondary);
+}
+
+a.footnote-reference {
+  line-height: 1.0em !important;
 }
 
 /*div.admonition > p:last-child, .md-typeset details > p:last-child, div.admonition li {

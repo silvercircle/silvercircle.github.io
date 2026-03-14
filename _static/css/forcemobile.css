@@ -5,11 +5,16 @@
 .sidebar-drawer {
     position: fixed;
     height: 100vh;
-    width: 15em;
+    width: 25em;
 
     top: 0;
-    left: -15em;
+    left: -25em;
 }
+
+.sidebar-container {
+  width: 25em;
+}
+
 /* Swap which icon is visible. */
 .toc-header-icon, .theme-toggle-header {
   display: flex;
