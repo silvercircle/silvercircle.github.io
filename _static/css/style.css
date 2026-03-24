@@ -10,7 +10,7 @@ section h1, section h2, section h3, section h4, section h5 {
 }
 
 section h5 {
-  font-size: 1.4em !important;
+  font-size: 1.3em !important;
   text-transform: none !important;
 }
 
@@ -23,11 +23,11 @@ section h2 {
 }
 
 section h3 {
-  font-size: 1.6em !important;
+  font-size: 1.5em !important;
 }
 
 section h4 {
-  font-size: 1.5em !important;
+  font-size: 1.4em !important;
 }
 
 section h1 ~ p, section h2 ~ p, section h3 ~ p, section h4 ~ p {
@@ -84,13 +84,17 @@ p.prev-next-title {
 img.align-left {
   margin-left: 0;
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 img.align-right {
   margin-right: 0;
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+
+img.align-center {
+  margin-bottom: 5px;
 }
 
 div.content-icon-container {
@@ -104,3 +108,4 @@ a.reference.external:after {
   padding-right: 1em;
   padding-top: 10px;
 }
+

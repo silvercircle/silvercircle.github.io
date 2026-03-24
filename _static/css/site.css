@@ -25,7 +25,7 @@ div.headline p {
   color: #8080ff;
 }
 
-div.left-aligned {
+div.left-aligned p, p.left-aligned {
   text-align: left !important;
 }
 
@@ -34,6 +34,14 @@ dl.simple dt, section dl dt {
   font-weight: 600;
   color: var(--color-foreground-muted);
   font-style: italic;
+}
+
+div.clearfix {
+  clear: both;
+}
+
+div.left50 {
+  margin-left: 50px;
 }
 
 @media (min-width:1025px) {
