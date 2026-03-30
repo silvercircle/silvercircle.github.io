@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=10f73ec2" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=0164a313" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/emirates.css?v=3b14c4e0" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/ubuntu.css?v=28127e0e" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=466a59ed" />
     
     
@@ -315,10 +315,11 @@
 introduction can be found in this <a class="reference external" href="https://learn.adacore.com/courses/intro-to-ada/chapters/generics.html">AdaCore Article</a>.</p>
 <p class="rubric">Types of generics in Ada</p>
 <p>Ada basically supports two types of Generics. In Ada terminology, we speak about generic units. A unit is
-either a package or a single subprogram, so the following cases do exist but are d</p>
+either a package or a single subprogram, so the following cases of generic units do exist:</p>
 <ul class="simple">
 <li><p>Generic subprograms (single procedures or functions taking and/or returning generic parameters)</p></li>
-<li><p>Package-level generics. Entire packages that operate on generic parameters.</p></li>
+<li><p>Package-level generics. Entire packages that operate on generic parameters. Such a package can include
+types, records and subprograms.</p></li>
 </ul>
 <section id="subprogram-level-generics">
 <span id="ada-gen-subprograms"></span><h2>Subprogram-level Generics<a class="headerlink" href="#subprogram-level-generics" title="Link to this heading">¶</a></h2>
@@ -326,7 +327,8 @@ either a package or a single subprogram, so the following cases do exist but are
 function may also return a formal type value. Like any other Ada unit, it is specified in an <code class="docutils literal notranslate"><span class="pre">.ads</span></code>
 file and implemented in an <code class="docutils literal notranslate"><span class="pre">.adb</span></code> file. Such subprograms are not part of a package and thus are part of
 the global name space. Naming conventions dictate that the name of the subprogram is also the file
-name. Since our example procedure is named <code class="docutils literal notranslate"><span class="pre">Swap</span></code> we must also name the files <code class="docutils literal notranslate"><span class="pre">swap.[adb|ads]</span></code> <a class="footnote-reference brackets" href="#f2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+name. Since our example procedure is named <code class="docutils literal notranslate"><span class="pre">Swap</span></code> we must also name the files <code class="docutils literal notranslate"><span class="pre">swap.[adb|ads]</span></code> <a class="footnote-reference brackets" href="#f2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.
+To form structure, such sub programs can exist in sub folders.</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
@@ -359,14 +361,16 @@ swap.adb</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<p>To instantiate this generic procedure we would use it like <code class="code highlight ada docutils literal highlight-ada"><span class="kd">procedure</span> <span class="nf">Swap_Integers</span> <span class="kr">is</span> <span class="kr">new</span> <span class="n">Swap</span> <span class="p">(</span><span class="kt">Integer</span><span class="p">);</span></code>.
+<p>To instantiate this generic procedure we would use it like <code class="code highlight ada docutils literal highlight-ada"><span class="kd">procedure</span> <span class="nf">Swap_Integers</span> <span class="kr">is</span> <span class="kr">new</span> <span class="n">Swap</span> <span class="p">(</span><span class="kt">Integer</span><span class="p">);</span></code>
 after making the generic procedure availble with a <code class="code highlight ada docutils literal highlight-ada"><span class="kn">With</span> <span class="n">Swap</span><span class="p">;</span></code> statement. Afterwards, you can use
 the procedure like so: <code class="code highlight ada docutils literal highlight-ada"><span class="n">Swap_Integers</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">)</span></code> (given that <code class="docutils literal notranslate"><span class="pre">foo</span></code> and <code class="docutils literal notranslate"><span class="pre">bar</span></code> are two Integer
 variables).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more clarity (and verbosity 😄), we could also use named parameter notation and write <code class="code highlight ada docutils literal highlight-ada"><span class="p">(</span><span class="n">Element_T</span> <span class="p">=&gt;</span>
-<span class="kt">Integer</span><span class="p">);</span></code>, but this is often omitted, particularly when there is only one formal type parameter.</p>
+<span class="kt">Integer</span><span class="p">);</span></code>, but this is often omitted, particularly when there is only one formal type parameter. For
+instances with more than a single type parameter, the more explicit syntax makes sense and can
+potentially increase code clarity.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -420,6 +424,7 @@ Statement. To do so you simple define a new package <code class="code highlight 
 <p>In C++ or Java (and other languages) you instantiate a generic class or method by using it. In Ada, you
 need to instantiate either a generic subprogram or a generic class, essentially creating a usable version
 of the subprogram or the package.</p>
+<hr class="docutils" />
 <p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info reference internal" href="../../_tags/ada.html"><span class="doc">ada</span></a></p>
 <hr class="docutils" />
 <aside class="footnote-list brackets">

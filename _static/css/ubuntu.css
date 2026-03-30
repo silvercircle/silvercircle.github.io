@@ -1,0 +1,132 @@
+@font-face {
+  font-family:"Ubuntu";
+  font-style:normal;
+  font-weight:300;
+  src: url("/_static/fonts/ubuntu/Ubuntu-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/ubuntu/Ubuntu-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style:normal;
+  font-weight:600;
+  src: url("/_static/fonts/ubuntu/Ubuntu-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style: normal;
+  font-weight:800;
+  src: url("/_static/fonts/ubuntu/Ubuntu-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style:italic;
+  font-weight:300;
+  src: url("/_static/fonts/ubuntu/Ubuntu-LightItalic.ttf") format('truetype');
+}
+@font-face {
+  font-family:"Ubuntu";
+  font-style:italic;
+  font-weight:400;
+  src: url("/_static/fonts/ubuntu/Ubuntu-Italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style:italic;
+  font-weight:600;
+  src: url("/_static/fonts/ubuntu/Ubuntu-MediumItalic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/_static/fonts/ubuntu/Ubuntu-BoldItalic.ttf") format('truetype');
+}
+
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:normal;
+  font-weight:400;
+  src: url("/_static/fonts/AlegreyaSansSC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:700;
+  src: url("/_static/fonts/AlegreyaSansSC-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:"Allegra Sans SC";
+  font-style:bold;
+  font-weight:600;
+  src: url("/_static/fonts/AlegreyaSansSC-Medium.ttf") format('truetype');
+}
+
+body, input {
+  font-family: "Ubuntu" !important;
+}
+
+section p, div.admonition p {
+  font-size: 13.8pt;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-align: justify;
+  hyphens: auto !important;
+  text-wrap: pretty !important;
+}
+
+.footnote p {
+  text-align: left;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.bold-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+kbd {
+  line-height:1.3em;
+}
+
+article.md-typeset {
+  font-size: 1.8em !important;
+  font-family: "Ubuntu";
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.footnote p, .citation-list p {
+  text-align: left;
+  font-size: 12pt !important;
+  line-height: 1.2em !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--color-foreground-secondary);
+}
+
+a.footnote-reference {
+  line-height: 1.0em !important;
+}
+
+/*div.admonition > p:last-child, .md-typeset details > p:last-child, div.admonition li {
+  font-size: 1.4em !important;
+  line-height: 1.3em;
+  font-weight: 300;
+} */

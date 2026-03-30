@@ -105,7 +105,8 @@ a.reference.external:after {
   content: '';
   background: no-repeat left .25em center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
   text-decoration: none;
-  padding-right: 1em;
+  padding-right: .8em;
   padding-top: 10px;
+  margin-left: -0.1em;
 }
 

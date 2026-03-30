@@ -9,10 +9,11 @@ introduction can be found in this `AdaCore Article <https://learn.adacore.com/co
 .. rubric:: Types of generics in Ada
 
 Ada basically supports two types of Generics. In Ada terminology, we speak about generic units. A unit is 
-either a package or a single subprogram, so the following cases do exist but are d
+either a package or a single subprogram, so the following cases of generic units do exist:
 
 * Generic subprograms (single procedures or functions taking and/or returning generic parameters)
-* Package-level generics. Entire packages that operate on generic parameters.
+* Package-level generics. Entire packages that operate on generic parameters. Such a package can include 
+  types, records and subprograms.
 
 .. _ada_gen_subprograms:
 
@@ -22,7 +23,8 @@ A generic subprogram is a function or a procedure that takes one or more formal 
 function may also return a formal type value. Like any other Ada unit, it is specified in an ``.ads`` 
 file and implemented in an ``.adb`` file. Such subprograms are not part of a package and thus are part of 
 the global name space. Naming conventions dictate that the name of the subprogram is also the file 
-name. Since our example procedure is named ``Swap`` we must also name the files ``swap.[adb|ads]`` [#f2]_.
+name. Since our example procedure is named ``Swap`` we must also name the files ``swap.[adb|ads]`` [#f2]_. 
+To form structure, such sub programs can exist in sub folders.
 
 .. tab-set::
 
@@ -52,7 +54,7 @@ name. Since our example procedure is named ``Swap`` we must also name the files 
         Y := Temporary;
       end Swap;
 
-To instantiate this generic procedure we would use it like :ada:`procedure Swap_Integers is new Swap (Integer);`. 
+To instantiate this generic procedure we would use it like :ada:`procedure Swap_Integers is new Swap (Integer);` 
 after making the generic procedure availble with a :ada:`With Swap;` statement. Afterwards, you can use 
 the procedure like so: :ada:`Swap_Integers(foo, bar)` (given that ``foo`` and ``bar`` are two Integer 
 variables).
@@ -60,7 +62,9 @@ variables).
 .. note::
 
   For more clarity (and verbosity |:smile:|), we could also use named parameter notation and write :ada:`(Element_T => 
-  Integer);`, but this is often omitted, particularly when there is only one formal type parameter.
+  Integer);`, but this is often omitted, particularly when there is only one formal type parameter. For 
+  instances with more than a single type parameter, the more explicit syntax makes sense and can 
+  potentially increase code clarity.
 
 .. hint::
 
@@ -113,6 +117,8 @@ Differences to C++ or Java
 In C++ or Java (and other languages) you instantiate a generic class or method by using it. In Ada, you 
 need to instantiate either a generic subprogram or a generic class, essentially creating a usable version 
 of the subprogram or the package.
+
+-------------
 
 .. tags:: ada
 ------------
