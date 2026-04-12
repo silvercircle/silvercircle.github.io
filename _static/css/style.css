@@ -81,22 +81,51 @@ p.prev-next-title {
   font-size: 12pt !important;
 }
 
-img.align-left {
+img.align-left, figure.align-left {
   margin-left: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-img.align-right {
+img.align-right, figure.align-right {
   margin-right: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-img.align-center {
+figure.align-center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+figure.align-right {
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+figure.align-left {
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+figure.align-left img.align-left {
+  margin-right: 0;
+}
+figure.align-right img.align-right {
+  margin-left: 0;
+}
+
+img.align-center, figure.align-right {
   margin-bottom: 5px;
 }
 
+figure.align-left figcaption, figure.align-right figcaption, figure.align-center figcaption {
+  text-align: center;
+  justify-content: center;
+  font-size: 90%;
+  font-weight: 400;
+  color: var(--color-foreground-muted);
+}
 div.content-icon-container {
   margin-bottom: 0;
 }

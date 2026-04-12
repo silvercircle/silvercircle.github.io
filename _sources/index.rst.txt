@@ -18,6 +18,7 @@
   site/index
   isolated_sample
   tech/index
+  topics/index
 
 On this page, you'll find two things:
 

@@ -44,6 +44,40 @@ div.left50 {
   margin-left: 50px;
 }
 
+div.container.gallery {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0px;
+}
+
+div.container.gallery img {
+  width: 10rem;
+  height: 10rem;
+}
+
+div.container.gallery3 {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0px;
+}
+
+div.container.gallery3 img {
+  width: 20em;
+  height: 20em;
+}
+
 @media (min-width:1025px) {
   div.narrow {
     width: 50em;
