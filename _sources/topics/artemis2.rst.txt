@@ -1,5 +1,5 @@
 .. include:: ../roles.rst
-:layout: fullwidth
+:layout: mobile
 
 Artemis II Mission 2026
 =======================

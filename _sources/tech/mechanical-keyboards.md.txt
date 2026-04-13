@@ -15,7 +15,10 @@ most common are keyboards based on the MX switches originally made by Cherry.
 ```{thumbnail} ../media/mx.jpg
 ---
 align: left
-width: 50%
+width: 201px
+title: The anatomy of a mechanical MX keyboard switch
+show_caption: true
+class: align-left
 ---
 ```
 
