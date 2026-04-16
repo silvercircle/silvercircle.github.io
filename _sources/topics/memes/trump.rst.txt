@@ -1,0 +1,67 @@
+.. include:: ../../roles.rst
+
+.. rst-class:: pageheader
+President Donald J. Trump
+=========================
+.. thumbnail:: ../../media/Memes/Trump/trump_unpleasant.webp
+  :width: 200px
+  :align: left
+  :title: This is Donald J. Trump, the current and 47th president of the United States of America. Or 
+    otherwise: A nightmare.
+  :show_caption: true
+  :class: align-left
+
+We all know it by now. Donald Trump is an imbecile, a narcissistic sociopath and a generally very 
+unpleasant person. He is also not the brightest candle on the cake and as a politician, he is highly 
+incompetent and dangerous.
+
+Unfortunately, this person is currently serving as the 47th president of the `United States 
+<https://en.wikipedia.org/wiki/United_States>`_ on his second term after he was serving as the 45th POTUS 
+from 2017 to 2020. The #1 world's economy and a nuclear superpower with more than 5000 nuclear warheads 
+and likely the most powerful armed forces in the world, presided by an highly unstable and maybe no 
+longer fully sane person who sees himself as a genius and great dealmaker. A guy who tells the world his 
+opinions and political decisions on his own social media platform, usually written in poor language and 
+simple English sentences. Maybe he cannot do better, maybe he needs to use this simple form of 
+communications, because his most loyal fans are generally people with rather low education levels. No 
+matter what, Trump has alienated large parts of the world and many high profile politicians.
+
+But this should not be a political rant. I could go on for pages and pages, but most of the things I 
+have on my mind have already been said or written elsewhere. Not once, but thousands of times.
+
+:bfit:`He has one distinct positive feature that sets him apart from other presidents:` He provides an 
+endless stream of material useful to comedians and other entertainment professionals. The number of 
+memes, he has influenced.
+
+.. rst-class:: pageheader
+War against Iran
+================
+So far, Trump's idiocrazy reached its peak in 2026 with the `attacks on Iran <https://en.wikipedia.org/wiki/2026_Iran_war>`_ 
+that started in late February of 2026. Not only that these attacks violated `International Law <https://en.wikipedia.org/wiki/International_law>`_, 
+it also saw a ton of verbal escalations by President Trump, that culminated in his threat to **end an 
+entire civilization** [#fn1]_.
+
+.. container:: gallery
+
+  .. thumbnail:: ../../media/Memes/Trump/ayatollah.webp
+    :group: gen1
+    :show_caption: true
+    :title: Say hello to Ayatollah Trump
+    :class: align-left
+    
+  .. thumbnail:: ../../media/Memes/Trump/liberty.jpeg
+    :group: gen1
+    :show_caption: true
+    :title: The statue of liberty cannot believe it
+    :class: align-left
+    
+  .. thumbnail:: ../../media/Memes/Trump/straitblocker.jpeg
+    :group: gen1
+    :show_caption: true
+    :title: He who blocks the strait of Hormuz
+    :class: align-left
+
+-------------
+
+.. rubric:: Footnotes
+
+.. [#fn1] See: `[1] <https://www.nytimes.com/2026/04/07/us/politics/trump-iran-civilization-threat.html>`_ and `[2] <https://www.nbcnews.com/politics/white-house/trump-threat-whole-civilization-will-die-iran-war-deadline-hormuz-rcna267059>`_.

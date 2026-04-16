@@ -1,17 +1,18 @@
 /* Collapse "navigation".*/
+@import "mobileheader.css";
 .nav-overlay-icon {
     display: flex;
 }
 .sidebar-drawer {
     position: fixed;
     height: 100vh;
-    width: 25em;
+    width: 20em;
 
     top: 0;
-    left: -25em;
+    left: -20em;
 }
 .sidebar-container {
-  width: 25em;
+  width: 20em;
 }
 
 /* Swap which icon is visible. */
@@ -79,11 +80,13 @@
   display: none;
 }
 
+@import "mobileheader.css";
+
 @media (min-width:1025px) {
   div.content {
-    width: 90% !important;
-    max-width: 90% !important;
-    min-width: 90% !important;
+    width: 95% !important;
+    max-width: 95% !important;
+    min-width: 95% !important;
     padding: 0 1em;
     margin-left: auto !important;
     margin-right: auto !important;

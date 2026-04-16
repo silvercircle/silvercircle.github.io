@@ -27,19 +27,122 @@ Artemis II Mission 2026
   mission will also be the first time, a woman will leave Earth's orbit and the first time, a person of 
   color will reach the Moon.
 
-.. thumbnail:: ../media/sls_liftoff.jpg
-  :align: center
-  :width: 100%
-  :title: The powerful SLS takes Artemis 2 towards the Moon
-  :show_caption: true
-  :class: align-center
+Image Gallery
+-------------
+Most of these images are Copyright © by NASA and. Credits and photographer (when available) are mentioned 
+for each photo.
 
+.. tab-set::
 
-.. thumbnail:: ../media/sls_trail.jpg
-  :align: center
-  :width: 100%
-  :title: The trail of the powerful SLS rocket engines stays visible for a long time after the start. 
-    It consists mostly of water vapor, so it's more like a giant artificial cloud.
-  :show_caption: true
-  :class: align-center
+  .. tab-item:: SLS
+
+    .. thumbnail:: ../media/SLS_liftoff.jpg
+      :align: center
+      :width: 100%
+      :title: On this beautiful day, April 1, 2026, at 6:35 p.m. EDT, the powerful SLS takes Artemis 2 towards the Moon. 
+        <emph>© Bill Ingalls/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+
+    .. thumbnail:: https://www.nasa.gov/wp-content/uploads/2026/04/55182992165-bcbb710703-o.jpg
+      :align: center
+      :width: 100%
+      :title: Another view, taken from further away, a few seconds into the launch. <emph>© Keegan Barber/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+      :download: false
+
+    .. thumbnail:: https://www.nasa.gov/wp-content/uploads/2026/04/55182789108-f13e3eb9ec-o.jpg
+      :align: center
+      :width: 100%
+      :title: A more detailed view of the launch sequence. <emph>© Joel Kowsky/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+      :download: false
+
+    .. thumbnail:: ../media/launch_escape.jpg
+      :align: center
+      :width: 100%
+      :title: An interesting detail showing the <a href='https://www.nasa.gov/wp-content/uploads/2024/01/artemis-emergency-egress-system-infographic.pdf?emrc=e19210'> 
+        Emergency Egress System</a> in action during the launch. <emph>© Joel Kowsky/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+
+    This is a set of baskets or cars, similar to what is used on some cable cars and ski resort lifts. In 
+    case of a catastrophic emergency during liftoff, the crew has a few seconds to board them and escape. 
+    These cars are about the size of an ordinary SUV vehicle and provide enough room for both the 
+    astronauts and other personell. The utilize a zipline-like system to travel down at high speed in 
+    order to quickly evacuate the zone of highest danger.
+
+    .. thumbnail:: ../media/launch_opposite.jpg
+      :align: center
+      :width: 100%
+      :title: Launch picture taken from the opposite site of Launch Complex 39B. <emph>© NASA/Joel Kowsky</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+
+    .. thumbnail:: ../media/sls_trail.jpg
+      :align: center
+      :width: 100%
+      :title: The trail of the powerful SLS rocket engines stays visible for a long time after the start. 
+        It consists mostly of water vapor, so it's more like a giant artificial cloud. Long time 
+        exposure. <emph>© Keegan Barber/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+
+  .. tab-item:: Moon
+
+    .. thumbnail:: ../media/moon_with_corona.jpg
+      :align: center
+      :width: 100%
+      :title: The Moon eclipses the Sun and makes the Sun's outer atmosphere visible like it has been 
+        seen on few pictures before (<emph>© NASA</emph>)
+      :show_caption: true
+      :class: align-center-full
+      :group: moon
+
+  .. tab-item:: Others
+
+    .. thumbnail:: ../media/earth.jpg
+      :align: center
+      :width: 100%
+      :title: The Earth, our beautiful planet. Carl Sagan once coined it as pale blue dot on a picture 
+        taken by Voyager 1 from magnitudes further away. Two auroras are clearly visible in the lower left 
+        and upper right quadrant. The huge brown land mass is northern Africa and you can also see the 
+        Iberian peninsula and the strait of Gibraltar, both in the lower left quadrant.
+      :show_caption: true
+      :class: align-center-full
+      :group: other
+
+    .. thumbnail:: ../media/milky_way.jpg
+      :align: center
+      :width: 100%
+      :title: The Milky Way, picture taken on April, 7th on return flight. <emph>(© NASA)</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: other
+
+  .. tab-item:: Landing
+
+    .. thumbnail:: ../media/landing.jpg
+      :align: center
+      :width: 100%
+      :title: The Orion spacecraft performs a textbook landing off the coast of California <emph>(© Bill Ingalls/NASA)</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: other
+
+    .. thumbnail:: ../media/after_landing.jpg
+      :align: center
+      :width: 100%
+      :title: The Orion spacecraft after perfect splashdown off the coast of California <emph>(© Joel Kowsky/NASA)</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: other
 

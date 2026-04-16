@@ -1,0 +1,22 @@
+Site topics
+===========
+
+.. toctree::
+  :maxdepth: 4
+  :glob:
+  :hidden:
+
+  *
+
+:doc:`The pygments style class for the dark theme variant <pygments>`
+---------------------------------------------------------------------
+A custom pygments highlight style for this site that is only active for the dark theme. This is somewhat 
+inspired by gruvbox colors and my personal Neovim Theme.
+
+:doc:`The site's theme <theme>`
+-------------------------------
+
+:doc:`How to integrate Fancybox in this site <fancybox-integration>`
+--------------------------------------------------------------------
+
+

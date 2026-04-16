@@ -1,25 +1,25 @@
 /* Collapse "navigation".*/
+@import "mobileheader.css";
 .nav-overlay-icon {
     display: flex;
 }
 .sidebar-drawer {
     position: fixed;
     height: 100vh;
-    width: 25em;
+    width: 20em;
 
     top: 0;
-    left: -25em;
+    left: -20em;
 }
-
 .sidebar-container {
-  width: 25em;
+  width: 20em;
 }
 
 /* Swap which icon is visible. */
 .toc-header-icon, .theme-toggle-header {
   display: flex;
 }
-.theme-toggle-content {
+.toc-content-icon, .theme-toggle-content {
   display: none;
 }
 /* Show the header. */
@@ -95,3 +95,4 @@
     min-width: 70%;
   }
 }
+

@@ -1,0 +1,19 @@
+Tech topics
+===========
+
+.. toctree::
+  :maxdepth: 4
+  :glob:
+  :hidden:
+
+  *
+
+:doc:`Mechanical Keyboards <mechanical-keyboards>`
+---------------------------------------------------------------------
+A custom pygments highlight style for this site that is only active for the dark theme. This is somewhat 
+inspired by gruvbox colors and my personal Neovim Theme.
+
+:doc:`Keychron K10 Pro <keychron-k10-pro>`
+------------------------------------------
+
+

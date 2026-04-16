@@ -82,7 +82,7 @@ body, input {
 section p, div.admonition p {
   font-size: 13pt;
   font-weight: 400;
-  line-height: 1.2em;
+  line-height: var(--p-line-spacing);
   text-align: justify;
   hyphens: auto !important;
   text-wrap: pretty !important;
@@ -108,14 +108,14 @@ kbd {
 article.md-typeset {
   font-size: 1.8em !important;
   font-family: "Ubuntu";
-  line-height: 1.2em;
+  line-height: var(--p-line-spacing);
   font-weight: 400;
 }
 
 .footnote p, .citation-list p {
   text-align: left;
   font-size: 12pt !important;
-  line-height: 1.2em !important;
+  line-height: var(--p-line-spacing);
   margin-top: 5px;
   margin-bottom: 5px;
   color: var(--color-foreground-secondary);

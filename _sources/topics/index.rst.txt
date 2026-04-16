@@ -4,4 +4,15 @@ General Topics
 :doc:`Artemis 2 Mission <artemis2>`
 -----------------------------------
 
+:doc:`Collection of Memes <memes/index>`
+----------------------------------------
+
+.. toctree::
+  :maxdepth: 2
+  :hidden:
+  :class: toctreeinline
+
+  artemis2
+  memes/index
+
 

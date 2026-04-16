@@ -1,0 +1,14 @@
+Memes
+=====
+A collection of funny memes.
+
+:doc:`President Trump has his own section <trump>`
+
+.. toctree::
+  :maxdepth: 3
+  :hidden:
+  :class: toctreeinline
+  :glob:
+
+  *
+

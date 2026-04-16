@@ -1,11 +1,13 @@
-div.twocol {
-  column-count: 2 !important;
-  margin-top: 10px !important
-}
+@media (min-width:1025px) {
+  div.twocol {
+    column-count: 2 !important;
+    margin-top: 10px !important
+  }
 
-div.twocol p {
-  margin-block-start: 0 !important;
-  margin-bottom: 1.4em !important;
+  div.twocol p {
+    margin-block-start: 0 !important;
+    margin-bottom: var(--p-line-spacing) !important;
+  }
 }
 
 div.centered {
@@ -73,9 +75,43 @@ div.container.gallery3 {
   grid-gap: 0px;
 }
 
+div.container.gallery.portrait {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10em);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0px;
+}
+
+div.container.gallery.landscape {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15em);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0px;
+}
+
 div.container.gallery3 img {
   width: 20em;
   height: 20em;
+}
+
+div.container.gallery.portrait img {
+  width: 10em;
+  height: 15em;
+}
+
+div.container.gallery.landscape img {
+  width: 16em;
+  height: 7em;
 }
 
 @media (min-width:1025px) {

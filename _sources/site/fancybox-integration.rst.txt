@@ -1,0 +1,8 @@
+.. include:: ../roles.rst
+
+Fancybox Integration
+====================
+`Fancybox <https://fancyapps.com/fancybox/>`_ is a popular JavaScript application for displaying images 
+on web pages. It is similar to `LightBox 2 <https://lokeshdhakar.com/projects/lightbox2/>`_, but more 
+feature-rich and probably more stable. Since Fancybox is only free for non-commercial usage, there is no 
+plugin for Sphinx.

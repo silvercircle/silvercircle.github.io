@@ -15,3 +15,5 @@ A custom pygments highlight style for this site that is only active for the dark
 inspired by gruvbox colors and my personal Neovim Theme.
 
 ##### {doc}`The site's theme <theme>`
+
+##### {doc}`How to integrate Fancybox in this site`

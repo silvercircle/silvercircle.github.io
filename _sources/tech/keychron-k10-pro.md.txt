@@ -1,5 +1,5 @@
 ---
-layout: mobile
+layout: desktop
 nonav: true
 ---
 :::{include} ../roles.md

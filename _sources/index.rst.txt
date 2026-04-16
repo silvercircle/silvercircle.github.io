@@ -1,9 +1,7 @@
-.. container:: centered bordered
 
-  .. raw:: html
-
-    <section><h1 style="margin: 10px !important;">SILVERCIRCLE.GITHUB.IO</h1></section>
-
+.. rst-class:: pageheader
+SILVERCIRCLE.CODEBERG.PAGE
+==========================
 .. toctree::
   :caption: Contents
   :hidden:
@@ -20,23 +18,35 @@
   tech/index
   topics/index
 
-On this page, you'll find two things:
+About this page
+===============
+
+This site is a hobby project. Unless otherwise noted, the content is licensed under a `Creative Commons 
+Attribution License <https://creativecommons.org/licenses/by/4.0/>`_.
+
+The site is hosted at `codeberg <https://docs.codeberg.org/getting-started/what-is-codeberg/#what-is-codeberg-e.v.%3F>`_, 
+a German non-profit organization that provides such services – free of charge – to individuals or 
+organizations. Codeberg is an alternative to popular sites like `GitHub <https://github.com>`_ 
+
+.. rst-class:: pageheader
+Sections
+========
 
 :doc:`Geographic-Lib Ada <geolib/index>`
-----------------------------------------
+****************************************
 A port of the `Geographic Lib <https://geographiclib.sourceforge.io/index.html>`_, written by Charles 
 Karney as part of a larger research project.
 
 :doc:`Neovim <neovim/index>`
-----------------------------
+****************************
 My Neovim configuration. A very extensive configuration to convert Neovim into an IDE-like tool for 
 editing many different formats.
 
 :doc:`Site notes <site/index>`
-------------------------------
+******************************
 Some notes about this site, the software behind it and configuration choices.
 
 :doc:`Tech topics <tech/index>`
--------------------------------
+*******************************
 Some general topics about hardware and tech
 
