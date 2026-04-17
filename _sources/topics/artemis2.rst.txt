@@ -29,12 +29,16 @@ Artemis II Mission 2026
 
 Image Gallery
 -------------
-Most of these images are Copyright © by NASA and. Credits and photographer (when available) are mentioned 
-for each photo.
+Most of these images are © by NASA. Credits and photographer (when available) are mentioned for each 
+photo in the picture description. The images on this page have been reduced in size to conserve 
+bandwidth. The links to the original NASA image gallery are provided below. There you can find some very 
+high resolution (up to 8k) original images.
 
 .. tab-set::
 
   .. tab-item:: SLS
+
+    The original high quality and hi resolution images are on the `NASA gallery <https://www.nasa.gov/gallery/artemis-ii-launch/>`_.
 
     .. thumbnail:: ../media/SLS_liftoff.jpg
       :align: center
@@ -45,16 +49,7 @@ for each photo.
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: https://www.nasa.gov/wp-content/uploads/2026/04/55182992165-bcbb710703-o.jpg
-      :align: center
-      :width: 100%
-      :title: Another view, taken from further away, a few seconds into the launch. <emph>© Keegan Barber/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-      :download: false
-
-    .. thumbnail:: https://www.nasa.gov/wp-content/uploads/2026/04/55182789108-f13e3eb9ec-o.jpg
+    .. thumbnail:: ../media/sls_liftoff_detail.jpg
       :align: center
       :width: 100%
       :title: A more detailed view of the launch sequence. <emph>© Joel Kowsky/NASA</emph>
@@ -75,8 +70,16 @@ for each photo.
     This is a set of baskets or cars, similar to what is used on some cable cars and ski resort lifts. In 
     case of a catastrophic emergency during liftoff, the crew has a few seconds to board them and escape. 
     These cars are about the size of an ordinary SUV vehicle and provide enough room for both the 
-    astronauts and other personell. The utilize a zipline-like system to travel down at high speed in 
+    astronauts and other personell. They utilize a zipline-like system to travel down at high speed in 
     order to quickly evacuate the zone of highest danger.
+
+    .. thumbnail:: ../media/booster_separation.jpg
+      :align: center
+      :width: 100%
+      :title: The solid rocket booster separation provided some spectacular views. <emph>© Joel Kowsky/NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
 
     .. thumbnail:: ../media/launch_opposite.jpg
       :align: center
@@ -98,11 +101,52 @@ for each photo.
 
   .. tab-item:: Moon
 
+    The original high quality and hi resolution images for the lunar flyby can be found on the `NASA gallery <https://www.nasa.gov/gallery/lunar-flyby/>`_.
+
     .. thumbnail:: ../media/moon_with_corona.jpg
       :align: center
       :width: 100%
       :title: The Moon eclipses the Sun and makes the Sun's outer atmosphere visible like it has been 
         seen on few pictures before (<emph>© NASA</emph>)
+      :show_caption: true
+      :class: align-center-full
+      :group: moon
+
+    .. thumbnail:: ../media/earthset.jpg
+      :align: center
+      :width: 100%
+      :title: The Earth sets behind the Moon. Photo taken at 6:41 p.m. EDT, April 6, 2026 while flying 
+        around the Moon. <emph>© NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: moon
+
+    .. thumbnail:: ../media/earth_crescent.jpg
+      :align: center
+      :width: 100%
+      :title: The Earth crescent visible behind the Moon. April 6, 2026, lunar flyby. <emph>© NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: moon
+
+    .. thumbnail:: ../media/far_side.jpg
+      :align: center
+      :width: 100%
+      :title: Looking at the far side of the Moon, visible left of the Orientale Basin, a 600 miles wide 
+        impact crater. It is the dark spot at the bottom of the center. The far side part of the Moon is never 
+        visible from Earth, the Orientale Basin is partially visible. Parts of the Orion spacecraft 
+        service module are lit by the Sun. April 6, 2026, lunar flyby. <emph>© NASA</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: moon
+
+    .. thumbnail:: ../media/moon_highdetail.jpg
+      :align: center
+      :width: 100%
+      :title: A high detail picture of the Moon's surface taken during the flyby on April 6, 2026, 6:41 
+        p.m. EDT. The picture was taken 3 minutes before the 40 minutes long radio blackout when the 
+        Orion was behind the Moon. The Earth is still visible, setting behind the Moon and would 
+        completely disappear 3 minutes later. <emph>© NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: moon

@@ -19,10 +19,6 @@ section h1 {
   margin-bottom: 10px;
 }
 
-section.pageheader h1 {
-  border-bottom: 3px solid #a07020;
-  border-radius: 0;
-}
 section h2 {
   font-size: 1.7em !important;
 }
