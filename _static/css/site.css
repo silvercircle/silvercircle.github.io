@@ -16,8 +16,33 @@ div.centered {
   width: 50% !important;
 }
 
+div.floatblock {
+  padding: 5px;
+}
+
+div.floatblock.left {
+  float: left;
+  margin-right: 10px;
+}
+
+div.floatblock p:first-child {
+  margin-top: 0;
+}
+
+div.floatblock p:last-child {
+  margin-bottom: 0;
+}
+
 .bordered {
   border: 2px solid #444;
+}
+
+.darkgreybg {
+  background-color: #333;
+}
+
+.smallfont {
+  font-size: 90%;
 }
 
 div.headline p {

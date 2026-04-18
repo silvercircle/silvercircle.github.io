@@ -14,7 +14,6 @@ SILVERCIRCLE.CODEBERG.PAGE
   neovim/index
   dev/index
   site/index
-  isolated_sample
   tech/index
   topics/index
 

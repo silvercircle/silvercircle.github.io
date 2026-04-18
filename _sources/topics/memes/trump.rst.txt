@@ -15,6 +15,16 @@ We all know it by now. Donald Trump is an imbecile, a narcissistic sociopath and
 unpleasant person. He is also not the brightest candle on the cake and as a politician, he is highly 
 incompetent and dangerous.
 
+.. raw:: html
+
+  <div class="floatblock left darkgreybg bordered smallfont" style="width:30%;">
+
+A content block on the left with some text. This works quite well.
+
+Or more text can be added as well.
+
+|divclose|
+
 Unfortunately, this person is currently serving as the 47th president of the `United States 
 <https://en.wikipedia.org/wiki/United_States>`_ on his second term after he was serving as the 45th POTUS 
 from 2017 to 2020. The #1 world's economy and a nuclear superpower with more than 5000 nuclear warheads 
@@ -26,9 +36,11 @@ communications, because his most loyal fans are generally people with rather low
 matter what, Trump has alienated large parts of the world and many high profile politicians.
 
 But this should not be a political rant. I could go on for pages and pages, but most of the things I 
-have on my mind have already been said or written elsewhere. Not once, but thousands of times.
+have on my mind have already been said or written elsewhere. Not once, but thousands of times. More and 
+more people realize how he damages the United States and that's why Trump's approval rates are on an 
+all-time low. But his hardcore fans
 
-:bfit:`He has one distinct positive feature that sets him apart from other presidents:` He provides an 
+:special:`He has one distinct positive feature that sets him apart from other presidents:` He provides an 
 endless stream of material useful to comedians and other entertainment professionals. The number of 
 memes, he has influenced.
 

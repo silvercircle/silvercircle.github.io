@@ -81,7 +81,7 @@ body, input {
 
 section p, div.admonition p {
   font-size: 13pt;
-  font-weight: 400;
+/*  font-weight: 400; */
   line-height: var(--p-line-spacing);
   text-align: justify;
   hyphens: auto !important;
@@ -99,6 +99,11 @@ strong {
 .bold-italic {
   font-weight: 600;
   font-style: italic;
+}
+
+.emph-special {
+  font-weight: 600;
+  color: var(--color-emph-special);
 }
 
 kbd {
@@ -123,6 +128,11 @@ article.md-typeset {
 
 a.footnote-reference {
   line-height: 1.0em !important;
+}
+
+blockquote {
+  font-weight: 300 !important;
+  font-style: italic;
 }
 
 /*div.admonition > p:last-child, .md-typeset details > p:last-child, div.admonition li {
