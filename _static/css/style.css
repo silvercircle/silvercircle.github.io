@@ -178,3 +178,6 @@ a.reference.external:after {
   margin-left: -0.1em;
 }
 
+tr td p {
+  text-align: left;
+}

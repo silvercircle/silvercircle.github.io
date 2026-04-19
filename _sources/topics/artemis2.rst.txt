@@ -77,6 +77,72 @@ technical issues. In November 2024 it was pushed back a year to September 2025, 
 issues delayed the start until early 2026. Attempts to launch in February and March were canceled due to 
 minor problems. It finally took off on April 1st, 2026.
 
+The Crew
+--------
+The crew consists of 4 persons, three men and one woman. Three of them are NASA employees and US-American citizens, while 
+the fourth is Canadian and a member of the `CSA (Canadian Space Agency) 
+<https://www.asc-csa.gc.ca/eng/>`_
+
+.. csv-table:: Crew Members
+  :header: "Position", "Name", "Affiliation"
+  :widths: 40, 50, 50
+
+  Commander, ":special:`Reid Wiseman`", "NASA astronaut"
+  "**Mission Specialist**", ":special:`Christina Koch`", "NASA astronaut"
+  "**Pilot**", ":special:`Victor Glover`", "NASA astronaut"
+  "**Mission Specialist**", ":special:`Jeremy Hansen`", "CSA (Canadian Space Agency) astronaut"
+  **Backup**, ":special:`Andre Douglas`", "NASA astronaut"
+  **Backup**, ":special:`Jenni Gibbons`", "CSA (Canadian Space Agency) astronaut"
+
+.. thumbnail:: ../media/crew.webp
+  :width: 90%
+  :align: center
+  :group: crew
+  :show_caption: true
+  :title: From left: Canadian CSA astronaut and mission specialist Jeremy Hansen and NASA astronauts Victor Glover (Pilot), 
+    Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/James Blair</emph>
+  :class: align-center-full
+
+.. container:: gallery portrait
+
+  .. thumbnail:: ../media/wiseman.jpg
+    :group: crew
+    :title: Reid Wiseman, NASA astronaut and Commander of the Artemis II <emph>© NASA/Kim Shiflett</emph>
+    :show_caption: true
+    :class: align-left
+
+  .. thumbnail:: ../media/koch.jpg
+    :group: crew
+    :title: Christina Koch, NASA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
+    :show_caption: true
+    :class: align-left
+
+  .. thumbnail:: ../media/glover.jpg
+    :group: crew
+    :title: Victor Glover, NASA astronaut and Artemis II pilot <emph>© NASA/Kim Shiflett</emph>
+    :show_caption: true
+    :class: align-left
+
+  .. thumbnail:: ../media/hansen.jpg
+    :group: crew
+    :title: Jeremy Hansen, CSA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
+    :show_caption: true
+    :class: align-left
+
+.. container:: gallery portrait
+
+  .. thumbnail:: ../media/andre-douglas.webp
+    :group: crew
+    :title: Andre Douglas, NASA astronaut and backup crew member <emph>© NASA/Josh Valcarcel</emph>
+    :show_caption: true
+    :class: align-left
+
+  .. thumbnail:: ../media/jenni_gibbons.jpg
+    :group: crew
+    :title: Jenni Gibbons, CSA astronaut and backup crew member <emph>© NASA/Bill Stafford</emph>
+    :show_caption: true
+    :class: align-left
+
 Chronology of key events
 ------------------------
 

@@ -78,7 +78,7 @@ high resolution (up to 8k) original images.
       :align: center
       :width: 100%
       :title: The Moon eclipses the Sun and makes the Sun's outer atmosphere visible like it has been 
-        seen on few pictures before (<emph>© NASA</emph>)
+        seen on few pictures before <emph>© NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: moon
@@ -124,6 +124,8 @@ high resolution (up to 8k) original images.
 
   .. tab-item:: Others
 
+    Many more pictures in high resoltion (up to 8k) are available on the `official NASA gallery <https://www.nasa.gov/gallery/artemis-ii-splashdown-and-recovery/>`_
+
     .. thumbnail:: /media/earth.jpg
       :align: center
       :width: 100%
@@ -138,7 +140,7 @@ high resolution (up to 8k) original images.
     .. thumbnail:: /media/milky_way.jpg
       :align: center
       :width: 100%
-      :title: The Milky Way, picture taken on April, 7th on return flight. <emph>(© NASA)</emph>
+      :title: The Milky Way, picture taken on April, 7th on return flight. <emph>© NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: other
@@ -148,7 +150,7 @@ high resolution (up to 8k) original images.
     .. thumbnail:: /media/landing.jpg
       :align: center
       :width: 100%
-      :title: The Orion spacecraft performs a textbook landing off the coast of California <emph>(© Bill Ingalls/NASA)</emph>
+      :title: The Orion spacecraft performs a textbook landing off the coast of California <emph>© Bill Ingalls/NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: landing
@@ -156,7 +158,7 @@ high resolution (up to 8k) original images.
     .. thumbnail:: /media/splashdown1.jpg
       :align: center
       :width: 100%
-      :title: Only seconds after the successful splasdown in the Pacific Ocean <emph>(© NASA/Bill Ingalls)</emph>
+      :title: Only seconds after the successful splasdown in the Pacific Ocean <emph>© NASA/Bill Ingalls</emph>
       :show_caption: true
       :class: align-center-full
       :group: landing
@@ -164,8 +166,46 @@ high resolution (up to 8k) original images.
     .. thumbnail:: /media/after_landing.jpg
       :align: center
       :width: 100%
-      :title: The Orion spacecraft after perfect splashdown off the coast of California <emph>(© Joel Kowsky/NASA)</emph>
+      :title: The Orion spacecraft after perfect splashdown off the coast of California <emph>© Joel Kowsky/NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: landing
 
+    .. thumbnail:: /media/rescue.jpg
+      :align: center
+      :width: 100%
+      :title: U.S. Navy divers and the Artemis II crew are seen aboard an inflatable raft waiting for 
+        recovery. An U.S. Navy MH-60 Seahawk approaches and prepares to fly the crew and the Navy personnel to the 
+        USS John P. Murtha <emph>© NASA/James Blair</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: landing
+
+    .. thumbnail:: /media/recovery.jpg
+      :align: center
+      :width: 100%
+      :title: The NASA Landing and Recovery team works with U.S. Navy personnel to recover the Orion 
+        spacecraft and bring it aboard the USS John P. Murtha on Saturday, April 11, 2026 <emph>© NASA/Joel Kowsky</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: landing
+
+    .. thumbnail:: /media/back.jpg
+      :align: center
+      :width: 100%
+      :title: The Artemis II crew (from left): Commander Reid Wiseman, mission specialist Christina Koch, 
+        mission specialist Jeremy Hansen (CSA - Canadian Space Agency) and Artemis II pilot Victor Glover 
+        are posing for a group photo in front of the recovered Orion spacecraft on the well deck of the 
+        USS John P. Murtha <emph>© NASA/Bill Ingalls</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: landing
+
+    .. thumbnail:: /media/hug.jpg
+      :align: center
+      :width: 100%
+      :title: Mission specialist Christina Koch hugs the recovered Orion spacecraft on the well deck of 
+        the USS John P. Murtha <emph>© NASA/Bill Ingalls</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: landing
