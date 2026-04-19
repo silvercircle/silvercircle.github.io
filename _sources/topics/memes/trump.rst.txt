@@ -15,16 +15,6 @@ We all know it by now. Donald Trump is an imbecile, a narcissistic sociopath and
 unpleasant person. He is also not the brightest candle on the cake and as a politician, he is highly 
 incompetent and dangerous.
 
-.. raw:: html
-
-  <div class="floatblock left darkgreybg bordered smallfont" style="width:30%;">
-
-A content block on the left with some text. This works quite well.
-
-Or more text can be added as well.
-
-|divclose|
-
 Unfortunately, this person is currently serving as the 47th president of the `United States 
 <https://en.wikipedia.org/wiki/United_States>`_ on his second term after he was serving as the 45th POTUS 
 from 2017 to 2020. The #1 world's economy and a nuclear superpower with more than 5000 nuclear warheads 

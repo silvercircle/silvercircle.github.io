@@ -66,13 +66,16 @@ The Mission
 
 **Artemis II** is the second mission in NASA's `Artemis program 
 <https://en.wikipedia.org/wiki/Artemis_program>`_ which will culminate in humans landing on the surface 
-of the Moon. The Goal of Artemis II is to test the technology upon which the entire program is based on. 
-The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`
+of the Moon. The goal of Artemis II is to test the technology upon which the entire program is based on. 
+The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`. It was the first crewed 
+mission in the program and took a full crew of four astronauts around the Moon. Everything except for the 
+actual landing on the Moon was tested during this mission and everything worked as expected. Some minor issues 
+with various equipment, none of which was designated *mission critical*, were identified.
 
-It was originally planned to lift off in November 2024, but was delayed multiple times due to technical 
-issues. In 2024 it was pushed back a year to September 2025, but multiple technical issues delayed the 
-start until early 2026. Attempts to launch in February and March were canceled due to minor problems. It 
-finally took off on April 1st, 2026.
+*Artemis II* was originally scheduled to lift off in November 2024, but was delayed multiple times due to 
+technical issues. In November 2024 it was pushed back a year to September 2025, but multiple technical 
+issues delayed the start until early 2026. Attempts to launch in February and March were canceled due to 
+minor problems. It finally took off on April 1st, 2026.
 
 Chronology of key events
 ------------------------
@@ -107,8 +110,16 @@ SLS
   Since the SLS is only a temporary solution until one of the commercial projects is ready, the NASA 
   tried to recycle as much old and working technology as possible for the Artemis program.
 
+.. _gloss_orion:
+
+Orion
+  The `Orion Multi-Purpose Crew Vehicle (MPCV) <https://en.wikipedia.org/wiki/Orion_(spacecraft)>`_, developed by `Lockheed 
+  Martin <https://en.wikipedia.org/wiki/Lockheed_Martin>`_ is a partially reusable spacecraft that serves 
+  as the Crew Module for the *Artemis* program missions. It is paired with the :ref:`ESM <gloss_esm>` until the very late 
+  separation event, about an hour before landing.
+
 Integrity
-  The chosen name for the Orion spaceship used by the Artemis II mission
+  The chosen name for the *Orion spaceship* used by the Artemis II mission
 
 TLI
   This stands for *Trans-lunar Injection* and is associated with the firing of the Orion capsule's `main 
@@ -116,10 +127,12 @@ TLI
   Orion accelerates to a speed of 39.400km/h, that's about 11 kilometers per second. This speed is needed 
   to leave Earth's orbit and go for a free return trajectory around the Moon.
 
+.. _gloss_esm:
+
 ESM
   Short for *European Service Module*. During all time until the separation about an hour before 
   landing back on Earth, the `ESM <https://en.wikipedia.org/wiki/European_Service_Module>`_ is docked with 
-  the Crew Module. The ESM provides power via 4 large solar sails, contains all important life support 
+  the :ref:`Crew Module <gloss_orion>`. The ESM provides power via 4 large solar sails, contains all important life support 
   systems for the 10 day long journey and the engines for acceleration and course corrections.
 
   Built by `Airbus SE <https://en.wikipedia.org/wiki/Airbus_Defence_and_Space>`_ (then EADS) on behalf of 
@@ -136,168 +149,7 @@ Trivia
   the same iconic site that also launched the **Saturn V** during the Apollo program and later handled 53 
   Space Shuttle missions.
 
-Image Gallery
--------------
-Most of these images are © by NASA. Credits and photographer (when available) are mentioned for each 
-photo in the picture description. The images on this page have been reduced in size to conserve 
-bandwidth. The links to the original NASA image gallery are provided below. There you can find some very 
-high resolution (up to 8k) original images.
-
-.. tab-set::
-
-  .. tab-item:: SLS
-
-    The original high quality and hi resolution images are on the `NASA gallery <https://www.nasa.gov/gallery/artemis-ii-launch/>`_.
-
-    .. thumbnail:: ../media/SLS_liftoff.jpg
-      :align: center
-      :width: 100%
-      :title: On this beautiful day, April 1, 2026, at 6:35 p.m. EDT, the powerful SLS takes Artemis 2 towards the Moon. 
-        <emph>© Bill Ingalls/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-
-    .. thumbnail:: ../media/sls_liftoff_detail.jpg
-      :align: center
-      :width: 100%
-      :title: A more detailed view of the launch sequence. <emph>© Joel Kowsky/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-      :download: false
-
-    .. thumbnail:: ../media/launch_escape.jpg
-      :align: center
-      :width: 100%
-      :title: An interesting detail showing the <a href='https://www.nasa.gov/wp-content/uploads/2024/01/artemis-emergency-egress-system-infographic.pdf?emrc=e19210'> 
-        Emergency Egress System</a> in action during the launch. <emph>© Joel Kowsky/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-
-    This is a set of baskets or cars, similar to what is used on some cable cars and ski resort lifts. In 
-    case of a catastrophic emergency during liftoff, the crew has a few seconds to board them and escape. 
-    These cars are about the size of an ordinary SUV vehicle and provide enough room for both the 
-    astronauts and other personell. They utilize a zipline-like system to travel down at high speed in 
-    order to quickly evacuate the zone of highest danger.
-
-    .. thumbnail:: ../media/booster_separation.jpg
-      :align: center
-      :width: 100%
-      :title: The solid rocket booster separation provided some spectacular views. <emph>© Joel Kowsky/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-
-    .. thumbnail:: ../media/launch_opposite.jpg
-      :align: center
-      :width: 100%
-      :title: Launch picture taken from the opposite site of Launch Complex 39B. <emph>© NASA/Joel Kowsky</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-
-    .. thumbnail:: ../media/sls_trail.jpg
-      :align: center
-      :width: 100%
-      :title: The trail of the powerful SLS rocket engines stays visible for a long time after the start. 
-        It consists mostly of water vapor, so it's more like a giant artificial cloud. Long time 
-        exposure. <emph>© Keegan Barber/NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: sls
-
-  .. tab-item:: Moon
-
-    The original high quality and hi resolution images for the lunar flyby can be found on the `NASA gallery <https://www.nasa.gov/gallery/lunar-flyby/>`_.
-
-    .. thumbnail:: ../media/moon_with_corona.jpg
-      :align: center
-      :width: 100%
-      :title: The Moon eclipses the Sun and makes the Sun's outer atmosphere visible like it has been 
-        seen on few pictures before (<emph>© NASA</emph>)
-      :show_caption: true
-      :class: align-center-full
-      :group: moon
-
-    .. thumbnail:: ../media/earthset.jpg
-      :align: center
-      :width: 100%
-      :title: The Earth sets behind the Moon. Photo taken at 6:41 p.m. EDT, April 6, 2026 while flying 
-        around the Moon. <emph>© NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: moon
-
-    .. thumbnail:: ../media/earth_crescent.jpg
-      :align: center
-      :width: 100%
-      :title: The Earth crescent visible behind the Moon. April 6, 2026, lunar flyby. <emph>© NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: moon
-
-    .. thumbnail:: ../media/far_side.jpg
-      :align: center
-      :width: 100%
-      :title: Looking at the far side of the Moon, visible left of the Orientale Basin, a 600 miles wide 
-        impact crater. It is the dark spot at the bottom of the center. The far side part of the Moon is never 
-        visible from Earth, the Orientale Basin is partially visible. Parts of the Orion spacecraft 
-        service module are lit by the Sun. April 6, 2026, lunar flyby. <emph>© NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: moon
-
-    .. thumbnail:: ../media/moon_highdetail.jpg
-      :align: center
-      :width: 100%
-      :title: A high detail picture of the Moon's surface taken during the flyby on April 6, 2026, 6:41 
-        p.m. EDT. The picture was taken 3 minutes before the 40 minutes long radio blackout when the 
-        Orion was behind the Moon. The Earth is still visible, setting behind the Moon and would 
-        completely disappear 3 minutes later. <emph>© NASA</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: moon
-
-  .. tab-item:: Others
-
-    .. thumbnail:: ../media/earth.jpg
-      :align: center
-      :width: 100%
-      :title: The Earth, our beautiful planet. Carl Sagan once coined it as pale blue dot on a picture 
-        taken by Voyager 1 from magnitudes further away. Two auroras are clearly visible in the lower left 
-        and upper right quadrant. The huge brown land mass is northern Africa and you can also see the 
-        Iberian peninsula and the strait of Gibraltar, both in the lower left quadrant.
-      :show_caption: true
-      :class: align-center-full
-      :group: other
-
-    .. thumbnail:: ../media/milky_way.jpg
-      :align: center
-      :width: 100%
-      :title: The Milky Way, picture taken on April, 7th on return flight. <emph>(© NASA)</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: other
-
-  .. tab-item:: Landing
-
-    .. thumbnail:: ../media/landing.jpg
-      :align: center
-      :width: 100%
-      :title: The Orion spacecraft performs a textbook landing off the coast of California <emph>(© Bill Ingalls/NASA)</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: other
-
-    .. thumbnail:: ../media/after_landing.jpg
-      :align: center
-      :width: 100%
-      :title: The Orion spacecraft after perfect splashdown off the coast of California <emph>(© Joel Kowsky/NASA)</emph>
-      :show_caption: true
-      :class: align-center-full
-      :group: other
+.. include:: artemis/gallery.rst
 
 --------------
 

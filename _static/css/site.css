@@ -57,10 +57,9 @@ div.left-aligned p, p.left-aligned {
 }
 
 dl.simple dt, section dl dt {
-  font-size: 13.5pt;
+  font-size: 13.8pt;
   font-weight: 600;
-  color: var(--color-foreground-muted);
-  font-style: italic;
+  color: var(--color-emph-special);
 }
 
 div.clearfix {
