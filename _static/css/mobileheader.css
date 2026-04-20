@@ -1,6 +1,6 @@
 header.mobile-header, a.sidebar-brand, .toc-title-container {
   background-color: #014590;
-/*  border-bottom: 3px solid orange; */
+  border-bottom: 3px solid orange;
 }
 
 div.brand, a.sidebar-brand {

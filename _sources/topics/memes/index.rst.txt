@@ -1,8 +1,12 @@
-Memes
-=====
-A collection of funny memes.
+.. include:: ../../roles.rst
+:layout: solopage
+
+=============================
+A curated collection of memes
+=============================
 
 :doc:`President Trump has his own section <trump>`
+---------------------------------------------------
 
 .. toctree::
   :maxdepth: 3
@@ -11,4 +15,121 @@ A collection of funny memes.
   :glob:
 
   *
+
+Austria related memes
+---------------------
+
+.. container:: gallery
+
+  .. thumbnail:: https://i.imgur.com/KLOfQ0h.jpeg
+    :align: left
+    :title: Interkontinentalfichte
+    :show_caption: true
+    :class: align-left
+    :group: austria
+
+  .. thumbnail:: https://i.imgur.com/ho6UaXt.jpeg
+    :align: left
+    :title: Ein legendärer Deix aus Zeiten von Schüssel, Haider und Riess-Passer
+    :show_caption: true
+    :class: align-left
+    :group: austria
+
+
+Other stupid stuff
+------------------
+
+.. container:: gallery
+
+  .. thumbnail:: https://i.imgur.com/kaANEXO.jpeg
+    :align: left
+    :title: And on that day, not a single fuck was given
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/hmGU475.jpeg
+    :align: left
+    :title: Alien X-Ray
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/VIvp85O.jpeg
+    :align: left
+    :title: Posting food on instagram
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/ZcoCtIv.jpeg
+    :align: left
+    :title: New safety car for Formula 1 events in the Middle East
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/L2as1kB.jpeg
+    :align: left
+    :title: Heckscheibenheizung
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/WVRLdJm.png
+    :align: left
+    :title: Beyond Sausage
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/UH4Nzjm.jpeg
+    :align: left
+    :title: Gamer Jesus, fucking lag, took three days to respawn
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/5HDSnaP.jpeg
+    :align: left
+    :title: Flugzeugträger Wilhelm Tell
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/wcPTJA5.png
+    :align: left
+    :title: All your base
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+  .. thumbnail:: https://i.imgur.com/qqkyQgF.png
+    :align: left
+    :title: Fakenews - Do you feel lucky?
+    :show_caption: true
+    :class: align-left
+    :group: general
+
+|clear|
+
+Iranian Navy
+************
+
+.. video:: https://i.imgur.com/fxxe3zS.mp4
+  :width: 640px
+  :align: center
+
+Niki Lauda erklärt ein Formel 1 Auto
+************************************
+
+.. video:: https://i.imgur.com/eTJ08Xe.mp4
+  :width: 480px
+  :align: center
+
+------------
+
+.. rst-class:: center
+
+  |index|
 

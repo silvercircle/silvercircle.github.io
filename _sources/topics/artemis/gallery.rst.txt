@@ -27,7 +27,6 @@ high resolution (up to 8k) original images.
       :show_caption: true
       :class: align-center-full
       :group: sls
-      :download: false
 
     .. thumbnail:: /media/launch_escape.jpg
       :align: center
@@ -124,8 +123,6 @@ high resolution (up to 8k) original images.
 
   .. tab-item:: Others
 
-    Many more pictures in high resoltion (up to 8k) are available on the `official NASA gallery <https://www.nasa.gov/gallery/artemis-ii-splashdown-and-recovery/>`_
-
     .. thumbnail:: /media/earth.jpg
       :align: center
       :width: 100%
@@ -146,6 +143,8 @@ high resolution (up to 8k) original images.
       :group: other
 
   .. tab-item:: Landing
+
+    Many more pictures in high resoltion (up to 8k) are available on the `official NASA gallery <https://www.nasa.gov/gallery/artemis-ii-splashdown-and-recovery/>`_
 
     .. thumbnail:: /media/landing.jpg
       :align: center

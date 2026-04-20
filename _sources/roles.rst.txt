@@ -1,9 +1,0 @@
-.. role:: ada(code)
-  :language: ada
-
-.. role:: java(code)
-  :language: java
-
-.. role:: py(code)
-  :language: python
-

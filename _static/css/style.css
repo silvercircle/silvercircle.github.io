@@ -15,7 +15,7 @@ section h5 {
 }
 
 section h1 {
-  font-size: 1.9em !important;
+  font-size: 1.9em;
   margin-bottom: 10px;
 }
 
@@ -141,7 +141,7 @@ figure.align-left figcaption, figure.align-right figcaption, figure.align-center
 }
 
 
-figcaption emph {
+figcaption emph, div.f-caption emph {
   font-weight: 300;
   color: var(--color-foreground-muted) !important;
   font-style: italic;
@@ -180,4 +180,13 @@ a.reference.external:after {
 
 tr td p {
   text-align: left;
+}
+
+p.center, div.center {
+  text-align: center;
+}
+
+p.vpad, div.vpad {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

@@ -34,7 +34,7 @@ Another paragraph starts here. Typographic test: **bold**, *italic*.
 
 .. _image-test:
 
-.. thumbnail:: ../_images/foo.png
+.. thumbnail:: ../media/mx.jpg
    :width: 450px
    :align: left
 

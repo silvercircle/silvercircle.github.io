@@ -1,4 +1,5 @@
 .. include:: ../roles.rst
+:layout: solopage
 
 .. |esm| replace:: :abbr:`ESM (European Service Module)`
 .. |sls| replace:: :abbr:`SLS (Space Launch System)`
@@ -64,18 +65,18 @@ The Mission
 
 .. container:: twocol
 
-**Artemis II** is the second mission in NASA's `Artemis program 
-<https://en.wikipedia.org/wiki/Artemis_program>`_ which will culminate in humans landing on the surface 
-of the Moon. The goal of Artemis II is to test the technology upon which the entire program is based on. 
-The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`. It was the first crewed 
-mission in the program and took a full crew of four astronauts around the Moon. Everything except for the 
-actual landing on the Moon was tested during this mission and everything worked as expected. Some minor issues 
-with various equipment, none of which was designated *mission critical*, were identified.
+  **Artemis II** is the second mission in NASA's `Artemis program 
+  <https://en.wikipedia.org/wiki/Artemis_program>`_ which will culminate in humans landing on the surface 
+  of the Moon. The goal of Artemis II is to test the technology upon which the entire program is based on. 
+  The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`. It was the first crewed 
+  mission in the program and took a full crew of four astronauts around the Moon. Everything except for the 
+  actual landing on the Moon was tested during this mission and everything worked as expected. Some minor issues 
+  with various equipment, none of which was designated *mission critical*, were identified.
 
-*Artemis II* was originally scheduled to lift off in November 2024, but was delayed multiple times due to 
-technical issues. In November 2024 it was pushed back a year to September 2025, but multiple technical 
-issues delayed the start until early 2026. Attempts to launch in February and March were canceled due to 
-minor problems. It finally took off on April 1st, 2026.
+  *Artemis II* was originally scheduled to lift off in November 2024, but was delayed multiple times due to 
+  technical issues. In November 2024 it was pushed back a year to September 2025, but multiple technical 
+  issues delayed the start until early 2026. Attempts to launch in February and March were canceled due to 
+  minor problems. It finally took off on April 1st, 2026.
 
 The Crew
 --------
@@ -91,6 +92,11 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
   "**Mission Specialist**", ":special:`Christina Koch`", "NASA astronaut"
   "**Pilot**", ":special:`Victor Glover`", "NASA astronaut"
   "**Mission Specialist**", ":special:`Jeremy Hansen`", "CSA (Canadian Space Agency) astronaut"
+
+.. csv-table:: Backup Crew Members
+  :header: "Position", "Name", "Affiliation"
+  :widths: 40, 50, 50
+
   **Backup**, ":special:`Andre Douglas`", "NASA astronaut"
   **Backup**, ":special:`Jenni Gibbons`", "CSA (Canadian Space Agency) astronaut"
 
@@ -102,6 +108,10 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
   :title: From left: Canadian CSA astronaut and mission specialist Jeremy Hansen and NASA astronauts Victor Glover (Pilot), 
     Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/James Blair</emph>
   :class: align-center-full
+
+.. rst-class:: center vpad
+
+  :special:`The four members of the main crew`
 
 .. container:: gallery portrait
 
@@ -128,6 +138,10 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
     :title: Jeremy Hansen, CSA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
     :class: align-left
+
+.. rst-class:: center vpad
+
+  :special:`The two members of the backup crew.`
 
 .. container:: gallery portrait
 
