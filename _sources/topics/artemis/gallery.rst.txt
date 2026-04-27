@@ -69,6 +69,14 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: sls
 
+    .. thumbnail:: /media/spectators.jpg
+      :align: center
+      :width: 100%
+      :title: Guests at the Banana Creek viewing site watch the launch of NASA’s Space Launch System (SLS) <emph>© NASA/Keegan Barber</emph>
+      :show_caption: true
+      :class: align-center-full
+      :group: sls
+
   .. tab-item:: Moon
 
     The original high quality and hi resolution images for the lunar flyby can be found on the `NASA gallery <https://www.nasa.gov/gallery/lunar-flyby/>`_.

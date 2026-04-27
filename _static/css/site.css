@@ -34,7 +34,7 @@ div.floatblock p:last-child {
 }
 
 .bordered {
-  border: 2px solid #444;
+  border: 2px solid var(--color-figure-bgborder);
 }
 
 .darkgreybg {
@@ -78,8 +78,8 @@ div.container.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, 10rem);
   justify-content: center;
-  align-items: center;
-  grid-gap: 0px;
+  align-items: start;
+  gap: 1em 0;
 }
 
 div.container.gallery img {
@@ -95,8 +95,9 @@ div.container.gallery3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20em);
   justify-content: center;
-  align-items: center;
+  align-items: start;
   grid-gap: 0px;
+  gap: 1em 0;
 }
 
 div.container.gallery.portrait {
@@ -106,8 +107,9 @@ div.container.gallery.portrait {
   clear: both;
   display: grid;
   grid-template-columns: repeat(auto-fit, 10em);
+/*  grid-template-rows: repeat(auto-fit, 15em); */
   justify-content: center;
-  align-items: center;
+  align-items: start;
   grid-gap: 0px;
 }
 
@@ -129,7 +131,7 @@ div.container.gallery3 img {
 }
 
 div.container.gallery.portrait img {
-  width: 10em;
+/*  width: 10em; */
   height: 15em;
 }
 
@@ -138,6 +140,17 @@ div.container.gallery.landscape img {
   height: 7em;
 }
 
+div.gallery figure.lbthumb {
+  margin: 0 !important;
+}
+
+div.gallery figure.lbthumb.bordered {
+  margin: 0 1px !important;
+}
+
+div.gallery figure.lbthumb.bordered a[data-fancybox] {
+  line-height: 0 !important;
+}
 @media (min-width:1025px) {
   div.narrow {
     width: 50em;

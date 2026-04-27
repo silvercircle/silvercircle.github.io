@@ -85,23 +85,27 @@ p.prev-next-title {
 img.align-left, figure.align-left {
   margin-left: 0;
   margin-top: 5px;
+  margin-right: 1rem;
   margin-bottom: 5px;
 }
 
 img.align-right, figure.align-right {
   margin-right: 0;
   margin-top: 5px;
+  margin-left: 1rem;
   margin-bottom: 5px;
 }
 
-figure.align-right {
-  margin-left: 1rem;
-  margin-top: 0;
+figure.lbthumb img {
+  margin: 0 auto !important;
 }
 
-figure.align-left {
-  margin-right: 1rem;
-  margin-top: 0;
+figure.bordered, figure.align-center-full.bordered img {
+  border: 1px solid var(--color-figure-bgborder);
+}
+
+figure.align-center-full.bordered {
+  border: none !important;
 }
 
 figure.align-left img.align-left {
@@ -115,12 +119,14 @@ figure.align-left, figure.align-right, figure.align-center, figure.align-center-
   display: grid;
   grid-template-rows: repeat(auto-fit);
   grid-gap: 0;
+  border-radius: 0;
 }
 
 figure.align-center, figure.align-center-full {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
 img.align-center, img.align-center-full {
   margin-bottom: 5px;
 }
@@ -133,13 +139,17 @@ figure.align-left figcaption, figure.align-right figcaption, figure.align-center
   overflow-wrap: unset;
   white-space: nowrap;
   color: var(--color-foreground-special);
-  line-height: 1.1em;
-  max-height: 1.0em;
-  padding-top: 2px;
+  line-height: var(--p-line-spacing);
   text-overflow: ellipsis;
   overflow: hidden;
+  padding: 3px 5px;
+  box-sizing: border-box;
 }
 
+figure.align-left.bordered figcaption, figure.align-right.bordered figcaption, figure.align-center.bordered figcaption,
+  figure.align-center-full.bordered figcaption {
+  background-color: var(--color-figure-bgborder);
+}
 
 figcaption emph, div.f-caption emph {
   font-weight: 300;

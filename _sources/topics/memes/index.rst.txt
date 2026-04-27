@@ -1,5 +1,6 @@
 .. include:: ../../roles.rst
 :layout: solopage
+:nonav: true
 
 =============================
 A curated collection of memes
@@ -126,8 +127,6 @@ Niki Lauda erklärt ein Formel 1 Auto
 .. video:: https://i.imgur.com/eTJ08Xe.mp4
   :width: 480px
   :align: center
-
-------------
 
 .. rst-class:: center
 

@@ -3,6 +3,10 @@
   background-color: var(--color-background-primary);
 }
 
+header.mobile-header {
+  display: none;
+}
+
 aside.toc-drawer {
   display: none !important;
 }

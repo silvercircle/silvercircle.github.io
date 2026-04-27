@@ -23,7 +23,7 @@ In 1962, in his legendary :special:`We choose to go to the Moon` `speech
     We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not 
     because they are easy, but because they are hard, because that goal will serve to organize and 
     measure the best of our energies and skills, because that challenge is one that we are willing to 
-    accept, one we are unwilling to postpone, and one which we intend to win, and the others, too. 
+    accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.
 
 .. rubric:: And later in this speech
 
@@ -55,28 +55,28 @@ In 1962, in his legendary :special:`We choose to go to the Moon` `speech
   human race has become history and, until to the very present day, was not attempted by any other human 
   being.
 
-  Artemis 2 means a lot of **first ever** moments. It is the first time, a person who is not a *United States of 
-  America* citizen, will leave Earth's orbit. So far, only astronauts from the USA have done this. This 
-  mission will also be the first time, a woman will leave Earth's orbit and the first time, a person of 
-  color will reach the Moon.
+  Artemis 2 means a lot of **first ever** moments. It is the first time, a person who is not a
+  *United States of America* citizen, will leave Earth's orbit. So far, only astronauts from the USA
+  have done this. This mission will also be the first time, a woman will leave Earth's orbit and the
+  first time, a person of color will reach the Moon.
 
 The Mission
 -----------
 
 .. container:: twocol
 
-  **Artemis II** is the second mission in NASA's `Artemis program 
-  <https://en.wikipedia.org/wiki/Artemis_program>`_ which will culminate in humans landing on the surface 
-  of the Moon. The goal of Artemis II is to test the technology upon which the entire program is based on. 
-  The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`. It was the first crewed 
-  mission in the program and took a full crew of four astronauts around the Moon. Everything except for the 
-  actual landing on the Moon was tested during this mission and everything worked as expected. Some minor issues 
+  **Artemis II** is the second mission in NASA's `Artemis program
+  <https://en.wikipedia.org/wiki/Artemis_program>`_ which will culminate in humans landing on the surface
+  of the Moon. The goal of Artemis II is to test the technology upon which the entire program is based on.
+  The mission took place from :special:`Wed, Apr 1, 2026 to Sat, Apr 11, 2026`. It was the first crewed
+  mission in the program and took a full crew of four astronauts around the Moon. Everything except for the
+  actual landing on the Moon was tested during this mission and everything worked as expected. Some minor issues
   with various equipment, none of which was designated *mission critical*, were identified.
 
-  *Artemis II* was originally scheduled to lift off in November 2024, but was delayed multiple times due to 
-  technical issues. In November 2024 it was pushed back a year to September 2025, but multiple technical 
-  issues delayed the start until early 2026. Attempts to launch in February and March were canceled due to 
-  minor problems. It finally took off on April 1st, 2026.
+  *Artemis II* was originally scheduled to lift off in November 2024, but was delayed multiple times
+  due to technical issues. In November 2024 it was pushed back a year to September 2025, but multiple
+  technical issues delayed the start until early 2026. Attempts to launch in February and March were
+  canceled due to minor problems. It finally took off on April 1st, 2026.
 
 The Crew
 --------
@@ -119,25 +119,25 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
     :group: crew
     :title: Reid Wiseman, NASA astronaut and Commander of the Artemis II <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: ../media/koch.jpg
     :group: crew
     :title: Christina Koch, NASA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: ../media/glover.jpg
     :group: crew
     :title: Victor Glover, NASA astronaut and Artemis II pilot <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: ../media/hansen.jpg
     :group: crew
     :title: Jeremy Hansen, CSA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
 .. rst-class:: center vpad
 
@@ -149,13 +149,13 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
     :group: crew
     :title: Andre Douglas, NASA astronaut and backup crew member <emph>© NASA/Josh Valcarcel</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: ../media/jenni_gibbons.jpg
     :group: crew
     :title: Jenni Gibbons, CSA astronaut and backup crew member <emph>© NASA/Bill Stafford</emph>
     :show_caption: true
-    :class: align-left
+    :class: align-left bordered
 
 Chronology of key events
 ------------------------
@@ -173,7 +173,7 @@ Artemis
   about the second test mission and the first that will be crewed by humans.
 
 Artemis II
-  The name of the mission. The full NASA name is :special:`Artemis II Exploration Mission-2 (EM-2)`
+  The name of the mission. The fulll NASA name is :special:`Artemis II Exploration Mission-2 (EM-2)`
 
 SLS
   The `Space Launch System <https://en.wikipedia.org/wiki/Space_Launch_System>`_ is a two-stage super 
@@ -228,6 +228,14 @@ Trivia
 - All Artemis missions must launch from `Launch Complex 39B <https://en.wikipedia.org/wiki/Kennedy_Space_Center_Launch_Complex_39B>`_,
   the same iconic site that also launched the **Saturn V** during the Apollo program and later handled 53 
   Space Shuttle missions.
+
+Interesting links
+-----------------
+
+- `Flight day highlights <https://www.nasa.gov/gallery/artemis-ii-flight-day-highlights/>`_. This page 
+  has separate videos for each of the flight days summarizing the important events for every day.
+
+- 
 
 .. include:: artemis/gallery.rst
 

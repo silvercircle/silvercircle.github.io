@@ -49,19 +49,19 @@ that culminated in his threat to **end an entire civilization** [#fn1]_.
     :group: gen1
     :show_caption: true
     :title: Say hello to Ayatollah Trump
-    :class: align-left
+    :class: align-left bordered
  
   .. thumbnail:: ../../media/Memes/Trump/straitblocker.jpeg
     :group: gen1
     :show_caption: true
     :title: He who blocks the strait of Hormuz
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/r3OIuPB.png
     :group: gen1
     :show_caption: true
     :title: Trump becomes the new Ayatollah (in German)
-    :class: align-left
+    :class: align-left bordered
 
 -------------
 
@@ -74,79 +74,79 @@ Other Memes
     :group: gen1
     :show_caption: true
     :title: The statue of liberty cannot believe it
-    :class: align-left
+    :class: align-left bordered
  
   .. thumbnail:: https://i.imgur.com/ZC0vePX.jpeg
     :group: gen1
     :show_caption: true
     :title: A new species of penguins has been discovered in Greenland
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/6a7qZcp.png
     :group: gen1
     :show_caption: true
     :title: Trump is awarded the golden shopping cart.
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/LVpx7Ib.jpeg
     :group: gen1
     :show_caption: true
     :title: Why the NASA goes to the Moon again.
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/y5IVhqA.jpeg
     :group: gen1
     :show_caption: true
     :title: Bullshit Barbie
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/MLD2jTa.jpeg
     :group: gen1
     :show_caption: true
     :title: Dear Leader is adding new tariffs
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/HntdUwT.png
     :group: gen1
     :show_caption: true
     :title: Dear Leader makes the Internet great again.
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/lvVkKNh.jpeg
     :group: gen1
     :show_caption: true
     :title: Greenland awaits Trump4
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/ib6kPh2.jpeg
     :group: gen1
     :show_caption: true
     :title: Is he gone yet?
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/k9QULHX.jpeg
     :group: gen1
     :show_caption: true
     :title: Is he gone yet?
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/LH3jzZB.png
     :group: gen1
     :show_caption: true
     :title: Is he gone yet?
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/2yuh4Pg.jpeg
     :group: gen1
     :show_caption: true
     :title: Is he gone yet?
-    :class: align-left
+    :class: align-left bordered
 
   .. thumbnail:: https://i.imgur.com/uIXThN0.png
     :group: gen1
     :show_caption: true
     :title: MAGA Reality
-    :class: align-left
+    :class: align-left bordered
 
 .. rst-class:: vpad center
 
