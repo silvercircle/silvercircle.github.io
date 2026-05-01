@@ -1,8 +1,114 @@
 .. include:: ../roles.rst
 
+====================
 Fancybox Integration
 ====================
 `Fancybox <https://fancyapps.com/fancybox/>`_ is a popular JavaScript application for displaying images 
 on web pages. It is similar to `LightBox 2 <https://lokeshdhakar.com/projects/lightbox2/>`_, but more 
 feature-rich and probably more stable. Since Fancybox is only free for non-commercial usage, there is no 
-plugin for Sphinx.
+plugin for Sphinx, but for a non-commercial and non-profit site like this, adding it is possible, 
+free-of-charge.
+
+For this purpose, I created a modified version of the `sphinxcontrib-images <https://pypi.org/project/sphinxcontrib-images/>`_ 
+plugin, that only supports **Lightbox 2** out-of-the-box.
+
+For local extensions in a Sphinx project, it's best practice to create a folder in the ``source`` 
+directory. I named mine ``.extension`` but you can choose any name you want. I placed all the 
+*sphinxcontrib-images* stuff into this folder and then added the following to my ``conf.py``:
+
+.. code-block:: python
+  :linenos:
+
+  import os
+  import sys
+  from pathlib import Path
+  sys.path.append(str(Path('.extension').resolve()))
+
+This adds the ``.extension`` directory to the search path so plugins can be loaded from there.
+
+Installing the FancyBox script and CSS
+--------------------------------------
+Basically, there are two methods. One involves modifying your HTML templates and using FancyBox via its 
+CDN. The method is described in the `FancyBox documentation <https://fancyapps.com/fancybox/get-started/installation/>`_. 
+Refer to the `Sphinx templating <https://www.sphinx-doc.org/en/master/development/html_themes/templating.html>`_ documentation 
+to learn how to override your page templates in order to add the required scripts and style sheets.
+
+The second method is a completely local one and does not require to use template overrides nor a need to 
+download the scripts and stylesheets from a CDN. `Download the FancyBox distribution <https://github.com/fancyapps/ui/releases>`_ 
+from GitHub and extract the two relevant files to your ``_static`` content folder.
+
+- ``fancybox.umd.js`` goes to ``_static/js``
+- ``fancybox.css`` goes to ``_static/css``
+
+Next, create a simple JavaScript file and name it ``footer.js``.
+
+.. code-block:: javascript
+  :linenos:
+  :caption: footer.js
+
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
+Copy this file to ``_static/js`` just where all the other custom scripts are (right now, only 
+``fancybox.umd.js`` should be there)
+
+The final step is to modify ``conf.py`` to add both the style sheet and the two scripts to your site. In 
+order to do so, you must add them to ``html_css_files`` and ``html_js_files`` respectively.
+
+.. code-block:: python
+  :linenos:
+  :caption: conf.py
+
+  html_css_files = [
+      [...],
+      'css/site.css',
+      'css/fancybox.css'
+  ]
+
+  html_js_files = [
+      'js/fancybox.umd.js',
+      'js/footer.js'
+  ]
+
+In order to use it with your local ``sphinxcontrib-images`` extension you also have multiple options. The 
+simplest one is to modify ``.extension/sphinxcontrib_images_lightbox2_lightbox2.py`` and do the 
+following:
+
+- Remove everything from ``STATIC_FILES``. This adds the LightBox 2 scripts and style sheets which 
+  are no longer needed. You already have the FancyBox stuff added. Leaving the LightBox 2 files there 
+  won't hurt, but it will just be a waste, so remove it.
+
+- Replace the occurrence of ``data-lightbox`` with ``data-fancybox``. Alternatively, it might work to 
+  bind FancyBox to ``data-lightbox`` (modify the ``footer.js`` you have created before), but there might 
+  be side effects.
+
+.. rst-class:: center vpad
+
+  :special:`Some examples`
+
+.. container:: gallery
+
+  .. thumbnail:: ../media/crew.webp
+    :group: testgroup
+    :show_caption: true
+    :title: A test image
+    :align: left
+    :class: align-left bordered
+
+  .. thumbnail:: ../media/after_landing.jpg
+    :group: testgroup
+    :show_caption: true
+    :title: Another test image
+    :align: left
+    :class: align-left bordered
+
+  .. thumbnail:: ../media/back.jpg
+    :group: testgroup
+    :show_caption: true
+    :title: One more test image
+    :align: left
+    :class: align-left bordered
+---------
+
+.. tags:: site

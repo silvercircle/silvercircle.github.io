@@ -1,12 +1,16 @@
 header.mobile-header, a.sidebar-brand, .toc-title-container {
-  background-color: #014590;
-  border-bottom: 3px solid orange;
+  background-color: var(--color-header-background);
+  border-bottom: 3px solid var(--color-header-title);
 }
 
 div.brand, a.sidebar-brand {
   font-family: "Allegra Sans SC";
   font-size: 18pt;
   font-weight: 600;
-  color: orange;
+  color: var(--color-header-title);
+}
+
+label.toc-overlay-icon .icon, label.nav-overlay-icon .icon, button.theme-toggle svg {
+  color: var(--color-header-foreground);
 }
 

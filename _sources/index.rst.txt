@@ -17,6 +17,8 @@ SILVERCIRCLE.CODEBERG.PAGE
   tech/index
   topics/index
 
+.. _landingpage:
+
 About this page
 ===============
 

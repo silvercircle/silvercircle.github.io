@@ -1,4 +1,4 @@
-.. include:: ../roles.rst
+.. include:: ../../roles.rst
 :layout: solopage
 
 .. |esm| replace:: :abbr:`ESM (European Service Module)`
@@ -98,7 +98,7 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
   **Backup**, ":special:`Andre Douglas`", "NASA astronaut"
   **Backup**, ":special:`Jenni Gibbons`", "CSA (Canadian Space Agency) astronaut"
 
-.. thumbnail:: ../media/crew.webp
+.. thumbnail:: ../../media/crew.webp
   :width: 90%
   :align: center
   :group: crew
@@ -113,25 +113,25 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
 
 .. container:: gallery portrait
 
-  .. thumbnail:: ../media/wiseman.jpg
+  .. thumbnail:: ../../media/wiseman.jpg
     :group: crew
     :title: Reid Wiseman, NASA astronaut and Commander of the Artemis II <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
     :class: align-left bordered
 
-  .. thumbnail:: ../media/koch.jpg
+  .. thumbnail:: ../../media/koch.jpg
     :group: crew
     :title: Christina Koch, NASA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
     :class: align-left bordered
 
-  .. thumbnail:: ../media/glover.jpg
+  .. thumbnail:: ../../media/glover.jpg
     :group: crew
     :title: Victor Glover, NASA astronaut and Artemis II pilot <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
     :class: align-left bordered
 
-  .. thumbnail:: ../media/hansen.jpg
+  .. thumbnail:: ../../media/hansen.jpg
     :group: crew
     :title: Jeremy Hansen, CSA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
@@ -143,13 +143,13 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
 
 .. container:: gallery portrait
 
-  .. thumbnail:: ../media/andre-douglas.webp
+  .. thumbnail:: ../../media/andre-douglas.webp
     :group: crew
     :title: Andre Douglas, NASA astronaut and backup crew member <emph>© NASA/Josh Valcarcel</emph>
     :show_caption: true
     :class: align-left bordered
 
-  .. thumbnail:: ../media/jenni_gibbons.jpg
+  .. thumbnail:: ../../media/jenni_gibbons.jpg
     :group: crew
     :title: Jenni Gibbons, CSA astronaut and backup crew member <emph>© NASA/Bill Stafford</emph>
     :show_caption: true
@@ -245,7 +245,7 @@ Interesting links
 - `Flight day highlights <https://www.nasa.gov/gallery/artemis-ii-flight-day-highlights/>`_. This page 
   has separate videos for each of the flight days summarizing the important events for every day.
 
-.. include:: artemis/gallery.rst
+.. include:: gallery.rst
 
 .. rst-class:: center vpad
 

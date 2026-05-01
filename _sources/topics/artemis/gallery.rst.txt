@@ -11,7 +11,7 @@ high resolution (up to 8k) original images.
 
     The original high quality and hi resolution images are on the `NASA gallery <https://www.nasa.gov/gallery/artemis-ii-launch/>`_.
 
-    .. thumbnail:: /media/SLS_liftoff.jpg
+    .. thumbnail:: ../../media/SLS_liftoff.jpg
       :align: center
       :width: 100%
       :title: On this beautiful day, April 1, 2026, at 6:35 p.m. EDT, the powerful SLS takes Artemis 2 towards the Moon. 
@@ -20,7 +20,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: /media/sls_liftoff_detail.jpg
+    .. thumbnail:: ../../media/sls_liftoff_detail.jpg
       :align: center
       :width: 100%
       :title: A more detailed view of the launch sequence. <emph>© Joel Kowsky/NASA</emph>
@@ -28,7 +28,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: /media/launch_escape.jpg
+    .. thumbnail:: ../../media/launch_escape.jpg
       :align: center
       :width: 100%
       :title: An interesting detail showing the <a href='https://www.nasa.gov/wp-content/uploads/2024/01/artemis-emergency-egress-system-infographic.pdf?emrc=e19210'> 
@@ -43,15 +43,16 @@ high resolution (up to 8k) original images.
     astronauts and other personell. They utilize a zipline-like system to travel down at high speed in 
     order to quickly evacuate the zone of highest danger.
 
-    .. thumbnail:: /media/booster_separation.jpg
+    .. thumbnail:: ../../media/booster_separation.jpg
       :align: center
       :width: 100%
-      :title: The solid rocket booster separation provided some spectacular views. <emph>© Joel Kowsky/NASA</emph>
+      :title: The solid rocket booster separate while the 4 main engines continue to burn and accelerate the vessel. 
+        This event, about 2 minutes and 10 seconds after liftoff, provided some spectacular views. <emph>© Joel Kowsky/NASA</emph>
       :show_caption: true
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: /media/launch_opposite.jpg
+    .. thumbnail:: ../../media/launch_opposite.jpg
       :align: center
       :width: 100%
       :title: Launch picture taken from the opposite site of Launch Complex 39B. <emph>© NASA/Joel Kowsky</emph>
@@ -59,7 +60,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: /media/sls_trail.jpg
+    .. thumbnail:: ../../media/sls_trail.jpg
       :align: center
       :width: 100%
       :title: The trail of the powerful SLS rocket engines stays visible for a long time after the start. 
@@ -69,7 +70,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: sls
 
-    .. thumbnail:: /media/spectators.jpg
+    .. thumbnail:: ../../media/spectators.jpg
       :align: center
       :width: 100%
       :title: Guests at the Banana Creek viewing site watch the launch of NASA’s Space Launch System (SLS) <emph>© NASA/Keegan Barber</emph>
@@ -81,7 +82,7 @@ high resolution (up to 8k) original images.
 
     The original high quality and hi resolution images for the lunar flyby can be found on the `NASA gallery <https://www.nasa.gov/gallery/lunar-flyby/>`_.
 
-    .. thumbnail:: /media/moon_with_corona.jpg
+    .. thumbnail:: ../../media/moon_with_corona.jpg
       :align: center
       :width: 100%
       :title: The Moon eclipses the Sun and makes the Sun's outer atmosphere visible like it has been 
@@ -90,7 +91,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: moon
 
-    .. thumbnail:: /media/earthset.jpg
+    .. thumbnail:: ../../media/earthset.jpg
       :align: center
       :width: 100%
       :title: The Earth sets behind the Moon. Photo taken at 6:41 p.m. EDT, April 6, 2026 while flying 
@@ -99,7 +100,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: moon
 
-    .. thumbnail:: /media/earth_crescent.jpg
+    .. thumbnail:: ../../media/earth_crescent.jpg
       :align: center
       :width: 100%
       :title: The Earth crescent visible behind the Moon. April 6, 2026, lunar flyby. <emph>© NASA</emph>
@@ -107,7 +108,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: moon
 
-    .. thumbnail:: /media/far_side.jpg
+    .. thumbnail:: ../../media/far_side.jpg
       :align: center
       :width: 100%
       :title: Looking at the far side of the Moon, visible left of the Orientale Basin, a 600 miles wide 
@@ -118,7 +119,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: moon
 
-    .. thumbnail:: /media/moon_highdetail.jpg
+    .. thumbnail:: ../../media/moon_highdetail.jpg
       :align: center
       :width: 100%
       :title: A high detail picture of the Moon's surface taken during the flyby on April 6, 2026, 6:41 
@@ -131,7 +132,7 @@ high resolution (up to 8k) original images.
 
   .. tab-item:: Others
 
-    .. thumbnail:: /media/earth.jpg
+    .. thumbnail:: ../../media/earth.jpg
       :align: center
       :width: 100%
       :title: The Earth, our beautiful planet. Carl Sagan once coined it as pale blue dot on a picture 
@@ -142,7 +143,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: other
 
-    .. thumbnail:: /media/milky_way.jpg
+    .. thumbnail:: ../../media/milky_way.jpg
       :align: center
       :width: 100%
       :title: The Milky Way, picture taken on April, 7th on return flight. <emph>© NASA</emph>
@@ -154,7 +155,7 @@ high resolution (up to 8k) original images.
 
     Many more pictures in high resoltion (up to 8k) are available on the `official NASA gallery <https://www.nasa.gov/gallery/artemis-ii-splashdown-and-recovery/>`_
 
-    .. thumbnail:: /media/landing.jpg
+    .. thumbnail:: ../../media/landing.jpg
       :align: center
       :width: 100%
       :title: The Orion spacecraft performs a textbook landing off the coast of California <emph>© Bill Ingalls/NASA</emph>
@@ -162,7 +163,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/splashdown1.jpg
+    .. thumbnail:: ../../media/splashdown1.jpg
       :align: center
       :width: 100%
       :title: Only seconds after the successful splasdown in the Pacific Ocean <emph>© NASA/Bill Ingalls</emph>
@@ -170,7 +171,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/after_landing.jpg
+    .. thumbnail:: ../../media/after_landing.jpg
       :align: center
       :width: 100%
       :title: The Orion spacecraft after perfect splashdown off the coast of California <emph>© Joel Kowsky/NASA</emph>
@@ -178,7 +179,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/rescue.jpg
+    .. thumbnail:: ../../media/rescue.jpg
       :align: center
       :width: 100%
       :title: U.S. Navy divers and the Artemis II crew are seen aboard an inflatable raft waiting for 
@@ -188,7 +189,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/recovery.jpg
+    .. thumbnail:: ../../media/recovery.jpg
       :align: center
       :width: 100%
       :title: The NASA Landing and Recovery team works with U.S. Navy personnel to recover the Orion 
@@ -197,7 +198,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/back.jpg
+    .. thumbnail:: ../../media/back.jpg
       :align: center
       :width: 100%
       :title: The Artemis II crew (from left): Commander Reid Wiseman, mission specialist Christina Koch, 
@@ -208,7 +209,7 @@ high resolution (up to 8k) original images.
       :class: align-center-full
       :group: landing
 
-    .. thumbnail:: /media/hug.jpg
+    .. thumbnail:: ../../media/hug.jpg
       :align: center
       :width: 100%
       :title: Mission specialist Christina Koch hugs the recovered Orion spacecraft on the well deck of 

@@ -6,6 +6,7 @@
 maxdepth: 1
 caption: With this tag
 ---
+../site/fancybox-integration.rst
 ../site/pygments.rst
 ../site/theme.rst
 ```

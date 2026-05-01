@@ -10,7 +10,7 @@ President Donald J. Trump
   :title: This is Donald J. Trump, the current and 47th president of the United States of America. Or 
     otherwise: A nightmare.
   :show_caption: true
-  :class: align-left
+  :class: align-left bordered
 
 We all know it by now. Donald Trump is an imbecile, a narcissistic sociopath and a generally very 
 unpleasant person. He is also not the brightest candle on the cake and as a politician, he is highly 

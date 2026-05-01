@@ -151,6 +151,10 @@ figure.align-left.bordered figcaption, figure.align-right.bordered figcaption, f
   background-color: var(--color-figure-bgborder);
 }
 
+div.f-caption {
+  text-align: center !important;
+  text-wrap: balance !important;
+}
 figcaption emph, div.f-caption emph {
   font-weight: 300;
   color: var(--color-foreground-muted) !important;
@@ -200,3 +204,28 @@ p.vpad, div.vpad {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+ul.simple {
+  list-style: none;
+  padding-left: 1em;
+}
+
+ul.simple li {
+  display: flex;
+}
+
+
+ul.simple li:before {
+  content: "⦿";
+  color: var(--color-foreground-special);
+  margin-right: .5em;
+}
+
+ul.insidelist li:before {
+  content: "⦾" !important;
+}
+
+ul.leftbull li:before {
+  content: "⁌" !important;
+}
+

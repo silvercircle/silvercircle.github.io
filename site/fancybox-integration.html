@@ -14,10 +14,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/forcemobile.css?v=aa096f50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/iosvmata.css?v=10f73ec2" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=a0034f29" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=cf61cdb8" />
     <link rel="stylesheet" type="text/css" href="../_static/css/ubuntu.css?v=efee9dc1" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=5868defc" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/fancybox.css?v=80754bdc" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=b054b332" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/fancybox.css?v=df2aaf9b" />
     
     
 
@@ -29,6 +29,9 @@
   --p-line-spacing: 1.2em;
   --color-emph-special: #444411;
   --color-figure-bgborder: #aaa;
+  --color-header-background: #014590;
+  --color-header-foreground: #ccc;
+  --color-header-title: orange;
   
   }
   @media not print {
@@ -39,9 +42,12 @@
   --color-foreground-primary: #c5bbbb;
   --color-code-background: #19191f;
   --color-foreground-special: #a599a5;
-  --p-line-spacing: 1.2em;
+  --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
   --color-figure-bgborder: #333;
+  --color-header-background: #014590;
+  --color-header-foreground: #ccc;
+  --color-header-title: orange;
   
     }
     @media (prefers-color-scheme: dark) {
@@ -52,9 +58,12 @@
   --color-foreground-primary: #c5bbbb;
   --color-code-background: #19191f;
   --color-foreground-special: #a599a5;
-  --p-line-spacing: 1.2em;
+  --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
   --color-figure-bgborder: #333;
+  --color-header-background: #014590;
+  --color-header-foreground: #ccc;
+  --color-header-title: orange;
   
       }
     }
@@ -197,7 +206,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -283,7 +292,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../topics/index.html">General Topics</a><input aria-label="Toggle navigation of General Topics" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../topics/artemis2.html">Artemis II Mission 2026</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/artemis/index.html">Artemis II Mission 2026</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../topics/memes/index.html">A curated collection of memes</a><input aria-label="Toggle navigation of A curated collection of memes" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../topics/memes/trump.html">President Donald J. Trump</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../topics/memes/trump.html#war-against-iran">War against Iran</a></li>
@@ -320,7 +329,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
@@ -330,7 +339,117 @@
 <p><a class="reference external" href="https://fancyapps.com/fancybox/">Fancybox</a> is a popular JavaScript application for displaying images
 on web pages. It is similar to <a class="reference external" href="https://lokeshdhakar.com/projects/lightbox2/">LightBox 2</a>, but more
 feature-rich and probably more stable. Since Fancybox is only free for non-commercial usage, there is no
-plugin for Sphinx.</p>
+plugin for Sphinx, but for a non-commercial and non-profit site like this, adding it is possible,
+free-of-charge.</p>
+<p>For this purpose, I created a modified version of the <a class="reference external" href="https://pypi.org/project/sphinxcontrib-images/">sphinxcontrib-images</a>
+plugin, that only supports <strong>Lightbox 2</strong> out-of-the-box.</p>
+<p>For local extensions in a Sphinx project, it’s best practice to create a folder in the <code class="docutils literal notranslate"><span class="pre">source</span></code>
+directory. I named mine <code class="docutils literal notranslate"><span class="pre">.extension</span></code> but you can choose any name you want. I placed all the
+<em>sphinxcontrib-images</em> stuff into this folder and then added the following to my <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="linenos">2</span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="linenos">3</span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="linenos">4</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.extension&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>This adds the <code class="docutils literal notranslate"><span class="pre">.extension</span></code> directory to the search path so plugins can be loaded from there.</p>
+<section id="installing-the-fancybox-script-and-css">
+<h2>Installing the FancyBox script and CSS<a class="headerlink" href="#installing-the-fancybox-script-and-css" title="Link to this heading">¶</a></h2>
+<p>Basically, there are two methods. One involves modifying your HTML templates and using FancyBox via its
+CDN. The method is described in the <a class="reference external" href="https://fancyapps.com/fancybox/get-started/installation/">FancyBox documentation</a>.
+Refer to the <a class="reference external" href="https://www.sphinx-doc.org/en/master/development/html_themes/templating.html">Sphinx templating</a> documentation
+to learn how to override your page templates in order to add the required scripts and style sheets.</p>
+<p>The second method is a completely local one and does not require to use template overrides nor a need to
+download the scripts and stylesheets from a CDN. <a class="reference external" href="https://github.com/fancyapps/ui/releases">Download the FancyBox distribution</a>
+from GitHub and extract the two relevant files to your <code class="docutils literal notranslate"><span class="pre">_static</span></code> content folder.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fancybox.umd.js</span></code> goes to <code class="docutils literal notranslate"><span class="pre">_static/js</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fancybox.css</span></code> goes to <code class="docutils literal notranslate"><span class="pre">_static/css</span></code></p></li>
+</ul>
+<p>Next, create a simple JavaScript file and name it <code class="docutils literal notranslate"><span class="pre">footer.js</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">footer.js</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nx">Fancybox</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;[data-fancybox]&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">2</span><span class="w">  </span><span class="c1">// Your custom options</span>
+<span class="linenos">3</span><span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<p>Copy this file to <code class="docutils literal notranslate"><span class="pre">_static/js</span></code> just where all the other custom scripts are (right now, only
+<code class="docutils literal notranslate"><span class="pre">fancybox.umd.js</span></code> should be there)</p>
+<p>The final step is to modify <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> to add both the style sheet and the two scripts to your site. In
+order to do so, you must add them to <code class="docutils literal notranslate"><span class="pre">html_css_files</span></code> and <code class="docutils literal notranslate"><span class="pre">html_js_files</span></code> respectively.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 2</span>    <span class="p">[</span><span class="o">...</span><span class="p">],</span>
+<span class="linenos"> 3</span>    <span class="s1">&#39;css/site.css&#39;</span><span class="p">,</span>
+<span class="linenos"> 4</span>    <span class="s1">&#39;css/fancybox.css&#39;</span>
+<span class="linenos"> 5</span><span class="p">]</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="n">html_js_files</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 8</span>    <span class="s1">&#39;js/fancybox.umd.js&#39;</span><span class="p">,</span>
+<span class="linenos"> 9</span>    <span class="s1">&#39;js/footer.js&#39;</span>
+<span class="linenos">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>In order to use it with your local <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-images</span></code> extension you also have multiple options. The
+simplest one is to modify <code class="docutils literal notranslate"><span class="pre">.extension/sphinxcontrib_images_lightbox2_lightbox2.py</span></code> and do the
+following:</p>
+<ul class="simple">
+<li><p>Remove everything from <code class="docutils literal notranslate"><span class="pre">STATIC_FILES</span></code>. This adds the LightBox 2 scripts and style sheets which
+are no longer needed. You already have the FancyBox stuff added. Leaving the LightBox 2 files there
+won’t hurt, but it will just be a waste, so remove it.</p></li>
+<li><p>Replace the occurrence of <code class="docutils literal notranslate"><span class="pre">data-lightbox</span></code> with <code class="docutils literal notranslate"><span class="pre">data-fancybox</span></code>. Alternatively, it might work to
+bind FancyBox to <code class="docutils literal notranslate"><span class="pre">data-lightbox</span></code> (modify the <code class="docutils literal notranslate"><span class="pre">footer.js</span></code> you have created before), but there might
+be side effects.</p></li>
+</ul>
+<p class="center vpad"><span class="emph-special">Some examples</span></p>
+<div class="gallery docutils container">
+<figure class="align-left bordered lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/crew1.webp"
+               title="A test image"
+               data-caption="A test image"
+               
+               ><img src="../_images/crew1.webp"
+                     class="align-left"
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:100%;">A test image</figcaption>
+            </figure><figure class="align-left bordered lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/after_landing1.jpg"
+               title="Another test image"
+               data-caption="Another test image"
+               
+               ><img src="../_images/after_landing1.jpg"
+                     class="align-left"
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:100%;">Another test image</figcaption>
+            </figure><figure class="align-left bordered lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/back1.jpg"
+               title="One more test image"
+               data-caption="One more test image"
+               
+               ><img src="../_images/back1.jpg"
+                     class="align-left"
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:100%;">One more test image</figcaption>
+            </figure></div>
+<hr class="docutils" />
+<p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../_tags/site.html"><span class="doc">site</span></a></p>
+</section>
 </section>
 
         </article>
@@ -376,8 +495,27 @@ plugin for Sphinx.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Fancybox Integration</a><ul>
+<li><a class="reference internal" href="#installing-the-fancybox-script-and-css">Installing the FancyBox script and CSS</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -387,7 +525,7 @@ plugin for Sphinx.</p>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/fancybox.umd.js?v=8aab1eed"></script>
+    <script src="../_static/js/fancybox.umd.js?v=59566884"></script>
     <script src="../_static/js/footer.js?v=b12d9aa1"></script>
     </body>
 </html>
