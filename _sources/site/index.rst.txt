@@ -1,3 +1,5 @@
+:layout: desktop_notoc
+
 Site topics
 ===========
 

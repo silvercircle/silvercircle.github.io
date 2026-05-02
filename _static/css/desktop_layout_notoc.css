@@ -18,9 +18,42 @@
     max-width: calc(100% - 20em - 20px);
   }
   .toc-drawer {
-    display: none;
-    box-sizing: border-box;
-    width: 0;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: -15em;
+    border-left: 1px solid var(--color-background-muted);
+  }
+
+  .toc-tree {
+    border-left: none;
+  }
+  .toc-content-icon, .theme-toggle-content {
+    display: flex;
+  }
+  div.page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  body {
+    background-color: var(--color-sidebar-background);
+  }
+  div.content {
+    background-color: var(--color-background-primary);
   }
 }
+@media (max-width: 1025px) {
+  label.toc-overlay-icon .icon, label.nav-overlay-icon .icon, button.theme-toggle svg {
+    color: var(--color-header-foreground);
+  }
 
+  div.brand, a.sidebar-brand {
+    color: var(--color-header-title);
+  }
+}
+div.brand, a.sidebar-brand {
+  font-family: "Allegra Sans SC";
+  font-size: 18pt;
+  font-weight: 800;
+}

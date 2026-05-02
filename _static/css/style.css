@@ -1,4 +1,8 @@
-
+hr.docutils {
+  color: var(--color-figure-bgborder);
+  background-color: var(--color-figure-bgborder);
+  height: 1px;
+}
 section h1, section h2, section h3, section h4, section h5 {
   margin-bottom: 2px;
   font-family: "Allegra Sans SC";
@@ -55,28 +59,20 @@ div.toctree-wrapper.compound a.reference {
 div.sidebar-tree p.caption, span.toc-title {
   font-size: 13pt !important;
   font-weight: 600 !important;
-  color: white !important;
+  color: var(--color-foreground-special);
 }
 
 div.toctree-wrapper.compound p.caption {
   font-size: 16pt !important;
   font-weight: 400 !important;
-  color: white !important;
-}
-/*
-div.bd-sidebar-primary, div.bd-sidebar-secondary {
-  padding: 5px !important;
+  color: var(--color-foreground-special);
 }
 
-div.bd-article-container {
-  padding: 10px !important;
-  padding-top: 0 !important;
+aside.sidebar-drawer {
+  /*border-right: 1px solid var(--color-figure-bgborder);*/
+  border-right: none;
 }
 
-article.bd-article {
-  padding: 0 !important;
-}
-*/
 p.prev-next-title {
   font-weight: 400 !important;
   font-size: 12pt !important;
@@ -96,16 +92,34 @@ img.align-right, figure.align-right {
   margin-bottom: 5px;
 }
 
+/*
+ * figures with embedded images (used by the sphinxcontrib-images plugin)
+ * identified by the class lbthumb
+ */
+figure.bordered.lbthumb.align-left, figure.bordered.lbthumb.align-right {
+  background-color: var(--color-figure-bgborder);
+  padding: 0; /* var(--figures-border-width); */
+}
+
 figure.lbthumb img {
+  margin: 0;
+}
+
+figure.bordered.align-left.lbthumb.exborder img, figure.bordered.align-right.lbthumb.exborder img {
+  margin: var(--figures-border-width) !important;
+  margin-bottom: 0 !important;
+}
+
+figure.lbthumb.align-center-full img {
   margin: 0 auto !important;
 }
 
-figure.bordered, figure.align-center-full.bordered img {
-  border: 1px solid var(--color-figure-bgborder);
+figure.bordered.lbthumb.align-left img, figure.bordered.lbthumb.align-right img, figure.bordered.lbthumb.align-center-full img {
+  border-radius: var(--radius-bordered-figures) var(--radius-bordered-figures) 0 0;
 }
 
-figure.align-center-full.bordered {
-  border: none !important;
+figure.bordered.lbthumb {
+  border-radius: var(--radius-bordered-figures) !important;
 }
 
 figure.align-left img.align-left {
@@ -119,7 +133,6 @@ figure.align-left, figure.align-right, figure.align-center, figure.align-center-
   display: grid;
   grid-template-rows: repeat(auto-fit);
   grid-gap: 0;
-  border-radius: 0;
 }
 
 figure.align-center, figure.align-center-full {
@@ -127,10 +140,24 @@ figure.align-center, figure.align-center-full {
   margin-bottom: 5px;
 }
 
-img.align-center, img.align-center-full {
-  margin-bottom: 5px;
+figure.align-center-full.bordered {
+  border: none !important;
 }
 
+figure.align-center-full.bordered img.align-center {
+  border: none;
+  box-sizing: content-box;
+  background-color: var(--color-figure-bgborder);
+}
+
+figure.align-center-full.bordered.exborder img.align-center {
+  border: var(--figures-border-width) solid var(--color-figure-bgborder);
+  border-bottom: none;
+}
+
+/*
+ * figure captions
+ */
 figure.align-left figcaption, figure.align-right figcaption, figure.align-center figcaption {
   text-align: center;
   justify-content: center;
@@ -149,6 +176,19 @@ figure.align-left figcaption, figure.align-right figcaption, figure.align-center
 figure.align-left.bordered figcaption, figure.align-right.bordered figcaption, figure.align-center.bordered figcaption,
   figure.align-center-full.bordered figcaption {
   background-color: var(--color-figure-bgborder);
+  color: var(--color-figure-caption);
+  border-radius: 0 0 var(--radius-bordered-figures) var(--radius-bordered-figures);
+}
+
+figure.align-center-full.bordered figcaption {
+  color: var(--color-figure-caption);
+  border: none;
+  padding-bottom: 4px;
+}
+
+figure.align-center-full.bordered.exborder figcaption {
+  border: var(--figures-border-width) solid var(--color-figure-bgborder);
+  border-top: none;
 }
 
 div.f-caption {
@@ -157,8 +197,12 @@ div.f-caption {
 }
 figcaption emph, div.f-caption emph {
   font-weight: 300;
-  color: var(--color-foreground-muted) !important;
   font-style: italic;
+  font-size: 90%;
+}
+
+figure.lbthumb figcaption emph {
+  color: var(--color-figure-caption-secondary) !important;
 }
 
 figure.align-center figcaption {
@@ -187,8 +231,8 @@ a.reference.external:after {
   content: '';
   background: no-repeat left .25em center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
   text-decoration: none;
-  padding-right: .8em;
-  padding-top: 10px;
+  padding-right: .9em;
+  padding-top: 4px;
   margin-left: -0.1em;
 }
 

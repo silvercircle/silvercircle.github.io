@@ -11,12 +11,12 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/forcemobile.css?v=aa096f50" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/desktop_layout_notoc.css?v=441efc55" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/iosvmata.css?v=10f73ec2" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=cf61cdb8" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/iosvmata.css?v=2f317d2c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=77ea6861" />
     <link rel="stylesheet" type="text/css" href="../_static/css/ubuntu.css?v=efee9dc1" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=b054b332" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=f4a6148a" />
     <link rel="stylesheet" type="text/css" href="../_static/css/fancybox.css?v=df2aaf9b" />
     
     
@@ -26,12 +26,16 @@
   body {
     --color-code-background: #f2f2f2;
   --color-code-foreground: #1e1e1e;
-  --p-line-spacing: 1.2em;
+  --p-line-spacing: 1.3em;
   --color-emph-special: #444411;
-  --color-figure-bgborder: #aaa;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #99a;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #222;
+  --color-figure-caption-secondary: #444;
   
   }
   @media not print {
@@ -44,10 +48,14 @@
   --color-foreground-special: #a599a5;
   --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
-  --color-figure-bgborder: #333;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #444;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #e4cccc;
+  --color-figure-caption-secondary: #bbbbbb;
   
     }
     @media (prefers-color-scheme: dark) {
@@ -60,10 +68,14 @@
   --color-foreground-special: #a599a5;
   --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
-  --color-figure-bgborder: #333;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #444;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #e4cccc;
+  --color-figure-caption-secondary: #bbbbbb;
   
       }
     }
@@ -405,7 +417,8 @@ won’t hurt, but it will just be a waste, so remove it.</p></li>
 bind FancyBox to <code class="docutils literal notranslate"><span class="pre">data-lightbox</span></code> (modify the <code class="docutils literal notranslate"><span class="pre">footer.js</span></code> you have created before), but there might
 be side effects.</p></li>
 </ul>
-<p class="center vpad"><span class="emph-special">Some examples</span></p>
+<p class="center vpad"><span class="emph-special">Some examples, a simple gallery using only CSS and thumbnail directives, provided by the
+sphinxcontrib-images plugin</span></p>
 <div class="gallery docutils container">
 <figure class="align-left bordered lbthumb">
             <a 
@@ -447,7 +460,74 @@ be side effects.</p></li>
                      alt=""/>
                 </a><figcaption style="width:100%;">One more test image</figcaption>
             </figure></div>
-<hr class="docutils" />
+<p><div class="clearfix"></div></p>
+</section>
+<section id="more-examples-left-and-right-aligned-with-text-flow">
+<h2>More examples, left and right aligned with text flow<a class="headerlink" href="#more-examples-left-and-right-aligned-with-text-flow" title="Link to this heading">¶</a></h2>
+<figure class="align-left bordered lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/booster_separation1.jpg"
+               title="A test image left aligned"
+               data-caption="A test image left aligned"
+               
+               ><img src="../_images/booster_separation1.jpg"
+                     class="align-left"
+                     width="300px"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:300px;">A test image left aligned</figcaption>
+            </figure><figure class="align-right bordered exborder lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/earthset1.jpg"
+               title="A test image right aligned with border forced"
+               data-caption="A test image right aligned with border forced"
+               
+               ><img src="../_images/earthset1.jpg"
+                     class="align-right"
+                     width="300px"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:300px;">A test image right aligned with border forced</figcaption>
+            </figure><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+<section id="centered-image-with-percentage-width">
+<h2>Centered Image with percentage width<a class="headerlink" href="#centered-image-with-percentage-width" title="Link to this heading">¶</a></h2>
+<figure class="align-center-full bordered lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/earth_through_window1.jpg"
+               title="A test image with a longer comment centered. <emph>© NASA</emph>"
+               data-caption="A test image with a longer comment centered. <emph>© NASA</emph>"
+               
+               ><img src="../_images/earth_through_window1.jpg"
+                     class="align-center"
+                     width="90%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:90%;">A test image with a longer comment centered. <emph>© NASA</emph></figcaption>
+            </figure><p><div class="clearfix"></div></p>
+</section>
+<section id="the-same-image-with-a-forced-pixel-border">
+<h2>The same image with a forced pixel border<a class="headerlink" href="#the-same-image-with-a-forced-pixel-border" title="Link to this heading">¶</a></h2>
+<figure class="align-center-full bordered exborder lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/earth_through_window1.jpg"
+               title="A test image with a longer comment centered. <emph>© NASA</emph>"
+               data-caption="A test image with a longer comment centered. <emph>© NASA</emph>"
+               
+               ><img src="../_images/earth_through_window1.jpg"
+                     class="align-center"
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:100%;">A test image with a longer comment centered. <emph>© NASA</emph></figcaption>
+            </figure><hr class="docutils" />
 <p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../_tags/site.html"><span class="doc">site</span></a></p>
 </section>
 </section>
@@ -509,6 +589,9 @@ be side effects.</p></li>
             <ul>
 <li><a class="reference internal" href="#">Fancybox Integration</a><ul>
 <li><a class="reference internal" href="#installing-the-fancybox-script-and-css">Installing the FancyBox script and CSS</a></li>
+<li><a class="reference internal" href="#more-examples-left-and-right-aligned-with-text-flow">More examples, left and right aligned with text flow</a></li>
+<li><a class="reference internal" href="#centered-image-with-percentage-width">Centered Image with percentage width</a></li>
+<li><a class="reference internal" href="#the-same-image-with-a-forced-pixel-border">The same image with a forced pixel border</a></li>
 </ul>
 </li>
 </ul>

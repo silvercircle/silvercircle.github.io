@@ -1,8 +1,6 @@
 ---
-nonav: true
-layout: mobile
+layout: desktop_notoc
 ---
-
 :::{include} ../roles.md
 :::
 # Mechanical keyboards
@@ -18,7 +16,7 @@ align: left
 width: 350px
 title: The anatomy of a mechanical MX keyboard switch
 show_caption: true
-class: align-left
+class: align-left bordered exborder
 ---
 ```
 

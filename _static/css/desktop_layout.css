@@ -21,5 +21,23 @@
     box-sizing: border-box;
     width: 15em;
   }
+  div.page {
+    max-width: calc(1440px + 15em);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
+@media (max-width: 1025px) {
+  label.toc-overlay-icon .icon, label.nav-overlay-icon .icon, button.theme-toggle svg {
+    color: var(--color-header-foreground);
+  }
 
+  div.brand, a.sidebar-brand {
+    color: var(--color-header-title);
+  }
+}
+div.brand, a.sidebar-brand {
+  font-family: "Allegra Sans SC";
+  font-size: 18pt;
+  font-weight: 800;
+}

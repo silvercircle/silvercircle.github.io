@@ -103,7 +103,7 @@ code {
 	font-family: "Zed Mono Extended" !important;
 	font-size: 11pt !important;
 	font-weight: 400 !important;
-	color: white !important;
+	color: var(--color-foreground-primary) !important;
 	padding: 1px 3px !important;
 }
 
@@ -138,7 +138,7 @@ pre span.n, code span.n {
 }
 
 code span.pre {
-	color: #ccc;
+	color: var(--color-foreground-muted);
 }
 div.code-block-caption {
 	padding: 4px 10px;

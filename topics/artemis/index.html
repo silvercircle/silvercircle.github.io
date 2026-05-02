@@ -14,9 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/css/solopage.css?v=3c30c53f" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=10f73ec2" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=cf61cdb8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=97d55370" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/ubuntu.css?v=efee9dc1" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=b054b332" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=f4a6148a" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/fancybox.css?v=df2aaf9b" />
     
     
@@ -26,12 +26,16 @@
   body {
     --color-code-background: #f2f2f2;
   --color-code-foreground: #1e1e1e;
-  --p-line-spacing: 1.2em;
+  --p-line-spacing: 1.3em;
   --color-emph-special: #444411;
-  --color-figure-bgborder: #aaa;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #99a;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #222;
+  --color-figure-caption-secondary: #444;
   
   }
   @media not print {
@@ -44,10 +48,14 @@
   --color-foreground-special: #a599a5;
   --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
-  --color-figure-bgborder: #333;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #444;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #e4cccc;
+  --color-figure-caption-secondary: #bbbbbb;
   
     }
     @media (prefers-color-scheme: dark) {
@@ -60,10 +68,14 @@
   --color-foreground-special: #a599a5;
   --p-line-spacing: 1.3em;
   --color-emph-special: #c5c577;
-  --color-figure-bgborder: #333;
   --color-header-background: #014590;
   --color-header-foreground: #ccc;
   --color-header-title: orange;
+  --color-figure-bgborder: #444;
+  --radius-bordered-figures: 3px;
+  --figures-border-width: 1px;
+  --color-figure-caption: #e4cccc;
+  --color-figure-caption-secondary: #bbbbbb;
   
       }
     }
@@ -456,7 +468,7 @@ the fourth is Canadian and a member of the <a class="reference external" href="h
 </tbody>
 </table>
 </div>
-<figure class="align-center-full lbthumb">
+<figure class="align-center-full bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/crew1.webp"
@@ -474,7 +486,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
 Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/James Blair</emph></figcaption>
             </figure><p class="center vpad"><span class="emph-special">The four members of the main crew</span></p>
 <div class="gallery portrait docutils container">
-<figure class="align-left bordered lbthumb">
+<figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/wiseman1.jpg"
@@ -487,7 +499,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
                      height="auto"
                      alt=""/>
                 </a><figcaption style="width:100%;">Reid Wiseman, NASA astronaut and Commander of the Artemis II <emph>© NASA/Kim Shiflett</emph></figcaption>
-            </figure><figure class="align-left bordered lbthumb">
+            </figure><figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/koch1.jpg"
@@ -500,7 +512,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
                      height="auto"
                      alt=""/>
                 </a><figcaption style="width:100%;">Christina Koch, NASA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph></figcaption>
-            </figure><figure class="align-left bordered lbthumb">
+            </figure><figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/glover1.jpg"
@@ -513,7 +525,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
                      height="auto"
                      alt=""/>
                 </a><figcaption style="width:100%;">Victor Glover, NASA astronaut and Artemis II pilot <emph>© NASA/Kim Shiflett</emph></figcaption>
-            </figure><figure class="align-left bordered lbthumb">
+            </figure><figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/hansen1.jpg"
@@ -529,7 +541,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
             </figure></div>
 <p class="center vpad"><span class="emph-special">The two members of the backup crew.</span></p>
 <div class="gallery portrait docutils container">
-<figure class="align-left bordered lbthumb">
+<figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/andre-douglas1.webp"
@@ -542,7 +554,7 @@ Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/J
                      height="auto"
                      alt=""/>
                 </a><figcaption style="width:100%;">Andre Douglas, NASA astronaut and backup crew member <emph>© NASA/Josh Valcarcel</emph></figcaption>
-            </figure><figure class="align-left bordered lbthumb">
+            </figure><figure class="align-left bordered transborder lbthumb">
             <a 
                data-fancybox="group-crew"
                href="../../_images/jenni_gibbons1.jpg"

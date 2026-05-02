@@ -105,7 +105,7 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
   :show_caption: true
   :title: From left: Canadian CSA astronaut and mission specialist Jeremy Hansen and NASA astronauts Victor Glover (Pilot), 
     Reid Wiseman (Commander) and Christina Koch (mission specialist) <emph>© NASA/James Blair</emph>
-  :class: align-center-full
+  :class: align-center-full bordered transborder
 
 .. rst-class:: center vpad
 
@@ -117,25 +117,25 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
     :group: crew
     :title: Reid Wiseman, NASA astronaut and Commander of the Artemis II <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
   .. thumbnail:: ../../media/koch.jpg
     :group: crew
     :title: Christina Koch, NASA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
   .. thumbnail:: ../../media/glover.jpg
     :group: crew
     :title: Victor Glover, NASA astronaut and Artemis II pilot <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
   .. thumbnail:: ../../media/hansen.jpg
     :group: crew
     :title: Jeremy Hansen, CSA astronaut and mission specialist <emph>© NASA/Kim Shiflett</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
 .. rst-class:: center vpad
 
@@ -147,13 +147,13 @@ the fourth is Canadian and a member of the `CSA (Canadian Space Agency)
     :group: crew
     :title: Andre Douglas, NASA astronaut and backup crew member <emph>© NASA/Josh Valcarcel</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
   .. thumbnail:: ../../media/jenni_gibbons.jpg
     :group: crew
     :title: Jenni Gibbons, CSA astronaut and backup crew member <emph>© NASA/Bill Stafford</emph>
     :show_caption: true
-    :class: align-left bordered
+    :class: align-left bordered transborder
 
 Chronology of key events
 ------------------------

@@ -37,23 +37,26 @@
 /* for all else, use the standard monospaced font */
 div.highlight pre {
   font-family: "Iosvmata" !important;
-  font-weight: 400;
-  font-size: 12pt;
+  font-weight: 400 !important;
+  font-size: 12pt !important;
   line-height: 110% !important;
   padding: 0 10px;
   overflow-y: hidden !important;
   padding-right: 5px !important;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--color-content-foreground);
 }
 
 code {
 	font-family: "Iosvmata";
 	font-size: 12pt !important;
 	font-weight: 400 !important;
-	/* color: white !important; */
+	color: var(--color-foreground-muted) !important;
 	padding: 1px 3px !important;
+}
+
+code span.pre {
+	color: var(--color-foreground-muted);
 }
 
 div.code-block-caption {

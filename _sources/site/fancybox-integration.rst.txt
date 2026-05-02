@@ -1,4 +1,5 @@
 .. include:: ../roles.rst
+:layout: desktop_notoc
 
 ====================
 Fancybox Integration
@@ -85,7 +86,8 @@ following:
 
 .. rst-class:: center vpad
 
-  :special:`Some examples`
+  :special:`Some examples, a simple gallery using only CSS and thumbnail directives, provided by the 
+  sphinxcontrib-images plugin`
 
 .. container:: gallery
 
@@ -109,6 +111,54 @@ following:
     :title: One more test image
     :align: left
     :class: align-left bordered
+
+|clear|
+
+More examples, left and right aligned with text flow
+----------------------------------------------------
+.. thumbnail:: ../media/booster_separation.jpg
+  :group: testgroup
+  :show_caption: true
+  :title: A test image left aligned
+  :align: left
+  :width: 300px
+  :class: align-left bordered
+
+.. thumbnail:: ../media/earthset.jpg
+  :group: testgroup
+  :show_caption: true
+  :title: A test image right aligned with border forced
+  :align: right
+  :width: 300px
+  :class: align-right bordered exborder
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Centered Image with percentage width
+------------------------------------
+.. thumbnail:: ../media/earth_through_window.jpg
+  :group: testgroup
+  :show_caption: true
+  :title: A test image with a longer comment centered. <emph>© NASA</emph>
+  :align: center
+  :width: 90%
+  :class: align-center-full bordered
+
+|clear|
+
+The same image with a forced pixel border
+-----------------------------------------
+.. thumbnail:: ../media/earth_through_window.jpg
+  :group: testgroup
+  :show_caption: true
+  :title: A test image with a longer comment centered. <emph>© NASA</emph>
+  :align: center
+  :width: 100%
+  :class: align-center-full bordered exborder
+
 ---------
 
 .. tags:: site
