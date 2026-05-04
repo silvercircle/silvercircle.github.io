@@ -27,6 +27,11 @@ directory. I named mine ``.extension`` but you can choose any name you want. I p
 
 This adds the ``.extension`` directory to the search path so plugins can be loaded from there.
 
+.. note::
+
+  Make sure to **uninstall** any version of the ``sphinxcontrib-images`` plugins you may have installed via pip or other 
+  means.
+
 Installing the FancyBox script and CSS
 --------------------------------------
 Basically, there are two methods. One involves modifying your HTML templates and using FancyBox via its 
@@ -158,6 +163,23 @@ The same image with a forced pixel border
   :align: center
   :width: 100%
   :class: align-center-full bordered exborder
+
+And again the same without any colored caption
+-----------------------------------------------
+.. thumbnail:: ../media/earth_through_window.jpg
+  :group: testgroup
+  :show_caption: true
+  :title: A test image with a longer comment centered. Width set to 90% <emph>© NASA</emph>
+  :align: center
+  :width: 90%
+  :class: align-center-full
+
+And finally, the image alone. No caption
+----------------------------------------
+.. thumbnail:: ../media/earth_through_window.jpg
+  :group: testgroup
+  :align: center
+  :width: 90%
 
 ---------
 

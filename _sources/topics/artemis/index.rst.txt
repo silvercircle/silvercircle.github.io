@@ -11,7 +11,7 @@ Artemis II Mission 2026
 
 .. warning::
 
-   This story is work in progress and incomplete.
+  This story is work in progress and incomplete.
 
 In 1962, in his legendary :special:`We choose to go to the Moon` `speech 
 <https://www.rice.edu/jfk-speech>`_, then President John F. Kennedy said among many other things:
@@ -163,7 +163,7 @@ Chronology of key events
 - **Liftoff**: ``April 1, 2026, 22:35:12 UTC (6:35:12 p.m. EDT)``
 - SRB separation. About 2 minutes and 10 seconds into the flight at an altitude of almost 50km.
 - **TLI** The |tli| burn happened at ``T+25h 14m``.
-- **Splasdown (Landing)**: ``April 11, 2026, 00:07:27 UTC (April 10, 5:07:27 p.m. PDT)``
+- **Splashdown (Landing)**: ``April 11, 2026, 00:07:27 UTC (April 10, 5:07:27 p.m. PDT)``
 
 Glossary
 --------

@@ -1,13 +1,14 @@
 .. include:: ../../roles.rst
 :layout: solopage
-:nonav: true
+:lang: en
 
-=============================
+.. rst-class:: pageheader
+
 A curated collection of memes
 =============================
 
 :doc:`President Trump has his own section <trump>`
----------------------------------------------------
+--------------------------------------------------
 
 .. toctree::
   :maxdepth: 3
@@ -17,14 +18,16 @@ A curated collection of memes
 
   *
 
+.. rst-class:: pageheader
 Austria related memes
----------------------
+=====================
 
 .. container:: gallery
 
   .. thumbnail:: https://i.imgur.com/KLOfQ0h.jpeg
     :align: left
-    :title: Interkontinentalfichte
+    :title: Interkontinentalfichte. This was a reaction to President Trump's legendary claim about Austria's exploding 
+      trees.
     :show_caption: true
     :class: align-left bordered
     :group: austria
@@ -37,8 +40,9 @@ Austria related memes
     :group: austria
 
 
+.. rst-class:: pageheader
 Other stupid stuff
-------------------
+==================
 
 .. container:: gallery
 
@@ -120,6 +124,50 @@ Other stupid stuff
     :group: general
 
 |clear|
+
+Gravestones
+***********
+Inscriptions on Gravestones should not be funny. That's simple wrong, but sometimes they are and usually, that happens 
+by accident or chance.
+
+.. thumbnail:: ../../media/Memes/gravestone.jpg
+  :align: center
+  :width: 60%
+  :title: Interesting inscription on this gravestone. <b>Rammelt</b> is a common last name in German speaking 
+     regions of Europe. It is also a slang term that means <b>„to fuck“</b> and Alfred and Gertrud are two male and female
+     given names. So essentially, the inscription means <b>„Alfred fucks Gertrud“</b> 😃
+  :show_caption: true
+  :class: align-center-full bordered exborder
+  :group: general
+
+.. rst-class:: vpad
+
+.. raw:: html
+
+  The next is another example. <b>„Die Mutter war's“</b> is the beginning of a common German phrase, which reads in full:
+
+|clear|
+
+  „Die Mutter war’s. Was braucht’s der Worte mehr.“
+
+Literally, this means *„A Mother she was, no more words are needed“* and it expresses love and admiration for a person 
+who was a loving Mother and that single word **Mother** shall be enough to describe her.
+
+However, since the second part of the sentence is missing (for reasons unknown) the phrase could also have a completely 
+different meaning. Literally translated, *„Die Mutter war's“* simply means *„The mother did it“* and could mean, that 
+poor Julie was murdered by her Mother. Which is very likely not the case here and poor speculation based on an (maybe 
+deliberately) incomplete grave inscription, assuming that the fellow reader is educated enough to know the full 
+phrase and its meaning.
+
+Funny? Not really. Interesting? Certainly.
+
+.. thumbnail:: ../../media/Memes/mother.png
+  :align: center
+  :width: 60%
+  :title: See the story above. 
+  :show_caption: true
+  :class: align-center-full bordered exborder
+  :group: general
 
 Iranian Navy
 ************

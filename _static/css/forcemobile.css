@@ -90,9 +90,10 @@
     margin-right: auto !important;
   }
   div.main {
-    max-width: 100%;
+    max-width: 1440px;
     width: 100%;
     min-width: 70%;
+    margin: 0 auto;
   }
 }
 

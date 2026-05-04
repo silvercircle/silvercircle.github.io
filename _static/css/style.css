@@ -43,9 +43,12 @@ section h1 ~ p, section h2 ~ p, section h3 ~ p, section h4 ~ p {
 div.toc-tree a.reference, div.sidebar-tree a.reference {
   font-family: "Allegra Sans SC" !important;
   font-size: 12pt !important;
-  color: #a07020 !important;
   font-weight: 600 !important;
   text-decoration: none;
+}
+
+div.toc-tree a.reference {
+  color: #a07020;
 }
 
 div.toctree-wrapper.compound a.reference {
@@ -146,7 +149,7 @@ figure.align-center-full.bordered {
 
 figure.align-center-full.bordered img.align-center {
   border: none;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   background-color: var(--color-figure-bgborder);
 }
 
@@ -183,7 +186,8 @@ figure.align-left.bordered figcaption, figure.align-right.bordered figcaption, f
 figure.align-center-full.bordered figcaption {
   color: var(--color-figure-caption);
   border: none;
-  padding-bottom: 4px;
+  padding: 4px 4px;
+  box-sizing: border-box;
 }
 
 figure.align-center-full.bordered.exborder figcaption {

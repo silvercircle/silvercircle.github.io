@@ -3,10 +3,6 @@
   background-color: var(--color-background-primary);
 }
 
-header.mobile-header {
-  display: none;
-}
-
 aside.toc-drawer {
   display: none !important;
 }
@@ -29,6 +25,11 @@ section h1 {
     max-width: 100%;
     width: 100%;
     min-width: 75%;
+  }
+  div.page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 

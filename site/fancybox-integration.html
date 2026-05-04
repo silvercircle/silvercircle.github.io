@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/desktop_layout_notoc.css?v=441efc55" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/iosvmata.css?v=2f317d2c" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=77ea6861" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=516790f9" />
     <link rel="stylesheet" type="text/css" href="../_static/css/ubuntu.css?v=efee9dc1" />
     <link rel="stylesheet" type="text/css" href="../_static/css/site.css?v=f4a6148a" />
     <link rel="stylesheet" type="text/css" href="../_static/css/fancybox.css?v=df2aaf9b" />
@@ -365,6 +365,11 @@ directory. I named mine <code class="docutils literal notranslate"><span class="
 </pre></div>
 </div>
 <p>This adds the <code class="docutils literal notranslate"><span class="pre">.extension</span></code> directory to the search path so plugins can be loaded from there.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to <strong>uninstall</strong> any version of the <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-images</span></code> plugins you may have installed via pip or other
+means.</p>
+</div>
 <section id="installing-the-fancybox-script-and-css">
 <h2>Installing the FancyBox script and CSS<a class="headerlink" href="#installing-the-fancybox-script-and-css" title="Link to this heading">¶</a></h2>
 <p>Basically, there are two methods. One involves modifying your HTML templates and using FancyBox via its
@@ -527,7 +532,37 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
                      height="auto"
                      alt=""/>
                 </a><figcaption style="width:100%;">A test image with a longer comment centered. <emph>© NASA</emph></figcaption>
-            </figure><hr class="docutils" />
+            </figure></section>
+<section id="and-again-the-same-without-any-colored-caption">
+<h2>And again the same without any colored caption<a class="headerlink" href="#and-again-the-same-without-any-colored-caption" title="Link to this heading">¶</a></h2>
+<figure class="align-center-full lbthumb">
+            <a 
+               data-fancybox="group-testgroup"
+               href="../_images/earth_through_window1.jpg"
+               title="A test image with a longer comment centered. Width set to 90% <emph>© NASA</emph>"
+               data-caption="A test image with a longer comment centered. Width set to 90% <emph>© NASA</emph>"
+               
+               ><img src="../_images/earth_through_window1.jpg"
+                     class="align-center"
+                     width="90%"
+                     height="auto"
+                     alt=""/>
+                </a><figcaption style="width:90%;">A test image with a longer comment centered. Width set to 90% <emph>© NASA</emph></figcaption>
+            </figure></section>
+<section id="and-finally-the-image-alone-no-caption">
+<h2>And finally, the image alone. No caption<a class="headerlink" href="#and-finally-the-image-alone-no-caption" title="Link to this heading">¶</a></h2>
+<a class=""
+               data-fancybox="group-testgroup"
+               href="../_images/earth_through_window1.jpg"
+               title=""
+               data-caption=""
+               
+               ><img src="../_images/earth_through_window1.jpg"
+                     class="align-center"
+                     width="90%"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
 <p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../_tags/site.html"><span class="doc">site</span></a></p>
 </section>
 </section>
@@ -592,6 +627,8 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
 <li><a class="reference internal" href="#more-examples-left-and-right-aligned-with-text-flow">More examples, left and right aligned with text flow</a></li>
 <li><a class="reference internal" href="#centered-image-with-percentage-width">Centered Image with percentage width</a></li>
 <li><a class="reference internal" href="#the-same-image-with-a-forced-pixel-border">The same image with a forced pixel border</a></li>
+<li><a class="reference internal" href="#and-again-the-same-without-any-colored-caption">And again the same without any colored caption</a></li>
+<li><a class="reference internal" href="#and-finally-the-image-alone-no-caption">And finally, the image alone. No caption</a></li>
 </ul>
 </li>
 </ul>
