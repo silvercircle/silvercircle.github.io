@@ -91,9 +91,6 @@
     border: none;
     background: transparent;
   }
-  .toc-drawer {
-    top: 5em;
-  }
 }
 
 @media (max-width: 1025px) {

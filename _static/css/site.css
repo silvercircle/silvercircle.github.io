@@ -153,3 +153,8 @@ div.gallery figure.lbthumb.bordered a[data-fancybox] {
     margin: 0 auto;
   }
 }
+
+section.pageheader h1, section.pageheader h2, section.pageheader h3 {
+  text-align: center;
+}
+

@@ -2,8 +2,6 @@
 :layout: solopage
 :lang: en
 
-.. rst-class:: pageheader
-
 A curated collection of memes
 =============================
 
@@ -19,8 +17,9 @@ A curated collection of memes
   *
 
 .. rst-class:: pageheader
+
 Austria related memes
-=====================
+---------------------
 
 .. container:: gallery
 
@@ -41,8 +40,9 @@ Austria related memes
 
 
 .. rst-class:: pageheader
+
 Other stupid stuff
-==================
+------------------
 
 .. container:: gallery
 
@@ -125,8 +125,10 @@ Other stupid stuff
 
 |clear|
 
+.. rst-class:: pageheader
+
 Gravestones
-***********
+-----------
 Inscriptions on Gravestones should not be funny. That's simple wrong, but sometimes they are and usually, that happens 
 by accident or chance.
 
@@ -169,15 +171,19 @@ Funny? Not really. Interesting? Certainly.
   :class: align-center-full bordered exborder
   :group: general
 
+.. rst-class:: pageheader
+
 Iranian Navy
-************
+------------
 
 .. video:: https://i.imgur.com/fxxe3zS.mp4
   :width: 640px
   :align: center
 
+.. rst-class:: pageheader
+
 Niki Lauda erklärt ein Formel 1 Auto
-************************************
+------------------------------------
 
 .. video:: https://i.imgur.com/eTJ08Xe.mp4
   :width: 480px
