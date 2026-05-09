@@ -158,3 +158,10 @@ section.pageheader h1, section.pageheader h2, section.pageheader h3 {
   text-align: center;
 }
 
+div.titlebox {
+  background-color: var(--color-figure-bgborder);
+  border: 1px solid var(--color-figure-caption-secondary);
+  padding: 5px 4px;
+  border-radius: var(--radius-bordered-figures);
+}
+

@@ -38,6 +38,13 @@ Austria related memes
     :class: align-left bordered
     :group: austria
 
+  .. thumbnail:: https://i.imgur.com/7YnGMuu.jpeg
+    :align: left
+    :title: Das Aschbacher keyboard. This is particularly useful for people who need to copy and paste a lot when writing 
+      academic papers or dissertations 😃
+    :show_caption: true
+    :class: align-left bordered
+    :group: austria
 
 .. rst-class:: pageheader
 
