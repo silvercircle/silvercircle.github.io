@@ -1,0 +1,14 @@
+Das ist ein oft benutzter Mechanismus in Unix. Verzeichnisse, die auf .d enden, beinhalten Konfigurationsdateien. 
+Beliebig viele davon sind möglich und werden sequentiell abgearbeitet, wobei eine Sortierung vorgenommen wird. Deshalb 
+sieht man dort of Dateinamen wie 00-myconf.conf oder 99-thisconf.conf weil man damit die Reihenfolge, mit der sie 
+abgearbeitet werden, festlegen kann.
+
+Vorteile sind:
+
+a)
+Modularisierung
+
+b)
+Einfach zu entfernen. Man löscht einfach /etc/modprobe.d/foo.conf und muss sich sonst um nichts kümmern.
+
+Siehe z.B. auch /etc/logrotate.d/

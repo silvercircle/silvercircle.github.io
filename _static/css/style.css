@@ -108,7 +108,11 @@ figure.lbthumb img {
 
 figure.bordered.align-left.lbthumb.exborder img, figure.bordered.align-right.lbthumb.exborder img {
   margin: var(--figures-border-width) !important;
-  margin-bottom: 0 !important;
+  /* margin-bottom: 0 !important; */
+}
+
+div.gallery figure.bordered.align-left.lbthumb.exborder img, div.gallery figure.bordered.align-right.lbthumb.exborder img {
+  width: calc(100% - 2 * var(--figures-border-width));
 }
 
 figure.lbthumb.align-center-full img {
@@ -119,7 +123,23 @@ figure.bordered.lbthumb.align-left img, figure.bordered.lbthumb.align-right img,
   border-radius: var(--radius-bordered-figures) var(--radius-bordered-figures) 0 0;
 }
 
+figure.bordered.lbthumb.align-left.noradius img, figure.bordered.lbthumb.align-right.noradius img, figure.bordered.lbthumb.align-center-full.noradius img {
+  border-radius: 0 !important;
+}
+
+figure.bordered.lbthumb.align-left.radius img, figure.bordered.lbthumb.align-right.radius img, figure.bordered.lbthumb.align-center-full.radius img {
+  border-radius: var(--radius-bordered-figures) var(--radius-bordered-figures) 0 0 !important;
+}
+
 figure.bordered.lbthumb {
+  border-radius: var(--radius-bordered-figures);
+}
+
+figure.bordered.lbthumb.noradius {
+  border-radius: 0 !important;
+}
+
+figure.bordered.lbthumb.radius {
   border-radius: var(--radius-bordered-figures) !important;
 }
 
@@ -132,7 +152,7 @@ figure.align-right img.align-right {
 
 figure.align-left, figure.align-right, figure.align-center, figure.align-center-full {
   display: grid;
-  grid-template-rows: repeat(auto-fit);
+  grid-template-rows: auto auto;
   grid-gap: 0;
 }
 
@@ -147,7 +167,6 @@ figure.align-center-full.bordered {
 
 figure.align-center-full.bordered img.align-center {
   border: none;
-  /* box-sizing: content-box; */
   background-color: var(--color-figure-bgborder);
 }
 
@@ -159,6 +178,10 @@ figure.align-center-full.bordered.exborder img.align-center {
 /*
  * figure captions
  */
+article figure, article .figure {
+  border-radius: 0;
+}
+
 figure.align-left figcaption, figure.align-right figcaption, figure.align-center figcaption {
   text-align: center;
   justify-content: center;
@@ -179,6 +202,16 @@ figure.align-left.bordered figcaption, figure.align-right.bordered figcaption, f
   background-color: var(--color-figure-bgborder);
   color: var(--color-figure-caption);
   border-radius: 0 0 var(--radius-bordered-figures) var(--radius-bordered-figures);
+}
+
+figure.align-left.bordered.noradius figcaption, figure.align-right.bordered.noradius figcaption, figure.align-center.bordered.noradius figcaption,
+  figure.align-center-full.bordered.noradius figcaption {
+  border-radius: 0 !important;
+}
+
+figure.align-left.bordered.radius figcaption, figure.align-right.bordered.radius figcaption, figure.align-center.bordered.radius figcaption,
+  figure.align-center-full.bordered.radius figcaption {
+  border-radius: 0 0 var(--radius-bordered-figures) var(--radius-bordered-figures) !important;
 }
 
 figure.align-center-full.bordered figcaption {
@@ -277,5 +310,8 @@ ul.insidelist li:before {
 
 ul.leftbull li:before {
   content: "⁌" !important;
+}
+button.copybtn {
+   opacity: 1;
 }
 

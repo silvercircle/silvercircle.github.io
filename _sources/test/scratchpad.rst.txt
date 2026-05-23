@@ -1,3 +1,6 @@
+.. include:: ../roles.rst
+:layout: desktop_notoc
+
 Scratchpad
 ==========
 
@@ -43,6 +46,41 @@ dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
 mollit anim id est laborum.
+
+|clear|
+
+.. rst-class:: centerheading
+A boxed content
+...............
+
+.. rst-class:: titlebox smallmargin noradius
+
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+   mollit anim id est laborum.
+
+--------------
+
+.. code-block:: java
+  :linenos:
+  :caption: Java Code
+
+  public static final double windChillFactor(final double t, final double ws, char unit) {
+    unit = normalizeUnit(unit);
+    final double tf = (unit == 'f') ? t : Double.valueOf(t).toFahrenheit();
+    Double wc = 0d;
+
+    /** no wind chill for temperatures > 50F or wind speeds < 3mph */
+    if (!(tf > 50 || ws < 3)) {
+      final double ws_mph  = ws * 2.237;
+      wc  = (35.74 + 0.6215 * tf - 35.75 * (Math.pow(ws_mph, 0.16)) + 0.4275 * tf * (Math.pow(ws_mph, 0.16)));
+    } else {
+      wc = t;
+    }
+    return (unit == 'c') ? wc.toCelsius().roundAt(2) : wc.roundAt(2);
+  }
 
 This is a subsection
 ....................

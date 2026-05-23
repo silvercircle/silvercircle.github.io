@@ -18,6 +18,16 @@ Java Topics
 
   java/index
 
+
+Kotlin Topics
+-------------
+
+.. toctree::
+  :maxdepth: 4
+  :class: toctreeinline
+
+  Kotlin/index
+
 Ada Topics
 ----------
 .. toctree::

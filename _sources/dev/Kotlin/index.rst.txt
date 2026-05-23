@@ -1,0 +1,90 @@
+.. include:: ../../roles.rst
+:layout: mobile
+
+=============
+Kotlin Topics
+=============
+
+.. toctree::
+  :maxdepth: 3
+  :caption: Contents:
+  :hidden:
+  :glob:
+
+  *
+
+Returning multiple values from a Function
+=========================================
+This is normally a use case for `Tuples <https://en.wikipedia.org/wiki/Tuple>`_ which are a feature of many modern 
+programming languages. Kotlin, however, does not have Tuples, but instead, it has another useful feature that comes in 
+handy. It's called `Destructuring declarations <https://kotlinlang.org/docs/destructuring-declarations.html>`_.
+
+.. code-block:: kotlin
+  :linenos:
+  :caption: Destructuring declarations demo
+
+  fun <T,V> test(a: T, b: V): Pair<T, V> {
+    return Pair<T, V>(a, b)
+  }
+
+  val(x, y) = test(3, 4)
+  print("The values are $x (${x::class.simpleName}) and $y (${y::class.simpleName})")
+
+So, basically, you have a function that returns a :kotlin:`Pair` data class. In line 5, we assign the return value of :kotlin:`fun test` 
+to a group of two variables. The destructuring mechanism guarantees that the first member of ``Pair`` is assigned to 
+``x`` and the second to ``y``. While line 5 looks like we are declaring a tuple, we are, in fact, just declaring two 
+ordinary variables and initialize them with the return values of the function.
+
+Omit parentheses when calling functions
+=======================================
+This is allowed when a function takes exactly ONE argument and that argument is a function by itself. Consider:
+
+.. code-block:: kotlin
+  :linenos:
+
+  fun twoAndThree(operation: (Int, Int) -> Int) {
+    val result = operation(2, 3)
+    println("The result is $result")
+  }
+
+In that case you can call the function with :kotlin:`twoAndThree { a, b -> a + b }` which is **exactly** the same as 
+using :kotlin:`twoAndThree({ a, b -> a + b })`.
+
+Try-With-Resource in Kotlin
+===========================
+In Java, one can write:
+
+.. code-block:: java
+  :linenos:
+
+  try (Scanner scanner = new Scanner(new File("test.txt"))) {
+      while (scanner.hasNext()) {
+          System.out.println(scanner.nextLine());
+      }
+  } catch (FileNotFoundException fnfe) {
+      fnfe.printStackTrace();
+  }
+
+There is no need for a :java:`finally()` clause, because ``try(resource = ...)`` will automatically close and dispose 
+the resource. In our case, the ``scanner`` will be closed regardless of the outcome in both the try and catch blocks.
+
+Kotlin does not have such a construct and this is a design decision. Because Kotlin emphasizes on a functional 
+programming model, it also uses a functional approach in the form of the :kotlin:`use()` function.
+
+.. code-block:: kotlin
+  :linenos:
+
+  val writer = FileWriter("test.txt")
+  writer.use {
+    writer.write("something")
+  }
+
+This will automatically close ``writer`` when the scope is left. In this case this happens at line 4. The only 
+requirement is that your object implements either :kotlin:`Closeable()` or :kotlin:`AutoCloseable()`.
+
+It is perfectly safe to use such a construct in a :kotlin:`try {} catch {}` block. Once you leave the block, your 
+resource will be closed.
+
+Loops and labels with break and continue
+========================================
+

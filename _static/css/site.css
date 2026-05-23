@@ -103,10 +103,13 @@ div.container.gallery.portrait {
   clear: both;
   display: grid;
   grid-template-columns: repeat(auto-fit, 10em);
-/*  grid-template-rows: repeat(auto-fit, 15em); */
   justify-content: center;
   align-items: start;
   grid-gap: 0px;
+}
+
+div.container.gallery.portrait.small {
+  grid-template-columns: repeat(auto-fit, 6em);
 }
 
 div.container.gallery.landscape {
@@ -121,19 +124,31 @@ div.container.gallery.landscape {
   grid-gap: 0px;
 }
 
+div.container.gallery.landscape.small {
+  grid-template-columns: repeat(auto-fit, 8em);
+}
+
 div.container.gallery3 img {
   width: 20em;
   height: 20em;
 }
 
 div.container.gallery.portrait img {
-/*  width: 10em; */
   height: 15em;
+}
+
+div.container.gallery.portrait.small img {
+  height: 9em;
 }
 
 div.container.gallery.landscape img {
   width: 16em;
   height: 7em;
+}
+
+div.container.gallery.landscape.small img {
+  width: 8em;
+  height: 3.5em;
 }
 
 div.gallery figure.lbthumb {
@@ -158,10 +173,22 @@ section.pageheader h1, section.pageheader h2, section.pageheader h3 {
   text-align: center;
 }
 
-div.titlebox {
-  background-color: var(--color-figure-bgborder);
-  border: 1px solid var(--color-figure-caption-secondary);
-  padding: 5px 4px;
+div.titlebox, p.titlebox {
+  background-color: var(--color-titlebox);
+  border: 1px solid var(--color-figure-bgborder);
+  padding: 5px 8px;
   border-radius: var(--radius-bordered-figures);
+}
+
+.titlebox.noradius {
+  border-radius: 0 !important;
+}
+
+.titlebox.noborder {
+  border: none !important;
+}
+
+.centerheading h1, .centerheading h2, .centerheading h3, .centerheading h4, .centerheading h5 {
+  text-align: center;
 }
 

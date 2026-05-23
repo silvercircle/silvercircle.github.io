@@ -10,7 +10,7 @@ President Donald J. Trump
   :title: This is Donald J. Trump, the current and 47th president of the United States of America. Or 
     otherwise: A nightmare.
   :show_caption: true
-  :class: align-left bordered
+  :class: align-left bordered exborder noradius
 
 We all know it by now. Donald Trump is an imbecile, a narcissistic sociopath and an overall very unpleasant person. He 
 is also not the brightest candle on the cake and as a politician, he is highly incompetent and dangerous. More so than 
@@ -56,26 +56,26 @@ What's the difference between a flying pig and President Trump?
     :group: gen1
     :show_caption: true
     :title: Say hello to Ayatollah Trump
-    :class: align-left bordered
+    :class: align-left bordered noradius exborder
  
   .. thumbnail:: ../../media/Memes/Trump/straitblocker.jpeg
     :group: gen1
     :show_caption: true
     :title: He who blocks the strait of Hormuz
-    :class: align-left bordered
+    :class: align-left bordered exborder
 
   .. thumbnail:: https://i.imgur.com/r3OIuPB.png
     :group: gen1
     :show_caption: true
     :title: Trump becomes the new Ayatollah (in German)
-    :class: align-left bordered
+    :class: align-left bordered exborder
 
   .. thumbnail:: https://i.imgur.com/n5UWXOZ.jpeg
     :group: gen1
     :show_caption: true
     :title: Trump sees himself as Sith Lord. This image was posted by the White House to celebrate the 4th of May which 
       is commonly known as <i>„Force Day“</i>.
-    :class: align-left bordered
+    :class: align-left bordered exborder noradius
 
 -------------
 
@@ -161,6 +161,8 @@ Other Memes
     :show_caption: true
     :title: MAGA Reality
     :class: align-left bordered
+
+|clear|
 
 .. rst-class:: vpad center
 
