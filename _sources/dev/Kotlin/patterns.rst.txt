@@ -28,13 +28,6 @@ In Kotlin, you would instantiate such an object with
     .. code-block:: kotlin
       :caption: Kotlin Class with Builder
 
-      /**
-       * a builder pattern in Kotlin, implemented with a nested data class. This
-       * pretty much works like the Java builder using a static nested class.
-       *
-       * In Kotlin, however, the Builder is usually not needed, because methods and constructors
-       * can have named arguments with default values.
-       */
       class Book private constructor(val isbn: String = "", val title: String = "",
         val author: String? = "Unknown", val genre: Genre? = Genre.NONE) {
 
@@ -115,5 +108,13 @@ In Kotlin, you would instantiate such an object with
               }
           }
       }
+
+As you can see from the two code examples, the Kotlin code is much shorter und much simpler and the Builder is totally 
+optional, because in reality, you could simply:
+
+- Make the ``Book()`` constructor public
+- Instantiate the class with :kotlin:`val b = Book("978-3-16-148410-0", "A Kotlin Book", genre = Book.Genre.SCIENCE)` 
+  and be done. This would be faster, smaller and easier to read compared to the fluid interface used by the typical 
+  Builder.
 
 

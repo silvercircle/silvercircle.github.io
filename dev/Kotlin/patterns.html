@@ -374,14 +374,7 @@ properties. It usually looks like:</p>
 Kotlin</label><div class="sd-tab-content docutils">
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">Kotlin Class with Builder</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
-<div class="highlight-kotlin notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm"> * a builder pattern in Kotlin, implemented with a nested data class. This</span>
-<span class="cm"> * pretty much works like the Java builder using a static nested class.</span>
-<span class="cm"> *</span>
-<span class="cm"> * In Kotlin, however, the Builder is usually not needed, because methods and constructors</span>
-<span class="cm"> * can have named arguments with default values.</span>
-<span class="cm"> */</span>
-<span class="kd">class</span><span class="w"> </span><span class="nc">Book</span><span class="w"> </span><span class="n">private</span><span class="w"> </span><span class="k">constructor</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">isbn</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span>
+<div class="highlight-kotlin notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span><span class="w"> </span><span class="nc">Book</span><span class="w"> </span><span class="n">private</span><span class="w"> </span><span class="k">constructor</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">isbn</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="nv">author</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">genre</span><span class="p">:</span><span class="w"> </span><span class="n">Genre? </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">.</span><span class="na">NONE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
 <span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Genre</span><span class="w"> </span><span class="p">{</span>
@@ -469,6 +462,14 @@ Java</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+<p>As you can see from the two code examples, the Kotlin code is much shorter und much simpler and the Builder is totally
+optional, because in reality, you could simply:</p>
+<ul class="simple">
+<li><p>Make the <code class="docutils literal notranslate"><span class="pre">Book()</span></code> constructor public</p></li>
+<li><p>Instantiate the class with <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Book</span><span class="p">(</span><span class="s">&quot;978-3-16-148410-0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A Kotlin Book&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Book</span><span class="p">.</span><span class="na">Genre</span><span class="p">.</span><span class="na">SCIENCE</span><span class="p">)</span></code>
+and be done. This would be faster, smaller and easier to read compared to the fluid interface used by the typical
+Builder.</p></li>
+</ul>
 </section>
 </section>
 
