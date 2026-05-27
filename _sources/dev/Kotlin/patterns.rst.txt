@@ -1,0 +1,119 @@
+.. include:: ../../roles.rst
+:layout: mobile
+
+==================
+Patterns in Kotlin
+==================
+Like all languages, implementing common patterns is an important aspect and will usually become important at some point 
+in your learning pipeline. Usually, when you have mastered the basics of the language and feel safe enough to *think* in 
+that language.
+
+Builder Pattern
+---------------
+One of the most common, particularly in the Java universe. Since Java does not support named arguments and default 
+values for method or constructor arguments, the builder is very handy to initialize complex objects with many 
+properties. It usually looks like:
+
+  :java:`var foo = MyClass.Builder(param1, param2).param3("foo").param4("bar").build();`
+
+The class requires two mandatory parameters in its constructors (``param1`` and ``param2``) and two optionals. For 
+``param3`` and ``param4``, the class usually sets default values, but you can override them in the Builder.
+
+In Kotlin, you would instantiate such an object with
+
+.. tab-set:: 
+
+  .. tab-item:: Kotlin
+
+    .. code-block:: kotlin
+      :caption: Kotlin Class with Builder
+
+      /**
+       * a builder pattern in Kotlin, implemented with a nested data class. This
+       * pretty much works like the Java builder using a static nested class.
+       *
+       * In Kotlin, however, the Builder is usually not needed, because methods and constructors
+       * can have named arguments with default values.
+       */
+      class Book private constructor(val isbn: String = "", val title: String = "",
+        val author: String? = "Unknown", val genre: Genre? = Genre.NONE) {
+
+        enum class Genre {
+          /** incomplete */
+          FICTION, NONFICTION, DRAMA, PROSE, POETRY, SCIENCE, NONE
+        }
+
+        override fun toString(): String {
+          return Clique.parser().parse("""
+            [yellow, bold]ISBN: [/]  $isbn
+            [yellow, bold]Title:[/]  $title
+            [yellow, bold]Author[/]: $author
+            [yellow, bold]Genre:[/]  $genre
+          """).trimIndent()
+        }
+
+        data class Builder(val isbn: String, val title: String,
+          var author: String? = "Unknown", var genre: Genre? = Genre.NONE) {
+
+          fun author(author: String) = apply { this.author = author }
+          fun genre(genre: Genre) = apply { this.genre = genre }
+
+          fun build(): Book = Book(this.isbn, this.title, this.author, this.genre)
+        }
+      }
+
+  .. tab-item:: Java
+  
+    .. code-block:: Java
+      :caption: A Java Builder
+
+      package cc.subspace.kweather;
+      import io.github.kusoroadeolu.clique.Clique;
+
+      class JavaBook {
+          enum Genre {
+              FICTION, NONFICTION, DRAMA, PROSE, POETRY, SCIENCE, NONE
+          }
+          private String isbn  = null;
+          private String title = null;
+          private String author = "Unknown";
+          private Genre  genre = Genre.NONE;
+
+          private JavaBook(final String isbn, final String title, final String author, final Genre genre) {
+              this.isbn = isbn;
+              this.title = title;
+              this.author = author;
+              this.genre = genre;
+          }
+
+          public String toString() {
+              return Clique.parser().parse(String.format(
+              """
+              [yellow, bold]ISBN: [/]  %s
+              [yellow, bold]Title:[/]  %s
+              [yellow, bold]Author[/]  %s
+              [yellow, bold]Genre:[/]  %s
+              """, isbn,title, author, genre)).stripIndent();
+          }
+
+          static class Builder {
+              private String isbn  = null;
+              private String title = null;
+              private String author = "Unknown";
+              private Genre  genre = Genre.NONE;
+
+              Builder(final String isbn, final String title) {
+                  this.isbn = isbn;
+                  this.title = title;
+              }
+
+              public Builder author(final String author) { this.author = author; return this; }
+              public Builder genre(final Genre genre) { this.genre = genre; return this; }
+
+              public JavaBook build() {
+                  return new JavaBook(isbn, title, author, genre);
+              }
+          }
+      }
+
+

@@ -4,7 +4,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Ada Topics" href="../Ada/index.html"><link rel="prev" title="Kotlin Topics" href="index.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Patterns in Kotlin" href="patterns.html"><link rel="prev" title="Kotlin Topics" href="index.html">
 
     <link rel="shortcut icon" href="../../_static/favicon.png"><!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>Classes in Kotlin - Silvercircle.codeberg.page</title>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/css/iosvmata.css?v=2f317d2c" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=38bffdb8" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/ubuntu.css?v=efee9dc1" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=25886c61" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css?v=f6524226" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/fancybox.css?v=df2aaf9b" />
     
     
@@ -222,7 +222,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -277,6 +277,7 @@
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Kotlin Topics</a><input aria-label="Toggle navigation of Kotlin Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Classes in Kotlin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="patterns.html">Patterns in Kotlin</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Ada/index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
@@ -346,13 +347,78 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <section id="classes-in-kotlin">
 <h1>Classes in Kotlin<a class="headerlink" href="#classes-in-kotlin" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Classes are final by default. It’s exactly the opposite of Java. If you want to use a class as a parent, you must mark
+it <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="n">open</span></code>. The same is true for methods and properties. You can only override them when they are declared as
+open.</p></li>
+<li><p>Keywords <code class="code highlight java docutils literal highlight-java"><span class="kd">extends</span></code> or <code class="code highlight java docutils literal highlight-java"><span class="kd">implements</span></code> are obsolete. Kotlin uses C++-like syntax. You declare a class like
+<code class="code highlight kotlin docutils literal highlight-kotlin"><span class="kd">class</span><span class="w"> </span><span class="nc">Foo</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Bar</span><span class="p">(),</span><span class="w"> </span><span class="n">Baz</span><span class="p">()</span></code>. This declares a class that inherits from <strong>Bar</strong> and <strong>Baz</strong>. The basic rule is
+that only one <strong>class</strong> is allowed in the list of parents, but as many interfaces as you like.</p></li>
+<li><p>Constructors are different. The primary constructor is everything in the class body where properties are declared. If
+you need to execute code in the primary constructor that does not declare properties, you can use an <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="k">init</span><span class="w"> </span><span class="p">{}</span></code>
+block. Look at the following example:</p></li>
+</ul>
+<div class="highlight-kotlin notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kd">class</span><span class="w"> </span><span class="nc">Member</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">born</span><span class="p">:</span><span class="w"> </span><span class="n">LocalDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LocalDate</span><span class="p">.</span><span class="na">now</span><span class="p">(),</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">gender</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;m&quot;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 2</span><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nv">isValid</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="linenos"> 3</span><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Long</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="linenos"> 4</span><span class="w">  </span><span class="k">init</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 5</span><span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ChronoUnit</span><span class="p">.</span><span class="na">YEARS</span><span class="p">.</span><span class="na">between</span><span class="p">(</span><span class="n">born</span><span class="p">,</span><span class="w"> </span><span class="n">LocalDate</span><span class="p">.</span><span class="na">now</span><span class="p">())</span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">      </span><span class="n">isValid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">  </span><span class="kd">fun</span><span class="w"> </span><span class="nf">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="w">    </span><span class="s">&quot;I am a Member of this group. My name is [green]</span><span class="si">$</span><span class="n">name</span><span class="s">[/] and I am </span><span class="si">$</span><span class="n">age</span><span class="s"> years old&quot;</span><span class="p">.</span><span class="na">PrettyPrint</span><span class="p">()</span>
+<span class="linenos">13</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">14</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>In this code fragment, <strong>Member</strong> declares a default constructor that declares a variable age and initializes it in an
+<strong>init</strong> block. It then checks the age and marks the record as invalid when the person is not old enough to use our
+service. So everything except the <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">greet</span><span class="p">()</span></code> is considered the default constructor which takes two arguments,
+a <em>String</em> and a <em>LocalDate</em>. And just like methods in Kotlin, constructors can have default values for arguments, so in
+this case, you could omit the <em>born</em> argument and do something like <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="kd">val</span><span class="w"> </span><span class="nv">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Member</span><span class="p">(</span><span class="s">&quot;John Doe&quot;</span><span class="p">)</span></code> or <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="kd">val</span>
+<span class="nv">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Member</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jane Doe&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">gender</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;f&quot;</span><span class="p">)</span></code> because named arguments are also supported for class constructors.</p>
+<section id="tips-for-classes-and-interfaces">
+<h2>Tips for Classes and Interfaces<a class="headerlink" href="#tips-for-classes-and-interfaces" title="Link to this heading">¶</a></h2>
+<p>If a class inherits methods with the same signature and a default implementation from multiple interfaces,
+then ambiguity can (or must) be avoided by using a <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="k">super</span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;</span><span class="p">.</span><span class="na">method</span><span class="p">()</span></code> construct.</p>
+<div class="highlight-kotlin notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * our Car is a hybrid one. It inherits from the common base Vehicle</span>
+<span class="linenos"> 3</span><span class="cm"> * and implements both a combustion and an electric engine.</span>
+<span class="linenos"> 4</span><span class="cm"> */</span>
+<span class="linenos"> 5</span><span class="kd">class</span><span class="w"> </span><span class="nc">Car</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Vehicle</span><span class="p">(),</span><span class="w"> </span><span class="n">ElectricEngine</span><span class="p">,</span><span class="w"> </span><span class="n">CombustionEngine</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 6</span><span class="w">  </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">start</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="cm">/** we inherit from both engines which both have a start() method and</span>
+<span class="linenos"> 8</span><span class="cm">     *  a default implementation.</span>
+<span class="linenos"> 9</span><span class="cm">     */</span>
+<span class="linenos">10</span><span class="w">    </span><span class="k">super</span><span class="o">&lt;</span><span class="n">CombustionEngine</span><span class="o">&gt;</span><span class="p">.</span><span class="na">start</span><span class="p">()</span>
+<span class="linenos">11</span><span class="w">    </span><span class="k">super</span><span class="o">&lt;</span><span class="n">ElectricEngine</span><span class="o">&gt;</span><span class="p">.</span><span class="na">start</span><span class="p">()</span>
+<span class="linenos">12</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">13</span><span class="w">  </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">move</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="w">    </span><span class="n">start</span><span class="p">()</span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;I am a Car, my engines are running. I&#39;m moving fast&quot;</span><span class="p">)</span>
+<span class="linenos">16</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">17</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="class-nesting-in-kotlin">
+<h2>Class Nesting in Kotlin<a class="headerlink" href="#class-nesting-in-kotlin" title="Link to this heading">¶</a></h2>
+<p>This works pretty much like in Java except that there are no static inner classes, because Kotlin does not use static
+modifiers at all. A normal nested class behaves like a static nested class in Java. Use the keyword <code class="code highlight kotlin docutils literal highlight-kotlin"><span class="n">inner</span></code> to
+define a inner class which will have access to the enclosing class’ members and methods. Thus, <strong>inner</strong> nested classes
+can only exist within an instance of their enclosing class.</p>
+<p>Kotlin also allows to nest interfaces within classes and vice versa.</p>
+</section>
 </section>
 
         </article>
@@ -360,12 +426,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../Ada/index.html">
+          <a class="next-page" href="patterns.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Ada Topics</div>
+                <div class="title">Patterns in Kotlin</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -398,8 +464,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Classes in Kotlin</a><ul>
+<li><a class="reference internal" href="#tips-for-classes-and-interfaces">Tips for Classes and Interfaces</a></li>
+<li><a class="reference internal" href="#class-nesting-in-kotlin">Class Nesting in Kotlin</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

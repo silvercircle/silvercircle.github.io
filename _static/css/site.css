@@ -83,6 +83,15 @@ div.container.gallery img {
   height: 10rem;
 }
 
+div.container.gallery.small {
+  grid-template-columns: repeat(auto-fit, 5rem);
+}
+
+div.container.gallery.small img {
+  width: 5rem;
+  height: 5rem;
+}
+
 div.container.gallery3 {
   width: auto;
   margin-left: auto;

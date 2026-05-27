@@ -1,0 +1,8 @@
+
+Definitely caused by:
+https://github.com/neovim/neovim/commit/5181984db990111c76d7d7bceb3d7acba7da4406
+
+Flickering in parts of the UI when deleting buffers, for example.
+
+Previous commit ea8f1463ddd18cb95bb960c684aab6cd3cb4799b is fine.
+

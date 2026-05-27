@@ -5,3 +5,74 @@
 Classes in Kotlin
 =================
 
+- Classes are final by default. It's exactly the opposite of Java. If you want to use a class as a parent, you must mark 
+  it :kotlin:`open`. The same is true for methods and properties. You can only override them when they are declared as 
+  open.
+
+- Keywords :java:`extends` or :java:`implements` are obsolete. Kotlin uses C++-like syntax. You declare a class like 
+  :kotlin:`class Foo : Bar(), Baz()`. This declares a class that inherits from **Bar** and **Baz**. The basic rule is 
+  that only one **class** is allowed in the list of parents, but as many interfaces as you like.
+
+- Constructors are different. The primary constructor is everything in the class body where properties are declared. If 
+  you need to execute code in the primary constructor that does not declare properties, you can use an :kotlin:`init {}` 
+  block. Look at the following example:
+
+.. code-block:: kotlin
+  :linenos:
+
+  class Member(val name: String, val born: LocalDate = LocalDate.now(), val gender: String = "m" ) {
+    var isValid: Boolean = true
+    var age: Long = 0
+    init {
+      age = ChronoUnit.YEARS.between(born, LocalDate.now())
+      if (age < 18) {
+        isValid = false
+      }
+    }
+
+    fun greet() {
+      "I am a Member of this group. My name is [green]$name[/] and I am $age years old".PrettyPrint()
+    }
+  }
+
+In this code fragment, **Member** declares a default constructor that declares a variable age and initializes it in an 
+**init** block. It then checks the age and marks the record as invalid when the person is not old enough to use our 
+service. So everything except the :kotlin:`fun greet()` is considered the default constructor which takes two arguments, 
+a *String* and a *LocalDate*. And just like methods in Kotlin, constructors can have default values for arguments, so in 
+this case, you could omit the *born* argument and do something like :kotlin:`val m = Member("John Doe")` or :kotlin:`val 
+m = Member(name = "Jane Doe", gender = "f")` because named arguments are also supported for class constructors.
+
+Tips for Classes and Interfaces
+-------------------------------
+If a class inherits methods with the same signature and a default implementation from multiple interfaces, 
+then ambiguity can (or must) be avoided by using a :kotlin:`super<Type>.method()` construct.
+
+.. code-block:: kotlin
+  :linenos:
+
+  /**
+   * our Car is a hybrid one. It inherits from the common base Vehicle
+   * and implements both a combustion and an electric engine.
+   */
+  class Car : Vehicle(), ElectricEngine, CombustionEngine {
+    override fun start() {
+      /** we inherit from both engines which both have a start() method and
+       *  a default implementation.
+       */
+      super<CombustionEngine>.start()
+      super<ElectricEngine>.start()
+    }
+    override fun move() {
+      start()
+      println("I am a Car, my engines are running. I'm moving fast")
+    }
+  }
+
+Class Nesting in Kotlin
+-----------------------
+This works pretty much like in Java except that there are no static inner classes, because Kotlin does not use static 
+modifiers at all. A normal nested class behaves like a static nested class in Java. Use the keyword :kotlin:`inner` to 
+define a inner class which will have access to the enclosing class' members and methods. Thus, **inner** nested classes 
+can only exist within an instance of their enclosing class.
+
+Kotlin also allows to nest interfaces within classes and vice versa.

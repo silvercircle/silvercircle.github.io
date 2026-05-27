@@ -4,10 +4,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Regular Expressions notepad" href="../regexp.html"><link rel="prev" title="Typescript Named Arguments" href="Named%20Arguments.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="Ada Topics" href="../Ada/index.html"><link rel="prev" title="Classes in Kotlin" href="classes.html">
 
     <link rel="shortcut icon" href="../../_static/favicon.png"><!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
-        <title>Typescript Stuff - Silvercircle.codeberg.page</title>
+        <title>Patterns in Kotlin - Silvercircle.codeberg.page</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -275,9 +275,9 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../java/index.html">Java Topics</a><input aria-label="Toggle navigation of Java Topics" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Kotlin/index.html">Kotlin Topics</a><input aria-label="Toggle navigation of Kotlin Topics" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Kotlin/classes.html">Classes in Kotlin</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Kotlin/patterns.html">Patterns in Kotlin</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Kotlin Topics</a><input aria-label="Toggle navigation of Kotlin Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="classes.html">Classes in Kotlin</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Patterns in Kotlin</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Ada/index.html">Ada Topics</a><input aria-label="Toggle navigation of Ada Topics" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
@@ -290,9 +290,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../Ada/scratchpad.html">The Ada language - personal scratchpad</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Typescript Topics</a><input aria-label="Toggle navigation of Typescript Topics" checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Named%20Arguments.html">Typescript Named Arguments</a></li>
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Typescript Stuff</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../typescript/index.html">Typescript Topics</a><input aria-label="Toggle navigation of Typescript Topics" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../typescript/Named%20Arguments.html">Typescript Named Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../typescript/scratchpad.html">Typescript Stuff</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../regexp.html">Regular Expressions notepad</a></li>
@@ -352,10 +352,123 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section class="tex2jax_ignore mathjax_ignore" id="typescript-stuff">
-<h1>Typescript Stuff<a class="headerlink" href="#typescript-stuff" title="Link to this heading">¶</a></h1>
-<section id="named-arguments-named-arguments-md">
-<h2>[Named Arguments](./Named Arguments.md)<a class="headerlink" href="#named-arguments-named-arguments-md" title="Link to this heading">¶</a></h2>
+          <section id="patterns-in-kotlin">
+<h1>Patterns in Kotlin<a class="headerlink" href="#patterns-in-kotlin" title="Link to this heading">¶</a></h1>
+<p>Like all languages, implementing common patterns is an important aspect and will usually become important at some point
+in your learning pipeline. Usually, when you have mastered the basics of the language and feel safe enough to <em>think</em> in
+that language.</p>
+<section id="builder-pattern">
+<h2>Builder Pattern<a class="headerlink" href="#builder-pattern" title="Link to this heading">¶</a></h2>
+<p>One of the most common, particularly in the Java universe. Since Java does not support named arguments and default
+values for method or constructor arguments, the builder is very handy to initialize complex objects with many
+properties. It usually looks like:</p>
+<blockquote>
+<div><p><code class="code highlight java docutils literal highlight-java"><span class="kd">var</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MyClass</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span><span class="w"> </span><span class="n">param2</span><span class="p">).</span><span class="na">param3</span><span class="p">(</span><span class="s">&quot;foo&quot;</span><span class="p">).</span><span class="na">param4</span><span class="p">(</span><span class="s">&quot;bar&quot;</span><span class="p">).</span><span class="na">build</span><span class="p">();</span></code></p>
+</div></blockquote>
+<p>The class requires two mandatory parameters in its constructors (<code class="docutils literal notranslate"><span class="pre">param1</span></code> and <code class="docutils literal notranslate"><span class="pre">param2</span></code>) and two optionals. For
+<code class="docutils literal notranslate"><span class="pre">param3</span></code> and <code class="docutils literal notranslate"><span class="pre">param4</span></code>, the class usually sets default values, but you can override them in the Builder.</p>
+<p>In Kotlin, you would instantiate such an object with</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Kotlin</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Kotlin Class with Builder</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="highlight-kotlin notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * a builder pattern in Kotlin, implemented with a nested data class. This</span>
+<span class="cm"> * pretty much works like the Java builder using a static nested class.</span>
+<span class="cm"> *</span>
+<span class="cm"> * In Kotlin, however, the Builder is usually not needed, because methods and constructors</span>
+<span class="cm"> * can have named arguments with default values.</span>
+<span class="cm"> */</span>
+<span class="kd">class</span><span class="w"> </span><span class="nc">Book</span><span class="w"> </span><span class="n">private</span><span class="w"> </span><span class="k">constructor</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">isbn</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="nv">author</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">genre</span><span class="p">:</span><span class="w"> </span><span class="n">Genre? </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">.</span><span class="na">NONE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Genre</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/** incomplete */</span>
+<span class="w">    </span><span class="n">FICTION</span><span class="p">,</span><span class="w"> </span><span class="n">NONFICTION</span><span class="p">,</span><span class="w"> </span><span class="n">DRAMA</span><span class="p">,</span><span class="w"> </span><span class="n">PROSE</span><span class="p">,</span><span class="w"> </span><span class="n">POETRY</span><span class="p">,</span><span class="w"> </span><span class="n">SCIENCE</span><span class="p">,</span><span class="w"> </span><span class="n">NONE</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">toString</span><span class="p">():</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Clique</span><span class="p">.</span><span class="na">parser</span><span class="p">().</span><span class="na">parse</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
+<span class="s">      [yellow, bold]ISBN: [/]  </span><span class="si">$</span><span class="n">isbn</span>
+<span class="s">      [yellow, bold]Title:[/]  </span><span class="si">$</span><span class="n">title</span>
+<span class="s">      [yellow, bold]Author[/]: </span><span class="si">$</span><span class="n">author</span>
+<span class="s">      [yellow, bold]Genre:[/]  </span><span class="si">$</span><span class="n">genre</span>
+<span class="s">    &quot;&quot;&quot;</span><span class="p">).</span><span class="na">trimIndent</span><span class="p">()</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Builder</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">isbn</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">title</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">author</span><span class="p">:</span><span class="w"> </span><span class="kt">String?</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">genre</span><span class="p">:</span><span class="w"> </span><span class="n">Genre? </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">.</span><span class="na">NONE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">fun</span><span class="w"> </span><span class="nf">author</span><span class="p">(</span><span class="n">author</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">apply</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">fun</span><span class="w"> </span><span class="nf">genre</span><span class="p">(</span><span class="n">genre</span><span class="p">:</span><span class="w"> </span><span class="n">Genre</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">apply</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">genre</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">fun</span><span class="w"> </span><span class="nf">build</span><span class="p">():</span><span class="w"> </span><span class="n">Book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Book</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">isbn</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">title</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">author</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">genre</span><span class="p">)</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Java</label><div class="sd-tab-content docutils">
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">A Java Builder</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span><span class="w"> </span><span class="nn">cc.subspace.kweather</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">io.github.kusoroadeolu.clique.Clique</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">JavaBook</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">Genre</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">FICTION</span><span class="p">,</span><span class="w"> </span><span class="n">NONFICTION</span><span class="p">,</span><span class="w"> </span><span class="n">DRAMA</span><span class="p">,</span><span class="w"> </span><span class="n">PROSE</span><span class="p">,</span><span class="w"> </span><span class="n">POETRY</span><span class="p">,</span><span class="w"> </span><span class="n">SCIENCE</span><span class="p">,</span><span class="w"> </span><span class="n">NONE</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">isbn</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Genre</span><span class="w">  </span><span class="n">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">.</span><span class="na">NONE</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="nf">JavaBook</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">isbn</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Genre</span><span class="w"> </span><span class="n">genre</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">isbn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isbn</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">title</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">author</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">genre</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">toString</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Clique</span><span class="p">.</span><span class="na">parser</span><span class="p">().</span><span class="na">parse</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span>
+<span class="w">        </span><span class="s">&quot;&quot;&quot;</span>
+<span class="s">        [yellow, bold]ISBN: [/]  %s</span>
+<span class="s">        [yellow, bold]Title:[/]  %s</span>
+<span class="s">        [yellow, bold]Author[/]  %s</span>
+<span class="s">        [yellow, bold]Genre:[/]  %s</span>
+<span class="s">        &quot;&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isbn</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="n">genre</span><span class="p">)).</span><span class="na">stripIndent</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Builder</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">isbn</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Unknown&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">Genre</span><span class="w">  </span><span class="n">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">.</span><span class="na">NONE</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">Builder</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">isbn</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">title</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">isbn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isbn</span><span class="p">;</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">title</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Builder</span><span class="w"> </span><span class="nf">author</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">author</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">author</span><span class="p">;</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Builder</span><span class="w"> </span><span class="nf">genre</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Genre</span><span class="w"> </span><span class="n">genre</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">genre</span><span class="p">;</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">JavaBook</span><span class="w"> </span><span class="nf">build</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JavaBook</span><span class="p">(</span><span class="n">isbn</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="n">genre</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -364,23 +477,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../regexp.html">
+          <a class="next-page" href="../Ada/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Regular Expressions notepad</div>
+                <div class="title">Ada Topics</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="Named%20Arguments.html">
+          <a class="prev-page" href="classes.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Typescript Named Arguments</div>
+                <div class="title">Classes in Kotlin</div>
                 
               </div>
             </a>
@@ -414,8 +527,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Typescript Stuff</a><ul>
-<li><a class="reference internal" href="#named-arguments-named-arguments-md">[Named Arguments](./Named Arguments.md)</a></li>
+<li><a class="reference internal" href="#">Patterns in Kotlin</a><ul>
+<li><a class="reference internal" href="#builder-pattern">Builder Pattern</a></li>
 </ul>
 </li>
 </ul>
